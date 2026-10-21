@@ -9,7 +9,12 @@ preserve source metadata and semantic evidence, review scientific harmonization
 recipes, then stream approved harmonized outputs
 into machine representations with source and decision lineage.
 
-**Agents propose. Deterministic code executes. Humans review model proposals.**
+**AI chooses among tested scientific operations. It does not invent the analysis.**
+
+VERDE interprets, selects, parameterizes, compares and proposes within a versioned
+JSON backbone. A closed operation registry owns the scientific computation.
+Schema/scientific validation and human review govern execution; approved recipes
+run with the model off. [Model trust boundary](docs/architecture/model-trust.md).
 
 ![Three independently callable stages: discovery and access, harmonization and review, representation. Human review precedes source streaming.](docs/assets/figures/system.svg)
 
@@ -25,6 +30,7 @@ source .venv/bin/activate
 python -m pip install -e '.[dev,embeddings]'
 prototype run --all-tracks --output run/offline
 prototype mosaiks-demo --output run/mosaiks-example
+prototype operation-demo --output run/operation-trust-example
 pytest -q
 mkdocs build --strict
 ```

@@ -234,3 +234,41 @@ JavaScript enhances filtering; the full table and expandable evidence remain usa
 without it. Diagrams distinguish architecture from uncomputed research frameworks.
 A contract, semantic relationship, evidence model, transformation or module-boundary
 change updates documentation and its architecture diagram in the same change.
+
+## 2026-10-21 — Trust ADR T1: Runtime models are not computational authorities
+
+VERDE and other runtime models interpret, compare and propose within caller-defined
+capabilities. They do not write executable science, derive formulas or author numerical
+results. Scientific operations are designed and reviewed before runtime; development
+models assist that process without replacing scientific responsibility.
+
+## 2026-10-21 — Trust ADR T2: Closed operations, declarative IR
+
+Maintain the existing scientific recipe and introduce distinct SELECT, PARAMETERIZE
+and semantic PROPOSE contracts. A closed registry maps versioned IDs to pre-written
+implementations. Offered option IDs bind complete source metadata, fixed mappings,
+parameter references and registry identity. Calibration resolves authoritative
+metadata, never model coefficients. No executable code or expression language is accepted.
+
+## 2026-10-21 — Trust ADR T3: Structure precedes science, neither grants approval
+
+Parse exact schemas, validate operation/option and source identities, then apply
+scientific preconditions, QA and exact-recipe human review. Missing evidence and
+human review are valid outcomes. Unknown operations and invalid parameters fail
+closed. A model's recommendation cannot remove mandatory checks or override a veto.
+Deterministic consensus consumes structured findings; model QA can only constrain it.
+
+## 2026-10-21 — Trust ADR T4: Approved science has no inference dependency
+
+Approved recipes execute through the registry without a model/backend. Keep the
+explicit fixture model for offline orchestration and adversarial testing. Preserve
+the bounded real-data streaming APIs; the new fixture controller is capped at 1024
+records and cannot bypass real-data review gates or persist raw/harmonized rasters.
+
+## 2026-10-21 — Trust ADR T5: Proposal, validation and approval are distinct evidence
+
+Model statements remain MODEL_JUDGMENT. Deterministic computations and validations
+retain their code/registry/constants identities. Human decisions bind the exact
+recipe. New recipe, scalar provenance, raster/stream lineage and cache identities
+record the execution backbone; legacy artifacts remain historical without invented
+new metadata. Scientific code changes invalidate new bound recipes and require review.

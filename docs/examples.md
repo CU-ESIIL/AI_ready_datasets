@@ -46,3 +46,17 @@ harmonization, and representation pages. CI uses only these local fixtures.
 For actual observations and real model calls, use the separate
 [real-data and agents workflow](real-data-agents.md). The commands above remain
 an offline deterministic regression example.
+
+## Bounded model decisions, without live inference
+
+```sh
+prototype operation-demo --output run/operation-trust-example
+prototype operation-capabilities --output run/operation-capabilities.json
+```
+
+The explicit fixture model selects a registered metres-to-centimetres conversion.
+Deterministic code converts a generated 2 m value to 200 cm. A synthetic human
+decision exercises the gate; it is not real scientific approval. No source records
+are fetched and raw/harmonized datasets are not persisted. The output includes a
+rejected `spectral.magic_correction` selection and an ambiguous concept proposal
+returning `NEEDS_HUMAN_REVIEW`. See the [complete trust-boundary example](architecture/model-trust.md#execute-with-verde-off).

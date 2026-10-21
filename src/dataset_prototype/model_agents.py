@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import json
 from pydantic import Field
+from typing import Literal
 from .contracts import Contract, SemanticMapping, HarmonizationRecipe, Operation, Proposal, QAReport, Relation, AgentReview, recipe_content_digest, digest
 from .network import request_json
 
@@ -32,11 +33,13 @@ class SemanticJudgment(Contract):
 
 
 class RecipePlan(Contract):
+    """Historical operation-body transcript schema; not accepted by runtime proposal roles."""
     operations: tuple[Operation, ...] = Field(min_length=1)
     rationale: str = Field(min_length=1)
 
 
 class Critique(Contract):
+    recommended_checks: tuple[Literal['schema.recipe','recipe.scientific_preconditions'],...] = ('schema.recipe','recipe.scientific_preconditions')
     outcome: str = Field(pattern=r"^(approve|reject|request_revision|require_human_review)$")
     reasons: tuple[str, ...] = Field(min_length=1)
 
@@ -157,7 +160,7 @@ class ModelQAAgent:
     def assess(self, recipe, resources):
         from .harmonization import assess
         deterministic=assess(recipe,resources)
-        critique=self.backend.generate("qa","Inspect deterministic checks; do not calculate statistics, conversion factors or ranges. Adversarially review the recipe. Check semantic meaning, units, support, joins, licenses, missing evidence, information loss, and core/track leakage. The model cannot supply human approval. Return concerns even when a conservative recipe is technically valid.",
+        critique=self.backend.generate("qa","Inspect deterministic checks; do not calculate statistics, conversion factors or ranges. Adversarially review the recipe. Check semantic meaning, units, support, joins, licenses, missing evidence, information loss, and core/track leakage. You may recommend only schema.recipe and recipe.scientific_preconditions; mandatory deterministic checks still run. The model cannot supply human approval. Return concerns even when a conservative recipe is technically valid.",
             {"deterministic_checks":deterministic.model_dump(mode="json"),"recipe":recipe.model_dump(mode="json"),"sources":[source_evidence(r) for r in resources]},Critique)
         return QAReport(recipe_digest=digest(recipe),outcome=critique.outcome,reasons=critique.reasons,reviewer=f"{getattr(self.backend,'backend_name','ollama')}:{self.backend.model}@{self.backend._model_digest}")
 

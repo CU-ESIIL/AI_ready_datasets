@@ -188,3 +188,39 @@
   evidence-reviewed scoring model exists. Metadata presence is not semantic completeness.
 - Conceptual figures and proposed observation/pair benchmarks must not be presented
   as measured results, selected flagship datasets or approved scientific mappings.
+
+## VERDE model trust and deterministic execution
+
+1. VERDE models are not trusted computational authorities. They interpret, select,
+   parameterize, compare, rank, propose, explain and request review.
+2. Runtime scientific code, mathematical formulas, algorithms, SQL, scripts,
+   executable templates and scientific numerical results must never originate from
+   model output. Never pass model content to eval, exec, shell execution, dynamic
+   imports or equivalent expression/code evaluators.
+3. Every executable scientific operation is pre-written, reviewed, tested, versioned
+   and registered before runtime. Unknown operation IDs fail closed; never ask a
+   runtime model to implement them.
+4. Models select only registered, caller-offered capabilities and modify only
+   schema-permitted parameters. Validate structures, identifiers, parameters,
+   dependencies and scientific preconditions independently before execution.
+5. Model-generated numbers are MODEL_JUDGMENT, never authoritative constants.
+   Deterministic code owns conversion factors and formulas. Prefer source-metadata
+   references to model transcription of coefficients; missing evidence is not guessed.
+6. Keep SELECT, PARAMETERIZE and PROPOSE contracts separate. Semantic proposals
+   preserve source meanings and supplied candidate IDs; they cannot approve themselves.
+7. Keep structural validity separate from scientific validity. Scientific ambiguity,
+   uncertain meaning/rights, novel concepts and cross-support changes need evidence
+   and explicit human decisions. Existing model vetoes remain binding.
+8. Consensus is deterministic aggregation of structured findings. QA may recommend
+   registered checks or veto; it cannot calculate scientific results, rewrite
+   validators, override findings or grant execution permission.
+9. Approved recipes execute without an LLM. Offline fixture-model orchestration
+   remains explicit and never substitutes silently for unavailable real services.
+10. Record recipe/registry/operation/validator/constants identities, authoritative
+    parameter sources, model/prompt provenance and exact-recipe human decisions.
+    Distinguish MODEL_PROPOSED, DETERMINISTICALLY_VALIDATED and HUMAN_APPROVED evidence.
+    A changed scientific implementation requires renewed review and fresh products.
+11. Preserve bounded real-data streaming directly through harmonization into MOSAIKS.
+    The fixture decision controller is not a replacement for real streaming gates.
+12. Agents propose. Deterministic software executes. Humans remain responsible for
+    scientific decisions that available evidence cannot safely resolve.

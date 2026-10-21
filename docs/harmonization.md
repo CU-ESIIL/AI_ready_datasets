@@ -83,8 +83,8 @@ not overridden with a blanket approval.
 | Join | Unique exact coordinates, interval, and equal support; review and track scope; retains related source/record |
 | Validation | Explicit numeric bounds |
 
-Original values remain in provenance. Unit conversions and daily means currently drop numeric
-uncertainty rather than pretend it is unchanged; general uncertainty propagation
+Original values remain in provenance. Unit conversions scale supplied uncertainty by the fixed unit factor; calibration
+scales it by the absolute documented coefficient. Daily means drop numeric uncertainty; general uncertainty propagation
 is not implemented. These narrow operations are not a universal environmental
 harmonization system. Daily aggregation uses UTC-aligned intervals in the examples;
 local civil days and daylight-saving calendars need further scientific design.
@@ -133,3 +133,13 @@ richer scientific record; do not imply its free text is executed.
 
 !!! note "Same unit does not mean same variable"
     A [trait](semantics/glossary.md#trait), [variable](semantics/glossary.md#variable) and [measurement](semantics/glossary.md#measurement) are distinct. Standardized structure does not establish harmonized scientific meaning.
+
+## Deterministic backbone and model trust
+
+VERDE interprets, selects, parameterizes, compares and proposes. It does not author
+scientific computation. New model plans select closed, source-bound capabilities;
+metadata coefficients and mathematical operations are resolved by tested code.
+Schema validation, scientific checks, existing vetoes and human decisions remain
+separate gates. Approved recipes execute without a model. See
+[deterministic execution and model trust](architecture/model-trust.md) for the registry, IR contracts,
+examples, provenance and current limits.

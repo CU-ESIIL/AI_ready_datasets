@@ -84,3 +84,11 @@ semantic narrative while preserving Material, Pages and the two reader layers.
 No source rasters, ontology graphs, remote services or model inference were invoked
 for this documentation pass. Pipeline behavior was not changed. Existing contract
 and inventory edits present before the pass were preserved. No deployment was made.
+
+## Model trust hardening follow-up
+
+The [model trust guide](../architecture/model-trust.md) and
+[audit](model-trust-audit.md) add the probabilistic/deterministic boundary, a
+seventeenth diagram and generated decision/registry schemas. Current validation is
+175 passing offline tests and a strict build plus local checks over 55 HTML pages.
+Earlier counts above identify their historical checkpoints.

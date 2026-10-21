@@ -1,0 +1,63 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "confidence": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence"
+    },
+    "evidence_kind": {
+      "const": "MODEL_JUDGMENT",
+      "default": "MODEL_JUDGMENT",
+      "title": "Evidence Kind",
+      "type": "string"
+    },
+    "input_evidence_references": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Input Evidence References",
+      "type": "array"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    },
+    "model_version": {
+      "title": "Model Version",
+      "type": "string"
+    },
+    "prompt_version": {
+      "default": "decision-backbone-v2",
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "structured_output_digest": {
+      "title": "Structured Output Digest",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    }
+  },
+  "required": [
+    "model",
+    "model_version",
+    "timestamp",
+    "input_evidence_references",
+    "structured_output_digest"
+  ],
+  "title": "ModelDecisionProvenance",
+  "type": "object"
+}

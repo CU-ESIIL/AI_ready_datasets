@@ -156,3 +156,37 @@ def test_every_registered_dispatch_input_output_edge_and_lineage(bundle,legacy,p
     if legacy in ('join','spatial_match'):assert result[0][5]==(other,) and result[0][6]==(peer,)
     bad=op.model_copy(update={'scale':123}) if legacy!='calibrate' else op.model_copy(update={'to_unit':'kg'})
     with pytest.raises(ValueError):REGISTRY.execute_rows(bad,[row],(first,),{r.asset_id:r})
+
+
+def test_registered_qa_checks_and_model_cannot_change_the_library(bundle):
+    from dataset_prototype.operations import execute_check
+    from dataset_prototype.model_agents import Critique
+    r,_,p,_=bundle
+    assert execute_check('schema.recipe',p,(r,))['status']=='PASS'
+    assert execute_check('recipe.scientific_preconditions',p,(r,))['qa']['outcome']=='approve'
+    with pytest.raises(ValueError):execute_check('statistic.magic',p,(r,))
+    with pytest.raises(ValidationError):Critique(outcome='approve',reasons=('test',),recommended_checks=('calculate_something',))
+
+
+def test_cli_offline_end_to_end_demo_and_manifest(tmp_path,capsys):
+    from dataset_prototype.cli import main
+    main(['operation-capabilities','--output',str(tmp_path/'capabilities.json')])
+    assert len(json.loads((tmp_path/'capabilities.json').read_text())['operations'])==10
+    main(['operation-demo','--output',str(tmp_path/'demo')])
+    report=json.loads((tmp_path/'demo/result.json').read_text())
+    assert report['status']=='EXECUTED' and report['result']=={'value':200,'unit':'cm'}
+    assert report['unsupported_status']=='UNSUPPORTED_OPERATION' and report['ambiguous_status']=='NEEDS_HUMAN_REVIEW'
+    assert report['model_provenance']['model']=='fixture-decision-model'
+    assert report['live_model_called'] is False and report['source_data_read'] is False
+
+
+def test_runtime_package_has_no_code_evaluation_or_shell_dispatch():
+    import ast
+    from pathlib import Path
+    root=Path(__file__).parents[1]/'src/dataset_prototype'
+    for path in root.glob('*.py'):
+        tree=ast.parse(path.read_text())
+        for node in ast.walk(tree):
+            if isinstance(node,ast.Call):
+                assert not (isinstance(node.func,ast.Name) and node.func.id in {'eval','exec','compile'}),path
+                assert not any(k.arg=='shell' and isinstance(k.value,ast.Constant) and k.value.value is True for k in node.keywords),path

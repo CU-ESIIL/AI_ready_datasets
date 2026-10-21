@@ -35,7 +35,7 @@ gate for real Sentinel streams, checked before source access. The legacy
 [Sentinel comparison](development/sentinel-review-refactor.md).
 
 The website now separates narrative research pages from technical documentation,
-with generated contract reference and sixteen source-maintained architecture and conceptual figures.
+with generated contract reference and seventeen source-maintained architecture and conceptual figures.
 The existing Material/Pages configuration remains the deployment mechanism.
 
 ## Metadata consensus and streaming
@@ -186,3 +186,13 @@ and passed numerical verification, alongside 110 offline tests. A real-metadata
 rights peer citation after three valid revision requests. No real calibrated
 raster/vector dataset was emitted. See the [MOSAIKS result](mosaiks-embeddings.md#verification-result-2026-10-21)
 for diagnostic metrics, the concrete candidate and remaining scientific gaps.
+
+## Model trust hardening
+
+WORKING: a ten-operation closed registry, declarative decision IR, constrained
+capabilities, deterministic parameter resolution, scientific validation, explicit
+review/failure states and no-model approved execution. The fixture demonstration is
+MOCKED, including its human decision. OpenClaw/VERDE and model scientific roles remain
+PROTOTYPE; no new live call or approved real Sentinel product is claimed. General
+support algorithms, ontology composition and authenticated human approval remain
+PLANNED. [Detailed status and limits](architecture/model-trust.md#current-status).

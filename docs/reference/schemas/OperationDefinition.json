@@ -1,0 +1,135 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "allowed_quantity_kinds": {
+      "default": [
+        "explicit reviewed mapping only; no inferred quantity kinds"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "title": "Allowed Quantity Kinds",
+      "type": "array"
+    },
+    "allowed_units": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Allowed Units",
+      "type": "array"
+    },
+    "changes_biological_level": {
+      "default": false,
+      "title": "Changes Biological Level",
+      "type": "boolean"
+    },
+    "changes_spatial_support": {
+      "default": false,
+      "title": "Changes Spatial Support",
+      "type": "boolean"
+    },
+    "changes_temporal_support": {
+      "default": false,
+      "title": "Changes Temporal Support",
+      "type": "boolean"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "implementation_reference": {
+      "default": "dataset_prototype.operations._execute_rows",
+      "title": "Implementation Reference",
+      "type": "string"
+    },
+    "input_contract": {
+      "default": "validated row tuples with source/support lineage",
+      "title": "Input Contract",
+      "type": "string"
+    },
+    "legacy_name": {
+      "title": "Legacy Name",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "operation_id": {
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "output_contract": {
+      "default": "validated row tuples; HarmonizedObservation validation at executor boundary",
+      "title": "Output Contract",
+      "type": "string"
+    },
+    "parameter_schema": {
+      "additionalProperties": true,
+      "title": "Parameter Schema",
+      "type": "object"
+    },
+    "postconditions": {
+      "default": [
+        "canonical output and provenance validated"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "title": "Postconditions",
+      "type": "array"
+    },
+    "preconditions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Preconditions",
+      "type": "array"
+    },
+    "provenance": {
+      "default": "registered implementation identity plus source/recipe/review lineage",
+      "title": "Provenance",
+      "type": "string"
+    },
+    "requires_human_approval": {
+      "default": false,
+      "title": "Requires Human Approval",
+      "type": "boolean"
+    },
+    "scientific_assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Scientific Assumptions",
+      "type": "array"
+    },
+    "tests": {
+      "default": [
+        "tests/test_harmonization.py",
+        "tests/test_operation_registry.py"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "title": "Tests",
+      "type": "array"
+    },
+    "version": {
+      "default": "1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "operation_id",
+    "legacy_name",
+    "name",
+    "description",
+    "parameter_schema",
+    "scientific_assumptions",
+    "preconditions"
+  ],
+  "title": "OperationDefinition",
+  "type": "object"
+}

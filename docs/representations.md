@@ -55,3 +55,13 @@ source/recipe/review identity, native support and window evidence accompany the
 vectors through compact lineage and metadata artifacts. A numeric feature can be
 usable by a downstream model while its scientific interpretation remains unvalidated.
 [Verification limits](mosaiks-embeddings.md) · [Semantic provenance](provenance.md#semantic-evidence-is-part-of-the-audit-trail)
+
+## Deterministic backbone and model trust
+
+VERDE interprets, selects, parameterizes, compares and proposes. It does not author
+scientific computation. New model plans select closed, source-bound capabilities;
+metadata coefficients and mathematical operations are resolved by tested code.
+Schema validation, scientific checks, existing vetoes and human decisions remain
+separate gates. Approved recipes execute without a model. See
+[deterministic execution and model trust](architecture/model-trust.md) for the registry, IR contracts,
+examples, provenance and current limits.

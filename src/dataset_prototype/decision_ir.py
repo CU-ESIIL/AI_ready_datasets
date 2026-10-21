@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from typing import Annotated, Literal
 from pydantic import Field, create_model
 from .contracts import (Contract, Operation, SemanticMapping, HarmonizationRecipe, Proposal,
-                        HumanDecision, digest)
+                        HumanDecision, Relation, digest)
 from .operations import REGISTRY, execution_identity
 
 class SelectDecision(Contract):
@@ -235,7 +235,7 @@ class FixtureDecisionModel:
 
 class DecisionBindingProposal(Contract):
     binding_id: str
-    relationship: str
+    relationship: Relation
     evidence: tuple[str,...] = Field(min_length=1)
     confidence: float = Field(ge=0,le=1)
     decision: RecipeDecision
@@ -291,5 +291,5 @@ def request_model_decision(backend, capabilities, resources, mappings):
             timestamp=datetime.now(timezone.utc),input_evidence_references=('source_metadata:'+capabilities.source_digest,
                 'mapping:'+capabilities.mapping_digest,'capabilities:'+capabilities.identity),structured_output_digest=digest(decision))
         return result.model_copy(update={'model_provenance':provenance})
-    except (ValueError,OSError,TimeoutError) as error:
+    except (ValueError,OSError,TimeoutError,TypeError,AttributeError) as error:
         return ExecutionResult(status='INVALID_MODEL_OUTPUT',reasons=(type(error).__name__,),execution_identity=execution_identity())

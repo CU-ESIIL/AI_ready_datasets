@@ -1,0 +1,68 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "const": "PROPOSE",
+      "default": "PROPOSE",
+      "title": "Authority",
+      "type": "string"
+    },
+    "candidate_ids": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Candidate Ids",
+      "type": "array"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "evidence": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "relationship": {
+      "enum": [
+        "equivalent",
+        "convertible",
+        "broader",
+        "narrower",
+        "derived",
+        "related",
+        "incomparable",
+        "unknown"
+      ],
+      "title": "Relationship",
+      "type": "string"
+    },
+    "source_evidence_id": {
+      "title": "Source Evidence Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "NEEDS_EVIDENCE",
+        "NEEDS_HUMAN_REVIEW"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_evidence_id",
+    "relationship",
+    "evidence",
+    "confidence",
+    "status"
+  ],
+  "title": "SemanticMappingProposal",
+  "type": "object"
+}

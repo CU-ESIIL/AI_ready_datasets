@@ -1,0 +1,35 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "const": "SELECT",
+      "default": "SELECT",
+      "title": "Authority",
+      "type": "string"
+    },
+    "operation_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "operation_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Operation Version",
+      "type": "string"
+    },
+    "option_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Option Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "operation_id",
+    "option_id"
+  ],
+  "title": "SelectDecision",
+  "type": "object"
+}

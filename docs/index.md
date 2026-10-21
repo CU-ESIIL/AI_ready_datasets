@@ -170,6 +170,15 @@ review decisions back to the source asset and its rights.
 [Research goals and limits](impact.md) · [What works today](PROTOTYPE_STATUS.md) ·
 [Build and verify the prototype](documentation/index.md)
 
+## AI chooses among tested scientific operations
+
+The model can propose what should happen. The validated recipe determines what is
+allowed to happen. Tested software determines how it happens. Models help interpret
+scientific language and metadata; deterministic software performs calculations.
+They do not invent the analysis or write executable scientific code at runtime.
+
+[Inspect the model trust boundary →](architecture/model-trust.md)
+
 ## Trust comes from inspectable decisions
 
 Source semantics and evidence stay attached to their identifiers. Model judgment is

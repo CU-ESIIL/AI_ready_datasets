@@ -3,7 +3,6 @@ from collections import defaultdict
 from hashlib import sha256
 from datetime import timedelta
 from types import MappingProxyType
-from pydantic import Field
 from .contracts import Contract, Operation, digest
 
 REGISTRY_VERSION = '1'
@@ -38,7 +37,7 @@ class OperationDefinition(Contract):
 # Only implemented operations are listed. These are not plugin entry points.
 _SPECS = (
  ('unit.convert','convert_units','Fixed unit conversion',('from_unit','to_unit'),('Four explicit unit pairs; no inferred equivalence',),False,False,False),
- ('calibration.scale_offset','calibrate','Documented DN calibration',('from_unit','to_unit','scale','offset'),('Exact source metadata coefficients; DN to unit 1 only',),False,False,True),
+ ('calibration.scale_offset','calibrate','Documented DN calibration',('from_unit','to_unit','scale','offset'),('Exact source metadata coefficients; DN to unit 1 only; model proposals always require review',),False,False,False),
  ('semantic.rename','map_variable','Reviewed canonical variable name',('target_variable',),('Rename does not establish scientific equivalence',),False,False,False),
  ('quality.filter','filter','Inclusive reviewed bounds',('minimum','maximum'),('Track-only selection; no inferred plausibility limits',),False,False,False),
  ('quality.missing','missing','Explicit sentinel to missing',('sentinel',),('No imputation; downstream encoder rejects null',),False,False,False),
@@ -49,10 +48,32 @@ _SPECS = (
  ('quality.validate_bounds','validate','Explicit numeric bounds',('minimum','maximum'),('No bounds means identity validation; no inferred clipping',),False,False,False),
 )
 
+def _parameter_schema(legacy, fields):
+    properties={k:Operation.model_json_schema()['properties'][k] for k in fields}
+    required=[]
+    if legacy=='convert_units':
+        properties={k:{'type':'string','enum':sorted({unit for pair in UNIT_CONVERSIONS for unit in pair})} for k in fields}
+        required=list(fields)
+    elif legacy=='calibrate':
+        properties={'from_unit':{'const':'DN'},'to_unit':{'const':'1'},
+                    'scale':{'type':'number','not':{'const':0}},'offset':{'type':'number'}}
+        required=list(fields)
+    elif legacy=='temporal_mean':
+        properties={'target_support':{'const':'daily'}};required=list(fields)
+    elif legacy in {'map_variable','join','spatial_match'}:
+        properties={k:({'type':'number','minimum':0} if k=='tolerance' else {'type':'string','minLength':1}) for k in fields}
+        required=list(fields)
+    elif legacy=='missing':
+        properties={'sentinel':{'type':'number'}};required=['sentinel']
+    result={'type':'object','additionalProperties':False,'properties':properties,'required':required}
+    if legacy=='convert_units':
+        result['oneOf']=[{'properties':{'from_unit':{'const':a},'to_unit':{'const':b}}} for a,b in UNIT_CONVERSIONS]
+    return result
+
+
 def _definitions():
-    schema=Operation.model_json_schema()
     return tuple(OperationDefinition(operation_id=identifier,legacy_name=legacy,name=name,description=name,
-        parameter_schema={'type':'object','additionalProperties':False,'properties':{k:schema['properties'][k] for k in fields}},
+        parameter_schema=_parameter_schema(legacy,fields),
         scientific_assumptions=assumptions,preconditions=('typed parameters','source/target semantics, units, rights and review gates checked'),
         changes_spatial_support=spatial,changes_temporal_support=temporal,requires_human_approval=human,
         allowed_units=('degC','K','cm','m') if legacy=='convert_units' else ('DN','1') if legacy=='calibrate' else ())
@@ -83,7 +104,9 @@ class OperationRegistry:
         identity=digest({'definitions':entries,'code':{name:sha256((Path(__file__).parent/name).read_bytes()).hexdigest()
             for name in ('operations.py','contracts.py','harmonization.py','harmonized_rasters.py','decision_ir.py')}})
         return {'registry_version':REGISTRY_VERSION,'registry_digest':identity,'executor_version':EXECUTOR_VERSION,
-                'validator_version':VALIDATOR_VERSION,'constants_version':CONSTANTS_VERSION,'operations':entries}
+                'validator_version':VALIDATOR_VERSION,'constants_version':CONSTANTS_VERSION,'operations':entries,
+                'checks':[{'check_id':name,'version':'1'} for name in ('schema.recipe','recipe.scientific_preconditions')]}
+
     def execute_rows(self, operation, rows, records, sources):
         op=self.validate(operation)
         return _execute_rows(op,rows,records,sources)
@@ -92,7 +115,7 @@ REGISTRY = OperationRegistry()
 
 def execution_identity():
     manifest=REGISTRY.manifest()
-    return {k:v for k,v in manifest.items() if k!='operations'}
+    return {k:v for k,v in manifest.items() if k not in {'operations','checks'}}
 
 def convert(value, from_unit, to_unit):
     scale,offset=UNIT_CONVERSIONS[from_unit,to_unit]
@@ -155,3 +178,16 @@ def _execute_rows(op, rows, records, by_id):
         # Coordinate normalization is explicit identity for already valid WGS84 inputs.
         updated.append((raw, value, temporal, spatial, originals, related_sources, related_records))
     return updated
+
+
+def execute_check(check_id, recipe, resources):
+    """Closed deterministic QA selection. Recommendations never remove mandatory gates."""
+    from .contracts import HarmonizationRecipe
+    from .harmonization import assess
+    if check_id not in {'schema.recipe','recipe.scientific_preconditions'}:
+        raise ValueError('UNSUPPORTED_OPERATION: unknown validation check')
+    validated=HarmonizationRecipe.model_validate(recipe.model_dump(mode='json'))
+    result={'check_id':check_id,'version':'1','evidence_kind':'DERIVED_DETERMINISTICALLY'}
+    if check_id=='schema.recipe':result['status']='PASS'
+    else:result['qa']=assess(validated,resources).model_dump(mode='json')
+    return result

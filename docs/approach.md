@@ -31,6 +31,13 @@ each source. STAC supplies catalog metadata; it is one component of the architec
 
 [Discovery implementation and contracts](discovery.md) · [Semantic resources](semantics/index.md)
 
+## AI selects; tested software calculates
+
+VERDE helps interpret metadata and select among registered operations. It does not
+write scientific code, derive formulas or supply authoritative constants. The model
+proposes what should happen; the JSON recipe constrains permission; tested software
+performs the calculation. [Inspect the boundary](architecture/model-trust.md).
+
 ## 2. Make scientific transformations explicit
 
 A versioned recipe states the exact allowed operations. Specialists review meaning,

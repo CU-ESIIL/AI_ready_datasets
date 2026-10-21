@@ -15,6 +15,7 @@ nav:
       - Foundations:
           - Concepts: concepts.md
           - Architecture: architecture.md
+          - Deterministic execution and model trust: architecture/model-trust.md
           - Current-state audit: architecture/current-state.md
           - Current status: PROTOTYPE_STATUS.md
       - Semantics:
@@ -64,6 +65,7 @@ nav:
       - Development:
           - Integration inspection: development/integrations.md
           - Semantic discovery audit: development/semantic-discovery-audit.md
+          - Model trust audit: development/model-trust-audit.md
           - Documentation synchronization audit: development/documentation-sync-audit.md
           - Website audit and review: development/website-review.md
           - Decisions and history: development/decisions.md

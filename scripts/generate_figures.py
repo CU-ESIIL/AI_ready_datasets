@@ -45,6 +45,14 @@ FIGURES.update({
  [('Representation + model identity',1,0),('Harmonized observation / window',1,1),('Track recipe, if applicable',1,2),('Core recipe + transformation',1,3),('Agent proposal + QA findings',1,4),('Human decision, when required',1,5),('Mapping + candidate concepts',1,6),('Source semantic evidence',1,7),('Source asset + metadata',1,8),('Version / license / native support',1,9)],[(i,i+1) for i in range(9)]),
 })
 
+FIGURES['model-trust'] = ('Model decisions, deterministic scientific execution',
+ 'Probabilistic interpretation and proposals cross a validation trust boundary. Models never author executable scientific computation.',
+ [('Humans + development review',0,0),('Tested operation library',1,0),('Closed JSON capabilities',2,0),
+ ('VERDE: interpret / select / propose',1,1),('Untrusted structured JSON',1,2),('TRUST BOUNDARY',1,3),
+ ('Schema validation',0,4),('Scientific preconditions',1,4),('QA + human review',2,4),
+ ('Versioned operation registry',1,5),('Deterministic execution',1,6),('Output validation',1,7),('Result + provenance',1,8)],
+ [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,11),(11,12)])
+
 def quadrant():
     return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
 <title id="title">Dataset selection — conceptual framework</title><desc id="desc">Ontology potential vertically, semantic diversity horizontally. No dataset positions or scores have been measured here.</desc>

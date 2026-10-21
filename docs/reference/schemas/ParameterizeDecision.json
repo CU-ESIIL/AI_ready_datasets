@@ -1,0 +1,80 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "const": "PARAMETERIZE",
+      "default": "PARAMETERIZE",
+      "title": "Authority",
+      "type": "string"
+    },
+    "offset_source": {
+      "anyOf": [
+        {
+          "const": "source_metadata.calibration_offset",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Offset Source"
+    },
+    "operation_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "operation_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Operation Version",
+      "type": "string"
+    },
+    "option_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Option Id",
+      "type": "string"
+    },
+    "scale_source": {
+      "anyOf": [
+        {
+          "const": "source_metadata.calibration_scale",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scale Source"
+    },
+    "target_unit": {
+      "anyOf": [
+        {
+          "enum": [
+            "degC",
+            "K",
+            "cm",
+            "m",
+            "1"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Unit"
+    }
+  },
+  "required": [
+    "operation_id",
+    "option_id"
+  ],
+  "title": "ParameterizeDecision",
+  "type": "object"
+}

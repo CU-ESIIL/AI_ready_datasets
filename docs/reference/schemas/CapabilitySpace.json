@@ -1,0 +1,253 @@
+{
+  "$defs": {
+    "CapabilityOption": {
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "$ref": "#/$defs/Operation"
+        },
+        "operation_id": {
+          "title": "Operation Id",
+          "type": "string"
+        },
+        "operation_version": {
+          "const": "1",
+          "default": "1",
+          "title": "Operation Version",
+          "type": "string"
+        },
+        "option_id": {
+          "title": "Option Id",
+          "type": "string"
+        },
+        "parameter_sources": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Parameter Sources",
+          "type": "object"
+        }
+      },
+      "required": [
+        "option_id",
+        "operation_id",
+        "operation",
+        "parameter_sources"
+      ],
+      "title": "CapabilityOption",
+      "type": "object"
+    },
+    "Operation": {
+      "additionalProperties": false,
+      "properties": {
+        "from_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Unit"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "operation": {
+          "enum": [
+            "convert_units",
+            "map_variable",
+            "filter",
+            "missing",
+            "temporal_mean",
+            "spatial_match",
+            "normalize_coordinates",
+            "join",
+            "validate",
+            "calibrate"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "other_asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Other Asset"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "sentinel": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sentinel"
+        },
+        "source_asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Asset"
+        },
+        "source_variable": {
+          "title": "Source Variable",
+          "type": "string"
+        },
+        "target_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Support"
+        },
+        "target_variable": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Variable"
+        },
+        "to_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Unit"
+        },
+        "tolerance": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tolerance"
+        }
+      },
+      "required": [
+        "operation",
+        "source_variable"
+      ],
+      "title": "Operation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "mapping_digest": {
+      "title": "Mapping Digest",
+      "type": "string"
+    },
+    "options": {
+      "items": {
+        "$ref": "#/$defs/CapabilityOption"
+      },
+      "maxItems": 64,
+      "title": "Options",
+      "type": "array"
+    },
+    "registry_digest": {
+      "title": "Registry Digest",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_digest": {
+      "title": "Source Digest",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_digest",
+    "mapping_digest",
+    "registry_digest",
+    "options"
+  ],
+  "title": "CapabilitySpace",
+  "type": "object"
+}

@@ -34,6 +34,7 @@ class ReviewBundle(Contract):
         return self
 
 class QASynthesis(Contract):
+    recommended_checks: tuple[Literal['schema.recipe','recipe.scientific_preconditions'],...] = ('schema.recipe','recipe.scientific_preconditions')
     finding_ids: tuple[str, ...] = Field(min_length=1)
     decision: Literal['accept', 'revise', 'reject', 'needs_evidence']
     summary: str = Field(min_length=1, max_length=2000)

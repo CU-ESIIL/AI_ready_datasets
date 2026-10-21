@@ -122,3 +122,13 @@ support rather than serializing original pixels. A metadata digest is not a data
 checksum, and a window hash does not cover a whole remote raster.
 
 [Semantic contracts](semantics/pipeline.md) · [Mapping workflow](semantics/review-workflow.md)
+
+## Deterministic backbone and model trust
+
+VERDE interprets, selects, parameterizes, compares and proposes. It does not author
+scientific computation. New model plans select closed, source-bound capabilities;
+metadata coefficients and mathematical operations are resolved by tested code.
+Schema validation, scientific checks, existing vetoes and human decisions remain
+separate gates. Approved recipes execute without a model. See
+[deterministic execution and model trust](architecture/model-trust.md) for the registry, IR contracts,
+examples, provenance and current limits.

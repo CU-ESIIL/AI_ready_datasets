@@ -1,0 +1,685 @@
+{
+  "$defs": {
+    "AgentReview": {
+      "additionalProperties": false,
+      "properties": {
+        "outcome": {
+          "enum": [
+            "approve",
+            "reject",
+            "request_revision",
+            "require_human_review"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        },
+        "recipe_content_digest": {
+          "title": "Recipe Content Digest",
+          "type": "string"
+        },
+        "reviewer": {
+          "title": "Reviewer",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipe_content_digest",
+        "outcome",
+        "reasons",
+        "reviewer"
+      ],
+      "title": "AgentReview",
+      "type": "object"
+    },
+    "HarmonizationRecipe": {
+      "additionalProperties": false,
+      "properties": {
+        "agent_review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AgentReview"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "author": {
+          "minLength": 1,
+          "title": "Author",
+          "type": "string"
+        },
+        "core_recipe": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Core Recipe"
+        },
+        "execution_identity": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Execution Identity"
+        },
+        "mappings": {
+          "items": {
+            "$ref": "#/$defs/SemanticMapping"
+          },
+          "minItems": 1,
+          "title": "Mappings",
+          "type": "array"
+        },
+        "operations": {
+          "items": {
+            "$ref": "#/$defs/Operation"
+          },
+          "minItems": 1,
+          "title": "Operations",
+          "type": "array"
+        },
+        "proposals": {
+          "items": {
+            "$ref": "#/$defs/Proposal"
+          },
+          "minItems": 1,
+          "title": "Proposals",
+          "type": "array"
+        },
+        "recipe_id": {
+          "title": "Recipe Id",
+          "type": "string"
+        },
+        "scope": {
+          "enum": [
+            "core",
+            "track"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "status": {
+          "default": "proposed",
+          "enum": [
+            "proposed",
+            "needs_review",
+            "approved",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "track": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Track"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipe_id",
+        "version",
+        "scope",
+        "mappings",
+        "operations",
+        "proposals",
+        "author"
+      ],
+      "title": "HarmonizationRecipe",
+      "type": "object"
+    },
+    "ModelDecisionProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "evidence_kind": {
+          "const": "MODEL_JUDGMENT",
+          "default": "MODEL_JUDGMENT",
+          "title": "Evidence Kind",
+          "type": "string"
+        },
+        "input_evidence_references": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Input Evidence References",
+          "type": "array"
+        },
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "model_version": {
+          "title": "Model Version",
+          "type": "string"
+        },
+        "prompt_version": {
+          "default": "decision-backbone-v2",
+          "title": "Prompt Version",
+          "type": "string"
+        },
+        "structured_output_digest": {
+          "title": "Structured Output Digest",
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "title": "Timestamp",
+          "type": "string"
+        }
+      },
+      "required": [
+        "model",
+        "model_version",
+        "timestamp",
+        "input_evidence_references",
+        "structured_output_digest"
+      ],
+      "title": "ModelDecisionProvenance",
+      "type": "object"
+    },
+    "Operation": {
+      "additionalProperties": false,
+      "properties": {
+        "from_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Unit"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "operation": {
+          "enum": [
+            "convert_units",
+            "map_variable",
+            "filter",
+            "missing",
+            "temporal_mean",
+            "spatial_match",
+            "normalize_coordinates",
+            "join",
+            "validate",
+            "calibrate"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "other_asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Other Asset"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "sentinel": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sentinel"
+        },
+        "source_asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Asset"
+        },
+        "source_variable": {
+          "title": "Source Variable",
+          "type": "string"
+        },
+        "target_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Support"
+        },
+        "target_variable": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Variable"
+        },
+        "to_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Unit"
+        },
+        "tolerance": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tolerance"
+        }
+      },
+      "required": [
+        "operation",
+        "source_variable"
+      ],
+      "title": "Operation",
+      "type": "object"
+    },
+    "Proposal": {
+      "additionalProperties": false,
+      "properties": {
+        "agent": {
+          "default": "deterministic-fixture-agent",
+          "title": "Agent",
+          "type": "string"
+        },
+        "configuration": {
+          "default": "curated rules; no LLM",
+          "title": "Configuration",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "discovery",
+            "semantic",
+            "units",
+            "support",
+            "rights",
+            "harmonization",
+            "qa"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "version": {
+          "default": "1",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "rationale",
+        "evidence"
+      ],
+      "title": "Proposal",
+      "type": "object"
+    },
+    "SemanticMapping": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "disagreement": {
+          "default": false,
+          "title": "Disagreement",
+          "type": "boolean"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "novel": {
+          "default": false,
+          "title": "Novel",
+          "type": "boolean"
+        },
+        "relationship": {
+          "enum": [
+            "equivalent_to",
+            "convertible_to",
+            "broader_than",
+            "narrower_than",
+            "derived_from",
+            "measures",
+            "associated_with",
+            "not_comparable",
+            "unknown",
+            "requires_human_review"
+          ],
+          "title": "Relationship",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "proposed",
+          "enum": [
+            "proposed",
+            "needs_review",
+            "approved",
+            "rejected"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_asset": {
+          "title": "Source Asset",
+          "type": "string"
+        },
+        "source_variable": {
+          "title": "Source Variable",
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/$defs/Variable"
+        }
+      },
+      "required": [
+        "source_asset",
+        "source_variable",
+        "target",
+        "relationship",
+        "evidence",
+        "confidence"
+      ],
+      "title": "SemanticMapping",
+      "type": "object"
+    },
+    "Variable": {
+      "additionalProperties": false,
+      "properties": {
+        "biological_entity": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Biological Entity"
+        },
+        "definition": {
+          "minLength": 1,
+          "title": "Definition",
+          "type": "string"
+        },
+        "measurement_method": {
+          "minLength": 1,
+          "title": "Measurement Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "ontology_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ontology Id"
+        },
+        "unit": {
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "definition",
+        "unit",
+        "measurement_method"
+      ],
+      "title": "Variable",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "evidence_kind": {
+      "const": "DERIVED_DETERMINISTICALLY",
+      "default": "DERIVED_DETERMINISTICALLY",
+      "title": "Evidence Kind",
+      "type": "string"
+    },
+    "execution_identity": {
+      "additionalProperties": true,
+      "title": "Execution Identity",
+      "type": "object"
+    },
+    "human_decision_digest": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Human Decision Digest"
+    },
+    "model_provenance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ModelDecisionProvenance"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "output_count": {
+      "default": 0,
+      "title": "Output Count",
+      "type": "integer"
+    },
+    "proposal_digest": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Proposal Digest"
+    },
+    "reasons": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Reasons",
+      "type": "array"
+    },
+    "recipe": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/HarmonizationRecipe"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "status": {
+      "enum": [
+        "PROPOSED",
+        "VALIDATED",
+        "NEEDS_EVIDENCE",
+        "NEEDS_HUMAN_REVIEW",
+        "APPROVED",
+        "REJECTED",
+        "UNSUPPORTED_OPERATION",
+        "INVALID_PARAMETERS",
+        "PRECONDITION_FAILED",
+        "READY_TO_EXECUTE",
+        "EXECUTED",
+        "EXECUTION_FAILED",
+        "INVALID_MODEL_OUTPUT"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "execution_identity"
+  ],
+  "title": "ExecutionResult",
+  "type": "object"
+}

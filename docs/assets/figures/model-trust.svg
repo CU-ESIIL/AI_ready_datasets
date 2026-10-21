@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1243" role="img" aria-labelledby="title desc">
+<title id="title">Model decisions, deterministic scientific execution</title><desc id="desc">Probabilistic interpretation and proposals cross a validation trust boundary. Models never author executable scientific computation.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
+<rect width="960" height="1243" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Model decisions, deterministic scientific execution</text>
+<path d="M310 117 L340 117" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M620 117 L650 117" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L480 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 524 L170 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M310 617 L340 617" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M620 617 L650 617" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 649 L480 710" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 774 L480 835" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 899 L480 960" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 1024 L480 1085" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="30" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Humans + development review</tspan></text>
+<rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Tested operation library</tspan></text>
+<rect x="650" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Closed JSON capabilities</tspan></text>
+<rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="238" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">VERDE: interpret / select /</tspan><tspan x="480" dy="20">propose</tspan></text>
+<rect x="340" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Untrusted structured JSON</tspan></text>
+<rect x="340" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">TRUST BOUNDARY</tspan></text>
+<rect x="30" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Schema validation</tspan></text>
+<rect x="340" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Scientific preconditions</tspan></text>
+<rect x="650" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">QA + human review</tspan></text>
+<rect x="340" y="710" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="748" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Versioned operation registry</tspan></text>
+<rect x="340" y="835" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="873" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Deterministic execution</tspan></text>
+<rect x="340" y="960" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="998" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Output validation</tspan></text>
+<rect x="340" y="1085" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="1123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Result + provenance</tspan></text>
+</svg>

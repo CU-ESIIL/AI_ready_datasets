@@ -108,3 +108,14 @@ pytest -q
 mkdocs build --strict
 python scripts/check_site.py site
 ```
+
+## Model trust tests
+
+`tests/test_operation_registry.py` exercises all ten registered dispatches with
+generated in-memory inputs, output/lineage assertions and invalid parameters. It
+also covers arbitrary code/languages, invented operations/constants, malformed JSON,
+scientifically incompatible parameters, stale source/implementation identity,
+unknown ontology candidates, safe abstention, mandatory human review, no-model
+execution, fixture-model orchestration and timeout behavior without fallback.
+The full suite passes 175 tests at this hardening checkpoint. Historical audit test
+counts remain historical. [Audit](development/model-trust-audit.md).

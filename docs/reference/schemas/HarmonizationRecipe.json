@@ -429,6 +429,21 @@
       "default": null,
       "title": "Core Recipe"
     },
+    "execution_identity": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Execution Identity"
+    },
     "mappings": {
       "items": {
         "$ref": "#/$defs/SemanticMapping"

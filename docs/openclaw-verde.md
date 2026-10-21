@@ -147,3 +147,13 @@ Both are now 8,192 for this tool-free one-shot runtime, above the task's 4,096-t
 output cap. The request byte limit still applies, and oversized contexts fail
 rather than silently removing scientific evidence. Runtime configuration history
 and failed task transcripts remain retained.
+
+## Deterministic backbone and model trust
+
+VERDE interprets, selects, parameterizes, compares and proposes. It does not author
+scientific computation. New model plans select closed, source-bound capabilities;
+metadata coefficients and mathematical operations are resolved by tested code.
+Schema validation, scientific checks, existing vetoes and human decisions remain
+separate gates. Approved recipes execute without a model. See
+[deterministic execution and model trust](architecture/model-trust.md) for the registry, IR contracts,
+examples, provenance and current limits.

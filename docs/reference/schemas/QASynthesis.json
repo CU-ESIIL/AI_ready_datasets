@@ -25,6 +25,21 @@
       "title": "Finding Ids",
       "type": "array"
     },
+    "recommended_checks": {
+      "default": [
+        "schema.recipe",
+        "recipe.scientific_preconditions"
+      ],
+      "items": {
+        "enum": [
+          "schema.recipe",
+          "recipe.scientific_preconditions"
+        ],
+        "type": "string"
+      },
+      "title": "Recommended Checks",
+      "type": "array"
+    },
     "summary": {
       "maxLength": 2000,
       "minLength": 1,

@@ -10,7 +10,7 @@ CONTRACTS={
  'contracts': ['ScientificRequest','SourceResource','DiscoveryResult','SemanticMapping',
   'HarmonizationRecipe','HarmonizedObservation','Representation','ProvenanceRecord','HumanDecision','SemanticEvidence','ConceptCandidate','SourceSemantics'],
  'operations': ['OperationDefinition'],
- 'decision_ir': ['SelectDecision','ParameterizeDecision','SemanticMappingProposal','RecipeDecision','CapabilitySpace','DecisionRecipeDraft','ExecutionResult'],
+ 'decision_ir': ['SelectDecision','ParameterizeDecision','SemanticMappingProposal','RecipeDecision','CapabilitySpace','DecisionRecipeDraft','ExecutionResult','ModelDecisionProvenance'],
  'review_contracts': ['Evidence','ReviewFinding','SpecialistReview','ReviewReport','RunManifest'],
  'semantic_resources': ['SemanticResource','ResourceAssessment','ConceptRecord','NamespaceBinding'],
  'semantic_benchmark': ['BenchmarkConfig'],

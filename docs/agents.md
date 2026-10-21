@@ -62,3 +62,29 @@ existing finding IDs rather than inventing specialist claims.
 Agents reason and propose. Deterministic software executes approved recipes.
 [Evidence distinctions](semantics/glossary.md#evidence) and the
 [human workflow](semantics/review-workflow.md) apply throughout.
+
+## Runtime role authority
+
+Bounded model roles read evidence and produce schema-constrained proposals for
+deterministic software to validate. VERDE is not a programmer or arithmetic engine.
+The [trust-boundary guide](architecture/model-trust.md) specifies the executable IR,
+operation library, parameter references, failure states and no-model execution.
+
+| Role | Inputs → allowed output / schema | Operations, evidence and escalation |
+| --- | --- | --- |
+| Discovery | Request + fixed source candidates → `CandidateChoice` | Select supplied IDs and explain relevance; no mapping or source mutation; insufficient evidence can yield empty selection |
+| Semantic | Source definitions + fixed target → `SemanticJudgment`; standalone candidate workflow uses `SemanticMappingProposal` | Compare/rank supplied concepts, never invent IDs/definitions or execute; novel/uncertain meaning needs review |
+| Calibration / units | Authoritative unit/calibration metadata → `SpecialistFinding`, `ReviewVote` or scoped `SpecialistReview` | Compare evidence or recommend `unit.convert` / `calibration.scale_offset`; never calculate factors, ranges or coefficients; missing metadata requires evidence |
+| Support | Native space/time/support evidence → scoped finding or vote | Compare support; only explicitly reviewed registered operations; no invented resampling/upscaling; support changes escalate |
+| Rights | Source-specific legal evidence → scoped finding or vote | Classify documented rights, request evidence/review; never infer permission from calibration or other domains |
+| Integrity | Source/version/hash-scope evidence and deterministic check results → scoped finding | Inspect computed identities; never invent or calculate hashes; incomplete scope needs evidence |
+| Quality | Documented quality predicates and deterministic checks → scoped finding | Distinguish calibration, filtering and fitness; no model-computed statistics or invented bounds |
+| Harmonization | Fixed mappings + `CapabilitySpace` → bounded `RecipeDecision` / `DecisionRecipeDraft` | SELECT or PARAMETERIZE offered options; no executable code, formulas, source IDs or numerical constants; explicit abstention allowed |
+| QA | Frozen recipe + deterministic checks + existing findings → `Critique` / `QASynthesis` | Recommend registered checks, challenge evidence or veto; no new specialist claims, arithmetic, validator changes or execution permission |
+
+All roles have no tools, shell, SQL, code-writing or data-write permissions. Mandatory
+scientific checks cannot be disabled by a model. Scoped role schemas enforce evidence
+IDs, jurisdiction, source pointers and frozen recipe identity. Exact schemas are
+[generated from code](reference/contracts.md); deployed capability schemas additionally
+constrain operation/option IDs. Unknown scientific meaning, insufficient evidence,
+conflicting support, uncertain rights and consequential assumptions escalate.

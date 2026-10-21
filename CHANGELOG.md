@@ -117,3 +117,19 @@
   fallback; collapsed detailed evidence without removing it.
 - Synchronized governance, glossary, status, module boundaries and semantic decisions;
   retained all existing runtime architecture and blocked real Sentinel review history.
+
+### VERDE model trust and deterministic backbone
+
+- Added a closed, versioned registry for the ten existing scientific operations and
+  two implemented validation checks; shared scalar/raster unit constants.
+- Added SELECT, PARAMETERIZE and semantic PROPOSE contracts, source-bound capability
+  manifests, declarative model decision IR, semantic validation and safe outcome states.
+- Replaced runtime model-authored operation bodies/calibration coefficients with
+  offered capability selections and deterministic metadata parameter resolution.
+- Preserved deterministic consensus, mandatory model/human gates, source semantics,
+  bounded streaming and MOSAIKS boundaries; recorded backbone identities in new
+  recipes/provenance/lineage/cache entries without rewriting historical artifacts.
+- Added no-model fixture execution, fixture model, CLI capability/validation/demo
+  commands, adversarial tests and independent coverage for all registered operations.
+- Documented the trust boundary, role contracts, examples, scientific limits, status
+  and ADRs; verified installed isolated OpenClaw 2026.5.18 without live inference.
