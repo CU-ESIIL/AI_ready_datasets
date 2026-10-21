@@ -1,0 +1,565 @@
+{
+  "$defs": {
+    "ConceptCandidate": {
+      "additionalProperties": false,
+      "description": "Retrieval candidate only. No equivalence, mapping status or approval field.",
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "definition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Definition"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/SemanticEvidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "identifier": {
+          "minLength": 1,
+          "title": "Identifier",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "match_basis": {
+          "enum": [
+            "source_annotation",
+            "normalized_identifier",
+            "exact_vocabulary_match",
+            "lexical",
+            "model_inferred"
+          ],
+          "title": "Match Basis",
+          "type": "string"
+        },
+        "ontology": {
+          "minLength": 1,
+          "title": "Ontology",
+          "type": "string"
+        }
+      },
+      "required": [
+        "identifier",
+        "label",
+        "ontology",
+        "match_basis",
+        "evidence"
+      ],
+      "title": "ConceptCandidate",
+      "type": "object"
+    },
+    "EvidenceKind": {
+      "enum": [
+        "SOURCE_DOCUMENTED",
+        "OBSERVED_IN_DATA",
+        "DERIVED_DETERMINISTICALLY",
+        "MODEL_JUDGMENT",
+        "HUMAN_DECISION",
+        "MISSING_EVIDENCE"
+      ],
+      "title": "EvidenceKind",
+      "type": "string"
+    },
+    "SemanticEvidence": {
+      "additionalProperties": false,
+      "description": "What a source declares, or an explicitly classified interpretation; never a mapping.",
+      "properties": {
+        "band": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Band"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "context_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Context Hint"
+        },
+        "entity_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Entity Hint"
+        },
+        "evidence_location": {
+          "minLength": 1,
+          "title": "Evidence Location",
+          "type": "string"
+        },
+        "evidence_type": {
+          "$ref": "#/$defs/EvidenceKind"
+        },
+        "matrix_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Matrix Hint"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        },
+        "native_crs": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Native Crs"
+        },
+        "nodata": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nodata"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "platform": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Platform"
+        },
+        "processing_baseline": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Processing Baseline"
+        },
+        "processing_level": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Processing Level"
+        },
+        "property_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Property Hint"
+        },
+        "protocol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Protocol"
+        },
+        "quantity_kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantity Kind"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "sensor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sensor"
+        },
+        "source_concept_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Concept Id"
+        },
+        "source_concept_uri": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Concept Uri"
+        },
+        "source_definition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Definition"
+        },
+        "source_documentation": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Documentation",
+          "type": "array"
+        },
+        "source_field": {
+          "minLength": 1,
+          "title": "Source Field",
+          "type": "string"
+        },
+        "source_label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Label"
+        },
+        "source_vocabulary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Vocabulary"
+        },
+        "spatial_resolution": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spatial Resolution"
+        },
+        "spatial_resolution_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spatial Resolution Unit"
+        },
+        "spatial_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spatial Support"
+        },
+        "standard_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Standard Name"
+        },
+        "standard_name_scheme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Standard Name Scheme"
+        },
+        "taxon_identifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Taxon Identifier"
+        },
+        "taxon_scheme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Taxon Scheme"
+        },
+        "temporal_resolution": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temporal Resolution"
+        },
+        "temporal_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temporal Support"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "unit_scheme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Scheme"
+        }
+      },
+      "required": [
+        "source_field",
+        "evidence_type",
+        "evidence_location"
+      ],
+      "title": "SemanticEvidence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "candidates": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/ConceptCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "evidence": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/SemanticEvidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "extractor": {
+      "minLength": 1,
+      "title": "Extractor",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_metadata_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Source Metadata Digest",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extractor",
+    "source_metadata_digest"
+  ],
+  "title": "SourceSemantics",
+  "type": "object"
+}

@@ -1,0 +1,132 @@
+{
+  "$defs": {
+    "AssessmentContent": {
+      "additionalProperties": false,
+      "properties": {
+        "core_candidate": {
+          "title": "Core Candidate",
+          "type": "boolean"
+        },
+        "coverage": {
+          "additionalProperties": {
+            "enum": [
+              "strong",
+              "partial",
+              "indirect",
+              "not_target",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Coverage",
+          "type": "object"
+        },
+        "domain_candidate": {
+          "title": "Domain Candidate",
+          "type": "boolean"
+        },
+        "era": {
+          "title": "Era",
+          "type": "string"
+        },
+        "historical_precedent": {
+          "title": "Historical Precedent",
+          "type": "boolean"
+        },
+        "historical_role": {
+          "title": "Historical Role",
+          "type": "string"
+        },
+        "interoperability_only": {
+          "title": "Interoperability Only",
+          "type": "boolean"
+        },
+        "limitations": {
+          "title": "Limitations",
+          "type": "string"
+        },
+        "overlaps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Overlaps",
+          "type": "array"
+        },
+        "project_role": {
+          "title": "Project Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "coverage",
+        "project_role",
+        "core_candidate",
+        "domain_candidate",
+        "interoperability_only",
+        "historical_precedent",
+        "era",
+        "historical_role",
+        "limitations",
+        "overlaps"
+      ],
+      "title": "AssessmentContent",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "assessment": {
+      "$ref": "#/$defs/AssessmentContent"
+    },
+    "assessment_id": {
+      "title": "Assessment Id",
+      "type": "string"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "date": {
+      "title": "Date",
+      "type": "string"
+    },
+    "evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "expert_reviewed": {
+      "default": false,
+      "title": "Expert Reviewed",
+      "type": "boolean"
+    },
+    "notes": {
+      "title": "Notes",
+      "type": "string"
+    },
+    "resource_id": {
+      "title": "Resource Id",
+      "type": "string"
+    },
+    "reviewer": {
+      "title": "Reviewer",
+      "type": "string"
+    }
+  },
+  "required": [
+    "assessment_id",
+    "resource_id",
+    "assessment",
+    "reviewer",
+    "date",
+    "evidence",
+    "confidence",
+    "notes"
+  ],
+  "title": "ResourceAssessment",
+  "type": "object"
+}

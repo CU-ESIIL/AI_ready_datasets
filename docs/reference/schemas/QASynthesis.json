@@ -1,0 +1,42 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decision": {
+      "enum": [
+        "accept",
+        "revise",
+        "reject",
+        "needs_evidence"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "execution_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Execution Authorized",
+      "type": "boolean"
+    },
+    "finding_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Finding Ids",
+      "type": "array"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    }
+  },
+  "required": [
+    "finding_ids",
+    "decision",
+    "summary"
+  ],
+  "title": "QASynthesis",
+  "type": "object"
+}

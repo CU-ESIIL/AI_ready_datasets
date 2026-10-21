@@ -1,6 +1,6 @@
 """Metadata control plane and bounded streaming data plane contracts."""
 from typing import Literal
-from pydantic import Field, model_validator
+from pydantic import Field, model_validator, model_serializer
 from .contracts import Contract, SourceResource, Variable, RawObservation, digest
 
 SPECIALISTS = ('semantic', 'units', 'support', 'rights')
@@ -23,15 +23,31 @@ class StreamBinding(Contract):
 
 
 class EncoderSpec(Contract):
-    method: Literal['scalar', 'squared'] = 'scalar'
+    method: Literal['scalar', 'squared', 'mosaiks'] = 'scalar'
     encoder: str = 'identity-scalar'
     version: str = '1'
     dimensionality: int = 1
     preprocessing: str = 'none; input quantity and units are defined by the recipe'
-    purpose: Literal['Reference numeric features; not a learned or universal embedding'] = 'Reference numeric features; not a learned or universal embedding'
+    purpose: str = 'Reference numeric features; not a learned or universal embedding'
+    configuration_json: str | None = None
+
+    @model_serializer(mode='wrap')
+    def serialize(self,handler):
+        data=handler(self)
+        if self.configuration_json is None:data.pop('configuration_json',None)
+        return data
 
     @model_validator(mode='after')
     def valid(self):
+        if self.method=='mosaiks':
+            from .mosaiks import MOSAIKSSpec
+            from .mosaiks_pipeline import encoder_contract
+            spec=MOSAIKSSpec.model_validate_json(self.configuration_json or '{}')
+            if (self.encoder,self.version,self.dimensionality,self.preprocessing,self.purpose)!=encoder_contract(spec):
+                raise ValueError('MOSAIKS encoder contract mismatch')
+            return self
+        if self.configuration_json is not None or self.purpose!='Reference numeric features; not a learned or universal embedding':
+            raise ValueError('reference encoder metadata mismatch')
         expected = ('identity-scalar',1) if self.method=='scalar' else ('scalar-and-square',2)
         preprocessing = 'none; input quantity and units are defined by the recipe' if self.method=='scalar' else 'append square; no scaling'
         if (self.encoder,self.dimensionality)!=expected or self.version!='1' or self.preprocessing!=preprocessing:
@@ -42,16 +58,29 @@ class EncoderSpec(Contract):
 class StreamPlan(Contract):
     version: str = '1'
     question: str = Field(min_length=1)
-    reader: Literal['sentinel-pixel','test-generator']
+    reader: Literal['sentinel-pixel','sentinel-raster','test-generator']
     bindings: tuple[StreamBinding,...] = Field(min_length=1,max_length=16)
     encoder: EncoderSpec = EncoderSpec()
     batch_size: int = Field(default=32,ge=1,le=1024)
     persist_raw_data: Literal[False] = False
     persist_harmonized_data: Literal[False] = False
+    raster_layout_json: str | None = None
+
+    @model_serializer(mode='wrap')
+    def serialize(self,handler):
+        data=handler(self)
+        if self.raster_layout_json is None:data.pop('raster_layout_json',None)
+        return data
+
     access_policy: str = 'bounded window/range reads; no full-asset download or disk data cache'
 
     @model_validator(mode='after')
     def valid(self):
+        if self.reader=='sentinel-raster':
+            from .mosaiks_pipeline import RasterLayout
+            RasterLayout.model_validate_json(self.raster_layout_json or '{}')
+            if self.encoder.method!='mosaiks':raise ValueError('reviewed raster plan requires MOSAIKS specification')
+        elif self.raster_layout_json is not None:raise ValueError('raster layout requires raster reader')
         ids=[b.binding_id for b in self.bindings]
         pairs=[(b.source.asset_id,b.source_variable) for b in self.bindings]
         if len(set(ids))!=len(ids) or len(set(pairs))!=len(pairs):

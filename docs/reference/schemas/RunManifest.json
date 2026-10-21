@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "artifacts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifacts",
+      "type": "array"
+    },
+    "code_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Code Digest",
+      "type": "string"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "boolean"
+    },
+    "input_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Input Digest",
+      "type": "string"
+    },
+    "notes": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_data_read": {
+      "title": "Source Data Read",
+      "type": "boolean"
+    },
+    "stage": {
+      "enum": [
+        "discovery",
+        "harmonization",
+        "representation",
+        "review"
+      ],
+      "title": "Stage",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "failed",
+        "blocked"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "stage",
+    "status",
+    "code_digest",
+    "input_digest",
+    "artifacts",
+    "fixture",
+    "source_data_read"
+  ],
+  "title": "RunManifest",
+  "type": "object"
+}

@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "Variable": {
+      "additionalProperties": false,
+      "properties": {
+        "biological_entity": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Biological Entity"
+        },
+        "definition": {
+          "minLength": 1,
+          "title": "Definition",
+          "type": "string"
+        },
+        "measurement_method": {
+          "minLength": 1,
+          "title": "Measurement Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "ontology_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ontology Id"
+        },
+        "unit": {
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "definition",
+        "unit",
+        "measurement_method"
+      ],
+      "title": "Variable",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "disagreement": {
+      "default": false,
+      "title": "Disagreement",
+      "type": "boolean"
+    },
+    "evidence": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "novel": {
+      "default": false,
+      "title": "Novel",
+      "type": "boolean"
+    },
+    "relationship": {
+      "enum": [
+        "equivalent_to",
+        "convertible_to",
+        "broader_than",
+        "narrower_than",
+        "derived_from",
+        "measures",
+        "associated_with",
+        "not_comparable",
+        "unknown",
+        "requires_human_review"
+      ],
+      "title": "Relationship",
+      "type": "string"
+    },
+    "review_status": {
+      "default": "proposed",
+      "enum": [
+        "proposed",
+        "needs_review",
+        "approved",
+        "rejected"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    },
+    "source_asset": {
+      "title": "Source Asset",
+      "type": "string"
+    },
+    "source_variable": {
+      "title": "Source Variable",
+      "type": "string"
+    },
+    "target": {
+      "$ref": "#/$defs/Variable"
+    }
+  },
+  "required": [
+    "source_asset",
+    "source_variable",
+    "target",
+    "relationship",
+    "evidence",
+    "confidence"
+  ],
+  "title": "SemanticMapping",
+  "type": "object"
+}

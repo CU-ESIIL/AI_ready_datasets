@@ -6,30 +6,73 @@ repo_url: "https://github.com/CU-ESIIL/AI_ready_datasets"
 edit_uri: "edit/main/docs/"
 nav:
   - Home: index.md
-  - Concepts: concepts.md
-  - Architecture: architecture.md
-  - Discovery: discovery.md
-  - Data Sources: data-sources.md
-  - Harmonization: harmonization.md
-  - Representations: representations.md
-  - Science Tracks: tracks.md
-  - Agents: agents.md
-  - Example: examples.md
-  - Real data and agents: real-data-agents.md
-  - OpenClaw and Verde: openclaw-verde.md
-  - Streaming harmonization: streaming-harmonization.md
-  - Provenance and Governance: provenance.md
-  - Testing: testing.md
-  - Development:
-      - Prototype status: PROTOTYPE_STATUS.md
-      - Integration inspection: development/integrations.md
-      - Decisions and history: development/decisions.md
+  - Approach: approach.md
+  - Data: data.md
+  - Science: science.md
+  - Impact: impact.md
+  - Documentation:
+      - Start here: documentation/index.md
+      - Foundations:
+          - Concepts: concepts.md
+          - Architecture: architecture.md
+          - Current-state audit: architecture/current-state.md
+          - Current status: PROTOTYPE_STATUS.md
+      - Semantics:
+          - Overview: semantics/index.md
+          - Why semantics matter: semantics/why-semantics.md
+          - Ontology landscape: semantics/landscape.md
+          - Glossary: semantics/glossary.md
+          - Key distinctions: semantics/distinctions.md
+          - Biological organization: semantics/biological-organization.md
+          - Observation and measurement: semantics/observation.md
+          - Scale and support: semantics/scale-support.md
+          - Resource comparison: semantics/comparison.md
+          - Historical evolution: semantics/history.md
+          - Semantic gaps: semantics/gaps.md
+          - Proposed semantic profile: semantics/profile.md
+          - Pipeline integration: semantics/pipeline.md
+          - Human review workflow: semantics/review-workflow.md
+          - Review template: semantics/review-template.md
+          - Benchmark diagnostics: semantics/benchmark.md
+      - Discovery and access:
+          - Discovery module: discovery.md
+          - Sources and rights: data-sources.md
+          - Real integrations: real-data-agents.md
+      - Harmonization and review:
+          - Deterministic harmonization: harmonization.md
+          - Evidence-bound review: review/index.md
+          - Agent roles: agents.md
+          - Sentinel review case: development/sentinel-review-refactor.md
+      - Representation:
+          - Reference encoders: representations.md
+          - MOSAIKS embeddings: mosaiks-embeddings.md
+      - Build and operate:
+          - Offline example: examples.md
+          - Streaming: streaming-harmonization.md
+          - OpenClaw and Verde: openclaw-verde.md
+          - Tests and builds: testing.md
+      - Science and governance:
+          - Science tracks: tracks.md
+          - Provenance: provenance.md
+      - Reference:
+          - Contract schemas: reference/contracts.md
+          - Module map: reference/modules.md
+          - Extension guide: reference/extending.md
+          - Image credits: image-credits.md
+      - Development:
+          - Integration inspection: development/integrations.md
+          - Semantic discovery audit: development/semantic-discovery-audit.md
+          - Website audit and review: development/website-review.md
+          - Decisions and history: development/decisions.md
+  - GitHub: https://github.com/CU-ESIIL/AI_ready_datasets
 theme:
   name: material
   logo: assets/esiil_content/esiil_oasis_logo.png
   favicon: assets/esiil_content/favicon.ico
   custom_dir: docs/overrides
+  font: false
   features:
+    - navigation.tabs
     - navigation.sections
     - navigation.top
     - toc.integrate
@@ -45,3 +88,5 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
+exclude_docs: |
+  /overrides/

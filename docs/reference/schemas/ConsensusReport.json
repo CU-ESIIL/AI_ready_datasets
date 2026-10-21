@@ -1,0 +1,131 @@
+{
+  "$defs": {
+    "ReviewVote": {
+      "additionalProperties": false,
+      "properties": {
+        "concerns": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 8,
+          "title": "Concerns",
+          "type": "array"
+        },
+        "decision": {
+          "enum": [
+            "agree",
+            "revise",
+            "reject",
+            "abstain"
+          ],
+          "title": "Decision",
+          "type": "string"
+        },
+        "evidence_refs": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "title": "Evidence Refs",
+          "type": "array"
+        },
+        "rationale": {
+          "maxLength": 2500,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "responds_to": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 24,
+          "minItems": 1,
+          "title": "Responds To",
+          "type": "array"
+        }
+      },
+      "required": [
+        "decision",
+        "rationale",
+        "concerns",
+        "responds_to",
+        "evidence_refs"
+      ],
+      "title": "ReviewVote",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "data_read_during_planning": {
+      "const": false,
+      "default": false,
+      "title": "Data Read During Planning",
+      "type": "boolean"
+    },
+    "human_review_required": {
+      "const": true,
+      "default": true,
+      "title": "Human Review Required",
+      "type": "boolean"
+    },
+    "plan_digest": {
+      "title": "Plan Digest",
+      "type": "string"
+    },
+    "recipe_content_digest": {
+      "title": "Recipe Content Digest",
+      "type": "string"
+    },
+    "rounds": {
+      "title": "Rounds",
+      "type": "integer"
+    },
+    "status": {
+      "enum": [
+        "consensus",
+        "needs_revision",
+        "rejected",
+        "abstained"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved",
+      "type": "array"
+    },
+    "votes": {
+      "items": {
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "#/$defs/ReviewVote"
+          }
+        ],
+        "type": "array"
+      },
+      "title": "Votes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "plan_digest",
+    "recipe_content_digest",
+    "rounds",
+    "votes",
+    "unresolved"
+  ],
+  "title": "ConsensusReport",
+  "type": "object"
+}

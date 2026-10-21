@@ -1,0 +1,309 @@
+{
+  "notes": [
+    "The digest covers only this normalized factual subset.",
+    "Other inventory rows cite primary documentation or explicitly unverified review leads.",
+    "Resource status is registry-scoped; term resolution and graph quality were not tested."
+  ],
+  "original_registry_metadata_bytes_observed": 611419,
+  "resolved_source": "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.jsonld",
+  "retrieved_date": "2026-10-21",
+  "schema_version": "1",
+  "scope": "Normalized subset of inspected registry metadata facts; not ontology content or original response bytes",
+  "selected_facts": {
+    "agro": {
+      "activity_status": "active",
+      "contact_label": "Marie-Ang\u00e9lique Laporte",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/agro.owl",
+      "registry_dependencies": [
+        "bfo",
+        "envo",
+        "foodon",
+        "go",
+        "iao",
+        "ncbitaxon",
+        "obi",
+        "pato",
+        "peco",
+        "po",
+        "ro",
+        "to",
+        "uo",
+        "xco"
+      ]
+    },
+    "bco": {
+      "activity_status": "active",
+      "contact_label": "Ramona Walls",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/bco.owl",
+      "registry_dependencies": []
+    },
+    "bfo": {
+      "activity_status": "active",
+      "contact_label": "Barry Smith",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl",
+      "registry_dependencies": []
+    },
+    "bspo": {
+      "activity_status": "active",
+      "contact_label": "Chris Mungall",
+      "license": "CC BY 3.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/bspo.owl",
+      "registry_dependencies": []
+    },
+    "caro": {
+      "activity_status": "inactive",
+      "contact_label": "Melissa Haendel",
+      "license": "CC BY 4.0",
+      "ontology_purl": null,
+      "registry_dependencies": []
+    },
+    "chebi": {
+      "activity_status": "active",
+      "contact_label": "Adnan Malik",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl",
+      "registry_dependencies": []
+    },
+    "cl": {
+      "activity_status": "active",
+      "contact_label": "David Osumi-Sutherland",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/cl.owl",
+      "registry_dependencies": [
+        "go",
+        "ncbitaxon",
+        "omo",
+        "pato",
+        "pr",
+        "ro",
+        "uberon"
+      ]
+    },
+    "cmo": {
+      "activity_status": "active",
+      "contact_label": "Jennifer Smith",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/cmo.owl",
+      "registry_dependencies": []
+    },
+    "envo": {
+      "activity_status": "active",
+      "contact_label": "Pier Luigi Buttigieg",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
+      "registry_dependencies": [
+        "chebi",
+        "foodon",
+        "go",
+        "ncbitaxon",
+        "pco",
+        "po",
+        "ro",
+        "uberon"
+      ]
+    },
+    "flopo": {
+      "activity_status": "active",
+      "contact_label": "Robert Hoehndorf",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/flopo.owl",
+      "registry_dependencies": []
+    },
+    "foodon": {
+      "activity_status": "active",
+      "contact_label": "Damion Dooley",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl",
+      "registry_dependencies": [
+        "bfo",
+        "chebi",
+        "envo",
+        "eo",
+        "ncbitaxon",
+        "obi",
+        "ro",
+        "uberon"
+      ]
+    },
+    "go": {
+      "activity_status": "active",
+      "contact_label": "Suzi Aleksander",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
+      "registry_dependencies": [
+        "cl",
+        "go/extensions/go-bridge-to-nifstd.owl",
+        "ncbitaxon",
+        "ro",
+        "uberon"
+      ]
+    },
+    "iao": {
+      "activity_status": "active",
+      "contact_label": "Jie Zheng",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/iao.owl",
+      "registry_dependencies": []
+    },
+    "micro": {
+      "activity_status": "inactive",
+      "contact_label": "Carrine Blank",
+      "license": "CC BY 2.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/micro.owl",
+      "registry_dependencies": []
+    },
+    "nbo": {
+      "activity_status": "active",
+      "contact_label": "George Gkoutos",
+      "license": "CC BY 3.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/nbo.owl",
+      "registry_dependencies": []
+    },
+    "ncbitaxon": {
+      "activity_status": "active",
+      "contact_label": "Frederic Bastian",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "registry_dependencies": []
+    },
+    "oba": {
+      "activity_status": "active",
+      "contact_label": "Chris Mungall",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/oba.owl",
+      "registry_dependencies": []
+    },
+    "obi": {
+      "activity_status": "active",
+      "contact_label": "Bjoern Peters",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
+      "registry_dependencies": []
+    },
+    "ohmi": {
+      "activity_status": "active",
+      "contact_label": "Yongqun Oliver He",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/ohmi.owl",
+      "registry_dependencies": []
+    },
+    "omp": {
+      "activity_status": "active",
+      "contact_label": "James C. Hu",
+      "license": "CC BY 3.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/omp.owl",
+      "registry_dependencies": []
+    },
+    "pato": {
+      "activity_status": "active",
+      "contact_label": "George Gkoutos",
+      "license": "CC BY 3.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
+      "registry_dependencies": []
+    },
+    "pco": {
+      "activity_status": "active",
+      "contact_label": "Ramona Walls",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/pco.owl",
+      "registry_dependencies": [
+        "bfo",
+        "caro",
+        "envo",
+        "go",
+        "iao",
+        "ncbitaxon",
+        "pato",
+        "ro"
+      ]
+    },
+    "peco": {
+      "activity_status": "active",
+      "contact_label": "Pankaj Jaiswal",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/peco.owl",
+      "registry_dependencies": []
+    },
+    "po": {
+      "activity_status": "active",
+      "contact_label": "Pankaj Jaiswal",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
+      "registry_dependencies": []
+    },
+    "pr": {
+      "activity_status": "active",
+      "contact_label": "Darren Natale",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
+      "registry_dependencies": []
+    },
+    "ro": {
+      "activity_status": "active",
+      "contact_label": "Chris Mungall",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/ro.owl",
+      "registry_dependencies": []
+    },
+    "so": {
+      "activity_status": "active",
+      "contact_label": "Karen Eilbeck",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/so.owl",
+      "registry_dependencies": []
+    },
+    "taxrank": {
+      "activity_status": "active",
+      "contact_label": "Jim Balhoff",
+      "license": "CC0 1.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/taxrank.owl",
+      "registry_dependencies": []
+    },
+    "to": {
+      "activity_status": "active",
+      "contact_label": "Pankaj Jaiswal",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/to.owl",
+      "registry_dependencies": []
+    },
+    "uberon": {
+      "activity_status": "active",
+      "contact_label": "Chris Mungall",
+      "license": "CC BY 3.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/uberon.owl",
+      "registry_dependencies": [
+        "bfo",
+        "bspo",
+        "chebi",
+        "cl",
+        "envo",
+        "go",
+        "nbo",
+        "ncbitaxon",
+        "omo",
+        "pato",
+        "pr",
+        "ro"
+      ]
+    },
+    "uo": {
+      "activity_status": "active",
+      "contact_label": "George Gkoutos",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/uo.owl",
+      "registry_dependencies": []
+    },
+    "vt": {
+      "activity_status": "active",
+      "contact_label": "Carissa Park",
+      "license": "CC BY 4.0",
+      "ontology_purl": "http://purl.obolibrary.org/obo/vt.owl",
+      "registry_dependencies": []
+    }
+  },
+  "selected_facts_digest": "651dd4b4118463dc0b6530ebfbfcf9577c70199a5f66b27fbe1079e565331382",
+  "source": "https://purl.obolibrary.org/meta/ontologies.jsonld"
+}

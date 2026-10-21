@@ -1,0 +1,27 @@
+[
+  {
+    "identifier": "urn:example:semantic:air-temperature",
+    "label": "air temperature",
+    "ontology": "example-vocabulary",
+    "definition": "Synthetic concept for testing candidate retrieval only.",
+    "domain": "environment",
+    "source_uri": "urn:example:semantic:vocabulary",
+    "relationships": [
+      [
+        "broader",
+        "urn:example:semantic:temperature"
+      ]
+    ],
+    "fixture": true
+  },
+  {
+    "identifier": "urn:example:semantic:temperature",
+    "label": "temperature",
+    "ontology": "example-vocabulary",
+    "definition": "Synthetic broader label; no physical conversion or equivalence asserted.",
+    "domain": "environment",
+    "source_uri": "urn:example:semantic:vocabulary",
+    "relationships": [],
+    "fixture": true
+  }
+]

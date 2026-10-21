@@ -9,7 +9,8 @@ def relevant(request: ScientificRequest, resource: SourceResource) -> bool:
     return spatial and temporal and resource.modality in request.modalities and bool(set(request.variables) & {v.name for v in resource.variables})
 
 
-def run(request: ScientificRequest, client) -> DiscoveryResult:
+def run(request: ScientificRequest, client, *, semantic_registry=None) -> DiscoveryResult:
+    from .semantic_discovery import enrich
     resources = client.search(request)
     unique = {}
     for r in resources:
@@ -20,5 +21,5 @@ def run(request: ScientificRequest, client) -> DiscoveryResult:
             raise ValueError("conflicting duplicate source metadata")
         if relevant(request, r):
             unique[key] = r
-    candidates = tuple(DiscoveryCandidate(resource=r, rationale="Metadata intersects requested location/time and declares requested variable/modality; scientific comparability remains unapproved.") for _, r in sorted(unique.items()))
+    candidates = tuple(DiscoveryCandidate(resource=enrich(r, semantic_registry), rationale="Metadata intersects requested location/time and declares requested variable/modality; scientific comparability remains unapproved.") for _, r in sorted(unique.items()))
     return DiscoveryResult(request=request, candidates=candidates, warnings=() if candidates else ("No matching resources",))

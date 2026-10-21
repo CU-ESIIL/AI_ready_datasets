@@ -1,0 +1,110 @@
+{
+  "$defs": {
+    "Support": {
+      "additionalProperties": false,
+      "properties": {
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "crs": {
+          "default": "EPSG:4326",
+          "title": "Crs",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "title": "End",
+          "type": "string"
+        },
+        "spatial": {
+          "minLength": 1,
+          "title": "Spatial",
+          "type": "string"
+        },
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "temporal": {
+          "minLength": 1,
+          "title": "Temporal",
+          "type": "string"
+        }
+      },
+      "required": [
+        "bbox",
+        "start",
+        "end",
+        "spatial",
+        "temporal"
+      ],
+      "title": "Support",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "modalities": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Modalities",
+      "type": "array"
+    },
+    "question": {
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "support": {
+      "$ref": "#/$defs/Support"
+    },
+    "track": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Track"
+    },
+    "variables": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Variables",
+      "type": "array"
+    }
+  },
+  "required": [
+    "question",
+    "support",
+    "modalities",
+    "variables"
+  ],
+  "title": "ScientificRequest",
+  "type": "object"
+}

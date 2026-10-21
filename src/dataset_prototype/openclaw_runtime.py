@@ -43,7 +43,7 @@ def runtime_config(base_url,model):
         "models":{"mode":"replace","providers":{"verde":{"baseUrl":base_url,"apiKey":"${VERDE_LLM_API_KEY}","api":"openai-completions",
             "models":[{"id":model,"name":model,"reasoning":False,"input":["text"],"contextWindow":32768,"maxTokens":4096,"compat":{"supportsTools":False}}]}}},
         "agents":{"defaults":{"model":{"primary":route,"fallbacks":[]},"workspace":"/prototype/workspace","skipBootstrap":True,"heartbeat":{"every":"0m"},"compaction":{"reserveTokens":8192,"reserveTokensFloor":8192}},
-            "list":[{"id":f"prototype-{role}","name":role,"model":route} for role in ["discovery","semantic","units","support","rights","harmonization","qa"]]},
+            "list":[{"id":f"prototype-{role}","name":role,"model":route} for role in ["discovery","semantic","units","support","rights","integrity","quality","harmonization","qa"]]},
         "tools":{"allow":["llm-task"]},
         "plugins":{"allow":["llm-task"],"entries":{"llm-task":{"enabled":True,"config":{"defaultProvider":"verde","defaultModel":route,
             "allowedModels":[route],"maxTokens":4096,"timeoutMs":120000}}}},

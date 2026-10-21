@@ -1,47 +1,60 @@
-/* Central extension point for lightweight, reusable visual tweaks. */
-
+/* Editorial research layer over Material; no runtime JavaScript or external fonts. */
 :root {
-  --oasis-accent: #135d7f;
+  --md-primary-fg-color: #173f35;
+  --md-primary-fg-color--light: #356555;
+  --md-primary-fg-color--dark: #102e27;
+  --md-accent-fg-color: #8a481d;
+  --md-default-bg-color: #fafaf6;
+  --md-default-fg-color: #253c34;
 }
+.md-header { box-shadow: none; }
+.md-tabs { border-bottom: 1px solid #527367; }
+.md-grid { max-width: 1280px; }
+.md-typeset { font-size: .86rem; line-height: 1.75; }
+.md-typeset h1, .md-typeset h2 { font-family: Georgia, 'Times New Roman', serif; color: #193e34; font-weight: 400; letter-spacing: -.025em; }
+.md-typeset h1 { font-size: 2.8em; line-height: 1.12; margin-bottom: 1.1rem; }
+.md-typeset h2 { font-size: 2em; line-height: 1.22; margin-top: 2.8rem; }
+.md-typeset h3 { margin-top: 1.8rem; }
+.md-content__inner { padding-bottom: 3rem; }
+.md-typeset p, .md-typeset li { max-width: 80ch; }
+.md-typeset a { text-underline-offset: .2em; }
+.md-typeset a:hover { text-decoration: underline; }
+.md-typeset a:focus-visible, .md-header a:focus-visible, .md-tabs a:focus-visible { outline: 3px solid #b66d22; outline-offset: 4px; }
+.md-typeset .md-button { border-radius: 2px; padding: .65em 1.1em; font-size: .9em; }
+.research-hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center; padding: 2.1rem 0 3rem; border-bottom: 1px solid #bccabd; }
+.research-hero h1 { font-size: clamp(2.25rem, 4.7vw, 3.6rem); }
+.research-hero p { font-size: 1.03rem; line-height: 1.65; }
+.md-typeset .eyebrow { font-family: sans-serif; font-size: .67rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #54705d; margin: 1.6rem 0 1rem; }
+.md-typeset .hero-earth { margin: 0; }
+.hero-earth img { display: block; width: 100%; height: auto; border-radius: 50%; background: #000; }
+.md-typeset figure figcaption { margin: .8rem auto 0; font-size: .64rem; line-height: 1.5; color: #54675b; font-style: normal; }
+.text-link { margin-left: 1rem; font-size: .8rem; }
+.editorial-band { background: #eaf0e6; border-left: 3px solid #64836b; padding: .4rem 2rem 1.5rem; margin: 3rem 0; }
+.editorial-band h2 { margin-top: .6rem; }
+.md-typeset img[src$=".svg"] { width: 100%; height: auto; margin-top: .8rem; }
+.md-typeset table:not([class]) { font-size: .75rem; }
+.md-typeset pre { max-width: 100%; }
+@media (max-width: 760px) {
+  .research-hero { grid-template-columns: 1fr; gap: 1.3rem; padding-top: .7rem; }
+  .hero-earth { max-width: 340px; justify-self: center; }
+  .research-hero h1 { font-size: 2.6rem; }
+  .md-typeset h1 { font-size: 2.25em; }
+  .md-typeset h2 { font-size: 1.75em; }
+  .text-link { display: inline-block; margin: .8rem 0 0; }
+  .editorial-band { padding: .3rem 1rem 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+/* Keep existing dark ESIIL artwork legible without recoloring its identity. */
+.md-header .md-logo img { background: #fafaf6; padding: 3px 7px; height: 1.6rem; width: auto; }
+/* Preserve readable diagram labels on narrow screens; scroll the figure locally. */
+.md-typeset p:has(> img[src$=".svg"]) { overflow-x: auto; }
+.md-typeset p > img[src$=".svg"] { min-width: 760px; max-width: none; display: block; }
 
-/* Keep homepage hero content a bit more breathable. */
-.md-content h1 {
-  margin-bottom: 0.5rem;
-}
-
-.md-content > p:first-of-type {
-  font-size: 1.05rem;
-  max-width: 68ch;
-}
-
-/* Subtle polish for Material buttons used across docs. */
-.md-button {
-  border-radius: 999px;
-}
-
-.oasis-hover-button {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.oasis-hover-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0.3rem 0.9rem rgba(19, 93, 127, 0.22);
-}
-
-/* Reusable responsive embed wrapper for iframes and maps. */
-.oasis-embed {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.12);
-}
-
-.oasis-embed iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+/* Wide scientific comparisons scroll locally and retain text-coded ratings. */
+.semantic-matrix { max-width: 100%; overflow-x: auto; }
+.semantic-matrix table { min-width: 1400px; }
+.semantic-matrix th { white-space: nowrap; }
+.semantic-matrix td { text-align: center; }
+.semantic-matrix td:first-child { text-align: left; white-space: nowrap; }

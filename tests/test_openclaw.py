@@ -30,7 +30,7 @@ def test_isolated_config_has_no_fallback_or_model_tools():
     assert provider['apiKey']=='${VERDE_LLM_API_KEY}'
     assert provider['models'][0]['compat']['supportsTools'] is False
     assert cfg['plugins']['entries']['llm-task']['config']['defaultModel']=='verde/js2/gpt-oss-120b'
-    assert len(cfg['agents']['list'])==7
+    assert len(cfg['agents']['list'])==9
 
 
 def test_credentials_read_as_data_never_executed(tmp_path,monkeypatch):

@@ -126,3 +126,51 @@
 - Keep metadata consensus separate from source access. All four specialists and QA must review the same frozen recipe; disagreement blocks streaming. Human review remains mandatory for model proposals.
 - Metadata checksums are not data checksums. Preserve per-window evidence hashes and native support in compact lineage without serializing raw observations.
 - Legacy snapshot/fixture paths remain explicit historical workflows, not the streaming implementation.
+
+## MOSAIKS representations
+
+- MOSAIKS accepts harmonized raster outputs only; keep source reads and calibration upstream. Do not substitute generic encoders or unrelated precomputed MOSAIKS vectors.
+- Fit empirical filters on a bounded training-only reference stream; never use validation/test tiles for filters or normalization.
+- Preserve canonical definitions/units and source/recipe/review lineage in model and dataset identities. Raster layout and encoder settings need matching fresh consensus.
+- Verification must check integrity, geographic/split leakage and held-out downstream performance with baselines. Label derived diagnostics honestly; they do not establish independent scientific validity or native LLM understanding.
+
+## Review jurisdictions and documentation synchronization
+
+- Keep semantic, units/calibration, support, rights, integrity and quality review
+  jurisdictions explicit. QA synthesizes existing finding IDs and cannot add new
+  specialist claims. Evidence citations must stay within their owning domain.
+- Use PASS, FAIL, NEEDS_EVIDENCE and NOT_APPLICABLE for scientific review; keep
+  workflow eligibility and human approval separate. Missing evidence is not failure.
+- Bind every review to the frozen scientific recipe digest. A new report cannot
+  erase an existing model veto or authorize execution. Preserve malformed model
+  responses and failed runs; do not silently repair findings or fall back to mocks.
+- Distinguish calibrated, quality-filtered calibrated and analysis-ready product
+  claims. Dimensionless unit 1 is valid. Never infer clipping or rejection solely
+  from an unusual calibrated reflectance value.
+- Keep evidence curation explicit. Statement digests and domain ownership do not
+  prove natural-language truth, legal interpretation or independent scientific validity.
+- Maintain the narrative Home/Approach/Data/Science/Impact pages and technical
+  Documentation hierarchy in MkDocs Material. Regenerate figures and reference with
+  scripts/generate_figures.py and scripts/generate_reference.py after relevant edits.
+  Document image rights/credits; preserve Pages deployment and readable Markdown.
+
+## Semantic discovery and mapping governance
+
+1. Identical labels do not establish equivalent concepts; different labels do not establish different concepts.
+2. Prefer persistent ontology identifiers over text matching, and preserve source-native identifiers and definitions.
+3. Preserve the semantic resource/version and evidence location supplying each concept. Never silently replace a source ontology with a preferred one.
+4. Mapping is not replacement. Crosswalks must preserve source identifiers and document direction, uncertainty and potential loss.
+5. Unit equivalence does not establish variable equivalence. Taxonomic equivalence does not establish ecological equivalence.
+6. Spatial overlap does not establish comparable spatial support. Matching timestamps do not establish comparable temporal support.
+7. Broader, subclass, part-of and member-of are not interchangeable relations.
+8. Organism, taxon, population and community are distinct. Trait, variable and measurement are distinct. Observation and measurement are distinct.
+9. Location, resolution, support, footprint and extent are distinct. Biological organization is not one universal spatial or taxonomic scale.
+10. Module 1 discovers source semantic evidence and optional candidates; it must never approve equivalence. Module 2 proposes mappings and harmonization.
+11. Keep source-documented, observed, deterministically derived, model-judgment, human-decision and missing evidence distinct. Never promote a model hint into source metadata.
+12. Human review governs consequential/uncertain mappings, novel equivalence, disagreement and support changes. Candidate confidence is not execution permission.
+13. Reuse or compose existing community resources where appropriate. Project-specific concepts are a last resort and require documented alternatives, evidence, reviewer and date.
+14. Every new semantic mapping requires tests; every semantic transformation remains traceable to source evidence and a validated versioned recipe.
+15. Maintain the canonical landscape inventory and separately auditable project assessments. Unknown dates, rights, identity, crosswalks and coverage must remain explicit.
+16. Coverage, overlap, rankings and portfolio recommendations are project metadata diagnostics, not external ontology facts or scientific compatibility evidence. No benchmark output can authorize mapping or execution.
+17. Keep ontology-service access behind explicit adapters. Do not download ontology graphs or data silently; preserve offline generated tests and streaming constraints.
+18. Regenerate semantics tables with scripts/generate_semantics.py and synchronize schemas, diagrams, README, website, status and decisions after semantic interface changes.

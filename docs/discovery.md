@@ -43,3 +43,24 @@ acquisition and a checksum-verifying `SnapshotClient`. `NEONClient` implements
 authenticated native file discovery/download but normalization needs verified
 sensor and variable metadata. The tested unauthenticated NEON data route returns
 403; there is no fixture fallback.
+
+
+## Discover semantic evidence alongside assets
+
+`discovery.run(request, client, semantic_registry=None)` now returns sources with
+optional typed `SourceSemantics`: evidence records, concept candidates, extractor
+identity and a source-metadata binding. Existing source records remain immutable.
+Source definitions, identifiers, methods and declared support survive in provenance.
+Absent semantics is omitted from serialization for legacy identity compatibility.
+
+Normalized adapter metadata is marked deterministically derived; native Sentinel
+band metadata retains explicit locations and source-documented classification.
+A `ConceptCandidate` has a retrieval basis, evidence and confidence but no approved
+relationship. Labels are insufficient to establish equivalence. Module 2 retains
+all mapping and harmonization authority; source access and MOSAIKS remain separate.
+
+The local `SemanticResourceRegistry` indexes resource records and explicit fixture
+concepts behind a portal-independent protocol. External ontology resolvers remain
+planned/configurable adapters; no ontology graph or source observations are fetched
+by semantic enrichment. See [pipeline contracts and Sentinel regression](semantics/pipeline.md),
+[landscape](semantics/landscape.md) and [human review](semantics/review-workflow.md).

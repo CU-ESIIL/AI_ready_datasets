@@ -3,7 +3,8 @@ from datetime import datetime
 from hashlib import sha256
 import json
 from typing import Literal
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator, model_serializer, field_validator
+from enum import Enum
 
 
 def digest(value) -> str:
@@ -14,6 +15,103 @@ def digest(value) -> str:
 
 class Contract(BaseModel):
     model_config = ConfigDict(frozen=True, extra="forbid", allow_inf_nan=False)
+
+
+class EvidenceKind(str, Enum):
+    SOURCE_DOCUMENTED = 'SOURCE_DOCUMENTED'
+    OBSERVED_IN_DATA = 'OBSERVED_IN_DATA'
+    DERIVED_DETERMINISTICALLY = 'DERIVED_DETERMINISTICALLY'
+    MODEL_JUDGMENT = 'MODEL_JUDGMENT'
+    HUMAN_DECISION = 'HUMAN_DECISION'
+    MISSING_EVIDENCE = 'MISSING_EVIDENCE'
+
+
+class SemanticEvidence(Contract):
+    """What a source declares, or an explicitly classified interpretation; never a mapping."""
+    source_field: str = Field(min_length=1)
+    evidence_type: EvidenceKind
+    evidence_location: str = Field(min_length=1)
+    source_label: str | None = None
+    source_definition: str | None = None
+    source_vocabulary: str | None = None
+    source_concept_id: str | None = None
+    source_concept_uri: str | None = None
+    standard_name: str | None = None
+    standard_name_scheme: str | None = None
+    unit: str | None = None
+    unit_scheme: str | None = None
+    quantity_kind: str | None = None
+    entity_hint: str | None = None
+    property_hint: str | None = None
+    matrix_hint: str | None = None
+    context_hint: str | None = None
+    taxon_identifier: str | None = None
+    taxon_scheme: str | None = None
+    method: str | None = None
+    protocol: str | None = None
+    sensor: str | None = None
+    platform: str | None = None
+    spatial_resolution: float | None = Field(default=None, gt=0)
+    spatial_resolution_unit: str | None = None
+    spatial_support: str | None = None
+    temporal_resolution: str | None = None
+    temporal_support: str | None = None
+    source_documentation: tuple[str, ...] = ()
+    confidence: float | None = Field(default=None, ge=0, le=1)
+    band: str | None = None
+    scale: float | None = None
+    offset: float | None = None
+    nodata: float | None = None
+    native_crs: str | None = None
+    processing_level: str | None = None
+    processing_baseline: str | None = None
+
+
+    @field_validator('source_concept_uri')
+    @classmethod
+    def concept_uri(cls, value):
+        if value is not None:
+            import re
+            if not re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:', value) or any(c.isspace() for c in value):
+                raise ValueError('source concept URI requires an explicit URI/IRI scheme and no whitespace')
+        return value
+
+
+class ConceptCandidate(Contract):
+    """Retrieval candidate only. No equivalence, mapping status or approval field."""
+    identifier: str = Field(min_length=1)
+    label: str = Field(min_length=1)
+    ontology: str = Field(min_length=1)
+    definition: str | None = None
+    match_basis: Literal['source_annotation', 'normalized_identifier', 'exact_vocabulary_match', 'lexical', 'model_inferred']
+    evidence: tuple[SemanticEvidence, ...] = Field(min_length=1)
+    confidence: float | None = Field(default=None, ge=0, le=1)
+
+    @model_validator(mode='after')
+    def candidate_basis(self):
+        if self.match_basis == 'source_annotation' and not any(
+            e.evidence_type == EvidenceKind.SOURCE_DOCUMENTED and self.identifier in
+            {e.source_concept_id, e.source_concept_uri, e.taxon_identifier} for e in self.evidence):
+            raise ValueError('source-annotated candidate requires the exact source-documented identifier')
+        if self.match_basis == 'normalized_identifier' and not any(
+            e.evidence_type == EvidenceKind.DERIVED_DETERMINISTICALLY and self.identifier in
+            {e.source_concept_id, e.source_concept_uri, e.taxon_identifier} for e in self.evidence):
+            raise ValueError('normalized identifier requires an exact declared metadata identifier')
+        if self.match_basis == 'model_inferred' and not any(
+            e.evidence_type == EvidenceKind.MODEL_JUDGMENT for e in self.evidence):
+            raise ValueError('model-inferred candidate requires explicit model judgment')
+        if self.match_basis in {'lexical', 'exact_vocabulary_match'} and any(
+            e.evidence_type == EvidenceKind.MODEL_JUDGMENT for e in self.evidence):
+            raise ValueError('model judgment cannot be relabeled as a deterministic match')
+        return self
+
+
+class SourceSemantics(Contract):
+    schema_version: Literal['1'] = '1'
+    evidence: tuple[SemanticEvidence, ...] = ()
+    candidates: tuple[ConceptCandidate, ...] = ()
+    extractor: str = Field(min_length=1)
+    source_metadata_digest: str = Field(pattern=r'^[a-f0-9]{64}$')
 
 
 class Support(Contract):
@@ -73,6 +171,22 @@ class ScientificRequest(Contract):
 
 
 class SourceResource(Contract):
+    semantics: SourceSemantics | None = None
+
+    @model_serializer(mode="wrap")
+    def serialize(self, handler):
+        data = handler(self)
+        if self.semantics is None:
+            data.pop("semantics", None)
+        return data
+
+    @model_validator(mode="after")
+    def semantic_binding(self):
+        if self.semantics is not None and self.semantics.source_metadata_digest != digest(
+            self.model_dump(mode="json", exclude={"semantics"})):
+            raise ValueError("semantic evidence is bound to different source metadata")
+        return self
+
     source_id: str
     dataset: str
     asset_id: str

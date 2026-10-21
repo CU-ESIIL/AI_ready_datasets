@@ -1,0 +1,108 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "algorithm": {
+      "const": "mosaiks-empirical-rcf-v1",
+      "default": "mosaiks-empirical-rcf-v1",
+      "title": "Algorithm",
+      "type": "string"
+    },
+    "bias": {
+      "default": 1,
+      "minimum": 0,
+      "title": "Bias",
+      "type": "number"
+    },
+    "calibration_tiles": {
+      "default": 16,
+      "maximum": 64,
+      "minimum": 2,
+      "title": "Calibration Tiles",
+      "type": "integer"
+    },
+    "channels": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 16,
+      "minItems": 1,
+      "title": "Channels",
+      "type": "array"
+    },
+    "features": {
+      "default": 512,
+      "maximum": 4096,
+      "minimum": 16,
+      "multipleOf": 2,
+      "title": "Features",
+      "type": "integer"
+    },
+    "filter_batch": {
+      "default": 64,
+      "maximum": 256,
+      "minimum": 1,
+      "title": "Filter Batch",
+      "type": "integer"
+    },
+    "filters_per_tile": {
+      "default": 32,
+      "maximum": 128,
+      "minimum": 1,
+      "title": "Filters Per Tile",
+      "type": "integer"
+    },
+    "input_dtype": {
+      "const": "float32",
+      "default": "float32",
+      "title": "Input Dtype",
+      "type": "string"
+    },
+    "input_scale": {
+      "default": 1,
+      "exclusiveMinimum": 0,
+      "title": "Input Scale",
+      "type": "number"
+    },
+    "kernel_size": {
+      "default": 3,
+      "maximum": 6,
+      "minimum": 2,
+      "title": "Kernel Size",
+      "type": "integer"
+    },
+    "max_tile_side": {
+      "default": 64,
+      "maximum": 128,
+      "minimum": 4,
+      "title": "Max Tile Side",
+      "type": "integer"
+    },
+    "seed": {
+      "default": 42,
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "units": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 16,
+      "minItems": 1,
+      "title": "Units",
+      "type": "array"
+    },
+    "zca_bias": {
+      "default": 0.001,
+      "exclusiveMinimum": 0,
+      "title": "Zca Bias",
+      "type": "number"
+    }
+  },
+  "required": [
+    "channels",
+    "units"
+  ],
+  "title": "MOSAIKSSpec",
+  "type": "object"
+}

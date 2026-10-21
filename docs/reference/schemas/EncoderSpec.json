@@ -1,0 +1,54 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "configuration_json": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Json"
+    },
+    "dimensionality": {
+      "default": 1,
+      "title": "Dimensionality",
+      "type": "integer"
+    },
+    "encoder": {
+      "default": "identity-scalar",
+      "title": "Encoder",
+      "type": "string"
+    },
+    "method": {
+      "default": "scalar",
+      "enum": [
+        "scalar",
+        "squared",
+        "mosaiks"
+      ],
+      "title": "Method",
+      "type": "string"
+    },
+    "preprocessing": {
+      "default": "none; input quantity and units are defined by the recipe",
+      "title": "Preprocessing",
+      "type": "string"
+    },
+    "purpose": {
+      "default": "Reference numeric features; not a learned or universal embedding",
+      "title": "Purpose",
+      "type": "string"
+    },
+    "version": {
+      "default": "1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "title": "EncoderSpec",
+  "type": "object"
+}

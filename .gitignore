@@ -60,3 +60,9 @@ __pycache__/
 /run/
 /site/
 /dist/
+
+# Local browser verification artifacts
+/.playwright-mcp/
+
+# Generated semantic metadata diagnostics
+/outputs/semantic_benchmark/

@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "fixture": {
+      "default": false,
+      "title": "Fixture",
+      "type": "boolean"
+    },
+    "rationale": {
+      "minLength": 1,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "recipe_digest": {
+      "title": "Recipe Digest",
+      "type": "string"
+    },
+    "reviewer": {
+      "minLength": 1,
+      "title": "Reviewer",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "approved",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    }
+  },
+  "required": [
+    "recipe_digest",
+    "status",
+    "reviewer",
+    "rationale",
+    "timestamp"
+  ],
+  "title": "HumanDecision",
+  "type": "object"
+}

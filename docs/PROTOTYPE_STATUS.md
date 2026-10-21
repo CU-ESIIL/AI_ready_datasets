@@ -1,13 +1,53 @@
 # Prototype status
 
+## Semantic discovery and landscape
+
+Module 1 now preserves typed source semantic evidence and optional concept candidates.
+Normalized metadata and native annotations retain distinct evidence kinds; source
+identifiers/definitions survive and stale bindings are rejected. Mapping and approval
+remain Module 2 responsibilities. MESA and external ontology-portal integration
+status has not changed; no universal ontology or new data source is claimed.
+
+The [Semantics resource](semantics/index.md) includes the canonical 86-resource
+inventory, auditable provisional assessments, generated coverage comparison and
+138-entry glossary. The [benchmark](semantics/benchmark.md) produces metadata-only
+Parquet diagnostics and review-only portfolio suggestions. Default runs use generated
+source metadata; explicit runs can inspect retained real source metadata without
+reading observations. Neither establishes scientific compatibility or approval.
+
+## Evidence-bound review and website
+
+The new `review-metadata` command validates domain-scoped evidence and frozen-recipe
+findings from six specialists, then requests QA synthesis referencing existing IDs.
+Reports separate missing evidence, failure, eligibility and mandatory human review.
+They never authorize execution or bypass historical model vetoes. A matching
+report with accepted QA and no unresolved findings is now an additional required
+gate for real Sentinel streams, checked before source access. The legacy
+`consensus` command retains its original dialogue/vote contract. See the
+[review guide](review/index.md), [audit](architecture/current-state.md) and
+[Sentinel comparison](development/sentinel-review-refactor.md).
+
+The website now separates narrative research pages from technical documentation,
+with generated contract reference and seven source-maintained architecture figures.
+The existing Material/Pages configuration remains the deployment mechanism.
+
 ## Metadata consensus and streaming
 
 The new [streaming module](streaming-harmonization.md) separates metadata-only
 OpenClaw specialist dialogue from lazy Sentinel native-window access. The first
 target is B08 reflectance using documented scale/offset. Exact-plan consensus,
 deterministic QA and human approval gate direct bounded-batch encoding. No raw or
-harmonized data files are produced by this path. Current encoders remain reference
-numeric features. Legacy fixture/snapshot paths still materialize data explicitly.
+harmonized data files are produced by this path. Scalar reference encoders remain available; the independent MOSAIKS raster path is implemented below. Legacy fixture/snapshot paths still materialize data explicitly.
+
+## MOSAIKS representation module
+
+The [MOSAIKS module](mosaiks-embeddings.md) accepts harmonized raster outputs,
+fits empirical random convolutional filters on training tiles only, and writes
+dense feature matrices with lineage and separate verification labels. Generated
+diagnostics run through actual harmonization and MOSAIKS computation; held-out
+ridge evaluation includes mean/shuffled-label baselines and spatial leakage checks.
+This is numerical pipeline verification, not independent ecological validation.
+Fresh raster-layout consensus and an actual human decision gate real execution.
 
 ## Working now
 
@@ -97,7 +137,7 @@ copy. Default orchestration does not yet load arbitrary per-track recipe files.
 ## Testing status
 
 Offline unit, contract/integration, CLI, deterministic repeatability and track
-independence tests are implemented. On 2026-10-21, the expanded offline suite passed locally (94 tests after streaming harmonization),
+independence tests are implemented. On 2026-10-21, the expanded offline suite passed locally (110 tests after MOSAIKS integration),
 the installed CLI ran both tracks, and the strict website build passed. Rendered
 navigation/readability and local links/fragments were checked. [Testing](testing.md) describes coverage and
 scientific gaps. CI also builds the existing MkDocs site strictly.
@@ -129,3 +169,12 @@ and five actual OpenClaw/Verde peer reviews. The final run requested revision;
 coefficient checks passed, while final QA enforced the model veto. No calibrated
 real-data embeddings were emitted. Model claims and executor limitations remain
 separate; see the [live evidence](streaming-harmonization.md#live-verification-2026-10-21).
+
+## MOSAIKS verification result
+
+The generated harmonization → MOSAIKS → held-out ridge workflow produced 32 vectors
+and passed numerical verification, alongside 110 offline tests. A real-metadata
+640×640 m raster plan was reviewed through Verde, but the run stopped on an invalid
+rights peer citation after three valid revision requests. No real calibrated
+raster/vector dataset was emitted. See the [MOSAIKS result](mosaiks-embeddings.md#verification-result-2026-10-21)
+for diagnostic metrics, the concrete candidate and remaining scientific gaps.

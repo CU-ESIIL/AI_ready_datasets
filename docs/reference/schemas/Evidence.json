@@ -1,0 +1,69 @@
+{
+  "$defs": {
+    "Domain": {
+      "enum": [
+        "semantic",
+        "units",
+        "support",
+        "rights",
+        "integrity",
+        "quality",
+        "qa"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "EvidenceKind": {
+      "enum": [
+        "SOURCE_DOCUMENTED",
+        "OBSERVED_IN_DATA",
+        "DERIVED_DETERMINISTICALLY",
+        "MODEL_JUDGMENT",
+        "HUMAN_DECISION",
+        "MISSING_EVIDENCE"
+      ],
+      "title": "EvidenceKind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "content_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Content Digest",
+      "type": "string"
+    },
+    "domain": {
+      "$ref": "#/$defs/Domain"
+    },
+    "evidence_id": {
+      "minLength": 1,
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "kind": {
+      "$ref": "#/$defs/EvidenceKind"
+    },
+    "source": {
+      "minLength": 1,
+      "title": "Source",
+      "type": "string"
+    },
+    "statement": {
+      "maxLength": 3000,
+      "minLength": 1,
+      "title": "Statement",
+      "type": "string"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "domain",
+    "kind",
+    "source",
+    "statement",
+    "content_digest"
+  ],
+  "title": "Evidence",
+  "type": "object"
+}

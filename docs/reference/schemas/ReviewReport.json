@@ -1,0 +1,342 @@
+{
+  "$defs": {
+    "Domain": {
+      "enum": [
+        "semantic",
+        "units",
+        "support",
+        "rights",
+        "integrity",
+        "quality",
+        "qa"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "content_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Digest",
+          "type": "string"
+        },
+        "domain": {
+          "$ref": "#/$defs/Domain"
+        },
+        "evidence_id": {
+          "minLength": 1,
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/EvidenceKind"
+        },
+        "source": {
+          "minLength": 1,
+          "title": "Source",
+          "type": "string"
+        },
+        "statement": {
+          "maxLength": 3000,
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "domain",
+        "kind",
+        "source",
+        "statement",
+        "content_digest"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceKind": {
+      "enum": [
+        "SOURCE_DOCUMENTED",
+        "OBSERVED_IN_DATA",
+        "DERIVED_DETERMINISTICALLY",
+        "MODEL_JUDGMENT",
+        "HUMAN_DECISION",
+        "MISSING_EVIDENCE"
+      ],
+      "title": "EvidenceKind",
+      "type": "string"
+    },
+    "ReviewFinding": {
+      "additionalProperties": false,
+      "properties": {
+        "claim": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Claim",
+          "type": "string"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "finding_id": {
+          "pattern": "^[a-z][a-z0-9_.-]{2,100}$",
+          "title": "Finding Id",
+          "type": "string"
+        },
+        "references": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "References",
+          "type": "array"
+        },
+        "required_action": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Required Action",
+          "type": "string"
+        },
+        "reviewer_domain": {
+          "$ref": "#/$defs/Domain"
+        },
+        "schema_version": {
+          "const": "1",
+          "default": "1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "severity": {
+          "default": "blocker",
+          "enum": [
+            "info",
+            "warning",
+            "blocker"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "source": {
+          "minLength": 1,
+          "title": "Source",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/Status"
+        },
+        "supporting_reviewers": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Domain"
+          },
+          "title": "Supporting Reviewers",
+          "type": "array"
+        },
+        "supports": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Supports",
+          "type": "array"
+        }
+      },
+      "required": [
+        "finding_id",
+        "reviewer_domain",
+        "status",
+        "claim",
+        "evidence",
+        "source",
+        "required_action",
+        "confidence"
+      ],
+      "title": "ReviewFinding",
+      "type": "object"
+    },
+    "SpecialistReview": {
+      "additionalProperties": false,
+      "properties": {
+        "findings": {
+          "items": {
+            "$ref": "#/$defs/ReviewFinding"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "title": "Findings",
+          "type": "array"
+        },
+        "recipe_content_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Recipe Content Digest",
+          "type": "string"
+        },
+        "reviewer_domain": {
+          "$ref": "#/$defs/Domain"
+        }
+      },
+      "required": [
+        "reviewer_domain",
+        "recipe_content_digest",
+        "findings"
+      ],
+      "title": "SpecialistReview",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NEEDS_EVIDENCE",
+        "NOT_APPLICABLE"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "execution_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Execution Authorized",
+      "type": "boolean"
+    },
+    "human_approval": {
+      "default": "not_requested",
+      "enum": [
+        "pending",
+        "not_requested"
+      ],
+      "title": "Human Approval",
+      "type": "string"
+    },
+    "missing_domains": {
+      "items": {
+        "$ref": "#/$defs/Domain"
+      },
+      "title": "Missing Domains",
+      "type": "array"
+    },
+    "model_consensus": {
+      "enum": [
+        "eligible_for_approval",
+        "needs_review",
+        "needs_revision"
+      ],
+      "title": "Model Consensus",
+      "type": "string"
+    },
+    "qa_decision": {
+      "anyOf": [
+        {
+          "enum": [
+            "accept",
+            "revise",
+            "reject",
+            "needs_evidence"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Qa Decision"
+    },
+    "qa_finding_ids": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Qa Finding Ids",
+      "type": "array"
+    },
+    "recipe_content_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Recipe Content Digest",
+      "type": "string"
+    },
+    "required_domains": {
+      "items": {
+        "$ref": "#/$defs/Domain"
+      },
+      "title": "Required Domains",
+      "type": "array"
+    },
+    "resolved_findings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Resolved Findings",
+      "type": "array"
+    },
+    "reviews": {
+      "items": {
+        "$ref": "#/$defs/SpecialistReview"
+      },
+      "title": "Reviews",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Source Digest",
+      "type": "string"
+    },
+    "unique_findings": {
+      "items": {
+        "$ref": "#/$defs/ReviewFinding"
+      },
+      "title": "Unique Findings",
+      "type": "array"
+    },
+    "unresolved_findings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved Findings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "recipe_content_digest",
+    "source_digest",
+    "reviews",
+    "evidence",
+    "unique_findings",
+    "resolved_findings",
+    "unresolved_findings",
+    "required_domains",
+    "missing_domains",
+    "model_consensus"
+  ],
+  "title": "ReviewReport",
+  "type": "object"
+}

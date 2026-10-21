@@ -1,0 +1,283 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "acronym": {
+      "title": "Acronym",
+      "type": "string"
+    },
+    "api_available": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Api Available"
+    },
+    "assessment_id": {
+      "minLength": 1,
+      "title": "Assessment Id",
+      "type": "string"
+    },
+    "canonical_uri": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Canonical Uri"
+    },
+    "core_candidate": {
+      "title": "Core Candidate",
+      "type": "boolean"
+    },
+    "coverage": {
+      "additionalProperties": {
+        "enum": [
+          "strong",
+          "partial",
+          "indirect",
+          "not_target",
+          "unknown"
+        ],
+        "type": "string"
+      },
+      "title": "Coverage",
+      "type": "object"
+    },
+    "current_relevance": {
+      "title": "Current Relevance",
+      "type": "string"
+    },
+    "documentation_uri": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Documentation Uri"
+    },
+    "domain": {
+      "title": "Domain",
+      "type": "string"
+    },
+    "domain_candidate": {
+      "title": "Domain Candidate",
+      "type": "boolean"
+    },
+    "era": {
+      "title": "Era",
+      "type": "string"
+    },
+    "evidence_source": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Source",
+      "type": "array"
+    },
+    "first_release_or_origin": {
+      "title": "First Release Or Origin",
+      "type": "string"
+    },
+    "format": {
+      "title": "Format",
+      "type": "string"
+    },
+    "historical_precedent": {
+      "title": "Historical Precedent",
+      "type": "boolean"
+    },
+    "historical_role": {
+      "title": "Historical Role",
+      "type": "string"
+    },
+    "imports_or_dependencies": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Imports Or Dependencies",
+      "type": "array"
+    },
+    "interoperability_only": {
+      "title": "Interoperability Only",
+      "type": "boolean"
+    },
+    "key_contribution": {
+      "title": "Key Contribution",
+      "type": "string"
+    },
+    "known_crosswalks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Crosswalks",
+      "type": "array"
+    },
+    "last_verified": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Last Verified"
+    },
+    "license": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "License"
+    },
+    "limitations": {
+      "title": "Limitations",
+      "type": "string"
+    },
+    "machine_access": {
+      "title": "Machine Access",
+      "type": "string"
+    },
+    "maintainer": {
+      "title": "Maintainer",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "notes": {
+      "title": "Notes",
+      "type": "string"
+    },
+    "overlaps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Overlaps",
+      "type": "array"
+    },
+    "problem_originally_addressed": {
+      "title": "Problem Originally Addressed",
+      "type": "string"
+    },
+    "project_role": {
+      "title": "Project Role",
+      "type": "string"
+    },
+    "relationship_to_prior_work": {
+      "title": "Relationship To Prior Work",
+      "type": "string"
+    },
+    "resolvable_identifiers": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Resolvable Identifiers"
+    },
+    "resource_id": {
+      "pattern": "^[a-z][a-z0-9_-]+$",
+      "title": "Resource Id",
+      "type": "string"
+    },
+    "resource_type": {
+      "enum": [
+        "formal_ontology",
+        "application_ontology",
+        "upper_ontology",
+        "relation_ontology",
+        "controlled_vocabulary",
+        "thesaurus",
+        "classification",
+        "exchange_standard",
+        "metadata_standard",
+        "semantic_framework",
+        "conceptual_model",
+        "historical_effort",
+        "resource_network"
+      ],
+      "title": "Resource Type",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active_registry",
+        "inactive_registry",
+        "documented",
+        "historical",
+        "unresolved"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "verification_scope": {
+      "enum": [
+        "registry_metadata",
+        "primary_documentation",
+        "reference_only",
+        "unresolved"
+      ],
+      "title": "Verification Scope",
+      "type": "string"
+    }
+  },
+  "required": [
+    "assessment_id",
+    "resource_id",
+    "name",
+    "acronym",
+    "resource_type",
+    "domain",
+    "era",
+    "first_release_or_origin",
+    "maintainer",
+    "status",
+    "canonical_uri",
+    "documentation_uri",
+    "license",
+    "coverage",
+    "key_contribution",
+    "historical_role",
+    "problem_originally_addressed",
+    "relationship_to_prior_work",
+    "current_relevance",
+    "project_role",
+    "core_candidate",
+    "domain_candidate",
+    "interoperability_only",
+    "historical_precedent",
+    "machine_access",
+    "format",
+    "resolvable_identifiers",
+    "api_available",
+    "imports_or_dependencies",
+    "known_crosswalks",
+    "overlaps",
+    "limitations",
+    "notes",
+    "evidence_source",
+    "last_verified",
+    "verification_scope"
+  ],
+  "title": "SemanticResource",
+  "type": "object"
+}

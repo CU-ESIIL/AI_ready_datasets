@@ -91,3 +91,18 @@ calibration, and bounded window-to-encoder execution without raw or harmonized
 data files. The existing fixture/snapshot commands retain their historical
 materialization behavior. Current streamed vectors are reference numeric features;
 model consensus still requires an actual human decision before execution.
+
+## Representation-to-source inspection
+
+Inspect lineage in this order: representation → harmonized observation → optional
+track recipe → core recipe → transformation → agent proposal → QA decision →
+applicable human decision → source asset → source metadata, version and license.
+These are related records, not interchangeable identifiers. Streaming products
+retain compact observation/window hashes and native support rather than serialized
+raw or harmonized observations. Full scientific context and review reports remain
+in metadata artifacts beside vectors.
+
+![Representation lineage through harmonization, recipes, reviews, source assets and rights.](assets/figures/provenance.svg)
+
+*Inspection path, with review decisions grouped for readability.
+[Maintained figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*

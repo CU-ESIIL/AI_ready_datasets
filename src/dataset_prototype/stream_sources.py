@@ -50,6 +50,8 @@ def plan_sentinel(request,longitude,latitude,*,max_items=2,max_cloud=20,http=req
                 attribution=f'Contains modified Copernicus Sentinel data ({when.year}); accessed via Element 84 Earth Search.',derivative_use=True if permitted else None,redistribution=True if permitted else None),
             checksum=digest(native),checksum_scope='metadata',retrieved_at=datetime.now(timezone.utc),
             provenance=(EARTH_SEARCH,item['assets']['nir']['href'],item['assets']['scl']['href'],f'collection-license:{license_id}','Metadata checksum is not a checksum of remote raster bytes'))
+        from .semantic_discovery import enrich
+        source=enrich(source)
         target=Variable(name='B08_reflectance',definition='Sentinel-2 L2A bottom-of-atmosphere NIR band 8 reflectance calculated using documented asset scale and offset',unit='1',measurement_method='MSI band 8 L2A native pixel; documented scale/offset calibration')
         bindings.append(StreamBinding(binding_id=item['id'],source=source,source_variable='B08_DN',target=target,longitude=longitude,latitude=latitude))
     if not bindings:raise ValueError('no matching metadata; no synthetic fallback')

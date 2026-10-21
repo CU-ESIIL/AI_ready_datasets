@@ -1,0 +1,36 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evidence": {
+      "minLength": 1,
+      "title": "Evidence",
+      "type": "string"
+    },
+    "exact": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Exact",
+      "type": "array"
+    },
+    "prefixes": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Prefixes",
+      "type": "array"
+    },
+    "resource_id": {
+      "title": "Resource Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "resource_id",
+    "evidence"
+  ],
+  "title": "NamespaceBinding",
+  "type": "object"
+}

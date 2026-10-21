@@ -40,7 +40,7 @@ class OpenClawBackend:
         self.traces=[]
 
     def generate(self,role,instruction,evidence,schema):
-        if role not in {'discovery','semantic','units','support','rights','harmonization','qa'}:
+        if role not in {'discovery','semantic','units','support','rights','integrity','quality','harmonization','qa'}:
             raise ValueError('unknown bounded agent role')
         args={'prompt':SYSTEM+'\n\n'+instruction,
               'input':{'role':role,'evidence':evidence,'output_schema':schema.model_json_schema()},

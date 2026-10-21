@@ -71,7 +71,7 @@ def _compile(plan,draft,messages,backend,round_number):
 def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
     if not 1<=max_rounds<=3:raise ValueError('consensus rounds must be bounded to 1..3')
     plan=StreamPlan.model_validate(plan.model_dump(mode='json'))
-    if plan.reader=='sentinel-pixel':
+    if plan.reader in {'sentinel-pixel','sentinel-raster'}:
         from .stream_sources import validated_native
         for binding in plan.bindings:validated_native(binding)
     root=Path(output);root.mkdir(parents=True,exist_ok=False)
@@ -90,7 +90,7 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
     save('data_access_plan.json',plan.model_dump(mode='json'))
     save('encoder_spec.json',plan.encoder.model_dump(mode='json'))
     metadata=_metadata(plan);evidence_ids=[row['metadata_ref'] for row in metadata]
-    base={'question':plan.question,'metadata':metadata,'encoder':plan.encoder.model_dump(mode='json'),
+    base={'raster_layout':json.loads(plan.raster_layout_json) if plan.raster_layout_json else None,'question':plan.question,'metadata':metadata,'encoder':plan.encoder.model_dump(mode='json'),
           'constraints':['metadata-only planning; no data values','bounded reads directly into embeddings; no raw/harmonized materialization',
                          'target identities fixed by caller','human approval remains required; model confidence is not approval']}
     base['executor_contract']={
@@ -170,6 +170,8 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
             content=recipe_content_digest(recipe)
             # A metadata/operation mismatch cannot be voted away by the agents.
             deterministic=assess(recipe,plan.resources)
+            save(f'round-{number}-recipe.json',recipe.model_dump(mode='json'))
+            save(f'round-{number}-deterministic-qa.json',deterministic.model_dump(mode='json'))
             context={**base,'recipe':recipe.model_dump(mode='json'),'recipe_content_digest':content,
                      'draft_message_id':draft_message.message_id,'dialogue':_dialogue(messages),
                      'deterministic_qa':deterministic.model_dump(mode='json')}
@@ -195,7 +197,6 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
             if deterministic.outcome=='reject':unresolved+=deterministic.reasons
             rounds.append({'round':number,'content_digest':content,'status':status,'votes':[(r,v.model_dump(mode='json')) for r,v in votes],
                            'deterministic_qa':deterministic.model_dump(mode='json')})
-            save(f'round-{number}-recipe.json',recipe.model_dump(mode='json'))
             save(f'round-{number}-votes.json',rounds[-1])
             if status in {'consensus','rejected','abstained'}:break
         final_digest=recipe_content_digest(recipe)

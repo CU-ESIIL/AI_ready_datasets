@@ -1,0 +1,9 @@
+[
+  {"resource_id":"envo","exact":[],"prefixes":["ENVO:","http://purl.obolibrary.org/obo/ENVO_"],"evidence":"https://obofoundry.org/id-policy.html"},
+  {"resource_id":"pato","exact":[],"prefixes":["PATO:","http://purl.obolibrary.org/obo/PATO_"],"evidence":"https://obofoundry.org/id-policy.html"},
+  {"resource_id":"ncbitaxon","exact":[],"prefixes":["NCBITaxon:","http://purl.obolibrary.org/obo/NCBITaxon_"],"evidence":"https://obofoundry.org/ontology/ncbitaxon.html"},
+  {"resource_id":"stac","exact":["STAC eo:bands"],"prefixes":[],"evidence":"https://github.com/stac-extensions/eo"},
+  {"resource_id":"cf","exact":["CF Standard Names"],"prefixes":[],"evidence":"https://cfconventions.org/faq.html"},
+  {"resource_id":"qudt","exact":[],"prefixes":["http://qudt.org/vocab/unit/","http://qudt.org/vocab/quantitykind/"],"evidence":"https://www.qudt.org/"},
+  {"resource_id":"sosa","exact":[],"prefixes":["http://www.w3.org/ns/sosa/"],"evidence":"https://www.w3.org/TR/vocab-ssn/"}
+]

@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "grid": {
+      "default": 8,
+      "maximum": 8,
+      "minimum": 6,
+      "title": "Grid",
+      "type": "integer"
+    },
+    "side": {
+      "default": 16,
+      "maximum": 32,
+      "minimum": 4,
+      "title": "Side",
+      "type": "integer"
+    },
+    "split_policy": {
+      "const": "native columns; one unused buffer column; train/validation/test spatial blocks",
+      "default": "native columns; one unused buffer column; train/validation/test spatial blocks",
+      "title": "Split Policy",
+      "type": "string"
+    }
+  },
+  "title": "RasterLayout",
+  "type": "object"
+}

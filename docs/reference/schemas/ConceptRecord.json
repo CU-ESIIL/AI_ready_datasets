@@ -1,0 +1,76 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "definition": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Definition"
+    },
+    "domain": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Domain"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "boolean"
+    },
+    "identifier": {
+      "title": "Identifier",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "ontology": {
+      "title": "Ontology",
+      "type": "string"
+    },
+    "relationships": {
+      "default": [],
+      "items": {
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "title": "Relationships",
+      "type": "array"
+    },
+    "source_uri": {
+      "title": "Source Uri",
+      "type": "string"
+    }
+  },
+  "required": [
+    "identifier",
+    "label",
+    "ontology",
+    "source_uri",
+    "fixture"
+  ],
+  "title": "ConceptRecord",
+  "type": "object"
+}

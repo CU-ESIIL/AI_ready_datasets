@@ -1,0 +1,58 @@
+{
+  "source_id": "generated-sentinel-metadata-fixture",
+  "dataset": "Explicitly generated Sentinel-like metadata fixture",
+  "asset_id": "fixture:S2B_13TDE_20230715_0_L2A:B08",
+  "version": "fixture-v1",
+  "uri": "https://example.invalid/generated/B08.tif",
+  "modality": "satellite",
+  "variables": [
+    {
+      "name": "B08_DN",
+      "definition": "Generated native digital-number metadata; no observed pixels",
+      "unit": "DN",
+      "measurement_method": "Generated metadata for extraction tests only",
+      "biological_entity": null,
+      "ontology_id": null
+    }
+  ],
+  "support": {
+    "bbox": [
+      -105.59,
+      40.03,
+      -105.58,
+      40.04
+    ],
+    "start": "2023-07-15T18:03:00.590000Z",
+    "end": "2023-07-15T18:03:00.590000Z",
+    "spatial": "Illustrative 10 m native raster pixel",
+    "temporal": "instantaneous",
+    "crs": "EPSG:4326"
+  },
+  "metadata": {
+    "fixture": true,
+    "description": "Generated metadata only. Historical item identifier and documented coefficients are reproduced for regression, not a retrieved source record.",
+    "platform": "sentinel-2b",
+    "sensor": "msi",
+    "stac_version": "1.0.0",
+    "original_identifier": "S2B_13TDE_20230715_0_L2A",
+    "native_metadata_json": "{\"assets\": {\"nir\": {\"eo:bands\": [{\"common_name\": \"nir\", \"description\": \"Illustrative native band 8 metadata\", \"name\": \"B08\"}], \"href\": \"https://example.invalid/generated/B08.tif\", \"raster:bands\": [{\"nodata\": 0, \"offset\": -0.1, \"scale\": 0.0001, \"spatial_resolution\": 10, \"unit\": \"1\"}], \"title\": \"Generated B08 band metadata\"}, \"scl\": {\"href\": \"https://example.invalid/generated/SCL.tif\", \"title\": \"Generated SCL metadata\"}}, \"bbox\": [-105.59, 40.03, -105.58, 40.04], \"id\": \"S2B_13TDE_20230715_0_L2A\", \"links\": [{\"href\": \"https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice\", \"rel\": \"license\"}], \"properties\": {\"datetime\": \"2023-07-15T18:03:00.590Z\", \"instruments\": [\"msi\"], \"platform\": \"sentinel-2b\", \"proj:epsg\": 32613, \"s2:processing_baseline\": \"05.09\", \"s2:product_type\": \"S2MSI2A\"}, \"stac_version\": \"1.0.0\", \"type\": \"Feature\"}",
+    "calibration_scale": 0.0001,
+    "calibration_offset": -0.1,
+    "quality_mask_value": null
+  },
+  "rights": {
+    "license": "CC0-1.0 for generated fixture metadata only; not a license for Sentinel data",
+    "attribution": "Repository authors; original Copernicus item identity retained as illustrative context",
+    "derivative_use": true,
+    "redistribution": true,
+    "access_restrictions": "none"
+  },
+  "checksum": "5a2fad27a6715ddd3b61af5dc8bab084130e73d025aa66b2e1e7ef6d96925c91",
+  "checksum_scope": "metadata",
+  "retrieved_at": "2026-10-21T00:00:00Z",
+  "provenance": [
+    "Generated in repository; no external source data or raster download.",
+    "https://github.com/stac-extensions/raster/tree/v1.1.0",
+    "https://github.com/stac-extensions/eo"
+  ]
+}

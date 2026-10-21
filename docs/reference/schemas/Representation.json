@@ -1,0 +1,1719 @@
+{
+  "$defs": {
+    "AgentReview": {
+      "additionalProperties": false,
+      "properties": {
+        "outcome": {
+          "enum": [
+            "approve",
+            "reject",
+            "request_revision",
+            "require_human_review"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        },
+        "recipe_content_digest": {
+          "title": "Recipe Content Digest",
+          "type": "string"
+        },
+        "reviewer": {
+          "title": "Reviewer",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipe_content_digest",
+        "outcome",
+        "reasons",
+        "reviewer"
+      ],
+      "title": "AgentReview",
+      "type": "object"
+    },
+    "ConceptCandidate": {
+      "additionalProperties": false,
+      "description": "Retrieval candidate only. No equivalence, mapping status or approval field.",
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "definition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Definition"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/SemanticEvidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "identifier": {
+          "minLength": 1,
+          "title": "Identifier",
+          "type": "string"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "match_basis": {
+          "enum": [
+            "source_annotation",
+            "normalized_identifier",
+            "exact_vocabulary_match",
+            "lexical",
+            "model_inferred"
+          ],
+          "title": "Match Basis",
+          "type": "string"
+        },
+        "ontology": {
+          "minLength": 1,
+          "title": "Ontology",
+          "type": "string"
+        }
+      },
+      "required": [
+        "identifier",
+        "label",
+        "ontology",
+        "match_basis",
+        "evidence"
+      ],
+      "title": "ConceptCandidate",
+      "type": "object"
+    },
+    "EvidenceKind": {
+      "enum": [
+        "SOURCE_DOCUMENTED",
+        "OBSERVED_IN_DATA",
+        "DERIVED_DETERMINISTICALLY",
+        "MODEL_JUDGMENT",
+        "HUMAN_DECISION",
+        "MISSING_EVIDENCE"
+      ],
+      "title": "EvidenceKind",
+      "type": "string"
+    },
+    "HarmonizationRecipe": {
+      "additionalProperties": false,
+      "properties": {
+        "agent_review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AgentReview"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "author": {
+          "minLength": 1,
+          "title": "Author",
+          "type": "string"
+        },
+        "core_recipe": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Core Recipe"
+        },
+        "mappings": {
+          "items": {
+            "$ref": "#/$defs/SemanticMapping"
+          },
+          "minItems": 1,
+          "title": "Mappings",
+          "type": "array"
+        },
+        "operations": {
+          "items": {
+            "$ref": "#/$defs/Operation"
+          },
+          "minItems": 1,
+          "title": "Operations",
+          "type": "array"
+        },
+        "proposals": {
+          "items": {
+            "$ref": "#/$defs/Proposal"
+          },
+          "minItems": 1,
+          "title": "Proposals",
+          "type": "array"
+        },
+        "recipe_id": {
+          "title": "Recipe Id",
+          "type": "string"
+        },
+        "scope": {
+          "enum": [
+            "core",
+            "track"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "status": {
+          "default": "proposed",
+          "enum": [
+            "proposed",
+            "needs_review",
+            "approved",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "track": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Track"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipe_id",
+        "version",
+        "scope",
+        "mappings",
+        "operations",
+        "proposals",
+        "author"
+      ],
+      "title": "HarmonizationRecipe",
+      "type": "object"
+    },
+    "HumanDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "fixture": {
+          "default": false,
+          "title": "Fixture",
+          "type": "boolean"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "recipe_digest": {
+          "title": "Recipe Digest",
+          "type": "string"
+        },
+        "reviewer": {
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "approved",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "title": "Timestamp",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipe_digest",
+        "status",
+        "reviewer",
+        "rationale",
+        "timestamp"
+      ],
+      "title": "HumanDecision",
+      "type": "object"
+    },
+    "Metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Calibration Offset"
+        },
+        "calibration_scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Calibration Scale"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "fixture": {
+          "title": "Fixture",
+          "type": "boolean"
+        },
+        "native_metadata_json": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Native Metadata Json"
+        },
+        "original_identifier": {
+          "title": "Original Identifier",
+          "type": "string"
+        },
+        "platform": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Platform"
+        },
+        "quality_mask_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quality Mask Value"
+        },
+        "sensor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sensor"
+        },
+        "stac_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stac Version"
+        }
+      },
+      "required": [
+        "fixture",
+        "description",
+        "original_identifier"
+      ],
+      "title": "Metadata",
+      "type": "object"
+    },
+    "Operation": {
+      "additionalProperties": false,
+      "properties": {
+        "from_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Unit"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "operation": {
+          "enum": [
+            "convert_units",
+            "map_variable",
+            "filter",
+            "missing",
+            "temporal_mean",
+            "spatial_match",
+            "normalize_coordinates",
+            "join",
+            "validate",
+            "calibrate"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "other_asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Other Asset"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "sentinel": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sentinel"
+        },
+        "source_asset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Asset"
+        },
+        "source_variable": {
+          "title": "Source Variable",
+          "type": "string"
+        },
+        "target_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Support"
+        },
+        "target_variable": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Variable"
+        },
+        "to_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Unit"
+        },
+        "tolerance": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tolerance"
+        }
+      },
+      "required": [
+        "operation",
+        "source_variable"
+      ],
+      "title": "Operation",
+      "type": "object"
+    },
+    "Proposal": {
+      "additionalProperties": false,
+      "properties": {
+        "agent": {
+          "default": "deterministic-fixture-agent",
+          "title": "Agent",
+          "type": "string"
+        },
+        "configuration": {
+          "default": "curated rules; no LLM",
+          "title": "Configuration",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "discovery",
+            "semantic",
+            "units",
+            "support",
+            "rights",
+            "harmonization",
+            "qa"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "version": {
+          "default": "1",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "rationale",
+        "evidence"
+      ],
+      "title": "Proposal",
+      "type": "object"
+    },
+    "ProvenanceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "context_sources": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/SourceResource"
+          },
+          "title": "Context Sources",
+          "type": "array"
+        },
+        "executor": {
+          "default": "allowlist-v2",
+          "title": "Executor",
+          "type": "string"
+        },
+        "human": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HumanDecision"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "parent_lineage": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ProvenanceRecord"
+          },
+          "title": "Parent Lineage",
+          "type": "array"
+        },
+        "parent_observations": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Parent Observations",
+          "type": "array"
+        },
+        "qa": {
+          "$ref": "#/$defs/QAReport"
+        },
+        "recipe": {
+          "$ref": "#/$defs/HarmonizationRecipe"
+        },
+        "related_records": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/RawObservation"
+          },
+          "title": "Related Records",
+          "type": "array"
+        },
+        "related_sources": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/SourceResource"
+          },
+          "title": "Related Sources",
+          "type": "array"
+        },
+        "source": {
+          "$ref": "#/$defs/SourceResource"
+        },
+        "source_records": {
+          "items": {
+            "$ref": "#/$defs/RawObservation"
+          },
+          "minItems": 1,
+          "title": "Source Records",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source",
+        "source_records",
+        "recipe",
+        "qa"
+      ],
+      "title": "ProvenanceRecord",
+      "type": "object"
+    },
+    "QAReport": {
+      "additionalProperties": false,
+      "properties": {
+        "outcome": {
+          "enum": [
+            "approve",
+            "reject",
+            "request_revision",
+            "require_human_review"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        },
+        "recipe_digest": {
+          "title": "Recipe Digest",
+          "type": "string"
+        },
+        "reviewer": {
+          "default": "deterministic-adversarial-qa-v1",
+          "title": "Reviewer",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipe_digest",
+        "outcome",
+        "reasons"
+      ],
+      "title": "QAReport",
+      "type": "object"
+    },
+    "RawObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "title": "End",
+          "type": "string"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "quality_flag": {
+          "default": "synthetic",
+          "title": "Quality Flag",
+          "type": "string"
+        },
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "variable": {
+          "title": "Variable",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_id",
+        "asset_id",
+        "variable",
+        "value",
+        "longitude",
+        "latitude",
+        "start",
+        "end"
+      ],
+      "title": "RawObservation",
+      "type": "object"
+    },
+    "Rights": {
+      "additionalProperties": false,
+      "properties": {
+        "access_restrictions": {
+          "default": "none",
+          "title": "Access Restrictions",
+          "type": "string"
+        },
+        "attribution": {
+          "minLength": 1,
+          "title": "Attribution",
+          "type": "string"
+        },
+        "derivative_use": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Derivative Use"
+        },
+        "license": {
+          "minLength": 1,
+          "title": "License",
+          "type": "string"
+        },
+        "redistribution": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Redistribution"
+        }
+      },
+      "required": [
+        "license",
+        "attribution",
+        "derivative_use",
+        "redistribution"
+      ],
+      "title": "Rights",
+      "type": "object"
+    },
+    "SemanticEvidence": {
+      "additionalProperties": false,
+      "description": "What a source declares, or an explicitly classified interpretation; never a mapping.",
+      "properties": {
+        "band": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Band"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "context_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Context Hint"
+        },
+        "entity_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Entity Hint"
+        },
+        "evidence_location": {
+          "minLength": 1,
+          "title": "Evidence Location",
+          "type": "string"
+        },
+        "evidence_type": {
+          "$ref": "#/$defs/EvidenceKind"
+        },
+        "matrix_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Matrix Hint"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        },
+        "native_crs": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Native Crs"
+        },
+        "nodata": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nodata"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "platform": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Platform"
+        },
+        "processing_baseline": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Processing Baseline"
+        },
+        "processing_level": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Processing Level"
+        },
+        "property_hint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Property Hint"
+        },
+        "protocol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Protocol"
+        },
+        "quantity_kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantity Kind"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "sensor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sensor"
+        },
+        "source_concept_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Concept Id"
+        },
+        "source_concept_uri": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Concept Uri"
+        },
+        "source_definition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Definition"
+        },
+        "source_documentation": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Documentation",
+          "type": "array"
+        },
+        "source_field": {
+          "minLength": 1,
+          "title": "Source Field",
+          "type": "string"
+        },
+        "source_label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Label"
+        },
+        "source_vocabulary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Vocabulary"
+        },
+        "spatial_resolution": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spatial Resolution"
+        },
+        "spatial_resolution_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spatial Resolution Unit"
+        },
+        "spatial_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Spatial Support"
+        },
+        "standard_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Standard Name"
+        },
+        "standard_name_scheme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Standard Name Scheme"
+        },
+        "taxon_identifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Taxon Identifier"
+        },
+        "taxon_scheme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Taxon Scheme"
+        },
+        "temporal_resolution": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temporal Resolution"
+        },
+        "temporal_support": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temporal Support"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "unit_scheme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Scheme"
+        }
+      },
+      "required": [
+        "source_field",
+        "evidence_type",
+        "evidence_location"
+      ],
+      "title": "SemanticEvidence",
+      "type": "object"
+    },
+    "SemanticMapping": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "disagreement": {
+          "default": false,
+          "title": "Disagreement",
+          "type": "boolean"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "novel": {
+          "default": false,
+          "title": "Novel",
+          "type": "boolean"
+        },
+        "relationship": {
+          "enum": [
+            "equivalent_to",
+            "convertible_to",
+            "broader_than",
+            "narrower_than",
+            "derived_from",
+            "measures",
+            "associated_with",
+            "not_comparable",
+            "unknown",
+            "requires_human_review"
+          ],
+          "title": "Relationship",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "proposed",
+          "enum": [
+            "proposed",
+            "needs_review",
+            "approved",
+            "rejected"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_asset": {
+          "title": "Source Asset",
+          "type": "string"
+        },
+        "source_variable": {
+          "title": "Source Variable",
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/$defs/Variable"
+        }
+      },
+      "required": [
+        "source_asset",
+        "source_variable",
+        "target",
+        "relationship",
+        "evidence",
+        "confidence"
+      ],
+      "title": "SemanticMapping",
+      "type": "object"
+    },
+    "SourceResource": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "checksum": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Checksum",
+          "type": "string"
+        },
+        "checksum_scope": {
+          "default": "asset",
+          "enum": [
+            "asset",
+            "extracted_window",
+            "metadata"
+          ],
+          "title": "Checksum Scope",
+          "type": "string"
+        },
+        "dataset": {
+          "title": "Dataset",
+          "type": "string"
+        },
+        "metadata": {
+          "$ref": "#/$defs/Metadata"
+        },
+        "modality": {
+          "title": "Modality",
+          "type": "string"
+        },
+        "provenance": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Provenance",
+          "type": "array"
+        },
+        "retrieved_at": {
+          "format": "date-time",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "rights": {
+          "$ref": "#/$defs/Rights"
+        },
+        "semantics": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceSemantics"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "support": {
+          "$ref": "#/$defs/Support"
+        },
+        "uri": {
+          "minLength": 1,
+          "title": "Uri",
+          "type": "string"
+        },
+        "variables": {
+          "items": {
+            "$ref": "#/$defs/Variable"
+          },
+          "minItems": 1,
+          "title": "Variables",
+          "type": "array"
+        },
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "dataset",
+        "asset_id",
+        "version",
+        "uri",
+        "modality",
+        "variables",
+        "support",
+        "metadata",
+        "rights",
+        "checksum",
+        "retrieved_at",
+        "provenance"
+      ],
+      "title": "SourceResource",
+      "type": "object"
+    },
+    "SourceSemantics": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ConceptCandidate"
+          },
+          "title": "Candidates",
+          "type": "array"
+        },
+        "evidence": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/SemanticEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "extractor": {
+          "minLength": 1,
+          "title": "Extractor",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1",
+          "default": "1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "source_metadata_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Source Metadata Digest",
+          "type": "string"
+        }
+      },
+      "required": [
+        "extractor",
+        "source_metadata_digest"
+      ],
+      "title": "SourceSemantics",
+      "type": "object"
+    },
+    "Support": {
+      "additionalProperties": false,
+      "properties": {
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "crs": {
+          "default": "EPSG:4326",
+          "title": "Crs",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "title": "End",
+          "type": "string"
+        },
+        "spatial": {
+          "minLength": 1,
+          "title": "Spatial",
+          "type": "string"
+        },
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "temporal": {
+          "minLength": 1,
+          "title": "Temporal",
+          "type": "string"
+        }
+      },
+      "required": [
+        "bbox",
+        "start",
+        "end",
+        "spatial",
+        "temporal"
+      ],
+      "title": "Support",
+      "type": "object"
+    },
+    "Variable": {
+      "additionalProperties": false,
+      "properties": {
+        "biological_entity": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Biological Entity"
+        },
+        "definition": {
+          "minLength": 1,
+          "title": "Definition",
+          "type": "string"
+        },
+        "measurement_method": {
+          "minLength": 1,
+          "title": "Measurement Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "ontology_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ontology Id"
+        },
+        "unit": {
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "definition",
+        "unit",
+        "measurement_method"
+      ],
+      "title": "Variable",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "dimensionality": {
+      "exclusiveMinimum": 0,
+      "title": "Dimensionality",
+      "type": "integer"
+    },
+    "encoder": {
+      "title": "Encoder",
+      "type": "string"
+    },
+    "encoder_version": {
+      "title": "Encoder Version",
+      "type": "string"
+    },
+    "modality": {
+      "title": "Modality",
+      "type": "string"
+    },
+    "observation_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Observation Ids",
+      "type": "array"
+    },
+    "preprocessing": {
+      "title": "Preprocessing",
+      "type": "string"
+    },
+    "provenance": {
+      "items": {
+        "$ref": "#/$defs/ProvenanceRecord"
+      },
+      "minItems": 1,
+      "title": "Provenance",
+      "type": "array"
+    },
+    "representation_id": {
+      "title": "Representation Id",
+      "type": "string"
+    },
+    "track": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Track"
+    },
+    "vector": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Vector",
+      "type": "array"
+    }
+  },
+  "required": [
+    "representation_id",
+    "observation_ids",
+    "modality",
+    "vector",
+    "encoder",
+    "encoder_version",
+    "preprocessing",
+    "dimensionality",
+    "track",
+    "provenance"
+  ],
+  "title": "Representation",
+  "type": "object"
+}

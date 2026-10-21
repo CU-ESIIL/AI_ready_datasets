@@ -33,3 +33,12 @@ calibration, and bounded window-to-encoder execution without raw or harmonized
 data files. The existing fixture/snapshot commands retain their historical
 materialization behavior. Current streamed vectors are reference numeric features;
 model consensus still requires an actual human decision before execution.
+
+## MOSAIKS over harmonized outputs
+
+The [MOSAIKS module](mosaiks-embeddings.md) consumes bounded harmonized raster tiles,
+freezes train-only empirical convolution filters, writes dense feature datasets
+with scientific lineage, and verifies held-out ridge-model consumption against
+baselines. It does not encode raw source assets. Generated diagnostics exercise
+the complete mechanism; independent scientific validation and real-data review
+remain separate requirements.

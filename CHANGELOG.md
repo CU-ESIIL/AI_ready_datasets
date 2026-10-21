@@ -59,3 +59,47 @@
 - Corrected the verified OpenClaw context-reserve overflow and retained malformed
   drafts, invalid peer references, explicit recovery context, and runtime history.
 - Verified 94 offline tests, strict website build and local website link integrity.
+
+### MOSAIKS representation module
+
+- Added a harmonized raster output contract, bounded assembly of canonical observations and deterministic raster execution of reviewed scalar operations.
+- Added empirical MOSAIKS random convolutional features with train-only filter sampling, contrast/covariance normalization, frozen model artifacts and definition/unit identity checks.
+- Added bounded dense feature datasets, separate provenance/labels/splits, integrity and leakage checks, and held-out ridge verification with mean and shuffled-label baselines.
+- Added a new consensus-bound raster layout and MOSAIKS specification; legacy single-pixel approvals cannot authorize the larger source window.
+- Added generated diagnostic execution and offline MOSAIKS tests without downloaded imagery.
+- Verified 32 generated harmonized-tile vectors with held-out ridge diagnostics
+  (R² ≈ 0.996; derived targets, not independent ecological labels) and 110 offline tests.
+- Exercised fresh real-metadata MOSAIKS/raster consensus; preserved a valid draft,
+  three revision requests and a rejected self-citing rights response. No real
+  source read or scientific approval was fabricated.
+- Checkpoint valid consensus candidates before peer review so invalid later
+  responses cannot hide the concrete proposed recipe from scientific inspection.
+
+## 2026-10-21 — Scoped review and research website
+
+- Audited the three existing modules and actual rejected Sentinel artifacts before editing.
+- Added evidence/finding/report/stage-manifest contracts, deterministic jurisdiction
+  checks and consensus synthesis, metadata-only OpenClaw review and offline regressions.
+- Registered integrity and quality roles in the isolated version-pinned runtime;
+  retained historical vetoes and failed model output without repair.
+- Reorganized the Material site around a research narrative and a deeper Documentation
+  hierarchy, preserving existing technical pages and Pages deployment.
+- Added seven maintainable SVG architecture figures, credited NASA imagery, generated
+  contract schemas and module reference. Documented scientific limits and product levels.
+- Required source/recipe-bound scoped reports for real streaming in addition to
+  legacy consensus and human gates; recompute evidence checks before access.
+  Added regressions for stale source identity, forged eligibility and QA vetoes.
+
+## 2026-10-21 — Semantic evidence discovery and landscape resource
+
+- Audited discovery/source contracts, adapters, Sentinel planning, provenance and
+  existing documentation before adding optional typed source semantic evidence.
+- Added evidence/candidate contracts, immutable source bindings, metadata extraction,
+  local semantic-resource lookup and portal-independent resolver boundaries.
+- Preserved raw DN, native calibration metadata and Module 2 mapping authority.
+- Added an 86-resource canonical landscape inventory, auditable project assessments,
+  generated master table/matrix and a 138-entry cross-linked glossary.
+- Documented multidimensional organization/support, historical evolution, provisional
+  profile, semantic gaps, human review and a reusable comparison template.
+- Added bounded metadata diagnostics producing eight explicit-schema Parquet tables,
+  a review-only portfolio and checksummed run manifest; no source observations read.

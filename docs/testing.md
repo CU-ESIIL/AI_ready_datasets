@@ -54,3 +54,57 @@ calibration, and bounded window-to-encoder execution without raw or harmonized
 data files. The existing fixture/snapshot commands retain their historical
 materialization behavior. Current streamed vectors are reference numeric features;
 model consensus still requires an actual human decision before execution.
+
+## MOSAIKS over harmonized outputs
+
+The [MOSAIKS module](mosaiks-embeddings.md) consumes bounded harmonized raster tiles,
+freezes train-only empirical convolution filters, writes dense feature datasets
+with scientific lineage, and verifies held-out ridge-model consumption against
+baselines. It does not encode raw source assets. Generated diagnostics exercise
+the complete mechanism; independent scientific validation and real-data review
+remain separate requirements.
+
+## Scoped review and documentation checks
+
+`tests/test_review.py` checks citation ownership, stale scientific recipe bindings,
+missing evidence versus failure, duplicate findings, unknown QA references, and
+same-recipe role calls. An offline fake transport exercises checkpointed failures;
+it is explicitly a test fixture and never a live fallback. Generated DN values also
+verify that documented negative reflectance survives calibration unchanged.
+
+Regenerate source-derived reference and figures before checking documentation:
+
+```sh
+python scripts/generate_figures.py
+python scripts/generate_reference.py
+mkdocs build --strict
+python scripts/check_site.py site
+```
+
+The site checker validates local HTML links, fragments, images and generated assets.
+Browser checks additionally inspect desktop/mobile layout, navigation, focus and
+reduced-motion behavior. No linter or type-checker configuration currently exists;
+these checks do not imply that one was run.
+
+## Semantic discovery and diagnostic benchmark
+
+`test_semantic_discovery.py` covers complete/partial/invalid evidence, serialization,
+source/model distinctions, multiple semantic systems, immutable original metadata,
+stale bindings, candidate retrieval bases, explicit resolver failures and the
+Module 1/Module 2 authority boundary. Generated Sentinel metadata verifies B08,
+scale/offset, stored DN versus calibrated unit, native CRS and instantaneous support
+without reading pixels or approving a recipe.
+
+`test_semantic_benchmark.py` checks inventory breadth, typed coverage and assessment
+records, deterministic diagnostics, bounds, namespace-reference limits, source
+identities, genuine Parquet round trips and file hashes, including zero-row schemas.
+Rankings and portfolio suggestions are never tests of biological equivalence.
+
+```sh
+python scripts/generate_semantics.py
+python scripts/generate_reference.py
+python scripts/generate_figures.py
+pytest -q
+mkdocs build --strict
+python scripts/check_site.py site
+```

@@ -1,118 +1,83 @@
 # AI-ready biological and environmental datasets
 
-A research prototype for autonomous, human-governed creation of reusable datasets.
-It tests whether a scientific question can drive discovery, auditable scientific
-harmonization, deterministic execution, and machine representations while preserving
-meaning, uncertainty, decisions, and source rights.
+A research prototype for human-governed dataset creation: discover observations,
+preserve source metadata and semantic evidence, review scientific harmonization
+recipes, then stream approved harmonized outputs
+into machine representations with source and decision lineage.
 
-**Agents reason and propose. Deterministic code transforms data.**
+**Agents propose. Deterministic code executes. Humans review model proposals.**
 
-```text
-Scientific question + track configuration
-                 ↓
-Discovery and Access → SourceResource
-                 ↓
-Semantic proposal → recipe → QA → human review when required
-                 ↓
-Deterministic Harmonization → immutable canonical observations
-                 ↓
-Track view → Representation → vectors + source/decision provenance
-                 ↓
-Downstream science
-```
+![Three independently callable stages: discovery and access, harmonization and review, representation. Human review precedes source streaming.](docs/assets/figures/system.svg)
 
-Three independently callable modules live in `src/dataset_prototype/`:
-`discovery`, `harmonization`, and `representations`. Pydantic contracts connect
-them; orchestration composes them. JSON recipes select allow-listed operations.
-Uncertain mappings, rights, joins, and support changes require explicit review.
-There is no generated-code execution.
+[Research website](https://cu-esiil.github.io/AI_ready_datasets/) ·
+[Documentation](docs/documentation/index.md) · [Current status](docs/PROTOTYPE_STATUS.md) ·
+[Architecture audit](docs/architecture/current-state.md)
 
-Food and water security use the same engine and immutable source/core cache.
-Their current configurations demonstrate independent scientific use with synthetic
-field and satellite observations; **neither implements a food/water-security model**.
-A third track stays disabled until its scientific scope is defined.
+## Run offline
 
-MESA is the intended discovery/access infrastructure; its adapter is currently an
-explicit unavailable boundary, with a fully functional local `MockMESAClient`.
-A live STAC adapter now discovers Sentinel-2 and reads actual NIR/SCL pixel windows.
-Four model-backed roles can run through an existing local Ollama server, producing
-reviewable proposals without execution permissions. Model QA vetoes and human review
-remain enforced. An isolated OpenClaw + Verde runtime adapter now uses the installed JSON-only
-`llm-task` plugin; see the [setup guide](docs/openclaw-verde.md). NEON product metadata is
-reachable; token-authenticated native CSV access is implemented but not yet verified
-with a configured token. No live MESA integration is claimed.
-The lightweight scalar encoders preserve modality-specific vectors and record model
-preprocessing separately from scientific harmonization. They are not MOSAIKS or a
-universal latent space.
-
-## Real data and agents
-
-```bash
-python -m pip install -e '.[dev,real]'
-prototype acquire-sentinel examples/real/sentinel_request.json \
-  --longitude -105.586 --latitude 40.0329 --max-cloud 30 \
-  --max-items 3 --output run/my-sentinel
-prototype propose run/my-sentinel --model deepseek-r1:8b --output run/my-proposal
-```
-
-The model must already be installed in Ollama; no automatic model download or mock
-fallback occurs. Raw satellite digital numbers and their calibration metadata stay
-explicit. NEON requires `NEON_API_TOKEN`; see the workflow guide for native-file access.
-
-For the OpenClaw/Verde route:
-
-```bash
-prototype openclaw start --verde-env /path/to/openclaw_container/.env
-prototype propose run/my-sentinel --backend openclaw --output run/my-verde-proposal
-prototype openclaw status
-```
-
-The isolated gateway uses only the configured Verde model; it does not modify the
-existing working group. Its plugin returns normalized JSON, not raw model text or
-token usage. See the setup guide for version, credential and evidence limits.
-
-## Install and run the offline fixture demonstration
-
-From this repository checkout, with Python 3.11+:
-
-```bash
+```sh
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[dev]'
-prototype run --track food_security
-prototype run --track water_security
-# Use a fresh output directory when repeating a run:
-prototype run --all-tracks --output run/repeat
-python -m pytest -q
+python -m pip install -e '.[dev,embeddings]'
+prototype run --all-tracks --output run/offline
+prototype mosaiks-demo --output run/mosaiks-example
+pytest -q
 mkdocs build --strict
-mkdocs serve
 ```
 
-Each run writes nonempty JSON artifacts under `<output>/<track>/`, including the
-request, sources, proposed/approved recipes, QA, review, harmonized observations,
-representations, JSON-LD provenance, downstream comparison, and reproducibility
-manifest. Existing run directories cannot be overwritten. Cache entries are
-content-addressed. JSON keeps this small prototype inspectable without Parquet
-or distributed infrastructure.
+Fixtures and MOSAIKS demonstration inputs are explicitly generated. No source data
+or models are downloaded by these commands. MOSAIKS consumes harmonized rasters,
+fits empirical filters on bounded training-only references, and produces numeric
+shards, compact lineage, separate labels and held-out diagnostics with baselines.
+Derived texture diagnostics do not establish ecological validity or native LLM understanding.
 
-Target sources: **NEON, LTER, NASA ORNL DAAC, AmeriFlux, TRY, CartograPlant,
-Landsat, Sentinel-2**. The default demo/CI retains synthetic fixtures. The optional
-[real-data and model-agent workflow](docs/real-data-agents.md) has been exercised on
-actual Sentinel data and local model inference. The live Ollama and OpenClaw/Verde proposals were
-blocked by QA pending revision/review and remain unexecuted; model output is not scientific approval.
+## Work with the modules
 
-See the [documentation](docs/index.md), [data-source matrix](docs/data-sources.md),
-[prototype status and limitations](docs/PROTOTYPE_STATUS.md),
-[review workflow](docs/harmonization.md), and [development decisions](docs/development/decisions.md).
-The existing MkDocs Material/GitHub Pages infrastructure is retained; the published
-site is configured at [CU-ESIIL/AI_ready_datasets](https://cu-esiil.github.io/AI_ready_datasets/).
-Tests and CI run offline after dependency installation.
+Package code lives in `src/dataset_prototype/`; offline tests in `tests/`;
+small synthetic fixtures in `data/fixtures/`; scientific track configuration in
+`tracks/`; website and technical documentation in `docs/`.
 
-## Metadata consensus and direct streaming
+- [Discovery & access](docs/discovery.md): scientific requests → source metadata and explicit access plans.
+- [Harmonization & review](docs/review/index.md): evidence → frozen recipes, scoped findings, deterministic QA and human decisions.
+- [Representation](docs/mosaiks-embeddings.md): reviewed harmonized raster streams → MOSAIKS vectors and verification.
 
-The [streaming harmonization module](docs/streaming-harmonization.md) adds metadata-only specialist
-dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
-calibration, and bounded window-to-encoder execution without raw or harmonized
-data files. The existing fixture/snapshot commands retain their historical
-materialization behavior. Current streamed vectors are reference numeric features;
-model consensus still requires an actual human decision before execution.
+The orchestrator composes typed, independently callable modules. Food and water
+tracks share immutable source/core resources while retaining separate assumptions
+and product identities. The third track remains disabled.
+
+Discovery now records **data + metadata + semantic evidence** using typed source
+annotations and concept candidates. Module 2 owns mapping and harmonization. The
+project composes community semantic resources rather than replacing them with a
+universal ontology. See the [Semantics resource](docs/semantics/index.md) and
+[metadata benchmark](docs/semantics/benchmark.md).
+
+## Live integration status
+
+Sentinel STAC metadata and bounded COG access are implemented. Historical tiny real
+pixel reads and real model proposals exist; rejected Sentinel reviews have **not**
+produced an approved real MOSAIKS dataset. New real-data paths stream bounded
+windows without persisting raw or harmonized rasters, including tests.
+
+The isolated OpenClaw 2026.5.18 / Verde adapter provides JSON-only specialist
+inference with no model tools or fallback. `review-metadata` adds evidence-bound
+semantic, calibration, support, rights, integrity and quality reviews plus QA synthesis.
+Review eligibility never bypasses existing consensus, veto or human gates.
+NEON metadata and authenticated-access boundaries exist; normalized observation
+processing remains pending. MESA is an explicit unavailable adapter, not a live integration.
+
+[Live setup](docs/openclaw-verde.md) · [Streaming](docs/streaming-harmonization.md) ·
+[Sentinel case study](docs/development/sentinel-review-refactor.md) · [Sources and rights](docs/data-sources.md)
+
+## Maintain the documentation
+
+```sh
+python scripts/generate_figures.py
+python scripts/generate_reference.py
+python scripts/generate_semantics.py
+mkdocs build --strict
+```
+
+Markdown is the source of truth; generated SVG figures and JSON Schemas live beside
+it. Preserve Material and the existing Pages workflow. See [AGENTS.md](AGENTS.md)
+for scientific, streaming and source-rights governance and [design decisions](docs/development/decisions.md)
+for the reasoning behind the implementation.

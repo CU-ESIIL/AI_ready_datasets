@@ -10,6 +10,35 @@ from .orchestration import load_track, run, write
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="prototype")
     sub = parser.add_subparsers(dest="command", required=True)
+    benchmark = sub.add_parser("semantic-benchmark")
+    benchmark.add_argument("--inventory", type=Path, default=Path("data/semantics/semantic_resources.csv"))
+    benchmark.add_argument("--sources", type=Path, action="append")
+    benchmark.add_argument("--output", type=Path, default=Path("outputs/semantic_benchmark"))
+    benchmark.add_argument("--budget", type=int, default=8)
+    semantics = sub.add_parser("discover-semantics")
+    semantics.add_argument("source", type=Path)
+    semantics.add_argument("--output", type=Path, required=True)
+    scoped = sub.add_parser("review-metadata")
+    scoped.add_argument("bundle", type=Path)
+    scoped.add_argument("--runtime", type=Path, default=Path("run/openclaw"))
+    scoped.add_argument("--output", type=Path, required=True)
+    mosaic_plan = sub.add_parser("mosaiks-plan")
+    mosaic_plan.add_argument("plan", type=Path)
+    mosaic_plan.add_argument("spec", type=Path)
+    mosaic_plan.add_argument("--side", type=int, default=16)
+    mosaic_plan.add_argument("--grid", type=int, default=8)
+    mosaic_plan.add_argument("--output", type=Path, required=True)
+    mosaiks = sub.add_parser("mosaiks-run")
+    mosaiks.add_argument("context", type=Path)
+    mosaiks.add_argument("spec", type=Path)
+    mosaiks.add_argument("--output", type=Path, required=True)
+    mosaiks.add_argument("--side", type=int, default=16)
+    mosaiks.add_argument("--grid", type=int, default=8)
+    verification = sub.add_parser("mosaiks-verify")
+    verification.add_argument("dataset", type=Path)
+    verification.add_argument("--output", type=Path, required=True)
+    demo = sub.add_parser("mosaiks-demo")
+    demo.add_argument("--output", type=Path, required=True)
     runner = sub.add_parser("run")
     runner.add_argument("--track", default="food_security")
     runner.add_argument("--all-tracks", action="store_true")
@@ -33,6 +62,7 @@ def main(argv=None):
     stream.add_argument("plan", type=Path)
     stream.add_argument("recipe", type=Path)
     stream.add_argument("--review", type=Path)
+    stream.add_argument("--evidence-review", type=Path)
     stream.add_argument("--consensus", type=Path, required=True)
     stream.add_argument("--output", type=Path, required=True)
     acquire = sub.add_parser("acquire-sentinel")
@@ -87,11 +117,50 @@ def main(argv=None):
     review.add_argument("--decision", choices=["approved", "rejected"], required=True)
     review.add_argument("--output", type=Path, required=True)
     schema = sub.add_parser("schema")
-    schema.add_argument("contract", choices=["ScientificRequest", "SourceResource", "DiscoveryResult", "SemanticMapping", "HarmonizationRecipe", "HarmonizedObservation", "Representation", "ProvenanceRecord", "HumanDecision", "TrackConfig", "StreamPlan", "StreamSample", "EncoderSpec", "ConsensusReport"])
+    schema.add_argument("contract", choices=["ScientificRequest", "SourceResource", "DiscoveryResult", "SemanticMapping", "HarmonizationRecipe", "HarmonizedObservation", "Representation", "ProvenanceRecord", "HumanDecision", "TrackConfig", "StreamPlan", "StreamSample", "EncoderSpec", "ConsensusReport", "MOSAIKSSpec", "RasterContext", "RasterLayout", "ReviewFinding", "ReviewReport", "RunManifest", "Evidence", "SpecialistReview", "ReviewBundle", "SemanticEvidence", "ConceptCandidate", "SourceSemantics"])
     schema.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "run":
+        if args.command == "semantic-benchmark":
+            from .semantic_benchmark import run as benchmark_run, BenchmarkConfig
+            paths = args.sources or [Path("data/fixtures/catalog.json"), Path("data/fixtures/semantics/sentinel_source.json")]
+            result = benchmark_run(args.inventory, paths, args.output, config=BenchmarkConfig(portfolio_budget=args.budget))
+            print(f"{args.output}: {result['resource_count']} resources; {result['source_count']} source records; project metadata diagnostics only")
+        elif args.command == "discover-semantics":
+            from .semantic_discovery import enrich
+            result = enrich(contracts.SourceResource.model_validate_json(args.source.read_text()))
+            write(args.output, result.model_dump(mode="json"))
+            print(f"{args.output}: semantic evidence only; no equivalence approved; no source data read")
+        elif args.command == "review-metadata":
+            from .scoped_review import ReviewBundle, review_metadata
+            from .openclaw_backend import OpenClawBackend
+            result = review_metadata(ReviewBundle.model_validate_json(args.bundle.read_text()),
+                                     OpenClawBackend(args.runtime), args.output)
+            print(f"{result.model_consensus}; human review pending; no source data read")
+        elif args.command == "mosaiks-plan":
+            from .stream_contracts import StreamPlan
+            from .mosaiks import MOSAIKSSpec
+            from .mosaiks_pipeline import RasterLayout,plan_rasters
+            result=plan_rasters(StreamPlan.model_validate_json(args.plan.read_text()),MOSAIKSSpec.model_validate_json(args.spec.read_text()),RasterLayout(side=args.side,grid=args.grid))
+            write(args.output,result.model_dump(mode="json"))
+            print(f"{args.output}: new layout and MOSAIKS configuration need fresh consensus; no source reads")
+        elif args.command == "mosaiks-run":
+            from .harmonized_rasters import RasterContext, authorize_context
+            from .mosaiks import MOSAIKSSpec
+            from .stream_rasters import sentinel_harmonized_tiles
+            from .mosaiks_pipeline import run as vectorize
+            context=authorize_context(RasterContext.model_validate_json(args.context.read_text()))
+            spec=MOSAIKSSpec.model_validate_json(args.spec.read_text())
+            result=vectorize(sentinel_harmonized_tiles(context,side=args.side,grid=args.grid),context,spec,args.output)
+            print(f"{result['records']} MOSAIKS vectors from harmonization outputs: {args.output}")
+        elif args.command == "mosaiks-verify":
+            from .embedding_dataset import verify_dataset
+            print(json.dumps(verify_dataset(args.dataset,args.output),indent=2))
+        elif args.command == "mosaiks-demo":
+            from .mosaiks_pipeline import demo
+            manifest,report=demo(args.output)
+            print(json.dumps({'generated_diagnostic_only':True,'vectors':manifest['records'],'verification':report},indent=2))
+        elif args.command == "run":
             paths = [Path("tracks") / name / "config.json" for name in ("food_security", "water_security")] if args.all_tracks else [args.config or Path("tracks") / args.track / "config.json"]
             for path in paths:
                 print(run(load_track(path), MockMESAClient(args.fixtures), args.output, args.cache))
@@ -116,7 +185,9 @@ def main(argv=None):
             recipe = contracts.HarmonizationRecipe.model_validate_json(args.recipe.read_text())
             human = contracts.HumanDecision.model_validate_json(args.review.read_text()) if args.review else None
             consensus = ConsensusReport.model_validate_json(args.consensus.read_text())
-            result = stream_embed(plan, recipe, sentinel_samples(plan), args.output, human=human, consensus=consensus)
+            from .review_contracts import ReviewReport
+            scoped_report = ReviewReport.model_validate_json(args.evidence_review.read_text()) if args.evidence_review else None
+            result = stream_embed(plan, recipe, sentinel_samples(plan), args.output, human=human, consensus=consensus, evidence_review=scoped_report)
             print(f"{result['records']} streamed reference vectors: {args.output}")
         elif args.command == "acquire-sentinel":
             from .real_data import acquire_sentinel
@@ -180,7 +251,17 @@ def main(argv=None):
             write(args.output, decision.model_dump(mode="json"))
         else:
             from . import stream_contracts
-            module = contracts if hasattr(contracts, args.contract) else stream_contracts
+            if args.contract=='MOSAIKSSpec':
+                from . import mosaiks as module
+            elif args.contract=='RasterContext':
+                from . import harmonized_rasters as module
+            elif args.contract=='RasterLayout':
+                from . import mosaiks_pipeline as module
+            elif args.contract in {'ReviewFinding', 'ReviewReport', 'RunManifest', 'Evidence', 'SpecialistReview'}:
+                from . import review_contracts as module
+            elif args.contract == 'ReviewBundle':
+                from . import scoped_review as module
+            else:module = contracts if hasattr(contracts, args.contract) else stream_contracts
             write(args.output, getattr(module, args.contract).model_json_schema())
     except (ValueError, OSError, LookupError, NotImplementedError) as error:
         parser.exit(2, f"{args.command}: {error}\n")

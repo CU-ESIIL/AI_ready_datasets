@@ -7,7 +7,7 @@ persist harmonized observations. Existing `acquire-sentinel`, fixture runs, and
 standalone `harmonize`/`encode` commands retain their historical materializing
 behavior; use the commands below for the streaming workflow.
 
-## Specialist dialogue
+## Legacy specialist dialogue
 
 `plan-stream` queries Earth Search collection and Item metadata only. Native STAC,
 processing baseline, NIR/SCL access locations, calibration coefficients, source
@@ -32,9 +32,29 @@ messages are structured, sequential exchanges through a shared transcript; these
 are separate tool-free model calls, not independent autonomous tool-using workers.
 The gateway's response scope remains normalized plugin-validated JSON.
 
+## Evidence-bound review before real execution
+
+The newer [scoped review](review/index.md) is an additional required gate for real
+Sentinel streaming. Its report binds the complete source set and scientific recipe,
+contains the curated evidence and all six specialist findings, and records an
+explicit QA synthesis decision. Execution recomputes evidence/status checks rather
+than trusting a serialized eligibility label. Missing evidence, a specialist failure
+or a QA veto blocks access. Existing legacy consensus and human gates remain in
+force; this additive migration does not erase earlier vetoes.
+
+Prepare a `ReviewBundle` with the exact recipe and `sources`, a `source_digest`
+computed by `review.source_set_digest`, intended operation, evidence and fixture flag:
+
+```sh
+prototype review-metadata run/review-bundle.json --output run/scoped-review
+```
+
+The actual Sentinel example remains blocked. The required report cannot be produced
+by inventing missing evidence or editing a failure into a pass.
+
 ## Access and embedding execution
 
-After consensus and human review, `stream-embed` checks exact plan/recipe/encoder
+After consensus, scoped evidence review and human review, `stream-embed` checks exact plan/recipe/encoder
 binding **before opening the source iterator**. Rasterio reads one NIR window and
 one SCL window per candidate; HTTP range access transfers the necessary compressed
 COG blocks. This still transfers bytes over the network and uses bounded in-memory
@@ -66,10 +86,10 @@ is necessarily a derived data product; the reference identity encoder exposes th
 calibrated scalar itself. An evidence hash does not permit recovery of discarded
 raw values or prove complete remote-asset immutability.
 
-The current encoders are **reference numeric features**, identity scalar or scalar
-plus square. They are not learned scientific embeddings or a universal latent
-space. Their version, dimensionality, and preprocessing identity are explicit.
-A learned encoder and its batching/model-weight contract remain future work.
+This command retains **reference numeric features**, identity scalar or scalar
+plus square. The separate [MOSAIKS raster path](mosaiks-embeddings.md) implements
+empirical convolutional features over harmonized windows. Neither claims a
+universal latent space; encoder settings and preprocessing remain explicit.
 
 Output streams use `.partial` filenames until exhaustion. `manifest.json` marks
 completion or failure; interrupted/failed runs retain partial evidence without
@@ -117,6 +137,7 @@ prototype review run/scientist-approved-recipe.json \
 prototype stream-embed run/sentinel-stream-plan.json run/scientist-approved-recipe.json \
   --review run/scientist-decision.json \
   --consensus run/sentinel-stream-consensus/consensus.json \
+  --evidence-review run/scoped-review/report.json \
   --output run/sentinel-stream-embeddings
 ```
 
@@ -155,7 +176,8 @@ in audit files and pass only the failure reason, reducing repeated rejected-clai
 anchoring. Scientific evaluation and renewed recipe/model review remain necessary;
 this run demonstrates real dialogue and enforced gates, not scientific consensus.
 
-The 94-test offline suite and strict MkDocs build pass. Direct calibrated streaming
+That historical run was checked with the then-current 94-test suite. The
+expanded suite is described in [testing](testing.md); current strict builds also pass. Direct calibrated streaming
 is verified with generated offline streams; the real calibrated stream remains
 unexecuted pending revision, consensus and an actual human decision. The active
 isolated runtime is left available for subsequent work.

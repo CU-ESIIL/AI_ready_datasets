@@ -1,0 +1,40 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "max_datasets": {
+      "default": 128,
+      "maximum": 128,
+      "minimum": 1,
+      "title": "Max Datasets",
+      "type": "integer"
+    },
+    "max_resources": {
+      "default": 256,
+      "maximum": 256,
+      "minimum": 1,
+      "title": "Max Resources",
+      "type": "integer"
+    },
+    "portfolio_budget": {
+      "default": 8,
+      "maximum": 64,
+      "minimum": 1,
+      "title": "Portfolio Budget",
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "score_kind": {
+      "const": "project_metadata_diagnostic",
+      "default": "project_metadata_diagnostic",
+      "title": "Score Kind",
+      "type": "string"
+    }
+  },
+  "title": "BenchmarkConfig",
+  "type": "object"
+}

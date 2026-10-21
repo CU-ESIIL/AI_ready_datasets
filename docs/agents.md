@@ -37,3 +37,13 @@ calibration, and bounded window-to-encoder execution without raw or harmonized
 data files. The existing fixture/snapshot commands retain their historical
 materialization behavior. Current streamed vectors are reference numeric features;
 model consensus still requires an actual human decision before execution.
+
+## Evidence-bound review roles
+
+The newer [scoped review workflow](review/index.md) adds explicit integrity and
+quality reviewers, domain-owned evidence citations and typed scientific statuses.
+Its six specialists and QA are independently bounded tool-free model calls over a
+single frozen recipe. Role-specific JSON Schemas constrain ownership and finding-ID
+syntax. Prior findings can be referenced by ID. Deterministic synthesis and human
+approval remain separate. The legacy free-text consensus workflow above retains
+its original four-specialist contract and historical vetoes.

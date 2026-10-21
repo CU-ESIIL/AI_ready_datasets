@@ -1,0 +1,44 @@
+schema_version: '1'
+review_id: null
+scientific_question: null
+source:
+  identifier: null
+  resource: null
+  resource_version: null
+  definition: null
+  source_field: null
+  evidence_location: null
+  source_metadata_digest: null
+scientific_context:
+  domain: null
+  biological_organization: null
+  entity: null
+  property: null
+  matrix: null
+  context: null
+  spatial_support: null
+  native_crs: null
+  temporal_support: null
+  method_protocol_version: null
+  unit: null
+  quantity_kind: null
+candidate:
+  identifier: null
+  resource: null
+  resource_version: null
+  definition: null
+  match_basis: null
+proposed_relationship: unknown
+# Module 2 relation code, not approval or arbitrary executable operation.
+evidence: []
+# Each entry: type, source, location, statement, content_digest.
+differences: []
+potential_loss_of_meaning: []
+missing_evidence: []
+reviewer: null
+date: null
+confidence: null
+confidence_interpretation: null
+decision: needs_review
+human_notes: null
+# This unfilled template is not an approved mapping or executable recipe.

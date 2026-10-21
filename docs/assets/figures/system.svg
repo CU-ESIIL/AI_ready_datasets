@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 493" role="img" aria-labelledby="title desc">
+<title id="title">From question to scientific use</title><desc id="desc">Three independently callable stages; review gates precede source streaming.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
+<rect width="960" height="493" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">From question to scientific use</text>
+<path d="M310 117 L340 117" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M310 242 L340 242" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M620 242 L650 242" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 274 L480 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M620 367 L650 367" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="30" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Question</text>
+<rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Data + semantic discovery</text>
+<rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Harmonization &amp; review</text>
+<rect x="340" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Representation</text>
+<rect x="650" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Downstream science</text>
+<rect x="30" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Source metadata</text>
+<rect x="650" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Human decision</text>
+</svg>

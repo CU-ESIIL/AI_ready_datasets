@@ -64,3 +64,43 @@ calibration, and bounded window-to-encoder execution without raw or harmonized
 data files. The existing fixture/snapshot commands retain their historical
 materialization behavior. Current streamed vectors are reference numeric features;
 model consensus still requires an actual human decision before execution.
+
+## MOSAIKS over harmonized outputs
+
+The [MOSAIKS module](mosaiks-embeddings.md) consumes bounded harmonized raster tiles,
+freezes train-only empirical convolution filters, writes dense feature datasets
+with scientific lineage, and verifies held-out ridge-model consumption against
+baselines. It does not encode raw source assets. Generated diagnostics exercise
+the complete mechanism; independent scientific validation and real-data review
+remain separate requirements.
+
+## Evidence-bound review boundary
+
+The [current-state audit](architecture/current-state.md) records the inspected
+implementation and observed role leakage. The additive [scoped review module](review/index.md)
+accepts a frozen recipe and curated evidence ledger, then returns a typed report
+without source-data access or execution authority. It does not rewrite historical
+free-text consensus results. [Generated contracts](reference/contracts.md) and
+[module reference](reference/modules.md) describe the current code.
+
+![The three independently callable scientific stages and human review gate.](assets/figures/system.svg)
+
+*Current stage boundaries. [Maintained figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
+
+## Data and semantic-evidence discovery
+
+Module 1 now discovers **data + metadata + semantic evidence**. Optional nested
+`SourceSemantics` preserves explicit source annotations, definitions, methods and
+support with evidence kinds and source bindings. `SemanticResourceRegistry` is a
+small semantic-resource lookup boundary, not a name for the whole architecture.
+Concept candidates remain candidates. Module 2 owns mappings, reviewed recipes
+and scientific interpretation; Module 3 continues to consume harmonized outputs.
+
+![Source discovery and semantic evidence jointly enter SourceResource before Module 2 interpretation.](assets/figures/discovery.svg)
+
+*Semantic resources support discovery; they are not source observations or automatic mappings.
+[Maintained source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
+[Audit](development/semantic-discovery-audit.md) · [Semantics](semantics/index.md) ·
+[Pipeline contracts](semantics/pipeline.md)

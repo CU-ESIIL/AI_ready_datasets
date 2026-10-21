@@ -12,12 +12,12 @@ from .harmonization import authorize, run as harmonize, transformed_uncertainty
 from .representations import run as encode, batches
 
 
-def preflight(plan,recipe,human=None,consensus=None):
+def preflight(plan,recipe,human=None,consensus=None,evidence_review=None):
     plan=StreamPlan.model_validate(plan.model_dump(mode='json'))
     recipe=HarmonizationRecipe.model_validate(recipe.model_dump(mode='json'))
     human=HumanDecision.model_validate(human.model_dump(mode='json')) if human is not None else None
     consensus=ConsensusReport.model_validate(consensus.model_dump(mode='json')) if consensus is not None else None
-    if plan.reader=='sentinel-pixel':
+    if plan.reader in {'sentinel-pixel','sentinel-raster'}:
         from .stream_sources import validated_native
         for binding in plan.bindings:validated_native(binding)
     if recipe.scope!='core' or any(o.operation not in STREAM_OPERATIONS for o in recipe.operations):
@@ -31,16 +31,44 @@ def preflight(plan,recipe,human=None,consensus=None):
             raise ValueError('matching completed metadata consensus required')
         if len(consensus.votes)!=len(REVIEWERS) or {role for role,_ in consensus.votes}!=set(REVIEWERS) or any(v.decision!='agree' or v.concerns for _,v in consensus.votes) or consensus.unresolved:
             raise ValueError('all specialists and QA must agree without unresolved concerns')
+    if plan.reader in {'sentinel-pixel','sentinel-raster'}:
+        from .review_contracts import ReviewReport
+        from .review import REQUIRED_DOMAINS, source_set_digest
+        if evidence_review is None:
+            raise ValueError('real streaming requires a matching evidence-bound review report')
+        report = ReviewReport.model_validate(evidence_review.model_dump(mode='json'))
+        if (report.recipe_content_digest != recipe_content_digest(recipe)
+            or report.source_digest != source_set_digest(plan.resources)
+            or report.model_consensus != 'eligible_for_approval'
+            or report.qa_decision != 'accept'
+            or report.missing_domains
+            or set(report.required_domains) != set(REQUIRED_DOMAINS)
+            or {r.reviewer_domain for r in report.reviews} != set(REQUIRED_DOMAINS)):
+            raise ValueError('evidence review is incomplete, vetoed or bound to different inputs')
+        # Recompute findings and evidence checks instead of trusting a serialized label.
+        from .review import synthesize, validate_qa_references
+        recomputed = synthesize(report.reviews, report.evidence,
+            recipe_content_digest=recipe_content_digest(recipe), source_digest=source_set_digest(plan.resources))
+        validate_qa_references(recomputed, report.qa_finding_ids)
+        if (recomputed.model_consensus != 'eligible_for_approval' or not report.qa_finding_ids
+            or report.unique_findings != recomputed.unique_findings):
+            raise ValueError('evidence review synthesis or QA references do not match findings')
+        # Recompute statuses instead of trusting a serialized eligibility label.
+        from .review_contracts import Status
+        if any(f.status not in (Status.PASS,Status.NOT_APPLICABLE)
+               for review in report.reviews for f in review.findings):
+            raise ValueError('evidence review has unresolved specialist findings')
     return authorize(recipe,plan.resources,human)
 
 
-def stream_embed(plan,recipe,samples,output,*,human=None,consensus=None):
+def stream_embed(plan,recipe,samples,output,*,human=None,consensus=None,evidence_review=None):
     # No iterator is opened before all scientific and human gates have passed.
     plan=StreamPlan.model_validate(plan.model_dump(mode='json'))
     recipe=HarmonizationRecipe.model_validate(recipe.model_dump(mode='json'))
     human=HumanDecision.model_validate(human.model_dump(mode='json')) if human is not None else None
     consensus=ConsensusReport.model_validate(consensus.model_dump(mode='json')) if consensus is not None else None
-    qa=preflight(plan,recipe,human,consensus)
+    if plan.reader=='sentinel-raster' or plan.encoder.method=='mosaiks':raise ValueError('use mosaiks-run for reviewed raster outputs')
+    qa=preflight(plan,recipe,human,consensus,evidence_review)
     root=Path(output);root.mkdir(parents=True,exist_ok=False)
     def save(name,value):
         with (root/name).open('x') as f:json.dump(value,f,indent=2,sort_keys=True,allow_nan=False)
@@ -50,6 +78,7 @@ def stream_embed(plan,recipe,samples,output,*,human=None,consensus=None):
     save('qa_report.json',qa.model_dump(mode='json'))
     if human:save('human_decision.json',human.model_dump(mode='json'))
     if consensus:save('consensus.json',consensus.model_dump(mode='json'))
+    if evidence_review:save('evidence_review.json',evidence_review.model_dump(mode='json'))
     by_binding={b.binding_id:b for b in plan.bindings}
     last_sequence={};count=0;iterator=None
     manifest={'status':'incomplete','records':0,'plan_digest':digest(plan),'recipe_digest':digest(recipe),'encoder_spec_digest':digest(plan.encoder),
@@ -91,7 +120,7 @@ def stream_embed(plan,recipe,samples,output,*,human=None,consensus=None):
                         'datetime_start':raw.start.isoformat(),'datetime_end':raw.end.isoformat(),'quality_flag':raw.quality_flag,
                         'uncertainty':transformed_uncertainty(raw.uncertainty,[o for o in recipe.operations if o.source_variable==raw.variable and o.source_asset in {None,raw.asset_id}]),'unit':target.unit,
                         'recipe_digest':digest(recipe),'executor':p.executor,'stream_executor':'bounded-stream-v1','qa_digest':digest(qa),'human_decision_digest':digest(human) if human else None,
-                        'consensus_digest':digest(consensus) if consensus else None,'encoder_spec_digest':digest(plan.encoder)},allow_nan=False)+'\n')
+                        'consensus_digest':digest(consensus) if consensus else None,'evidence_review_digest':digest(evidence_review) if evidence_review else None,'encoder_spec_digest':digest(plan.encoder)},allow_nan=False)+'\n')
                     count+=1
                 # Flush before requesting another microbatch: synchronous sink backpressure.
                 vectors.flush();lineage.flush()
