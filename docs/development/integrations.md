@@ -67,3 +67,26 @@ its authenticated data-file endpoint returned 403 without a configured token.
 `X-API-Token` native file discovery/download is implemented and offline-tested.
 Actual authenticated download and sensor-aware normalization remain pending.
 See [real-data and agent workflow](../real-data-agents.md) for limits and next steps.
+
+## OpenClaw + Verde adapter — 2026-10-21
+
+Docker was initially stopped. The existing `openclaw-local` image contains
+OpenClaw 2026.5.18 and its bundled `llm-task` plugin. Installed documentation/source
+confirmed `disableTools: true`, JSON Schema validation, `/tools/invoke`, and
+returned provider/model identities. This avoids relying on incompatible latest docs.
+The existing Verde key successfully listed the configured `js2/gpt-oss-120b` model.
+
+The adapter starts a separate loopback-published gateway with only the task plugin,
+no channels/heartbeat/fallbacks, and no existing working-group or project mounts.
+Model IDs containing slashes need the full `verde/js2/gpt-oss-120b` reference.
+Verde rejected an empty tools array; the installed `compat.supportsTools: false`
+setting removes that unsupported request field without granting tools. Failed
+compatibility attempts remain auditable. The plugin returns normalized validated
+JSON, not raw provider text, token usage or weight hashes. See the
+[setup and limitations](../openclaw-verde.md).
+
+After those compatibility fixes, all four OpenClaw/Verde roles completed against
+the actual Sentinel snapshot, with both plugin and client schema validation.
+The returned model identity matched `verde` / `js2/gpt-oss-120b`. QA requested
+revision and the deterministic gate blocked execution. This verifies the runtime
+path, not the correctness or acceptance of the scientific proposal.

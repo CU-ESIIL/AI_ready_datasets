@@ -78,6 +78,16 @@ graph does not expose every relationship as a separate PROV edge.
 
 This is a local audit mechanism, not signed or tamper-resistant governance.
 Live Sentinel source retrieval and real local model proposals are now implemented,
-with source-native evidence and versioned model transcripts. Live MESA/OpenClaw
-and authenticated NEON normalization remain pending.
+with source-native evidence and versioned model transcripts. The optional OpenClaw/Verde route records plugin-validated JSON, runtime/configuration
+identity, and explicit unavailable usage/model-digest fields. Live MESA and
+authenticated NEON normalization remain pending.
 See [prototype status](PROTOTYPE_STATUS.md) and [review workflow](harmonization.md).
+
+## Metadata consensus and direct streaming
+
+The [streaming harmonization module](streaming-harmonization.md) adds metadata-only specialist
+dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
+calibration, and bounded window-to-encoder execution without raw or harmonized
+data files. The existing fixture/snapshot commands retain their historical
+materialization behavior. Current streamed vectors are reference numeric features;
+model consensus still requires an actual human decision before execution.

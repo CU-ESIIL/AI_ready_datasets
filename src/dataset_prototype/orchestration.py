@@ -45,7 +45,7 @@ def run(config: TrackConfig, client, output: Path, cache: Path):
         raise ValueError("core fixture proposal needs review")
     core = proposed.model_copy(update={"status": "approved"})
     saved, key = cached(cache, {"kind": "core", "sources": [r.model_dump(mode="json") for r in resources],
-                               "recipe": core.model_dump(mode="json"), "executor": "allowlist-v1"},
+                               "recipe": core.model_dump(mode="json"), "executor": "allowlist-v2"},
                         lambda: [o.model_dump(mode="json") for o in harmonization.run(resources, core, records)])
     canonical = tuple(HarmonizedObservation.model_validate(o) for o in saved)
     cache_refs.append(key)
@@ -71,7 +71,7 @@ def run(config: TrackConfig, client, output: Path, cache: Path):
     import sys
     from importlib.metadata import version
     code_hash = digest({p.name: p.read_text() for p in sorted(Path(__file__).parent.glob("*.py"))})
-    manifest = {"code_hash": code_hash, "python": sys.version, "dependencies": {"pydantic": version("pydantic")}, "prototype_version": "0.1.0", "executor": "allowlist-v1", "fixture": all(r.metadata.fixture for r in resources),
+    manifest = {"code_hash": code_hash, "python": sys.version, "dependencies": {"pydantic": version("pydantic")}, "prototype_version": "0.1.0", "executor": "allowlist-v2", "fixture": all(r.metadata.fixture for r in resources),
                 "track": config.model_dump(mode="json"), "cache_keys": cache_refs,
                 "artifacts": {name: digest(value) for name, value in artifacts.items()},
                 "reproduce": "prototype run --config <saved-track-config.json> --output <new-directory> --cache <cache-directory>"}

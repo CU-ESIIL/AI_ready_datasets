@@ -17,6 +17,24 @@ def main(argv=None):
     runner.add_argument("--fixtures", type=Path, default=Path("data/fixtures"))
     runner.add_argument("--output", type=Path, default=Path("run"))
     runner.add_argument("--cache", type=Path, default=Path(".cache/prototype"))
+    plan = sub.add_parser("plan-stream")
+    plan.add_argument("request", type=Path)
+    plan.add_argument("--longitude", type=float, required=True)
+    plan.add_argument("--latitude", type=float, required=True)
+    plan.add_argument("--max-items", type=int, default=2)
+    plan.add_argument("--output", type=Path, required=True)
+    consensus = sub.add_parser("consensus")
+    consensus.add_argument("plan", type=Path)
+    consensus.add_argument("--runtime", type=Path, default=Path("run/openclaw"))
+    consensus.add_argument("--max-rounds", type=int, default=2)
+    consensus.add_argument("--analysis-from", type=Path)
+    consensus.add_argument("--output", type=Path, required=True)
+    stream = sub.add_parser("stream-embed")
+    stream.add_argument("plan", type=Path)
+    stream.add_argument("recipe", type=Path)
+    stream.add_argument("--review", type=Path)
+    stream.add_argument("--consensus", type=Path, required=True)
+    stream.add_argument("--output", type=Path, required=True)
     acquire = sub.add_parser("acquire-sentinel")
     acquire.add_argument("request", type=Path)
     acquire.add_argument("--longitude", type=float, required=True)
@@ -26,9 +44,16 @@ def main(argv=None):
     acquire.add_argument("--output", type=Path, required=True)
     propose = sub.add_parser("propose")
     propose.add_argument("snapshot", type=Path)
-    propose.add_argument("--model", required=True)
+    propose.add_argument("--backend", choices=["ollama", "openclaw"], default="ollama")
+    propose.add_argument("--model")
+    propose.add_argument("--runtime", type=Path, default=Path("run/openclaw"))
     propose.add_argument("--endpoint", default="http://127.0.0.1:11434")
     propose.add_argument("--output", type=Path, required=True)
+    runtime = sub.add_parser("openclaw")
+    runtime.add_argument("action", choices=["start", "status", "stop"])
+    runtime.add_argument("--verde-env", type=Path)
+    runtime.add_argument("--runtime", type=Path, default=Path("run/openclaw"))
+    runtime.add_argument("--image", default="openclaw-local:latest")
     neon = sub.add_parser("neon-files")
     neon.add_argument("--product", required=True)
     neon.add_argument("--site", required=True)
@@ -62,7 +87,7 @@ def main(argv=None):
     review.add_argument("--decision", choices=["approved", "rejected"], required=True)
     review.add_argument("--output", type=Path, required=True)
     schema = sub.add_parser("schema")
-    schema.add_argument("contract", choices=["ScientificRequest", "SourceResource", "DiscoveryResult", "SemanticMapping", "HarmonizationRecipe", "HarmonizedObservation", "Representation", "ProvenanceRecord", "HumanDecision", "TrackConfig"])
+    schema.add_argument("contract", choices=["ScientificRequest", "SourceResource", "DiscoveryResult", "SemanticMapping", "HarmonizationRecipe", "HarmonizedObservation", "Representation", "ProvenanceRecord", "HumanDecision", "TrackConfig", "StreamPlan", "StreamSample", "EncoderSpec", "ConsensusReport"])
     schema.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
@@ -70,6 +95,29 @@ def main(argv=None):
             paths = [Path("tracks") / name / "config.json" for name in ("food_security", "water_security")] if args.all_tracks else [args.config or Path("tracks") / args.track / "config.json"]
             for path in paths:
                 print(run(load_track(path), MockMESAClient(args.fixtures), args.output, args.cache))
+        elif args.command == "plan-stream":
+            from .stream_sources import plan_sentinel
+            request = contracts.ScientificRequest.model_validate_json(args.request.read_text())
+            plan = plan_sentinel(request, args.longitude, args.latitude, max_items=args.max_items)
+            write(args.output, plan.model_dump(mode="json"))
+            print(f"{args.output}: metadata only; no raster data read")
+        elif args.command == "consensus":
+            from .stream_contracts import StreamPlan
+            from .consensus import negotiate
+            from .openclaw_backend import OpenClawBackend
+            plan = StreamPlan.model_validate_json(args.plan.read_text())
+            result = negotiate(plan, OpenClawBackend(args.runtime), args.output, max_rounds=args.max_rounds, analysis_from=args.analysis_from)
+            print(f"{result.status}: {args.output}; human approval still required")
+        elif args.command == "stream-embed":
+            from .stream_contracts import StreamPlan, ConsensusReport
+            from .stream_sources import sentinel_samples
+            from .streaming import stream_embed
+            plan = StreamPlan.model_validate_json(args.plan.read_text())
+            recipe = contracts.HarmonizationRecipe.model_validate_json(args.recipe.read_text())
+            human = contracts.HumanDecision.model_validate_json(args.review.read_text()) if args.review else None
+            consensus = ConsensusReport.model_validate_json(args.consensus.read_text())
+            result = stream_embed(plan, recipe, sentinel_samples(plan), args.output, human=human, consensus=consensus)
+            print(f"{result['records']} streamed reference vectors: {args.output}")
         elif args.command == "acquire-sentinel":
             from .real_data import acquire_sentinel
             request = contracts.ScientificRequest.model_validate_json(args.request.read_text())
@@ -77,7 +125,26 @@ def main(argv=None):
             print(f"{args.output}: {len(snapshot.records)} actual source observations")
         elif args.command == "propose":
             from .model_agents import OllamaBackend, propose_snapshot
-            print(propose_snapshot(args.snapshot, args.output, OllamaBackend(args.model, endpoint=args.endpoint)))
+            if args.backend == "openclaw":
+                if args.model:
+                    raise ValueError("OpenClaw model is fixed by the verified runtime; do not override it per call")
+                from .openclaw_backend import OpenClawBackend
+                backend = OpenClawBackend(args.runtime)
+            else:
+                if not args.model: raise ValueError("--model is required for the Ollama backend")
+                backend = OllamaBackend(args.model, endpoint=args.endpoint)
+            print(propose_snapshot(args.snapshot, args.output, backend))
+        elif args.command == "openclaw":
+            from .openclaw_runtime import start_runtime, stop_runtime, runtime_status
+            if args.action == "start":
+                if not args.verde_env: raise ValueError("--verde-env must identify a trusted configured env file")
+                info = start_runtime(args.verde_env, args.runtime, args.image)
+                print(json.dumps({k: info[k] for k in ["container", "endpoint", "provider", "model", "openclaw_version"]}, indent=2))
+            elif args.action == "stop":
+                stop_runtime()
+                print("Isolated prototype OpenClaw container stopped; artifacts retained")
+            else:
+                print(json.dumps(runtime_status(args.runtime), indent=2))
         elif args.command == "neon-files":
             from .neon import NEONClient
             client = NEONClient()
@@ -112,7 +179,9 @@ def main(argv=None):
             decision = contracts.HumanDecision(recipe_digest=contracts.digest(recipe), status=args.decision, reviewer=args.reviewer, rationale=args.rationale, timestamp=datetime.now(timezone.utc))
             write(args.output, decision.model_dump(mode="json"))
         else:
-            write(args.output, getattr(contracts, args.contract).model_json_schema())
+            from . import stream_contracts
+            module = contracts if hasattr(contracts, args.contract) else stream_contracts
+            write(args.output, getattr(module, args.contract).model_json_schema())
     except (ValueError, OSError, LookupError, NotImplementedError) as error:
         parser.exit(2, f"{args.command}: {error}\n")
 

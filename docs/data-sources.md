@@ -14,14 +14,17 @@ records are redistributed in this repository.
 | TRY | Organismal/species plant traits | Organism/species; observation-specific time | Future permitted-subset adapter | Planned; taxonomic identity, trait method, units and reuse permission require review |
 | CartograPlant | Spatial botanical observations | Organism/geographic; record-specific time | Future contributing-resource adapter | Planned; preserve contributing source rights; no blanket reuse assumption |
 | Landsat | Satellite imagery | Pixel/landscape/continental; sensor acquisitions | Future STAC discovery and windowed raster access | Planned; sensor, processing level, cloud masks and asset rights remain explicit |
-| Sentinel-2 | Satellite imagery | Pixel/landscape/continental; sensor acquisitions | Future STAC discovery and windowed raster access | Live native STAC discovery and actual NIR/SCL pixel-window reads verified; DN/scale/offset/sensor/support retained; fixtures remain for CI |
+| Sentinel-2 | Satellite imagery | Pixel/landscape/continental; sensor acquisitions | Earth Search STAC metadata and bounded COG windows; direct stream-to-encoder path | Live native STAC discovery and actual NIR/SCL pixel-window reads verified; DN/scale/offset/sensor/support retained; fixtures remain for CI |
 
 Except for the verified Sentinel and documented NEON boundaries described in the
 [live workflow](real-data-agents.md), these are target access mechanisms rather
 than verified provider integrations. Before using real data, record the precise source URI, format, access
 method, version, license, derivative/redistribution permissions, and citation.
 Unclear rights require human review. Do not bulk-download archives into git.
-Prefer streaming/windowed access where available.
+Use the [metadata consensus and streaming path](streaming-harmonization.md) for
+new Sentinel harmonization: documented scale/offset is applied in the reviewed
+executor, with no raw or harmonized dataset files. Historical snapshots remain
+explicit legacy examples.
 
 ## Vertical slices and scientific boundaries
 

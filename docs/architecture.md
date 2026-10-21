@@ -31,9 +31,10 @@ implements bounded live Sentinel STAC search and raster-window access, retains
 native Items/collection/license evidence, and supplies verified offline snapshots.
 Raw DN, calibration metadata, pixel support and instantaneous time stay explicit.
 
-[OpenClaw container](https://github.com/CU-ESIIL/openclaw_container) is the future
+[OpenClaw container](https://github.com/CU-ESIIL/openclaw_container) supplies the installed
 agent runtime. Local role objects exchange structured contracts; later workers
-can return the same proposal artifacts. No runtime is copied or required.
+can return the same proposal artifacts. No runtime is copied. The optional OpenClaw/Verde adapter invokes the installed
+`llm-task` plugin in an isolated container; fixture and Ollama modes remain independent.
 
 ## Storage and streaming
 
@@ -54,3 +55,12 @@ Representation and batch interfaces consume iterators. Harmonization currently
 buffers the small input fixture; joins and daily aggregation need grouped inputs.
 A production-scale partitioned/streaming executor is a documented gap. No Kafka,
 graph database, or distributed scheduler is introduced.
+
+## Metadata consensus and direct streaming
+
+The [streaming harmonization module](streaming-harmonization.md) adds metadata-only specialist
+dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
+calibration, and bounded window-to-encoder execution without raw or harmonized
+data files. The existing fixture/snapshot commands retain their historical
+materialization behavior. Current streamed vectors are reference numeric features;
+model consensus still requires an actual human decision before execution.

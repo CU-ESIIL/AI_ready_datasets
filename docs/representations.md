@@ -24,3 +24,12 @@ The current scalar demo does not implement MOSAIKS or reproduce its results.
 Future encoder adapters may support random image features, remote-sensing foundation
 models, traits, tabular data, or text; scientific preprocessing still belongs in
 recipes and encoder preprocessing must remain explicit.
+
+## Metadata consensus and direct streaming
+
+The [streaming harmonization module](streaming-harmonization.md) adds metadata-only specialist
+dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
+calibration, and bounded window-to-encoder execution without raw or harmonized
+data files. The existing fixture/snapshot commands retain their historical
+materialization behavior. Current streamed vectors are reference numeric features;
+model consensus still requires an actual human decision before execution.

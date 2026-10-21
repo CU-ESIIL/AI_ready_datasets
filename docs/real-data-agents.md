@@ -40,7 +40,8 @@ prototype propose run/my-sentinel --model deepseek-r1:8b \
 Use a model already installed on your Ollama server. No model is downloaded and
 no hosted API key is needed. The optional `--endpoint` defaults to loopback;
 unencrypted remote endpoints are rejected. This is real model inference, not an
-OpenClaw worker invocation. OpenClaw remains the intended later runtime adapter.
+OpenClaw worker invocation. The optional [OpenClaw/Verde adapter](openclaw-verde.md) now uses the installed
+JSON-only task plugin in a separate container.
 
 The example point is a site vicinity, **not a verified NEON sensor location**.
 Request and date selection live in example configuration, not core architecture.
@@ -143,3 +144,12 @@ have an expert specify a defensible field/sensor-to-pixel question and support
 relationship. NIR digital numbers are not air temperature, vegetation height, or
 food/water indicators. Keep that scientific decision distinct from making live
 adapters and models run.
+
+## Metadata consensus and direct streaming
+
+The [streaming harmonization module](streaming-harmonization.md) adds metadata-only specialist
+dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
+calibration, and bounded window-to-encoder execution without raw or harmonized
+data files. The existing fixture/snapshot commands retain their historical
+materialization behavior. Current streamed vectors are reference numeric features;
+model consensus still requires an actual human decision before execution.

@@ -16,6 +16,8 @@ nav:
   - Agents: agents.md
   - Example: examples.md
   - Real data and agents: real-data-agents.md
+  - OpenClaw and Verde: openclaw-verde.md
+  - Streaming harmonization: streaming-harmonization.md
   - Provenance and Governance: provenance.md
   - Testing: testing.md
   - Development:

@@ -55,3 +55,27 @@ an uncommitted changelog were retained and extended.
   concerns. Preserve this result and enforce the veto; a successful model call
   is not evidence of correct science. Bind model review to content and retain
   mandatory human review regardless of model confidence.
+
+## 2026-10-21 — OpenClaw and Verde
+
+- Reuse the existing image and Verde credential rather than modifying working-group
+  defaults or copying OpenClaw. Inspect the installed version and plugin source.
+- Use the installed JSON-only `llm-task` HTTP bridge because it disables tools and
+  preserves the bounded-role contracts; avoid unrestricted normal agent turns.
+- Isolate gateway, state, workspace, credentials, port and model route. Expose only
+  host loopback, disable channels and model heartbeat, and retain human review gates.
+- Fully qualify slash-containing model IDs; disable tool-schema compatibility for
+  Verde's no-tools tasks. Never add a dummy executable tool as a workaround.
+- Label gateway-normalized JSON and unavailable provider usage/weight digest
+  honestly. Keep runtime/configuration provenance separate from model identity.
+
+## Metadata control plane and streaming data plane
+
+Specialist dialogue uses only pinned metadata, fixed scientific targets and a bounded revision budget. Source access is delayed until unanimous consensus, deterministic QA and exact-recipe human approval. The first target is documented Sentinel B08 scale/offset reflectance. Existing executor buffering is constrained to one microbatch; joins/aggregation are rejected before source access. Persist embeddings and compact hash-based lineage, not raw or harmonized datasets. Full raw-data reconstruction is intentionally unavailable without reaccessing the source. Learned encoder integration remains open.
+
+The installed OpenClaw compaction reserve is explicitly 8,192 tokens for bounded
+one-shot tasks (4,096-token output cap, 32,768-token context). This corrects a
+verified 20,000-token default-floor overflow without raising the advertised model
+context or dropping peer evidence. Invalid calibration drafts and self-citing
+reviews remain rejected; explicit recovery reuses only verified initial analyses
+and, where present, the first valid unreviewed draft for fresh reviews.

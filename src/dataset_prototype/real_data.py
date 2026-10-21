@@ -157,7 +157,7 @@ def read_sentinel_pixel(item, longitude, latitude):
     from rasterio.windows import Window, bounds
     # Disable directory scans and bound remote reads to COG TIFFs; GDAL reads the
     # compressed blocks necessary for these windows, not complete scenes.
-    with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN="EMPTY_DIR", CPL_VSIL_CURL_ALLOWED_EXTENSIONS=".tif", GDAL_HTTP_TIMEOUT=30, GDAL_HTTP_MAX_RETRY=1):
+    with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN="EMPTY_DIR", CPL_VSIL_CURL_ALLOWED_EXTENSIONS=".tif", GDAL_HTTP_TIMEOUT=30, GDAL_HTTP_MAX_RETRY=1, GDAL_CACHEMAX=8*1024*1024, CPL_VSIL_CURL_CACHE_SIZE=1048576, VSI_CACHE=False):
         with rasterio.open(item["assets"]["nir"]["href"]) as dataset:
             x,y=transform("EPSG:4326",dataset.crs,[longitude],[latitude])
             row,col=dataset.index(x[0],y[0])
@@ -172,5 +172,7 @@ def read_sentinel_pixel(item, longitude, latitude):
         with rasterio.open(item["assets"]["scl"]["href"]) as dataset:
             x,y=transform("EPSG:4326",dataset.crs,[longitude],[latitude])
             sr,sc=dataset.index(x[0],y[0])
+            if not (0<=sr<dataset.height and 0<=sc<dataset.width):
+                raise ValueError("requested point outside quality raster")
             scl=int(dataset.read(1,window=Window(sc,sr,1,1))[0,0])
     return dict(dn=dn,scl=scl,row=row,col=col,scl_row=sr,scl_col=sc,bbox=list(footprint),longitude=lon[0],latitude=lat[0],native_crs=native_crs)

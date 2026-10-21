@@ -84,7 +84,7 @@ class SourceResource(Contract):
     metadata: Metadata
     rights: Rights
     checksum: str = Field(pattern=r"^[a-f0-9]{64}$")
-    checksum_scope: Literal["asset", "extracted_window"] = "asset"
+    checksum_scope: Literal["asset", "extracted_window", "metadata"] = "asset"
     retrieved_at: datetime
     provenance: tuple[str, ...] = Field(min_length=1)
 
@@ -117,7 +117,8 @@ class SemanticMapping(Contract):
 
 
 class Operation(Contract):
-    operation: Literal["convert_units", "map_variable", "filter", "missing", "temporal_mean", "spatial_match", "normalize_coordinates", "join", "validate"]
+    source_asset: str | None = None
+    operation: Literal["convert_units", "map_variable", "filter", "missing", "temporal_mean", "spatial_match", "normalize_coordinates", "join", "validate", "calibrate"]
     source_variable: str
     target_variable: str | None = None
     from_unit: str | None = None
@@ -128,11 +129,15 @@ class Operation(Contract):
     target_support: str | None = None
     other_asset: str | None = None
     tolerance: float | None = None
+    scale: float | None = None
+    offset: float | None = None
 
     @model_validator(mode="after")
     def valid(self):
         if self.operation == "convert_units" and (self.from_unit, self.to_unit) not in {("degC", "K"), ("K", "degC"), ("cm", "m"), ("m", "cm")}:
             raise ValueError("unsupported unit conversion")
+        if self.operation == "calibrate" and (self.scale is None or self.offset is None or self.scale == 0 or self.from_unit != "DN" or self.to_unit != "1"):
+            raise ValueError("calibration requires explicit nonzero metadata scale/offset and DN to dimensionless units")
         if self.operation == "map_variable" and not self.target_variable:
             raise ValueError("target variable required")
         if self.operation == "temporal_mean" and self.target_support != "daily":
@@ -147,7 +152,7 @@ class Operation(Contract):
 
 
 class Proposal(Contract):
-    role: Literal["discovery", "semantic", "harmonization", "qa"]
+    role: Literal["discovery", "semantic", "units", "support", "rights", "harmonization", "qa"]
     agent: str = "deterministic-fixture-agent"
     version: str = "1"
     configuration: str = "curated rules; no LLM"
@@ -242,7 +247,7 @@ class ProvenanceRecord(Contract):
     context_sources: tuple[SourceResource, ...] = ()
     related_sources: tuple[SourceResource, ...] = ()
     related_records: tuple[RawObservation, ...] = ()
-    executor: str = "allowlist-v1"
+    executor: str = "allowlist-v2"
 
 
 class HarmonizedObservation(Contract):

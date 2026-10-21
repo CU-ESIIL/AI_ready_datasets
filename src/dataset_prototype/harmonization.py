@@ -40,7 +40,7 @@ def assess(recipe, resources, parent_lineage=()):
             errors.append("source rights prohibit V0 exported derivative products")
         elif r.rights.derivative_use is None or r.rights.redistribution is None or r.rights.access_restrictions != "none":
             review.append("uncertain rights or restricted access")
-        selected = [o for o in recipe.operations if o.source_variable == m.source_variable]
+        selected = [o for o in recipe.operations if o.source_variable == m.source_variable and o.source_asset in {None, m.source_asset}]
         if not selected:
             errors.append("mapping has no explicit operation")
         unit, name = source.unit, source.name
@@ -49,6 +49,10 @@ def assess(recipe, resources, parent_lineage=()):
                 if o.from_unit != unit:
                     errors.append("conversion input unit mismatch")
                 unit = o.to_unit
+            if o.operation == "calibrate":
+                if o.from_unit != unit or o.scale != r.metadata.calibration_scale or o.offset != r.metadata.calibration_offset:
+                    errors.append("calibration disagrees with explicit source metadata or current units")
+                unit = o.to_unit
             if o.operation == "map_variable":
                 name = o.target_variable
         if source.unit != m.target.unit and m.relationship == "equivalent_to":
@@ -56,6 +60,8 @@ def assess(recipe, resources, parent_lineage=()):
         if (unit, name) != (m.target.unit, m.target.name):
             errors.append("operations do not produce declared target variable/unit")
     for o in recipe.operations:
+        if o.source_asset is not None and o.source_asset not in by_id:
+            errors.append("operation references unavailable source asset")
         if o.source_variable not in {m.source_variable for m in recipe.mappings}:
             errors.append("operation lacks semantic mapping")
         if o.operation in {"temporal_mean", "spatial_match"}:
@@ -133,7 +139,7 @@ def run(resources, recipe, records, human=None, parents=()):
                 rows.append((raw, parent.value, parent.temporal_support, parent.spatial_support, parent.provenance.source_records, (), ()))
         else:
             rows = [(r, r.value, source.support.temporal, source.support.spatial, (r,), (), ()) for r in selected]
-        operations = [o for o in recipe.operations if o.source_variable == mapping.source_variable]
+        operations = [o for o in recipe.operations if o.source_variable == mapping.source_variable and o.source_asset in {None, mapping.source_asset}]
         for op in operations:
             if op.operation == "temporal_mean":
                 groups = defaultdict(list)
@@ -164,6 +170,8 @@ def run(resources, recipe, records, human=None, parents=()):
                 if op.operation == "convert_units" and value is not None:
                     scale, offset = {("degC", "K"): (1, 273.15), ("K", "degC"): (1, -273.15), ("cm", "m"): (.01, 0), ("m", "cm"): (100, 0)}[(op.from_unit, op.to_unit)]
                     value = value * scale + offset
+                elif op.operation == "calibrate" and value is not None:
+                    value = value * op.scale + op.offset
                 elif op.operation == "missing" and value == op.sentinel:
                     value = None
                 elif op.operation == "filter":
@@ -201,8 +209,19 @@ def run(resources, recipe, records, human=None, parents=()):
                 measurement_method=mapping.target.measurement_method, longitude=raw.longitude, latitude=raw.latitude, spatial_support=spatial,
                 datetime_start=raw.start, datetime_end=raw.end, temporal_support=temporal, dataset=source.dataset,
                 source=source.source_id, source_variable=mapping.source_variable, source_version=source.version, modality=source.modality,
-                uncertainty=raw.uncertainty if all(o.operation != "convert_units" for o in operations) else None,
+                uncertainty=transformed_uncertainty(raw.uncertainty, operations),
                 quality_flag=raw.quality_flag, ontology_id=mapping.target.ontology_id, semantic_relationships=(mapping,), track=recipe.track,
                 provenance=provenance)
             candidate = HarmonizedObservation(observation_id="pending", **fields)
             yield candidate.model_copy(update={"observation_id": digest(candidate.model_dump(mode="json", exclude={"observation_id"}))})
+
+
+def transformed_uncertainty(uncertainty, operations):
+    if uncertainty is None:
+        return None
+    for op in operations:
+        if op.operation == 'convert_units':
+            uncertainty *= {('degC','K'):1,('K','degC'):1,('cm','m'):.01,('m','cm'):100}[(op.from_unit,op.to_unit)]
+        elif op.operation == 'calibrate':
+            uncertainty *= abs(op.scale)
+    return uncertainty

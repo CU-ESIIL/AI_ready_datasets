@@ -56,9 +56,16 @@ class AgentTrace(Contract):
     output_tokens: int | None = None
     error: str | None = None
     response_status: str | None = None
+    runtime_version: str | None = None
+    runtime_config_digest: str | None = None
+    provider: str | None = None
+    response_scope: str = "provider_text"
+    runtime_response_json: str | None = None
 
 
 class OllamaBackend:
+    backend_name = "ollama"
+    configuration = "bounded-science-v1; temperature=0; seed=0; no tools"
     def __init__(self, model, *, endpoint="http://127.0.0.1:11434", http=request_json, timeout=180, max_tokens=2048):
         from urllib.parse import urlsplit
         parsed=urlsplit(endpoint)
@@ -134,8 +141,8 @@ class ModelHarmonizationAgent:
             raise ValueError("model proposed unapproved scope or unknown variable")
         return HarmonizationRecipe(recipe_id="model-proposal-"+digest([m.model_dump(mode="json") for m in mappings])[:16],version="1",scope="core",status="needs_review",author="model-backed-proposal",
             mappings=tuple(mappings),operations=plan.operations,
-            proposals=tuple(Proposal(role=role,agent=f"ollama:{self.backend.model}",version=self.backend._model_digest,
-                configuration="bounded-science-v1; temperature=0; seed=0; no tools",rationale=plan.rationale if role=="harmonization" else "Model-backed metadata comparison; see agent transcript",
+            proposals=tuple(Proposal(role=role,agent=f"{getattr(self.backend,'backend_name','ollama')}:{self.backend.model}",version=self.backend._model_digest,
+                configuration=getattr(self.backend,"configuration","bounded-science-v1; no tools"),rationale=plan.rationale if role=="harmonization" else "Model-backed metadata comparison; see agent transcript",
                 evidence=tuple(m.source_asset for m in mappings)+tuple(f"prompt_sha256:{trace.prompt_digest};response_sha256:{trace.response_digest}" for trace in getattr(self.backend,"traces",()) if trace.role==role)) for role in ["semantic","harmonization"]))
 
 
@@ -144,7 +151,7 @@ class ModelQAAgent:
     def assess(self, recipe, resources):
         critique=self.backend.generate("qa","Adversarially review the recipe. Check semantic meaning, units, support, joins, licenses, missing evidence, information loss, and core/track leakage. The model cannot supply human approval. Return concerns even when a conservative recipe is technically valid.",
             {"recipe":recipe.model_dump(mode="json"),"sources":[source_evidence(r) for r in resources]},Critique)
-        return QAReport(recipe_digest=digest(recipe),outcome=critique.outcome,reasons=critique.reasons,reviewer=f"ollama:{self.backend.model}@{self.backend._model_digest}")
+        return QAReport(recipe_digest=digest(recipe),outcome=critique.outcome,reasons=critique.reasons,reviewer=f"{getattr(self.backend,'backend_name','ollama')}:{self.backend.model}@{self.backend._model_digest}")
 
 
 def propose_snapshot(snapshot_root, output, backend, *, targets=None):
@@ -181,7 +188,7 @@ def propose_snapshot(snapshot_root, output, backend, *, targets=None):
         save("semantic_mappings.json",[m.model_dump(mode="json") for m in mappings])
         recipe=ModelHarmonizationAgent(backend).propose(mappings,selected)
         # Discovery rationale is part of the persistent recipe evidence too.
-        recipe=recipe.model_copy(update={"proposals":(Proposal(role="discovery",agent=f"ollama:{backend.model}",version=backend._model_digest,configuration="bounded-science-v1; no tools",rationale=choice.rationale,evidence=choice.asset_ids+tuple(f"prompt_sha256:{trace.prompt_digest};response_sha256:{trace.response_digest}" for trace in backend.traces if trace.role=="discovery")),)+recipe.proposals})
+        recipe=recipe.model_copy(update={"proposals":(Proposal(role="discovery",agent=f"{getattr(backend,'backend_name','ollama')}:{backend.model}",version=backend._model_digest,configuration=getattr(backend,"configuration","bounded-science-v1; no tools"),rationale=choice.rationale,evidence=choice.asset_ids+tuple(f"prompt_sha256:{trace.prompt_digest};response_sha256:{trace.response_digest}" for trace in backend.traces if trace.role=="discovery")),)+recipe.proposals})
         save("draft_recipe.json",recipe.model_dump(mode="json"))
         model_qa=ModelQAAgent(backend).assess(recipe,selected)
         save("model_qa.json",model_qa.model_dump(mode="json"))

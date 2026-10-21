@@ -1,5 +1,14 @@
 # Prototype status
 
+## Metadata consensus and streaming
+
+The new [streaming module](streaming-harmonization.md) separates metadata-only
+OpenClaw specialist dialogue from lazy Sentinel native-window access. The first
+target is B08 reflectance using documented scale/offset. Exact-plan consensus,
+deterministic QA and human approval gate direct bounded-batch encoding. No raw or
+harmonized data files are produced by this path. Current encoders remain reference
+numeric features. Legacy fixture/snapshot paths still materialize data explicitly.
+
 ## Working now
 
 Three independently callable typed modules compose into a complete offline run:
@@ -22,13 +31,13 @@ Live Earth Search STAC discovery and actual Sentinel-2 NIR/SCL COG pixel reads
 were exercised on 2026-10-21. Three initial actual DN observations and an independent
 one-pixel CLI acquisition preserve native metadata, calibration context, support,
 quality and licensing. Four real local Ollama role calls completed with versioned
-model transcripts. Model QA rejected the latest proposed recipe; no scientist
+model transcripts. Ollama baseline QA rejected its proposed recipe; no scientist
 approval or executed model-proposed transformation is claimed.
 
 NEON public product metadata was retrieved; the data-file endpoint returned 403
 without a token. Authenticated native CSV access code is implemented and unit-tested,
-but token-backed acquisition/normalization has not yet been verified. Live MESA
-and OpenClaw remain unimplemented. See [live evidence and limits](real-data-agents.md).
+but token-backed acquisition/normalization has not yet been verified. Live MESA remains unimplemented. OpenClaw now has an isolated Verde-backed
+JSON-only task adapter using the installed 2026.5.18 plugin. See [live evidence and limits](real-data-agents.md).
 
 ## Future MESA integration
 
@@ -38,12 +47,22 @@ search/describe/fetch/history through verified capabilities. The current source
 README's pre-alpha status differs from the tool families described in overview
 docs. See [integration inspection](development/integrations.md).
 
-## Future OpenClaw integration
+## OpenClaw and Verde
 
-Map four bounded local roles to workers exchanging the same JSON contracts and
-review packets. Preserve separate deterministic execution and human approval.
-No OpenClaw framework, scheduler, or worker transport was copied or started.
-A real Ollama model backend now exercises the same four-role boundary locally.
+An isolated gateway now uses the existing OpenClaw image and configured Verde
+provider/model. No existing working-group/Slack routes are changed or mounted.
+`OpenClawBackend` calls the actual JSON-only `llm-task` plugin over `/tools/invoke`.
+The plugin disables inference tools and validates schemas. Route checks reject
+provider/model substitution and there is no Ollama/mock fallback. Model weight
+hash and usage are unavailable from the plugin and are explicitly unreported.
+
+Live testing identified two compatibility requirements: fully qualify the model
+as `verde/js2/gpt-oss-120b`, and set `compat.supportsTools: false` so Verde receives
+no unsupported empty tools array. See [OpenClaw/Verde setup](openclaw-verde.md).
+The live four-role OpenClaw → Verde run completed with schema-valid outputs from
+`js2/gpt-oss-120b`. Model QA requested revision and deterministic QA blocked
+execution. The isolated gateway is running; scientific acceptance remains pending.
+Full working-group scheduling and authenticated human review remain future work.
 
 ## Scientific assumptions
 
@@ -78,19 +97,19 @@ copy. Default orchestration does not yet load arbitrary per-track recipe files.
 ## Testing status
 
 Offline unit, contract/integration, CLI, deterministic repeatability and track
-independence tests are implemented. On 2026-10-21, the expanded offline suite passed locally (69 tests at the final
-real-boundary checkpoint),
+independence tests are implemented. On 2026-10-21, the expanded offline suite passed locally (94 tests after streaming harmonization),
 the installed CLI ran both tracks, and the strict website build passed. Rendered
 navigation/readability and local links/fragments were checked. [Testing](testing.md) describes coverage and
 scientific gaps. CI also builds the existing MkDocs site strictly.
 
 ## Current limits
 
-Harmonization buffers tiny fixtures. Scalar and representation generators support
-iterator interfaces, but large partitioned joins/aggregation are not implemented.
+The legacy executor buffers inputs; the new streaming module limits each call to
+a bounded microbatch. Large partitioned joins/aggregation remain unimplemented
+and are refused by streaming preflight.
 Source/core results use integrity-checked read-through caching and atomic
-publication; distributed cache coordination remains future work. Uncertainty
-propagation beyond unchanged values is incomplete. Only WGS84 identity coordinate
+publication; distributed cache coordination remains future work. Linear unit/calibration uncertainty scaling is implemented; calibration-parameter
+uncertainty, covariance and broader propagation remain incomplete. Only WGS84 identity coordinate
 normalization is supported. Native Sentinel STAC/window access now exists; sensor-aware NEON normalization
 and real field/satellite alignment remain pending.
 Local JSON review is an auditable artifact, not an authenticated permissions system.
@@ -102,3 +121,11 @@ Review the actual model QA rejection and improve evidence/contracts without forc
 approval. Then specify and review a defensible real NEON + satellite support and
 temporal alignment question. Then add a non-raster cross-network/trait vertical slice,
 followed by ORNL DAAC context, before making generality claims.
+
+## First live metadata consensus result
+
+Real Earth Search metadata fed four specialist analyses, a schema-valid recipe,
+and five actual OpenClaw/Verde peer reviews. The final run requested revision;
+coefficient checks passed, while final QA enforced the model veto. No calibrated
+real-data embeddings were emitted. Model claims and executor limitations remain
+separate; see the [live evidence](streaming-harmonization.md#live-verification-2026-10-21).

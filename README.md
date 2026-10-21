@@ -37,9 +37,10 @@ explicit unavailable boundary, with a fully functional local `MockMESAClient`.
 A live STAC adapter now discovers Sentinel-2 and reads actual NIR/SCL pixel windows.
 Four model-backed roles can run through an existing local Ollama server, producing
 reviewable proposals without execution permissions. Model QA vetoes and human review
-remain enforced. OpenClaw is a future runtime adapter. NEON product metadata is
+remain enforced. An isolated OpenClaw + Verde runtime adapter now uses the installed JSON-only
+`llm-task` plugin; see the [setup guide](docs/openclaw-verde.md). NEON product metadata is
 reachable; token-authenticated native CSV access is implemented but not yet verified
-with a configured token. No live MESA or OpenClaw integration is claimed.
+with a configured token. No live MESA integration is claimed.
 The lightweight scalar encoders preserve modality-specific vectors and record model
 preprocessing separately from scientific harmonization. They are not MOSAIKS or a
 universal latent space.
@@ -57,6 +58,18 @@ prototype propose run/my-sentinel --model deepseek-r1:8b --output run/my-proposa
 The model must already be installed in Ollama; no automatic model download or mock
 fallback occurs. Raw satellite digital numbers and their calibration metadata stay
 explicit. NEON requires `NEON_API_TOKEN`; see the workflow guide for native-file access.
+
+For the OpenClaw/Verde route:
+
+```bash
+prototype openclaw start --verde-env /path/to/openclaw_container/.env
+prototype propose run/my-sentinel --backend openclaw --output run/my-verde-proposal
+prototype openclaw status
+```
+
+The isolated gateway uses only the configured Verde model; it does not modify the
+existing working group. Its plugin returns normalized JSON, not raw model text or
+token usage. See the setup guide for version, credential and evidence limits.
 
 ## Install and run the offline fixture demonstration
 
@@ -85,8 +98,8 @@ or distributed infrastructure.
 Target sources: **NEON, LTER, NASA ORNL DAAC, AmeriFlux, TRY, CartograPlant,
 Landsat, Sentinel-2**. The default demo/CI retains synthetic fixtures. The optional
 [real-data and model-agent workflow](docs/real-data-agents.md) has been exercised on
-actual Sentinel data and local model inference. The latest real model proposal was
-rejected by QA and remains unexecuted; model output is not scientific approval.
+actual Sentinel data and local model inference. The live Ollama and OpenClaw/Verde proposals were
+blocked by QA pending revision/review and remain unexecuted; model output is not scientific approval.
 
 See the [documentation](docs/index.md), [data-source matrix](docs/data-sources.md),
 [prototype status and limitations](docs/PROTOTYPE_STATUS.md),
@@ -94,3 +107,12 @@ See the [documentation](docs/index.md), [data-source matrix](docs/data-sources.m
 The existing MkDocs Material/GitHub Pages infrastructure is retained; the published
 site is configured at [CU-ESIIL/AI_ready_datasets](https://cu-esiil.github.io/AI_ready_datasets/).
 Tests and CI run offline after dependency installation.
+
+## Metadata consensus and direct streaming
+
+The [streaming harmonization module](docs/streaming-harmonization.md) adds metadata-only specialist
+dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
+calibration, and bounded window-to-encoder execution without raw or harmonized
+data files. The existing fixture/snapshot commands retain their historical
+materialization behavior. Current streamed vectors are reference numeric features;
+model consensus still requires an actual human decision before execution.

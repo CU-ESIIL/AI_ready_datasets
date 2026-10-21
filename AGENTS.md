@@ -106,3 +106,23 @@
   veto, bind it to scientific recipe content, and invalidate it after scientific edits.
 - A model's rejection may be scientifically mistaken. Preserve it for expert analysis;
   do not force an approval or claim a rejected proposal produced validated science.
+
+## OpenClaw and Verde runtime
+
+- Inspect installed OpenClaw version/plugin contracts before changes. The current
+  adapter deliberately targets 2026.5.18; do not assume latest documentation matches.
+- Keep the prototype gateway isolated from working-group roles and Slack. Allow
+  only JSON-only task inference, with no model tools, fallback models or heartbeat.
+- For slash-containing Verde model IDs, use a fully provider-qualified route and
+  verify the actual returned provider/model. Reject substitutions.
+- The task plugin normalizes JSON and may remove code fences. Record response scope
+  accurately; do not label it raw provider text or invent token counts/weight hashes.
+- Never print Docker environment/configuration secrets. Preserve runtime policy
+  digests/history and keep generated credential state under ignored private outputs.
+
+## Streaming harmonization
+
+- New real-data harmonization paths must stream bounded windows directly into encoders; do not persist raw/harmonized datasets, including test downloads. Use offline generated iterators for tests.
+- Keep metadata consensus separate from source access. All four specialists and QA must review the same frozen recipe; disagreement blocks streaming. Human review remains mandatory for model proposals.
+- Metadata checksums are not data checksums. Preserve per-window evidence hashes and native support in compact lineage without serializing raw observations.
+- Legacy snapshot/fixture paths remain explicit historical workflows, not the streaming implementation.

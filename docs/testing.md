@@ -27,7 +27,7 @@ artifacts, verify shared cache identity, compare repeat-run bytes, preserve othe
 track outputs/configuration, exercise CLI/schema export, and add a synthetic third
 track through configuration only.
 
-Remaining gaps: authenticated NEON normalization, live MESA/OpenClaw, large input
+Remaining gaps: authenticated NEON normalization, live MESA and full OpenClaw working-group scheduling, large input
 streaming, authenticated reviewer identity, scientific uncertainty propagation,
 real raster preprocessing/cloud masks, and scientifically validated domain models.
 No test claims ecological validity or predictive performance from synthetic values.
@@ -39,3 +39,18 @@ and file bounds, model JSON-schema requests, model identity/transcripts, malform
 and truncated outputs, missing-model failures, identifier protection, mandatory
 human review, and model QA veto/staleness. They do not claim live integration
 merely because a transport was mocked.
+
+OpenClaw adapter tests run without Docker or provider credentials. They verify
+version-matched policy configuration, credential-file parsing without shell
+execution, loopback routing, actual `/tools/invoke` envelope/model qualification,
+provider/model substitution failures, no-fallback errors, normalized-response
+provenance and policy-drift rejection. Live runtime testing is separate from CI.
+
+## Metadata consensus and direct streaming
+
+The [streaming harmonization module](streaming-harmonization.md) adds metadata-only specialist
+dialogue, digest-bound unanimous review, documented Sentinel-2 scale/offset
+calibration, and bounded window-to-encoder execution without raw or harmonized
+data files. The existing fixture/snapshot commands retain their historical
+materialization behavior. Current streamed vectors are reference numeric features;
+model consensus still requires an actual human decision before execution.
