@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataset-prototype"
+version = "0.1.0"
+description = "Human-governed, auditable environmental dataset prototype"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.7,<3"]
+
+[project.optional-dependencies]
+real = ["rasterio>=1.4,<2"]
+dev = ["pytest>=8,<10", "mkdocs>=1.6,<2", "mkdocs-material>=9.5,<10"]
+
+[project.scripts]
+prototype = "dataset_prototype.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

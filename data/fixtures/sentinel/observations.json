@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "sentinel-0",
+    "asset_id": "fixture-sentinel",
+    "variable": "nir_reflectance",
+    "value": 0.2,
+    "longitude": -105.0,
+    "latitude": 40,
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "quality_flag": "synthetic",
+    "uncertainty": null
+  },
+  {
+    "record_id": "sentinel-1",
+    "asset_id": "fixture-sentinel",
+    "variable": "nir_reflectance",
+    "value": 0.4,
+    "longitude": -104.9,
+    "latitude": 40,
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "quality_flag": "synthetic",
+    "uncertainty": null
+  },
+  {
+    "record_id": "sentinel-2",
+    "asset_id": "fixture-sentinel",
+    "variable": "nir_reflectance",
+    "value": 0.5,
+    "longitude": -104.8,
+    "latitude": 40,
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "quality_flag": "synthetic",
+    "uncertainty": null
+  }
+]

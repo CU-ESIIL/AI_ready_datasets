@@ -1,0 +1,28 @@
+{
+  "track": "water_security",
+  "question": "How does synthetic satellite reflectance covary with synthetic field vegetation height?",
+  "variables": [
+    "canopy_height",
+    "nir_reflectance"
+  ],
+  "modalities": [
+    "field",
+    "satellite"
+  ],
+  "support": {
+    "bbox": [
+      -106,
+      39,
+      -104,
+      41
+    ],
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "spatial": "synthetic_common_footprint",
+    "temporal": "daily",
+    "crs": "EPSG:4326"
+  },
+  "enabled": true,
+  "assumption": "Architecture demonstration only; no food or water security model. Synthetic common supports are deliberately aligned.",
+  "encoder": "squared"
+}

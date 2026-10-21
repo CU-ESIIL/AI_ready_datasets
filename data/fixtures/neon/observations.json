@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "neon-0",
+    "asset_id": "fixture-neon",
+    "variable": "canopy_height",
+    "value": 2.0,
+    "longitude": -105.0,
+    "latitude": 40,
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "quality_flag": "synthetic",
+    "uncertainty": null
+  },
+  {
+    "record_id": "neon-1",
+    "asset_id": "fixture-neon",
+    "variable": "canopy_height",
+    "value": 4.0,
+    "longitude": -104.9,
+    "latitude": 40,
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "quality_flag": "synthetic",
+    "uncertainty": null
+  },
+  {
+    "record_id": "neon-2",
+    "asset_id": "fixture-neon",
+    "variable": "canopy_height",
+    "value": 6.0,
+    "longitude": -104.8,
+    "latitude": 40,
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-07-02T00:00:00Z",
+    "quality_flag": "synthetic",
+    "uncertainty": null
+  }
+]

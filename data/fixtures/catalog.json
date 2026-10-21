@@ -1,0 +1,104 @@
+[
+  {
+    "source_id": "NEON",
+    "dataset": "SYNTHETIC neon demonstration",
+    "asset_id": "fixture-neon",
+    "version": "fixture-1",
+    "uri": "neon/observations.json",
+    "modality": "field",
+    "variables": [
+      {
+        "name": "canopy_height",
+        "definition": "Synthetic canopy_height for contract tests only",
+        "unit": "m",
+        "measurement_method": "synthetic vegetation height measurement",
+        "biological_entity": "vegetation",
+        "ontology_id": null
+      }
+    ],
+    "support": {
+      "bbox": [
+        -106,
+        39,
+        -104,
+        41
+      ],
+      "start": "2023-07-01T00:00:00Z",
+      "end": "2023-07-02T00:00:00Z",
+      "spatial": "synthetic_common_footprint",
+      "temporal": "daily",
+      "crs": "EPSG:4326"
+    },
+    "metadata": {
+      "fixture": true,
+      "description": "Invented data, not source observations or a native-schema adapter",
+      "platform": null,
+      "sensor": null,
+      "stac_version": null,
+      "original_identifier": "synthetic:neon:1"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "attribution": "Project-authored synthetic fixture; no provider observations included",
+      "derivative_use": true,
+      "redistribution": true,
+      "access_restrictions": "none"
+    },
+    "checksum": "31b9022226056431490b9de2aa05ce3c4cf3451a0e0bd4bad0c0ed794a9fbd5b",
+    "retrieved_at": "2026-10-21T00:00:00Z",
+    "provenance": [
+      "project-authored synthetic fixture:neon"
+    ]
+  },
+  {
+    "source_id": "SENTINEL",
+    "dataset": "SYNTHETIC sentinel demonstration",
+    "asset_id": "fixture-sentinel",
+    "version": "fixture-1",
+    "uri": "sentinel/observations.json",
+    "modality": "satellite",
+    "variables": [
+      {
+        "name": "nir_reflectance",
+        "definition": "Synthetic nir_reflectance for contract tests only",
+        "unit": "1",
+        "measurement_method": "synthetic satellite band reflectance",
+        "biological_entity": null,
+        "ontology_id": null
+      }
+    ],
+    "support": {
+      "bbox": [
+        -106,
+        39,
+        -104,
+        41
+      ],
+      "start": "2023-07-01T00:00:00Z",
+      "end": "2023-07-02T00:00:00Z",
+      "spatial": "synthetic_common_footprint",
+      "temporal": "daily",
+      "crs": "EPSG:4326"
+    },
+    "metadata": {
+      "fixture": true,
+      "description": "Invented data, not source observations or a native-schema adapter",
+      "platform": "Sentinel-2 fixture",
+      "sensor": "MSI fixture",
+      "stac_version": "1.0.0",
+      "original_identifier": "synthetic:sentinel:1"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "attribution": "Project-authored synthetic fixture; no provider observations included",
+      "derivative_use": true,
+      "redistribution": true,
+      "access_restrictions": "none"
+    },
+    "checksum": "d80d9ddfe270539291ea95b32b73d82f995d54f2ebe5af3406a3cc5d121911cc",
+    "retrieved_at": "2026-10-21T00:00:00Z",
+    "provenance": [
+      "project-authored synthetic fixture:sentinel"
+    ]
+  }
+]

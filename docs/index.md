@@ -1,31 +1,36 @@
-# basic_OASIS
+# AI-ready biological and environmental datasets
 
-`basic_OASIS` is a lightweight MkDocs + Material starter for clear project documentation. It is designed to stay minimal, readable, and easy to extend.
+Can a scientific question drive discovery of heterogeneous observations, bounded
+agent proposals, governed harmonization, and reusable machine representations
+without losing scientific meaning or provenance?
 
-[Explore Examples](examples.md){ .md-button .md-button--primary }
-[View Repository](https://github.com/CU-ESIIL/basic_OASIS){ .md-button }
+This repository tests that hypothesis with a small local prototype. Agents propose;
+allow-listed deterministic software executes approved recipes. Three independent
+modules provide discovery/access, harmonization, and representation generation.
 
-<div class="grid cards" markdown>
+The working demonstration uses **synthetic** field vegetation height and satellite
+reflectance at deliberately coincident locations and times. Food and water security
+are configuration namespaces, not validated scientific models. No external data is
+downloaded by that default fixture demo. An optional [real-data workflow](real-data-agents.md)
+now retrieves actual Sentinel pixels and runs four model-backed proposal roles
+through local Ollama. Proposals remain subject to QA and human review; the first
+current real proposal was rejected and has not transformed data.
 
-- **Code**
+Start with the [complete example](examples.md), read the [architecture](architecture.md),
+and check [what is working, mocked, and planned](PROTOTYPE_STATUS.md).
 
-  ---
-
-  Capture setup steps, scripts, and reproducible snippets in one place.
-
-- **Data**
-
-  ---
-
-  Document data access, formats, and provenance so work stays transparent.
-
-- **Docs**
-
-  ---
-
-  Write concise guides that future contributors can quickly understand.
-
-</div>
-
-!!! note "Template-first by design"
-    This site is intentionally minimal. Start simple, then extend only what your project needs.
+```text
+Question → Discovery → Source resources
+                              ↓
+             Semantic proposals → Recipes → QA / review
+                              ↓
+                 Deterministic harmonization
+                              ↓
+              Immutable shared observations
+                              ↓
+                   Independent track views
+                              ↓
+               Modality-specific representations
+                              ↓
+                  Downstream science + provenance
+```

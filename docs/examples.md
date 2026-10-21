@@ -1,110 +1,48 @@
-# UI Examples
+# Complete offline example
 
-This page contains small, copyable patterns that are compatible with a standard MkDocs + Material setup.
+Question: how does synthetic satellite reflectance covary with synthetic
+field-observed vegetation height? This is an architectural demonstration inspired
+by the intended NEON + satellite vertical slice.
 
-## Hoverable button
+`data/fixtures/` contains three project-authored field records and three satellite
+records. Coordinates, daily intervals, and support are deliberately aligned.
+Values are invented, not actual NEON measurements or Sentinel pixels. The satellite
+fixture preserves platform/sensor identity and a STAC metadata version but is not
+a complete STAC Item or raster.
 
-Use this for a small call-to-action with a subtle hover effect.
-
-[Back to Home](index.md){ .md-button .oasis-hover-button }
-
-```md
-[Back to Home](index.md){ .md-button .oasis-hover-button }
+```bash
+prototype run --all-tracks --output run/demo
 ```
 
-## Responsive iframe embed
+1. Track configuration becomes a typed scientific request.
+2. Discovery finds fixture assets by extent, interval, modality, and variable.
+3. Access verifies checksums and returns original immutable records.
+4. The semantic role compares each variable to its explicit curated target.
+5. The harmonization role proposes core validation operations.
+6. QA approves supported identity mappings; no human review is fabricated.
+7. Deterministic code emits shared canonical observations.
+8. Track selection recipes retain canonical parents in separate track products.
+9. Encoders yield separate field and satellite vectors.
+10. JSON-LD and run manifests preserve source, license, recipe, proposal, and decisions.
+11. A descriptive Pearson correlation compares exactly coincident synthetic pairs.
 
-Use this wrapper to keep embedded content responsive.
+The last step is a downstream software smoke demonstration, not evidence that
+reflectance predicts canopy height or any food/water outcome. No predictive model
+is evaluated. Actual field-to-pixel support alignment, cloud masks, seasonal
+matching, access rights, and source metadata require real-data scientific review.
 
-<div class="oasis-embed">
-  <iframe
-    title="OpenStreetMap example embed"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=-105.3%2C39.9%2C-104.9%2C40.1&amp;layer=mapnik"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
-</div>
+Each track directory contains `request.json`, `sources.json`,
+`proposed_recipe.json`, `qa_report.json`, `review.json`, `approved_recipe.json`,
+`harmonized.json`, `representations.json`, `provenance.jsonld`, `downstream.json`,
+and `run_manifest.json`. Recipe files contain `core` and `track` artifacts; extract
+one standalone object for the `qa` or `review` commands. The manifest stores the
+full track configuration, source/recipe-aware cache keys, executor/prototype
+versions, and content digests for every result artifact. Retain the source
+checkout and dependency environment to reproduce results.
 
-```html
-<div class="oasis-embed">
-  <iframe
-    title="OpenStreetMap example embed"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=-105.3%2C39.9%2C-104.9%2C40.1&amp;layer=mapnik"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
-</div>
-```
+Inspect the three modules independently using the APIs on the discovery,
+harmonization, and representation pages. CI uses only these local fixtures.
 
-## Card grid
-
-Use card grids to present parallel links or content categories.
-
-<div class="grid cards" markdown>
-
-- **Guide**
-
-  ---
-
-  Link short onboarding content.
-
-- **Workflow**
-
-  ---
-
-  Summarize repeatable project steps.
-
-- **Reference**
-
-  ---
-
-  Point to key files and definitions.
-
-</div>
-
-```md
-<div class="grid cards" markdown>
-
-- **Guide**
-
-  ---
-
-  Link short onboarding content.
-
-- **Workflow**
-
-  ---
-
-  Summarize repeatable project steps.
-
-- **Reference**
-
-  ---
-
-  Point to key files and definitions.
-
-</div>
-```
-
-## Content tabs
-
-Use tabs when two or three variants should live in one place.
-
-=== "Python"
-
-    ```python
-    print("Hello from Python")
-    ```
-
-=== "R"
-
-    ```r
-    print("Hello from R")
-    ```
-
-## Admonition
-
-Use callouts for important notes or caution points.
-
-!!! tip
-    Keep examples short and focused so future contributors can copy and adapt them quickly.
+For actual observations and real model calls, use the separate
+[real-data and agents workflow](real-data-agents.md). The commands above remain
+an offline deterministic regression example.

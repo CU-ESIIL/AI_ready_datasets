@@ -1,16 +1,27 @@
-site_name: "basic_OASIS"
-site_description: "Minimal project website"
-site_url: "https://cu-esiil.github.io/basic_OASIS/"
-
-repo_name: "CU-ESIIL/basic_OASIS"
-repo_url: "https://github.com/CU-ESIIL/basic_OASIS"
+site_name: "AI-ready biological and environmental datasets"
+site_description: "Human-governed research prototype for auditable dataset creation"
+site_url: "https://cu-esiil.github.io/AI_ready_datasets/"
+repo_name: "CU-ESIIL/AI_ready_datasets"
+repo_url: "https://github.com/CU-ESIIL/AI_ready_datasets"
 edit_uri: "edit/main/docs/"
-
 nav:
-  - Site:
-      - Home: index.md
-      - Examples: examples.md
-
+  - Home: index.md
+  - Concepts: concepts.md
+  - Architecture: architecture.md
+  - Discovery: discovery.md
+  - Data Sources: data-sources.md
+  - Harmonization: harmonization.md
+  - Representations: representations.md
+  - Science Tracks: tracks.md
+  - Agents: agents.md
+  - Example: examples.md
+  - Real data and agents: real-data-agents.md
+  - Provenance and Governance: provenance.md
+  - Testing: testing.md
+  - Development:
+      - Prototype status: PROTOTYPE_STATUS.md
+      - Integration inspection: development/integrations.md
+      - Decisions and history: development/decisions.md
 theme:
   name: material
   logo: assets/esiil_content/esiil_oasis_logo.png
@@ -20,7 +31,6 @@ theme:
     - navigation.sections
     - navigation.top
     - toc.integrate
-
 markdown_extensions:
   - admonition
   - attr_list
@@ -29,9 +39,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-
 extra_css:
   - stylesheets/extra.css
-
 plugins:
   - search

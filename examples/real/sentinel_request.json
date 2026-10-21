@@ -1,0 +1,14 @@
+{
+  "question": "Inspect actual Sentinel-2 source-native NIR digital numbers near NIWO; no field-to-pixel equivalence or calibration is assumed",
+  "support": {
+    "bbox": [-105.59, 40.02, -105.58, 40.04],
+    "start": "2023-07-01T00:00:00Z",
+    "end": "2023-08-01T00:00:00Z",
+    "spatial": "site vicinity; individual pixel support retained",
+    "temporal": "requested month; source acquisitions are instantaneous",
+    "crs": "EPSG:4326"
+  },
+  "modalities": ["satellite"],
+  "variables": ["B08_DN"],
+  "track": null
+}

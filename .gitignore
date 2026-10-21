@@ -49,3 +49,14 @@ rsconnect/
 
 # macOS
 .DS_Store
+
+# Python and prototype outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+.cache/
+/run/
+/site/
+/dist/

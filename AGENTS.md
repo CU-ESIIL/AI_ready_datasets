@@ -1,59 +1,108 @@
-# AGENTS.md
+# Scientific and software governance
 
-## Core Operating Contract
-- Treat this repository as the source of truth.
-- Treat the website as a rendered view of repository state.
-- Prefer small, additive, traceable edits.
-- Keep documentation synchronized with code and project structure.
-- Keep the repository minimalist by default.
+## Operating contract
 
-## Default Workflow
-- Inspect repository structure before editing.
-- Make the smallest diff that solves the request.
-- Update related docs when behavior, workflows, or outputs change.
-- Update changelog, dev log, or equivalent history files for meaningful changes.
-- Preserve existing structure and historical context.
-- Do not perform destructive rewrites unless explicitly requested.
+- Treat this repository as the source of truth and the website as its rendered view.
+- Inspect existing structure before editing. Prefer small, additive, traceable changes;
+  preserve useful infrastructure and history. Do not destructively rewrite without authorization.
+- Keep package code in `src/`, tests in `tests/`, fixtures in `data/fixtures/`, track
+  configuration in `tracks/`, and project-level website documentation in `docs/`.
+- Keep README, website, examples, status, tests, and these instructions synchronized.
+  Record meaningful scientific, structural, integration, and design decisions in the
+  changelog and `docs/development/decisions.md`. Keep the website simple and readable.
 
-## Documentation and Website Policy
-- Treat `docs/` as project-level documentation and website source.
-- Update docs whenever code, workflows, or outputs change.
-- Amend existing docs when possible; do not replace whole files without need.
-- Preserve navigation, readability, and consistency in website changes.
-- Keep default website behavior clean and minimal unless the user asks for more expressive design.
+## Scientific integrity
 
-## Testing Policy
-- Assume `tests/` may exist before a full testing framework is defined.
-- Do not invent domain-specific tests when expected behavior is unclear.
-- Add the smallest meaningful tests when behavior is known.
-- Prefer early-stage checks such as smoke tests, import tests, CLI tests, schema checks, or example-based checks.
-- If tests are deferred, document the gap; do not imply coverage that does not exist.
+1. Agents propose. Deterministic code executes.
+2. Never invent scientific equivalences or infer compatibility from source names.
+3. Similar variable names do not establish semantic equivalence.
+4. Preserve original source observations, identifiers, versions, and metadata.
+5. Never silently change units, CRS, spatial support, temporal support, biological
+   meaning, taxonomic identity, methods, or measurement definitions.
+6. Every scientific transformation belongs in a validated, versioned recipe.
+7. Every derived product retains source, recipe, transformation, agent, QA, and
+   applicable human-decision provenance; representations retain observation lineage.
+8. Distinguish source/observed data, harmonized data, derived data, and AI-generated
+   representations. Scientific harmonization is separate from model preprocessing.
+9. Abstain rather than infer unsupported meaning. Unknown mappings need explicit revision.
+10. Human review is required for consequential/uncertain decisions, novel equivalence,
+    low confidence, agent disagreement, support changes, ambiguous meaning and rights.
+11. Public accessibility does not imply redistribution permission.
+12. Preserve source-specific licenses, attribution, derivative/redistribution permissions,
+    access restrictions, sensor and platform identity. Flag unclear rights for review.
+13. Do not create a universal biological ontology or claim a universal latent space.
+    Distinguish observation modality from spatial/temporal scale.
 
-## Package and Structure Separation Policy
-- Keep website structure and package structure clearly separated.
-- Do not automatically repurpose `docs/` for package-native docs or build artifacts.
-- For Python packaging requests, prefer standard Python layout, typically `src/`.
-- For R packaging requests, follow standard R conventions (`R/`, `man/`, `DESCRIPTION`, `NAMESPACE`, optional `vignettes/`).
-- For other ecosystems, follow ecosystem conventions.
-- If structural conflicts arise, choose a durable long-term structure and document the decision.
+## Integration and execution
 
-## Data Discovery and Data Use Policy
-- Prefer open and FAIR data when possible.
-- Prefer streaming or lazy-access workflows over bulk downloads when feasible.
-- Use standards-based discovery systems (for example STAC) when relevant.
-- When relevant, consider streaming-friendly tooling such as xarray, zarr, GDAL, rasterio, pystac-client, stackstac, gdalcubes, terra, stars, cubo, or equivalent tools.
-- When introducing data, document source, access method, format, license, and citation requirements.
-- Do not silently ingest external data into the project.
+- Never invent MESA endpoints or tool signatures. Verify current official documentation
+  and deployed tool schemas. Explicitly distinguish real, mocked, and planned integrations.
+- Do not unnecessarily duplicate MESA discovery/access/metadata functionality.
+- STAC is a spatiotemporal metadata/catalog standard, not the whole infrastructure.
+  Do not call the entire discovery/harmonization/representation architecture a registry.
+- Never execute arbitrary LLM-generated transformation code. Extend only allow-listed
+  deterministic operations with explicit validation and positive/negative tests.
+- Keep the orchestrator thin and the discovery, harmonization, and representation
+  modules independently callable through validated typed contracts.
+- Keep OpenClaw as an adapter/runtime boundary, not a copied framework.
+- Do not claim a source is integrated because a fixture exists. Real integration
+  requires actual retrieval and processing, with its limitations documented.
 
-## Data Sovereignty and Intellectual Property Policy
-- Consider licensing, copyright, privacy, Indigenous data sovereignty, and related restrictions for all data and content.
-- If rights or permissions are unclear, document uncertainty and avoid assuming open reuse.
+## Science tracks and shared data
 
-## Design and Usability Policy
-- Keep the website simple, readable, and easy to extend by default.
-- When design improvements are requested, prioritize system-level improvements (layout, spacing, typography, hierarchy, navigation, consistency).
-- Do not use scattered one-off styling hacks.
-- If direct site inspection is possible, verify readability, navigation, link integrity, and that docs still reflect repository state.
+- Do not duplicate core pipeline code for science tracks.
+- Track-specific assumptions must not leak into core harmonization or other tracks.
+  Promotion to shared scientific rules requires explicit scientific review.
+- One track must never modify another track's configurations, recipes, cache entries,
+  or products. Track-specific products carry track provenance.
+- Shared source resources and canonical observations are immutable. Track operations
+  produce new products; shared sources do not imply shared interpretation.
+- Account for source/version/checksum, recipe, executor, and encoder/preprocessing
+  identity in derived-product caching. Never reuse stale products under new identities.
+- Food and water security use configuration and reviewed rules, not copied pipelines.
+  Keep third-track assumptions undefined until a scientist supplies them.
 
-## Decision Logging
-- Reflect meaningful structural, architectural, documentation, data-source, or design decisions in changelog, dev log, roadmap, or equivalent history files when appropriate.
+## Data policy
+
+- Prefer open and FAIR data and streaming/windowed/lazy access where feasible.
+  Consider standards-based discovery and appropriate scientific geospatial tools.
+- Do not silently ingest external data. Document source, access method, format,
+  version, license, permissions, attribution, and citation before use.
+- Consider copyright, privacy, Indigenous data sovereignty, and source restrictions.
+- Never download or commit large source datasets or redistribute without permission.
+  Prefer tiny deterministic, explicitly synthetic, redistributable fixtures for CI.
+
+## Tests and documentation
+
+- New modules require independent unit tests. New transformations require positive
+  and deliberately invalid tests. Interface changes require contract/integration tests.
+- Test review gates, scientific metadata survival, original values, lineage, rights,
+  determinism, shared-data reuse, and track independence. Tests must work offline.
+- Do not invent domain-specific expected behavior when the science is unclear;
+  document gaps instead of claiming coverage or ecological validity.
+- Scientific behavior changes require documentation/status updates. Run the full
+  relevant test suite and strict MkDocs build; fix broken links, warnings and stale claims.
+- Preserve the existing Material/Pages setup. Inspect changes to manual template-sync
+  workflows carefully: they can overwrite project-specific work.
+
+## Live data and model-backed roles
+
+- Keep offline fixture runs and live acquisition/inference explicit. Never silently
+  fall back from unavailable real services or invalid model output to mocks.
+- Preserve native STAC Items, collection/license evidence, sensor/platform identity,
+  processing baseline, native CRS/pixel indices, quality masks, and calibration metadata.
+  Raw digital numbers are not calibrated reflectance. Do not apply scaling in an adapter.
+- Instantaneous acquisitions may have equal start/end times; never invent a duration
+  to satisfy a schema. Zero-duration source records require explicit instantaneous support.
+- State checksum scope. Extracted-window evidence checksums do not cover complete remote rasters.
+- Tokens come from process environment and must never be logged or committed. Do not
+  forward NEON credentials to cloud download hosts. Current NEON downloads require
+  authentication; preserve current source-specific CC BY 4.0 attribution requirements.
+- Model roles have no tools or execution permissions. Deterministic code fixes source
+  identifiers and targets; models return scientific judgments and allow-listed plans.
+- Preserve exact prompts, schemas/version, model digest, outputs, timestamps and usage.
+  Reject malformed/truncated output; never silently repair or fabricate a response.
+- Model proposals always need human review. Honor model QA rejection/revision as a
+  veto, bind it to scientific recipe content, and invalidate it after scientific edits.
+- A model's rejection may be scientifically mistaken. Preserve it for expert analysis;
+  do not force an approval or claim a rejected proposal produced validated science.
