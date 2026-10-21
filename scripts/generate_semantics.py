@@ -1,6 +1,7 @@
 """Render canonical inventory and auditable project assessments as readable Markdown."""
 from pathlib import Path
 import json
+from html import escape
 from dataset_prototype.semantic_resources import load_inventory,COVERAGE_DIMENSIONS,ResourceAssessment,load_assessments
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -28,17 +29,31 @@ def main():
       'An ontology, vocabulary and exchange standard are also different kinds of resource. '
       '[Scale is not one dimension](scale-support.md).','',
       '## Master inventory','',
+      'Browse the complete table without JavaScript, or filter it by a project assessment below. '
+      'Biological-level filtering uses the inventory coverage dimensions, not a new hierarchy. '
+      'Filters do not change the canonical inventory or approve resource selection.','',
+      '<div id="semantic-filters" hidden></div>',
+      '<p id="semantic-count" role="status" aria-live="polite"></p>','',
       '| Resource | Kind / domain | Era and origin/milestone | Contribution (project reading) | Project role | Verification |',
       '| --- | --- | --- | --- | --- | --- |']
     for r in resources:
         lines.append(f'| [{safe(r.name)}](#{r.resource_id}) | `{r.resource_type}` / {safe(r.domain)} | {safe(r.era)}; {safe(r.first_release_or_origin)} | {safe(r.key_contribution)} | {safe(r.project_role)} | {r.verification_scope} |')
+    index=[]
+    for r in resources:
+        index.append(dict(id=r.resource_id, name=r.name, acronym=r.acronym, era=r.era,
+          domain=r.domain, kind=r.resource_type, role=r.project_role, status=r.status,
+          category=[k for k,v in [('Core candidate',r.core_candidate),('Domain candidate',r.domain_candidate),('Interoperability',r.interoperability_only),('Historical precedent',r.historical_precedent)] if v],
+          dimension=[k for k,v in r.coverage.items() if v in ('strong','partial','indirect')],
+          level=[k for k,v in r.coverage.items() if k in ('molecular','cellular','anatomy','organism','taxonomy','population','community','ecosystem') and v in ('strong','partial','indirect')]))
+    lines+=['', '<div id="semantic-filter-data" hidden data-resources="'+escape(json.dumps(index),quote=True)+'"></div>','']
     lines+=['','## Resource details, limitations and evidence','',
       'An empty crosswalk/dependency field means **not recorded in this review**, not that none exists. '
       'Registry dependency metadata is not a parsed OWL-import graph. Resolvable identifiers mean '
       'the source declares persistent identifiers; live resolution of every term was not tested. '
       'Portal APIs are not assumed from a downloadable OWL file.','']
     for r in resources:
-        lines.extend([f'### {r.name} {{ #{r.resource_id} }}','',
+        lines.extend([f'<details id="{r.resource_id}" markdown>',f'<summary>{escape(r.name)} — {escape(r.acronym)}</summary>','',f'### {r.name}','',
+          f'**Domain / assessed scope / role:** {r.domain}; '+', '.join(k for k,v in r.coverage.items() if v in ('strong','partial'))+f'; {r.project_role}.',
           f'**Identity and status:** {r.acronym}; `{r.resource_type}`; {r.status}.',
           f'**Milestone / era:** {r.first_release_or_origin}; {r.era}.',
           f'**Maintainer evidence:** {r.maintainer}.',
@@ -54,7 +69,7 @@ def main():
           f'**Evidence:** '+', '.join(f'[source {i+1}]({uri})' for i,uri in enumerate(r.evidence_source))+'.',
           f'**Canonical resource link:** '+(f'[resource]({r.canonical_uri})' if r.canonical_uri else 'Unresolved; no URI invented')+'.',
           f'**Verification:** {r.verification_scope}; last verified {r.last_verified or "not established"}. '
-          f'Assessment `{r.assessment_id}`, coding-assistant, 2026-10-21; expert review pending.',''])
+          f'Assessment `{r.assessment_id}`, coding-assistant, 2026-10-21; expert review pending.','','</details>',''])
     (target/'landscape.md').write_text('\n'.join(lines))
     short={'molecular':'Molecule','cellular':'Cell','taxonomy':'Taxon','scale_support':'Scale/support'}
     legend={'strong':'S','partial':'P','indirect':'I','not_target':'—','unknown':'?'}

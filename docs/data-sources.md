@@ -49,3 +49,26 @@ to reproduce native NEON or Sentinel schemas. Original identifiers, methods,
 platform/sensor, support, and source-specific rights survive ingestion. Additional
 native-schema-compatible fixtures for LTER, ORNL DAAC, AmeriFlux, TRY, CartograPlant,
 and Landsat remain planned; do not create empty files or imply coverage.
+
+## Semantic evidence to inspect by source
+
+These are **metadata review targets**, not claims that every product exposes the
+same fields or has a verified ontology mapping. Confirm the actual product/version
+before access. Only the documented Sentinel/NEON boundaries above are implemented.
+
+| Source / selection status | Evidence to seek and preserve |
+| --- | --- |
+| NEON — PROTOTYPE SOURCE | Product variable definitions, units, methods, taxon identifiers, sensor/site metadata, quality flags and sampling intervals |
+| LTER — BENCHMARK CANDIDATE | Dataset-specific definitions, methods, EML or other metadata, taxonomic treatments, sampling designs and licenses |
+| ORNL DAAC — BENCHMARK CANDIDATE | Product scientific definitions, processing/model documentation, grid/support, version and citation |
+| AmeriFlux — BENCHMARK CANDIDATE | Flux/meteorological variable definitions, units, processing and quality conventions, tower footprint and intervals |
+| TRY — BENCHMARK CANDIDATE | Trait definitions, taxa, methods, observation context, units and access/reuse terms |
+| CartograPlant — UNDER EVALUATION | Contributing source identity, botanical/taxon evidence, locations, collection methods and rights |
+| Landsat — FUTURE SOURCE | Sensor/platform, processing level, bands, scale/offset, masks, native pixel support and acquisition |
+| Sentinel-2 — PROTOTYPE SOURCE | Preserved native STAC/B08/SCL metadata, calibration coefficients, platform/sensor, baseline, native CRS/pixels and rights evidence |
+
+Ontology annotations, where supplied, remain source assertions rather than approved
+project mappings. Other candidates include permitted community inventories, trait
+databases, biodiversity occurrences and flux/satellite pairs. The
+[dataset benchmark framework](semantics/dataset-benchmarking.md) describes how these
+could be assessed; it has not selected a production source or flagship.

@@ -10,11 +10,13 @@ hide:
 
 # From environmental observations to AI-ready science
 
-Scientific data carry a history: where a measurement was made, what it means,
-and how it can be used. That history should survive every transformation.
+Finding data is only the first discovery problem. The second is discovering
+what the data mean. Scientific traditions describe the living world in different
+ways. That variety contains information.
 
-We are exploring how specialist agents and human judgment can turn a scientific
-question into a traceable dataset—streaming approved observations directly into
+We are building a way to discover those meanings, preserve their distinctions,
+and make the transformations needed for synthesis explicit and reviewable.
+Specialist agents propose; scientists govern; approved observations stream into
 machine representations.
 
 [Explore the approach](approach.md){ .md-button .md-button--primary }
@@ -39,14 +41,33 @@ and rights. Those decisions are often hidden in a researcher’s preprocessing c
 Our research question is whether that work can become explicit, repeatable and
 reviewable, while retaining the distinctions that make observations scientifically useful.
 
-## One question. Three accountable stages.
+## Many ways to describe the living world
+
+Organisms, communities, traits, genomes, experiments, monitoring networks and sensors
+observe different aspects of reality. A species name, a functional group, a habitat,
+a measurement and a pixel belong to intersecting systems of meaning. Units, methods,
+space, time and provenance add further dimensions.
+
+There is no single hierarchy of biological data. A taxonomic rank does not tell us
+a sampling footprint, and a shared location does not make two observations comparable.
+The project preserves community definitions, then asks how their meanings relate.
+
+![Intersecting structural, ecological, taxonomic, spatial, temporal and observational organizations, with functional, trophic, genomic, environmental and experimental perspectives.](assets/figures/biological-organization.svg)
+
+*Conceptual perspectives, not a universal ladder or automatic transformation rule.
+[Figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
+[Explore biological organization](semantics/biological-organization.md) ·
+[Look up a term](semantics/glossary.md)
+
+## Question → discover → understand → harmonize → represent → synthesize
 
 ![System architecture: a question enters discovery, then governed harmonization, then representation and downstream science. Human review precedes execution.](assets/figures/system.svg)
 
 *Discovery identifies sources; harmonization establishes supported transformations;
 representation produces machine features. [Figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
 
-**Discover.** Find candidate observations and preserve their native metadata, source
+**Discover and understand.** Find candidate observations and preserve their native metadata, source
 versions, access constraints and licenses. A catalog match is evidence to inspect.
 
 **Harmonize.** Specialists assess a frozen recipe within defined scientific domains.
@@ -77,13 +98,44 @@ unfinished. MESA is an adapter boundary awaiting verified integration.
 
 Sources may already reference an ontology, controlled vocabulary, standard name,
 protocol, taxon identifier or unit system. The discovery layer preserves that
-semantic evidence before harmonization begins. It composes scientific communities’
-existing systems and keeps source identifiers and definitions intact.
+semantic evidence before harmonization begins. The intended semantic profile composes scientific communities’
+existing systems while keeping source identifiers and definitions intact. Automated
+ontology composition remains planned; evidence preservation works today.
 
 Module 1 discovers evidence and candidate concepts. Module 2 interprets their
 relationships; retrieval is never approval of scientific equivalence.
 
 [Explore the semantic landscape and glossary →](semantics/index.md)
+
+## A landscape of complementary meanings
+
+Biological resources such as [PCO](semantics/landscape.md#pco),
+[OBA](semantics/landscape.md#oba), [PATO](semantics/landscape.md#pato) and
+[NCBITaxon](semantics/landscape.md#ncbitaxon) address different entities and attributes.
+[ENVO](semantics/landscape.md#envo) and SWEET describe environmental context.
+OBOE, SOSA and BCO organize observations and sampling. [I-ADOPT](semantics/landscape.md#iadopt)
+structures variables; RO supplies relations; GeoSPARQL, OWL-Time and QUDT describe
+space, time and units; PROV-O records lineage. These are complementary resources,
+each with limits, rather than interchangeable names for one schema.
+
+![Complementary biology, environmental, observation, variable, relation, taxonomic and provenance systems support reviewed composition.](assets/figures/semantic-landscape.svg)
+
+*Conceptual semantic families; ontologies, vocabularies, standards and classifications
+support discovery and harmonization without becoming one universal schema.
+[Figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
+[Explore and filter the semantic landscape →](semantics/landscape.md)
+
+## Which systems and datasets work well together?
+
+Which resources cover broad parts of biological meaning? Which describe narrow
+areas deeply? Which compose well? Which datasets expose enough evidence to use them?
+We are developing an evidence-based framework for these questions. The current
+benchmark measures local inventory assessments and source documentation; deeper
+ontology and scientific-comparability analysis remains open.
+
+[Ontology benchmarking](semantics/ontology-benchmarking.md) ·
+[Dataset potential and candidate pairs](semantics/dataset-benchmarking.md)
 
 ## Shared infrastructure, independent scientific questions
 
@@ -117,3 +169,18 @@ review decisions back to the source asset and its rights.
 
 [Research goals and limits](impact.md) · [What works today](PROTOTYPE_STATUS.md) ·
 [Build and verify the prototype](documentation/index.md)
+
+## Trust comes from inspectable decisions
+
+Source semantics and evidence stay attached to their identifiers. Model judgment is
+labeled; uncertainty and disagreement require review. Deterministic software executes
+only approved operations, and provenance connects representations to their sources.
+[Inspect the full audit trail](provenance.md).
+
+| Current prototype | Status |
+| --- | --- |
+| Typed semantic evidence, local inventory, offline diagnostics and tests | WORKING |
+| Sentinel metadata/window access, model-backed reviews and MOSAIKS mechanism | PROTOTYPE; no approved real Sentinel MOSAIKS release |
+| Fixture source access and deterministic demonstration agents | MOCKED; explicitly synthetic |
+| General ontology-service integration and automated semantic composition | PLANNED |
+| Ontology depth, dataset potential/diversity and cross-scale justification | UNDER ANALYSIS |

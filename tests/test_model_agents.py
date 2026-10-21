@@ -71,11 +71,15 @@ def test_model_only_controls_judgment_and_cannot_self_approve(bundle):
 
 def test_generated_operation_scope_and_source_identity(bundle):
     r,m,p,raw=bundle
-    backend=StubBackend(RecipePlan(operations=(Operation(operation='validate',source_variable=m.source_variable),),rationale='Keep source-native observations'))
+    from dataset_prototype.decision_ir import build_capabilities, RecipeDecision, SelectDecision
+    cap=build_capabilities((r,),(m,)); option=cap.options[0]
+    decision=RecipeDecision(capability_digest=cap.identity,status='PROPOSED',rationale='Keep source-native observations',
+        steps=(SelectDecision(operation_id=option.operation_id,option_id=option.option_id),))
+    backend=StubBackend(decision)
     recipe=ModelHarmonizationAgent(backend).propose((m,),(r,))
     assert recipe.status=='needs_review' and recipe.proposals[0].agent=='ollama:test-model'
-    backend.result=RecipePlan(operations=(Operation(operation='validate',source_variable='invented'),),rationale='bad')
-    with pytest.raises(ValueError,match='unknown variable'): ModelHarmonizationAgent(backend).propose((m,),(r,))
+    backend.result=decision.model_copy(update={'steps':(SelectDecision(operation_id=option.operation_id,option_id='invented'),)})
+    with pytest.raises(ValueError,match='not offered'): ModelHarmonizationAgent(backend).propose((m,),(r,))
 
 
 def test_discovery_cannot_invent_source(client,request_model):

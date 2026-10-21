@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 618" role="img" aria-labelledby="title desc">
+<title id="title">Many systems, complementary responsibilities</title><desc id="desc">Conceptual families represented in the local inventory; no automatic mappings or universal ontology.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
+<rect width="960" height="618" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Many systems, complementary responsibilities</text>
+<path d="M170 149 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 149 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 149 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 274 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 274 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 399 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 399 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="30" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Biology: PCO / OBA / PATO</tspan></text>
+<rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Environment: ENVO / SWEET</tspan></text>
+<rect x="650" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Observation: OBOE / SOSA</tspan></text>
+<rect x="30" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Variable structure: I-ADOPT</tspan></text>
+<rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Relations: RO</tspan></text>
+<rect x="650" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Taxon identity: NCBITaxon</tspan></text>
+<rect x="30" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Space / time / units</tspan></text>
+<rect x="340" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Provenance: PROV-O</tspan></text>
+<rect x="650" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Community standards</tspan></text>
+<rect x="340" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Candidate composition + review</tspan></text>
+</svg>

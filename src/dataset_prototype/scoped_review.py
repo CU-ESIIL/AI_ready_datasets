@@ -4,12 +4,13 @@ import json
 from typing import Literal
 from pydantic import Field, create_model, model_validator
 from .contracts import Contract, HarmonizationRecipe, SourceResource, digest, recipe_content_digest
+from .operations import REGISTRY
 from .review import REQUIRED_DOMAINS, synthesize, validate_qa_references, source_set_digest
 from .review_contracts import Evidence, SpecialistReview, ReviewFinding, RunManifest
 
 JURISDICTIONS = {
     'semantic': 'Quantity meaning and measurement definition only. Unit 1 means dimensionless; biological equivalence requires evidence.',
-    'units': 'Units, documented calibration coefficients and mathematical ranges only. Negative reflectance is not by itself a calibration failure. Never invent clipping.',
+    'units': 'Units, documented calibration coefficients and deterministic range-check evidence only. Do not calculate ranges or derive formulas. Negative reflectance is not by itself a calibration failure. Never invent clipping.',
     'support': 'Native CRS, pixel indices, spatial support, instantaneous or interval temporal support and support changes only.',
     'rights': 'Documented permissions, restrictions, attribution and the stated intended operation only. A license label is not the complete terms. Missing terms mean NEEDS_EVIDENCE, not an invented prohibition.',
     'integrity': 'Source/version identifiers, checksum scope, frozen recipe binding and provenance completeness only. Metadata hashes do not cover remote raster bytes.',
@@ -70,7 +71,7 @@ def review_metadata(bundle: ReviewBundle, backend, output: Path):
                 'PASS/FAIL/NEEDS_EVIDENCE/NOT_APPLICABLE describe scientific evidence, not workflow votes. '
                 'Do not repeat other domains; reference existing finding IDs where relevant. '
                 'FAIL needs a documented contradiction; unknowns require NEEDS_EVIDENCE. '
-                'No tools, code, source retrieval or execution. Human review is mandatory.')
+                'No tools, code, formulas, arithmetic, source retrieval or execution. Inspect deterministic check results; never calculate them. Human review is mandatory.')
             # Constrain role and identifier syntax in the deployed JSON Schema too.
             finding_schema = create_model(domain.value.title()+'Finding', __base__=ReviewFinding,
                 finding_id=(str, Field(pattern=r'^'+domain.value+r'\.[a-z0-9_.-]{1,90}$')),
@@ -82,6 +83,7 @@ def review_metadata(bundle: ReviewBundle, backend, output: Path):
                 recipe_content_digest=(Literal[recipe_hash], recipe_hash),
                 findings=(tuple[finding_schema, ...], Field(min_length=1, max_length=16)))
             review = backend.generate(domain.value, instruction, {
+                'capabilities': {'registry_version':REGISTRY.manifest()['registry_version'],'operations':[{'operation_id':d['operation_id'],'version':d['version']} for d in REGISTRY.manifest()['operations']]},
                 'recipe': bundle.recipe.model_dump(mode='json'), 'recipe_content_digest': recipe_hash,
                 'intended_operation': bundle.intended_operation, 'evidence': ledger,
                 'previous_findings': [{'finding_id': f.finding_id, 'reviewer_domain': f.reviewer_domain.value,

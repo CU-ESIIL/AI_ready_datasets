@@ -100,6 +100,10 @@ class ConceptCandidate(Contract):
         if self.match_basis == 'model_inferred' and not any(
             e.evidence_type == EvidenceKind.MODEL_JUDGMENT for e in self.evidence):
             raise ValueError('model-inferred candidate requires explicit model judgment')
+        if self.match_basis == 'exact_vocabulary_match' and not any(
+            e.source_label is not None and e.source_label.casefold() == self.label.casefold()
+            for e in self.evidence):
+            raise ValueError('exact vocabulary match requires the supplied label to match')
         if self.match_basis in {'lexical', 'exact_vocabulary_match'} and any(
             e.evidence_type == EvidenceKind.MODEL_JUDGMENT for e in self.evidence):
             raise ValueError('model judgment cannot be relabeled as a deterministic match')
@@ -300,6 +304,13 @@ class HarmonizationRecipe(Contract):
     status: State = "proposed"
     author: str = Field(min_length=1)
     agent_review: AgentReview | None = None
+    execution_identity: dict[str,str] | None = None
+
+    @model_serializer(mode='wrap')
+    def serialize(self, handler):
+        data=handler(self)
+        if self.execution_identity is None:data.pop('execution_identity',None)
+        return data
 
     @model_validator(mode="after")
     def scope_valid(self):
@@ -362,6 +373,13 @@ class ProvenanceRecord(Contract):
     related_sources: tuple[SourceResource, ...] = ()
     related_records: tuple[RawObservation, ...] = ()
     executor: str = "allowlist-v2"
+    execution_identity: dict[str,str] | None = None
+
+    @model_serializer(mode='wrap')
+    def serialize(self, handler):
+        data=handler(self)
+        if self.execution_identity is None:data.pop('execution_identity',None)
+        return data
 
 
 class HarmonizedObservation(Contract):

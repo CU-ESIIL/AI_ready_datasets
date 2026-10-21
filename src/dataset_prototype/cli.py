@@ -119,9 +119,32 @@ def main(argv=None):
     schema = sub.add_parser("schema")
     schema.add_argument("contract", choices=["ScientificRequest", "SourceResource", "DiscoveryResult", "SemanticMapping", "HarmonizationRecipe", "HarmonizedObservation", "Representation", "ProvenanceRecord", "HumanDecision", "TrackConfig", "StreamPlan", "StreamSample", "EncoderSpec", "ConsensusReport", "MOSAIKSSpec", "RasterContext", "RasterLayout", "ReviewFinding", "ReviewReport", "RunManifest", "Evidence", "SpecialistReview", "ReviewBundle", "SemanticEvidence", "ConceptCandidate", "SourceSemantics"])
     schema.add_argument("--output", type=Path, required=True)
+    capability = sub.add_parser("operation-capabilities")
+    capability.add_argument("--output",type=Path,required=True)
+    demo = sub.add_parser("operation-demo")
+    demo.add_argument("--output",type=Path,required=True)
+    ir = sub.add_parser("ir-validate")
+    ir.add_argument("decision",type=Path)
+    ir.add_argument("sources",type=Path)
+    ir.add_argument("mappings",type=Path)
+    ir.add_argument("--output",type=Path,required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "semantic-benchmark":
+        if args.command == "operation-capabilities":
+            from .operations import REGISTRY
+            write(args.output,REGISTRY.manifest())
+        elif args.command == "operation-demo":
+            from .operation_demo import run as operation_demo
+            result=operation_demo(args.output)
+            print(f"{result['status']}; generated fixture result {result['result']}; no live model/source read")
+        elif args.command == "ir-validate":
+            from .decision_ir import build_capabilities,process_output
+            sources=tuple(contracts.SourceResource.model_validate(x) for x in json.loads(args.sources.read_text()))
+            mappings=tuple(contracts.SemanticMapping.model_validate(x) for x in json.loads(args.mappings.read_text()))
+            result=process_output(args.decision.read_text(),build_capabilities(sources,mappings),sources,mappings)
+            write(args.output,result.model_dump(mode='json'))
+            print(result.status)
+        elif args.command == "semantic-benchmark":
             from .semantic_benchmark import run as benchmark_run, BenchmarkConfig
             paths = args.sources or [Path("data/fixtures/catalog.json"), Path("data/fixtures/semantics/sentinel_source.json")]
             result = benchmark_run(args.inventory, paths, args.output, config=BenchmarkConfig(portfolio_budget=args.budget))

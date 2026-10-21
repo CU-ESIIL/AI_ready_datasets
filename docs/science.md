@@ -39,3 +39,17 @@ independently validate environmental meaning. The next scientific milestone requ
 independent reference labels and a scientist-defined evaluation protocol.
 
 [Track configuration and independence tests](tracks.md) · [MOSAIKS verification](mosaiks-embeddings.md)
+
+## Semantics serves synthesis science
+
+A question about vegetation change may span individual traits, community membership,
+ecosystem context, climate, disturbance, field methods and satellite acquisitions.
+A leaf measurement and reflectance are different quantities; a reviewed relationship
+may support analysis without declaring them equivalent. The scientific goal is to
+connect evidence across time, space and biological organization while making those
+assumptions visible.
+
+The [canonical benchmark observations](semantics/ontology-benchmarking.md#canonical-observations-proposed-tests)
+move from a site temperature to multi-source annual change. They are proposed
+semantic stress tests, not completed synthesis results. [Candidate dataset pairs](semantics/dataset-benchmarking.md#pairs-reveal-what-individual-datasets-cannot)
+show where support, methods and taxonomic interpretation will need review.

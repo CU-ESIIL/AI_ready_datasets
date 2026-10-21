@@ -14,7 +14,7 @@ universal ontology, a universal biological hierarchy or a universal latent space
 | --- | --- |
 | Understand the scientific stakes | [Why semantics matter](why-semantics.md), [key distinctions](distinctions.md) |
 | Explore the landscape | [86-resource inventory](landscape.md), [comparison matrix](comparison.md) |
-| Understand terminology | [138-entry glossary](glossary.md) |
+| Understand terminology | [Glossary](glossary.md) |
 | Describe biological organization | [Intersecting biological hierarchies](biological-organization.md) |
 | Describe what was observed | [Observation and measurement](observation.md), [scale and support](scale-support.md) |
 | Understand how this developed | [Historical evolution](history.md) |
@@ -40,3 +40,14 @@ roles and gaps are provisional assessments with reviewer/date/evidence records,
 not authoritative claims about external ontologies. The benchmark runs offline over
 this inventory and source metadata; it does not evaluate ontology graphs or approve
 mappings. Current external ontology-portal integrations remain planned adapter work.
+
+## Compare systems and datasets
+
+[Ontology benchmarking](ontology-benchmarking.md) separates breadth, depth and
+composability. [Dataset benchmarking](dataset-benchmarking.md) distinguishes explicit
+use, potential, diversity and leverage. Their research frameworks extend beyond the
+[working metadata diagnostics](benchmark.md); uncomputed analyses remain explicit.
+
+![Complementary semantic families for biology, environment, observation, variable structure, relations, taxonomy, quantitative context and provenance.](../assets/figures/semantic-landscape.svg)
+
+*Repository-authored conceptual diagram; [maintained source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py). Analytical hypotheses are not measured results.*

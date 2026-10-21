@@ -52,3 +52,7 @@ requires a reviewed scientific relationship or transformation.
 
 [Scale and support](scale-support.md) · [Cross-scale gaps](gaps.md) ·
 [Organism/population/community definitions](glossary.md#biological-organization)
+
+![Structural, ecological, taxonomic, spatial, temporal and observational perspectives intersect functional, trophic, genomic, environmental and experimental organizations.](../assets/figures/biological-organization.svg)
+
+*Repository-authored conceptual diagram; [maintained source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py). Analytical hypotheses are not measured results.*

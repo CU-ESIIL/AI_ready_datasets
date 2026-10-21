@@ -8,6 +8,14 @@ A useful dataset begins with a scientific question. We separate finding observat
 deciding what they can mean together, and generating machine features. Each stage
 has a typed input and output and can be called independently.
 
+Finding data and discovering their meanings are related but different tasks.
+Scientific communities already maintain taxonomies, vocabularies, ontologies and
+standards. We preserve that variety before comparing or composing it. Automated
+composition remains planned; current semantic evidence and review contracts provide
+the boundary for that work.
+
+[Explore community semantics](semantics/index.md) · [Glossary](semantics/glossary.md)
+
 ## 1. Discover observations and their conditions of use
 
 A `ScientificRequest` describes the question, variables, bounds and time support.
@@ -40,6 +48,7 @@ are different product claims. Applying a scale and offset does not establish
 quality or fitness for a scientific question. Negative calibrated values alone
 are not evidence that calibration failed. No implicit clipping is allowed.
 
+[Semantic comparison and recipes](harmonization.md#semantic-alignment-and-composition-capability-boundaries) ·
 [Review rules and evidence](review/index.md) · [Harmonization executor](harmonization.md)
 
 ## 3. Stream harmonized outputs into representations

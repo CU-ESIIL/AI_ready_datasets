@@ -38,3 +38,6 @@ a reviewed relationship. Module 3 sees the resulting harmonized observation cont
 not an assumption that all observation models are interchangeable.
 
 [Glossary](glossary.md#observation-and-measurement) · [Pipeline implementation](pipeline.md)
+
+!!! note "An observation is not necessarily a measurement"
+    A measurement quantifies a property under a method. Observation models may also represent categorical observations and sampling context. [Read the distinctions](distinctions.md).

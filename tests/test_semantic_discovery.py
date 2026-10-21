@@ -116,3 +116,5 @@ def test_uri_validation_and_identical_labels_do_not_merge_concepts(evidence,regi
     assert len(candidates)==2 and len({candidate.identifier for candidate in candidates})==2
     assert all(candidate.match_basis=='exact_vocabulary_match' for candidate in candidates)
     assert all('relationship' not in type(candidate).model_fields for candidate in candidates)
+    with pytest.raises(ValidationError,match='supplied label'):
+        ConceptCandidate.model_validate({**candidates[0].model_dump(),'label':'different quantity'})

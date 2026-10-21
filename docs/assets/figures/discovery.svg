@@ -11,17 +11,17 @@
 <path d="M170 399 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M480 524 L480 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Scientific request</text>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Scientific request</tspan></text>
 <rect x="30" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Data discovery</text>
+<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Data discovery</tspan></text>
 <rect x="650" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Semantic evidence discovery</text>
+<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Semantic evidence discovery</tspan></text>
 <rect x="30" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Access / rights / version</text>
+<text x="170" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Access / rights / version</tspan></text>
 <rect x="650" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Ontologies / vocabularies</text>
+<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Ontologies / vocabularies</tspan></text>
 <rect x="340" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">SourceResource + semantics</text>
+<text x="480" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">SourceResource + semantics</tspan></text>
 <rect x="340" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Module 2: interpret / map</text>
+<text x="480" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Module 2: interpret / map</tspan></text>
 </svg>

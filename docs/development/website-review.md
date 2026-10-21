@@ -57,3 +57,30 @@ interfaces and track isolation without copying core pipelines.
 
 These are concrete prototype checks, not a full accessibility certification or
 proof that every future source/integration works. No site deployment was performed.
+
+## Semantic synchronization verification — 2026-10-21
+
+The earlier sections describe the initial editorial redesign. The subsequent
+[documentation synchronization audit](documentation-sync-audit.md) expands the
+semantic narrative while preserving Material, Pages and the two reader layers.
+
+- All **135 offline tests passed**. No linter is configured in `pyproject.toml`;
+  `git diff --check` and Python compilation check changed generators.
+- Strict MkDocs build passed; the repository checker passed **53 rendered HTML
+  pages**, including local links, fragments, image alt text and schema assets.
+- Sixteen generated SVGs share maintained specifications. Conceptual ontology
+  depth, accumulation, potential/diversity and quadrant figures contain no fabricated
+  measurements or dataset positions.
+- Browser checks matched all eight filter result counts against canonical generated
+  metadata; name search returned ENVO alone and reset restored all 86 rows.
+- Keyboard Tab moved from name search to the era selector; a direct ENVO hash link
+  expanded its evidence. Labels and a live result count accompany native controls.
+- With JavaScript disabled at 390px, all 86 table records and 86 evidence details
+  remained available, controls stayed hidden, and there was no page-wide overflow.
+- Desktop and mobile inspections preserve readable narrative, local figure/table
+  scrolling and the existing environmental imagery. Screenshots remain ignored in
+  `run/website/` as local verification artifacts.
+
+No source rasters, ontology graphs, remote services or model inference were invoked
+for this documentation pass. Pipeline behavior was not changed. Existing contract
+and inventory edits present before the pass were preserved. No deployment was made.

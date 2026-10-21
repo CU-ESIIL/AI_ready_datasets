@@ -17,12 +17,9 @@ Agents never mutate observations, choose arbitrary code to execute, infer
 compatibility from similar names, or silently repair a scientific disagreement.
 The executor rechecks QA and gates human decisions independently.
 
-The [OpenClaw container](https://github.com/CU-ESIIL/openclaw_container) provides a
-future file-based worker/review environment. Each role can later receive a validated
-request and emit its current structured artifact in a mounted workspace. Human
-review can map to the existing PI Liaison/review packet workflow. Worker scheduling,
-The isolated OpenClaw/Verde `llm-task` transport is now implemented; full working-group
-worker scheduling and authenticated human review remain unimplemented.
+The isolated OpenClaw/Verde `llm-task` adapter is implemented as a tool-free JSON
+inference transport. Full working-group worker scheduling, Slack integration and
+authenticated human review remain unimplemented in this prototype.
 Local model calls and schema-validated transcripts are implemented. Model QA
 rejection/revision blocks execution; model proposals always need human review.
 
@@ -47,3 +44,21 @@ single frozen recipe. Role-specific JSON Schemas constrain ownership and finding
 syntax. Prior findings can be referenced by ID. Deterministic synthesis and human
 approval remain separate. The legacy free-text consensus workflow above retains
 its original four-specialist contract and historical vetoes.
+
+## Semantic reasoning permissions
+
+Agents may propose semantic resources and mappings, compare supplied definitions,
+identify conflicts or missing evidence, suggest crosswalks and prepare review packets.
+Candidate retrieval is currently local or explicitly adapter-backed; model roles
+have no tools for autonomous web retrieval. Their permitted output is a judgment
+or allow-listed plan, not a write to source data.
+
+They must never invent ontology IDs, overwrite source meanings, treat lexical
+similarity as equivalence, promote model judgment to source evidence, convert missing
+evidence into failure, or alter unusual scientific values merely because they look
+implausible. Scoped reviewers stay in their jurisdictions; QA synthesizes their
+existing finding IDs rather than inventing specialist claims.
+
+Agents reason and propose. Deterministic software executes approved recipes.
+[Evidence distinctions](semantics/glossary.md#evidence) and the
+[human workflow](semantics/review-workflow.md) apply throughout.

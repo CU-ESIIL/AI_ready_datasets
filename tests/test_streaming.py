@@ -79,6 +79,9 @@ def test_failure_partial_and_monotonic_sequences(bundle,tmp_path):
     assert (tmp_path/'out/embeddings.jsonl.partial').exists()
 
 
+from dataset_prototype.decision_ir import DecisionRecipeDraft, DecisionBindingProposal, RecipeDecision, SelectDecision
+
+
 class Negotiators:
     model='offline-test';_model_digest='offline-test';traces=[]
     def __init__(self,revise=True):self.revise=revise
@@ -87,11 +90,15 @@ class Negotiators:
         dialogue=evidence.get('dialogue',[])
         if schema is SpecialistFinding:
             return SpecialistFinding(assessment='Check explicit source scale/offset and native support',constraints=('Preserve support',),concerns=(),evidence_refs=refs)
-        if schema is RecipeDraft:
+        if issubclass(schema,DecisionRecipeDraft):
             required=[m['message_id'] for m in dialogue if m['kind']==('analysis' if evidence['round']==1 else 'review') and m['round']==evidence['round']-1]
             binding=evidence['metadata'][0]
-            return RecipeDraft(bindings=(RecipeBindingProposal(binding_id=binding['binding_id'],relationship='convertible_to',evidence=('Documented scale/offset',),confidence=1,
-                operations=(Operation(operation='calibrate',source_variable='B08_DN',from_unit='DN',to_unit='1',scale=.0001,offset=-.1),Operation(operation='map_variable',source_variable='B08_DN',target_variable='reflectance'))),),rationale='Use documented calibration',responds_to=tuple(required))
+            cap=evidence['available_operations'][binding['binding_id']]
+            decision=RecipeDecision(capability_digest=cap['capability_digest'],status='PROPOSED',rationale='Use metadata references',
+                steps=tuple(SelectDecision(operation_id=o['operation_id'],option_id=o['option_id']) for o in cap['options']))
+            return DecisionRecipeDraft(bindings=(DecisionBindingProposal(binding_id=binding['binding_id'],relationship='convertible_to',
+                evidence=('Documented scale/offset',),confidence=1,decision=decision),),rationale='Use documented calibration',responds_to=tuple(required))
+
         peer=next(m['message_id'] for m in dialogue if m['sender']!=role and m['kind']=='analysis')
         number=max(m['round'] for m in dialogue)
         revise=self.revise and role=='units' and number==1
@@ -159,15 +166,14 @@ def test_unanimous_models_cannot_override_metadata_qa(bundle,tmp_path):
     class WrongCalibration(Negotiators):
         def generate(self,role,instruction,evidence,schema):
             result=super().generate(role,instruction,evidence,schema)
-            if schema is RecipeDraft:
+            if issubclass(schema,DecisionRecipeDraft):
                 b=result.bindings[0]
-                b=b.model_copy(update={'operations':(b.operations[0].model_copy(update={'offset':0}),b.operations[1])})
-                return result.model_copy(update={'bindings':(b,)})
+                decision=b.decision.model_copy(update={'steps':(SelectDecision(operation_id='calibration.scale_offset',option_id='invented-coefficients'),)})
+                return result.model_copy(update={'bindings':(b.model_copy(update={'decision':decision}),)})
             return result
-    result=negotiate(plan,WrongCalibration(revise=False),tmp_path/'bad',max_rounds=1)
-    assert {v.decision for _,v in result.votes}=={'agree'}
-    assert result.status=='needs_revision'
-    assert any('calibration disagrees' in reason for reason in result.unresolved)
+    # The stricter controller rejects before any peer vote or scientific execution.
+    with pytest.raises(ValueError,match='not offered'):
+        negotiate(plan,WrongCalibration(revise=False),tmp_path/'bad',max_rounds=1)
 
 
 def test_explicit_retry_reuses_validated_analyses_without_repair(bundle,tmp_path):

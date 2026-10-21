@@ -10,10 +10,12 @@ from .contracts import HarmonizationRecipe, SemanticMapping, Proposal, AgentRevi
 from .stream_contracts import (SPECIALISTS, REVIEWERS, StreamPlan, AgentMessage, SpecialistFinding,
                               ReviewVote, RecipeDraft, ConsensusReport)
 from .harmonization import assess
+from .decision_ir import DecisionRecipeDraft, binding_capabilities, resolve_decision, draft_schema
+from .operations import execution_identity
 
 SPECIALTY = {
  'semantic':'Scientific quantity definitions, measurement methods, entities and ontology. Distinguish encoded DN from calibrated reflectance. Do not equate names.',
- 'units':'Instrument calibration, scale/offset, units, missing/nodata and uncertainty. Require exactly documented coefficients; do not invent or silently apply them.',
+ 'units':'Compare documented units/calibration metadata only. Do not derive formulas, compute ranges or transcribe coefficients. Select metadata-referenced capabilities or request evidence/review.',
  'support':'Spatial footprint, CRS, resolution, temporal intervals, alignment and scale. For this stream, preserve each native pixel/acquisition support; no implicit joins or aggregation.',
  'rights':'Source-specific legal notice, attribution, access/derivative/redistribution rights and provenance. Distinguish a catalog label from its linked legal terms, abstaining on unresolved rights.',
  'qa':'Adversarial cross-specialist review: challenge unsupported assertions, scientific information loss, false equivalence, unsafe streaming operations, encoder mismatches, and unresolved disagreements.'}
@@ -51,21 +53,18 @@ def _compile(plan,draft,messages,backend,round_number):
     mappings=[];operations=[]
     for proposal in draft.bindings:
         binding=by_id[proposal.binding_id]
-        if any(o.source_variable!=binding.source_variable or o.operation not in STREAM_OPERATIONS for o in proposal.operations):
-            raise ValueError('recipe operation is not bounded-stream executable or changes source identity')
+        capabilities,fixed_mapping=binding_capabilities(binding)
+        selected=resolve_decision(proposal.decision,capabilities,(binding.source,),(fixed_mapping,))
         mappings.append(SemanticMapping(source_asset=binding.source.asset_id,source_variable=binding.source_variable,target=binding.target,
             relationship=proposal.relationship,evidence=proposal.evidence,confidence=proposal.confidence,novel=True,review_status='needs_review'))
-        for operation in proposal.operations:
-            if operation.source_asset not in {None,binding.source.asset_id}:
-                raise ValueError('model operation changes source asset ownership')
-            operations.append(operation.model_copy(update={'source_asset':binding.source.asset_id}))
+        operations.extend(selected)
     unique=tuple({o.model_dump_json():o for o in operations}.values())
     proposals=tuple(Proposal(role=m.sender,agent=f"{getattr(backend,'backend_name','model')}:{backend.model}",version=backend._model_digest,
         configuration=getattr(backend,'configuration','bounded model task'),rationale=draft.rationale if m.kind=='draft' else json.loads(m.payload_json).get('assessment','Specialist dialogue'),
         evidence=(m.message_id,*(x for x in [f'prompt_sha256:{m.prompt_digest}' if m.prompt_digest else None,f'response_sha256:{m.response_digest}' if m.response_digest else None] if x)))
         for m in messages if m.kind in {'analysis','draft'})
     return HarmonizationRecipe(recipe_id='consensus-'+digest(plan)[:16],version=str(round_number),scope='core',status='needs_review',
-        mappings=tuple(mappings),operations=unique,proposals=proposals,author='metadata-specialist-consensus')
+        mappings=tuple(mappings),operations=unique,proposals=proposals,author='metadata-specialist-consensus',execution_identity=execution_identity())
 
 
 def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
@@ -89,12 +88,15 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
         return message
     save('data_access_plan.json',plan.model_dump(mode='json'))
     save('encoder_spec.json',plan.encoder.model_dump(mode='json'))
-    metadata=_metadata(plan);evidence_ids=[row['metadata_ref'] for row in metadata]
-    base={'raster_layout':json.loads(plan.raster_layout_json) if plan.raster_layout_json else None,'question':plan.question,'metadata':metadata,'encoder':plan.encoder.model_dump(mode='json'),
+    metadata=_metadata(plan);
+    capabilities={b.binding_id:binding_capabilities(b)[0].prompt() for b in plan.bindings}
+    save('capabilities.json',capabilities)
+    evidence_ids=[row['metadata_ref'] for row in metadata]
+    base={'available_operations':capabilities,'raster_layout':json.loads(plan.raster_layout_json) if plan.raster_layout_json else None,'question':plan.question,'metadata':metadata,'encoder':plan.encoder.model_dump(mode='json'),
           'constraints':['metadata-only planning; no data values','bounded reads directly into embeddings; no raw/harmonized materialization',
                          'target identities fixed by caller','human approval remains required; model confidence is not approval']}
     base['executor_contract']={
-        'executor':'allowlist-v2; bounded-stream-v1',
+        'executor':execution_identity(),
         'calibration':'value * exact source calibration_scale + exact source calibration_offset',
         'uncertainty':'abs(scale) times supplied scalar uncertainty; unknown stays unknown; calibration-parameter covariance is not modeled',
         'quality_policy':'Sentinel reader requires SCL in {4,5,6} and DN != 0; any rejection fails explicitly; actual mask values cannot exist in metadata-only planning',
@@ -129,7 +131,7 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
                     raise ValueError('reused analysis trace identity mismatch')
                 if trace.prompt_digest!=digest(trace.input_json) or trace.response_digest!=digest(trace.output_json):
                     raise ValueError('reused analysis transcript content changed')
-                schema=SpecialistFinding if message.kind=='analysis' else RecipeDraft
+                schema=SpecialistFinding if message.kind=='analysis' else DecisionRecipeDraft
                 result=schema.model_validate_json(message.payload_json)
                 if result!=schema.model_validate_json(trace.output_json):
                     raise ValueError('reused message differs from validated trace')
@@ -160,8 +162,13 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
             if number==1 and reused_draft is not None:
                 draft,draft_message=reused_draft
             else:
-                draft=backend.generate('harmonization','Build or revise the allow-listed streaming recipe from the specialists\' actual messages. Reply to ALL initial specialist analysis IDs (or ALL previous-round review IDs for a revision), address every previous critique, and preserve the fixed targets/support. For calibration use the exact explicit source metadata scale/offset. Never add joins, aggregations, sensor assumptions or encoder preprocessing to core harmonization. Every operation.source_variable MUST remain the original binding.source_variable (B08_DN), including map_variable; the executor scopes operations by original source identity. Calibration MUST explicitly set from_unit="DN", to_unit="1", scale and offset. Use a calibrate DN→1 operation followed by map_variable when the stated target is physical reflectance; raw-DN preservation needs no calibration. Abstain on unresolved meaning.',
-                    {**base,'dialogue':_dialogue(messages),'round':number},RecipeDraft)
+                draft=backend.generate('harmonization',
+                    'Select only offered operation/option IDs for each fixed binding using decision IR v1. '
+                    'No code, formulas, arithmetic, numeric coefficients, arbitrary parameters or source changes. '
+                    'Calibration coefficients are resolved deterministically from source metadata. '
+                    'Reply to ALL initial specialist analysis IDs, or ALL previous-round review IDs for a revision. '
+                    'Preserve targets/support; abstain with NEEDS_EVIDENCE or NEEDS_HUMAN_REVIEW rather than guess.',
+                    {**base,'dialogue':_dialogue(messages),'round':number},draft_schema(plan))
                 _validate_refs(draft.responds_to,known)
                 required={m.message_id for m in messages if (m.kind=='analysis' if number==1 else m.kind=='review' and m.round==number-1)}
                 if not required<=set(draft.responds_to):raise ValueError('recipe builder did not answer all specialist findings or prior reviews')

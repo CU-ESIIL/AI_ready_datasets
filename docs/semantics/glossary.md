@@ -6,6 +6,12 @@ Source orientation: [SKOS](https://www.w3.org/TR/skos-reference/), [SOSA/SSN](ht
 
 ## Find a term
 
+**Benchmark profiles:** [explicit ontology use](#explicit-ontology-use),
+[ontology potential](#ontology-potential), [semantic diversity](#semantic-diversity),
+[ontology leverage](#ontology-leverage), [breadth](#breadth), [depth](#depth),
+[composability](#composability), [complementarity](#complementarity),
+[ontology accumulation](#ontology-accumulation).
+
 **Semantic infrastructure:** [ontology](#ontology), [vocabulary](#vocabulary), [controlled vocabulary](#controlled-vocabulary), [thesaurus](#thesaurus), [classification](#classification), [taxonomy](#taxonomy), [knowledge graph](#knowledge-graph), [semantic model](#semantic-model), [conceptual model](#conceptual-model), [schema](#schema), [standard](#standard), [concept](#concept), [class](#class), [instance](#instance), [identifier](#identifier), [URI / IRI](#uri-iri), [label](#label), [synonym](#synonym), [definition](#definition), [axiom](#axiom), [relation](#relation), [subclass / is-a](#subclass-is-a), [part-of](#part-of), [member-of](#member-of), [broader / narrower](#broader-narrower), [equivalent](#equivalent), [alignment](#alignment), [mapping](#mapping), [crosswalk](#crosswalk), [semantic interoperability](#semantic-interoperability), [upper ontology](#upper-ontology), [domain ontology](#domain-ontology), [application ontology](#application-ontology), [ontology import](#ontology-import), [ontology profile](#ontology-profile), [semantic composition](#semantic-composition), [entity-quality model](#entity-quality-model), [I-ADOPT decomposition](#i-adopt-decomposition), [SKOS](#skos).
 
 **Biological organization:** [biological entity](#biological-entity), [organism](#organism), [taxon](#taxon), [taxon name](#taxon-name), [taxon concept](#taxon-concept), [taxonomic rank](#taxonomic-rank), [population](#population), [community](#community), [assemblage](#assemblage), [guild](#guild), [functional group](#functional-group), [ecosystem](#ecosystem), [biome](#biome), [habitat](#habitat), [environmental system](#environmental-system), [environmental feature](#environmental-feature), [environmental material](#environmental-material).
@@ -1137,3 +1143,58 @@ A documented unmet meaning, relation or representation need in a defined compari
 **Why it matters:** A local gap is a research question, not proof that no ontology anywhere addresses it.
 
 **Related:** [semantic composition](#semantic-composition), [cross-scale transformation](#cross-scale-transformation).
+
+## Benchmark interpretation
+
+[Ontology research framework](ontology-benchmarking.md) ·
+[Dataset framework](dataset-benchmarking.md) · [Computed diagnostics](benchmark.md)
+
+### Explicit ontology use { #explicit-ontology-use }
+
+Semantic infrastructure explicitly declared by a source: concept or taxon IDs,
+controlled vocabularies, unit systems, standard names or observation standards.
+An identifier is evidence to inspect, not proof of correct annotation or equivalence.
+
+### Ontology potential { #ontology-potential }
+
+The scientific meaning that could be mapped responsibly because definitions,
+methods, context and support are recoverable from evidence. A proposed assessment
+profile, not the current metadata-field presence score.
+
+### Semantic diversity { #semantic-diversity }
+
+The range of distinct semantic dimensions involved in a dataset or question, such
+as taxa, traits, communities, environment, methods, sensors, space, time and support.
+It is different from record count, ontology count and semantic completeness.
+
+### Ontology leverage { #ontology-leverage }
+
+A project research profile of semantic richness, recoverable meaning, connectivity,
+machine accessibility and evidence quality. It is not yet a calibrated scalar score.
+Low explicit ontology use can coexist with high potential and high leverage.
+
+### Breadth { #breadth }
+
+The range of meanings a resource addresses. Current inventory breadth is a
+provisional 21-dimension assessment, not measured term coverage.
+
+### Depth { #depth }
+
+Specificity within a domain: hierarchical distinctions, relational structure or
+annotation detail. These require different tests; raw class count cannot replace them.
+
+### Composability { #composability }
+
+Whether selected concepts and relations can jointly express an intended meaning
+without incompatible commitments or loss. A shared label or namespace does not establish it.
+
+### Complementarity { #complementarity }
+
+Additional meaning supplied by another resource or dataset for a specific question.
+Assessed-scope gains are diagnostics; scientific complementarity requires evidence review.
+
+### Ontology accumulation { #ontology-accumulation }
+
+A proposed experiment measuring additional semantic coverage as resources are added.
+Early saturation and continued specialist contributions are alternatives to test,
+not results established by the current portfolio heuristic.

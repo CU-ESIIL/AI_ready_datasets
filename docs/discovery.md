@@ -64,3 +64,6 @@ concepts behind a portal-independent protocol. External ontology resolvers remai
 planned/configurable adapters; no ontology graph or source observations are fetched
 by semantic enrichment. See [pipeline contracts and Sentinel regression](semantics/pipeline.md),
 [landscape](semantics/landscape.md) and [human review](semantics/review-workflow.md).
+
+!!! note "Finding terms is not approving mappings"
+    An [ontology](semantics/glossary.md#ontology), [vocabulary](semantics/glossary.md#vocabulary) and [standard](semantics/glossary.md#standard) serve different purposes. An ontology is also distinct from a [knowledge graph](semantics/glossary.md#knowledge-graph). Discovering an identifier does not establish equivalence.

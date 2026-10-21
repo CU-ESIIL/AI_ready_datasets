@@ -53,7 +53,8 @@ permissions are not an access-control or adversarial security boundary in V0.
 
 Representation and batch interfaces consume iterators. Harmonization currently
 buffers the small input fixture; joins and daily aggregation need grouped inputs.
-A production-scale partitioned/streaming executor is a documented gap. No Kafka,
+General partitioned execution for joins and aggregation remains a gap; the separate
+bounded Sentinel path below already streams windows directly into encoders. No Kafka,
 graph database, or distributed scheduler is introduced.
 
 ## Metadata consensus and direct streaming

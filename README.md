@@ -1,5 +1,9 @@
 # AI-ready biological and environmental datasets
 
+Finding data is only the first discovery problem. The second is discovering what
+the data mean. Scientific variety contains information: community definitions and
+source distinctions must survive synthesis.
+
 A research prototype for human-governed dataset creation: discover observations,
 preserve source metadata and semantic evidence, review scientific harmonization
 recipes, then stream approved harmonized outputs
@@ -49,7 +53,11 @@ Discovery now records **data + metadata + semantic evidence** using typed source
 annotations and concept candidates. Module 2 owns mapping and harmonization. The
 project composes community semantic resources rather than replacing them with a
 universal ontology. See the [Semantics resource](docs/semantics/index.md) and
-[metadata benchmark](docs/semantics/benchmark.md).
+[ontology research framework](docs/semantics/ontology-benchmarking.md),
+[dataset benchmarking](docs/semantics/dataset-benchmarking.md) and
+[working metadata diagnostics](docs/semantics/benchmark.md).
+Automatic ontology composition and evidence-reviewed dataset potential/diversity
+remain planned research, separate from implemented evidence preservation.
 
 ## Live integration status
 

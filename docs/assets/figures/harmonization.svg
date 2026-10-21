@@ -10,17 +10,17 @@
 <path d="M620 242 L650 242" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M790 274 L790 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Frozen recipe</text>
+<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Frozen recipe</tspan></text>
 <rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Scoped specialists</text>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Scoped specialists</tspan></text>
 <rect x="650" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">QA synthesis</text>
+<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">QA synthesis</tspan></text>
 <rect x="30" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Evidence ledger</text>
+<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Evidence ledger</tspan></text>
 <rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Human decision</text>
+<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Human decision</tspan></text>
 <rect x="650" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Deterministic executor</text>
+<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Deterministic executor</tspan></text>
 <rect x="650" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Harmonized window</text>
+<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Harmonized window</tspan></text>
 </svg>

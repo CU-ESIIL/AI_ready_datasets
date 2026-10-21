@@ -174,3 +174,17 @@
 16. Coverage, overlap, rankings and portfolio recommendations are project metadata diagnostics, not external ontology facts or scientific compatibility evidence. No benchmark output can authorize mapping or execution.
 17. Keep ontology-service access behind explicit adapters. Do not download ontology graphs or data silently; preserve offline generated tests and streaming constraints.
 18. Regenerate semantics tables with scripts/generate_semantics.py and synchronize schemas, diagrams, README, website, status and decisions after semantic interface changes.
+
+## Documentation and benchmark interpretation
+
+- Any architectural change affecting a contract, semantic relationship, evidence
+  model, transformation, or module boundary must update the relevant documentation
+  and architecture diagram in the same change.
+- Preserve two reader layers: a scientific public narrative and linked Markdown-first
+  technical proof. Keep capability labels WORKING, PROTOTYPE, MOCKED, PLANNED and
+  UNDER ANALYSIS consistent across both.
+- Explicit ontology use, ontology potential and semantic diversity are different
+  assessment dimensions. Ontology leverage is a multidimensional profile until an
+  evidence-reviewed scoring model exists. Metadata presence is not semantic completeness.
+- Conceptual figures and proposed observation/pair benchmarks must not be presented
+  as measured results, selected flagship datasets or approved scientific mappings.

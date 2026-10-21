@@ -23,3 +23,10 @@ No ontology graph or source dataset is downloaded. Registry metadata is not trea
 as permission to redistribute ontology content. Resource licenses remain specific;
 unknown licenses require review before reuse. Inventory text is original paraphrase;
 reference URLs and factual metadata retain their source citations.
+
+`verification_sources.json` preserves a normalized factual subset of the inspected
+OBO registry: declared canonical links, license labels, registry activity status,
+contact labels and recorded dependencies for 32 resources. Its digest covers that
+normalized subset, not original response bytes or ontology graphs. Other resources
+retain primary-documentation/reference/unresolved scopes explicitly. The website
+copies these evidence files verbatim; source content is not inferred from a score.

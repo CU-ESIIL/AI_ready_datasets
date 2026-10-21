@@ -135,7 +135,9 @@ def test_complete_model_workflow_is_review_only(sentinel_request,tmp_path):
         def generate(self,role,instruction,evidence,schema):
             if schema is CandidateChoice: return CandidateChoice(asset_ids=(asset,),rationale='Actual candidate metadata matches')
             if schema is SemanticJudgment: return SemanticJudgment(relationship='equivalent_to',evidence=('Exact raw-DN definition matches',),confidence=1)
-            if schema is RecipePlan: return RecipePlan(operations=(Operation(operation='validate',source_variable='B08_DN'),),rationale='Preserve native DN')
+            if role=='harmonization':
+                cap=evidence['available_operations']
+                return schema.model_validate({'capability_digest':cap['capability_digest'],'status':'PROPOSED','rationale':'Preserve source-native values','steps':[{'authority':'SELECT','operation_id':o['operation_id'],'option_id':o['option_id']} for o in cap['options']]})
             return Critique(outcome='require_human_review',reasons=('Expert must review the scientific use',))
     output=propose_snapshot(root,tmp_path/'proposals',Backend())
     recipe=HarmonizationRecipe.model_validate_json((output/'proposed_recipe.json').read_text())

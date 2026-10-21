@@ -1,4 +1,4 @@
-/* Editorial research layer over Material; no runtime JavaScript or external fonts. */
+/* Editorial research layer over Material; local progressive enhancement, no external fonts. */
 :root {
   --md-primary-fg-color: #173f35;
   --md-primary-fg-color--light: #356555;
@@ -58,3 +58,12 @@
 .semantic-matrix th { white-space: nowrap; }
 .semantic-matrix td { text-align: center; }
 .semantic-matrix td:first-child { text-align: left; white-space: nowrap; }
+
+/* Local, keyboard-accessible inventory controls; no external UI framework. */
+#semantic-filters:not([hidden]) { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; margin: 1.5rem 0; }
+#semantic-filters label { display: flex; flex-direction: column; gap: .3rem; font-size: .75rem; }
+#semantic-filters select, #semantic-filters input, #semantic-filters button { width: 100%; min-height: 2.5rem; padding: .4rem; border: 1px solid #547568; border-radius: 2px; background: white; color: #173e35; font: inherit; }
+#semantic-filters button { align-self: end; cursor: pointer; background: #eaf0e6; }
+#semantic-filters :focus-visible, .md-typeset summary:focus-visible { outline: 3px solid #8a481d; outline-offset: 3px; }
+.md-typeset tr[hidden] { display: none; }
+@media (max-width: 760px) { #semantic-filters:not([hidden]) { grid-template-columns: 1fr; } }

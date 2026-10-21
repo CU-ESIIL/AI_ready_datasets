@@ -106,3 +106,19 @@ in metadata artifacts beside vectors.
 
 *Inspection path, with review decisions grouped for readability.
 [Maintained figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
+## Semantic evidence is part of the audit trail
+
+Source asset → native metadata → source semantic evidence → candidate concepts →
+proposed mapping → review findings → applicable human decision → versioned recipe →
+deterministic transformation → harmonized observation → representation.
+
+This is a conceptual forward audit path; records and dependencies branch. Discovery
+preserves `SourceSemantics` within source identity, and provenance embeds the source
+contracts. Concept candidates are not accepted mappings. Definitions, source field
+locations and evidence kinds must remain inspectable alongside the mapping and
+review reports. Compact streaming lineage retains per-window hashes and native
+support rather than serializing original pixels. A metadata digest is not a data
+checksum, and a window hash does not cover a whole remote raster.
+
+[Semantic contracts](semantics/pipeline.md) · [Mapping workflow](semantics/review-workflow.md)

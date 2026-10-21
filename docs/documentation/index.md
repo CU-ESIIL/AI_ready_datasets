@@ -18,7 +18,7 @@ same repository as the code. The public site renders that source.
 ## Semantics: a major project resource
 
 Explore the [ontology landscape](../semantics/landscape.md),
-[138-entry glossary](../semantics/glossary.md), [coverage matrix](../semantics/comparison.md)
+[glossary](../semantics/glossary.md), [coverage matrix](../semantics/comparison.md)
 and [human comparison workflow](../semantics/review-workflow.md). The inventory
 informs discovery without letting Module 1 approve mappings. The
 [benchmark](../semantics/benchmark.md) produces auditable metadata diagnostics.
@@ -43,3 +43,13 @@ Offline generated examples are the reproducible default. Live discovery and mode
 inference are explicit commands; unavailable services never silently become mocks.
 New real raster paths stream bounded windows. Historical snapshot commands remain
 separate. Read [real-data status](../real-data-agents.md) before using a live workflow.
+
+## Choose your route
+
+Scientists can start with [biological organization](../semantics/biological-organization.md)
+and [support](../semantics/scale-support.md). Semantic-data experts can inspect the
+[filterable landscape](../semantics/landscape.md), [ontology research framework](../semantics/ontology-benchmarking.md)
+and [dataset framework](../semantics/dataset-benchmarking.md). Engineers can follow
+[typed contracts](../reference/contracts.md), [module APIs](../reference/modules.md)
+and [verification](../testing.md). All routes connect to the
+[human review workflow](../semantics/review-workflow.md).

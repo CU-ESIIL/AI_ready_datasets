@@ -83,3 +83,14 @@ def test_assessment_drift_namespace_validation_and_failure_manifest(tmp_path,res
     with pytest.raises(OSError):run('data/semantics/semantic_resources.csv',[],out)
     manifest=json.loads((out/'run_manifest.json').read_text())
     assert manifest['status']=='failed' and manifest['source_data_read'] is False
+
+
+def test_weighted_overlap_numeric_oracle(resources):
+    from dataset_prototype.semantic_resources import COVERAGE_DIMENSIONS
+    left={key:'not_target' for key in COVERAGE_DIMENSIONS};left.update(space='strong',time='partial')
+    right={key:'not_target' for key in COVERAGE_DIMENSIONS};right.update(space='partial',time='strong')
+    tables,_=compute((resources[0].model_copy(update={'coverage':left}),
+                      resources[1].model_copy(update={'coverage':right})),[],[])
+    assert tables['ontology_metrics'][0]['coverage_score']==pytest.approx(1.5/21)
+    assert tables['ontology_pairs'][0]['assessed_coverage_jaccard']==pytest.approx(.5)
+    assert set(tables['ontology_pairs'][0]['shared_dimensions'])=={'space','time'}

@@ -103,3 +103,17 @@
   profile, semantic gaps, human review and a reusable comparison template.
 - Added bounded metadata diagnostics producing eight explicit-schema Parquet tables,
   a review-only portfolio and checksummed run manifest; no source observations read.
+
+### Semantic narrative and documentation synchronization
+
+- Expanded the public scientific narrative around discovering and preserving meaning,
+  intersecting biological organizations, reviewed recipes and synthesis science.
+- Added separate ontology and dataset benchmark research guides, canonical proposed
+  observation tests, candidate pairs and an evidence-driven flagship selection process.
+  Uncomputed depth, accumulation, potential and diversity analyses remain explicit.
+- Generated a coherent family of sixteen accessible diagrams, including conceptual
+  analysis frameworks, semantic mapping and extended semantic provenance.
+- Added canonical-inventory filters with native controls and complete no-JavaScript
+  fallback; collapsed detailed evidence without removing it.
+- Synchronized governance, glossary, status, module boundaries and semantic decisions;
+  retained all existing runtime architecture and blocked real Sentinel review history.

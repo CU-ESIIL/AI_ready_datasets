@@ -88,3 +88,48 @@ uncertainty rather than pretend it is unchanged; general uncertainty propagation
 is not implemented. These narrow operations are not a universal environmental
 harmonization system. Daily aggregation uses UTC-aligned intervals in the examples;
 local civil days and daylight-saving calendars need further scientific design.
+
+## Semantic alignment and composition: capability boundaries
+
+Module 1 discovers what the source says. Module 2 decides how source concepts
+relate, and whether a proposed transformation is scientifically defensible.
+
+| Responsibility | Current implementation and boundary |
+| --- | --- |
+| Semantic alignment and crosswalks | Typed relationship proposals and curated fixture rules; general ontology alignment/crosswalk generation is PLANNED |
+| Ontology comparison, variable decomposition and composition | Human comparison workflow and candidate profile documented; automatic I-ADOPT decomposition/composition is PLANNED |
+| Scientific comparability | Explicit entity, method, unit and support checks; no name-based inference or general cross-scale validity engine |
+| Units and calibration | Narrow allow-listed conversions and reviewed Sentinel scale/offset; no arbitrary model-generated operations |
+| Space, time and cross-scale changes | Narrow reviewed operations above; generalized support transformations remain research work |
+| Consensus, QA and human decisions | Deterministic digest/contract checks, legacy four-specialist consensus, additive six-domain reviews and mandatory human review for model proposals |
+
+![Compare two variables by entity, property, taxon, matrix, method, units, environment, space/time support and provenance before proposing a relationship and recording evidence and review.](assets/figures/semantic-mapping.svg)
+
+*Conceptual comparison workflow; automated semantic decomposition is planned.
+[Figure source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
+The candidate relationship can be equivalent, convertible, broader, narrower,
+derived, related, incomparable or unknown. These conceptual categories do not
+replace the [typed mapping vocabulary](reference/contracts.md) or authorize execution.
+
+## The recipe as an inspectable intermediate representation
+
+Heterogeneous observations → semantic interpretation → **recipe** → deterministic
+execution → harmonized observations. The compiler analogy helps separate scientific
+judgment from execution: the recipe is inspectable, versioned and validated, and the
+executor accepts only supported operations.
+
+Current mapping and operation contracts retain source/target meanings, relation,
+evidence, confidence, proposals, units and supported transformations; review reports
+and human decisions bind them by digest. A complete research review packet should
+also describe relevant ontology IDs/versions, entity/property decomposition, spatial
+and temporal changes, aggregation, method assumptions and potential loss. Not every
+item is a dedicated executable recipe field today. Use the
+[non-executable semantic comparison template](semantics/review-template.md) for the
+richer scientific record; do not imply its free text is executed.
+
+[Human concept-review workflow](semantics/review-workflow.md) ·
+[Cross-support research](semantics/gaps.md) · [Provenance](provenance.md)
+
+!!! note "Same unit does not mean same variable"
+    A [trait](semantics/glossary.md#trait), [variable](semantics/glossary.md#variable) and [measurement](semantics/glossary.md#measurement) are distinct. Standardized structure does not establish harmonized scientific meaning.

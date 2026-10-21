@@ -81,3 +81,26 @@ ontology completeness, semantic alignment accuracy or native AI understanding.
 
 See the [comparison matrix](comparison.md), [inventory assessment records](assessments.jsonl),
 [semantic gap](gaps.md) and [implementation schemas](../reference/contracts.md).
+
+## Retained-source run from this development pass
+
+The delivered `outputs/semantic_benchmark/` was run with two existing synthetic
+source metadata records and one **real Sentinel source metadata record retained from
+the earlier EarthSearch plan**. This is different from the generated-only default.
+The initial generated-only run was preserved under `run/semantic-benchmark-initial/`.
+No new external data request or raster read was made.
+
+The delivered run contains 86 resource rows, 3,655 resource pairs, 1,806 resource ×
+dimension assessments, 22 gap/hypothesis records, three source records, one declared
+STAC namespace association, three source pairs and three documentation rankings.
+Two source records carry `fixture: true`; the retained Sentinel record does not.
+The manifest identifies the exact input files, full hashes and diagnostic scope.
+This run does not change the earlier blocked Sentinel harmonization decision.
+
+## Read the diagnostics in context
+
+The [ontology research framework](ontology-benchmarking.md) describes breadth,
+depth, composability and accumulation tests. The [dataset research framework](dataset-benchmarking.md)
+describes explicit use, potential, diversity, leverage and candidate pairs. Those
+profiles have not been computed by these outputs. Rankings remain documentation
+presence diagnostics, not a universal best-dataset leaderboard.

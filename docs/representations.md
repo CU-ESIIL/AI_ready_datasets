@@ -42,3 +42,16 @@ with scientific lineage, and verifies held-out ridge-model consumption against
 baselines. It does not encode raw source assets. Generated diagnostics exercise
 the complete mechanism; independent scientific validation and real-data review
 remain separate requirements.
+
+## Scientific meaning precedes embedding
+
+**Raw → semantically harmonized → aligned → embedded** describes distinct responsibilities.
+Any alignment that changes scientific support belongs in an explicitly reviewed
+recipe; encoder layout and numerical preprocessing have separate identities.
+Embeddings do not perform or validate semantic harmonization.
+
+MOSAIKS consumes harmonized raster outputs only. Canonical definitions, units,
+source/recipe/review identity, native support and window evidence accompany the
+vectors through compact lineage and metadata artifacts. A numeric feature can be
+usable by a downstream model while its scientific interpretation remains unvalidated.
+[Verification limits](mosaiks-embeddings.md) · [Semantic provenance](provenance.md#semantic-evidence-is-part-of-the-audit-trail)

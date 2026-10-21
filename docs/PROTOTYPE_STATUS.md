@@ -1,4 +1,11 @@
-# Prototype status
+# Current implementation status
+
+The [documentation synchronization audit](development/documentation-sync-audit.md)
+separates implemented metadata diagnostics from planned ontology depth, composition,
+accumulation, dataset potential/diversity and flagship analysis. See the
+[ontology](semantics/ontology-benchmarking.md) and [dataset](semantics/dataset-benchmarking.md)
+frameworks. No approved real Sentinel MOSAIKS release is claimed.
+
 
 ## Semantic discovery and landscape
 
@@ -10,7 +17,7 @@ status has not changed; no universal ontology or new data source is claimed.
 
 The [Semantics resource](semantics/index.md) includes the canonical 86-resource
 inventory, auditable provisional assessments, generated coverage comparison and
-138-entry glossary. The [benchmark](semantics/benchmark.md) produces metadata-only
+linked glossary. The [benchmark](semantics/benchmark.md) produces metadata-only
 Parquet diagnostics and review-only portfolio suggestions. Default runs use generated
 source metadata; explicit runs can inspect retained real source metadata without
 reading observations. Neither establishes scientific compatibility or approval.
@@ -28,7 +35,7 @@ gate for real Sentinel streams, checked before source access. The legacy
 [Sentinel comparison](development/sentinel-review-refactor.md).
 
 The website now separates narrative research pages from technical documentation,
-with generated contract reference and seven source-maintained architecture figures.
+with generated contract reference and sixteen source-maintained architecture and conceptual figures.
 The existing Material/Pages configuration remains the deployment mechanism.
 
 ## Metadata consensus and streaming
@@ -137,7 +144,8 @@ copy. Default orchestration does not yet load arbitrary per-track recipe files.
 ## Testing status
 
 Offline unit, contract/integration, CLI, deterministic repeatability and track
-independence tests are implemented. On 2026-10-21, the expanded offline suite passed locally (110 tests after MOSAIKS integration),
+independence tests are implemented. An earlier MOSAIKS integration checkpoint passed 110 tests; current verification is
+recorded in the [website review](development/website-review.md),
 the installed CLI ran both tracks, and the strict website build passed. Rendered
 navigation/readability and local links/fragments were checked. [Testing](testing.md) describes coverage and
 scientific gaps. CI also builds the existing MkDocs site strictly.

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1368" role="img" aria-labelledby="title desc">
+<title id="title">Semantic capabilities accumulate</title><desc id="desc">Conceptual progression, not strict chronology. These capabilities coexist and recur across communities.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
+<rect width="960" height="1368" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Semantic capabilities accumulate</text>
+<path d="M480 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L480 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 524 L480 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 649 L480 710" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 774 L480 835" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 899 L480 960" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 1024 L480 1085" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 1149 L480 1210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Name things</tspan></text>
+<rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Describe datasets</tspan></text>
+<rect x="340" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Formalize entities</tspan></text>
+<rect x="340" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Formalize relationships</tspan></text>
+<rect x="340" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Formalize observations</tspan></text>
+<rect x="340" y="710" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="748" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Formalize methods</tspan></text>
+<rect x="340" y="835" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="873" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Connect domains</tspan></text>
+<rect x="340" y="960" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="998" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Compose meaning</tspan></text>
+<rect x="340" y="1085" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="1123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Preserve lineage</tspan></text>
+<rect x="340" y="1210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="1248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Orchestrate semantic systems</tspan></text>
+</svg>

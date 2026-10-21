@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+<title id="title">Dataset selection — conceptual framework</title><desc id="desc">Ontology potential vertically, semantic diversity horizontally. No dataset positions or scores have been measured here.</desc>
+<rect width="960" height="620" rx="8" fill="#f3f5ef"/>
+<g font-family="sans-serif" fill="#173e35" text-anchor="middle">
+<text x="480" y="40" font-size="23">Dataset selection — conceptual framework</text>
+<path d="M120 310H840 M480 110V520" stroke="#547568" stroke-width="2"/>
+<text x="480" y="85" font-size="18">High ontology potential ↑</text>
+<text x="480" y="560" font-size="18">Low ontology potential</text>
+<text x="250" y="290" font-size="17">Low semantic diversity</text><text x="710" y="290" font-size="17">High semantic diversity →</text>
+<text x="250" y="190" font-size="21">Easy benchmarks</text><text x="710" y="190" font-size="21">Ideal flagship candidates</text>
+<text x="250" y="430" font-size="21">Low priority for this objective</text><text x="710" y="430" font-size="21">Hard but interesting</text>
+<text x="480" y="600" font-size="16">No real dataset placements; suitability depends on question, rights and evidence.</text>
+</g></svg>

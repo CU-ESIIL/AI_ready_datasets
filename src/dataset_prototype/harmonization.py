@@ -1,12 +1,18 @@
 """Scientific review and allow-listed deterministic execution, independent of MESA."""
-from collections import defaultdict
-from datetime import timedelta
+from .operations import REGISTRY, UNIT_CONVERSIONS, EXECUTOR_VERSION, execution_identity
 from .contracts import (QAReport, HarmonizedObservation, ProvenanceRecord, HarmonizationRecipe, SourceResource, RawObservation, HumanDecision, digest, recipe_content_digest)
 
 
 def assess(recipe, resources, parent_lineage=()):
     by_id = {r.asset_id: r for r in resources}
     errors, review = [], []
+    if recipe.execution_identity is not None and recipe.execution_identity != execution_identity():
+        errors.append('operation registry/executor identity changed; renewed review required')
+    for operation in recipe.operations:
+        try: REGISTRY.validate(operation)
+        except ValueError as error: errors.append(str(error))
+    if any(p.agent!='deterministic-fixture-agent' for p in recipe.proposals):
+        review.append('model proposals require human review')
     if recipe.agent_review:
         if recipe.agent_review.recipe_content_digest != recipe_content_digest(recipe):
             errors.append("model QA is stale for this scientific recipe content")
@@ -141,68 +147,12 @@ def run(resources, recipe, records, human=None, parents=()):
             rows = [(r, r.value, source.support.temporal, source.support.spatial, (r,), (), ()) for r in selected]
         operations = [o for o in recipe.operations if o.source_variable == mapping.source_variable and o.source_asset in {None, mapping.source_asset}]
         for op in operations:
-            if op.operation == "temporal_mean":
-                groups = defaultdict(list)
-                for row in rows:
-                    r = row[0]
-                    day = r.start.replace(hour=0, minute=0, second=0, microsecond=0)
-                    if r.end > day + timedelta(days=1):
-                        raise ValueError("cannot aggregate an interval crossing a day boundary")
-                    groups[(r.longitude, r.latitude, day)].append(row)
-                aggregated = []
-                for (_, _, day), group in sorted(groups.items()):
-                    ordered = sorted(group, key=lambda x: x[0].start)
-                    if any(a[0].end > b[0].start for a, b in zip(ordered, ordered[1:])):
-                        raise ValueError("overlapping observations cannot form a daily mean")
-                    if any(x[1] is None for x in group):
-                        raise ValueError("explicitly handle missing values before aggregation")
-                    durations = [(x[0].end - x[0].start).total_seconds() for x in group]
-                    if sum(durations) != 86400 or ordered[0][0].start != day or ordered[-1][0].end != day + timedelta(days=1):
-                        raise ValueError("daily mean requires complete nonoverlapping daily coverage")
-                    mean = sum(x[1] * duration for x, duration in zip(group, durations)) / 86400
-                    raw = group[0][0].model_copy(update={"start": day, "end": day + timedelta(days=1), "uncertainty": None, "quality_flag": "derived_daily_mean"})
-                    originals = tuple(r for x in group for r in x[4])
-                    aggregated.append((raw, mean, "daily", group[0][3], originals, (), ()))
-                rows = aggregated
-                continue
-            updated = []
-            for raw, value, temporal, spatial, originals, related_sources, related_records in rows:
-                if op.operation == "convert_units" and value is not None:
-                    scale, offset = {("degC", "K"): (1, 273.15), ("K", "degC"): (1, -273.15), ("cm", "m"): (.01, 0), ("m", "cm"): (100, 0)}[(op.from_unit, op.to_unit)]
-                    value = value * scale + offset
-                elif op.operation == "calibrate" and value is not None:
-                    value = value * op.scale + op.offset
-                elif op.operation == "missing" and value == op.sentinel:
-                    value = None
-                elif op.operation == "filter":
-                    if value is None or (op.minimum is not None and value < op.minimum) or (op.maximum is not None and value > op.maximum):
-                        continue
-                elif op.operation == "validate" and value is not None:
-                    if (op.minimum is not None and value < op.minimum) or (op.maximum is not None and value > op.maximum):
-                        raise ValueError("value failed recipe validation")
-                elif op.operation in {"join", "spatial_match"}:
-                    candidates = [r for r in records if r.asset_id == op.other_asset and r.start == raw.start and r.end == raw.end]
-                    tolerance = 0 if op.operation == "join" else op.tolerance
-                    matches = [r for r in candidates if abs(r.longitude - raw.longitude) <= tolerance and abs(r.latitude - raw.latitude) <= tolerance]
-                    if len(matches) != 1:
-                        raise ValueError("join/match requires exactly one aligned record; ambiguous or unmatched input")
-                    other = by_id[op.other_asset]
-                    if other.support.spatial != spatial and op.operation == "join":
-                        raise ValueError("exact join requires equal observational support")
-                    if other.rights.derivative_use is not True or other.rights.redistribution is not True:
-                        raise ValueError("joined source rights do not permit export")
-                    related_sources += (other,)
-                    related_records += tuple(matches)
-                    if op.operation == "spatial_match":
-                        spatial = op.target_support
-                # Coordinate normalization is explicit identity for already valid WGS84 inputs.
-                updated.append((raw, value, temporal, spatial, originals, related_sources, related_records))
-            rows = updated
+            rows = REGISTRY.execute_rows(op, rows, records, by_id)
         for raw, value, temporal, spatial, originals, related_sources, related_records in rows:
             matching_parents = tuple(p for p in parents if p.provenance.source.asset_id == source.asset_id and {r.record_id for r in p.provenance.source_records} & {r.record_id for r in originals})
             if recipe.scope == "track" and not matching_parents:
                 raise ValueError("track observation has no core lineage")
-            provenance = ProvenanceRecord(source=source, source_records=originals, recipe=recipe, qa=qa, human=human,
+            provenance = ProvenanceRecord(executor=EXECUTOR_VERSION, execution_identity=execution_identity(), source=source, source_records=originals, recipe=recipe, qa=qa, human=human,
                 parent_observations=tuple(p.observation_id for p in matching_parents), parent_lineage=tuple(p.provenance for p in matching_parents),
                 context_sources=resources, related_sources=related_sources, related_records=related_records)
             fields = dict(variable=mapping.target.name, value=value, unit=mapping.target.unit, biological_entity=mapping.target.biological_entity,
@@ -221,7 +171,7 @@ def transformed_uncertainty(uncertainty, operations):
         return None
     for op in operations:
         if op.operation == 'convert_units':
-            uncertainty *= {('degC','K'):1,('K','degC'):1,('cm','m'):.01,('m','cm'):100}[(op.from_unit,op.to_unit)]
+            uncertainty *= abs(UNIT_CONVERSIONS[op.from_unit,op.to_unit][0])
         elif op.operation == 'calibrate':
             uncertainty *= abs(op.scale)
     return uncertainty

@@ -41,3 +41,6 @@ or uncertain. A provenance graph records the claim without proving it valid.
 
 [Biological organization](biological-organization.md) · [Research gap](gaps.md) ·
 [Glossary](glossary.md#scale-and-support) · [CF guidance](https://cfconventions.org/faq.html)
+
+!!! note "Scale is not one dimension"
+    Location, resolution, support and extent answer different questions. A timestamp is not temporal resolution or temporal support. [Compare the definitions](distinctions.md).

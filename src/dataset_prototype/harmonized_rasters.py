@@ -4,6 +4,7 @@ from .review_contracts import ReviewReport
 from .contracts import Contract, HarmonizedObservation, HarmonizationRecipe, HumanDecision, digest
 from .stream_contracts import StreamPlan, ConsensusReport
 from .streaming import preflight
+from .operations import REGISTRY, convert, execution_identity
 
 
 class RasterContext(Contract):
@@ -88,6 +89,7 @@ def harmonize_window(arrays,*,context,patch_id,lineage,split,spatial_group):
     if len(arrays)!=1:raise NotImplementedError('first vectorized raster slice supports one canonical band; use reviewed cell assembly for aligned multichannel outputs')
     operations=context.recipe.operations
     allowed={'validate','missing','map_variable','calibrate','convert_units','normalize_coordinates'}
+    for operation in operations: REGISTRY.validate(operation)
     if any(o.operation not in allowed for o in operations):raise ValueError('unsupported raster harmonization operation')
     if set(arrays)!={(m.source_asset,m.source_variable) for m in context.recipe.mappings}:raise ValueError('raster inputs differ from reviewed mappings')
     channels=[];units=[];outputs=[];raw_hashes=[]
@@ -100,8 +102,7 @@ def harmonize_window(arrays,*,context,patch_id,lineage,split,spatial_group):
             if op.source_variable!=mapping.source_variable or op.source_asset not in {None,mapping.source_asset}:continue
             if op.operation=='calibrate':value=value*op.scale+op.offset
             elif op.operation=='convert_units':
-                scale,offset={('degC','K'):(1,273.15),('K','degC'):(1,-273.15),('cm','m'):(.01,0),('m','cm'):(100,0)}[op.from_unit,op.to_unit]
-                value=value*scale+offset
+                value=convert(value,op.from_unit,op.to_unit)
             elif op.operation=='missing' and np.any(value==op.sentinel):raise ValueError('missing raster cells require an explicit supported policy')
             elif op.operation=='validate':
                 if (op.minimum is not None and np.any(value<op.minimum)) or (op.maximum is not None and np.any(value>op.maximum)):raise ValueError('raster failed reviewed bounds')
@@ -120,7 +121,7 @@ def harmonize_window(arrays,*,context,patch_id,lineage,split,spatial_group):
     if set(lineage['source_assets'])!={m.source_asset for m in context.recipe.mappings}:raise ValueError('raster source lineage mismatch')
     values=np.stack(outputs)
     lineage={**lineage,'harmonization_status':'approved','recipe_digest':digest(context.recipe),'context_digest':digest(context),
-        'source_window_evidence_digest':digest({'channels':raw_hashes,'quality':lineage.get('quality_evidence_digest')}),'raster_executor':'allowlist-raster-v1','resampling':'none for scientific values'}
+        'source_window_evidence_digest':digest({'channels':raw_hashes,'quality':lineage.get('quality_evidence_digest')}),'raster_executor':'registered-raster-v2','execution_identity':execution_identity(),'resampling':'none for scientific values'}
     observation_digest=digest({'values':array_digest(values),'recipe_digest':digest(context.recipe),'lineage':lineage})
     # Quantity-retention diagnostic, explicitly not independent ground truth.
     return HarmonizedRasterPatch(values,patch_id,tuple(channels),tuple(units),digest(context.recipe),observation_digest,lineage,split,spatial_group,

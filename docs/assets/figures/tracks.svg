@@ -9,15 +9,15 @@
 <path d="M790 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M790 149 L790 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Immutable sources</text>
+<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Immutable sources</tspan></text>
 <rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Reviewed core recipes</text>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Reviewed core recipes</tspan></text>
 <rect x="650" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Canonical observations</text>
+<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Canonical observations</tspan></text>
 <rect x="30" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Food security</text>
+<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Food security</tspan></text>
 <rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Water security</text>
+<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Water security</tspan></text>
 <rect x="650" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17">Third track: undefined</text>
+<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Third track: undefined</tspan></text>
 </svg>

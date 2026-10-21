@@ -213,3 +213,24 @@ Write explicit-schema Parquet tables, including valid zero-row tables, with inpu
 hashes and failure manifests. Coverage weights, pair overlap, documentation rankings
 and greedy portfolio selection are transparent project heuristics, not measured term
 alignment, ontology quality or scientific suitability. No data reader or model is invoked.
+
+## 2026-10-21 — Semantic ADR S10: Dataset profiles precede selection
+
+Explicit ontology use records declared semantic infrastructure. Ontology potential
+asks whether definitions, methods and context support recoverable meaning. Semantic
+diversity describes distinct dimensions, not ontology completeness. Ontology leverage
+is an interpretable profile of richness, recoverability, connectivity, accessibility
+and evidence quality. No scalar product or flagship selection is implemented by the
+current documentation-presence rankings. Candidate pairs require independent review
+of scientific comparability, rights and support transformations.
+
+## 2026-10-21 — Documentation ADR: Narrative and evidence stay synchronized
+
+Retain the existing Material/Pages infrastructure and editorial design. Public pages
+explain why scientific semantic variety matters; linked technical pages expose typed
+contracts, operations, evidence and status. Keep the 86-resource inventory canonical;
+generate the table, filter metadata and downloadable mirrors from it. Local accessible
+JavaScript enhances filtering; the full table and expandable evidence remain usable
+without it. Diagrams distinguish architecture from uncomputed research frameworks.
+A contract, semantic relationship, evidence model, transformation or module-boundary
+change updates documentation and its architecture diagram in the same change.

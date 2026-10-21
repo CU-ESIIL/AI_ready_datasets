@@ -45,3 +45,11 @@ that is a scoped metadata fact, not a claim that every descendant use has ceased
 
 A blank origin or crosswalk field means this review has not established it.
 Continued literature review and community input are part of the resource's purpose.
+
+![Conceptual progression from naming through dataset description, entities, relations, observations, methods, domain connections, composition and lineage to orchestration; not a strict chronology.](../assets/figures/semantic-history.svg)
+
+*Repository-authored conceptual diagram; [maintained source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py). Analytical hypotheses are not measured results.*
+
+Biology has many semantic resources. The current challenge is finding, understanding,
+selecting and connecting them while preserving distinctions, identifying genuine gaps
+and determining whether a mapping is scientifically justified.

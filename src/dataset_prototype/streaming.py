@@ -3,6 +3,7 @@
 Only a bounded microbatch enters the legacy executor. Persisted lineage contains
 identifiers and evidence hashes, never raw or harmonized observation values.
 """
+from .operations import execution_identity
 import json
 from pathlib import Path
 from .contracts import digest, recipe_content_digest, HarmonizationRecipe, HumanDecision
@@ -83,7 +84,7 @@ def stream_embed(plan,recipe,samples,output,*,human=None,consensus=None,evidence
     last_sequence={};count=0;iterator=None
     manifest={'status':'incomplete','records':0,'plan_digest':digest(plan),'recipe_digest':digest(recipe),'encoder_spec_digest':digest(plan.encoder),
               'raw_data_persisted':False,'harmonized_data_persisted':False,'batch_size':plan.batch_size,
-              'embedding_kind':plan.encoder.purpose,'stream_executor':'bounded-stream-v1','executor':'allowlist-v2',
+              'embedding_kind':plan.encoder.purpose,'stream_executor':'bounded-stream-v1','executor':execution_identity(),
               'code_digest':digest({p.name:p.read_text() for p in Path(__file__).parent.glob('*.py')}),'integrity_limit':'Metadata and extracted-window evidence hashes; full remote raster bytes are not pinned or archived.'}
     try:
         iterator=iter(samples)
