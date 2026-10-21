@@ -1,0 +1,175 @@
+{
+  "$defs": {
+    "TransformationChanges": {
+      "additionalProperties": false,
+      "properties": {
+        "aggregation": {
+          "default": false,
+          "title": "Aggregation",
+          "type": "boolean"
+        },
+        "biological_level": {
+          "default": false,
+          "title": "Biological Level",
+          "type": "boolean"
+        },
+        "crs": {
+          "default": false,
+          "title": "Crs",
+          "type": "boolean"
+        },
+        "extent": {
+          "default": false,
+          "title": "Extent",
+          "type": "boolean"
+        },
+        "spatial_resolution": {
+          "default": false,
+          "title": "Spatial Resolution",
+          "type": "boolean"
+        },
+        "spatial_support": {
+          "default": false,
+          "title": "Spatial Support",
+          "type": "boolean"
+        },
+        "temporal_resolution": {
+          "default": false,
+          "title": "Temporal Resolution",
+          "type": "boolean"
+        },
+        "temporal_support": {
+          "default": false,
+          "title": "Temporal Support",
+          "type": "boolean"
+        },
+        "units": {
+          "default": false,
+          "title": "Units",
+          "type": "boolean"
+        },
+        "values": {
+          "title": "Values",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "values"
+      ],
+      "title": "TransformationChanges",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "backend": {
+      "const": "cubedynamics",
+      "default": "cubedynamics",
+      "title": "Backend",
+      "type": "string"
+    },
+    "backend_version": {
+      "title": "Backend Version",
+      "type": "string"
+    },
+    "changes": {
+      "$ref": "#/$defs/TransformationChanges"
+    },
+    "dependency_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Dependency Versions",
+      "type": "object"
+    },
+    "input_metadata": {
+      "additionalProperties": true,
+      "title": "Input Metadata",
+      "type": "object"
+    },
+    "input_resource_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Input Resource Ids",
+      "type": "array"
+    },
+    "lazy": {
+      "title": "Lazy",
+      "type": "boolean"
+    },
+    "materialized": {
+      "title": "Materialized",
+      "type": "boolean"
+    },
+    "operation_id": {
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "operation_version": {
+      "title": "Operation Version",
+      "type": "string"
+    },
+    "output_metadata": {
+      "additionalProperties": true,
+      "title": "Output Metadata",
+      "type": "object"
+    },
+    "output_resource_id": {
+      "title": "Output Resource Id",
+      "type": "string"
+    },
+    "parameters": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Parameters",
+      "type": "object"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "title": "Provenance",
+      "type": "object"
+    },
+    "resolved_parameters": {
+      "additionalProperties": true,
+      "title": "Resolved Parameters",
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "LAZY_PLAN",
+        "EXECUTED"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "validation_results": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Validation Results",
+      "type": "array"
+    }
+  },
+  "required": [
+    "operation_id",
+    "operation_version",
+    "input_resource_ids",
+    "output_resource_id",
+    "backend_version",
+    "dependency_versions",
+    "parameters",
+    "resolved_parameters",
+    "input_metadata",
+    "output_metadata",
+    "changes",
+    "lazy",
+    "materialized",
+    "status",
+    "validation_results",
+    "provenance"
+  ],
+  "title": "TransformationResult",
+  "type": "object"
+}

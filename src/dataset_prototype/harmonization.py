@@ -13,6 +13,15 @@ def assess(recipe, resources, parent_lineage=()):
         except ValueError as error: errors.append(str(error))
     if any(p.agent!='deterministic-fixture-agent' for p in recipe.proposals):
         review.append('model proposals require human review')
+    for step in recipe.backend_operations:
+        try:
+            definition=REGISTRY.get(step.operation_id)
+            if definition.backend!=step.backend or definition.backend_version!=step.backend_version:
+                errors.append('backend identity mismatch')
+        except ValueError as error:errors.append(str(error))
+    if recipe.backend_operations:
+        review.append('CubeDynamics backend execution requires exact-recipe human review')
+        if recipe.backend_context_digest is None:errors.append('missing reviewed backend context')
     if recipe.agent_review:
         if recipe.agent_review.recipe_content_digest != recipe_content_digest(recipe):
             errors.append("model QA is stale for this scientific recipe content")
@@ -101,6 +110,8 @@ def run(resources, recipe, records, human=None, parents=()):
     Aggregation/joins buffer only their selected inputs in V0; direct scalar
     transformations yield one observation at a time.
     """
+    if recipe.backend_operations:
+        raise ValueError('backend operations require the CubeDynamics controller; scalar execution cannot ignore them')
     resources = tuple(SourceResource.model_validate(r.model_dump(mode="json")) for r in resources)
     recipe = HarmonizationRecipe.model_validate(recipe.model_dump(mode="json"))
     human = HumanDecision.model_validate(human.model_dump(mode="json")) if human is not None else None

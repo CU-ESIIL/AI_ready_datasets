@@ -5,7 +5,7 @@ from datetime import timedelta
 from types import MappingProxyType
 from .contracts import Contract, Operation, digest
 
-REGISTRY_VERSION = '1'
+REGISTRY_VERSION = '2'
 EXECUTOR_VERSION = 'registered-allowlist-v3'
 VALIDATOR_VERSION = 'scientific-preconditions-v1'
 CONSTANTS_VERSION = 'units-v1'
@@ -27,6 +27,16 @@ class OperationDefinition(Contract):
     postconditions: tuple[str,...] = ('canonical output and provenance validated',)
     allowed_units: tuple[str,...] = ()
     allowed_quantity_kinds: tuple[str,...] = ('explicit reviewed mapping only; no inferred quantity kinds',)
+    backend: str = 'core'
+    backend_version: str = 'registered-allowlist-v3'
+    upstream_api: str | None = None
+    changes_values: bool = True
+    changes_units: bool = False
+    changes_spatial_resolution: bool = False
+    changes_temporal_resolution: bool = False
+    changes_crs: bool = False
+    changes_extent: bool = False
+    lazy_or_eager: str = 'BATCHED'
     changes_spatial_support: bool = False
     changes_temporal_support: bool = False
     changes_biological_level: bool = False
@@ -82,8 +92,10 @@ def _definitions():
 class OperationRegistry:
     """Read-only registry. Runtime input cannot register or replace implementations."""
     def __init__(self):
-        self._entries=MappingProxyType({d.operation_id:d for d in _definitions()})
-        self._legacy=MappingProxyType({d.legacy_name:d.operation_id for d in self._entries.values()})
+        from .cube_specs import definitions
+        entries=(*_definitions(),*(OperationDefinition.model_validate(d) for d in definitions()))
+        self._entries=MappingProxyType({d.operation_id:d for d in entries})
+        self._legacy=MappingProxyType({d.legacy_name:d.operation_id for d in self._entries.values() if d.backend=='core'})
     def get(self, operation_id):
         if operation_id not in self._entries: raise ValueError('UNSUPPORTED_OPERATION: '+str(operation_id))
         # Reparse nested metadata so callers never receive mutable registry-owned state.
@@ -102,7 +114,7 @@ class OperationRegistry:
         entries=[self.get(k).model_dump(mode='json') for k in self._entries]
         from pathlib import Path
         identity=digest({'definitions':entries,'code':{name:sha256((Path(__file__).parent/name).read_bytes()).hexdigest()
-            for name in ('operations.py','contracts.py','harmonization.py','harmonized_rasters.py','decision_ir.py')}})
+            for name in ('operations.py','contracts.py','harmonization.py','harmonized_rasters.py','decision_ir.py','cube_specs.py','cube_contracts.py','cubedynamics_backend.py','cube_ir.py')}})
         return {'registry_version':REGISTRY_VERSION,'registry_digest':identity,'executor_version':EXECUTOR_VERSION,
                 'validator_version':VALIDATOR_VERSION,'constants_version':CONSTANTS_VERSION,'operations':entries,
                 'checks':[{'check_id':name,'version':'1'} for name in ('schema.recipe','recipe.scientific_preconditions')]}

@@ -119,3 +119,14 @@ unknown ontology candidates, safe abstention, mandatory human review, no-model
 execution, fixture-model orchestration and timeout behavior without fallback.
 The full suite passes 175 tests at this hardening checkpoint. Historical audit test
 counts remain historical. [Audit](development/model-trust-audit.md).
+
+## CubeDynamics integration tests
+
+The core suite remains independent of the optional package. A dedicated Python 3.12
+CI job installs `.[dev,cubedynamics]` and runs the entire suite offline. Tests use the
+actual CubeDynamics API with generated xarray/Dask cubes, quality masks, metadata,
+multiband inputs and delayed chunk counters. They check lazy planning, bounded
+materialization, complete-interval means, resolution/support separation, changed
+review/source identities, incompatible units/CRS, closed model choices, inference-free
+execution and the generated window-to-MOSAIKS bridge. No provider data is downloaded.
+[Capability audit](development/cubedynamics-audit.md).

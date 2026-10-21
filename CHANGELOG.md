@@ -133,3 +133,18 @@
   commands, adversarial tests and independent coverage for all registered operations.
 - Documented the trust boundary, role contracts, examples, scientific limits, status
   and ADRs; verified installed isolated OpenClaw 2026.5.18 without live inference.
+
+### External CubeDynamics execution integration
+
+- Audited the current upstream repository/public API and installed the real pinned
+  0.1.0rc3 prerelease in an isolated Python 3.12/NumPy 1 environment; no source vendoring.
+- Added seven closed backend capabilities, typed cube configuration/results,
+  reference-bound model selections, deterministic scientific validation and resource guards.
+- Added explicit lazy/materializing states, ordered-stage checks, complete-interval
+  means, documented masking and same-CRS exact-time nearest alignment with provenance.
+- Reused Module 1's bounded source readers and retained native affine transforms.
+  Added a layout-preserving harmonized-window → CubeDynamics → MOSAIKS bridge.
+- Added generated Sentinel-like and heterogeneous-structure alignment examples,
+  real-package offline tests and a dedicated optional-dependency CI job.
+- Documented the external attribution, scientific/streaming boundaries, limitations,
+  governance, decisions and current status; previous real Sentinel vetoes remain binding.

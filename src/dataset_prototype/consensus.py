@@ -67,18 +67,24 @@ def _compile(plan,draft,messages,backend,round_number):
         mappings=tuple(mappings),operations=unique,proposals=proposals,author='metadata-specialist-consensus',execution_identity=execution_identity())
 
 
-def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
+def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None,frozen_recipe=None,cube_configuration=None):
     if not 1<=max_rounds<=3:raise ValueError('consensus rounds must be bounded to 1..3')
     plan=StreamPlan.model_validate(plan.model_dump(mode='json'))
     if plan.reader in {'sentinel-pixel','sentinel-raster'}:
         from .stream_sources import validated_native
         for binding in plan.bindings:validated_native(binding)
+    if frozen_recipe is not None:
+        from .cubedynamics_backend import context_digest,validate_step
+        frozen_recipe=HarmonizationRecipe.model_validate(frozen_recipe.model_dump(mode='json')).model_copy(update={'status':'needs_review'})
+        if analysis_from is not None or cube_configuration is None or frozen_recipe.backend_context_digest!=context_digest(cube_configuration,plan.resources):
+            raise ValueError('matching frozen backend configuration required; historical analysis reuse is disabled')
+        for step in frozen_recipe.backend_operations:validate_step(step)
     root=Path(output);root.mkdir(parents=True,exist_ok=False)
     messages=[];rounds=[];recipe=None;reused_draft=None
     def save(name,value):
         with (root/name).open('x') as f:json.dump(value,f,indent=2,sort_keys=True,allow_nan=False)
-    def publish(role,kind,round_number,result,reply_to=(),content_digest=None):
-        trace=backend.traces[-1] if getattr(backend,'traces',()) else None
+    def publish(role,kind,round_number,result,reply_to=(),content_digest=None,controller=False):
+        trace=backend.traces[-1] if getattr(backend,'traces',()) and not controller else None
         fields=dict(round=round_number,sender=role,kind=kind,reply_to=tuple(reply_to),recipe_content_digest=content_digest,
                     payload_json=result.model_dump_json(),prompt_digest=trace.prompt_digest if trace else None,response_digest=trace.response_digest if trace else None)
         message=AgentMessage(message_id='message:'+digest(fields),**fields)
@@ -95,6 +101,11 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
     base={'available_operations':capabilities,'raster_layout':json.loads(plan.raster_layout_json) if plan.raster_layout_json else None,'question':plan.question,'metadata':metadata,'encoder':plan.encoder.model_dump(mode='json'),
           'constraints':['metadata-only planning; no data values','bounded reads directly into embeddings; no raw/harmonized materialization',
                          'target identities fixed by caller','human approval remains required; model confidence is not approval']}
+    if frozen_recipe is not None:
+        save('frozen_recipe.json',frozen_recipe.model_dump(mode='json'))
+        save('cube_configuration.json',cube_configuration.model_dump(mode='json'))
+        base.update(frozen_recipe=frozen_recipe.model_dump(mode='json'),cube_configuration=cube_configuration.model_dump(mode='json'),
+            frozen_recipe_note='Controller-supplied immutable recipe. Review it; do not generate operations or change its scientific content.')
     base['executor_contract']={
         'executor':execution_identity(),
         'calibration':'value * exact source calibration_scale + exact source calibration_offset',
@@ -159,7 +170,10 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
         votes=[];status='needs_revision'
         for number in range(1,max_rounds+1):
             known=[m.message_id for m in messages]
-            if number==1 and reused_draft is not None:
+            if frozen_recipe is not None:
+                draft_message=publish('harmonization','draft',number,frozen_recipe,
+                    tuple(m.message_id for m in messages if m.kind=='analysis'),recipe_content_digest(frozen_recipe),controller=True)
+            elif number==1 and reused_draft is not None:
                 draft,draft_message=reused_draft
             else:
                 draft=backend.generate('harmonization',
@@ -173,7 +187,7 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
                 required={m.message_id for m in messages if (m.kind=='analysis' if number==1 else m.kind=='review' and m.round==number-1)}
                 if not required<=set(draft.responds_to):raise ValueError('recipe builder did not answer all specialist findings or prior reviews')
                 draft_message=publish('harmonization','draft',number,draft,draft.responds_to)
-            recipe=_compile(plan,draft,messages,backend,number)
+            recipe=frozen_recipe if frozen_recipe is not None else _compile(plan,draft,messages,backend,number)
             content=recipe_content_digest(recipe)
             # A metadata/operation mismatch cannot be voted away by the agents.
             deterministic=assess(recipe,plan.resources)
@@ -205,7 +219,7 @@ def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None):
             rounds.append({'round':number,'content_digest':content,'status':status,'votes':[(r,v.model_dump(mode='json')) for r,v in votes],
                            'deterministic_qa':deterministic.model_dump(mode='json')})
             save(f'round-{number}-votes.json',rounds[-1])
-            if status in {'consensus','rejected','abstained'}:break
+            if frozen_recipe is not None or status in {'consensus','rejected','abstained'}:break
         final_digest=recipe_content_digest(recipe)
         review=AgentReview(recipe_content_digest=final_digest,outcome='require_human_review' if status=='consensus' else 'reject' if status=='rejected' else 'request_revision',
             reasons=('All specialists and QA agreed on this content; explicit human review still required',) if status=='consensus' else unresolved or ('Consensus not achieved; do not execute',),

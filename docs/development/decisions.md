@@ -272,3 +272,44 @@ retain their code/registry/constants identities. Human decisions bind the exact
 recipe. New recipe, scalar provenance, raster/stream lineage and cache identities
 record the execution backbone; legacy artifacts remain historical without invented
 new metadata. Scientific code changes invalidate new bound recipes and require review.
+
+## 2026-10-21 — CubeDynamics ADR C1: External primary environmental backend
+
+Use ESIIL CubeDynamics as the intended primary environmental manipulation backend,
+behind a small replaceable adapter. Keep it external, optional and pinned to the
+inspected prerelease 0.1.0rc3. Core semantics, review and existing operations remain
+independently callable. The source/public API and installed distribution are inspected
+before registering capabilities; no upstream code is copied.
+
+## 2026-10-21 — CubeDynamics ADR C2: Registered references, not runtime Python
+
+Extend the existing scientific recipe with backend operation records and a digest
+of reviewed configuration/source/implementation context. Runtime models select only
+closed capability IDs and schema-constrained references. The adapter uses explicit
+pre-written dispatch, including fixed select/isel/where stages through upstream's
+public apply API. Arbitrary apply, function names, expressions and imports are never
+model permissions. Exact-recipe human decisions and prior model vetoes remain binding.
+
+## 2026-10-21 — CubeDynamics ADR C3: Stream and plan before materialization
+
+Reuse Module 1's native readers rather than duplicate CubeDynamics/Cubo discovery.
+Accept bounded trusted xarray/Dask inputs; preserve lazy values while inspecting only
+bounded coordinates. Guard input/output size and task graphs. Materialization is an
+explicit reviewed configuration change and computes only the bounded final graph.
+No raw or harmonized arrays are persisted; final-window hashes state their scope.
+
+## 2026-10-21 — CubeDynamics ADR C4: Computation does not justify support changes
+
+Require evidence and human review for aggregation/alignment. Preserve resolution,
+support, extent, CRS, units and biological meaning separately. Expose only complete
+equal-duration whole-window means and same-CRS nearest spatial sampling with exact
+time labels in this first backend. A mean's interval duration does not determine a
+new temporal sampling cadence. Reprojection and general resampling remain unexposed.
+
+## 2026-10-21 — CubeDynamics ADR C5: Explicit result and representation boundaries
+
+Typed TransformationResult records connect source evidence and recipes to external
+backend operations and resulting metadata, changes and package versions. A lazy plan
+is not a completed data read. The initial MOSAIKS bridge permits only layout-preserving
+one-band selection/subset/calendar operations on already calibrated bounded windows.
+General support-changing products need a separately reviewed representation bridge.

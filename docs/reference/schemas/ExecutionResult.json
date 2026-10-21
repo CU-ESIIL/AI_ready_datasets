@@ -38,6 +38,48 @@
       "title": "AgentReview",
       "type": "object"
     },
+    "BackendOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "backend": {
+          "const": "cubedynamics",
+          "default": "cubedynamics",
+          "title": "Backend",
+          "type": "string"
+        },
+        "backend_version": {
+          "const": "0.1.0rc3",
+          "default": "0.1.0rc3",
+          "title": "Backend Version",
+          "type": "string"
+        },
+        "operation_id": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Operation Id",
+          "type": "string"
+        },
+        "operation_version": {
+          "const": "1",
+          "default": "1",
+          "title": "Operation Version",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Parameters",
+          "type": "object"
+        }
+      },
+      "required": [
+        "operation_id",
+        "parameters"
+      ],
+      "title": "BackendOperation",
+      "type": "object"
+    },
     "HarmonizationRecipe": {
       "additionalProperties": false,
       "properties": {
@@ -56,6 +98,28 @@
           "minLength": 1,
           "title": "Author",
           "type": "string"
+        },
+        "backend_context_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Backend Context Digest"
+        },
+        "backend_operations": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/BackendOperation"
+          },
+          "maxItems": 16,
+          "title": "Backend Operations",
+          "type": "array"
         },
         "core_recipe": {
           "anyOf": [

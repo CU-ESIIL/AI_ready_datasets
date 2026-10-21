@@ -35,7 +35,7 @@ gate for real Sentinel streams, checked before source access. The legacy
 [Sentinel comparison](development/sentinel-review-refactor.md).
 
 The website now separates narrative research pages from technical documentation,
-with generated contract reference and seventeen source-maintained architecture and conceptual figures.
+with generated contract reference and eighteen source-maintained architecture and conceptual figures.
 The existing Material/Pages configuration remains the deployment mechanism.
 
 ## Metadata consensus and streaming
@@ -196,3 +196,13 @@ MOCKED, including its human decision. OpenClaw/VERDE and model scientific roles 
 PROTOTYPE; no new live call or approved real Sentinel product is claimed. General
 support algorithms, ontology composition and authenticated human approval remain
 PLANNED. [Detailed status and limits](architecture/model-trust.md#current-status).
+
+## CubeDynamics backend
+
+WORKING in generated offline tests: external CubeDynamics 0.1.0rc3, seven registered
+capabilities, source-bound JSON backend plans, lazy xarray/Dask validation, explicit
+bounded materialization and typed transformation lineage. The generated Sentinel-like
+window → CubeDynamics → MOSAIKS example is PROTOTYPE; its model/reviewer are MOCKED.
+No new live source/inference run or approved real Sentinel product is claimed.
+General support-changing representation bridges and reprojection are not exposed.
+[Integration](cubedynamics.md) · [API audit](development/cubedynamics-audit.md).

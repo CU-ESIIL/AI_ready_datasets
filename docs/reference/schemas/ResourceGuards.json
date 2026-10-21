@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "max_axis": {
+      "default": 512,
+      "maximum": 4096,
+      "minimum": 1,
+      "title": "Max Axis",
+      "type": "integer"
+    },
+    "max_chunks": {
+      "default": 256,
+      "maximum": 1024,
+      "minimum": 1,
+      "title": "Max Chunks",
+      "type": "integer"
+    },
+    "max_input_bytes": {
+      "default": 16777216,
+      "maximum": 67108864,
+      "minimum": 1,
+      "title": "Max Input Bytes",
+      "type": "integer"
+    },
+    "max_output_bytes": {
+      "default": 4194304,
+      "maximum": 16777216,
+      "minimum": 1,
+      "title": "Max Output Bytes",
+      "type": "integer"
+    },
+    "max_tasks": {
+      "default": 4096,
+      "maximum": 16384,
+      "minimum": 1,
+      "title": "Max Tasks",
+      "type": "integer"
+    },
+    "max_time_seconds": {
+      "default": 31622400,
+      "maximum": 31622400,
+      "minimum": 1,
+      "title": "Max Time Seconds",
+      "type": "integer"
+    }
+  },
+  "title": "ResourceGuards",
+  "type": "object"
+}

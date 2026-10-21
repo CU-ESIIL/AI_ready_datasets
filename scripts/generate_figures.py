@@ -53,6 +53,21 @@ FIGURES['model-trust'] = ('Model decisions, deterministic scientific execution',
  ('Versioned operation registry',1,5),('Deterministic execution',1,6),('Output validation',1,7),('Result + provenance',1,8)],
  [(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,11),(11,12)])
 
+FIGURES['cubedynamics'] = ('CubeDynamics behind the scientific trust boundary',
+ 'An external deterministic backend. Approved source semantics and recipe review govern computation; computational alignment never establishes scientific equivalence.',
+ [('SourceResource + semantics',1,0),('Scientific comparison',0,1),('VERDE: bounded proposal',2,1),('Frozen JSON recipe',1,2),('Validation + QA + human',1,3),
+ ('Closed operation registry',1,4),('CubeDynamics adapter',1,5),('Stream / subset',0,6),('Transform / aggregate',1,6),('Align with explicit support',2,6),
+ ('TransformationResult',1,7),('Harmonized observations',1,8),('Reviewed raster → MOSAIKS',1,9)],
+ [(0,1),(0,2),(1,3),(2,3),(3,4),(4,5),(5,6),(6,7),(6,8),(6,9),(7,10),(8,10),(9,10),(10,11),(11,12)])
+FIGURES['harmonization'] = ('Harmonization, review and registered execution',
+ 'Scientific interpretation remains separate from the external computational backend. General support-changing representation bridges are not yet implemented.',
+ [('Source semantics + evidence',0,0),('Frozen recipe + backend plan',1,0),('Scoped specialists + QA',2,0),('Human decision',1,1),
+ ('Operation registry',1,2),('Core operation library',0,3),('CubeDynamics adapter',2,3),('Validated result + lineage',1,4),('Harmonized output',1,5)],
+ [(0,2),(1,2),(2,3),(3,4),(4,5),(4,6),(5,7),(6,7),(7,8)])
+# Keep the trust diagram connected to the concrete external backend without replacing core operations.
+_title,_description,_nodes,_edges=FIGURES['model-trust']
+FIGURES['model-trust']=(_title,_description,[*_nodes,('CubeDynamics adapter',2,5)],[*_edges,(9,13),(13,10)])
+
 def quadrant():
     return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
 <title id="title">Dataset selection — conceptual framework</title><desc id="desc">Ontology potential vertically, semantic diversity horizontally. No dataset positions or scores have been measured here.</desc>

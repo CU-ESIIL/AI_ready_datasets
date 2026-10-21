@@ -60,3 +60,20 @@ decision exercises the gate; it is not real scientific approval. No source recor
 are fetched and raw/harmonized datasets are not persisted. The output includes a
 rejected `spectral.magic_correction` selection and an ambiguous concept proposal
 returning `NEEDS_HUMAN_REVIEW`. See the [complete trust-boundary example](architecture/model-trust.md#execute-with-verde-off).
+
+## Real CubeDynamics, generated data
+
+```sh
+# Python 3.12; real external dependency, generated data and fixture review only.
+python -m pip install -e '.[dev,cubedynamics]'
+prototype cubedynamics-demo --output run/cubedynamics-example
+```
+
+Generated Sentinel-like DN → reviewed scale/offset harmonization → CubeDynamics
+selection/subset/calendar operations → training-only MOSAIKS → vectors and lineage.
+`fixture-model-selection.json` records what the fixture model selected. Backend
+transformation records describe what deterministic software executed. The additional
+generated alignment example uses two source identities and DataArray/Dataset inputs;
+it records nearest sampling and support changes, not scientific equivalence.
+No real raster or raw/harmonized dataset is downloaded or persisted.
+[Details and limitations](cubedynamics.md).

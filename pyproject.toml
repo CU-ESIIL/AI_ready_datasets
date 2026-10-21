@@ -10,6 +10,7 @@ requires-python = ">=3.11"
 dependencies = ["pydantic>=2.7,<3"]
 
 [project.optional-dependencies]
+cubedynamics = ["cubedynamics==0.1.0rc3", "numpy>=1.26,<2", "xarray>=2024.1", "dask[array]>=2024.1"]
 real = ["rasterio>=1.4,<2"]
 semantics = ["pyarrow>=18,<24"]
 embeddings = ["numpy>=1.26,<3"]

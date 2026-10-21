@@ -19,9 +19,34 @@
       "title": "Allowed Units",
       "type": "array"
     },
+    "backend": {
+      "default": "core",
+      "title": "Backend",
+      "type": "string"
+    },
+    "backend_version": {
+      "default": "registered-allowlist-v3",
+      "title": "Backend Version",
+      "type": "string"
+    },
     "changes_biological_level": {
       "default": false,
       "title": "Changes Biological Level",
+      "type": "boolean"
+    },
+    "changes_crs": {
+      "default": false,
+      "title": "Changes Crs",
+      "type": "boolean"
+    },
+    "changes_extent": {
+      "default": false,
+      "title": "Changes Extent",
+      "type": "boolean"
+    },
+    "changes_spatial_resolution": {
+      "default": false,
+      "title": "Changes Spatial Resolution",
       "type": "boolean"
     },
     "changes_spatial_support": {
@@ -29,9 +54,24 @@
       "title": "Changes Spatial Support",
       "type": "boolean"
     },
+    "changes_temporal_resolution": {
+      "default": false,
+      "title": "Changes Temporal Resolution",
+      "type": "boolean"
+    },
     "changes_temporal_support": {
       "default": false,
       "title": "Changes Temporal Support",
+      "type": "boolean"
+    },
+    "changes_units": {
+      "default": false,
+      "title": "Changes Units",
+      "type": "boolean"
+    },
+    "changes_values": {
+      "default": true,
+      "title": "Changes Values",
       "type": "boolean"
     },
     "description": {
@@ -46,6 +86,11 @@
     "input_contract": {
       "default": "validated row tuples with source/support lineage",
       "title": "Input Contract",
+      "type": "string"
+    },
+    "lazy_or_eager": {
+      "default": "BATCHED",
+      "title": "Lazy Or Eager",
       "type": "string"
     },
     "legacy_name": {
@@ -114,6 +159,18 @@
       },
       "title": "Tests",
       "type": "array"
+    },
+    "upstream_api": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Upstream Api"
     },
     "version": {
       "default": "1",

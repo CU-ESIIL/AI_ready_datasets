@@ -1,0 +1,110 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "crs": {
+      "title": "Crs",
+      "type": "string"
+    },
+    "interval_seconds": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Interval Seconds"
+    },
+    "mask_definition": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Mask Definition"
+    },
+    "resource_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 16,
+      "minItems": 1,
+      "title": "Resource Ids",
+      "type": "array"
+    },
+    "spatial_resolution": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Spatial Resolution",
+      "type": "array"
+    },
+    "spatial_support": {
+      "minLength": 1,
+      "title": "Spatial Support",
+      "type": "string"
+    },
+    "stage": {
+      "default": "harmonized",
+      "enum": [
+        "source",
+        "harmonized"
+      ],
+      "title": "Stage",
+      "type": "string"
+    },
+    "temporal_resolution_seconds": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Temporal Resolution Seconds"
+    },
+    "temporal_support": {
+      "enum": [
+        "instantaneous",
+        "equal_intervals",
+        "unknown"
+      ],
+      "title": "Temporal Support",
+      "type": "string"
+    },
+    "variable_units": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Variable Units",
+      "type": "object"
+    }
+  },
+  "required": [
+    "resource_ids",
+    "variable_units",
+    "crs",
+    "spatial_resolution",
+    "spatial_support",
+    "temporal_support"
+  ],
+  "title": "CubeInput",
+  "type": "object"
+}

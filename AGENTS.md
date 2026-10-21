@@ -224,3 +224,33 @@
     The fixture decision controller is not a replacement for real streaming gates.
 12. Agents propose. Deterministic software executes. Humans remain responsible for
     scientific decisions that available evidence cannot safely resolve.
+
+## CubeDynamics execution backend
+
+- CubeDynamics is an external ESIIL scientific execution dependency, accessed through
+  an adapter. Never vendor or copy its implementation into this repository.
+- VERDE must not write CubeDynamics Python, call arbitrary functions, provide an
+  apply callable or invoke a Python interpreter. Only registered capabilities and
+  schema-permitted reference/enumeration parameters are available to runtime models.
+- Inspect and pin the actual upstream package/API before adding capabilities.
+  Every exposed operation requires independent offline tests with the real package.
+- Computational feasibility does not establish scientific validity. Semantic mapping,
+  ontology/taxon/trait equivalence, scientific comparability and rights stay in
+  harmonization/review, not CubeDynamics.
+- Resolution, support and extent are distinct. Aggregation changes support and must
+  record source/target support, method, evidence and justification. Reprojection is
+  not resampling; nearest sampling is not an area mean. Do not infer temporal cadence
+  from the duration of one aggregate observation.
+- Quality masking and calibration are distinct scientific operations. Preserve source
+  identifiers, native metadata, coordinate support, quality evidence and units.
+- Prefer lazy graphs and bounded upstream windows. Materialization intent, size/task
+  guards and checksum scope must be explicit; never silently load or persist a full
+  source dataset. Tests use generated in-memory arrays/iterators, not data downloads.
+- Every backend stage emits typed transformation provenance including upstream
+  version and relevant dependency versions. A plan is not an executed data read.
+- Approved backend recipes execute with inference off. Preserve existing consensus,
+  evidence-review, QA, human and MOSAIKS gates. New layouts/support changes require
+  matching new scientific and encoder review; no automatic promotion into embeddings.
+- Module 1 owns source discovery/access; do not repeat CubeDynamics loader discovery
+  or duplicate MESA infrastructure inside the adapter. Core semantic/review functions
+  must remain usable without the optional CubeDynamics dependency.

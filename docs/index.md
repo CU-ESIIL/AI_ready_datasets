@@ -170,6 +170,17 @@ review decisions back to the source asset and its rights.
 [Research goals and limits](impact.md) · [What works today](PROTOTYPE_STATUS.md) ·
 [Build and verify the prototype](documentation/index.md)
 
+## Stream first, transform only what is needed
+
+Harmonization should not require copying every environmental dataset into one giant
+local store. The existing bounded readers feed approved windows into scientific
+operations. An adapter now makes ESIIL’s CubeDynamics available for tested lazy
+subsetting, transformation, aggregation and alignment. AI may select an approved
+operation; CubeDynamics performs it. Scientific evidence and review determine
+whether that operation is appropriate.
+
+[Explore the CubeDynamics backend and its current limits →](cubedynamics.md)
+
 ## AI chooses among tested scientific operations
 
 The model can propose what should happen. The validated recipe determines what is

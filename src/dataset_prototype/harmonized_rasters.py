@@ -1,6 +1,7 @@
 """Bounded raster assembly from immutable harmonization outputs, never raw DN."""
 from pydantic import model_serializer
 from .review_contracts import ReviewReport
+from .cube_contracts import CubeConfiguration
 from .contracts import Contract, HarmonizedObservation, HarmonizationRecipe, HumanDecision, digest
 from .stream_contracts import StreamPlan, ConsensusReport
 from .streaming import preflight
@@ -13,17 +14,52 @@ class RasterContext(Contract):
     human: HumanDecision | None=None
     consensus: ConsensusReport | None=None
     evidence_review: ReviewReport | None=None
+    cube_configuration: CubeConfiguration | None=None
 
     @model_serializer(mode='wrap')
     def serialize(self, handler):
         data=handler(self)
         if self.evidence_review is None:data.pop('evidence_review',None)
+        if self.cube_configuration is None:data.pop('cube_configuration',None)
         return data
 
 
 def authorize_context(context):
     context=RasterContext.model_validate(context.model_dump(mode='json'))
     preflight(context.plan,context.recipe,context.human,context.consensus,context.evidence_review)
+    if context.recipe.backend_operations:
+        from .cubedynamics_backend import context_digest,validate_step
+        if context.cube_configuration is None or context.recipe.backend_context_digest!=context_digest(context.cube_configuration,context.plan.resources):
+            raise ValueError('reviewed CubeDynamics configuration required before source access')
+        for step in context.recipe.backend_operations:validate_step(step)
+        allowed={'cubedynamics.select','cubedynamics.subset','cubedynamics.month_filter'}
+        if any(step.operation_id not in allowed for step in context.recipe.backend_operations):
+            raise ValueError('changed support or alignment requires a separate reviewed raster bridge')
+        if set(context.cube_configuration.inputs)!={'primary'} or not context.cube_configuration.materialize:
+            raise ValueError('one primary cube and explicit bounded materialization required')
+        configuration=context.cube_configuration
+        if len(context.recipe.mappings)!=1:raise ValueError('one reviewed canonical band required for CubeDynamics raster bridge')
+        mapping=context.recipe.mappings[0];spec=configuration.inputs['primary']
+        if spec.stage!='harmonized' or spec.variable_units!={mapping.target.name:mapping.target.unit} or spec.resource_ids!=(mapping.source_asset,):
+            raise ValueError('CubeDynamics input must match reviewed harmonized source and canonical quantity')
+        if configuration.variable not in (None,mapping.target.name):raise ValueError('CubeDynamics band differs from reviewed target')
+        if 'cubedynamics.month_filter' in {s.operation_id for s in context.recipe.backend_operations} and any(b.source.support.start.month not in configuration.months for b in context.plan.bindings):
+            raise ValueError('CubeDynamics calendar selection excludes reviewed acquisition')
+        if not all(s.metadata.fixture for s in context.plan.resources):
+            from .cubedynamics_backend import require_frozen_consensus
+            from .mosaiks_pipeline import RasterLayout
+            from .stream_sources import validated_native
+            require_frozen_consensus(context.recipe,context.plan,context.consensus)
+            side=RasterLayout.model_validate_json(context.plan.raster_layout_json).side
+            if configuration.window not in (None,(0,1,0,side,0,side)):
+                raise ValueError('CubeDynamics window differs from reviewed native raster layout')
+            if side*side*8>min(configuration.guards.max_input_bytes,configuration.guards.max_output_bytes):
+                raise ValueError('CubeDynamics window exceeds resource guards before source access')
+            item=validated_native(context.plan.bindings[0]);native_crs=item['properties'].get('proj:epsg')
+            if native_crs is None or spec.crs!='EPSG:'+str(native_crs) or spec.spatial_resolution!=(10,10) or spec.temporal_support!='instantaneous':
+                raise ValueError('CubeDynamics native CRS/resolution/instantaneous support differs from reviewed Sentinel metadata')
+    elif context.cube_configuration is not None:
+        raise ValueError('CubeDynamics configuration without backend operations')
     return context
 
 
@@ -122,6 +158,10 @@ def harmonize_window(arrays,*,context,patch_id,lineage,split,spatial_group):
     values=np.stack(outputs)
     lineage={**lineage,'harmonization_status':'approved','recipe_digest':digest(context.recipe),'context_digest':digest(context),
         'source_window_evidence_digest':digest({'channels':raw_hashes,'quality':lineage.get('quality_evidence_digest')}),'raster_executor':'registered-raster-v2','execution_identity':execution_identity(),'resampling':'none for scientific values'}
+    if context.recipe.backend_operations:
+        from .cubedynamics_backend import transform_raster_window
+        values,transforms=transform_raster_window(values,context=context,lineage=lineage)
+        lineage={**lineage,'backend_transformations':transforms,'cubedynamics_version':'0.1.0rc3'}
     observation_digest=digest({'values':array_digest(values),'recipe_digest':digest(context.recipe),'lineage':lineage})
     # Quantity-retention diagnostic, explicitly not independent ground truth.
     return HarmonizedRasterPatch(values,patch_id,tuple(channels),tuple(units),digest(context.recipe),observation_digest,lineage,split,spatial_group,

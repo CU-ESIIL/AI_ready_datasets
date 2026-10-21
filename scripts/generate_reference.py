@@ -8,7 +8,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CONTRACTS={
  'contracts': ['ScientificRequest','SourceResource','DiscoveryResult','SemanticMapping',
-  'HarmonizationRecipe','HarmonizedObservation','Representation','ProvenanceRecord','HumanDecision','SemanticEvidence','ConceptCandidate','SourceSemantics'],
+  'HarmonizationRecipe','HarmonizedObservation','Representation','ProvenanceRecord','HumanDecision','SemanticEvidence','ConceptCandidate','SourceSemantics','BackendOperation'],
+ 'cube_contracts': ['ResourceGuards','CubeInput','CubeConfiguration','TransformationChanges','TransformationResult','CubeCapabilitySpace'],
  'operations': ['OperationDefinition'],
  'decision_ir': ['SelectDecision','ParameterizeDecision','SemanticMappingProposal','RecipeDecision','CapabilitySpace','DecisionRecipeDraft','ExecutionResult','ModelDecisionProvenance'],
  'review_contracts': ['Evidence','ReviewFinding','SpecialistReview','ReviewReport','RunManifest'],

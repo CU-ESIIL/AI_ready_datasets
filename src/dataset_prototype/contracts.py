@@ -292,6 +292,14 @@ def recipe_content_digest(recipe):
     return digest(data)
 
 
+class BackendOperation(Contract):
+    operation_id: str = Field(min_length=1,max_length=100)
+    operation_version: Literal['1'] = '1'
+    backend: Literal['cubedynamics'] = 'cubedynamics'
+    backend_version: Literal['0.1.0rc3'] = '0.1.0rc3'
+    parameters: dict[str,str]
+
+
 class HarmonizationRecipe(Contract):
     recipe_id: str
     version: str
@@ -305,11 +313,15 @@ class HarmonizationRecipe(Contract):
     author: str = Field(min_length=1)
     agent_review: AgentReview | None = None
     execution_identity: dict[str,str] | None = None
+    backend_operations: tuple[BackendOperation,...] = Field(default=(),max_length=16)
+    backend_context_digest: str | None = Field(default=None,pattern=r'^[a-f0-9]{64}$')
 
     @model_serializer(mode='wrap')
     def serialize(self, handler):
         data=handler(self)
         if self.execution_identity is None:data.pop('execution_identity',None)
+        if not self.backend_operations:data.pop('backend_operations',None)
+        if self.backend_context_digest is None:data.pop('backend_context_digest',None)
         return data
 
     @model_validator(mode="after")

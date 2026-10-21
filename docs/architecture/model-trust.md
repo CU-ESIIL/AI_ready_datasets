@@ -205,3 +205,12 @@ and lineage, model injections, invented constants/operations, stale identities,
 review gates, fixture orchestration and execution with inference unavailable.
 [Audit and validation](../development/model-trust-audit.md) ·
 [Contracts](../reference/contracts.md) · [Agent role boundaries](../agents.md#runtime-role-authority)
+
+## CubeDynamics is behind the trust boundary
+
+[CubeDynamics](../cubedynamics.md) is an optional external execution backend. Its
+seven operations join ten core registry entries. Model selections contain registered
+IDs and references; no arbitrary Python or `verbs.apply` callable is exposed.
+Scientific review remains in Module 2. Approved backend plans execute with VERDE
+off, preserve lazy values where supported and materialize only explicit bounded
+results. Resampling, resolution and support remain separate scientific concerns.

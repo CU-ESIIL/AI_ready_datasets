@@ -1,26 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 493" role="img" aria-labelledby="title desc">
-<title id="title">Harmonization and review</title><desc id="desc">Only allow-listed deterministic operations execute after required review and human approval.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 868" role="img" aria-labelledby="title desc">
+<title id="title">Harmonization, review and registered execution</title><desc id="desc">Scientific interpretation remains separate from the external computational backend. General support-changing representation bridges are not yet implemented.</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
-<rect width="960" height="493" fill="#f3f5ef" rx="8"/>
-<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Harmonization and review</text>
-<path d="M310 117 L340 117" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M170 210 L480 149" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect width="960" height="868" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Harmonization, review and registered execution</text>
+<path d="M310 117 L650 117" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M620 117 L650 117" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M790 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M620 242 L650 242" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M790 274 L790 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L480 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L170 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L790 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 524 L480 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 524 L480 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 649 L480 710" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Frozen recipe</tspan></text>
+<text x="170" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Source semantics + evidence</tspan></text>
 <rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Scoped specialists</tspan></text>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Frozen recipe + backend plan</tspan></text>
 <rect x="650" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">QA synthesis</tspan></text>
-<rect x="30" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="170" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Evidence ledger</tspan></text>
+<text x="790" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Scoped specialists + QA</tspan></text>
 <rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
 <text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Human decision</tspan></text>
-<rect x="650" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Deterministic executor</tspan></text>
-<rect x="650" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
-<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Harmonized window</tspan></text>
+<rect x="340" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Operation registry</tspan></text>
+<rect x="30" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Core operation library</tspan></text>
+<rect x="650" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">CubeDynamics adapter</tspan></text>
+<rect x="340" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Validated result + lineage</tspan></text>
+<rect x="340" y="710" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="748" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Harmonized output</tspan></text>
 </svg>

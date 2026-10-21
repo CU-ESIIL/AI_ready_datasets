@@ -23,11 +23,11 @@ def approve(recipe):
 
 def test_registry_closed_versioned_and_described():
     manifest=REGISTRY.manifest()
-    assert len(manifest['operations'])==10 and manifest['registry_digest']==execution_identity()['registry_digest']
+    assert len([d for d in manifest['operations'] if d['backend']=='core'])==10 and manifest['registry_digest']==execution_identity()['registry_digest']
     for definition in manifest['operations']:
         assert definition['version']=='1' and definition['parameter_schema']['additionalProperties'] is False
         assert definition['preconditions'] and definition['scientific_assumptions'] and definition['tests']
-        assert definition['implementation_reference']=='dataset_prototype.operations._execute_rows'
+        assert definition['implementation_reference']==('dataset_prototype.operations._execute_rows' if definition['backend']=='core' else 'dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute')
     with pytest.raises(ValueError,match='UNSUPPORTED_OPERATION'):REGISTRY.get('spectral.magic_correction')
     with pytest.raises(TypeError):UNIT_CONVERSIONS['K','m']=(7,1)
     entry=REGISTRY.get('unit.convert');entry.parameter_schema.clear()
@@ -171,7 +171,7 @@ def test_registered_qa_checks_and_model_cannot_change_the_library(bundle):
 def test_cli_offline_end_to_end_demo_and_manifest(tmp_path,capsys):
     from dataset_prototype.cli import main
     main(['operation-capabilities','--output',str(tmp_path/'capabilities.json')])
-    assert len(json.loads((tmp_path/'capabilities.json').read_text())['operations'])==10
+    assert len(json.loads((tmp_path/'capabilities.json').read_text())['operations'])==17
     main(['operation-demo','--output',str(tmp_path/'demo')])
     report=json.loads((tmp_path/'demo/result.json').read_text())
     assert report['status']=='EXECUTED' and report['result']=={'value':200,'unit':'cm'}

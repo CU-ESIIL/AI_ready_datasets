@@ -143,3 +143,13 @@ Schema validation, scientific checks, existing vetoes and human decisions remain
 separate gates. Approved recipes execute without a model. See
 [deterministic execution and model trust](architecture/model-trust.md) for the registry, IR contracts,
 examples, provenance and current limits.
+
+## External CubeDynamics execution
+
+The optional [CubeDynamics backend](cubedynamics.md) supplies seven registered,
+reference-bound capabilities on trusted xarray/Dask inputs. Models select operations;
+tested software performs them after scientific validation and exact-recipe human
+review. Source access remains upstream. The direct MOSAIKS bridge preserves the
+reviewed raster layout; support-changing aggregation/alignment needs explicit review
+and does not automatically establish a new representation layout. Real Sentinel
+vetoes and existing streaming gates remain binding.

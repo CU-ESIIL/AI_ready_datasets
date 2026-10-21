@@ -155,6 +155,23 @@ class ModelHarmonizationAgent:
                 evidence=('capability:'+capabilities.identity,)+tuple(m.source_asset for m in mappings)+tuple(f"prompt_sha256:{trace.prompt_digest};response_sha256:{trace.response_digest}" for trace in getattr(self.backend,"traces",()) if trace.role==role)) for role in ["semantic","harmonization"]))
 
 
+    def propose_backend(self, recipe, resources, configuration):
+        """Select a reference-bound CubeDynamics plan; never expose the Python namespace."""
+        from .cube_ir import capabilities, selection_schema, compile_decision
+        space=capabilities(recipe,resources,configuration)
+        decision=self.backend.generate('harmonization',
+            'Select only offered CubeDynamics operation/option IDs or request evidence/human review. '
+            'Parameters resolve from the reviewed configuration. No Python, arbitrary apply, function names, '
+            'coordinates, CRS strings, formulas or numerical constants may be supplied.',
+            {'available_operations':space.model_dump(mode='json'),'evidence':configuration.evidence,
+             'scientific_justification':configuration.scientific_justification},selection_schema(space))
+        proposed=compile_decision(decision,space,recipe,resources,configuration)
+        record=Proposal(role='harmonization',agent=f"{getattr(self.backend,'backend_name','fixture')}:{self.backend.model}",
+            version=self.backend._model_digest,configuration='cube-selection-v1; MODEL_JUDGMENT; no tools',
+            rationale=decision.rationale,evidence=('capability:'+space.identity,'decision:'+digest(decision)))
+        return proposed.model_copy(update={'proposals':(*proposed.proposals,record)})
+
+
 class ModelQAAgent:
     def __init__(self, backend): self.backend=backend
     def assess(self, recipe, resources):

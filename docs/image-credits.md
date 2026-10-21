@@ -15,7 +15,7 @@
 
 ## Architecture diagrams
 
-All seventeen SVGs in `assets/figures/` are repository-authored explanatory diagrams,
+All eighteen SVGs in `assets/figures/` are repository-authored explanatory diagrams,
 regenerated with `python scripts/generate_figures.py`. Each includes a title,
 description, visible labels and a contextual caption. They are schematic, not data
 visualizations. Source specifications live in the generator and follow repository licensing.

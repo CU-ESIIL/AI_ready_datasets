@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "aggregation": {
+      "default": false,
+      "title": "Aggregation",
+      "type": "boolean"
+    },
+    "biological_level": {
+      "default": false,
+      "title": "Biological Level",
+      "type": "boolean"
+    },
+    "crs": {
+      "default": false,
+      "title": "Crs",
+      "type": "boolean"
+    },
+    "extent": {
+      "default": false,
+      "title": "Extent",
+      "type": "boolean"
+    },
+    "spatial_resolution": {
+      "default": false,
+      "title": "Spatial Resolution",
+      "type": "boolean"
+    },
+    "spatial_support": {
+      "default": false,
+      "title": "Spatial Support",
+      "type": "boolean"
+    },
+    "temporal_resolution": {
+      "default": false,
+      "title": "Temporal Resolution",
+      "type": "boolean"
+    },
+    "temporal_support": {
+      "default": false,
+      "title": "Temporal Support",
+      "type": "boolean"
+    },
+    "units": {
+      "default": false,
+      "title": "Units",
+      "type": "boolean"
+    },
+    "values": {
+      "title": "Values",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "values"
+  ],
+  "title": "TransformationChanges",
+  "type": "object"
+}

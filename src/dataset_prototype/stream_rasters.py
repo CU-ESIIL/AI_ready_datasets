@@ -49,7 +49,7 @@ def sentinel_harmonized_tiles(context,*,side=16,grid=8):
                 raw=band.read(1,window=window)
                 if np.any(raw==0):raise ValueError('nodata in tile; no imputation')
                 bbox=transform_bounds(band.crs,'EPSG:4326',*native_bounds)
-                lineage={'bbox':bbox,'native_crs':str(band.crs),'native_window':[int(window.row_off),int(window.col_off),side,side],
+                lineage={'native_transform':list(band.transform)[:6],'bbox':bbox,'native_crs':str(band.crs),'native_window':[int(window.row_off),int(window.col_off),side,side],
                     'source_assets':[source.asset_id],'datetime_start':source.support.start.isoformat(),'datetime_end':source.support.end.isoformat(),
                     'quality_policy':'All native SCL cells covering this NIR window must be 4/5/6; no mask resampling',
                     'quality_classes':sorted(int(q) for q in np.unique(quality)),'quality_evidence_digest':array_digest(quality),

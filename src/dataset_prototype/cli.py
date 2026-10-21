@@ -119,6 +119,8 @@ def main(argv=None):
     schema = sub.add_parser("schema")
     schema.add_argument("contract", choices=["ScientificRequest", "SourceResource", "DiscoveryResult", "SemanticMapping", "HarmonizationRecipe", "HarmonizedObservation", "Representation", "ProvenanceRecord", "HumanDecision", "TrackConfig", "StreamPlan", "StreamSample", "EncoderSpec", "ConsensusReport", "MOSAIKSSpec", "RasterContext", "RasterLayout", "ReviewFinding", "ReviewReport", "RunManifest", "Evidence", "SpecialistReview", "ReviewBundle", "SemanticEvidence", "ConceptCandidate", "SourceSemantics"])
     schema.add_argument("--output", type=Path, required=True)
+    cube_demo = sub.add_parser("cubedynamics-demo")
+    cube_demo.add_argument("--output",type=Path,required=True)
     capability = sub.add_parser("operation-capabilities")
     capability.add_argument("--output",type=Path,required=True)
     demo = sub.add_parser("operation-demo")
@@ -130,7 +132,11 @@ def main(argv=None):
     ir.add_argument("--output",type=Path,required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "operation-capabilities":
+        if args.command == "cubedynamics-demo":
+            from .cube_demo import run as cube_demo
+            result,report=cube_demo(args.output)
+            print(f"{result['records']} generated windows; real CubeDynamics → MOSAIKS; see verification.json")
+        elif args.command == "operation-capabilities":
             from .operations import REGISTRY
             write(args.output,REGISTRY.manifest())
         elif args.command == "operation-demo":

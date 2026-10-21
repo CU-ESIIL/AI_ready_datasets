@@ -95,3 +95,12 @@ Markdown is the source of truth; generated SVG figures and JSON Schemas live bes
 it. Preserve Material and the existing Pages workflow. See [AGENTS.md](AGENTS.md)
 for scientific, streaming and source-rights governance and [design decisions](docs/development/decisions.md)
 for the reasoning behind the implementation.
+
+## External environmental execution backend
+
+[CubeDynamics](https://github.com/CU-ESIIL/cubedynamics) is an external ESIIL dependency,
+accessed through seven registered capabilities rather than model-written Python.
+Install `.[dev,cubedynamics]` under Python 3.12 and run
+`prototype cubedynamics-demo --output run/cubedynamics-example` for generated lazy
+windows → harmonization → real CubeDynamics → MOSAIKS. Core semantic review remains
+independent of this optional package. [Integration and limits](docs/cubedynamics.md).

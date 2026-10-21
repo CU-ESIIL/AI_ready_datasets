@@ -1,0 +1,328 @@
+{
+  "$defs": {
+    "CubeInput": {
+      "additionalProperties": false,
+      "properties": {
+        "crs": {
+          "title": "Crs",
+          "type": "string"
+        },
+        "interval_seconds": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interval Seconds"
+        },
+        "mask_definition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mask Definition"
+        },
+        "resource_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "title": "Resource Ids",
+          "type": "array"
+        },
+        "spatial_resolution": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Spatial Resolution",
+          "type": "array"
+        },
+        "spatial_support": {
+          "minLength": 1,
+          "title": "Spatial Support",
+          "type": "string"
+        },
+        "stage": {
+          "default": "harmonized",
+          "enum": [
+            "source",
+            "harmonized"
+          ],
+          "title": "Stage",
+          "type": "string"
+        },
+        "temporal_resolution_seconds": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temporal Resolution Seconds"
+        },
+        "temporal_support": {
+          "enum": [
+            "instantaneous",
+            "equal_intervals",
+            "unknown"
+          ],
+          "title": "Temporal Support",
+          "type": "string"
+        },
+        "variable_units": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Variable Units",
+          "type": "object"
+        }
+      },
+      "required": [
+        "resource_ids",
+        "variable_units",
+        "crs",
+        "spatial_resolution",
+        "spatial_support",
+        "temporal_support"
+      ],
+      "title": "CubeInput",
+      "type": "object"
+    },
+    "ResourceGuards": {
+      "additionalProperties": false,
+      "properties": {
+        "max_axis": {
+          "default": 512,
+          "maximum": 4096,
+          "minimum": 1,
+          "title": "Max Axis",
+          "type": "integer"
+        },
+        "max_chunks": {
+          "default": 256,
+          "maximum": 1024,
+          "minimum": 1,
+          "title": "Max Chunks",
+          "type": "integer"
+        },
+        "max_input_bytes": {
+          "default": 16777216,
+          "maximum": 67108864,
+          "minimum": 1,
+          "title": "Max Input Bytes",
+          "type": "integer"
+        },
+        "max_output_bytes": {
+          "default": 4194304,
+          "maximum": 16777216,
+          "minimum": 1,
+          "title": "Max Output Bytes",
+          "type": "integer"
+        },
+        "max_tasks": {
+          "default": 4096,
+          "maximum": 16384,
+          "minimum": 1,
+          "title": "Max Tasks",
+          "type": "integer"
+        },
+        "max_time_seconds": {
+          "default": 31622400,
+          "maximum": 31622400,
+          "minimum": 1,
+          "title": "Max Time Seconds",
+          "type": "integer"
+        }
+      },
+      "title": "ResourceGuards",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "allowed_quality_classes": {
+      "default": [],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Allowed Quality Classes",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "guards": {
+      "$ref": "#/$defs/ResourceGuards",
+      "default": {
+        "max_axis": 512,
+        "max_chunks": 256,
+        "max_input_bytes": 16777216,
+        "max_output_bytes": 4194304,
+        "max_tasks": 4096,
+        "max_time_seconds": 31622400
+      }
+    },
+    "inputs": {
+      "additionalProperties": {
+        "$ref": "#/$defs/CubeInput"
+      },
+      "title": "Inputs",
+      "type": "object"
+    },
+    "materialize": {
+      "default": false,
+      "title": "Materialize",
+      "type": "boolean"
+    },
+    "months": {
+      "default": [],
+      "items": {
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "type": "integer"
+      },
+      "title": "Months",
+      "type": "array"
+    },
+    "scientific_justification": {
+      "minLength": 1,
+      "title": "Scientific Justification",
+      "type": "string"
+    },
+    "target_spatial_support": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Spatial Support"
+    },
+    "target_temporal_resolution_seconds": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Temporal Resolution Seconds"
+    },
+    "target_temporal_support": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Temporal Support"
+    },
+    "variable": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Variable"
+    },
+    "version": {
+      "const": "1",
+      "default": "1",
+      "title": "Version",
+      "type": "string"
+    },
+    "window": {
+      "anyOf": [
+        {
+          "maxItems": 6,
+          "minItems": 6,
+          "prefixItems": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Window"
+    }
+  },
+  "required": [
+    "inputs",
+    "evidence",
+    "scientific_justification"
+  ],
+  "title": "CubeConfiguration",
+  "type": "object"
+}
