@@ -148,3 +148,13 @@
   real-package offline tests and a dedicated optional-dependency CI job.
 - Documented the external attribution, scientific/streaming boundaries, limitations,
   governance, decisions and current status; previous real Sentinel vetoes remain binding.
+
+### Visual pipeline state report
+
+- Added an evidence-led 38-page PDF with 34 reproducible figures, editable narrative,
+  component inventory, diagnostic tables, package versions and input/figure hashes.
+- Distinguished historical real Sentinel evidence and rejected model review from
+  the fresh generated CubeDynamics-to-MOSAIKS run; no real-data approval is claimed.
+- Verified 203 integration tests, 175 core tests with one optional skip, and strict
+  MkDocs/link checks. Added frozen backend consensus documentation and dependency
+  audit notes for the external CubeDynamics distribution.

@@ -104,3 +104,11 @@ Install `.[dev,cubedynamics]` under Python 3.12 and run
 `prototype cubedynamics-demo --output run/cubedynamics-example` for generated lazy
 windows → harmonization → real CubeDynamics → MOSAIKS. Core semantic review remains
 independent of this optional package. [Integration and limits](docs/cubedynamics.md).
+
+## Visual state report
+
+The [38-page pipeline state report](output/pdf/AI_ready_pipeline_state_report.pdf)
+explains the scientific story with 34 reproducible figures.
+[Editable sources, evidence and rebuild instructions](reports/pipeline_state/README.md)
+preserve the distinction between historical real observations, generated execution
+and planned validation.

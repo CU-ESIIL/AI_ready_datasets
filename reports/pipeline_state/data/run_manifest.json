@@ -1,0 +1,578 @@
+{
+  "report_version": "1.0",
+  "generated_at": "2026-10-22T04:25:16.766602+00:00",
+  "git_commit": "10e58af0b58f38f7fa5f38b4e2e522c7a39c44b9",
+  "git_status_at_audit": " M .gitignore\n M CHANGELOG.md\n M README.md\n M docs/PROTOTYPE_STATUS.md\n M docs/cubedynamics.md\n M docs/development/cubedynamics-audit.md\n M docs/development/decisions.md\n M docs/reference/modules.md\n M mkdocs.yml\n?? docs/pipeline-state-report.md\n?? output/\n?? reports/\n",
+  "pipeline_version": "0.1.0",
+  "cubedynamics_version": "0.1.0rc3",
+  "versions": {
+    "dataset-prototype": "0.1.0",
+    "cubedynamics": "0.1.0rc3",
+    "numpy": "1.26.4",
+    "xarray": "2026.9.0",
+    "dask": "2026.8.0",
+    "matplotlib": "3.11.2",
+    "reportlab": "5.0.1",
+    "pypdf": "6.21.2",
+    "pyarrow": "23.0.1",
+    "pytest": "9.1.1"
+  },
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "1ff137e975b78fa2e7a632b4a479083cbc03127d1a1195d308402cbd1c81faa9"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "e6cc88eee3aab00474fd60e2ab2c324e207fd061226259cb2dbcacade42e46da"
+    },
+    {
+      "path": "README.md",
+      "sha256": "cfc332e956c1be5a915c2de10d69bbdd230b11f10d792099ff735a2e8e5b31e7"
+    },
+    {
+      "path": "data/semantics/semantic_resources.csv",
+      "sha256": "ff8cfaef3e892de14a620cb75cc2e8415381d7ee70cd13ff26b323974f87f3f0"
+    },
+    {
+      "path": "data/semantics/assessments.jsonl",
+      "sha256": "5ac37c76fc00a6dc4d4b1634bb5c9a2fc94861033b9d854bb34475e8ca63fe21"
+    },
+    {
+      "path": "run/real-sentinel/window-0.json",
+      "sha256": "25c6037f122158a33bebe25af1a5584dfafc4a2affbc7a49747f0ec59f207ef5"
+    },
+    {
+      "path": "run/real-sentinel/snapshot.json",
+      "sha256": "dd53fc594ea36f4eadca99c7159554b77706f33cedfaecd2067b6f33079e2a39"
+    },
+    {
+      "path": "run/scoped-sentinel-review-v4/report.json",
+      "sha256": "eba9280591991f7c36eabe0296054f332004f6ae2a9cc14f4371efb9883f1d0c"
+    },
+    {
+      "path": "run/cubedynamics-verified/manifest.json",
+      "sha256": "b366ac23ccd46486aef90aac3d5bbcab102cca0389174eca6de4d28611891ded"
+    },
+    {
+      "path": "run/cubedynamics-verified/verification.json",
+      "sha256": "d0717e2a0d30f5a492e1b4a4fb5f808a7b4825e3bded97c2c301332f923c709a"
+    },
+    {
+      "path": "reports/pipeline_state/data/tests.xml",
+      "sha256": "b1e9a33157840a3d3820d854fc9b4fc0108471085bfb93d8fce0f6229c7b77b8"
+    },
+    {
+      "path": "src/dataset_prototype/semantic_resources.py",
+      "sha256": "a55165f2b5afa17409df57d8dc6f916a882d748d22b14ce1bc75b19547c3b7c5"
+    },
+    {
+      "path": "src/dataset_prototype/stream_sources.py",
+      "sha256": "147207a41f8abd2530c650bcbd5ee71971ce2a81f8011206134ddcf494f67e36"
+    },
+    {
+      "path": "src/dataset_prototype/decision_ir.py",
+      "sha256": "a91fc1295c3da02532cc4b76a3de2a363e1d96ac4f9f7ff58b412ca66b2dcb83"
+    },
+    {
+      "path": "src/dataset_prototype/cube_ir.py",
+      "sha256": "88eb8fa0b48c44d764f4b148d01d57fda1aca4245d4f11238d6c417e1effde7a"
+    },
+    {
+      "path": "src/dataset_prototype/neon.py",
+      "sha256": "96394906eaf4bfca161fc302283860cb9b53b8bf5f6d22d67cfb43f70012823d"
+    },
+    {
+      "path": "src/dataset_prototype/openclaw_runtime.py",
+      "sha256": "a08f675d40023098213049cc77d24d195432b45abca4c41dd1976f2b70de66db"
+    },
+    {
+      "path": "src/dataset_prototype/discovery.py",
+      "sha256": "d8e9967e2cb220ef2bf7861b69104fad9a972da94ac599253e526aa19e954e7a"
+    },
+    {
+      "path": "src/dataset_prototype/model_agents.py",
+      "sha256": "04fcebe206cd8a72dd7520258786625abbe428a498c41b1a7103ef9ae7793724"
+    },
+    {
+      "path": "src/dataset_prototype/__init__.py",
+      "sha256": "9a4fa8a10767a73b6135a0e6df39124b3d064b6d37a94a45d9cfe3b6454fb862"
+    },
+    {
+      "path": "src/dataset_prototype/openclaw_backend.py",
+      "sha256": "a5b8a411afea4d5117521b8a1a7859bf304385e87d907d26d75428798d88d633"
+    },
+    {
+      "path": "src/dataset_prototype/review.py",
+      "sha256": "f3af90368701a062c7f07dbec714ec982caf45c0dfc08083bc650ea9cbdf06b7"
+    },
+    {
+      "path": "src/dataset_prototype/agents.py",
+      "sha256": "7f5303316e5ce9c7f3bee30c740fa3d68eeeb9cf5d1ec66370aefe66a5add0dd"
+    },
+    {
+      "path": "src/dataset_prototype/scoped_review.py",
+      "sha256": "b7939d9d52acf8fc12d057e8ebf5ae4e206ae02514174ba77930a1b7088eb935"
+    },
+    {
+      "path": "src/dataset_prototype/orchestration.py",
+      "sha256": "b5ab5d9bd29b0985f20463105d2954bbee88e0a7d2ec06fa30635129d25c6fec"
+    },
+    {
+      "path": "src/dataset_prototype/semantic_discovery.py",
+      "sha256": "fc8f76d75866f0d0de08143dcd74a1d257a01cbefe3aa6c190d0d9b1b55e1c40"
+    },
+    {
+      "path": "src/dataset_prototype/cube_specs.py",
+      "sha256": "ea495b3428de231c4c32f3c0a560964e6af3cbf9d8af5ae6fd174e82d4d0f27b"
+    },
+    {
+      "path": "src/dataset_prototype/operations.py",
+      "sha256": "b85e9d3247b7e28341a767bcf501cb5845ba9c5c72a0c74f5abbc8dffafcb4bf"
+    },
+    {
+      "path": "src/dataset_prototype/real_data.py",
+      "sha256": "7796cba3b620e88af23fe7e7704b0e3783a494b3cdb657cd72b8f7efca660890"
+    },
+    {
+      "path": "src/dataset_prototype/mosaiks_pipeline.py",
+      "sha256": "ebbbfb4d5737d309793ba78fbcfcc6aa0034e6628b2a9b830d2bb7fd01d7670e"
+    },
+    {
+      "path": "src/dataset_prototype/semantic_benchmark.py",
+      "sha256": "a10e0b0ad3b424da83109aa8b0226bc85e3237ee79eaf4efd27d398f3bb00691"
+    },
+    {
+      "path": "src/dataset_prototype/mosaiks.py",
+      "sha256": "68c6e6e1c99fa66da6295dbb43270fefe5f16652a812867e976c655931fc0044"
+    },
+    {
+      "path": "src/dataset_prototype/cli.py",
+      "sha256": "42abacc25bfe15e55d570baad91cce302e5eadd91773379ff16ca414877cb59e"
+    },
+    {
+      "path": "src/dataset_prototype/operation_demo.py",
+      "sha256": "feea86721f9a343c1324a20eadf2f0aa033411be6799934b1971bf88365f20d3"
+    },
+    {
+      "path": "src/dataset_prototype/consensus.py",
+      "sha256": "3eccbd3c095bb880697bbf3bd0e6e216eda6a6d6fd09b96f4547253ff8012212"
+    },
+    {
+      "path": "src/dataset_prototype/stream_contracts.py",
+      "sha256": "8af705c1d8359acf27067d3b071f6521a38e99e259d5e399e1b5eba6260e4fa7"
+    },
+    {
+      "path": "src/dataset_prototype/storage.py",
+      "sha256": "eb3a2b4f8e8c4378cd9c07cdd715184221608295acfd0d908c78278d47fb8eec"
+    },
+    {
+      "path": "src/dataset_prototype/network.py",
+      "sha256": "45604e33fa18cef11ec83023ca2838f275a3dfb10e3a982297ecb17148ded21f"
+    },
+    {
+      "path": "src/dataset_prototype/contracts.py",
+      "sha256": "8e1c89a915c51d5788bd4e5ba567b34529bef995dcee10291ef87613c35d3b36"
+    },
+    {
+      "path": "src/dataset_prototype/cube_demo.py",
+      "sha256": "382403af7f17901507319e2b9905b9c595505a02a5b518f548e17d91594309ed"
+    },
+    {
+      "path": "src/dataset_prototype/science.py",
+      "sha256": "9c658eeeb497275affd14b9761a9e6eed49a9febc95df4c0eee6bd9250da503f"
+    },
+    {
+      "path": "src/dataset_prototype/stream_rasters.py",
+      "sha256": "b9dbe0e4d6f176593be477768d5d14fab62237a93aea65bf2c71d3f3e6da3f6d"
+    },
+    {
+      "path": "src/dataset_prototype/review_contracts.py",
+      "sha256": "8a0bb1fa15db1dd287224ba8248780f2210033c2ca375854842d409d2da8a08b"
+    },
+    {
+      "path": "src/dataset_prototype/provenance.py",
+      "sha256": "33740612df858248b7c99cf9ad51af1c68160de0aaa6b01f3e74b452fca6df0a"
+    },
+    {
+      "path": "src/dataset_prototype/cubedynamics_backend.py",
+      "sha256": "8c6fdc27f73c984d96d8fb29e4180a8024e1263740538392684a65b803f5cbe6"
+    },
+    {
+      "path": "src/dataset_prototype/representations.py",
+      "sha256": "3af01b2feea12bad4d9ddaf1b8baa3bee37ba3b46fcbaebf8c6f55a5a5ae31d2"
+    },
+    {
+      "path": "src/dataset_prototype/streaming.py",
+      "sha256": "b99976120b6c2cc94c4be29b5a76d44b298ccde8f421c11da32f1bf2289d72af"
+    },
+    {
+      "path": "src/dataset_prototype/cube_contracts.py",
+      "sha256": "8319415f2825beb031e0fa64c5a140b978080f612ed9859cc74326f837fbeb8e"
+    },
+    {
+      "path": "src/dataset_prototype/harmonized_rasters.py",
+      "sha256": "d863809d81a83f222088f6801713993b6ee0afb5eafc0b34198aba97f5b2b4c8"
+    },
+    {
+      "path": "src/dataset_prototype/harmonization.py",
+      "sha256": "1f5fb6ee67c21e2cfb25072391daf8f1dc52ed92625cfacca4867eb0a2df847c"
+    },
+    {
+      "path": "src/dataset_prototype/adapters.py",
+      "sha256": "fe37736677a1eb91e7e175a83687811fe6d04ede0c70d95db077f3c5d27d616d"
+    },
+    {
+      "path": "src/dataset_prototype/embedding_dataset.py",
+      "sha256": "d0384b7834dfbd96e8bac46c796114cdcda60fedce62128e147c572a7e01a720"
+    },
+    {
+      "path": "tests/test_cubedynamics.py",
+      "sha256": "cea865d2c99f440896484adf7a37250f90d2d626f5a316e8c6b59972aa486b58"
+    },
+    {
+      "path": "tests/test_discovery.py",
+      "sha256": "79f21556bbd1f74c9aa5f826586e5234fbd9312eb1c2eac2ad65b010c03cf44a"
+    },
+    {
+      "path": "tests/test_harmonization.py",
+      "sha256": "229d0f02f693a2446a238d2456247b9a70a7d87c87049c3a6f56cb92817a1703"
+    },
+    {
+      "path": "tests/test_integration_tracks.py",
+      "sha256": "6174ec9c52f44387aebdf957c8948548153128138ba2c1a9a7da5a244fae976a"
+    },
+    {
+      "path": "tests/test_model_agents.py",
+      "sha256": "eaab21767855d0c3af0785546fec4f9644e5c4052db2578a82025017adc88150"
+    },
+    {
+      "path": "tests/test_mosaiks.py",
+      "sha256": "c784c02a251b22a1b20eba22bffaf97eeaa72e8abae9be583a6a6562c75b9d88"
+    },
+    {
+      "path": "tests/test_openclaw.py",
+      "sha256": "0a71536408ad0ba4244bb25aefeee7892a611c632a075bd1affbd71f11c4dbce"
+    },
+    {
+      "path": "tests/test_operation_registry.py",
+      "sha256": "de314c53ca22fc4a1d6d35728c3c02b6af0aa7eb815fb829b47b8df7dae1bde2"
+    },
+    {
+      "path": "tests/test_real_data.py",
+      "sha256": "f17166ceecbb9221ad14b5b56e632a3728f530c2c3c84dabc45c58a2177f52be"
+    },
+    {
+      "path": "tests/test_representations.py",
+      "sha256": "929873768bef32eca4ab59f85b2f234c5969b4a030ad26c6ed5be3481c885c91"
+    },
+    {
+      "path": "tests/test_review.py",
+      "sha256": "eec30c638bb758cdaaae458fcd2197d79b4b8011779208cda640edc408f8075a"
+    },
+    {
+      "path": "tests/test_semantic_benchmark.py",
+      "sha256": "aa4aab9b04acd190a3199f65f724943ad3bc48eb1375737bd7231aea17de590a"
+    },
+    {
+      "path": "tests/test_semantic_discovery.py",
+      "sha256": "616368bdc57a316b877bf0f73d94de2e3fc63315f614f112974d61dfe3f29c23"
+    },
+    {
+      "path": "tests/test_stream_sources.py",
+      "sha256": "54908510977c49590f5b787a50b62ed621156efde9a1d6df7ea56570cca3387e"
+    },
+    {
+      "path": "tests/test_streaming.py",
+      "sha256": "a345eb91498a84b99847b8b6af6e8265f0d58c2d45e8fa3fe78a0558a2f53da9"
+    },
+    {
+      "path": "outputs/semantic_benchmark/benchmark_coverage.parquet",
+      "sha256": "b0288d08d479f3d169f15f380aa1d330bf592ea179d33fcefda95b5382e5c912"
+    },
+    {
+      "path": "outputs/semantic_benchmark/dataset_metrics.parquet",
+      "sha256": "79868e7656cd10ab31f0705d18ce3cdb99969e07c1c7542cdaad61b14b1d33f6"
+    },
+    {
+      "path": "outputs/semantic_benchmark/dataset_ontology_edges.parquet",
+      "sha256": "7a4302261079caef71f300d34a51cbe6f9bdf057c6106f14d892e8e9ef63c1d8"
+    },
+    {
+      "path": "outputs/semantic_benchmark/dataset_pairs.parquet",
+      "sha256": "a466171de23ef218ed71de6465bedb28b65d10ae9ff360438db79f289400c919"
+    },
+    {
+      "path": "outputs/semantic_benchmark/dataset_rankings.parquet",
+      "sha256": "8198c08f093ff39be4c8490faa6c331ffe9569e04bdf14ba885746672777b1e3"
+    },
+    {
+      "path": "outputs/semantic_benchmark/ontology_metrics.parquet",
+      "sha256": "4f38b6797d6f1de0cdb425942ed7fea3d223143d2a60b73da3918e7034a3b0fa"
+    },
+    {
+      "path": "outputs/semantic_benchmark/ontology_pairs.parquet",
+      "sha256": "9a9c2bf036b64b6d8679dd937fb5dad2141b636c35cd6bf2e625409ee1b4bf3c"
+    },
+    {
+      "path": "outputs/semantic_benchmark/recommended_portfolio.json",
+      "sha256": "3cea54c6648b65cba66544064c7ada2f0aac3bf3133a311e0cac6b45de2cbce0"
+    },
+    {
+      "path": "outputs/semantic_benchmark/run_manifest.json",
+      "sha256": "02cc57cefee93998085c678ff1821ca7d6e8f0ee15a22b448be79972a7bc6c5e"
+    },
+    {
+      "path": "outputs/semantic_benchmark/semantic_gaps.parquet",
+      "sha256": "bb41a997f5124b436a14ddda0520e8c8a6d16742c854f4a03c85bf68082e7506"
+    }
+  ],
+  "analyses": [
+    "Offline test XML aggregation",
+    "Local inventory counts",
+    "Existing metadata diagnostic Parquet tables",
+    "Retained historical Sentinel evidence extraction",
+    "Fresh generated CubeDynamics/MOSAIKS verification"
+  ],
+  "tests": {
+    "total": 203,
+    "passed": 203,
+    "failed": 0,
+    "skipped": 0,
+    "by_module": {
+      "test_cubedynamics": 28,
+      "test_discovery": 10,
+      "test_harmonization": 28,
+      "test_integration_tracks": 9,
+      "test_model_agents": 9,
+      "test_mosaiks": 16,
+      "test_openclaw": 10,
+      "test_operation_registry": 40,
+      "test_real_data": 10,
+      "test_representations": 3,
+      "test_review": 12,
+      "test_semantic_benchmark": 6,
+      "test_semantic_discovery": 7,
+      "test_stream_sources": 4,
+      "test_streaming": 11
+    },
+    "coverage": "NOT YET MEASURED"
+  },
+  "limitations": [
+    "Component maturity is an editorial assessment linked to files/tests",
+    "Metadata diagnostics are not independently validated ontology quality or ecological science",
+    "No real Sentinel scientific approval or release",
+    "Historical source evidence reused locally; no new source acquisition",
+    "Missing metrics remain unmeasured"
+  ],
+  "figures": [
+    {
+      "id": "01_problem",
+      "svg": "figures/01_problem.svg",
+      "sha256": "4e7d1557b77035032fbfd78e686b451b3cafe6395ebe0c2523ce838d6f275bfb"
+    },
+    {
+      "id": "02_architecture",
+      "svg": "figures/02_architecture.svg",
+      "sha256": "001dcee5c896f0cacfbb5e677d8f52e1e5805fcd1b35fba8634b3e8b14f39285"
+    },
+    {
+      "id": "03_status",
+      "svg": "figures/03_status.svg",
+      "sha256": "cbdc7328a7a840271b00790739e15e7e5b24c1cc03471854dbc8d0aadef8961f"
+    },
+    {
+      "id": "04_real_thread",
+      "svg": "figures/04_real_thread.svg",
+      "sha256": "89c5719d75d61be1c52be32ddff901f6ab0d0031918aa2501c0bc43533f462d3"
+    },
+    {
+      "id": "05_access",
+      "svg": "figures/05_access.svg",
+      "sha256": "08fe0bb5883026e705867a180a7a9440be8435ebb3f2895d2f972c0ea56834aa"
+    },
+    {
+      "id": "06_responsibilities",
+      "svg": "figures/06_responsibilities.svg",
+      "sha256": "feae0315537613e87844c23ad1dd261513e971eb138668a4b9addf207ccd5e84"
+    },
+    {
+      "id": "07_evidence",
+      "svg": "figures/07_evidence.svg",
+      "sha256": "0041844298c119d2e1fa23cc19e3f8b0567a24be2fa67258cd22934af1523112"
+    },
+    {
+      "id": "08_domains",
+      "svg": "figures/08_domains.svg",
+      "sha256": "343e53eb0e75e41f25961148c3639c1ab22dc68c35eb086ed55d181f2f417467"
+    },
+    {
+      "id": "09_types",
+      "svg": "figures/09_types.svg",
+      "sha256": "7a71eef09a61eb41d8f56ff6f62564091b8dbb99ca4ae274bc8b813632b01969"
+    },
+    {
+      "id": "10_history",
+      "svg": "figures/10_history.svg",
+      "sha256": "a662d47d0ab4ece0a13bb2138209480f9b18df6efa300634064bc06bbcd1f615"
+    },
+    {
+      "id": "11_scale",
+      "svg": "figures/11_scale.svg",
+      "sha256": "5b19eb344e90b9c4177fdf6041286a933f4028dd3f4acb0589021cecba6248bb"
+    },
+    {
+      "id": "12_trust",
+      "svg": "figures/12_trust.svg",
+      "sha256": "1d086dcd677105a9921b40cc3ffe73cd8c7eddef487ee42e05a40ddf0595f22c"
+    },
+    {
+      "id": "13_review",
+      "svg": "figures/13_review.svg",
+      "sha256": "7f69ca4398dd5acd8f7e5986dd0ca3bd3a8a39c70c1d5f1b336d4602fc278853"
+    },
+    {
+      "id": "14_json_recipe",
+      "svg": "figures/14_json_recipe.svg",
+      "sha256": "9a7a20cd590488346c2c33b68bdb38e728b284a51741300d2510802be0207a98"
+    },
+    {
+      "id": "15_registry",
+      "svg": "figures/15_registry.svg",
+      "sha256": "84e4859d93ef8d1b97c02ee13666173df4ee146ed6d06195e5340e232a8c1f90"
+    },
+    {
+      "id": "16_cube",
+      "svg": "figures/16_cube.svg",
+      "sha256": "e4eb550e5d8d8f01ec008025af658cd552a7ccdb1f27ede5e1b56a2203ccdb30"
+    },
+    {
+      "id": "17_lazy_evidence",
+      "svg": "figures/17_lazy_evidence.svg",
+      "sha256": "a64e6eedeb458e495b6b0720b1fa7919918a7b4ce47acb6a46788c4759bf3f43"
+    },
+    {
+      "id": "18_calibration",
+      "svg": "figures/18_calibration.svg",
+      "sha256": "7106626cc9a67b1723290d948d321ba6131cefaa28474246ed931e78b69b3f0c"
+    },
+    {
+      "id": "19_splits",
+      "svg": "figures/19_splits.svg",
+      "sha256": "de7a20a6ced5f183f9f92f8a17097e1984bef444573db2b2e3694bae1afc516c"
+    },
+    {
+      "id": "20_performance",
+      "svg": "figures/20_performance.svg",
+      "sha256": "86fd58bb4e8345839017ebca45cbef2a24c1c4d4128fdf38bfa9ecbf44cadd3a"
+    },
+    {
+      "id": "21_lineage",
+      "svg": "figures/21_lineage.svg",
+      "sha256": "3846af34cf407fcecd1f7697913351a15449dcf7af4813c7db63cca6a40e96b2"
+    },
+    {
+      "id": "22_breadth",
+      "svg": "figures/22_breadth.svg",
+      "sha256": "9d77c5f722c1b49d5ddd894b0625ae0e5d109bb4507a193d91888dc32ce2d91e"
+    },
+    {
+      "id": "23_composition",
+      "svg": "figures/23_composition.svg",
+      "sha256": "373cdf74c4842cec84c1dfdc7de339d8bda9080a923ff4b736c0e8178914faa1"
+    },
+    {
+      "id": "24_overlap",
+      "svg": "figures/24_overlap.svg",
+      "sha256": "45f213fa7feeb88b76c3238c7b3c9401bf686ccc0ac29a8020fae20303aa0815"
+    },
+    {
+      "id": "25_portfolio",
+      "svg": "figures/25_portfolio.svg",
+      "sha256": "2f56b5329a8cdbdb25651cf8721d15b131b4cf67507ddea029f31c5d260a5473"
+    },
+    {
+      "id": "26_gaps",
+      "svg": "figures/26_gaps.svg",
+      "sha256": "2bdae66ab4afeff210afeb47824a626005d122f13c93450541bc948dbb3787bf"
+    },
+    {
+      "id": "27_dataset_profiles",
+      "svg": "figures/27_dataset_profiles.svg",
+      "sha256": "abaa22603931f1eb36d1f9d055671b8b301706739cef0b6937ae52d66c43d713"
+    },
+    {
+      "id": "28_potential",
+      "svg": "figures/28_potential.svg",
+      "sha256": "52be67c60bc0ab2b31f8bf2ca14fdd7529dcf9862fb612204fad589439b14969"
+    },
+    {
+      "id": "29_dataset_network",
+      "svg": "figures/29_dataset_network.svg",
+      "sha256": "d5a083075faf8327eebbe57925c02233f8ee7af6925ac6be8755e92d2d8c61e1"
+    },
+    {
+      "id": "30_dataset_pairs",
+      "svg": "figures/30_dataset_pairs.svg",
+      "sha256": "b89a54b106be58f0a5b4bceffa609c004f3de7ea7d5fafa389287c78c8266a02"
+    },
+    {
+      "id": "31_tests",
+      "svg": "figures/31_tests.svg",
+      "sha256": "ff142769ff5ba2f411c0fbde539d58949c71aebd9d16abcfec0bd19608f5e85d"
+    },
+    {
+      "id": "32_maturity",
+      "svg": "figures/32_maturity.svg",
+      "sha256": "564eb9afcf2108043c1a7e5f28a1efe5f9623f1bad1cd64d47a5a14e82309de4"
+    },
+    {
+      "id": "33_limits",
+      "svg": "figures/33_limits.svg",
+      "sha256": "56714e1ef8585954b99022f548f7aa42bc1761aa7cdbfd555506cbdeb7d61f69"
+    },
+    {
+      "id": "34_roadmap",
+      "svg": "figures/34_roadmap.svg",
+      "sha256": "1019dc1ac4641d91ad1aad553735bf9771962ff6a0a29c55a686b59391c056c8"
+    }
+  ],
+  "tables": [
+    "tables/components.csv",
+    "tables/maturity.json",
+    "data/metrics.json",
+    "data/operations.json",
+    "data/benchmark_tables.json"
+  ],
+  "report_source": [
+    "report.json",
+    "report.md",
+    "audit.py",
+    "build_report.py"
+  ],
+  "pages": 38,
+  "figure_count": 34,
+  "pdf": {
+    "path": "output/pdf/AI_ready_pipeline_state_report.pdf",
+    "sha256": "db0a1a721a44294de3747834eb42362162f010ecf7b1b207c166d1fc76d4b4f1"
+  },
+  "rendered_at": "2026-10-22T04:25:57.143600+00:00",
+  "build_sources": [
+    {
+      "path": "reports/pipeline_state/audit.py",
+      "sha256": "e0c3a792adf5bbd64d0d370db4918b9a0ec9984ccd9b1de91571d8200e4d7355"
+    },
+    {
+      "path": "reports/pipeline_state/build_report.py",
+      "sha256": "b24622e59e838276a48e45cd21721a22012c188a8c787369716ad682f7f75f17"
+    },
+    {
+      "path": "reports/pipeline_state/report.json",
+      "sha256": "4c0d98ef3462fc0772fa3ed852340ee72581a3e10f5a8e40ebf4c79b0eeb861d"
+    },
+    {
+      "path": "reports/pipeline_state/report.md",
+      "sha256": "d00b7eddf5c281ba5ae11512589faadfa1da9a3398247b49e423d5928ecc881e"
+    }
+  ]
+}

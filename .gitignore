@@ -66,3 +66,6 @@ __pycache__/
 
 # Generated semantic metadata diagnostics
 /outputs/semantic_benchmark/
+
+# Report render intermediates (sources and final report remain reviewable)
+/reports/pipeline_state/build/

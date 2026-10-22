@@ -1,0 +1,38 @@
+{
+  "window": {
+    "bbox": [
+      -105.58603659635496,
+      40.032870378598545,
+      -105.58591862386885,
+      40.032961064082926
+    ],
+    "col": 5004,
+    "dn": 1318,
+    "latitude": 40.03291572135525,
+    "longitude": -105.58597761007336,
+    "native_crs": "EPSG:32613",
+    "row": 6842,
+    "scl": 4,
+    "scl_col": 2502,
+    "scl_row": 3421
+  },
+  "asset_id": "S2A_13TDE_20230730_0_L2A:B08:6842:5004",
+  "version": "S2A_13TDE_20230730_0_L2A;processing_baseline=05.09;pixel-extractor-v1",
+  "source_metadata": {
+    "platform": "sentinel-2a",
+    "sensor": "msi",
+    "calibration_scale": 0.0001,
+    "calibration_offset": -0.1
+  },
+  "rights": {
+    "license": "Copernicus Sentinel Data Legal Notice; STAC label=proprietary",
+    "attribution": "Contains modified Copernicus Sentinel data (2023); accessed via Element 84 Earth Search. Extraction only; raw DN retained.",
+    "derivative_use": true,
+    "redistribution": true,
+    "access_restrictions": "none"
+  },
+  "checksum_scope": "extracted_window",
+  "retrieved_at": "2026-10-21T19:08:59.785147Z",
+  "acquisition": "2023-07-30T18:03:00.777000Z",
+  "status": "Historical real acquisition evidence; illustrative coefficient calculation only; no currently approved real product"
+}

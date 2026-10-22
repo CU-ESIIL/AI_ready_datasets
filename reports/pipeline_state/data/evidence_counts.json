@@ -1,0 +1,11 @@
+{
+  "scope": "Evidence array of retained scoped-sentinel-review-v4/report.json only; not all project artifacts or decisions",
+  "counts": {
+    "SOURCE_DOCUMENTED": 3,
+    "OBSERVED_IN_DATA": 0,
+    "DERIVED_DETERMINISTICALLY": 2,
+    "MODEL_JUDGMENT": 0,
+    "HUMAN_DECISION": 0,
+    "MISSING_EVIDENCE": 2
+  }
+}

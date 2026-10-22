@@ -1,0 +1,74 @@
+{
+  "assessed_coverage": {
+    "anatomy": 1.0,
+    "behavior": 1.0,
+    "cellular": 1.0,
+    "community": 1.0,
+    "ecosystem": 1.0,
+    "environment": 1.0,
+    "habitat": 1.0,
+    "interaction": 1.0,
+    "method": 1.0,
+    "molecular": 1.0,
+    "observation": 1.0,
+    "organism": 0.5,
+    "population": 1.0,
+    "provenance": 0.5,
+    "sampling": 1.0,
+    "scale_support": 0.5,
+    "space": 1.0,
+    "taxonomy": 0.5,
+    "time": 1.0,
+    "trait": 1.0,
+    "units": 0.5
+  },
+  "budget": 8,
+  "code_digest": "d6d16d37a418bc2fedd3506d62579ba5c23061882578bc983865889c9cc10165",
+  "config_digest": "ef8625b1b9a3c954cc14bcc5ec56c79bc9ed4ee7382336dd73c073c1557a9bdc",
+  "inputs_digest": "7bedbe505f814b04a90f6a62403f8695dc99e231eb714187e628616bda50a923",
+  "method": "greedy equal-dimension coverage; unknown contributes no assessed gain; core-candidate then ID tie break",
+  "not_established": [
+    "scientific_equivalence",
+    "ontology_quality",
+    "term_alignment",
+    "scientific_adoption",
+    "dataset_suitability"
+  ],
+  "schema_version": "1",
+  "score_kind": "project_metadata_diagnostic",
+  "selected": [
+    {
+      "marginal_assessed_coverage_gain": 6.0,
+      "resource_id": "ebv"
+    },
+    {
+      "marginal_assessed_coverage_gain": 4.0,
+      "resource_id": "obi"
+    },
+    {
+      "marginal_assessed_coverage_gain": 2.0,
+      "resource_id": "envo"
+    },
+    {
+      "marginal_assessed_coverage_gain": 2.0,
+      "resource_id": "po"
+    },
+    {
+      "marginal_assessed_coverage_gain": 1.5,
+      "resource_id": "go"
+    },
+    {
+      "marginal_assessed_coverage_gain": 1.0,
+      "resource_id": "ro"
+    },
+    {
+      "marginal_assessed_coverage_gain": 1.0,
+      "resource_id": "nbo"
+    },
+    {
+      "marginal_assessed_coverage_gain": 1.0,
+      "resource_id": "stac"
+    }
+  ],
+  "status": "recommendation_for_human_review_only"
+}

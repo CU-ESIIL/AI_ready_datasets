@@ -313,3 +313,13 @@ backend operations and resulting metadata, changes and package versions. A lazy 
 is not a completed data read. The initial MOSAIKS bridge permits only layout-preserving
 one-band selection/subset/calendar operations on already calibrated bounded windows.
 General support-changing products need a separately reviewed representation bridge.
+
+## 2026-10-21 — Evidence-led pipeline state report
+
+Keep a portable local evidence snapshot, machine-readable component inventory and
+programmatic ReportLab/Matplotlib report under `reports/pipeline_state`, with the
+final PDF under `output/pdf`. Link the report from the website; the repository is
+the source of truth. Distinguish retained real source evidence from generated
+CubeDynamics/MOSAIKS diagnostics. Missing ontology depth, dataset potential/diversity,
+independent validity and throughput remain unmeasured. No new source acquisition,
+model inference, approval or website deployment is part of report generation.

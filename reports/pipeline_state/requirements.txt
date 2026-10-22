@@ -1,0 +1,4 @@
+# Use Python 3.12 and the repository's dev,cubedynamics extras.
+matplotlib==3.11.2
+reportlab==5.0.1
+pypdf==6.21.2

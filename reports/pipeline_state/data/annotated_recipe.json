@@ -1,0 +1,115 @@
+{
+  "recipe_id": "generated-cube-mosaiks",
+  "version": "1",
+  "scope": "core",
+  "track": null,
+  "core_recipe": null,
+  "mappings": [
+    {
+      "source_asset": "generated-cube-nir",
+      "source_variable": "B08_DN",
+      "target": {
+        "name": "nir_reflectance",
+        "definition": "Calibrated generated NIR diagnostic; not observed Sentinel reflectance",
+        "unit": "1",
+        "measurement_method": "Documented scale/offset applied by the deterministic harmonizer",
+        "biological_entity": null,
+        "ontology_id": null
+      },
+      "relationship": "convertible_to",
+      "evidence": [
+        "generated fixture calibration coefficients; no real scientific validation"
+      ],
+      "confidence": 1.0,
+      "review_status": "proposed",
+      "novel": true,
+      "disagreement": false
+    }
+  ],
+  "operations": [
+    {
+      "source_asset": "generated-cube-nir",
+      "operation": "calibrate",
+      "source_variable": "B08_DN",
+      "target_variable": null,
+      "from_unit": "DN",
+      "to_unit": "1",
+      "minimum": null,
+      "maximum": null,
+      "sentinel": null,
+      "target_support": null,
+      "other_asset": null,
+      "tolerance": null,
+      "scale": 0.0001,
+      "offset": -0.1
+    },
+    {
+      "source_asset": "generated-cube-nir",
+      "operation": "map_variable",
+      "source_variable": "B08_DN",
+      "target_variable": "nir_reflectance",
+      "from_unit": null,
+      "to_unit": null,
+      "minimum": null,
+      "maximum": null,
+      "sentinel": null,
+      "target_support": null,
+      "other_asset": null,
+      "tolerance": null,
+      "scale": null,
+      "offset": null
+    }
+  ],
+  "proposals": [
+    {
+      "role": "harmonization",
+      "agent": "fixture-decision-model",
+      "version": "fixture-v1",
+      "configuration": "curated rules; no LLM",
+      "rationale": "Generated fixture selection only",
+      "evidence": [
+        "fixture"
+      ]
+    }
+  ],
+  "status": "approved",
+  "author": "generated-cube-demo",
+  "agent_review": null,
+  "execution_identity": {
+    "registry_version": "2",
+    "registry_digest": "9373418279040da615958274e390b909922803075b4b8be6fe3bcb12c8e2f2d3",
+    "executor_version": "registered-allowlist-v3",
+    "validator_version": "scientific-preconditions-v1",
+    "constants_version": "units-v1"
+  },
+  "backend_operations": [
+    {
+      "operation_id": "cubedynamics.select",
+      "operation_version": "1",
+      "backend": "cubedynamics",
+      "backend_version": "0.1.0rc3",
+      "parameters": {
+        "variable_ref": "request.variable"
+      }
+    },
+    {
+      "operation_id": "cubedynamics.subset",
+      "operation_version": "1",
+      "backend": "cubedynamics",
+      "backend_version": "0.1.0rc3",
+      "parameters": {
+        "window_ref": "request.window"
+      }
+    },
+    {
+      "operation_id": "cubedynamics.month_filter",
+      "operation_version": "1",
+      "backend": "cubedynamics",
+      "backend_version": "0.1.0rc3",
+      "parameters": {
+        "months_ref": "request.months"
+      }
+    }
+  ],
+  "backend_context_digest": "b960ef298c9106ce3fab6cab65e46b34f370b41249a92349591cae4b1dd006fe"
+}

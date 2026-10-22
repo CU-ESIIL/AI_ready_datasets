@@ -1,0 +1,313 @@
+{
+  "execution_authorized": false,
+  "human_approval": "pending",
+  "missing_domains": [],
+  "model_consensus": "needs_revision",
+  "qa_decision": "revise",
+  "qa_finding_ids": [
+    "support.native_epsg_mismatch",
+    "rights.terms_missing",
+    "integrity.metadata_only_checksum",
+    "quality.calibrated_reflectance_validation"
+  ],
+  "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+  "required_domains": [
+    "semantic",
+    "units",
+    "support",
+    "rights",
+    "integrity",
+    "quality"
+  ],
+  "resolved_findings": [
+    "semantic.b08_reflectance_quantity",
+    "units.b08_reflectance_calibration",
+    "integrity.recipe_content_digest_match"
+  ],
+  "reviews": [
+    {
+      "findings": [
+        {
+          "claim": "B08_reflectance is a unitless reflectance quantity derived from Sentinel-2 L2A band 8 using the documented scale (0.0001) and offset (-0.1), with measurement method described as MSI band 8 L2A native pixel calibration.",
+          "confidence": 0.9,
+          "evidence": [
+            "semantic.quantity"
+          ],
+          "finding_id": "semantic.b08_reflectance_quantity",
+          "references": [],
+          "required_action": "No further action required; the quantity definition and measurement method are adequately documented.",
+          "reviewer_domain": "semantic",
+          "schema_version": "1",
+          "severity": "blocker",
+          "source": "StreamPlan.bindings[0].target",
+          "status": "PASS",
+          "supporting_reviewers": []
+        }
+      ],
+      "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+      "reviewer_domain": "semantic"
+    },
+    {
+      "findings": [
+        {
+          "claim": "The calibration of Sentinel-2 B08 digital numbers to unitless reflectance using the documented scale 0.0001 and offset -0.1 is correctly specified and applied, yielding reflectance values with unit \"1\".",
+          "confidence": 0.9,
+          "evidence": [
+            "units.calibration"
+          ],
+          "finding_id": "units.b08_reflectance_calibration",
+          "references": [],
+          "required_action": "Proceed with the calibrated reflectance values; ensure downstream validation of physical plausibility and uncertainty handling.",
+          "reviewer_domain": "units",
+          "schema_version": "1",
+          "severity": "info",
+          "source": "evidence.units.calibration",
+          "status": "PASS",
+          "supporting_reviewers": []
+        }
+      ],
+      "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+      "reviewer_domain": "units"
+    },
+    {
+      "findings": [
+        {
+          "claim": "The proposal incorrectly states that the native B08 band is in EPSG:4326; metadata shows the native raster is EPSG:32613, requiring correction to distinguish native raster CRS from footprint CRS.",
+          "confidence": 1.0,
+          "evidence": [
+            "support.native"
+          ],
+          "finding_id": "support.native_epsg_mismatch",
+          "references": [],
+          "required_action": "Revise the proposal prose to indicate native CRS EPSG:32613 and separate it from the geographic bounding box CRS EPSG:4326.",
+          "reviewer_domain": "support",
+          "schema_version": "1",
+          "severity": "blocker",
+          "source": "StreamPlan native STAC Item",
+          "status": "FAIL",
+          "supporting_reviewers": []
+        }
+      ],
+      "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+      "reviewer_domain": "support"
+    },
+    {
+      "findings": [
+        {
+          "claim": "Derivative use of Sentinel-2 B08 reflectance is permitted under Copernicus terms, but redistribution rights are unclear; the required legal notice and detailed rights terms are missing.",
+          "confidence": 0.9,
+          "evidence": [
+            "rights.terms"
+          ],
+          "finding_id": "rights.terms_missing",
+          "references": [],
+          "required_action": "Provide the full Copernicus Sentinel Data Legal Notice and clarify redistribution permissions before execution.",
+          "reviewer_domain": "rights",
+          "schema_version": "1",
+          "severity": "blocker",
+          "source": "rights proposal and missing rights terms evidence",
+          "status": "NEEDS_EVIDENCE",
+          "supporting_reviewers": []
+        }
+      ],
+      "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+      "reviewer_domain": "rights"
+    },
+    {
+      "findings": [
+        {
+          "claim": "The recipe_content_digest matches the expected constant and correctly binds the recipe metadata.",
+          "confidence": 1.0,
+          "evidence": [
+            "integrity.scope"
+          ],
+          "finding_id": "integrity.recipe_content_digest_match",
+          "references": [],
+          "required_action": "No action required.",
+          "reviewer_domain": "integrity",
+          "schema_version": "1",
+          "severity": "info",
+          "source": "src/dataset_prototype/stream_rasters.py",
+          "status": "PASS",
+          "supporting_reviewers": []
+        },
+        {
+          "claim": "The planning checksum only covers metadata and does not verify remote raster immutability, contradicting integrity requirements for full data provenance.",
+          "confidence": 0.9,
+          "evidence": [
+            "integrity.scope"
+          ],
+          "finding_id": "integrity.metadata_only_checksum",
+          "references": [],
+          "required_action": "Obtain and bind a full raster checksum or cryptographic hash of the remote data to the recipe provenance.",
+          "reviewer_domain": "integrity",
+          "schema_version": "1",
+          "severity": "blocker",
+          "source": "src/dataset_prototype/stream_rasters.py",
+          "status": "FAIL",
+          "supporting_reviewers": []
+        }
+      ],
+      "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+      "reviewer_domain": "integrity"
+    },
+    {
+      "findings": [
+        {
+          "claim": "The proposal does not provide independent validation that the calibrated B08 reflectance values are scientifically valid for downstream analysis.",
+          "confidence": 0.8,
+          "evidence": [
+            "quality.selection",
+            "quality.validity"
+          ],
+          "finding_id": "quality.calibrated_reflectance_validation",
+          "references": [],
+          "required_action": "Obtain independent downstream validation of the calibrated reflectance and document scientific acceptance criteria before using the data for research conclusions.",
+          "reviewer_domain": "quality",
+          "schema_version": "1",
+          "severity": "blocker",
+          "source": "quality.review",
+          "status": "NEEDS_EVIDENCE",
+          "supporting_reviewers": [
+            "semantic",
+            "units",
+            "support",
+            "rights",
+            "integrity"
+          ]
+        }
+      ],
+      "recipe_content_digest": "0d2f4d7540d7c1582970610e2b039d04ef957730ae2192661f1b9e0b77c6ec75",
+      "reviewer_domain": "quality"
+    }
+  ],
+  "schema_version": "1",
+  "source_digest": "07b5db27c0e4f1f4550b0a8339d03f1bfa5b14c8a5e973c1370a99800c58d4d9",
+  "unique_findings": [
+    {
+      "claim": "B08_reflectance is a unitless reflectance quantity derived from Sentinel-2 L2A band 8 using the documented scale (0.0001) and offset (-0.1), with measurement method described as MSI band 8 L2A native pixel calibration.",
+      "confidence": 0.9,
+      "evidence": [
+        "semantic.quantity"
+      ],
+      "finding_id": "semantic.b08_reflectance_quantity",
+      "references": [],
+      "required_action": "No further action required; the quantity definition and measurement method are adequately documented.",
+      "reviewer_domain": "semantic",
+      "schema_version": "1",
+      "severity": "blocker",
+      "source": "StreamPlan.bindings[0].target",
+      "status": "PASS",
+      "supporting_reviewers": []
+    },
+    {
+      "claim": "The calibration of Sentinel-2 B08 digital numbers to unitless reflectance using the documented scale 0.0001 and offset -0.1 is correctly specified and applied, yielding reflectance values with unit \"1\".",
+      "confidence": 0.9,
+      "evidence": [
+        "units.calibration"
+      ],
+      "finding_id": "units.b08_reflectance_calibration",
+      "references": [],
+      "required_action": "Proceed with the calibrated reflectance values; ensure downstream validation of physical plausibility and uncertainty handling.",
+      "reviewer_domain": "units",
+      "schema_version": "1",
+      "severity": "info",
+      "source": "evidence.units.calibration",
+      "status": "PASS",
+      "supporting_reviewers": []
+    },
+    {
+      "claim": "The proposal incorrectly states that the native B08 band is in EPSG:4326; metadata shows the native raster is EPSG:32613, requiring correction to distinguish native raster CRS from footprint CRS.",
+      "confidence": 1.0,
+      "evidence": [
+        "support.native"
+      ],
+      "finding_id": "support.native_epsg_mismatch",
+      "references": [],
+      "required_action": "Revise the proposal prose to indicate native CRS EPSG:32613 and separate it from the geographic bounding box CRS EPSG:4326.",
+      "reviewer_domain": "support",
+      "schema_version": "1",
+      "severity": "blocker",
+      "source": "StreamPlan native STAC Item",
+      "status": "FAIL",
+      "supporting_reviewers": []
+    },
+    {
+      "claim": "Derivative use of Sentinel-2 B08 reflectance is permitted under Copernicus terms, but redistribution rights are unclear; the required legal notice and detailed rights terms are missing.",
+      "confidence": 0.9,
+      "evidence": [
+        "rights.terms"
+      ],
+      "finding_id": "rights.terms_missing",
+      "references": [],
+      "required_action": "Provide the full Copernicus Sentinel Data Legal Notice and clarify redistribution permissions before execution.",
+      "reviewer_domain": "rights",
+      "schema_version": "1",
+      "severity": "blocker",
+      "source": "rights proposal and missing rights terms evidence",
+      "status": "NEEDS_EVIDENCE",
+      "supporting_reviewers": []
+    },
+    {
+      "claim": "The recipe_content_digest matches the expected constant and correctly binds the recipe metadata.",
+      "confidence": 1.0,
+      "evidence": [
+        "integrity.scope"
+      ],
+      "finding_id": "integrity.recipe_content_digest_match",
+      "references": [],
+      "required_action": "No action required.",
+      "reviewer_domain": "integrity",
+      "schema_version": "1",
+      "severity": "info",
+      "source": "src/dataset_prototype/stream_rasters.py",
+      "status": "PASS",
+      "supporting_reviewers": []
+    },
+    {
+      "claim": "The planning checksum only covers metadata and does not verify remote raster immutability, contradicting integrity requirements for full data provenance.",
+      "confidence": 0.9,
+      "evidence": [
+        "integrity.scope"
+      ],
+      "finding_id": "integrity.metadata_only_checksum",
+      "references": [],
+      "required_action": "Obtain and bind a full raster checksum or cryptographic hash of the remote data to the recipe provenance.",
+      "reviewer_domain": "integrity",
+      "schema_version": "1",
+      "severity": "blocker",
+      "source": "src/dataset_prototype/stream_rasters.py",
+      "status": "FAIL",
+      "supporting_reviewers": []
+    },
+    {
+      "claim": "The proposal does not provide independent validation that the calibrated B08 reflectance values are scientifically valid for downstream analysis.",
+      "confidence": 0.8,
+      "evidence": [
+        "quality.selection",
+        "quality.validity"
+      ],
+      "finding_id": "quality.calibrated_reflectance_validation",
+      "references": [],
+      "required_action": "Obtain independent downstream validation of the calibrated reflectance and document scientific acceptance criteria before using the data for research conclusions.",
+      "reviewer_domain": "quality",
+      "schema_version": "1",
+      "severity": "blocker",
+      "source": "quality.review",
+      "status": "NEEDS_EVIDENCE",
+      "supporting_reviewers": [
+        "semantic",
+        "units",
+        "support",
+        "rights",
+        "integrity"
+      ]
+    }
+  ],
+  "unresolved_findings": [
+    "support.native_epsg_mismatch",
+    "rights.terms_missing",
+    "integrity.metadata_only_checksum",
+    "quality.calibrated_reflectance_validation"
+  ]
+}

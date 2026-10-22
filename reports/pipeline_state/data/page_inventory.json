@@ -1,0 +1,172 @@
+[
+  {
+    "page": 2,
+    "figure": "01_problem",
+    "title": "Finding files is only the beginning"
+  },
+  {
+    "page": 3,
+    "figure": "02_architecture",
+    "title": "A scientific question becomes a reviewed computation"
+  },
+  {
+    "page": 4,
+    "figure": "03_status",
+    "title": "A working prototype, with scientific gates still closed"
+  },
+  {
+    "page": 5,
+    "figure": "04_real_thread",
+    "title": "A real pixel anchors the story"
+  },
+  {
+    "page": 6,
+    "figure": "05_access",
+    "title": "A catalog describes an asset; an adapter preserves its meaning"
+  },
+  {
+    "page": 7,
+    "figure": "06_responsibilities",
+    "title": "Access, scientific decisions and computation have different jobs"
+  },
+  {
+    "page": 8,
+    "figure": "07_evidence",
+    "title": "Evidence and judgment are different objects"
+  },
+  {
+    "page": 9,
+    "figure": "08_domains",
+    "title": "Many communities describe different pieces of an observation"
+  },
+  {
+    "page": 10,
+    "figure": "09_types",
+    "title": "An ontology and a catalog standard solve different problems"
+  },
+  {
+    "page": 11,
+    "figure": "10_history",
+    "title": "Meaning has accumulated through different kinds of infrastructure"
+  },
+  {
+    "page": 12,
+    "figure": "11_scale",
+    "title": "Scale is not one dimension"
+  },
+  {
+    "page": 13,
+    "figure": "12_trust",
+    "title": "AI proposes. Tested software computes."
+  },
+  {
+    "page": 14,
+    "figure": "13_review",
+    "title": "A blocked run can be a successful safety test"
+  },
+  {
+    "page": 15,
+    "figure": "14_json_recipe",
+    "title": "The recipe is an auditable scientific plan"
+  },
+  {
+    "page": 16,
+    "figure": "15_registry",
+    "title": "Seventeen operations, each with an explicit boundary"
+  },
+  {
+    "page": 17,
+    "figure": "16_cube",
+    "title": "Stream the data instead of moving the world"
+  },
+  {
+    "page": 18,
+    "figure": "17_lazy_evidence",
+    "title": "A selected lazy chunk stays selected at execution"
+  },
+  {
+    "page": 19,
+    "figure": "18_calibration",
+    "title": "A stored digital number is not reflectance"
+  },
+  {
+    "page": 20,
+    "figure": "19_splits",
+    "title": "MOSAIKS receives the harmonized output"
+  },
+  {
+    "page": 21,
+    "figure": "20_performance",
+    "title": "The features carry usable numerical information"
+  },
+  {
+    "page": 22,
+    "figure": "21_lineage",
+    "title": "Every vector should lead back to its scientific decisions"
+  },
+  {
+    "page": 23,
+    "figure": "22_breadth",
+    "title": "Breadth describes assessed scope, not ontology quality"
+  },
+  {
+    "page": 24,
+    "figure": "23_composition",
+    "title": "Declared links show where semantic systems already connect"
+  },
+  {
+    "page": 25,
+    "figure": "24_overlap",
+    "title": "Different scope may be valuable\u2014but is not enough"
+  },
+  {
+    "page": 26,
+    "figure": "25_portfolio",
+    "title": "An assessed portfolio adds scope; scientific gain is still a question"
+  },
+  {
+    "page": 27,
+    "figure": "26_gaps",
+    "title": "A sparse assessment is a place to investigate"
+  },
+  {
+    "page": 28,
+    "figure": "27_dataset_profiles",
+    "title": "Three source records reveal metadata differences"
+  },
+  {
+    "page": 29,
+    "figure": "28_potential",
+    "title": "The useful next question has not been scored yet"
+  },
+  {
+    "page": 30,
+    "figure": "29_dataset_network",
+    "title": "A namespace reference is useful but limited evidence"
+  },
+  {
+    "page": 31,
+    "figure": "30_dataset_pairs",
+    "title": "Shared metadata structure is not shared scientific meaning"
+  },
+  {
+    "page": 32,
+    "figure": "31_tests",
+    "title": "The suite tests guardrails as well as successful calculations"
+  },
+  {
+    "page": 33,
+    "figure": "32_maturity",
+    "title": "There is a broad local demonstration, not a production service"
+  },
+  {
+    "page": 34,
+    "figure": "33_limits",
+    "title": "The hardest gaps are scientific, not just computational"
+  },
+  {
+    "page": 35,
+    "figure": "34_roadmap",
+    "title": "One approved real demonstration is the next meaningful milestone"
+  }
+]

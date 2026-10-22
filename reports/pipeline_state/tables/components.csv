@@ -1,0 +1,14 @@
+component,implementation_status,purpose,known_limitations
+Discovery and source access,PROTOTYPE,Find sources and preserve native metadata,['Actual Sentinel retrieval retained; no current approved real embedding release']
+MESA transport,BLOCKED,Connect external access and metadata infrastructure,['External methods deliberately unavailable; local MockMESAClient is MOCKED']
+Semantic discovery,PROTOTYPE,Separate source statements from concept candidates,['No general external term resolver or verified equivalences']
+Semantic landscape and diagnostics,PROTOTYPE,Describe local semantic resources and metadata coverage,"['Depth, potential, diversity, graph-level composition and scientific complementarity unmeasured']"
+Harmonization recipes,PROTOTYPE,Record scientific mappings and allow-listed plans,['No universal semantic equivalence; uncertain changes need scientists']
+Verde / OpenClaw roles,PROTOTYPE,Offer bounded scientific judgments without tools,['Latest real Sentinel proposal vetoed; no live model call in this report']
+Evidence and human review,PROTOTYPE,Keep missing evidence and vetoes binding,['Expert review and revision workflow remains incomplete']
+JSON backbone and registry,WORKING,Turn bounded proposals into validated deterministic choices,"['WORKING means local demonstrated contract, not production deployment']"
+CubeDynamics backend,PROTOTYPE,Execute bounded lazy transformations in external software,['No CRS reprojection or general resampler; MOSAIKS bridge preserves one-band grid']
+Streaming harmonization,PROTOTYPE,Bring bounded source windows directly to encoders,['No remote throughput benchmark; historical snapshots remain explicit legacy paths']
+MOSAIKS and verification,PROTOTYPE,Encode harmonized rasters and test numerical usefulness,['No independent ecological validation or native LLM interpretation demonstrated']
+Provenance and storage,WORKING,Trace representations back to observations and decisions,['No external MESA registration; window hashes do not cover entire remote assets']
+Science tracks,PARTIAL,Keep food/water assumptions separate from shared sources,['Independent domain outcomes unvalidated; third track undefined']

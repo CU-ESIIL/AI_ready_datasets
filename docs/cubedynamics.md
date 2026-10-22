@@ -235,3 +235,14 @@ change. Neither example claims a NEON/Sentinel scientific equivalence.
 [Audit](development/cubedynamics-audit.md) · [Model trust](architecture/model-trust.md) ·
 [Harmonization](harmonization.md) · [Streaming](streaming-harmonization.md) ·
 [Representation](mosaiks-embeddings.md) · [Contracts](reference/contracts.md)
+
+## Frozen backend consensus
+
+For backend plans, call `consensus.negotiate(plan, backend, output,
+frozen_recipe=recipe, cube_configuration=configuration)`. All four specialists and
+QA review the same frozen recipe and configuration, without automatic scientific
+rewrites. Changed scientific content requires a new review. A matching successful
+consensus does not replace the six-domain evidence review or exact-recipe human
+decision required before a real Sentinel read. The initial representation bridge
+preserves the native grid and acquisition support; broader transformations need a
+separately reviewed representation contract.

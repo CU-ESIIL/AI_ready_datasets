@@ -1,0 +1,37 @@
+{
+  "format": "mosaiks-dataset-v1",
+  "status": "complete",
+  "records": 32,
+  "dimensions": 32,
+  "dtype": "float32",
+  "encoder_identity": "17c0c242e1e46e58d074eab33a56de0d0cc08459de928b461de63ab54e9309a4",
+  "context_digest": "52a06b83eff161048248808a245ba506766014e7a47eead9886080199a3c2488",
+  "shards": [
+    {
+      "path": "vectors-00000.npy",
+      "rows": 16,
+      "content_digest": "9a755c638c300de4458296a630800418c1d5c4a3d9664fd5c37bba996c69634b"
+    },
+    {
+      "path": "vectors-00001.npy",
+      "rows": 16,
+      "content_digest": "7781012d1a27711d74c408d4fb34960d0f526e837a207cef5b721f79d2a930d1"
+    }
+  ],
+  "code_digest": "c51f42df2cd5371bc18bc574690cc69babf9fe137bdb58d4a6335ef7cdc255c7",
+  "numpy_version": "1.26.4",
+  "fixture": true,
+  "split_counts": {
+    "train": 16,
+    "validation": 8,
+    "test": 8
+  },
+  "batch_size": 16,
+  "raw_data_persisted": false,
+  "harmonized_arrays_persisted": false,
+  "vector_semantics": "MOSAIKS empirical random convolutional features, not text/LLM tokens",
+  "lineage": "harmonization_context.json plus records.jsonl",
+  "labels": "verification_labels.jsonl; excluded from vectors",
+  "records_sha256": "365c2b1b549e254488de4a7c7efa14b92e9b00038cce915a5c12defe5a46b94c",
+  "labels_sha256": "44d0b7c4fc7bf6db8da5e1269649e4a2ca75a9428a0727a1bdc8cb2c32001924"
+}

@@ -206,3 +206,11 @@ window → CubeDynamics → MOSAIKS example is PROTOTYPE; its model/reviewer are
 No new live source/inference run or approved real Sentinel product is claimed.
 General support-changing representation bridges and reprojection are not exposed.
 [Integration](cubedynamics.md) · [API audit](development/cubedynamics-audit.md).
+
+## Visual evidence report
+
+The [pipeline state report](pipeline-state-report.md) provides an auditable visual
+snapshot, including measured local test/registry/inventory counts and explicit
+scientific limitations. Source, figures, machine inventory and rebuild scripts are
+retained in the repository. This communication artifact does not change scientific
+approval or external integration status.

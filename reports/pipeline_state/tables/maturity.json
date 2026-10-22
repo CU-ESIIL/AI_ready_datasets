@@ -1,0 +1,197 @@
+[
+  {
+    "component": "Discovery",
+    "evidence": "tests/test_discovery.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Source access",
+    "evidence": "tests/test_real_data.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Semantic discovery",
+    "evidence": "tests/test_semantic_discovery.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Ontology lookup",
+    "evidence": "tests/test_semantic_discovery.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 0,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Semantic mapping",
+    "evidence": "tests/test_harmonization.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Human review",
+    "evidence": "tests/test_review.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "JSON recipe",
+    "evidence": "tests/test_operation_registry.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Schema validation",
+    "evidence": "tests/test_operation_registry.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Scientific validation",
+    "evidence": "tests/test_harmonization.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Operation registry",
+    "evidence": "tests/test_operation_registry.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "CubeDynamics execution",
+    "evidence": "tests/test_cubedynamics.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Provenance",
+    "evidence": "tests/test_representations.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Harmonized observation",
+    "evidence": "tests/test_harmonization.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Representation",
+    "evidence": "tests/test_mosaiks.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  },
+  {
+    "component": "Science tracks",
+    "evidence": "tests/test_integration_tracks.py",
+    "columns": {
+      "designed": 1,
+      "implemented": 1,
+      "tested": 1,
+      "demonstrated": 1,
+      "documented": 1,
+      "production_ready": 0
+    },
+    "scope": "bounded prototype behavior only; ontology lookup local candidates only; science validation deterministic rules, not independent ecology"
+  }
+]

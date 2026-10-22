@@ -1,0 +1,39 @@
+{
+  "status": "evaluated",
+  "native_numeric_consumption": true,
+  "scientific_validation": "not_established",
+  "zero_vectors": 0,
+  "distinct_feature_vectors": 32,
+  "counts": {
+    "train": 16,
+    "validation": 8,
+    "test": 8
+  },
+  "target": [
+    "std_first_harmonized_channel",
+    "derived-diagnostic"
+  ],
+  "encoder_identity": "17c0c242e1e46e58d074eab33a56de0d0cc08459de928b461de63ab54e9309a4",
+  "split_policy": "caller-declared disjoint spatial groups; requires independent audit of geography and target provenance",
+  "limitations": [
+    "Single area/time does not establish geographic or temporal transfer",
+    "Derived/proxy targets do not establish independent scientific validity",
+    "Features are not intrinsically interpretable to an LLM"
+  ],
+  "probe_file": "verification_probe.npz",
+  "probe_sha256": "df3bea68481a2847b8d9df82ef515bada0e41358b3d7948c0c7431849829c5e8",
+  "ridge_alpha": 1.0,
+  "test": {
+    "rmse": 0.0026598810172656414,
+    "r2": 0.9429000188394339
+  },
+  "mean_baseline": {
+    "rmse": 0.011293999668537778,
+    "r2": -0.029454333604517657
+  },
+  "shuffled_label_baseline": {
+    "rmse": 0.01990424930927195,
+    "r2": -2.197445497532665
+  },
+  "nonconstant_feature_dimensions": 32
+}

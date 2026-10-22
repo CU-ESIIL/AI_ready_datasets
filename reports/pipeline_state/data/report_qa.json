@@ -1,0 +1,10 @@
+{
+  "pdf_sha256": "db0a1a721a44294de3747834eb42362162f010ecf7b1b207c166d1fc76d4b4f1",
+  "pages": 38,
+  "figures": 34,
+  "visual_review": "All 38 pages reviewed via rendered contact sheets; revised conceptual axes and operation appendix inspected individually",
+  "automated_checks": "verify_report.py passed: PDF readability, page/figure totals, figure/build hashes, component fields and test totals",
+  "website": "Strict MkDocs build passed; 58 HTML pages passed local link/media/fragment/alt checks; CubeDynamics desktop/mobile inspected",
+  "scientific_release_authorized": false,
+  "limitations": "No new real source acquisition, live inference or independent scientific validation in report build"
+}

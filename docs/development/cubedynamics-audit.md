@@ -39,3 +39,22 @@ The existing temporary test environment uses Python 3.14 / NumPy 2; CubeDynamics
 requires NumPy <2. Test it separately under Python 3.12 and keep the integration
 optional so core semantic review remains independently usable. Install the actual
 external distribution, not a replacement implementation or fixture-only mock.
+
+## Verified execution
+
+The installed PyPI distribution `cubedynamics==0.1.0rc3` completed the full suite:
+203 tests passed under Python 3.12.8 / NumPy 1.26.4. The installed wheel resolves
+stackstac 0.5.0, whereas the inspected upstream checkout declares >=0.5.1;
+version labels do not establish identical dependency metadata. The optional adapter
+uses the verified public pipe/verb surface rather than source-access loaders.
+
+A fresh `run/cubedynamics-verified` generated-data demonstration produced 32
+32-dimensional MOSAIKS vectors from calibrated bounded windows, with training-only
+filter fitting and held-out baselines. No raw or harmonized arrays were written.
+This is real external software over generated data, not an approved real-data release.
+A delayed-source test confirms that selecting one chunk computes only that chunk;
+this does not measure remote network bytes or production throughput.
+
+Frozen backend consensus is separately tested: all four specialists and QA see the
+same recipe/configuration. Disagreement or a prior veto blocks execution. No live
+backend-consensus inference or real scientific approval was fabricated.

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="342pt" viewBox="0 0 576 342" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T22:25:53.766468</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 342 
+L 576 342 
+L 576 0 
+L 0 0 
+z
+" style="fill: #f5f3eb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 60.3 127.392 
+L 235.2 127.392 
+Q 245.1 127.392 245.1 121.704 
+L 245.1 52.816 
+Q 245.1 47.128 235.2 47.128 
+L 60.3 47.128 
+Q 50.4 47.128 50.4 52.816 
+L 50.4 121.704 
+Q 50.4 127.392 60.3 127.392 
+z
+" clip-path="url(#p3e8a89cf74)" style="fill: #194b43"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 340.8 127.392 
+L 515.7 127.392 
+Q 525.6 127.392 525.6 121.704 
+L 525.6 52.816 
+Q 525.6 47.128 515.7 47.128 
+L 340.8 47.128 
+Q 330.9 47.128 330.9 52.816 
+L 330.9 121.704 
+Q 330.9 127.392 340.8 127.392 
+z
+" clip-path="url(#p3e8a89cf74)" style="fill: #a8c6b8"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 246.001572 87.26 
+Q 285.250943 87.26 322.823263 87.26 
+" clip-path="url(#p3e8a89cf74)" style="fill: none; stroke: #194b43; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 318.023263 84.86 
+L 322.823263 87.26 
+L 318.023263 89.66 
+z
+" clip-path="url(#p3e8a89cf74)" style="fill: #194b43; stroke: #194b43; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(112.7025 81.814062)">1318 DN</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(67.57125 101.018438)">retained real source</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #20333a" transform="translate(403.756562 82.494805)">0.0318</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #20333a" transform="translate(328.773438 99.298633)">computed illustration, unit 1</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333a" x="288" y="189.96" transform="rotate(-0 288 189.96)">1318 × 0.0001 + (-0.1) = 0.0318</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333a" x="288" y="259.48" transform="rotate(-0 288 259.48)">No clipping • no resampling • no invented duration</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #97513e" x="288" y="303.72" transform="rotate(-0 288 303.72)">NOT an approved harmonized scientific product</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3e8a89cf74">
+   <rect x="13" y="13" width="550" height="316"/>
+  </clipPath>
+ </defs>
+</svg>

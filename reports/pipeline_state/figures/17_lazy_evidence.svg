@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="342pt" viewBox="0 0 576 342" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T22:25:53.710078</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 342 
+L 576 342 
+L 576 0 
+L 0 0 
+z
+" style="fill: #f5f3eb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 60.3 136.872 
+L 191.2 136.872 
+Q 201.1 136.872 201.1 131.184 
+L 201.1 71.776 
+Q 201.1 66.088 191.2 66.088 
+L 60.3 66.088 
+Q 50.4 66.088 50.4 71.776 
+L 50.4 131.184 
+Q 50.4 136.872 60.3 136.872 
+z
+" clip-path="url(#p4f718f995b)" style="fill: #194b43"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 230.8 136.872 
+L 361.7 136.872 
+Q 371.6 136.872 371.6 131.184 
+L 371.6 71.776 
+Q 371.6 66.088 361.7 66.088 
+L 230.8 66.088 
+Q 220.9 66.088 220.9 71.776 
+L 220.9 131.184 
+Q 220.9 136.872 230.8 136.872 
+z
+" clip-path="url(#p4f718f995b)" style="fill: #d8dfda"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 401.3 136.872 
+L 532.2 136.872 
+Q 542.1 136.872 542.1 131.184 
+L 542.1 71.776 
+Q 542.1 66.088 532.2 66.088 
+L 401.3 66.088 
+Q 391.4 66.088 391.4 71.776 
+L 391.4 131.184 
+Q 391.4 136.872 401.3 136.872 
+z
+" clip-path="url(#p4f718f995b)" style="fill: #d8dfda"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 95.5 141.402002 
+Q 95.5 171.001827 95.5 198.924601 
+" clip-path="url(#p4f718f995b)" style="fill: none; stroke: #194b43; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 97.9 194.124601 
+L 95.5 198.924601 
+L 93.1 194.124601 
+z
+" clip-path="url(#p4f718f995b)" style="fill: #194b43; stroke: #194b43; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 43.8 263.272 
+L 532.2 263.272 
+Q 542.1 263.272 542.1 257.584 
+L 542.1 207.656 
+Q 542.1 201.968 532.2 201.968 
+L 43.8 201.968 
+Q 33.9 201.968 33.9 207.656 
+L 33.9 257.584 
+Q 33.9 263.272 43.8 263.272 
+z
+" clip-path="url(#p4f718f995b)" style="fill: #a8c6b8"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="125.75" y="104.337852" transform="rotate(-0 125.75 104.337852)">Chunk 0</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333a" x="296.25" y="104.337852" transform="rotate(-0 296.25 104.337852)">Chunk 1</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333a" x="466.75" y="104.337852" transform="rotate(-0 466.75 104.337852)">Chunk 2</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #20333a" transform="translate(195.495937 228.536016)">Subset computes chunk 0 only</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #20333a" transform="translate(186.27 242.939297)">Measured assertion: reads == [0]</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333a" x="288" y="313.2" transform="rotate(-0 288 313.2)">Generated delayed source • no remote network benchmark</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4f718f995b">
+   <rect x="13" y="13" width="550" height="316"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,541 @@
+[
+  {
+    "component": "Discovery and source access",
+    "purpose": "Find sources and preserve native metadata",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/discovery.py",
+      "src/dataset_prototype/real_data.py",
+      "src/dataset_prototype/stream_rasters.py",
+      "src/dataset_prototype/neon.py"
+    ],
+    "tests": [
+      "tests/test_discovery.py",
+      "tests/test_real_data.py",
+      "tests/test_stream_sources.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "STAC metadata, bounded COG windows; NEON normalization pending"
+    ],
+    "dependencies": [
+      "STAC metadata, bounded COG windows; NEON normalization pending"
+    ],
+    "inputs": [
+      "Reviewed ScientificRequest"
+    ],
+    "outputs": [
+      "SourceResource; native evidence"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "Actual Sentinel retrieval retained; no current approved real embedding release"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/discovery.py",
+      "src/dataset_prototype/real_data.py",
+      "src/dataset_prototype/stream_rasters.py",
+      "src/dataset_prototype/neon.py",
+      "tests/test_discovery.py",
+      "tests/test_real_data.py",
+      "tests/test_stream_sources.py"
+    ]
+  },
+  {
+    "component": "MESA transport",
+    "purpose": "Connect external access and metadata infrastructure",
+    "implementation_status": "BLOCKED",
+    "files": [
+      "src/dataset_prototype/adapters.py"
+    ],
+    "tests": [
+      "tests/test_discovery.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Verified deployed transport/schema required"
+    ],
+    "dependencies": [
+      "Verified deployed transport/schema required"
+    ],
+    "inputs": [
+      "External session"
+    ],
+    "outputs": [
+      "SourceResource"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "External methods deliberately unavailable; local MockMESAClient is MOCKED"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/adapters.py",
+      "tests/test_discovery.py"
+    ]
+  },
+  {
+    "component": "Semantic discovery",
+    "purpose": "Separate source statements from concept candidates",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/semantic_discovery.py",
+      "src/dataset_prototype/semantic_resources.py"
+    ],
+    "tests": [
+      "tests/test_semantic_discovery.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Local normalized/native metadata and curated namespace bindings"
+    ],
+    "dependencies": [
+      "Local normalized/native metadata and curated namespace bindings"
+    ],
+    "inputs": [
+      "SourceResource"
+    ],
+    "outputs": [
+      "SourceSemantics; ConceptCandidate"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "No general external term resolver or verified equivalences"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/semantic_discovery.py",
+      "src/dataset_prototype/semantic_resources.py",
+      "tests/test_semantic_discovery.py"
+    ]
+  },
+  {
+    "component": "Semantic landscape and diagnostics",
+    "purpose": "Describe local semantic resources and metadata coverage",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/semantic_benchmark.py",
+      "src/dataset_prototype/semantic_resources.py"
+    ],
+    "tests": [
+      "tests/test_semantic_benchmark.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "86 provisional resource assessments; metadata-only benchmarks"
+    ],
+    "dependencies": [
+      "86 provisional resource assessments; metadata-only benchmarks"
+    ],
+    "inputs": [
+      "Inventory; three source metadata records"
+    ],
+    "outputs": [
+      "Parquet diagnostics; review-only portfolio"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "Depth, potential, diversity, graph-level composition and scientific complementarity unmeasured"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/semantic_benchmark.py",
+      "src/dataset_prototype/semantic_resources.py",
+      "tests/test_semantic_benchmark.py"
+    ]
+  },
+  {
+    "component": "Harmonization recipes",
+    "purpose": "Record scientific mappings and allow-listed plans",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/harmonization.py",
+      "src/dataset_prototype/science.py"
+    ],
+    "tests": [
+      "tests/test_harmonization.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Validated versioned deterministic operations"
+    ],
+    "dependencies": [
+      "Validated versioned deterministic operations"
+    ],
+    "inputs": [
+      "Mappings; reviewed recipe"
+    ],
+    "outputs": [
+      "HarmonizedObservation"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "No universal semantic equivalence; uncertain changes need scientists"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/harmonization.py",
+      "src/dataset_prototype/science.py",
+      "tests/test_harmonization.py"
+    ]
+  },
+  {
+    "component": "Verde / OpenClaw roles",
+    "purpose": "Offer bounded scientific judgments without tools",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/openclaw_backend.py",
+      "src/dataset_prototype/openclaw_runtime.py",
+      "src/dataset_prototype/model_agents.py",
+      "src/dataset_prototype/consensus.py"
+    ],
+    "tests": [
+      "tests/test_openclaw.py",
+      "tests/test_model_agents.py",
+      "tests/test_streaming.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Historical live calls retained; pinned OpenClaw 2026.5.18"
+    ],
+    "dependencies": [
+      "Historical live calls retained; pinned OpenClaw 2026.5.18"
+    ],
+    "inputs": [
+      "Frozen metadata and closed schemas"
+    ],
+    "outputs": [
+      "Proposals; QA; exact prompts and normalized responses"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "Latest real Sentinel proposal vetoed; no live model call in this report"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/openclaw_backend.py",
+      "src/dataset_prototype/openclaw_runtime.py",
+      "src/dataset_prototype/model_agents.py",
+      "src/dataset_prototype/consensus.py",
+      "tests/test_openclaw.py",
+      "tests/test_model_agents.py",
+      "tests/test_streaming.py"
+    ]
+  },
+  {
+    "component": "Evidence and human review",
+    "purpose": "Keep missing evidence and vetoes binding",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/review.py",
+      "src/dataset_prototype/scoped_review.py",
+      "src/dataset_prototype/review_contracts.py"
+    ],
+    "tests": [
+      "tests/test_review.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Six domain specialists plus QA; mandatory human decision"
+    ],
+    "dependencies": [
+      "Six domain specialists plus QA; mandatory human decision"
+    ],
+    "inputs": [
+      "Evidence; frozen recipe"
+    ],
+    "outputs": [
+      "ReviewReport; HumanDecision"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "Expert review and revision workflow remains incomplete"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/review.py",
+      "src/dataset_prototype/scoped_review.py",
+      "src/dataset_prototype/review_contracts.py",
+      "tests/test_review.py"
+    ]
+  },
+  {
+    "component": "JSON backbone and registry",
+    "purpose": "Turn bounded proposals into validated deterministic choices",
+    "implementation_status": "WORKING",
+    "files": [
+      "src/dataset_prototype/decision_ir.py",
+      "src/dataset_prototype/cube_ir.py",
+      "src/dataset_prototype/operations.py"
+    ],
+    "tests": [
+      "tests/test_operation_registry.py",
+      "tests/test_cubedynamics.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Closed operation references and typed contracts"
+    ],
+    "dependencies": [
+      "Closed operation references and typed contracts"
+    ],
+    "inputs": [
+      "RecipeDecision; capability digest"
+    ],
+    "outputs": [
+      "HarmonizationRecipe; ExecutionResult"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "WORKING means local demonstrated contract, not production deployment"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/decision_ir.py",
+      "src/dataset_prototype/cube_ir.py",
+      "src/dataset_prototype/operations.py",
+      "tests/test_operation_registry.py",
+      "tests/test_cubedynamics.py"
+    ]
+  },
+  {
+    "component": "CubeDynamics backend",
+    "purpose": "Execute bounded lazy transformations in external software",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/cubedynamics_backend.py",
+      "src/dataset_prototype/cube_contracts.py",
+      "src/dataset_prototype/cube_specs.py",
+      "src/dataset_prototype/cube_demo.py"
+    ],
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Actual external 0.1.0rc3; seven exposed operations"
+    ],
+    "dependencies": [
+      "Actual external 0.1.0rc3; seven exposed operations"
+    ],
+    "inputs": [
+      "Reviewed xarray/Dask inputs"
+    ],
+    "outputs": [
+      "TransformationResult; bounded values"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "No CRS reprojection or general resampler; MOSAIKS bridge preserves one-band grid"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/cubedynamics_backend.py",
+      "src/dataset_prototype/cube_contracts.py",
+      "src/dataset_prototype/cube_specs.py",
+      "src/dataset_prototype/cube_demo.py",
+      "tests/test_cubedynamics.py"
+    ]
+  },
+  {
+    "component": "Streaming harmonization",
+    "purpose": "Bring bounded source windows directly to encoders",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/streaming.py",
+      "src/dataset_prototype/harmonized_rasters.py",
+      "src/dataset_prototype/stream_contracts.py"
+    ],
+    "tests": [
+      "tests/test_streaming.py",
+      "tests/test_stream_sources.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Generated iterators tested; real access gated before read"
+    ],
+    "dependencies": [
+      "Generated iterators tested; real access gated before read"
+    ],
+    "inputs": [
+      "Approved plan and source windows"
+    ],
+    "outputs": [
+      "HarmonizedRasterPatch; compact hashes"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "No remote throughput benchmark; historical snapshots remain explicit legacy paths"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/streaming.py",
+      "src/dataset_prototype/harmonized_rasters.py",
+      "src/dataset_prototype/stream_contracts.py",
+      "tests/test_streaming.py",
+      "tests/test_stream_sources.py"
+    ]
+  },
+  {
+    "component": "MOSAIKS and verification",
+    "purpose": "Encode harmonized rasters and test numerical usefulness",
+    "implementation_status": "PROTOTYPE",
+    "files": [
+      "src/dataset_prototype/mosaiks.py",
+      "src/dataset_prototype/mosaiks_pipeline.py",
+      "src/dataset_prototype/embedding_dataset.py"
+    ],
+    "tests": [
+      "tests/test_mosaiks.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Generated 32-window run, training-only empirical filters"
+    ],
+    "dependencies": [
+      "Generated 32-window run, training-only empirical filters"
+    ],
+    "inputs": [
+      "Harmonized rasters"
+    ],
+    "outputs": [
+      "Dense features; lineage; held-out diagnostics"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "No independent ecological validation or native LLM interpretation demonstrated"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/mosaiks.py",
+      "src/dataset_prototype/mosaiks_pipeline.py",
+      "src/dataset_prototype/embedding_dataset.py",
+      "tests/test_mosaiks.py"
+    ]
+  },
+  {
+    "component": "Provenance and storage",
+    "purpose": "Trace representations back to observations and decisions",
+    "implementation_status": "WORKING",
+    "files": [
+      "src/dataset_prototype/provenance.py",
+      "src/dataset_prototype/storage.py",
+      "src/dataset_prototype/representations.py"
+    ],
+    "tests": [
+      "tests/test_representations.py",
+      "tests/test_integration_tracks.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Content identities and JSON-LD provenance in offline runs"
+    ],
+    "dependencies": [
+      "Content identities and JSON-LD provenance in offline runs"
+    ],
+    "inputs": [
+      "Sources; decisions; transforms"
+    ],
+    "outputs": [
+      "Representations; provenance records"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "No external MESA registration; window hashes do not cover entire remote assets"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/provenance.py",
+      "src/dataset_prototype/storage.py",
+      "src/dataset_prototype/representations.py",
+      "tests/test_representations.py",
+      "tests/test_integration_tracks.py"
+    ]
+  },
+  {
+    "component": "Science tracks",
+    "purpose": "Keep food/water assumptions separate from shared sources",
+    "implementation_status": "PARTIAL",
+    "files": [
+      "src/dataset_prototype/orchestration.py"
+    ],
+    "tests": [
+      "tests/test_integration_tracks.py"
+    ],
+    "test_status": "PASS (local offline suite)",
+    "examples": [
+      "Configuration and offline independence tests"
+    ],
+    "dependencies": [
+      "Configuration and offline independence tests"
+    ],
+    "inputs": [
+      "Shared immutable sources; track configuration"
+    ],
+    "outputs": [
+      "Track-specific products"
+    ],
+    "contracts": [
+      "See generated docs/reference/contracts.md and source models"
+    ],
+    "known_limitations": [
+      "Independent domain outcomes unvalidated; third track undefined"
+    ],
+    "next_steps": [
+      "Resolve the documented limitation with reviewed evidence"
+    ],
+    "evidence": [
+      "src/dataset_prototype/orchestration.py",
+      "tests/test_integration_tracks.py"
+    ]
+  }
+]

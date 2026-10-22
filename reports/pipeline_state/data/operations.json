@@ -1,0 +1,1093 @@
+[
+  {
+    "operation_id": "unit.convert",
+    "legacy_name": "convert_units",
+    "name": "Fixed unit conversion",
+    "version": "1",
+    "description": "Fixed unit conversion",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_unit": {
+          "type": "string",
+          "enum": [
+            "K",
+            "cm",
+            "degC",
+            "m"
+          ]
+        },
+        "to_unit": {
+          "type": "string",
+          "enum": [
+            "K",
+            "cm",
+            "degC",
+            "m"
+          ]
+        }
+      },
+      "required": [
+        "from_unit",
+        "to_unit"
+      ],
+      "oneOf": [
+        {
+          "properties": {
+            "from_unit": {
+              "const": "degC"
+            },
+            "to_unit": {
+              "const": "K"
+            }
+          }
+        },
+        {
+          "properties": {
+            "from_unit": {
+              "const": "K"
+            },
+            "to_unit": {
+              "const": "degC"
+            }
+          }
+        },
+        {
+          "properties": {
+            "from_unit": {
+              "const": "cm"
+            },
+            "to_unit": {
+              "const": "m"
+            }
+          }
+        },
+        {
+          "properties": {
+            "from_unit": {
+              "const": "m"
+            },
+            "to_unit": {
+              "const": "cm"
+            }
+          }
+        }
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Four explicit unit pairs; no inferred equivalence"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [
+      "degC",
+      "K",
+      "cm",
+      "m"
+    ],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "calibration.scale_offset",
+    "legacy_name": "calibrate",
+    "name": "Documented DN calibration",
+    "version": "1",
+    "description": "Documented DN calibration",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_unit": {
+          "const": "DN"
+        },
+        "to_unit": {
+          "const": "1"
+        },
+        "scale": {
+          "type": "number",
+          "not": {
+            "const": 0
+          }
+        },
+        "offset": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "from_unit",
+        "to_unit",
+        "scale",
+        "offset"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Exact source metadata coefficients; DN to unit 1 only; model proposals always require review"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [
+      "DN",
+      "1"
+    ],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "semantic.rename",
+    "legacy_name": "map_variable",
+    "name": "Reviewed canonical variable name",
+    "version": "1",
+    "description": "Reviewed canonical variable name",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_variable": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "target_variable"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Rename does not establish scientific equivalence"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "quality.filter",
+    "legacy_name": "filter",
+    "name": "Inclusive reviewed bounds",
+    "version": "1",
+    "description": "Inclusive reviewed bounds",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        }
+      },
+      "required": []
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Track-only selection; no inferred plausibility limits"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "quality.missing",
+    "legacy_name": "missing",
+    "name": "Explicit sentinel to missing",
+    "version": "1",
+    "description": "Explicit sentinel to missing",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sentinel": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "sentinel"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "No imputation; downstream encoder rejects null"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "temporal.aggregate.daily_mean",
+    "legacy_name": "temporal_mean",
+    "name": "Duration-weighted daily mean",
+    "version": "1",
+    "description": "Duration-weighted daily mean",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_support": {
+          "const": "daily"
+        }
+      },
+      "required": [
+        "target_support"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Complete nonoverlapping UTC-aligned 86400-second day; not local civil days"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": true,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "spatial.match",
+    "legacy_name": "spatial_match",
+    "name": "Unique coordinate-tolerance match",
+    "version": "1",
+    "description": "Unique coordinate-tolerance match",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "other_asset": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tolerance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "target_support": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "other_asset",
+        "tolerance",
+        "target_support"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "WGS84 degree tolerance and exact interval; not a distance/resampling algorithm"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": true,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "spatial.validate_wgs84",
+    "legacy_name": "normalize_coordinates",
+    "name": "WGS84 identity validation",
+    "version": "1",
+    "description": "WGS84 identity validation",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {},
+      "required": []
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Coordinates already WGS84; no reprojection"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "observation.join_exact",
+    "legacy_name": "join",
+    "name": "Unique exact-support join",
+    "version": "1",
+    "description": "Unique exact-support join",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "other_asset": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "other_asset"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "Exact coordinates/interval and equal support; permitted rights"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "quality.validate_bounds",
+    "legacy_name": "validate",
+    "name": "Explicit numeric bounds",
+    "version": "1",
+    "description": "Explicit numeric bounds",
+    "input_contract": "validated row tuples with source/support lineage",
+    "output_contract": "validated row tuples; HarmonizedObservation validation at executor boundary",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        }
+      },
+      "required": []
+    },
+    "implementation_reference": "dataset_prototype.operations._execute_rows",
+    "scientific_assumptions": [
+      "No bounds means identity validation; no inferred clipping"
+    ],
+    "preconditions": [
+      "typed parameters",
+      "source/target semantics, units, rights and review gates checked"
+    ],
+    "postconditions": [
+      "canonical output and provenance validated"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "core",
+    "backend_version": "registered-allowlist-v3",
+    "upstream_api": null,
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "BATCHED",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": false,
+    "tests": [
+      "tests/test_harmonization.py",
+      "tests/test_operation_registry.py"
+    ],
+    "provenance": "registered implementation identity plus source/recipe/review lineage"
+  },
+  {
+    "operation_id": "cubedynamics.select",
+    "legacy_name": "cubedynamics.select",
+    "name": "Select one documented variable",
+    "version": "1",
+    "description": "Select one documented variable",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "variable_ref": {
+          "const": "request.variable"
+        }
+      },
+      "required": [
+        "variable_ref"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "No implicit CRS transformation or biological equivalence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.apply (fixed xarray variable/band selection)",
+    "changes_values": false,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  },
+  {
+    "operation_id": "cubedynamics.subset",
+    "legacy_name": "cubedynamics.subset",
+    "name": "Select a bounded time/y/x window",
+    "version": "1",
+    "description": "Select a bounded time/y/x window",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "window_ref": {
+          "const": "request.window"
+        }
+      },
+      "required": [
+        "window_ref"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "No implicit CRS transformation or biological equivalence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.apply (fixed xarray isel)",
+    "changes_values": false,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": true,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  },
+  {
+    "operation_id": "cubedynamics.month_filter",
+    "legacy_name": "cubedynamics.month_filter",
+    "name": "Select documented calendar months",
+    "version": "1",
+    "description": "Select documented calendar months",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "months_ref": {
+          "const": "request.months"
+        }
+      },
+      "required": [
+        "months_ref"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "No implicit CRS transformation or biological equivalence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.month_filter",
+    "changes_values": false,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": true,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  },
+  {
+    "operation_id": "cubedynamics.quality_mask",
+    "legacy_name": "cubedynamics.quality_mask",
+    "name": "Apply an explicit aligned quality predicate",
+    "version": "1",
+    "description": "Apply an explicit aligned quality predicate",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mask_ref": {
+          "const": "inputs.quality"
+        },
+        "classes_ref": {
+          "const": "request.allowed_quality_classes"
+        }
+      },
+      "required": [
+        "mask_ref",
+        "classes_ref"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "No implicit CRS transformation or biological equivalence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.apply (fixed xarray where/isin)",
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  },
+  {
+    "operation_id": "cubedynamics.temporal_mean",
+    "legacy_name": "cubedynamics.temporal_mean",
+    "name": "Mean over complete equal-duration intervals",
+    "version": "1",
+    "description": "Mean over complete equal-duration intervals",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "statistic": {
+          "const": "mean"
+        },
+        "support_ref": {
+          "const": "request.target_temporal_support"
+        }
+      },
+      "required": [
+        "statistic",
+        "support_ref"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "Mean is unweighted and requires complete equal-duration interval evidence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.mean",
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": true,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": false,
+    "changes_temporal_support": true,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  },
+  {
+    "operation_id": "cubedynamics.align_time",
+    "legacy_name": "cubedynamics.align_time",
+    "name": "Validate exact labels and known equal temporal support",
+    "version": "1",
+    "description": "Validate exact labels and known equal temporal support",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_ref": {
+          "const": "inputs.reference"
+        },
+        "mode": {
+          "const": "require_exact_support"
+        }
+      },
+      "required": [
+        "target_ref",
+        "mode"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "No implicit CRS transformation or biological equivalence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.align_time",
+    "changes_values": false,
+    "changes_units": false,
+    "changes_spatial_resolution": false,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": false,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  },
+  {
+    "operation_id": "cubedynamics.align_nearest",
+    "legacy_name": "cubedynamics.align_nearest",
+    "name": "Same-CRS nearest spatial sampling; exact time only",
+    "version": "1",
+    "description": "Same-CRS nearest spatial sampling; exact time only",
+    "input_contract": "xarray DataArray/Dataset, explicit time/y/x coordinates, optional band, bound metadata",
+    "output_contract": "xarray object plus TransformationResult; no automatic semantic equivalence",
+    "parameter_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_ref": {
+          "const": "inputs.reference"
+        },
+        "method": {
+          "const": "nearest"
+        }
+      },
+      "required": [
+        "target_ref",
+        "method"
+      ]
+    },
+    "implementation_reference": "dataset_prototype.cubedynamics_backend.CubeDynamicsBackend.execute",
+    "scientific_assumptions": [
+      "Computational feasibility is not scientific validity.",
+      "No implicit CRS transformation or biological equivalence."
+    ],
+    "preconditions": [
+      "exact-recipe human decision",
+      "source/context digest and scientific metadata verified",
+      "bounded input/output graph"
+    ],
+    "postconditions": [
+      "shape, units, CRS and support changes recorded",
+      "lazy values stay lazy unless explicitly materialized"
+    ],
+    "allowed_units": [],
+    "allowed_quantity_kinds": [
+      "explicit reviewed mapping only; no inferred quantity kinds"
+    ],
+    "backend": "cubedynamics",
+    "backend_version": "0.1.0rc3",
+    "upstream_api": "verbs.align_cube",
+    "changes_values": true,
+    "changes_units": false,
+    "changes_spatial_resolution": true,
+    "changes_temporal_resolution": false,
+    "changes_crs": false,
+    "changes_extent": false,
+    "lazy_or_eager": "LAZY / BATCHED; explicit bounded materialization only",
+    "changes_spatial_support": true,
+    "changes_temporal_support": false,
+    "changes_biological_level": false,
+    "requires_human_approval": true,
+    "tests": [
+      "tests/test_cubedynamics.py"
+    ],
+    "provenance": "external package/dependency versions, upstream API, trace, source/recipe/review and window evidence"
+  }
+]

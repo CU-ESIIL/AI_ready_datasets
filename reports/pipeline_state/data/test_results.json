@@ -1,0 +1,24 @@
+{
+  "total": 203,
+  "passed": 203,
+  "failed": 0,
+  "skipped": 0,
+  "by_module": {
+    "test_cubedynamics": 28,
+    "test_discovery": 10,
+    "test_harmonization": 28,
+    "test_integration_tracks": 9,
+    "test_model_agents": 9,
+    "test_mosaiks": 16,
+    "test_openclaw": 10,
+    "test_operation_registry": 40,
+    "test_real_data": 10,
+    "test_representations": 3,
+    "test_review": 12,
+    "test_semantic_benchmark": 6,
+    "test_semantic_discovery": 7,
+    "test_stream_sources": 4,
+    "test_streaming": 11
+  },
+  "coverage": "NOT YET MEASURED"
+}

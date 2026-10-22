@@ -1,0 +1,60 @@
+{
+  "resource_type": {
+    "upper_ontology": 3,
+    "formal_ontology": 39,
+    "relation_ontology": 1,
+    "classification": 4,
+    "controlled_vocabulary": 7,
+    "application_ontology": 5,
+    "semantic_framework": 4,
+    "exchange_standard": 4,
+    "conceptual_model": 2,
+    "metadata_standard": 7,
+    "resource_network": 5,
+    "thesaurus": 2,
+    "historical_effort": 3
+  },
+  "domain": {
+    "foundations": 5,
+    "taxonomy": 3,
+    "biology": 1,
+    "environment": 6,
+    "observations": 6,
+    "traits": 7,
+    "anatomy": 5,
+    "molecular": 5,
+    "behavior": 1,
+    "microbiome": 4,
+    "agriculture": 11,
+    "quantities": 2,
+    "biodiversity": 5,
+    "marine": 4,
+    "interactions": 2,
+    "conservation": 6,
+    "space": 1,
+    "time": 1,
+    "provenance": 2,
+    "infrastructure": 4,
+    "ecology": 5
+  },
+  "era": {
+    "unknown": 38,
+    "2000s": 13,
+    "2020s": 5,
+    "2010s": 24,
+    "pre1990": 1,
+    "1990s": 5
+  },
+  "project_role": {
+    "domain_overlay": 56,
+    "provisional_core": 15,
+    "interoperability": 12,
+    "historical_comparison": 3
+  },
+  "verification_scope": {
+    "registry_metadata": 32,
+    "reference_only": 7,
+    "primary_documentation": 42,
+    "unresolved": 5
+  }
+}
