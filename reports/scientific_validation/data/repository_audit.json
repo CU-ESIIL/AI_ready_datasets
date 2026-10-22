@@ -1,0 +1,2369 @@
+[
+  {
+    "path": ".cache/prototype/index/1eaf238f8e4bae01fe981a7bce96a061ed65d1c3e69ddf304652e9d60829eab0.json",
+    "bytes": 2792,
+    "sha256": "c35d7a359a8e910f0cba8aedacbbc58781b0f4013f343b11283773422da2131a",
+    "headings": []
+  },
+  {
+    "path": ".cache/prototype/index/937fe3874c650e168c6b884edca40b606fb157a9fc0dddf9e56faee351bbde1b.json",
+    "bytes": 79442,
+    "sha256": "d4f4974d4498597831ff1e48c1e1ef584cd3dfca77b05c228444859dfa492489",
+    "headings": []
+  },
+  {
+    "path": ".cache/prototype/index/d9fcb6cc4dd10fae4b9a241510ac17cc51e2983fb7765853218653042e633618.json",
+    "bytes": 2713,
+    "sha256": "b20c3ea61acfeada772e562ff79e1f7d53376eb7bf2d90e1dce4501d2e5d60ac",
+    "headings": []
+  },
+  {
+    "path": ".github/workflows/build-and-push-jupyterlab-image.yml",
+    "bytes": 1320,
+    "sha256": "aa14f467e98edee5b37fcfacad17abf13bc71708e0bd841f32ecccf316b31e10",
+    "headings": []
+  },
+  {
+    "path": ".github/workflows/fetch-template.yml",
+    "bytes": 1003,
+    "sha256": "8c8385973892ad93f08ab171923b1b27fbaab26837d0871e8710c30f8574403f",
+    "headings": []
+  },
+  {
+    "path": ".github/workflows/pages.yml",
+    "bytes": 2098,
+    "sha256": "747c964da701010dd07b6c3e5e089ed33d33b0f9e6ae242ab88f7702fe565cb8",
+    "headings": []
+  },
+  {
+    "path": ".github/workflows/tests.yml",
+    "bytes": 840,
+    "sha256": "866fefe308729fabd7db6a427c7718466af2a48f847fd5a5ad780ffc1df0af5f",
+    "headings": []
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 19436,
+    "sha256": "e6cc88eee3aab00474fd60e2ab2c324e207fd061226259cb2dbcacade42e46da",
+    "headings": [
+      "# Scientific and software governance",
+      "## Operating contract",
+      "## Scientific integrity",
+      "## Integration and execution",
+      "## Science tracks and shared data",
+      "## Data policy",
+      "## Tests and documentation",
+      "## Live data and model-backed roles",
+      "## OpenClaw and Verde runtime",
+      "## Streaming harmonization",
+      "## MOSAIKS representations",
+      "## Review jurisdictions and documentation synchronization",
+      "## Semantic discovery and mapping governance",
+      "## Documentation and benchmark interpretation",
+      "## VERDE model trust and deterministic execution",
+      "## CubeDynamics execution backend"
+    ]
+  },
+  {
+    "path": "CHANGELOG.md",
+    "bytes": 11406,
+    "sha256": "e811d27d7f499dec5a586e891df97e47670cc993a05b8b747c0f560de6a40e14",
+    "headings": [
+      "# Changelog",
+      "## 2026-10-21",
+      "## 2026-10-21 \u2014 Scoped review and research website",
+      "## 2026-10-21 \u2014 Semantic evidence discovery and landscape resource"
+    ]
+  },
+  {
+    "path": "README.md",
+    "bytes": 6010,
+    "sha256": "cfc332e956c1be5a915c2de10d69bbdd230b11f10d792099ff735a2e8e5b31e7",
+    "headings": [
+      "# AI-ready biological and environmental datasets",
+      "## Run offline",
+      "## Work with the modules",
+      "## Live integration status",
+      "## Maintain the documentation",
+      "## External environmental execution backend",
+      "## Visual state report"
+    ]
+  },
+  {
+    "path": "data/fixtures/README.md",
+    "bytes": 738,
+    "sha256": "631fb6566b70cdc05894ea9f85f4fa4dd78545eefd6a4f7623bcee1c8de947ff",
+    "headings": [
+      "# Synthetic fixtures"
+    ]
+  },
+  {
+    "path": "data/fixtures/catalog.json",
+    "bytes": 3040,
+    "sha256": "9892d1d9c0fa1d7e134779399b9ca5bed5ea3d600d26c9d3747f78b5496a5b4c",
+    "headings": []
+  },
+  {
+    "path": "data/fixtures/neon/observations.json",
+    "bytes": 882,
+    "sha256": "31b9022226056431490b9de2aa05ce3c4cf3451a0e0bd4bad0c0ed794a9fbd5b",
+    "headings": []
+  },
+  {
+    "path": "data/fixtures/semantics/README.md",
+    "bytes": 702,
+    "sha256": "f73b99023ed9bdd5324c92595189194830dbb9d541e30f29956844874fa57555",
+    "headings": [
+      "# Generated semantic-discovery fixtures"
+    ]
+  },
+  {
+    "path": "data/fixtures/semantics/concepts.json",
+    "bytes": 777,
+    "sha256": "59eec8296451455cf31999ab2b1f4c8f71d79bfe8d166b6ca07c91c4840cbad6",
+    "headings": []
+  },
+  {
+    "path": "data/fixtures/semantics/sentinel_source.json",
+    "bytes": 2972,
+    "sha256": "7ebafe2de5f96199969fb8ad2af162f5c13cd0f4c8dcf35ae8de0d486dd8f848",
+    "headings": []
+  },
+  {
+    "path": "data/fixtures/sentinel/observations.json",
+    "bytes": 912,
+    "sha256": "d80d9ddfe270539291ea95b32b73d82f995d54f2ebe5af3406a3cc5d121911cc",
+    "headings": []
+  },
+  {
+    "path": "data/semantics/README.md",
+    "bytes": 2128,
+    "sha256": "d68091c6420735f54bd9aa76cd2cce6e9ce0fba9618fd94afe3d573980a41ebf",
+    "headings": [
+      "# Semantic landscape source data"
+    ]
+  },
+  {
+    "path": "data/semantics/assessments.jsonl",
+    "bytes": 112662,
+    "sha256": "5ac37c76fc00a6dc4d4b1634bb5c9a2fc94861033b9d854bb34475e8ca63fe21",
+    "headings": []
+  },
+  {
+    "path": "data/semantics/namespace_bindings.json",
+    "bytes": 982,
+    "sha256": "edcafeaed07886827a8b74f82f867d9dd581677a7ea00dbc0d939d544bc6231a",
+    "headings": []
+  },
+  {
+    "path": "data/semantics/semantic_resources.csv",
+    "bytes": 123177,
+    "sha256": "ff8cfaef3e892de14a620cb75cc2e8415381d7ee70cd13ff26b323974f87f3f0",
+    "headings": []
+  },
+  {
+    "path": "data/semantics/validation/acquisition_plan.json",
+    "bytes": 1232,
+    "sha256": "1915276e9d2a70927a0b008fa9485de56a92870b1880a900b2a51e305e995c05",
+    "headings": []
+  },
+  {
+    "path": "data/semantics/verification_sources.json",
+    "bytes": 9069,
+    "sha256": "fedb4d210c1aa0beda6bd260f01e4263879f0ce4714b0fd18951c97b61d5e843",
+    "headings": []
+  },
+  {
+    "path": "docs/PROTOTYPE_STATUS.md",
+    "bytes": 12977,
+    "sha256": "9f4b371db811efd324b173d1b103a501be2ae9d42cb40048d5464416c5e7c34e",
+    "headings": [
+      "# Current implementation status",
+      "## Semantic discovery and landscape",
+      "## Evidence-bound review and website",
+      "## Metadata consensus and streaming",
+      "## MOSAIKS representation module",
+      "## Working now",
+      "## Mocked",
+      "## Real external integration",
+      "## Future MESA integration",
+      "## OpenClaw and Verde",
+      "## Scientific assumptions",
+      "## Human decisions",
+      "## Science tracks",
+      "## Testing status",
+      "## Current limits",
+      "## Next milestone",
+      "## First live metadata consensus result",
+      "## MOSAIKS verification result",
+      "## Model trust hardening",
+      "## CubeDynamics backend",
+      "## Visual evidence report"
+    ]
+  },
+  {
+    "path": "docs/agents.md",
+    "bytes": 6789,
+    "sha256": "50c8a788376bdaf9dfae5a8fdd795a3c341dd9b449b751bb117ec5503abffbfe",
+    "headings": [
+      "# Bounded agents",
+      "## Metadata consensus and direct streaming",
+      "## Evidence-bound review roles",
+      "## Semantic reasoning permissions",
+      "## Runtime role authority"
+    ]
+  },
+  {
+    "path": "docs/approach.md",
+    "bytes": 4532,
+    "sha256": "260967a182d3d4a89e5cf71151577a8baa1dda2bc15157fe9aa33d2e01965adf",
+    "headings": [
+      "# An evidence-led path from question to dataset",
+      "## 1. Discover observations and their conditions of use",
+      "## AI selects; tested software calculates",
+      "## 2. Make scientific transformations explicit",
+      "## 3. Stream harmonized outputs into representations"
+    ]
+  },
+  {
+    "path": "docs/architecture/current-state.md",
+    "bytes": 5240,
+    "sha256": "95cc821043c49df1a027bb63f797bd71652b84d8033eaca4f4f921b954d08970",
+    "headings": [
+      "# Current-state audit",
+      "## Three scientific stages",
+      "## Contracts, recipes and provenance",
+      "## Observed Sentinel failures",
+      "## Concrete debt and minimal response",
+      "## Tests, tracks and deployment"
+    ]
+  },
+  {
+    "path": "docs/architecture/model-trust.md",
+    "bytes": 13587,
+    "sha256": "289852caca2090062756b8735fc78444be8d59f17a14ab58ea6b3805390a3096",
+    "headings": [
+      "# Deterministic execution and model trust",
+      "## What the model decides, and what software owns",
+      "## JSON recipes are an intermediate representation",
+      "## Closed operation library",
+      "## Consensus and QA remain bounded",
+      "## Failure and review are first-class outcomes",
+      "## Execute with VERDE off",
+      "# Explicit synthetic model replacement; no VERDE, OpenClaw or source-data access.",
+      "# Validate a decision against already-available source/mapping metadata, without a model.",
+      "# Existing no-model fixture executor: review binds the exact approved recipe.",
+      "## Versioning and provenance",
+      "## Current status",
+      "## CubeDynamics is behind the trust boundary"
+    ]
+  },
+  {
+    "path": "docs/architecture.md",
+    "bytes": 7592,
+    "sha256": "eac35ecc949ffe6f77597343d2e8d33a7f96b3d46302748227b9e770be758eed",
+    "headings": [
+      "# Architecture",
+      "## Module boundaries",
+      "## Infrastructure boundaries",
+      "## Storage and streaming",
+      "## Metadata consensus and direct streaming",
+      "## MOSAIKS over harmonized outputs",
+      "## Evidence-bound review boundary",
+      "## Data and semantic-evidence discovery",
+      "## Deterministic backbone and model trust",
+      "## External CubeDynamics execution"
+    ]
+  },
+  {
+    "path": "docs/concepts.md",
+    "bytes": 1699,
+    "sha256": "3262a14c13f0fab166f42cf8ea54cd4e840dc05db6b6e321b1611b0ccf8de874",
+    "headings": [
+      "# Concepts"
+    ]
+  },
+  {
+    "path": "docs/cubedynamics.md",
+    "bytes": 14799,
+    "sha256": "5db9b54f49b1f392b963a09de5005394e78ea51afd8652af3c6e44b92a8075c9",
+    "headings": [
+      "# CubeDynamics execution backend",
+      "## Install the actual external package",
+      "# Use Python 3.12: the pinned CubeDynamics prerelease requires NumPy <2.",
+      "## What is registered",
+      "## Recipe and model decision boundary",
+      "## Data contracts and independent APIs",
+      "# All arguments are already validated application contracts or trusted xarray inputs.",
+      "## Scientific validation precedes computation",
+      "## Lazy plans, bounded batches and materialization",
+      "## Discovery, source access and MESA",
+      "## Transformation results and provenance",
+      "## Examples and honest status",
+      "## Frozen backend consensus"
+    ]
+  },
+  {
+    "path": "docs/data-sources.md",
+    "bytes": 6367,
+    "sha256": "3d8de8b3d342a9d3e405cbaa38d1f204877768d325e22d6c5489fdb63f64d232",
+    "headings": [
+      "# Target data sources",
+      "## Vertical slices and scientific boundaries",
+      "## Fixture policy",
+      "## Semantic evidence to inspect by source"
+    ]
+  },
+  {
+    "path": "docs/data.md",
+    "bytes": 2315,
+    "sha256": "8a88a8ca2f41af74483225a5e0904b60f7c07d54c1308c9b9fd9977772aaa1cf",
+    "headings": [
+      "# Observations retain their identity",
+      "## Sources in the prototype",
+      "## Stream the observation; keep the evidence",
+      "## Accessible does not mean unrestricted"
+    ]
+  },
+  {
+    "path": "docs/development/cubedynamics-audit.md",
+    "bytes": 4594,
+    "sha256": "3e0f73e635642596feb08da916480cfd58c5a4a06842c145be4c2de3eab08ac7",
+    "headings": [
+      "# CubeDynamics capability audit \u2014 2026-10-21",
+      "## Inventory before adapter implementation",
+      "## Dependency boundary",
+      "## Verified execution"
+    ]
+  },
+  {
+    "path": "docs/development/decisions.md",
+    "bytes": 20934,
+    "sha256": "7722fc0e17bd499274b876bef8636c8e1b85b69379d9f4f3401497d242bb9394",
+    "headings": [
+      "# Architectural decisions and repository audit",
+      "## 2026-10-21 \u2014 V0 foundation",
+      "## 2026-10-21 \u2014 First real-data and model boundary",
+      "## 2026-10-21 \u2014 OpenClaw and Verde",
+      "## Metadata control plane and streaming data plane",
+      "## MOSAIKS consumes harmonization outputs",
+      "## 2026-10-21 \u2014 ADR 1: Preserve three independently callable stages",
+      "## 2026-10-21 \u2014 ADR 2: Scientific review statuses are not workflow votes",
+      "## 2026-10-21 \u2014 ADR 3: Jurisdictions and evidence precede synthesis",
+      "## 2026-10-21 \u2014 ADR 4: Calibration and quality are distinct claims",
+      "## 2026-10-21 \u2014 ADR 5: Evidence-based rights and checksum scope",
+      "## 2026-10-21 \u2014 ADR 6: Retain actual model failures",
+      "## 2026-10-21 \u2014 ADR 7: Narrative entry, progressive technical depth",
+      "## 2026-10-21 \u2014 ADR 8: Generate reference from code",
+      "## 2026-10-21 \u2014 Semantic ADR S1: Compose community resources",
+      "## 2026-10-21 \u2014 Semantic ADR S2: Discover evidence before interpretation",
+      "## 2026-10-21 \u2014 Semantic ADR S3: Source-native semantics are provenance",
+      "## 2026-10-21 \u2014 Semantic ADR S4: Labels are insufficient",
+      "## 2026-10-21 \u2014 Semantic ADR S5: Scale is multidimensional",
+      "## 2026-10-21 \u2014 Semantic ADR S6: Support is scientific metadata",
+      "## 2026-10-21 \u2014 Semantic ADR S7: Cross-support derivations need justification",
+      "## 2026-10-21 \u2014 Semantic ADR S8: New concepts are a last resort",
+      "## 2026-10-21 \u2014 Semantic ADR S9: Benchmark metadata without overstating it",
+      "## 2026-10-21 \u2014 Semantic ADR S10: Dataset profiles precede selection",
+      "## 2026-10-21 \u2014 Documentation ADR: Narrative and evidence stay synchronized",
+      "## 2026-10-21 \u2014 Trust ADR T1: Runtime models are not computational authorities",
+      "## 2026-10-21 \u2014 Trust ADR T2: Closed operations, declarative IR",
+      "## 2026-10-21 \u2014 Trust ADR T3: Structure precedes science, neither grants approval",
+      "## 2026-10-21 \u2014 Trust ADR T4: Approved science has no inference dependency",
+      "## 2026-10-21 \u2014 Trust ADR T5: Proposal, validation and approval are distinct evidence",
+      "## 2026-10-21 \u2014 CubeDynamics ADR C1: External primary environmental backend",
+      "## 2026-10-21 \u2014 CubeDynamics ADR C2: Registered references, not runtime Python",
+      "## 2026-10-21 \u2014 CubeDynamics ADR C3: Stream and plan before materialization",
+      "## 2026-10-21 \u2014 CubeDynamics ADR C4: Computation does not justify support changes",
+      "## 2026-10-21 \u2014 CubeDynamics ADR C5: Explicit result and representation boundaries"
+    ]
+  },
+  {
+    "path": "docs/development/documentation-sync-audit.md",
+    "bytes": 3486,
+    "sha256": "14dd544b15d01deceb8159070a26b59ed1bf6ee7109ae3b3e2b39bf52fc54da1",
+    "headings": [
+      "# Documentation synchronization audit \u2014 2026-10-21",
+      "## Baseline inspected before editing",
+      "## Checklist and resolution",
+      "## Reader checks",
+      "## Remaining scientific work"
+    ]
+  },
+  {
+    "path": "docs/development/integrations.md",
+    "bytes": 5567,
+    "sha256": "a9439caf0f1b1d7a5d079fde2830abfc6e2d658dfa5e4bea08799fa031370986",
+    "headings": [
+      "# External integration inspection",
+      "## MESA",
+      "## OpenClaw",
+      "## Representation precedent",
+      "## Live STAC and real model inference \u2014 2026-10-21",
+      "## OpenClaw + Verde adapter \u2014 2026-10-21"
+    ]
+  },
+  {
+    "path": "docs/development/model-trust-audit.md",
+    "bytes": 3861,
+    "sha256": "dc9f8e16b7a30a26708179c13ab486ea33bb668dad136591d21bd9853a45eb93",
+    "headings": [
+      "# Model trust hardening audit \u2014 2026-10-21",
+      "## Inspection before implementation",
+      "## Concrete gaps and resolutions",
+      "## Validation and limits"
+    ]
+  },
+  {
+    "path": "docs/development/semantic-discovery-audit.md",
+    "bytes": 2912,
+    "sha256": "26871eb2f02a2cae1c5fc9693c7fee25b5e25b5f465c8fdc284e8acb129c885c",
+    "headings": [
+      "# Semantic discovery audit",
+      "## Existing boundaries and concrete gap",
+      "## Focused response",
+      "## Verification baseline"
+    ]
+  },
+  {
+    "path": "docs/development/sentinel-review-refactor.md",
+    "bytes": 7802,
+    "sha256": "0194af801766595fdd64878487093364877f59ed7aa53766649d863c404868db",
+    "headings": [
+      "# Sentinel review: learning from a stopped run",
+      "## Before: observed cross-domain review leakage",
+      "## After: additive scoped contracts",
+      "## Actual re-review records",
+      "## Offline Sentinel regression",
+      "## What is still blocked"
+    ]
+  },
+  {
+    "path": "docs/development/website-review.md",
+    "bytes": 5609,
+    "sha256": "f2e22d2e42521eb594ed08dc38dfc6dc833eb107803f69680980da10f1a36070",
+    "headings": [
+      "# Website audit and reader review",
+      "## Before redesign",
+      "## Non-specialist: the first thirty seconds",
+      "## Scientist: the next five minutes",
+      "## Engineer: as much depth as needed",
+      "## Rendered verification",
+      "## Semantic synchronization verification \u2014 2026-10-21",
+      "## Model trust hardening follow-up"
+    ]
+  },
+  {
+    "path": "docs/discovery.md",
+    "bytes": 4007,
+    "sha256": "24063f41ecb8246ccd9faf1e31df023b3ff846fbdc1a84aba6cb6e2cff45356b",
+    "headings": [
+      "# Discovery and Access",
+      "## Discover semantic evidence alongside assets"
+    ]
+  },
+  {
+    "path": "docs/documentation/index.md",
+    "bytes": 3480,
+    "sha256": "66920b618b37cc21040def5a4d1c78b2d4c4bc8fa0ffb530c85748da3a0c6c12",
+    "headings": [
+      "# Documentation",
+      "## Choose a path",
+      "## Semantics: a major project resource",
+      "## The three module boundaries",
+      "## Execution modes",
+      "## Choose your route"
+    ]
+  },
+  {
+    "path": "docs/examples.md",
+    "bytes": 4284,
+    "sha256": "56da20eeb5a22df1ffc4b9a6dbbd7076cc05235c02024d020128aa1166b0126a",
+    "headings": [
+      "# Complete offline example",
+      "## Bounded model decisions, without live inference",
+      "## Real CubeDynamics, generated data",
+      "# Python 3.12; real external dependency, generated data and fixture review only."
+    ]
+  },
+  {
+    "path": "docs/harmonization.md",
+    "bytes": 9357,
+    "sha256": "405a361a6503ef615539dbd9fc78a6029fbc65b9dc764beb33271ae5cc3dcc6d",
+    "headings": [
+      "# Harmonization and review",
+      "## Recipes and QA",
+      "## Human workflow",
+      "## Allow-listed execution",
+      "## Semantic alignment and composition: capability boundaries",
+      "## The recipe as an inspectable intermediate representation",
+      "## Deterministic backbone and model trust",
+      "## External CubeDynamics execution"
+    ]
+  },
+  {
+    "path": "docs/image-credits.md",
+    "bytes": 1647,
+    "sha256": "eda1014daac435b1ac77f6bca849641756785b75d43a970160bcbd67dc836df6",
+    "headings": [
+      "# Image and figure credits",
+      "## Blue Marble 2002",
+      "## Architecture diagrams",
+      "## Historical assets"
+    ]
+  },
+  {
+    "path": "docs/impact.md",
+    "bytes": 2143,
+    "sha256": "a5888a23dc87bc771ff6157f90897c7a1db543cdd68379fef2a092e49987fe6f",
+    "headings": [
+      "# Make scientific preparation inspectable and reusable",
+      "## What success would look like",
+      "## What the prototype establishes today",
+      "## Questions we still need to answer"
+    ]
+  },
+  {
+    "path": "docs/index.md",
+    "bytes": 10577,
+    "sha256": "6b764260553185ea70151f2c76c380feef71e142a819a193ca5130ff53e92b93",
+    "headings": [
+      "# From environmental observations to AI-ready science",
+      "## Data can be accessible and still be difficult to use together",
+      "## Many ways to describe the living world",
+      "## Question \u2192 discover \u2192 understand \u2192 harmonize \u2192 represent \u2192 synthesize",
+      "## Bring data into relation without erasing its context",
+      "## Discover what the source says its data mean",
+      "## A landscape of complementary meanings",
+      "## Which systems and datasets work well together?",
+      "## Shared infrastructure, independent scientific questions",
+      "## A stopped run is a useful result",
+      "## Toward reusable, inspectable scientific datasets",
+      "## Stream first, transform only what is needed",
+      "## AI chooses among tested scientific operations",
+      "## Trust comes from inspectable decisions"
+    ]
+  },
+  {
+    "path": "docs/mosaiks-embeddings.md",
+    "bytes": 11087,
+    "sha256": "f722bcdfcef49188b361306335a9531611e52b852348162b50e7c5fd740ee2b1",
+    "headings": [
+      "# MOSAIKS from harmonization outputs",
+      "## Raster output contract",
+      "## MOSAIKS implementation",
+      "## AI-ready output and verification sets",
+      "## Commands",
+      "## Verification result \u2014 2026-10-21",
+      "## External CubeDynamics execution"
+    ]
+  },
+  {
+    "path": "docs/openclaw-verde.md",
+    "bytes": 8562,
+    "sha256": "9f6bfdc7cb21a7bce9390b4154a1b38905d259fe1507f4a3800c2834036d6453",
+    "headings": [
+      "# OpenClaw with the Verde API",
+      "## Runtime boundary",
+      "## Start, inspect, and use",
+      "## Compatibility findings",
+      "## Evidence and limits",
+      "## Verified live result \u2014 2026-10-21",
+      "## Metadata specialists and context budget",
+      "## Deterministic backbone and model trust"
+    ]
+  },
+  {
+    "path": "docs/pipeline-state-report.md",
+    "bytes": 1235,
+    "sha256": "82228ffb69f4063155295e5209836f3fcdc43939f1b1b5904d933d1b5160a0e4",
+    "headings": [
+      "# Pipeline state report"
+    ]
+  },
+  {
+    "path": "docs/provenance.md",
+    "bytes": 7924,
+    "sha256": "24b529253dbfb90d6639e1bf32d89213e3f076de6096891c1dcb160800a25fef",
+    "headings": [
+      "# Representation provenance",
+      "## Records to preserve",
+      "## Scientific and review boundaries",
+      "## Implementation status",
+      "## Metadata consensus and direct streaming",
+      "## Representation-to-source inspection",
+      "## Semantic evidence is part of the audit trail",
+      "## Deterministic backbone and model trust",
+      "## External CubeDynamics execution"
+    ]
+  },
+  {
+    "path": "docs/real-data-agents.md",
+    "bytes": 9078,
+    "sha256": "7b29db168e43bd4a2a3dccf968bfa0ef09129e7a73cb2dd36469cc18e14c24f4",
+    "headings": [
+      "# Real data and model-backed agents",
+      "## Verified live on 2026-10-21",
+      "## Acquire a small real sample",
+      "## What remains unchanged scientifically",
+      "## License evidence",
+      "## Agent boundary and human review",
+      "## NEON: implemented access boundary, token required",
+      "# Select one exact small CSV name from the provider response, then:",
+      "## Next scientific step",
+      "## Metadata consensus and direct streaming"
+    ]
+  },
+  {
+    "path": "docs/reference/contracts.md",
+    "bytes": 16498,
+    "sha256": "21df59cca78dff9c84b9be9430e8f9e648aede1ddb287922ce4d43a4c9eaec85",
+    "headings": [
+      "# Typed contract reference"
+    ]
+  },
+  {
+    "path": "docs/reference/extending.md",
+    "bytes": 4682,
+    "sha256": "05485bd86f7279ba79a5b4c70a8ebe254b4e22545562a15378c37a401b77952f",
+    "headings": [
+      "# Extend the prototype without changing the science silently",
+      "## Add a source",
+      "## Add a deterministic scientific operation",
+      "## Add a representation",
+      "## Add a science track",
+      "## Keep the reference synchronized"
+    ]
+  },
+  {
+    "path": "docs/reference/modules.md",
+    "bytes": 11592,
+    "sha256": "fa69c9edf668329082b364a3b1f72b3948d4e0cdb26c9e369921c19f69988155",
+    "headings": [
+      "# Implementation module map"
+    ]
+  },
+  {
+    "path": "docs/reference/schemas/BackendOperation.json",
+    "bytes": 858,
+    "sha256": "4056d689d827aeeac269f9a2f6178aa08b93c96391f1eff9b4152558c8ee4a49",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/BenchmarkConfig.json",
+    "bytes": 861,
+    "sha256": "d9a4dc5882d2a7b8310acff637940e3b3287a91d7bb713647a1ca8c04616c2c9",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/CapabilitySpace.json",
+    "bytes": 5306,
+    "sha256": "8185c65b22324e8de0b56c7515a196039b23f157cafb2802c731bfc92cefd1ad",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ConceptCandidate.json",
+    "bytes": 11002,
+    "sha256": "54021f8f525e0beeae55f617eec1087ff0d630af4e87cc97a27e1c6e21625e8b",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ConceptRecord.json",
+    "bytes": 1312,
+    "sha256": "f74dd9c33020351f204f56273174aaeb6ef09769ece135d2b18e32952fab21da",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ConsensusReport.json",
+    "bytes": 2683,
+    "sha256": "1698cbff2ebd54870ca21db388c6bbf20ac60ecdadd85f19f3b520761e7a766e",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/CubeCapabilitySpace.json",
+    "bytes": 1954,
+    "sha256": "da6ee5e3bf2635a0889e8a6cd4a94cc3a3bf4b5fb6b0a627d922fab523830b69",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/CubeConfiguration.json",
+    "bytes": 6979,
+    "sha256": "aff0adf53df00072c5498d99b6f77e6f4cb3410ce86d6601f10f4404ba9c98a8",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/CubeInput.json",
+    "bytes": 2079,
+    "sha256": "a95e8d412ebbbe01ab768e53a0e39fb2fdcf75217f027860801f9feb200af763",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/DecisionRecipeDraft.json",
+    "bytes": 6104,
+    "sha256": "500a62a8a4a9b4fa461a9caab975a4d135eb7d253d1d632a868b102be01cf4d7",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/DiscoveryResult.json",
+    "bytes": 22588,
+    "sha256": "935fc448e407bf9dc20b528567d9a7fde3b927c6d83685a4e33c9730a24fde87",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/EncoderSpec.json",
+    "bytes": 1127,
+    "sha256": "b78ea2bb83dd960e6253717ea861d19f598bf769d3e421a19b93a7248534347d",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/Evidence.json",
+    "bytes": 1294,
+    "sha256": "55b26ccc19b7c8422ab7bd77b91ad9705089a3aa99153e1073491fc06ff65871",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ExecutionResult.json",
+    "bytes": 16562,
+    "sha256": "264e933e07f23f4c1e5d8786dc9b19a89224c55cb03dd522ee371a2bcdb5860d",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/HarmonizationRecipe.json",
+    "bytes": 12412,
+    "sha256": "3a3a1f93cf25dfca6fd25d058d5559133bd9a111e14171c9c6228896b22acc85",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/HarmonizedObservation.json",
+    "bytes": 41674,
+    "sha256": "128cccbc418525e2e64c25190554bb8564f67afae96fe89b46d706cd6469b3b0",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/HumanDecision.json",
+    "bytes": 831,
+    "sha256": "04c4dbbb4fdcd1fede1b15648fa6cde7f4f515020142fb344ec4c05eeba63299",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/MOSAIKSSpec.json",
+    "bytes": 2171,
+    "sha256": "d464ddc371a2e649bad53c6b051581f23b1f19bb80d34cf148ed1736189ace41",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ModelDecisionProvenance.json",
+    "bytes": 1304,
+    "sha256": "361e87fc1b4acc229e802a7b24b21a18a236e4633b528ec1dcc6654c48283411",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/NamespaceBinding.json",
+    "bytes": 628,
+    "sha256": "575478d34556e1642c4276a5f2b4d1d9f4548332dff856e9e333636a7b2e9f01",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/OperationDefinition.json",
+    "bytes": 4412,
+    "sha256": "0d66cbacd177709c34eca842e4ea78d6a95c2c05bdd37b8a718b97c88c9282e2",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ParameterizeDecision.json",
+    "bytes": 1535,
+    "sha256": "b94e4f7142fbc963eba6cc92f8ef00032c4189e2ae6cbfb629b46ed5bb93b962",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ProvenanceRecord.json",
+    "bytes": 38475,
+    "sha256": "709732a90797d4db340baba5b95df68fb202dcc857c85bf77df2dfbd7592d693",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/QASynthesis.json",
+    "bytes": 1111,
+    "sha256": "f92c17516789e7aedefa267e958f466a59fa34575dda993504a99d9e2fd5923d",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/RasterContext.json",
+    "bytes": 57365,
+    "sha256": "5cbffd794de1089afc04022e8c7633871b7e3146e300419097c2198e3ecc525b",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/RasterLayout.json",
+    "bytes": 642,
+    "sha256": "e70ff54674c83d0eb3552fd89c0332a952e2bc1dd3425bde385ced0a0ffc353d",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/RecipeDecision.json",
+    "bytes": 3993,
+    "sha256": "5531a26477b950cebec807eb52ac161b5a010a33102697b0a86ca056a7ab0f46",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/Representation.json",
+    "bytes": 39896,
+    "sha256": "1beddf9303d3c52f308669bf208487106132c7f59165d5a09594608899a0c6ec",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ResourceAssessment.json",
+    "bytes": 2835,
+    "sha256": "3d5b3855af26b79d76d432a0b444ddc33da58c1d1139cb1c258b019475a38160",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ResourceGuards.json",
+    "bytes": 1033,
+    "sha256": "0d5f1033374308d9d58f004b3bce2de8e5274758be6eef34b8810b14fca09c2a",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ReviewBundle.json",
+    "bytes": 34545,
+    "sha256": "88ccfad18dbc4fe301dc6d56efb468ff8dffe2d385d5f3e6511da1fc9ba6e2e0",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ReviewFinding.json",
+    "bytes": 2342,
+    "sha256": "f838ea0b3bd6f4a6b21ab96dfa0671520993b3cd99b57ecf9d2def8e2bb26f3a",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ReviewReport.json",
+    "bytes": 7479,
+    "sha256": "4fb27b6fae2bcf0e46ab677a31393b44284b967a2894c9e981dcf9867d24e338",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/RunManifest.json",
+    "bytes": 1462,
+    "sha256": "39e018ff41457fabeb53c9cce992e1e8d142a9b49f0284cd18c932a74f28078c",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/ScientificRequest.json",
+    "bytes": 2096,
+    "sha256": "f9ecdeeefb52d52f77012632d2053ab21138621897047b5631f33158b45992d1",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SelectDecision.json",
+    "bytes": 680,
+    "sha256": "85ea7633346d006ffbefab9ddd20e606cb1d5096c1efc1c5d32c3152d5c794db",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SemanticEvidence.json",
+    "bytes": 7801,
+    "sha256": "990c075c6a4d050a1cefa6e890517699c3c3548eb593ecf320b2604a226adfa9",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SemanticMapping.json",
+    "bytes": 2765,
+    "sha256": "e56b46bbe3bc6a35e07301e409e2da54159b70370d5ddcd5b13ea7a284c90331",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SemanticMappingProposal.json",
+    "bytes": 1300,
+    "sha256": "81c37f5806b331b258b86aea53e3756bdcc1ae1fb280351834a53747c0e10a20",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SemanticResource.json",
+    "bytes": 5721,
+    "sha256": "c9f1a3511c2433f0e534ecc4337ad36cb29a2b8cda5b2c63ee7d57463d818bf3",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SourceResource.json",
+    "bytes": 20179,
+    "sha256": "44c9e97519c80de1e0fee6f54d97c1552be9fafa50821b352cf59a47d19fea30",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SourceSemantics.json",
+    "bytes": 12196,
+    "sha256": "506f35d96936538f39b845749e07081e48958c443837fe080591cfea94b317e9",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/SpecialistReview.json",
+    "bytes": 3339,
+    "sha256": "a4b4b5b3fed9490af1a97f016a1ea633a75d96508b5f901d89f8bca929460c5e",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/StreamPlan.json",
+    "bytes": 24827,
+    "sha256": "a7fe69b99e5c3a0a7f7c5f5e3124b6eed3e81f874c8b408fa255c77e9153aa73",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/TransformationChanges.json",
+    "bytes": 1194,
+    "sha256": "9c31a0704b364e4bcacad9926503c86718249f3bb53964af648d285ba848b15a",
+    "headings": []
+  },
+  {
+    "path": "docs/reference/schemas/TransformationResult.json",
+    "bytes": 3897,
+    "sha256": "456e487821a2416d5a43d5e61ccb47b5eb8e2b7259805ba9a9645535719b0e43",
+    "headings": []
+  },
+  {
+    "path": "docs/representations.md",
+    "bytes": 3906,
+    "sha256": "655e151144eab5fec25211ef643bc1be4f46d096fff7cacb0ed5cf028124f130",
+    "headings": [
+      "# Representation generation",
+      "## Metadata consensus and direct streaming",
+      "## MOSAIKS over harmonized outputs",
+      "## Scientific meaning precedes embedding",
+      "## Deterministic backbone and model trust"
+    ]
+  },
+  {
+    "path": "docs/review/index.md",
+    "bytes": 5485,
+    "sha256": "42cf8ac14d5347300cd8209bcd490195451861739d495cfef2fc69ef5af77468",
+    "headings": [
+      "# Evidence-bound scientific review",
+      "## Reviewer jurisdictions",
+      "## Evidence and findings",
+      "## Deterministic synthesis",
+      "## Run a metadata review",
+      "## Scientific product levels"
+    ]
+  },
+  {
+    "path": "docs/science.md",
+    "bytes": 2870,
+    "sha256": "5779ab3a1aa182fa35c20e6df2479894c7e0ffa279dbe81e8fe67c9e51aebb35",
+    "headings": [
+      "# Shared observations, independent science",
+      "## Food security",
+      "## Water security",
+      "## A deliberately open third track",
+      "## What would count as scientific verification?",
+      "## Semantics serves synthesis science"
+    ]
+  },
+  {
+    "path": "docs/semantics/assessments.jsonl",
+    "bytes": 112662,
+    "sha256": "5ac37c76fc00a6dc4d4b1634bb5c9a2fc94861033b9d854bb34475e8ca63fe21",
+    "headings": []
+  },
+  {
+    "path": "docs/semantics/benchmark.md",
+    "bytes": 6666,
+    "sha256": "868d467869343803b937a00b028a56889093f1e0b3ee0a7f90c4e4a05e544e15",
+    "headings": [
+      "# Semantic benchmark: project metadata diagnostics",
+      "## Run offline",
+      "## Exact output contracts",
+      "## Scoring formulas",
+      "## Reproducibility and limits",
+      "## Retained-source run from this development pass",
+      "## Read the diagnostics in context"
+    ]
+  },
+  {
+    "path": "docs/semantics/biological-organization.md",
+    "bytes": 3312,
+    "sha256": "7831fe47677b763429304492a9ee3aee84e81b5a8e1553496aa43d56ed60616e",
+    "headings": [
+      "# Biology has intersecting hierarchies",
+      "## The arrows mean different things",
+      "## Other intersecting organizations",
+      "## What this means for harmonization"
+    ]
+  },
+  {
+    "path": "docs/semantics/comparison.md",
+    "bytes": 14665,
+    "sha256": "0528246be82310eed80152e7f2c0f97a43ecf4c446622674b174cbbeae8fb94e",
+    "headings": [
+      "# Semantic resource comparison",
+      "## Compare unlike systems with care",
+      "## Diagnostic benchmark"
+    ]
+  },
+  {
+    "path": "docs/semantics/dataset-benchmarking.md",
+    "bytes": 5411,
+    "sha256": "454ee3520adcb2fa4c25d9cb50d952a973c2c77ce58892b67701fcd6f5f38e8e",
+    "headings": [
+      "# Dataset benchmarking: evidence for useful synthesis",
+      "## Three questions, three profiles",
+      "## Ontology leverage is a profile",
+      "## Best for which purpose?",
+      "## Pairs reveal what individual datasets cannot",
+      "## Selecting a flagship: proposed decision process"
+    ]
+  },
+  {
+    "path": "docs/semantics/distinctions.md",
+    "bytes": 3235,
+    "sha256": "20c92a16350c692c6355e34a1c83ecb01b2a8192d6574cd3cf268a1750c80a60",
+    "headings": [
+      "# Distinctions that protect scientific meaning"
+    ]
+  },
+  {
+    "path": "docs/semantics/gaps.md",
+    "bytes": 2624,
+    "sha256": "e692e62930f46715f798ae83f2b25315be9864ce4c05f8a2912ab763ebf24082",
+    "headings": [
+      "# Semantic gaps and open research",
+      "## Describe a thing versus justify a transformation",
+      "## What must be compared",
+      "## Continued literature review"
+    ]
+  },
+  {
+    "path": "docs/semantics/glossary.md",
+    "bytes": 48605,
+    "sha256": "d4d5811609db044296a44e0cc1edf0bf3462531a862a292b4c176885af904447",
+    "headings": [
+      "# Glossary",
+      "## Find a term",
+      "## Semantic infrastructure",
+      "## Biological organization",
+      "## Biological characteristics",
+      "## Observation and measurement",
+      "## Scale and support",
+      "## Quantitative semantics",
+      "## Provenance and harmonization",
+      "## Benchmark interpretation"
+    ]
+  },
+  {
+    "path": "docs/semantics/history.md",
+    "bytes": 4126,
+    "sha256": "fe6ed433733772b01892e1dd344acc4e6e3e6103ca7c4b58e28291c2502dab11",
+    "headings": [
+      "# Overlapping histories of semantic infrastructure",
+      "## Selected documented milestones",
+      "## What we inherit"
+    ]
+  },
+  {
+    "path": "docs/semantics/index.md",
+    "bytes": 3345,
+    "sha256": "670afa5bbac5f5980f0b20e5e505a0cf73a5bff1d08c9925d64900fcd0287b89",
+    "headings": [
+      "# Discover meaning before interpreting it",
+      "## Start with a question",
+      "## Three stages, different authorities",
+      "## Compare systems and datasets"
+    ]
+  },
+  {
+    "path": "docs/semantics/landscape.md",
+    "bytes": 211444,
+    "sha256": "ce156eee6b3cb575a4c7d26ecc169f7c0ce11daf5fe1df6b3068f5b369418887",
+    "headings": [
+      "# Ontology and semantic-resource landscape",
+      "## Master inventory",
+      "## Resource details, limitations and evidence"
+    ]
+  },
+  {
+    "path": "docs/semantics/namespace_bindings.json",
+    "bytes": 982,
+    "sha256": "edcafeaed07886827a8b74f82f867d9dd581677a7ea00dbc0d939d544bc6231a",
+    "headings": []
+  },
+  {
+    "path": "docs/semantics/observation.md",
+    "bytes": 2554,
+    "sha256": "234f7e8daf2222bb7153f93ec927ff3b9b27035dcbf9b5efc457d18184c46b7d",
+    "headings": [
+      "# Observation and measurement",
+      "## Compare models without declaring them equivalent",
+      "## Compose a variable's meaning",
+      "## Preserve the source model"
+    ]
+  },
+  {
+    "path": "docs/semantics/ontology-benchmarking.md",
+    "bytes": 4967,
+    "sha256": "f82c0a858b76ef9e04d2e4e5e2fe8b0f69d55a3b64ff07b96e71a8c851c19670",
+    "headings": [
+      "# Ontology benchmarking: what meaning can we describe?",
+      "## Breadth, depth and composition",
+      "## Does coverage saturate?",
+      "## Canonical observations: proposed tests"
+    ]
+  },
+  {
+    "path": "docs/semantics/pipeline.md",
+    "bytes": 6164,
+    "sha256": "df8f5e3d35cca556da503371464a2d68200dab50753f35acf932e379c6588e0b",
+    "headings": [
+      "# Semantic evidence in the pipeline",
+      "## Input and output",
+      "## Evidence types and candidate bases",
+      "## Semantic-resource access",
+      "## Sentinel regression",
+      "## Module 2 and Module 3 remain separate",
+      "## Deterministic backbone and model trust"
+    ]
+  },
+  {
+    "path": "docs/semantics/profile.md",
+    "bytes": 3100,
+    "sha256": "9ecdfeb4de36a7fa8e37f3be9894baeb0a69062a7a352cceb65545199c643311",
+    "headings": [
+      "# An evolving semantic profile",
+      "## Complementary responsibilities",
+      "## Domain overlays"
+    ]
+  },
+  {
+    "path": "docs/semantics/review-template.md",
+    "bytes": 1512,
+    "sha256": "81b008cc1d3176a5e0a44818974f21a0c2d808530ff187bc9181c6c20d482d54",
+    "headings": [
+      "# Semantic comparison review template"
+    ]
+  },
+  {
+    "path": "docs/semantics/review-workflow.md",
+    "bytes": 4842,
+    "sha256": "c53d232120aaf471dda2b62be9758e537614a48ff4f5416406238da304a60a19",
+    "headings": [
+      "# Human review of semantic relationships",
+      "## Comparison procedure",
+      "## Record a proposed relationship precisely",
+      "## Do we need a new concept?",
+      "## Review the inventory itself"
+    ]
+  },
+  {
+    "path": "docs/semantics/scale-support.md",
+    "bytes": 2657,
+    "sha256": "6806f52b8ee1b36217faf5233f142c5fcf8674bf4df6b581b0e2293016afb1a6",
+    "headings": [
+      "# Scale and support are first-class scientific properties",
+      "## Spatial distinctions",
+      "## Temporal distinctions",
+      "## Transformations require justification"
+    ]
+  },
+  {
+    "path": "docs/semantics/semantic_resources.csv",
+    "bytes": 123177,
+    "sha256": "ff8cfaef3e892de14a620cb75cc2e8415381d7ee70cd13ff26b323974f87f3f0",
+    "headings": []
+  },
+  {
+    "path": "docs/semantics/semantic_review_template.yaml",
+    "bytes": 1044,
+    "sha256": "042c73f9f447e5e4258305fa1281f867b00d0f7bf74b3e6814e2f0f39b3dd13e",
+    "headings": [
+      "# Module 2 relation code, not approval or arbitrary executable operation.",
+      "# Each entry: type, source, location, statement, content_digest.",
+      "# This unfilled template is not an approved mapping or executable recipe."
+    ]
+  },
+  {
+    "path": "docs/semantics/verification_sources.json",
+    "bytes": 9069,
+    "sha256": "fedb4d210c1aa0beda6bd260f01e4263879f0ce4714b0fd18951c97b61d5e843",
+    "headings": []
+  },
+  {
+    "path": "docs/semantics/why-semantics.md",
+    "bytes": 2172,
+    "sha256": "c4774db920ce2425546c9cfa26a67f2d3872b346e03f41125a4752e04d12dcc6",
+    "headings": [
+      "# Why semantics matter",
+      "## Sources already carry useful meaning",
+      "## Preserve useful variety",
+      "## What a successful mapping must explain"
+    ]
+  },
+  {
+    "path": "docs/streaming-harmonization.md",
+    "bytes": 11820,
+    "sha256": "759483d2132da001eeae45f932e5b2907d2feb7afee01b5715c942a918006386",
+    "headings": [
+      "# Metadata consensus and streaming embeddings",
+      "## Legacy specialist dialogue",
+      "## Evidence-bound review before real execution",
+      "## Access and embedding execution",
+      "## Commands",
+      "## Live verification \u2014 2026-10-21",
+      "## Deterministic backbone and model trust",
+      "## External CubeDynamics execution"
+    ]
+  },
+  {
+    "path": "docs/testing.md",
+    "bytes": 7294,
+    "sha256": "f6652723393a8c7f84571fe2aa0808fcae8072d8a8131255bd9a3c388cb48d2c",
+    "headings": [
+      "# Testing",
+      "## Metadata consensus and direct streaming",
+      "## MOSAIKS over harmonized outputs",
+      "## Scoped review and documentation checks",
+      "## Semantic discovery and diagnostic benchmark",
+      "## Model trust tests",
+      "## CubeDynamics integration tests"
+    ]
+  },
+  {
+    "path": "docs/tracks.md",
+    "bytes": 1908,
+    "sha256": "23a6acfc2a123e8cdaf562ca57330bba741ff3e6fc744603fc6e62662a09e5eb",
+    "headings": [
+      "# Science tracks",
+      "## Add a track"
+    ]
+  },
+  {
+    "path": "examples/real/sentinel_request.json",
+    "bytes": 524,
+    "sha256": "ce702b50572aa5b3f7db5a994bc82ac843a8e7639e99e78cb493d7b04fc3ca4c",
+    "headings": []
+  },
+  {
+    "path": "mkdocs.yml",
+    "bytes": 4187,
+    "sha256": "9fb8ba4f0315e59e005001da02b6af319e081674433d155df6c14e9ab706393a",
+    "headings": []
+  },
+  {
+    "path": "outputs/semantic_benchmark/recommended_portfolio.json",
+    "bytes": 1858,
+    "sha256": "3cea54c6648b65cba66544064c7ada2f0aac3bf3133a311e0cac6b45de2cbce0",
+    "headings": []
+  },
+  {
+    "path": "outputs/semantic_benchmark/run_manifest.json",
+    "bytes": 7745,
+    "sha256": "02cc57cefee93998085c678ff1821ca7d6e8f0ee15a22b448be79972a7bc6c5e",
+    "headings": []
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 790,
+    "sha256": "1ff137e975b78fa2e7a632b4a479083cbc03127d1a1195d308402cbd1c81faa9",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/README.md",
+    "bytes": 3400,
+    "sha256": "a98892589ba8eb66fd6e0a274d22efc774265058bbde7115089efe8a6221b3cb",
+    "headings": [
+      "# Pipeline state report \u2014 21 October 2026",
+      "## Rebuild from the retained evidence snapshot",
+      "## Refresh the audit (explicit local historical inputs required)",
+      "## Interpretation and scope"
+    ]
+  },
+  {
+    "path": "reports/pipeline_state/audit.py",
+    "bytes": 12083,
+    "sha256": "e0c3a792adf5bbd64d0d370db4918b9a0ec9984ccd9b1de91571d8200e4d7355",
+    "headings": [
+      "def read(p):return json.loads((ROOT/p).read_text())",
+      "def save(name,obj):",
+      "def main():"
+    ]
+  },
+  {
+    "path": "reports/pipeline_state/build_report.py",
+    "bytes": 62637,
+    "sha256": "b24622e59e838276a48e45cd21721a22012c188a8c787369716ad682f7f75f17",
+    "headings": [
+      "def fig(name,draw):",
+      "def box(ax,x,y,w,h,label,fc=GREEN,fs=11):",
+      "def arrow(ax,a,b,color=GREEN):ax.add_patch(FancyArrowPatch(a,b,arrowstyle='-|>',mutation_scale=12,color=color,lw=1.5))",
+      "def chain(labels,columns=2,connect=True):",
+      "def horizontal_bars(values,xlabel='Number of records',color=GREEN):",
+      "def page(section,title,deck,figure,takeaway,caption,body,evidence,kind='PROJECT RESULT'):",
+      "# 01 cover is rendered separately.",
+      "# 02\u201305: complete story before technical detail.",
+      "def problem_draw(f,ax):",
+      "def architecture(f,ax):",
+      "def maturity(f,ax):",
+      "# Source boundaries.",
+      "# Meaning and scale.",
+      "def scales(f,ax):",
+      "# Review / IR.",
+      "# Registry.",
+      "def opmatrix(f,ax):",
+      "def lazytest(f,ax):",
+      "# Actual retained value transformation (illustrative calculation, no approval).",
+      "def calibrated(f,ax):",
+      "# Generated demonstration actual outputs.",
+      "def splitfig(f,ax):",
+      "def performance(f,ax):",
+      "# Ontology diagnostics.",
+      "def breadth(f,ax):",
+      "# Explicit inventory dependency graph only, no inference from scope.",
+      "def composition(f,ax):",
+      "def overlap(f,ax):",
+      "def accumulation(f,ax):",
+      "def gaps(f,ax):",
+      "# Dataset diagnostics.",
+      "def profiles(f,ax):",
+      "def quadrants(f,ax):",
+      "def datasetnetwork(f,ax):",
+      "def datasetpairs(f,ax):"
+    ]
+  },
+  {
+    "path": "reports/pipeline_state/data/annotated_recipe.json",
+    "bytes": 3153,
+    "sha256": "f971fbbc7916505ae00cf4af28758f7a8bbf8dc2e0d8fc7ec089f019c59ab4b0",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/benchmark_tables.json",
+    "bytes": 1300181,
+    "sha256": "47319329be4ffd7fe5648ee2894486db816f02b864de2bd8c716d49fa8aac293",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/component_inventory.json",
+    "bytes": 16279,
+    "sha256": "7d3f52cf0c7e5c58b11ccc9947ce31712d6d64f4026abc6c3bd050eaa46024f5",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/embedding_manifest.json",
+    "bytes": 1326,
+    "sha256": "b366ac23ccd46486aef90aac3d5bbcab102cca0389174eca6de4d28611891ded",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/evidence_counts.json",
+    "bytes": 313,
+    "sha256": "a4678eaf78d3a7b3b4d85fed05059861f30b051048b6b4902ab2ae616358201d",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/inventory_counts.json",
+    "bytes": 1219,
+    "sha256": "55bb2b9a9eabdbb9b6a77982304802ddf06c326bd82cf2255ff4605386d1a41d",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/inventory_relationships.json",
+    "bytes": 2465,
+    "sha256": "955e8d52b25cb89a442f92d10da289799eff35448bb875342eb3fe426fe3289a",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/metrics.json",
+    "bytes": 4039,
+    "sha256": "036e071b388ab8b78bcdf6eaa51034931eeac6114ebe775ba8ac9e2b90282748",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/operations.json",
+    "bytes": 35796,
+    "sha256": "0b637ef14a05cd1fc3aaf50d2c6ad731ccefcd74a9967aa7a8201c909a6a0770",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/page_inventory.json",
+    "bytes": 4124,
+    "sha256": "e8f9ce289c6b1891c62dc8b5d186b4eecf2ff5f6f4352770bb99134675aa0aaa",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/portfolio.json",
+    "bytes": 1858,
+    "sha256": "3cea54c6648b65cba66544064c7ada2f0aac3bf3133a311e0cac6b45de2cbce0",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/report_qa.json",
+    "bytes": 706,
+    "sha256": "66b0794bbb537ba12195bb182f7e30e768c40e6ca9b78c4a07a72aeecba6c2c2",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/resource_assessments.jsonl",
+    "bytes": 112662,
+    "sha256": "5ac37c76fc00a6dc4d4b1634bb5c9a2fc94861033b9d854bb34475e8ca63fe21",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/review_summary.json",
+    "bytes": 12690,
+    "sha256": "d6a82a7813a5ba0bf17bc38c46b751be226b4e83498dc9810a1316b4de6a8be9",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/run_manifest.json",
+    "bytes": 20282,
+    "sha256": "3bbf0335287b3726f5d4857dd408102ae478464a470452bf34f7bcf47587dcdb",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/semantic_resources.csv",
+    "bytes": 123177,
+    "sha256": "ff8cfaef3e892de14a620cb75cc2e8415381d7ee70cd13ff26b323974f87f3f0",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/sentinel_example.json",
+    "bytes": 1246,
+    "sha256": "73313e86b2b99b32a50a9ec80791a70964947a9c2a3179ea8e8599c95d02f800",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/test_results.json",
+    "bytes": 557,
+    "sha256": "ddb968460bf40adf69fbe008c7cac151e2b05f092d89b2c5fc51d34d2de62f91",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/data/verification.json",
+    "bytes": 1231,
+    "sha256": "d0717e2a0d30f5a492e1b4a4fb5f808a7b4825e3bded97c2c301332f923c709a",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/report.json",
+    "bytes": 35359,
+    "sha256": "4c0d98ef3462fc0772fa3ed852340ee72581a3e10f5a8e40ebf4c79b0eeb861d",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/report.md",
+    "bytes": 33261,
+    "sha256": "d00b7eddf5c281ba5ae11512589faadfa1da9a3398247b49e423d5928ecc881e",
+    "headings": [
+      "# From Scientific Question to Harmonized Data",
+      "## 2. Finding files is only the beginning",
+      "## 3. A scientific question becomes a reviewed computation",
+      "## 4. A working prototype, with scientific gates still closed",
+      "## 5. A real pixel anchors the story",
+      "## 6. A catalog describes an asset; an adapter preserves its meaning",
+      "## 7. Access, scientific decisions and computation have different jobs",
+      "## 8. Evidence and judgment are different objects",
+      "## 9. Many communities describe different pieces of an observation",
+      "## 10. An ontology and a catalog standard solve different problems",
+      "## 11. Meaning has accumulated through different kinds of infrastructure",
+      "## 12. Scale is not one dimension",
+      "## 13. AI proposes. Tested software computes.",
+      "## 14. A blocked run can be a successful safety test",
+      "## 15. The recipe is an auditable scientific plan",
+      "## 16. Seventeen operations, each with an explicit boundary",
+      "## 17. Stream the data instead of moving the world",
+      "## 18. A selected lazy chunk stays selected at execution",
+      "## 19. A stored digital number is not reflectance",
+      "## 20. MOSAIKS receives the harmonized output",
+      "## 21. The features carry usable numerical information",
+      "## 22. Every vector should lead back to its scientific decisions",
+      "## 23. Breadth describes assessed scope, not ontology quality",
+      "## 24. Declared links show where semantic systems already connect",
+      "## 25. Different scope may be valuable\u2014but is not enough",
+      "## 26. An assessed portfolio adds scope; scientific gain is still a question",
+      "## 27. A sparse assessment is a place to investigate",
+      "## 28. Three source records reveal metadata differences",
+      "## 29. The useful next question has not been scored yet",
+      "## 30. A namespace reference is useful but limited evidence",
+      "## 31. Shared metadata structure is not shared scientific meaning",
+      "## 32. The suite tests guardrails as well as successful calculations",
+      "## 33. There is a broad local demonstration, not a production service",
+      "## 34. The hardest gaps are scientific, not just computational",
+      "## 35. One approved real demonstration is the next meaningful milestone"
+    ]
+  },
+  {
+    "path": "reports/pipeline_state/tables/components.csv",
+    "bytes": 2188,
+    "sha256": "f2fa417aa12cd520349a4b2df331dcd980783891c6355348976f9432c0978dfb",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/tables/maturity.json",
+    "bytes": 6125,
+    "sha256": "3db48d9aaf9974e6a43c4db97499e57d5fd5ffd713d642dc8c30bf3fc9b5835f",
+    "headings": []
+  },
+  {
+    "path": "reports/pipeline_state/verify_report.py",
+    "bytes": 1370,
+    "sha256": "c5edf77b3689020d3fa5736887829d10e5ebc80bd0d4c1ce2b6a4e069217208a",
+    "headings": []
+  },
+  {
+    "path": "reports/scientific_validation/acquire_graphs.py",
+    "bytes": 970,
+    "sha256": "42eaf7efb734cab601a6febf8160b03780eac9c778a599a6dc9da9ec7867ad71",
+    "headings": [
+      "def main():"
+    ]
+  },
+  {
+    "path": "reports/scientific_validation/data/graphs/manifest.json",
+    "bytes": 1543,
+    "sha256": "6f3c058b02551c9420ed538263d89b7825d8cd0f1a4567dec2fdf4bb873cafc0",
+    "headings": []
+  },
+  {
+    "path": "scripts/check_site.py",
+    "bytes": 2280,
+    "sha256": "d5972932f11ef41af50254c7ba8dfe297d39753b40c1e037cfac164cd1b72508",
+    "headings": [
+      "class Page(HTMLParser):",
+      "def check(root, site_prefix=\"/AI_ready_datasets/\"):"
+    ]
+  },
+  {
+    "path": "scripts/generate_figures.py",
+    "bytes": 14206,
+    "sha256": "c668351917a07214b4a063c95ef199c64e1faf491e6d9cda7b97deae2c0dfe67",
+    "headings": [
+      "# Conceptual research figures carry status in their visible titles and descriptions.",
+      "# Keep the trust diagram connected to the concrete external backend without replacing core operations.",
+      "def quadrant():",
+      "def render(title, description, nodes, edges):"
+    ]
+  },
+  {
+    "path": "scripts/generate_reference.py",
+    "bytes": 4085,
+    "sha256": "292a8ebe62f14a2b114a17f002c52ef3fb8644f509ef02fc6f86c140571e88b8",
+    "headings": [
+      "def main():"
+    ]
+  },
+  {
+    "path": "scripts/generate_semantics.py",
+    "bytes": 8493,
+    "sha256": "d54a3dd27c0fc08870c7f677dd5c7822f316bdc5257ae861a77046da0dd5fbcc",
+    "headings": [
+      "def safe(value):return str(value or 'Not established').replace('|',' / ').replace('\\n',' ')",
+      "def main():"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/__init__.py",
+    "bytes": 96,
+    "sha256": "9a4fa8a10767a73b6135a0e6df39124b3d064b6d37a94a45d9cfe3b6454fb862",
+    "headings": []
+  },
+  {
+    "path": "src/dataset_prototype/adapters.py",
+    "bytes": 2664,
+    "sha256": "fe37736677a1eb91e7e175a83687811fe6d04ede0c70d95db077f3c5d27d616d",
+    "headings": [
+      "class AccessClient(Protocol):",
+      "class MESAClient:",
+      "class MockMESAClient:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/agents.py",
+    "bytes": 2298,
+    "sha256": "7f5303316e5ce9c7f3bee30c740fa3d68eeeb9cf5d1ec66370aefe66a5add0dd",
+    "headings": [
+      "class DiscoveryAgent:",
+      "class SemanticAgent:",
+      "class HarmonizationAgent:",
+      "class QAAgent:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/cli.py",
+    "bytes": 19678,
+    "sha256": "42abacc25bfe15e55d570baad91cce302e5eadd91773379ff16ca414877cb59e",
+    "headings": [
+      "def main(argv=None):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/consensus.py",
+    "bytes": 22647,
+    "sha256": "3eccbd3c095bb880697bbf3bd0e6e216eda6a6d6fd09b96f4547253ff8012212",
+    "headings": [
+      "def _license_evidence(source):",
+      "def _metadata(plan):",
+      "def _validate_refs(refs,allowed):",
+      "def _dialogue(messages):",
+      "def _compile(plan,draft,messages,backend,round_number):",
+      "def negotiate(plan:StreamPlan,backend,output,*,max_rounds=2,analysis_from=None,frozen_recipe=None,cube_configuration=None):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/contracts.py",
+    "bytes": 19111,
+    "sha256": "8e1c89a915c51d5788bd4e5ba567b34529bef995dcee10291ef87613c35d3b36",
+    "headings": [
+      "def digest(value) -> str:",
+      "class Contract(BaseModel):",
+      "class EvidenceKind(str, Enum):",
+      "class SemanticEvidence(Contract):",
+      "class ConceptCandidate(Contract):",
+      "class SourceSemantics(Contract):",
+      "class Support(Contract):",
+      "class Rights(Contract):",
+      "class Variable(Contract):",
+      "class Metadata(Contract):",
+      "class ScientificRequest(Contract):",
+      "class SourceResource(Contract):",
+      "class DiscoveryCandidate(Contract):",
+      "class DiscoveryResult(Contract):",
+      "class SemanticMapping(Contract):",
+      "class Operation(Contract):",
+      "class Proposal(Contract):",
+      "class AgentReview(Contract):",
+      "def recipe_content_digest(recipe):",
+      "class BackendOperation(Contract):",
+      "class HarmonizationRecipe(Contract):",
+      "class QAReport(Contract):",
+      "class HumanDecision(Contract):",
+      "class RawObservation(Contract):",
+      "class ProvenanceRecord(Contract):",
+      "class HarmonizedObservation(Contract):",
+      "class Representation(Contract):",
+      "class TrackConfig(Contract):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/cube_contracts.py",
+    "bytes": 4066,
+    "sha256": "8319415f2825beb031e0fa64c5a140b978080f612ed9859cc74326f837fbeb8e",
+    "headings": [
+      "class ResourceGuards(Contract):",
+      "class CubeInput(Contract):",
+      "class CubeConfiguration(Contract):",
+      "class TransformationChanges(Contract):",
+      "class TransformationResult(Contract):",
+      "class TransformationBackend(Protocol):",
+      "class CubeOption(Contract):",
+      "class CubeCapabilitySpace(Contract):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/cube_demo.py",
+    "bytes": 9594,
+    "sha256": "382403af7f17901507319e2b9905b9c595505a02a5b518f548e17d91594309ed",
+    "headings": [
+      "def context():",
+      "def patches(context):",
+      "def run(output):",
+      "def alignment_example():"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/cube_ir.py",
+    "bytes": 3607,
+    "sha256": "88eb8fa0b48c44d764f4b148d01d57fda1aca4245d4f11238d6c417e1effde7a",
+    "headings": [
+      "def capabilities(recipe,sources,configuration):",
+      "def selection_schema(space):",
+      "def compile_decision(decision,space,recipe,sources,configuration):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/cube_specs.py",
+    "bytes": 3314,
+    "sha256": "ea495b3428de231c4c32f3c0a560964e6af3cbf9d8af5ae6fd174e82d4d0f27b",
+    "headings": [
+      "# Adapter glue through public apply is explicitly distinguished from dedicated verbs.",
+      "def definitions():"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/cubedynamics_backend.py",
+    "bytes": 29095,
+    "sha256": "8c6fdc27f73c984d96d8fb29e4180a8024e1263740538392684a65b803f5cbe6",
+    "headings": [
+      "class CubeError(ValueError):",
+      "class CubeProduct:",
+      "def context_digest(configuration,sources):",
+      "def validate_step(step):",
+      "def _arrays(cube):",
+      "def _lazy(cube):",
+      "def _guard(cube,guards,*,output=False):",
+      "def _metadata(cube):",
+      "def _support(cube,spec):",
+      "def _select(cube,*,variable):",
+      "def _subset(cube,*,window):",
+      "def _mask(cube,*,quality,classes):",
+      "class CubeDynamicsBackend:",
+      "def transform_raster_window(values,*,context,lineage):",
+      "def require_frozen_consensus(recipe,plan,report):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/decision_ir.py",
+    "bytes": 17040,
+    "sha256": "a91fc1295c3da02532cc4b76a3de2a363e1d96ac4f9f7ff58b412ca66b2dcb83",
+    "headings": [
+      "class SelectDecision(Contract):",
+      "class ParameterizeDecision(Contract):",
+      "class SemanticMappingProposal(Contract):",
+      "class RecipeDecision(Contract):",
+      "class ModelDecisionProvenance(Contract):",
+      "class ExecutionResult(Contract):",
+      "class CapabilityOption(Contract):",
+      "class CapabilitySpace(Contract):",
+      "def build_capabilities(resources, mappings):",
+      "def decision_schema(capabilities):",
+      "def resolve_decision(decision, capabilities, resources, mappings):",
+      "def compile_decision(decision, capabilities, resources, mappings, *, model='unattributed-model', model_version='not-supplied'):",
+      "def process_output(text, capabilities, resources, mappings, *, model='unattributed-model', model_version='not-supplied'):",
+      "def execute_approved(recipe, resources, records, human, *, parents=()):",
+      "class FixtureDecisionModel:",
+      "class DecisionBindingProposal(Contract):",
+      "class DecisionRecipeDraft(Contract):",
+      "def binding_capabilities(binding):",
+      "def validate_mapping_proposal(proposal, *, evidence_ids, candidate_ids):",
+      "def draft_schema(plan):",
+      "def request_model_decision(backend, capabilities, resources, mappings):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/discovery.py",
+    "bytes": 1669,
+    "sha256": "d8e9967e2cb220ef2bf7861b69104fad9a972da94ac599253e526aa19e954e7a",
+    "headings": [
+      "def relevant(request: ScientificRequest, resource: SourceResource) -> bool:",
+      "def run(request: ScientificRequest, client, *, semantic_registry=None) -> DiscoveryResult:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/embedding_dataset.py",
+    "bytes": 14535,
+    "sha256": "d0384b7834dfbd96e8bac46c796114cdcda60fedce62128e147c572a7e01a720",
+    "headings": [
+      "def write_dataset(patches,model,context,output,*,batch_size=16):",
+      "def verify_dataset(root,output,*,max_records=2048):",
+      "def predict_vectors(vectors,probe_path,*,encoder_identity,expected_sha256):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/harmonization.py",
+    "bytes": 12914,
+    "sha256": "1f5fb6ee67c21e2cfb25072391daf8f1dc52ed92625cfacca4867eb0a2df847c",
+    "headings": [
+      "def assess(recipe, resources, parent_lineage=()):",
+      "def authorize(recipe, resources, human=None, parent_lineage=()):",
+      "def run(resources, recipe, records, human=None, parents=()):",
+      "def transformed_uncertainty(uncertainty, operations):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/harmonized_rasters.py",
+    "bytes": 12919,
+    "sha256": "d863809d81a83f222088f6801713993b6ee0afb5eafc0b34198aba97f5b2b4c8",
+    "headings": [
+      "class RasterContext(Contract):",
+      "def authorize_context(context):",
+      "def assemble_patch(cells,*,context,patch_id,channels,units,height,width,lineage,split,spatial_group,verification_target=None,target_name=None,target_kind=None):",
+      "def harmonize_window(arrays,*,context,patch_id,lineage,split,spatial_group):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/model_agents.py",
+    "bytes": 16956,
+    "sha256": "04fcebe206cd8a72dd7520258786625abbe428a498c41b1a7103ef9ae7793724",
+    "headings": [
+      "def source_evidence(resource):",
+      "class CandidateChoice(Contract):",
+      "class SemanticJudgment(Contract):",
+      "class RecipePlan(Contract):",
+      "class Critique(Contract):",
+      "class AgentTrace(Contract):",
+      "class OllamaBackend:",
+      "class ModelDiscoveryAgent:",
+      "class ModelSemanticAgent:",
+      "class ModelHarmonizationAgent:",
+      "class ModelQAAgent:",
+      "def propose_snapshot(snapshot_root, output, backend, *, targets=None):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/mosaiks.py",
+    "bytes": 10987,
+    "sha256": "68c6e6e1c99fa66da6295dbb43270fefe5f16652a812867e976c655931fc0044",
+    "headings": [
+      "class MOSAIKSSpec(Contract):",
+      "class HarmonizedRasterPatch:",
+      "def file_digest(path):",
+      "def array_digest(values):",
+      "def validate_patch(patch,spec,context):",
+      "def target_schema_digest(context,spec):",
+      "class MOSAIKSEncoder:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/mosaiks_pipeline.py",
+    "bytes": 6769,
+    "sha256": "ebbbfb4d5737d309793ba78fbcfcc6aa0034e6628b2a9b830d2bb7fd01d7670e",
+    "headings": [
+      "class RasterLayout(Contract):",
+      "def encoder_contract(spec):",
+      "def plan_rasters(plan,spec,layout):",
+      "def run(patches,context,spec,output):",
+      "def demo(output):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/neon.py",
+    "bytes": 4163,
+    "sha256": "96394906eaf4bfca161fc302283860cb9b53b8bf5f6d22d67cfb43f70012823d",
+    "headings": [
+      "class NEONClient:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/network.py",
+    "bytes": 1987,
+    "sha256": "45604e33fa18cef11ec83023ca2838f275a3dfb10e3a982297ecb17148ded21f",
+    "headings": [
+      "class AccessError(ValueError):",
+      "class CredentialRedirectGuard(HTTPRedirectHandler):",
+      "def request_bytes(url, *, payload=None, headers=None, timeout=60, max_bytes=8_000_000):",
+      "def request_json(url, **kwargs):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/openclaw_backend.py",
+    "bytes": 4760,
+    "sha256": "a5b8a411afea4d5117521b8a1a7859bf304385e87d907d26d75428798d88d633",
+    "headings": [
+      "class OpenClawBackend:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/openclaw_runtime.py",
+    "bytes": 7585,
+    "sha256": "a08f675d40023098213049cc77d24d195432b45abca4c41dd1976f2b70de66db",
+    "headings": [
+      "def read_verde_settings(path):",
+      "def runtime_config(base_url,model):",
+      "def _docker(args,**kwargs):",
+      "def start_runtime(env_file,root=Path('run/openclaw'),image='openclaw-local:latest'):",
+      "def stop_runtime():",
+      "def runtime_status(root=Path('run/openclaw')):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/operation_demo.py",
+    "bytes": 3993,
+    "sha256": "feea86721f9a343c1324a20eadf2f0aa033411be6799934b1971bf88365f20d3",
+    "headings": [
+      "def run(output):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/operations.py",
+    "bytes": 13094,
+    "sha256": "b85e9d3247b7e28341a767bcf501cb5845ba9c5c72a0c74f5abbc8dffafcb4bf",
+    "headings": [
+      "class OperationDefinition(Contract):",
+      "# Only implemented operations are listed. These are not plugin entry points.",
+      "def _parameter_schema(legacy, fields):",
+      "def _definitions():",
+      "class OperationRegistry:",
+      "def execution_identity():",
+      "def convert(value, from_unit, to_unit):",
+      "def _execute_rows(op, rows, records, by_id):",
+      "def execute_check(check_id, recipe, resources):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/orchestration.py",
+    "bytes": 5187,
+    "sha256": "b5ab5d9bd29b0985f20463105d2954bbee88e0a7d2ec06fa30635129d25c6fec",
+    "headings": [
+      "def load_track(path):",
+      "def write(path, value):",
+      "def run(config: TrackConfig, client, output: Path, cache: Path):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/provenance.py",
+    "bytes": 2002,
+    "sha256": "33740612df858248b7c99cf9ad51af1c68160de0aaa6b01f3e74b452fca6df0a",
+    "headings": [
+      "def export(representations):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/real_data.py",
+    "bytes": 12044,
+    "sha256": "7796cba3b620e88af23fe7e7704b0e3783a494b3cdb657cd72b8f7efca660890",
+    "headings": [
+      "class EvidenceFile(Contract):",
+      "class Snapshot(Contract):",
+      "def save_snapshot(root, resources, records, evidence, acquisition):",
+      "class SnapshotClient:",
+      "def _evidence(root, name, content, role):",
+      "def acquire_sentinel(request: ScientificRequest, longitude, latitude, output, *, max_cloud=20, max_items=5, http=request_json, reader=None):",
+      "def read_sentinel_pixel(item, longitude, latitude):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/representations.py",
+    "bytes": 2160,
+    "sha256": "3af01b2feea12bad4d9ddaf1b8baa3bee37ba3b46fcbaebf8c6f55a5a5ae31d2",
+    "headings": [
+      "def run(observations, encoder=\"scalar\"):",
+      "def batches(observations, size=64):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/review.py",
+    "bytes": 6310,
+    "sha256": "f3af90368701a062c7f07dbec714ec982caf45c0dfc08083bc650ea9cbdf06b7",
+    "headings": [
+      "def source_set_digest(sources):",
+      "def synthesize(reviews, evidence, *, recipe_content_digest, source_digest,",
+      "def validate_qa_references(report: ReviewReport, finding_ids):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/review_contracts.py",
+    "bytes": 3054,
+    "sha256": "8a0bb1fa15db1dd287224ba8248780f2210033c2ca375854842d409d2da8a08b",
+    "headings": [
+      "class Domain(str,Enum):",
+      "class Status(str,Enum):",
+      "class Evidence(Contract):",
+      "class ReviewFinding(Contract):",
+      "class SpecialistReview(Contract):",
+      "class ReviewReport(Contract):",
+      "class RunManifest(Contract):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/science.py",
+    "bytes": 939,
+    "sha256": "9c658eeeb497275affd14b9761a9e6eed49a9febc95df4c0eee6bd9250da503f",
+    "headings": [
+      "def summarize(observations):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/scoped_review.py",
+    "bytes": 9238,
+    "sha256": "b7939d9d52acf8fc12d057e8ebf5ae4e206ae02514174ba77930a1b7088eb935",
+    "headings": [
+      "class ReviewBundle(Contract):",
+      "class QASynthesis(Contract):",
+      "def review_metadata(bundle: ReviewBundle, backend, output: Path):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/semantic_benchmark.py",
+    "bytes": 15902,
+    "sha256": "a10e0b0ad3b424da83109aa8b0226bc85e3237ee79eaf4efd27d398f3bb00691",
+    "headings": [
+      "class BenchmarkConfig(Contract):",
+      "# Explicit schemas retain useful types even when a diagnostic has zero rows.",
+      "def read_metadata_json(path):",
+      "def _jaccard(left,right):",
+      "def compute(resources,sources,bindings,config=BenchmarkConfig()):",
+      "def run(inventory_path,source_paths,output,*,bindings_path=Path('data/semantics/namespace_bindings.json'),config=BenchmarkConfig()):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/semantic_discovery.py",
+    "bytes": 5159,
+    "sha256": "fc8f76d75866f0d0de08143dcd74a1d257a01cbefe3aa6c190d0d9b1b55e1c40",
+    "headings": [
+      "def source_metadata_digest(source):",
+      "def normalized_evidence(source):",
+      "def stac_evidence(source):",
+      "def enrich(source: SourceResource, registry=None):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/semantic_resources.py",
+    "bytes": 8868,
+    "sha256": "a55165f2b5afa17409df57d8dc6f916a882d748d22b14ce1bc75b19547c3b7c5",
+    "headings": [
+      "class SemanticResource(Contract):",
+      "class AssessmentContent(Contract):",
+      "class ResourceAssessment(Contract):",
+      "def load_inventory(path):",
+      "def load_assessments(path, resources):",
+      "class NamespaceBinding(Contract):",
+      "class ConceptRecord(Contract):",
+      "class SemanticResolver(Protocol):",
+      "class SemanticResourceRegistry:"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/storage.py",
+    "bytes": 1318,
+    "sha256": "eb3a2b4f8e8c4378cd9c07cdd715184221608295acfd0d908c78278d47fb8eec",
+    "headings": [
+      "def cached(root: Path, identity, producer):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/stream_contracts.py",
+    "bytes": 6883,
+    "sha256": "8af705c1d8359acf27067d3b071f6521a38e99e259d5e399e1b5eba6260e4fa7",
+    "headings": [
+      "class StreamBinding(Contract):",
+      "class EncoderSpec(Contract):",
+      "class StreamPlan(Contract):",
+      "class StreamSample(Contract):",
+      "class AgentMessage(Contract):",
+      "class SpecialistFinding(Contract):",
+      "class ReviewVote(Contract):",
+      "class RecipeBindingProposal(Contract):",
+      "class RecipeDraft(Contract):",
+      "class ConsensusReport(Contract):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/stream_rasters.py",
+    "bytes": 4376,
+    "sha256": "b9dbe0e4d6f176593be477768d5d14fab62237a93aea65bf2c71d3f3e6da3f6d",
+    "headings": [
+      "def sentinel_harmonized_tiles(context,*,side=16,grid=8):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/stream_sources.py",
+    "bytes": 7583,
+    "sha256": "147207a41f8abd2530c650bcbd5ee71971ce2a81f8011206134ddcf494f67e36",
+    "headings": [
+      "def validate_assets(item):",
+      "def plan_sentinel(request,longitude,latitude,*,max_items=2,max_cloud=20,http=request_json):",
+      "def validated_native(binding):",
+      "def sentinel_samples(plan,*,reader=read_sentinel_pixel):"
+    ]
+  },
+  {
+    "path": "src/dataset_prototype/streaming.py",
+    "bytes": 11001,
+    "sha256": "b99976120b6c2cc94c4be29b5a76d44b298ccde8f421c11da32f1bf2289d72af",
+    "headings": [
+      "def preflight(plan,recipe,human=None,consensus=None,evidence_review=None):",
+      "def stream_embed(plan,recipe,samples,output,*,human=None,consensus=None,evidence_review=None):"
+    ]
+  },
+  {
+    "path": "tests/conftest.py",
+    "bytes": 2907,
+    "sha256": "a260719ed01b6c383c23c13ee141f5ded7ec32b13919958f8538051f59fe7271",
+    "headings": [
+      "def client():",
+      "def config():",
+      "def request_model(config):",
+      "def bundle(client):",
+      "def no_network(monkeypatch):",
+      "def evidence_review_factory():"
+    ]
+  },
+  {
+    "path": "tests/test_cubedynamics.py",
+    "bytes": 19950,
+    "sha256": "cea865d2c99f440896484adf7a37250f90d2d626f5a316e8c6b59972aa486b58",
+    "headings": [
+      "def step(identifier):",
+      "def human(recipe):",
+      "def cubes():",
+      "def prepared(cubes,identifier,*,configuration=None,inputs=None,sources=None):",
+      "def test_real_public_operations_lazy_output_and_provenance(cubes,identifier):",
+      "def test_explicit_bounded_materialization_reads_selected_chunks_only(cubes):",
+      "def test_mask_uses_documented_predicate_and_keeps_missing_values(cubes):",
+      "def test_heterogeneous_exact_support_alignment_and_nearest_grid(cubes):",
+      "def test_failures_before_computation(cubes,change,code):",
+      "def test_reference_bound_model_choice_and_model_off_execution(cubes):",
+      "def test_multiband_selection_preserves_native_attributes(cubes):",
+      "def test_ordered_subsets_cannot_invalidate_aggregation_silently(cubes):",
+      "def test_no_scalar_bypass_and_required_review_for_changed_configuration(cubes):",
+      "def test_real_sources_cannot_bypass_existing_streaming_review(cubes):",
+      "def test_generated_sentinel_harmonized_window_bridge_and_no_raw_persistence(tmp_path):",
+      "def test_unregistered_function_and_invalid_refs_never_dispatch(cubes):",
+      "def test_singleton_subset_does_not_change_pixel_resolution(cubes):",
+      "def test_aggregate_support_does_not_invent_sampling_resolution(cubes):",
+      "def test_model_harmonization_role_selects_backend_without_python(cubes):",
+      "def test_all_specialists_and_qa_review_exact_frozen_backend_recipe(tmp_path):"
+    ]
+  },
+  {
+    "path": "tests/test_discovery.py",
+    "bytes": 3488,
+    "sha256": "79f21556bbd1f74c9aa5f826586e5234fbd9312eb1c2eac2ad65b010c03cf44a",
+    "headings": [
+      "def test_search_contract_and_determinism(client, request_model):",
+      "def test_filter(client, request_model, field, value):",
+      "def test_spatial_temporal_filters(client, request_model):",
+      "def test_missing_metadata_rejected(client):",
+      "def test_duplicate_results(client,request_model):",
+      "def test_source_checksum_and_immutable_models(client,tmp_path):",
+      "def test_mesa_does_not_invent_api():",
+      "def test_invalid_support():",
+      "def test_satellite_identity_support_and_original_ids(client):"
+    ]
+  },
+  {
+    "path": "tests/test_harmonization.py",
+    "bytes": 11918,
+    "sha256": "229d0f02f693a2446a238d2456247b9a70a7d87c87049c3a6f56cb92817a1703",
+    "headings": [
+      "def execute(bundle,recipe=None,resources=None,records=None,human=None,parents=()):",
+      "def approve_human(recipe):",
+      "def test_exact_mapping_and_originals(bundle):",
+      "def test_similar_names_do_not_establish_equivalence(bundle):",
+      "def test_unit_conversion(bundle,unit,target,value):",
+      "def test_incompatible_units_and_unknown_operation():",
+      "def test_conversion_mismatch_rejected(bundle):",
+      "def test_variable_mapping(bundle):",
+      "def test_missing_filter_validation(bundle):",
+      "def test_review_triggers(bundle,change):",
+      "def test_wrong_relationship_and_rejection(bundle):",
+      "def test_rights_review(bundle,right,value,outcome):",
+      "def test_status_and_bound_human_decision(bundle):",
+      "def test_core_track_separation(bundle):",
+      "def test_daily_aggregation_and_missing_coverage(bundle):",
+      "def test_spatial_and_join_checks(bundle,client):",
+      "def test_coordinates_and_invalid_records(bundle):",
+      "def test_recipe_schema(bundle):",
+      "def test_track_uses_canonical_value_after_core_conversion(bundle):",
+      "def test_observation_schema_rejects_false_lineage(bundle):",
+      "def test_ontology_and_methods_survive(bundle):",
+      "def test_low_confidence_can_be_reviewed_but_rejection_blocks(bundle):",
+      "def test_recipe_without_source_or_operation_is_rejected(bundle):"
+    ]
+  },
+  {
+    "path": "tests/test_integration_tracks.py",
+    "bytes": 6470,
+    "sha256": "6174ec9c52f44387aebdf957c8948548153128138ba2c1a9a7da5a244fae976a",
+    "headings": [
+      "def test_complete_offline_pipeline(client,tmp_path,track):",
+      "def test_independence_and_shared_cache(client,tmp_path):",
+      "def test_new_track_configuration_only(client,tmp_path):",
+      "def test_missing_required_variable(client,tmp_path,config):",
+      "def test_cli(tmp_path,capsys):",
+      "def test_cache_corruption(tmp_path):",
+      "def test_second_track_reuses_acquisition_and_core_execution(client,tmp_path,monkeypatch):",
+      "def test_independent_stage_cli(bundle,tmp_path):"
+    ]
+  },
+  {
+    "path": "tests/test_model_agents.py",
+    "bytes": 4846,
+    "sha256": "eaab21767855d0c3af0785546fec4f9644e5c4052db2578a82025017adc88150",
+    "headings": [
+      "def test_ollama_schema_no_tools_and_trace():",
+      "def test_malformed_or_incomplete_never_repaired(response):",
+      "def test_missing_model_no_download_and_transport_bounds():",
+      "class StubBackend:",
+      "def test_model_only_controls_judgment_and_cannot_self_approve(bundle):",
+      "def test_generated_operation_scope_and_source_identity(bundle):",
+      "def test_discovery_cannot_invent_source(client,request_model):"
+    ]
+  },
+  {
+    "path": "tests/test_mosaiks.py",
+    "bytes": 17526,
+    "sha256": "c784c02a251b22a1b20eba22bffaf97eeaa72e8abae9be583a6a6562c75b9d88",
+    "headings": [
+      "def raster_context(tmp_path):",
+      "def patch(context,i=0,split='train'):",
+      "def test_mosaiks_oracle_and_no_raw_inputs(raster_context):",
+      "def test_train_only_fit_and_frozen_reload(raster_context,tmp_path):",
+      "def test_verification_native_ml_and_baselines(raster_context):",
+      "def test_reject_leakage_and_corruption(raster_context,tmp_path,corruption):",
+      "def test_review_gate_before_opening_stream(raster_context,tmp_path):",
+      "def test_backpressure_and_partial_failure(raster_context,tmp_path):",
+      "def test_independent_labels_need_scientific_provenance(raster_context,tmp_path):",
+      "def test_reviewed_raster_plan_changes_digest_and_settings_are_fixed(request_model):",
+      "def test_raster_calibration_matches_scalar_executor_and_rejects_bad_coefficients(raster_context):",
+      "def test_matching_channel_names_do_not_override_scientific_definitions(raster_context):",
+      "def test_assemble_actual_harmonized_observations_without_implicit_reshaping(raster_context):",
+      "def test_source_adapter_emits_harmonization_outputs_with_bounded_windows(raster_context,monkeypatch,accepted,evidence_review_factory):"
+    ]
+  },
+  {
+    "path": "tests/test_openclaw.py",
+    "bytes": 5142,
+    "sha256": "0a71536408ad0ba4244bb25aefeee7892a611c632a075bd1affbd71f11c4dbce",
+    "headings": [
+      "def runtime(tmp_path):",
+      "def test_isolated_config_has_no_fallback_or_model_tools():",
+      "def test_credentials_read_as_data_never_executed(tmp_path,monkeypatch):",
+      "def test_gateway_calls_plugin_not_direct_verde(runtime):",
+      "def test_gateway_failure_or_substitution_never_falls_back(runtime,response):",
+      "def test_modified_runtime_or_extra_tools_rejected(runtime):",
+      "def test_credentials_never_follow_cross_origin_redirects():"
+    ]
+  },
+  {
+    "path": "tests/test_operation_registry.py",
+    "bytes": 11894,
+    "sha256": "de314c53ca22fc4a1d6d35728c3c02b6af0aa7eb815fb829b47b8df7dae1bde2",
+    "headings": [
+      "def decision_for(cap):",
+      "def approve(recipe):",
+      "def test_registry_closed_versioned_and_described():",
+      "def test_structural_then_semantic_validation_and_provenance(bundle):",
+      "def test_arbitrary_languages_and_malformed_json_rejected(bundle,payload):",
+      "def test_extra_executable_fields_and_numeric_constants_rejected(bundle,field,value):",
+      "def test_invented_operation_and_invalid_parameters_fail_closed(bundle):",
+      "def test_abstention_is_explicit_not_failure(bundle,state):",
+      "def test_mock_model_and_transport_failure_never_fallback(bundle):",
+      "def test_metadata_references_resolve_without_model_arithmetic(bundle):",
+      "def test_semantic_ambiguity_and_invented_ontology_ids():",
+      "def test_authorization_before_read_and_stale_implementation(bundle):",
+      "def test_every_registered_dispatch_input_output_edge_and_lineage(bundle,legacy,parameters,expected):",
+      "def test_registered_qa_checks_and_model_cannot_change_the_library(bundle):",
+      "def test_cli_offline_end_to_end_demo_and_manifest(tmp_path,capsys):",
+      "def test_runtime_package_has_no_code_evaluation_or_shell_dispatch():"
+    ]
+  },
+  {
+    "path": "tests/test_real_data.py",
+    "bytes": 9991,
+    "sha256": "f17166ceecbb9221ad14b5b56e632a3728f530c2c3c84dabc45c58a2177f52be",
+    "headings": [
+      "def sentinel_request():",
+      "def fake_stac():",
+      "def fake_pixel(*args):",
+      "def test_stac_query_raw_dn_metadata_and_snapshot(sentinel_request,tmp_path):",
+      "def test_unknown_license_never_assumed_open(sentinel_request,tmp_path):",
+      "def test_cloud_rejection_and_no_fallback(sentinel_request,tmp_path):",
+      "def test_empty_search_and_unsafe_href(sentinel_request,tmp_path):",
+      "def test_instantaneous_harmonization(sentinel_request,tmp_path):",
+      "def test_neon_authentication_and_native_acquisition(tmp_path,monkeypatch):",
+      "def test_neon_rejects_unknown_sizes_errors_and_paths(tmp_path):",
+      "def test_model_qa_veto_and_staleness(bundle):",
+      "def test_complete_model_workflow_is_review_only(sentinel_request,tmp_path):",
+      "def test_instantaneous_semantics_are_explicit(bundle):"
+    ]
+  },
+  {
+    "path": "tests/test_representations.py",
+    "bytes": 2073,
+    "sha256": "929873768bef32eca4ab59f85b2f234c5969b4a030ad26c6ed5be3481c885c91",
+    "headings": [
+      "def test_stream_batch_and_lineage(bundle):",
+      "def test_malformed_and_missing(bundle):",
+      "def test_modified_value_cannot_retain_old_observation_identity(bundle):"
+    ]
+  },
+  {
+    "path": "tests/test_review.py",
+    "bytes": 11875,
+    "sha256": "eec30c638bb758cdaaae458fcd2197d79b4b8011779208cda640edc408f8075a",
+    "headings": [
+      "def case(domain=Domain.UNITS, status=Status.PASS, kind=EvidenceKind.SOURCE_DOCUMENTED):",
+      "def report(review, evidence, **kwargs):",
+      "def test_eligibility_never_authorizes_execution():",
+      "def test_missing_evidence_is_not_failure():",
+      "def test_documented_failure_vetoes():",
+      "def test_opinion_cannot_be_pass():",
+      "def test_jurisdiction_and_recipe_bindings():",
+      "def test_duplicates_missing_roles_and_qa_references():",
+      "class FakeBackend:",
+      "def review_bundle(bundle):",
+      "def test_scoped_pipeline_same_recipe_domains_and_failure_checkpoint(bundle, tmp_path):",
+      "def test_negative_calibrated_reflectance_is_retained(bundle):",
+      "def test_qa_veto_cannot_become_eligibility(bundle, tmp_path):",
+      "def test_real_gate_requires_scoped_report_and_checks_veto_bindings(bundle, monkeypatch, evidence_review_factory):",
+      "def test_not_applicable_needs_scope_evidence_and_sources_are_bound(bundle):",
+      "def test_support_requires_actual_reference_and_source_provenance():"
+    ]
+  },
+  {
+    "path": "tests/test_semantic_benchmark.py",
+    "bytes": 6105,
+    "sha256": "aa4aab9b04acd190a3199f65f724943ad3bc48eb1375737bd7231aea17de590a",
+    "headings": [
+      "def resources():return load_inventory('data/semantics/semantic_resources.csv')",
+      "def test_inventory_breadth_coverage_and_assessment_traceability(resources):",
+      "def test_diagnostic_oracle_determinism_no_equivalence(resources,client):",
+      "def test_parquet_roundtrip_manifest_and_empty_schema(tmp_path):",
+      "def test_source_namespace_edge_is_not_concept_alignment(resources):",
+      "def test_assessment_drift_namespace_validation_and_failure_manifest(tmp_path,resources,monkeypatch):",
+      "def test_weighted_overlap_numeric_oracle(resources):"
+    ]
+  },
+  {
+    "path": "tests/test_semantic_discovery.py",
+    "bytes": 8570,
+    "sha256": "616368bdc57a316b877bf0f73d94de2e3fc63315f614f112974d61dfe3f29c23",
+    "headings": [
+      "def evidence():",
+      "def registry():",
+      "def test_partial_complete_roundtrip_and_invalid_evidence(evidence):",
+      "def test_source_multiple_systems_preserve_original_and_reject_stale(client,evidence):",
+      "def test_registry_candidate_bases_never_approve(evidence,registry):",
+      "def test_discovery_enriches_without_mutating_or_fetching(client,request_model,registry):",
+      "def test_sentinel_extracts_documented_calibration_not_a_mapping():",
+      "def test_adapter_failure_has_no_mock_fallback(registry):",
+      "def test_uri_validation_and_identical_labels_do_not_merge_concepts(evidence,registry):"
+    ]
+  },
+  {
+    "path": "tests/test_stream_sources.py",
+    "bytes": 4892,
+    "sha256": "54908510977c49590f5b787a50b62ed621156efde9a1d6df7ea56570cca3387e",
+    "headings": [
+      "def metadata(request):",
+      "def test_metadata_plan_then_lazy_window_without_files(request_model,tmp_path):",
+      "def test_metadata_missing_calibration_and_unsafe_uri_fail(request_model):",
+      "def test_raster_access_reads_only_one_by_one_windows(monkeypatch,request_model):",
+      "def test_normalized_calibration_cannot_disagree_with_native_metadata(request_model):"
+    ]
+  },
+  {
+    "path": "tests/test_streaming.py",
+    "bytes": 13311,
+    "sha256": "a345eb91498a84b99847b8b6af6e8265f0d58c2d45e8fa3fe78a0558a2f53da9",
+    "headings": [
+      "def setup(bundle,batch_size=2):",
+      "def test_calibration_and_uncertainty_and_coefficients(bundle):",
+      "def test_direct_stream_backpressure_no_materialized_data(bundle,tmp_path):",
+      "def test_preflight_opens_no_source_before_approval(bundle,tmp_path):",
+      "def test_failure_partial_and_monotonic_sequences(bundle,tmp_path):",
+      "class Negotiators:",
+      "def test_consensus_revision_shared_digest_and_human_gate(bundle,tmp_path):",
+      "def test_bounded_disagreement_is_not_consensus(bundle,tmp_path):",
+      "def test_calibration_is_asset_scoped_even_with_shared_band_name(bundle,tmp_path):",
+      "def test_encoder_spec_cannot_mislabel_implemented_preprocessing():",
+      "def test_empty_stream_is_explicit_failure(bundle,tmp_path):",
+      "def test_unanimous_models_cannot_override_metadata_qa(bundle,tmp_path):",
+      "def test_explicit_retry_reuses_validated_analyses_without_repair(bundle,tmp_path):"
+    ]
+  },
+  {
+    "path": "tracks/food_security/config.json",
+    "bytes": 681,
+    "sha256": "ed1d1cb67937531c8c5d0c41278406afba4a315a6c25baa404a086b829e86e74",
+    "headings": []
+  },
+  {
+    "path": "tracks/third_track/config.json",
+    "bytes": 680,
+    "sha256": "d0172c7cfa248434b99442467573bd7bef233026a35bee0b0abea2afc83df643",
+    "headings": []
+  },
+  {
+    "path": "tracks/water_security/config.json",
+    "bytes": 683,
+    "sha256": "70b990fc6b4217b91e9a11ab214df2631d3d9d17f200e9b360fc0fa015066be5",
+    "headings": []
+  }
+]

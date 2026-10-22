@@ -158,3 +158,20 @@
 - Verified 203 integration tests, 175 core tests with one optional skip, and strict
   MkDocs/link checks. Added frozen backend consensus documentation and dependency
   audit notes for the external CubeDynamics distribution.
+
+## 2026-10-22 — Scientific validation experiments
+
+- Added offline evidence-linked breadth/graph/dataset/combination analyses and 25
+  canonical observation specifications, keeping unknowns, assessment provenance
+  and exact term witnesses separate from scientific mappings.
+- Parsed three real attributed vocabulary graphs; inventoried 18 scoped candidate
+  records and 153 pairs with eight review-prioritization rubrics.
+- Preserved ten Sentinel review issues and created blank exact-recipe expert forms.
+  Prepared a blocked NIWO temperature–NIR context case; identified a 2.4 km planning
+  coordinate discrepancy and missing sensor/association-method evidence.
+- Completed 100 live tool-free Verde calls, preserving two failures and all inert
+  outputs; separated schema validity, deterministic checks and draft-reference
+  agreement from human-gold accuracy and the still-untested weaker-model hypothesis.
+- Added a separate 20-page scientific validation report with 18 reproducible figures,
+  tests, manifests, verification and scientist-facing validation pages. No scientific
+  operation was added, no prior veto lifted and no real-data execution approved.

@@ -1,0 +1,27 @@
+{
+  "pdf_sha256": "00cbdd179f234e0d4e69f5fcaf73829c0789932b0f031d6b085e8d105a04a10e",
+  "visual_review": "All 20 pages inspected via rendered contact sheets; revised dataset potential and appendix inspected individually; revised gap/profile pages inspected separately",
+  "deterministic_regeneration": "12 analysis outputs regenerated identically across two runs (excluding timestamped manifest)",
+  "software": {
+    "integration": {
+      "total": 235,
+      "passed": 235,
+      "failed": 0,
+      "skipped": 0,
+      "xml_sha256": "c9a475f5a6f1898ce6f454010318b5c60f18e2375203a0974be00564b148431f"
+    },
+    "core": {
+      "total": 208,
+      "passed": 206,
+      "failed": 0,
+      "skipped": 2,
+      "xml_sha256": "979ce64a49ec6040548363504730f3e4d71fe495c440b5ee59958f666e05fb47"
+    }
+  },
+  "website": "strict MkDocs and 63-page internal link/media/fragment/alt checks passed; desktop/mobile inspected",
+  "closed_architecture": "No scientific operation, registry, validator or execution-backend edits; two analysis/evaluation modules only",
+  "unsafe_evaluator_calls": "AST checks found no eval, exec, compile or dynamic __import__ in the analysis/evaluation modules",
+  "historical_veto_preserved": true,
+  "human_gold_status": "pending",
+  "execution_authorized": false
+}

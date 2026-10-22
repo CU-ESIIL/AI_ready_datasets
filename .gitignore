@@ -69,3 +69,8 @@ __pycache__/
 
 # Report render intermediates (sources and final report remain reviewable)
 /reports/pipeline_state/build/
+
+# Scientific validation rendering intermediates
+/reports/scientific_validation/build/
+# Regenerated legacy comparison run (new validation evidence is retained separately)
+/outputs/semantic-benchmark-validation-refresh/

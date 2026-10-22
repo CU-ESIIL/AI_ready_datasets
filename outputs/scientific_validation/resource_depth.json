@@ -1,0 +1,80 @@
+[
+  {
+    "claim_class": "MEASURED PROJECT RESULT",
+    "definition_triples": 76,
+    "distinct_predicates_used": 27,
+    "external_obo_references": [
+      "http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl"
+    ],
+    "http_named_classes": 36,
+    "identifier_resolvability": "not tested",
+    "imports": [],
+    "intersection_expressions": 13,
+    "leaves": 20,
+    "max_longest_root_depth": 5,
+    "mean_direct_branching": 0.9722222222222222,
+    "median_shortest_root_depth": 4.0,
+    "named_classes": 36,
+    "named_hierarchy_cycle": false,
+    "object_property_declarations": 40,
+    "resource_id": "bfo",
+    "restrictions": 31,
+    "scope": "explicit local graph only; no imports followed, no entailment, class count is not ontology quality",
+    "synonym_triples": 9,
+    "triples": 1014,
+    "version_iris": [
+      "http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl"
+    ],
+    "xref_triples": 0
+  },
+  {
+    "claim_class": "MEASURED PROJECT RESULT",
+    "definition_triples": 36,
+    "distinct_predicates_used": 20,
+    "external_obo_references": [],
+    "http_named_classes": 16,
+    "identifier_resolvability": "not tested",
+    "imports": [],
+    "intersection_expressions": 0,
+    "leaves": 16,
+    "max_longest_root_depth": 0,
+    "mean_direct_branching": 0.0,
+    "median_shortest_root_depth": 0.0,
+    "named_classes": 16,
+    "named_hierarchy_cycle": false,
+    "object_property_declarations": 21,
+    "resource_id": "sosa",
+    "restrictions": 0,
+    "scope": "explicit local graph only; no imports followed, no entailment, class count is not ontology quality",
+    "synonym_triples": 0,
+    "triples": 345,
+    "version_iris": [],
+    "xref_triples": 0
+  },
+  {
+    "claim_class": "MEASURED PROJECT RESULT",
+    "definition_triples": 21,
+    "distinct_predicates_used": 28,
+    "external_obo_references": [],
+    "http_named_classes": 11,
+    "identifier_resolvability": "not tested",
+    "imports": [
+      "http://www.w3.org/ns/sosa/"
+    ],
+    "intersection_expressions": 0,
+    "leaves": 11,
+    "max_longest_root_depth": 0,
+    "mean_direct_branching": 0.0,
+    "median_shortest_root_depth": 0,
+    "named_classes": 11,
+    "named_hierarchy_cycle": false,
+    "object_property_declarations": 15,
+    "resource_id": "ssn",
+    "restrictions": 73,
+    "scope": "explicit local graph only; no imports followed, no entailment, class count is not ontology quality",
+    "synonym_triples": 0,
+    "triples": 520,
+    "version_iris": [],
+    "xref_triples": 0
+  }
+]

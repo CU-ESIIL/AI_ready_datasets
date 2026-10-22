@@ -1,0 +1,56 @@
+[
+  {
+    "left": "neon",
+    "right": "sentinel2",
+    "scientific_question": "Can interval-supported in-situ air temperature be retained as environmental context for instantaneous NIR reflectance?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "neon",
+    "right": "landsat",
+    "scientific_question": "How does an in-situ measurement relate to a satellite footprint?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "neon",
+    "right": "try",
+    "scientific_question": "Can individual observations inform a reviewed trait context?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "neon",
+    "right": "ameriflux",
+    "scientific_question": "Are quantities, heights, intervals and footprint models comparable?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "neon",
+    "right": "ornl_daac",
+    "scientific_question": "Which specific ORNL product supplies a complementary variable?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "gbif",
+    "right": "sentinel2",
+    "scientific_question": "Can occurrence context be linked without equating sampling and pixel support?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "biotime",
+    "right": "climate",
+    "scientific_question": "Which climate product and temporal matching rule is justified?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "try",
+    "right": "biotime",
+    "scientific_question": "Can traits be linked to assemblages with explicit taxa, missingness and weighting?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "left": "ameriflux",
+    "right": "sentinel2",
+    "scientific_question": "How should dynamic flux footprint and instantaneous pixel support be reviewed?",
+    "status": "proposed; no site/time equivalence established"
+  }
+]

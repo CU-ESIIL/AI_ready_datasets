@@ -1,0 +1,245 @@
+[
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 2,
+      "distinct_documented_dimensions": [
+        "environment",
+        "method",
+        "provenance",
+        "space"
+      ],
+      "execution_authorized": false,
+      "left": "neon",
+      "right": "sentinel2",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "measurement",
+        "observation",
+        "support",
+        "time"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 8
+    },
+    "left": "neon",
+    "right": "sentinel2",
+    "scientific_question": "Can interval-supported in-situ air temperature be retained as environmental context for instantaneous NIR reflectance?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 1,
+      "distinct_documented_dimensions": [
+        "environment",
+        "method",
+        "space",
+        "support"
+      ],
+      "execution_authorized": false,
+      "left": "neon",
+      "right": "landsat",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "measurement",
+        "observation",
+        "time"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 7
+    },
+    "left": "neon",
+    "right": "landsat",
+    "scientific_question": "How does an in-situ measurement relate to a satellite footprint?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 3,
+      "distinct_documented_dimensions": [
+        "measurement",
+        "method",
+        "observation",
+        "organism",
+        "support",
+        "taxon",
+        "time",
+        "trait"
+      ],
+      "execution_authorized": false,
+      "left": "neon",
+      "right": "try",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "environment"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 9
+    },
+    "left": "neon",
+    "right": "try",
+    "scientific_question": "Can individual observations inform a reviewed trait context?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 2,
+      "distinct_documented_dimensions": [
+        "ecosystem",
+        "observation",
+        "support",
+        "units"
+      ],
+      "execution_authorized": false,
+      "left": "neon",
+      "right": "ameriflux",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "environment",
+        "measurement",
+        "method",
+        "time"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 8
+    },
+    "left": "neon",
+    "right": "ameriflux",
+    "scientific_question": "Are quantities, heights, intervals and footprint models comparable?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 1,
+      "distinct_documented_dimensions": [
+        "ecosystem",
+        "measurement",
+        "method",
+        "support",
+        "time"
+      ],
+      "execution_authorized": false,
+      "left": "neon",
+      "right": "ornl_daac",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "environment",
+        "observation"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 7
+    },
+    "left": "neon",
+    "right": "ornl_daac",
+    "scientific_question": "Which specific ORNL product supplies a complementary variable?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 3,
+      "distinct_documented_dimensions": [
+        "genomic",
+        "measurement",
+        "provenance",
+        "sampling",
+        "space",
+        "support",
+        "taxon",
+        "time"
+      ],
+      "execution_authorized": false,
+      "left": "sentinel2",
+      "right": "gbif",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "observation"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 9
+    },
+    "left": "gbif",
+    "right": "sentinel2",
+    "scientific_question": "Can occurrence context be linked without equating sampling and pixel support?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 0,
+      "distinct_documented_dimensions": [
+        "community",
+        "method",
+        "sampling",
+        "space",
+        "taxon",
+        "time"
+      ],
+      "execution_authorized": false,
+      "left": "biotime",
+      "right": "climate",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 6
+    },
+    "left": "biotime",
+    "right": "climate",
+    "scientific_question": "Which climate product and temporal matching rule is justified?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 3,
+      "distinct_documented_dimensions": [
+        "community",
+        "environment",
+        "method",
+        "organism",
+        "sampling",
+        "space",
+        "time",
+        "trait"
+      ],
+      "execution_authorized": false,
+      "left": "try",
+      "right": "biotime",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "taxon"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 9
+    },
+    "left": "try",
+    "right": "biotime",
+    "scientific_question": "Can traits be linked to assemblages with explicit taxa, missingness and weighting?",
+    "status": "proposed; no site/time equivalence established"
+  },
+  {
+    "diagnostic": {
+      "added_dimensions_over_best_single": 4,
+      "distinct_documented_dimensions": [
+        "ecosystem",
+        "environment",
+        "method",
+        "observation",
+        "provenance",
+        "space",
+        "support",
+        "units"
+      ],
+      "execution_authorized": false,
+      "left": "ameriflux",
+      "right": "sentinel2",
+      "scientific_compatibility": null,
+      "shared_documented_dimensions": [
+        "measurement",
+        "time"
+      ],
+      "site_time_overlap_verified": false,
+      "union_documented_dimensions": 10
+    },
+    "left": "ameriflux",
+    "right": "sentinel2",
+    "scientific_question": "How should dynamic flux footprint and instantaneous pixel support be reviewed?",
+    "status": "proposed; no site/time equivalence established"
+  }
+]

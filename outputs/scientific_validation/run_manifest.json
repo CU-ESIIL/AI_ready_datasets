@@ -1,0 +1,182 @@
+{
+  "code_and_input_hashes": [
+    {
+      "path": "tests/test_scientific_validation.py",
+      "sha256": "c537e7268cbbf59ff8bb152bd7441322b92696b147a714e030269e411fed1d72"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "a1e78d96f1596a8b5a13a2ccfc1ba5b17d5a34a87d54f13160233008b98225e6"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "130f91e545f6a7c74b13c1b732507be30d25fd57905b94fbbc69aef8be8a933f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1fa686b223804945e43a3e945610c221519340850d53e7ebadb12974c49c8928"
+    },
+    {
+      "path": "data/fixtures/validation/decision_tasks.json",
+      "sha256": "814c68c6a48aebb8c9fdfc890fbca24a337760b47c1db156244ea580c5c5ec5b"
+    },
+    {
+      "path": "data/semantics/semantic_resources.csv",
+      "sha256": "ff8cfaef3e892de14a620cb75cc2e8415381d7ee70cd13ff26b323974f87f3f0"
+    },
+    {
+      "path": "data/semantics/validation/acquisition_plan.json",
+      "sha256": "37edcad1bac6d28fc3edd77ec7fc305f8b61bb1334e82a4694659b71bc04cfd3"
+    },
+    {
+      "path": "data/semantics/validation/canonical_observations.json",
+      "sha256": "7f61bc5dd394bb645b6725381d40ba4ceca76272c3e8085ad6a737b9b9b9929c"
+    },
+    {
+      "path": "data/semantics/validation/dataset_inventory.json",
+      "sha256": "b2a212431095e6e632af37e90452c6be8a834d184fc09e294db7072359f21221"
+    },
+    {
+      "path": "data/semantics/validation/dataset_pair_questions.json",
+      "sha256": "712135285a7cbf431d6a9e643a338066f41e5ae93d325acd8479ead49b727379"
+    },
+    {
+      "path": "data/semantics/validation/expert_gold_template.json",
+      "sha256": "6b93d30b0586b5bc6fb72f2ba0f4e589be48bcd2880f8f6c224de5f3e0a06e30"
+    },
+    {
+      "path": "reports/scientific_validation/data/graphs/W3C-LICENSE.html",
+      "sha256": "e3ea81a3892d14b02f3effc82e97674733a9d0e2d410457cc17f0a5a83833461"
+    },
+    {
+      "path": "reports/scientific_validation/data/graphs/bfo.ttl",
+      "sha256": "a7f0385eb859e707fa81bad532ff252427dc3490e3896a929332016fc53d9ece"
+    },
+    {
+      "path": "reports/scientific_validation/data/graphs/manifest.json",
+      "sha256": "6f3c058b02551c9420ed538263d89b7825d8cd0f1a4567dec2fdf4bb873cafc0"
+    },
+    {
+      "path": "reports/scientific_validation/data/graphs/sosa.ttl",
+      "sha256": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392"
+    },
+    {
+      "path": "reports/scientific_validation/data/graphs/ssn.ttl",
+      "sha256": "184d86189191146e314cc52b1bceb96fca11e70aacbc160d71588102a5153eb9"
+    },
+    {
+      "path": "run/scoped-sentinel-bundle.json",
+      "sha256": "847078303fc1c1baad8c371741531ec3cfb405d064cb9258b4e388be0385eb86"
+    },
+    {
+      "path": "run/sentinel-stream-consensus-bounded/proposed_recipe.json",
+      "sha256": "155485961ce314fa72b8ee9256fdc2c69a70851c22426005254424787a071312"
+    },
+    {
+      "path": "run/scoped-sentinel-review-v4/report.json",
+      "sha256": "eba9280591991f7c36eabe0296054f332004f6ae2a9cc14f4371efb9883f1d0c"
+    },
+    {
+      "path": "run/sentinel-stream-plan.json",
+      "sha256": "40957227e8f03b776c02767450031395d25e414471ffabc1c6080937283f51f1"
+    },
+    {
+      "path": "reports/scientific_validation/data/neon-product.json",
+      "sha256": "5b995b8255ac5517fc9ba896ec3d8927f94ca46641863e848e171f2e8f1aa8d1"
+    },
+    {
+      "path": "reports/scientific_validation/data/neon-site.json",
+      "sha256": "5b008374e4dc43a46acf6762913909cbbaf693b37c47af0057ad66ea99cf85a0"
+    },
+    {
+      "path": "src/dataset_prototype/scientific_validation.py",
+      "sha256": "f37c9041e27617737745ba8f3d3ec7555f12eda4abd6936f1537dfc7d7ec961e"
+    },
+    {
+      "path": "src/dataset_prototype/decision_experiment.py",
+      "sha256": "c73ab54e3fd4c51c79f6a3cf5b6424b457bba1897628090de7b5c46def775c29"
+    },
+    {
+      "path": "reports/scientific_validation/analyze.py",
+      "sha256": "527190d8f54de2e5629b8febbff36d5918db3aa944afa83f3b9af6d9b3262f9f"
+    }
+  ],
+  "counts": {
+    "breadth_assertions": 2408,
+    "candidate_records": 18,
+    "canonical_observations": 25,
+    "dataset_pairs": 153,
+    "parsed_graphs": 3,
+    "resources": 86,
+    "sentinel_review_issues": 10
+  },
+  "execution_authorized": false,
+  "generated_at": "2026-10-22T15:22:14.382571+00:00",
+  "git_commit": "8e7a7ac9fa214dd9f192ea496f90e515c60d498f",
+  "limits": [
+    "Dimension coverage is an assessment-based diagnostic, not term-level scientific expressibility",
+    "Human gold pending; no scientific decision accuracy established",
+    "NEON observations and sensor metadata missing",
+    "Prior vetoes preserved; no scientific execution approved",
+    "Only three ontology graphs measured; no imports followed"
+  ],
+  "outputs": [
+    {
+      "path": "outputs/scientific_validation/canonical_benchmark.json",
+      "sha256": "f0ab226ef1ea1c51f8876ddbd4692256051160d542f47d6b5d11f67623c0df25"
+    },
+    {
+      "path": "outputs/scientific_validation/canonical_term_witnesses.json",
+      "sha256": "c6f8cbcef38d67882b05bc40bbda151c2c748b1de495bfd1597070548cba54dc"
+    },
+    {
+      "path": "outputs/scientific_validation/dataset_benchmark.json",
+      "sha256": "db66ecc0942205be79fe54630dd2b4c604da93cb961da2a0dd0cfb7936639d18"
+    },
+    {
+      "path": "outputs/scientific_validation/expert_decision_template.json",
+      "sha256": "2ae8745da21888d1dde339a922c539243cf9779c58de655795585fd534267da3"
+    },
+    {
+      "path": "outputs/scientific_validation/neon_sentinel_case.json",
+      "sha256": "145ff52477c88fd35269138ee7d6f25ad3f09b955f647fb8c17faea0928de014"
+    },
+    {
+      "path": "outputs/scientific_validation/requested_dataset_pairs.json",
+      "sha256": "92f44689511732f89ab01957dfdeb3a237a62fa654863d4bef3d2bfa686ca25b"
+    },
+    {
+      "path": "outputs/scientific_validation/resource_breadth.json",
+      "sha256": "d1ee3822a971c9528bf2709ef549d63b47d76853d9ed9555fdaf1f300e3d9b17"
+    },
+    {
+      "path": "outputs/scientific_validation/resource_depth.json",
+      "sha256": "088d4a987c3ee8d6a2b654852227cf5850c7e8e4c96f62fcdb1fe8e86c2af9eb"
+    },
+    {
+      "path": "outputs/scientific_validation/resource_pca.json",
+      "sha256": "fb801bd56a1992d1f9e4014e9dbe0d6566d2a2278e3f115cf3f04ca095a1a4f9"
+    },
+    {
+      "path": "outputs/scientific_validation/resource_relationships.json",
+      "sha256": "b94fffbdc430f727019d6ac4b345686adc3d01f0d5259f25611eca4436fbcbd8"
+    },
+    {
+      "path": "outputs/scientific_validation/sentinel_proposed_recipe.json",
+      "sha256": "f9bc8c679fa90bc9833fd08c53b7742c23c0ba39bca946807e364cab657d1643"
+    },
+    {
+      "path": "outputs/scientific_validation/sentinel_review_gap_analysis.json",
+      "sha256": "da2dac24aa32b0906892f065d9dd841f419552157cc97703a941f9abef67d7ef"
+    }
+  ],
+  "source_data_read": false,
+  "version": "scientific-validation-v1",
+  "versions": {
+    "cubedynamics": "0.1.0rc3",
+    "dataset-prototype": "0.1.0",
+    "numpy": "1.26.4",
+    "pydantic": "2.14.1",
+    "rdflib": "7.6.0"
+  }
+}

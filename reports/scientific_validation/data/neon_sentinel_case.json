@@ -1,0 +1,273 @@
+{
+  "case_id": "NIWO-air-temperature-Sentinel-B08-context",
+  "computational_steps_available": [
+    "calibration.scale_offset",
+    "semantic.rename",
+    "unit.convert only after source unit verification"
+  ],
+  "coordinate_diagnostic": {
+    "interpretation": "Neither coordinate identifies the selected NEON sensor; spatial colocation is NOT verified",
+    "method": "spherical haversine, mean Earth radius 6371008.8 m; descriptive planning diagnostic only",
+    "old_planning_point_to_public_site_coordinate_m": 2394.041056414728
+  },
+  "execution_authorized": false,
+  "human_decisions": [
+    "choose actual NEON sensor and height",
+    "verify exact interval semantics and units",
+    "approve contextual\u2014not equivalent\u2014relationship",
+    "select spatial support and allowable temporal matching",
+    "define independent validation and quality criteria",
+    "resolve prior Sentinel veto and rights attribution"
+  ],
+  "missing_deterministic_capability": {
+    "description": "Reviewed interval-to-instant contextual association preserving unequal supports and independent quantities",
+    "implementation_status": "not implemented; scientist must define interval convention, sensor selection, footprint relation, tolerance and uncertainty first",
+    "registered_operation_id": null,
+    "why_existing_join_fails": "observation.join_exact requires identical coordinates, intervals and equal support; spatial.match is not a sensor footprint or tower-to-pixel scientific relationship"
+  },
+  "neon": {
+    "measurement": "aspirated air temperature, one-/thirty-minute averages of 1Hz observations; height-specific sensor support",
+    "method": "Air temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station. Temperature observations are made using platinum resistance thermometers, which are housed in a fan aspirated shield to reduce radiative bias.",
+    "month": "2023-07",
+    "month_available": true,
+    "name": "Single aspirated air temperature",
+    "product": "DP1.00002.001",
+    "quality_flags": null,
+    "release_candidate": "RELEASE-2025; exact file/release membership still needs verification",
+    "selected_interval": null,
+    "sensor_position": null,
+    "site": "NIWO",
+    "site_coordinate": [
+      -105.58237,
+      40.05425
+    ],
+    "site_coordinate_is_not_sensor_support": true,
+    "source_observations_acquired": false,
+    "unit": null
+  },
+  "neon_recipe_binding": null,
+  "registered_recipe_fragment": {
+    "agent_review": {
+      "outcome": "request_revision",
+      "reasons": [
+        "semantic: Negative offset may yield negative reflectance values for low DN pixels.",
+        "semantic: No uncertainty propagation is defined for the calibration.",
+        "semantic: Quality\u2011mask handling is unclear; quality_mask_value is null.",
+        "semantic: Target unit \"1\" is ambiguous without explicit reflectance definition.",
+        "semantic: Proprietary STAC label may add licensing constraints beyond Copernicus notice.",
+        "semantic: Checksum validates only metadata, not raster data integrity.",
+        "units: Negative offset may produce negative reflectance values for low DN pixels.",
+        "units: No uncertainty propagation is defined for the calibration.",
+        "units: Quality\u2011mask handling is unclear; quality_mask_value is null.",
+        "units: Target unit \"1\" is ambiguous without explicit reflectance definition.",
+        "units: Proprietary STAC label may add licensing constraints beyond Copernicus notice.",
+        "units: Checksum validates only metadata, not raster data integrity.",
+        "units: Streaming without intermediate validation may propagate invalid pixels.",
+        "support: Negative offset may yield negative reflectance values for low DN pixels.",
+        "support: No uncertainty propagation is defined for the calibration.",
+        "support: Quality\u2011mask handling is unclear; quality_mask_value is null.",
+        "support: Target unit \"1\" is ambiguous without explicit reflectance definition.",
+        "support: Proprietary STAC label may add licensing constraints beyond Copernicus notice.",
+        "support: Checksum validates only metadata, not raster data integrity.",
+        "rights: Proprietary STAC label may add licensing constraints beyond the Copernicus notice.",
+        "rights: Explicit attribution requirements for derived data are not detailed.",
+        "rights: Redistribution rights are unclear given the proprietary label despite derivative flag.",
+        "rights: Checksum only validates metadata, not raster data integrity, hindering compliance verification.",
+        "rights: Negative offset may produce invalid reflectance values, potentially breaching usage policies.",
+        "rights: Quality\u2011mask handling is underspecified, affecting compliance with data quality standards.",
+        "rights: Unit \"1\" is ambiguous; lack of clear definition may cause misinterpretation of reflectance.",
+        "rights: Uncertainty whether streaming without intermediate storage complies with rights requirements.",
+        "qa: Negative offset may produce negative reflectance values for low DN pixels.",
+        "qa: No uncertainty propagation is defined for the calibration.",
+        "qa: Quality\u2011mask handling is unclear; quality_mask_value is null.",
+        "qa: Target unit \"1\" is ambiguous without explicit reflectance definition.",
+        "qa: Proprietary STAC label may add licensing constraints beyond Copernicus notice.",
+        "qa: Checksum validates only metadata, not raster data integrity.",
+        "qa: Streaming without intermediate validation may propagate invalid pixels.",
+        "qa: Rights clarification needed for redistribution under proprietary label."
+      ],
+      "recipe_content_digest": "e403ffc83d02e56d66820073c118dfb8429dbdeff5442a09b016ad1ee8266499",
+      "reviewer": "specialist-consensus:93d22dc993ea942aee29ddb0eb5204a5d5f31f58a9749dd002a186e28ebdd2fc"
+    },
+    "author": "metadata-specialist-consensus",
+    "core_recipe": null,
+    "execution_identity": {
+      "constants_version": "units-v1",
+      "executor_version": "registered-allowlist-v3",
+      "registry_digest": "9373418279040da615958274e390b909922803075b4b8be6fe3bcb12c8e2f2d3",
+      "registry_version": "2",
+      "validator_version": "scientific-preconditions-v1"
+    },
+    "mappings": [
+      {
+        "confidence": 0.9,
+        "disagreement": false,
+        "evidence": [
+          "metadata:2ee5bcb9fa66d5534c1d50475274eb21c67f7667324280b70c370592ac6093ca"
+        ],
+        "novel": true,
+        "relationship": "convertible_to",
+        "review_status": "needs_review",
+        "source_asset": "S2B_13TDE_20230715_0_L2A:B08",
+        "source_variable": "B08_DN",
+        "target": {
+          "biological_entity": null,
+          "definition": "Sentinel-2 L2A bottom-of-atmosphere NIR band 8 reflectance calculated using documented asset scale and offset",
+          "measurement_method": "MSI band 8 L2A native pixel; documented scale/offset calibration",
+          "name": "B08_reflectance",
+          "ontology_id": null,
+          "unit": "1"
+        }
+      }
+    ],
+    "operations": [
+      {
+        "from_unit": "DN",
+        "maximum": null,
+        "minimum": null,
+        "offset": -0.1,
+        "operation": "calibrate",
+        "other_asset": null,
+        "scale": 0.0001,
+        "sentinel": null,
+        "source_asset": "S2B_13TDE_20230715_0_L2A:B08",
+        "source_variable": "B08_DN",
+        "target_support": null,
+        "target_variable": null,
+        "to_unit": "1",
+        "tolerance": null
+      },
+      {
+        "from_unit": null,
+        "maximum": null,
+        "minimum": null,
+        "offset": null,
+        "operation": "map_variable",
+        "other_asset": null,
+        "scale": null,
+        "sentinel": null,
+        "source_asset": "S2B_13TDE_20230715_0_L2A:B08",
+        "source_variable": "B08_DN",
+        "target_support": null,
+        "target_variable": "B08_reflectance",
+        "to_unit": null,
+        "tolerance": null
+      }
+    ],
+    "proposals": [
+      {
+        "agent": "openclaw-llm-task:js2/gpt-oss-120b",
+        "configuration": "bounded-science-v1; OpenClaw llm-task; Verde; no model tools; no fallback",
+        "evidence": [
+          "message:428559e44a9465a6bdb03a1fca61e0815077023513c8099c424b6e3f63050e29",
+          "prompt_sha256:f8c51530bc99ef0192bbfa15dd1d31a5c78360872aa999365b6effa07d5b02b7",
+          "response_sha256:406cf97783852069e33c8dbf51aaf0379a9046aeff6fc750dc031512d24416c5"
+        ],
+        "rationale": "The proposal respects the metadata\u2011only planning constraints by streaming Sentinel\u20112 B08 digital numbers (DN) through the documented calibration (scale 0.0001, offset -0.1) to produce reflectance values (unit \"1\") and feeding them directly into the MOSAIKS empirical random convolutional feature encoder. The encoder configuration matches the target definition (B08_reflectance) and uses no resampling, clipping, or intermediate materialization, preserving native pixel geometry and lineage. However, scientific validity hinges on external verification of the calibrated reflectance, uncertainty propagation, and quality\u2011mask handling, which are not fully specified in the metadata. The approach is acceptable for exploratory embedding generation but requires a downstream review of calibration accuracy, uncertainty bounds, and physical plausibility before any inferential use.",
+        "role": "semantic",
+        "version": "not-exposed-by-Verde"
+      },
+      {
+        "agent": "openclaw-llm-task:js2/gpt-oss-120b",
+        "configuration": "bounded-science-v1; OpenClaw llm-task; Verde; no model tools; no fallback",
+        "evidence": [
+          "message:8a3d1930d1eb88ad90c90c50b2035ee7ccc134a971e9c4494205deda6ab46569",
+          "prompt_sha256:9c9321422167f3ad1e922cf058cb46bde33576d452beb4154ffa030985d7b928",
+          "response_sha256:008dff8dce3ec4f9d69f441e707a4f153143b82a20277626c4e4cfcc3c69410d"
+        ],
+        "rationale": "The proposal can calibrate Sentinel-2 B08 digital numbers to reflectance using the exact documented scale (0.0001) and offset (-0.1) and stream the calibrated values directly into MOSAIKS empirical random convolutional features. All processing respects native 10\u202fm pixel geometry and the required quality mask (SCL\u202f=\u202f4,5,6, DN\u202f\u2260\u202f0). However, the plan relies solely on metadata without accessing actual pixel values, lacks defined physical value ranges, and propagates uncertainty only as the absolute scale factor applied to any supplied scalar uncertainty. Human review is mandatory before execution.",
+        "role": "units",
+        "version": "not-exposed-by-Verde"
+      },
+      {
+        "agent": "openclaw-llm-task:js2/gpt-oss-120b",
+        "configuration": "bounded-science-v1; OpenClaw llm-task; Verde; no model tools; no fallback",
+        "evidence": [
+          "message:0c5989692999547123f37a221b8bfdfc42dcd97b7ec5c1bc7e5cc0655b8c3f90",
+          "prompt_sha256:1c1cb5d752d8f7c3d2f656e01b5a43f8db49506a82157f98eaaa60eedfde245a",
+          "response_sha256:722daed2b5ce390b7135a44ad6e5f65565a4e1716046a8dc3201817d6311fbd8"
+        ],
+        "rationale": "Based on the supplied Sentinel-2 L2A metadata (metadata:2ee5bcb9fa66d5534c1d50475274eb21c67f7667324280b70c370592ac6093ca), the proposal streams calibrated B08 reflectance values directly into MOSAIKS empirical random-convolution features while preserving native 10\u202fm EPSG:4326 pixel geometry. Calibration follows the documented scale\u202f=\u202f0.0001 and offset\u202f=\u202f\u20110.1, and quality filtering requires SCL codes 4\u20116 with non\u2011zero DN. Because only metadata is available, no raw pixel values are inspected; therefore scientific validation of the resulting embeddings must rely on downstream verification and explicit human approval.",
+        "role": "support",
+        "version": "not-exposed-by-Verde"
+      },
+      {
+        "agent": "openclaw-llm-task:js2/gpt-oss-120b",
+        "configuration": "bounded-science-v1; OpenClaw llm-task; Verde; no model tools; no fallback",
+        "evidence": [
+          "message:09dedb6a5ac2ea59a1e7075d86390473b716d8f3cf94b168a509e748b909d8bd",
+          "prompt_sha256:adcedb405e082da6a95ebb8feec754dde7a24912caef20bb2c156b5ebf92d2d7",
+          "response_sha256:d280637d44e22a820f6ab2afccf8f66e5896efbd553af03efd2330049df8eeec"
+        ],
+        "rationale": "The Sentinel\u20112 B08 band is provided as digital numbers with a documented scale (0.0001) and offset (\u20110.1) to compute bottom\u2011of\u2011atmosphere reflectance. The data are licensed under the Copernicus Sentinel Data Legal Notice with a proprietary STAC label; derivative use is permitted but redistribution may be limited by the underlying Copernicus terms. Metadata\u2011only planning is enforced: no raw pixel values are read, and bounded streaming reads feed directly into MOSAIKS empirical random convolutional features. Quality control requires SCL mask values 4,\u202f5,\u202f6 and non\u2011zero DN, but these mask values are not available in the metadata\u2011only plan. Native 10\u202fm pixels are retained without resampling or clipping, and no physical valid range is supplied, so scientific validation of value ranges is required. Calibration uncertainty is limited to the absolute scale factor; covariance is not modeled. Human approval is mandatory before any execution, and the provenance checksum covers only metadata, not the remote raster bytes, leaving raster immutability unverified.",
+        "role": "rights",
+        "version": "not-exposed-by-Verde"
+      },
+      {
+        "agent": "openclaw-llm-task:js2/gpt-oss-120b",
+        "configuration": "bounded-science-v1; OpenClaw llm-task; Verde; no model tools; no fallback",
+        "evidence": [
+          "message:12efebbc03dcbcb9f5091735fafef8d6736ed6498722392dbbc20f963380f260",
+          "prompt_sha256:4d0d647888b816bd1c404b51802fdeefbcd9cb181e795b6ea19f788a23e4dda6",
+          "response_sha256:8af74c7159badb5565d24d043dfc0a85a2d1848f2d86827ecbaa443933d37898"
+        ],
+        "rationale": "The proposal follows all specialist constraints: it streams Sentinel\u20112 B08 digital numbers (DN) directly from the native 10\u202fm EPSG:4326 pixels without resampling or materialization, applies the exact documented calibration (scale\u202f=\u202f0.0001, offset\u202f=\u202f\u20110.1) to convert DN to unitless reflectance, and maps the calibrated values to the target variable B08_reflectance required by the MOSAIKS encoder. Quality policy (SCL\u202f=\u202f4,5,6 and DN\u202f\u2260\u202f0) is enforced at read time, though mask values are not available in the metadata\u2011only plan. No physical range is imposed, respecting the range policy. Uncertainty is propagated as the absolute scale factor per the executor contract. All metadata checksum verification is performed, acknowledging that remote raster immutability cannot be guaranteed. Human approval remains mandatory before execution.",
+        "role": "harmonization",
+        "version": "not-exposed-by-Verde"
+      },
+      {
+        "agent": "deterministic-evidence-audit",
+        "configuration": "curated rules; no LLM",
+        "evidence": [
+          "native-stac:/properties/proj:epsg",
+          "Sentinel legal notice pp.1\u20132"
+        ],
+        "rationale": "Correction proposal only: native raster EPSG:32613; geographic footprint EPSG:4326. Historical vetoes/proposals retained. No execution authority.",
+        "role": "harmonization",
+        "version": "scientific-validation-v1"
+      }
+    ],
+    "recipe_id": "consensus-5f8d8095e26eb1d4-validation-draft",
+    "scope": "core",
+    "status": "needs_review",
+    "track": null,
+    "version": "2"
+  },
+  "requires_new_data": [
+    "authenticated bounded NEON observations plus sensor-position/quality metadata",
+    "independent labels for any inferential claim"
+  ],
+  "scientific_relationship": {
+    "lost_meaning_if_forced_equal": [
+      "air versus canopy/surface optical quantity",
+      "height and point sampling versus pixel footprint",
+      "interval averaging versus instantaneous acquisition",
+      "method, uncertainty and quality provenance"
+    ],
+    "question": "Can a reviewed tower air-temperature interval contextualize instantaneous canopy NIR observations while preserving quantity, height, footprint and temporal differences?",
+    "type": "proposed environmental context / covariate, NOT equivalence"
+  },
+  "selection_basis": [
+    "NIWO July 2023 product availability verified in public product metadata",
+    "Retained Sentinel scene footprint contains public NIWO site coordinate",
+    "Existing metadata permits manual inspection; no nationwide integration"
+  ],
+  "sentinel": {
+    "acquisition": "2023-07-15T18:03:00.590000Z",
+    "footprint_contains_site_coordinate": true,
+    "measurement": "MSI B08 bottom-of-atmosphere NIR reflectance after documented asset calibration",
+    "native_crs": "EPSG:32613",
+    "old_planning_coordinate": [
+      -105.586,
+      40.0329
+    ],
+    "source_asset": "S2B_13TDE_20230715_0_L2A:B08",
+    "spatial_support": "10 m native pixel",
+    "temporal_support": "instantaneous",
+    "unit": "1"
+  },
+  "sentinel_review_package_digest": "c2a1ad9a01a347f88515dfff3ca78811ae94815c3aeeced4cea7e72fa8d83fb3",
+  "site_selection_scope": "one evidence-backed candidate; not an optimized site ranking",
+  "source_data_read": false,
+  "status": "BLOCKED; review package only"
+}

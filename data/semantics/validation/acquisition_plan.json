@@ -1,0 +1,42 @@
+{
+  "purpose": "Bounded scientific metadata evidence only; no observation/raster acquisition",
+  "sources": [
+    {
+      "id": "bfo",
+      "url": "https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-core.ttl",
+      "format": "turtle",
+      "license": "CC-BY-4.0",
+      "attribution": "BFO 2020 contributors; dc:license retained in graph",
+      "max_bytes": 1000000,
+      "use": "local structural metrics; no imports followed"
+    },
+    {
+      "id": "sosa",
+      "url": "https://www.w3.org/ns/sosa/sosa.ttl",
+      "format": "turtle",
+      "license": "W3C document/software terms; preserve graph notices",
+      "attribution": "W3C/OGC Spatial Data on the Web Working Group",
+      "max_bytes": 1000000,
+      "use": "local structural metrics; no imports followed"
+    },
+    {
+      "id": "ssn",
+      "url": "https://www.w3.org/ns/ssn/ssn.ttl",
+      "format": "turtle",
+      "license": "W3C document/software terms; preserve graph notices",
+      "attribution": "W3C/OGC Spatial Data on the Web Working Group",
+      "max_bytes": 1000000,
+      "use": "local structural metrics; no imports followed"
+    }
+  ],
+  "metadata_policy": "Read only the listed public scientific vocabularies, retain attribution, URL, timestamp, bytes and checksum; no dataset redistribution rights inferred. Product documentation is paraphrased with evidence URLs rather than copied wholesale.",
+  "neon_metadata": {
+    "urls": [
+      "https://data.neonscience.org/api/v0/products/DP1.00002.001",
+      "https://data.neonscience.org/api/v0/sites/NIWO"
+    ],
+    "access": "unauthenticated public product/site JSON only; not observation files",
+    "license": "NEON CC-BY-4.0; preserve product DOI and citation before scientific use",
+    "intended_use": "verify site/month metadata availability, not infer sensor support"
+  }
+}

@@ -71,6 +71,12 @@ nav:
           - Documentation synchronization audit: development/documentation-sync-audit.md
           - Website audit and review: development/website-review.md
           - Decisions and history: development/decisions.md
+  - Scientific validation:
+      - Findings: validation/index.md
+      - Sentinel expert review: validation/sentinel-real-case.md
+      - Semantic and dataset experiments: validation/benchmarks.md
+      - NEON and Sentinel: validation/neon-sentinel.md
+      - Verde experiment: validation/verde-experiment.md
   - State report: pipeline-state-report.md
   - GitHub: https://github.com/CU-ESIIL/AI_ready_datasets
 theme:

@@ -254,3 +254,20 @@
 - Module 1 owns source discovery/access; do not repeat CubeDynamics loader discovery
   or duplicate MESA infrastructure inside the adapter. Core semantic/review functions
   must remain usable without the optional CubeDynamics dependency.
+
+## Scientific validation experiments
+
+- Keep benchmark scores, exact term presence, source facts, model judgments and
+  expert gold decisions separate. Assistant-authored reference answers are drafts,
+  never a human gold standard. Unknown fields must not become zero or absence.
+- Resource combination coverage describes the declared requirement rubric, not
+  scientific expressibility or equivalence. Class count/depth and metadata presence
+  are not quality or compatibility scores. Record mixed candidate-inventory scopes.
+- Model experiment arms remain inert. Preserve exact schemas/prompts, normalized
+  responses, failures and evaluation identities; deterministic re-evaluations are
+  not extra model samples. Enforced zero execution is not model competence.
+- Preserve historical Sentinel vetoes and findings unchanged. Issue adjudication
+  forms are not runtime HumanDecision objects or execution permission.
+- Public site coordinates do not identify actual sensor support. Do not promote an
+  exact-support join or grid alignment into a tower-to-pixel scientific association.
+  A genuinely new association method needs expert definition before implementation.

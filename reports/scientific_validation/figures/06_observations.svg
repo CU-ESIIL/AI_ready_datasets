@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="345.6pt" viewBox="0 0 576 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-22T09:22:15.687232</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 576 345.6 
+L 576 0 
+L 0 0 
+z
+" style="fill: #f5f3eb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 149.32 302.277656 
+L 556.08 302.277656 
+L 556.08 12 
+L 149.32 12 
+z
+" style="fill: #f5f3eb"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 149.32 25.194439 
+L 381.754286 25.194439 
+L 381.754286 33.70698 
+L 149.32 33.70698 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 149.32 35.835115 
+L 323.645714 35.835115 
+L 323.645714 44.347657 
+L 149.32 44.347657 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 149.32 46.475792 
+L 420.493333 46.475792 
+L 420.493333 54.988333 
+L 149.32 54.988333 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 149.32 57.116469 
+L 352.7 57.116469 
+L 352.7 65.62901 
+L 149.32 65.62901 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 149.32 67.757145 
+L 284.906667 67.757145 
+L 284.906667 76.269686 
+L 149.32 76.269686 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 149.32 78.397822 
+L 323.645714 78.397822 
+L 323.645714 86.910363 
+L 149.32 86.910363 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 149.32 89.038498 
+L 284.906667 89.038498 
+L 284.906667 97.551039 
+L 149.32 97.551039 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 149.32 99.679175 
+L 393.376 99.679175 
+L 393.376 108.191716 
+L 149.32 108.191716 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 149.32 110.319851 
+L 312.024 110.319851 
+L 312.024 118.832393 
+L 149.32 118.832393 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 149.32 120.960528 
+L 284.906667 120.960528 
+L 284.906667 129.473069 
+L 149.32 129.473069 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 149.32 131.601204 
+L 312.024 131.601204 
+L 312.024 140.113746 
+L 149.32 140.113746 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 149.32 142.241881 
+L 393.376 142.241881 
+L 393.376 150.754422 
+L 149.32 150.754422 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 149.32 152.882558 
+L 352.7 152.882558 
+L 352.7 161.395099 
+L 149.32 161.395099 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 149.32 163.523234 
+L 352.7 163.523234 
+L 352.7 172.035775 
+L 149.32 172.035775 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 149.32 174.163911 
+L 420.493333 174.163911 
+L 420.493333 182.676452 
+L 149.32 182.676452 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 149.32 184.804587 
+L 352.7 184.804587 
+L 352.7 193.317128 
+L 149.32 193.317128 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 149.32 195.445264 
+L 381.754286 195.445264 
+L 381.754286 203.957805 
+L 149.32 203.957805 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 149.32 206.08594 
+L 284.906667 206.08594 
+L 284.906667 214.598481 
+L 149.32 214.598481 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 149.32 216.726617 
+L 323.645714 216.726617 
+L 323.645714 225.239158 
+L 149.32 225.239158 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 149.32 227.367293 
+L 284.906667 227.367293 
+L 284.906667 235.879835 
+L 149.32 235.879835 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 149.32 238.00797 
+L 474.728 238.00797 
+L 474.728 246.520511 
+L 149.32 246.520511 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 149.32 248.648646 
+L 284.906667 248.648646 
+L 284.906667 257.161188 
+L 149.32 257.161188 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 149.32 259.289323 
+L 312.024 259.289323 
+L 312.024 267.801864 
+L 149.32 267.801864 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 149.32 269.93 
+L 474.728 269.93 
+L 474.728 278.442541 
+L 149.32 278.442541 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 149.32 280.570676 
+L 352.7 280.570676 
+L 352.7 289.083217 
+L 149.32 289.083217 
+z
+" clip-path="url(#p09da42de4d)" style="fill: #174b42"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m57e976e39c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m57e976e39c" x="149.32" y="302.277656" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="149.32" y="316.875312" transform="rotate(-0 149.32 316.875312)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m57e976e39c" x="230.672" y="302.277656" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="230.672" y="316.875312" transform="rotate(-0 230.672 316.875312)">0.2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m57e976e39c" x="312.024" y="302.277656" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="312.024" y="316.875312" transform="rotate(-0 312.024 316.875312)">0.4</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m57e976e39c" x="393.376" y="302.277656" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="393.376" y="316.875312" transform="rotate(-0 393.376 316.875312)">0.6</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m57e976e39c" x="474.728" y="302.277656" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="474.728" y="316.875312" transform="rotate(-0 474.728 316.875312)">0.8</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m57e976e39c" x="556.08" y="302.277656" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="556.08" y="316.875312" transform="rotate(-0 556.08 316.875312)">1.0</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="352.7" y="330.876094" transform="rotate(-0 352.7 330.876094)">Best single-resource assessed dimension coverage</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <defs>
+       <path id="m9679641564" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="29.45071" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="32.490085" transform="rotate(-0 142.32 32.490085)">site air temperature</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="40.091386" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="43.130761" transform="rotate(-0 142.32 43.130761)">individual leaf area</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="50.732063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="53.771438" transform="rotate(-0 142.32 53.771438)">specific leaf area</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="61.372739" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="64.412114" transform="rotate(-0 142.32 64.412114)">species trait distribution</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="72.013416" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="75.052791" transform="rotate(-0 142.32 75.052791)">plot species abundance</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="82.654092" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="85.693467" transform="rotate(-0 142.32 85.693467)">community weighted trait mean</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="93.294769" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="96.334144" transform="rotate(-0 142.32 96.334144)">population count</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="103.935445" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="106.97482" transform="rotate(-0 142.32 106.97482)">pollinator interaction</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="114.576122" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="117.615497" transform="rotate(-0 142.32 117.615497)">predator prey link</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="125.216798" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="128.256173" transform="rotate(-0 142.32 128.256173)">eddy covariance flux</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="135.857475" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="138.89685" transform="rotate(-0 142.32 138.89685)">soil carbon sample</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="146.498152" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="149.537527" transform="rotate(-0 142.32 149.537527)">environmental water sample</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="157.138828" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="160.178203" transform="rotate(-0 142.32 160.178203)">genomic sample</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="167.779505" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="170.81888" transform="rotate(-0 142.32 170.81888)">microbiome community</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="178.420181" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="181.459556" transform="rotate(-0 142.32 181.459556)">crop phenotype</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="189.060858" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="192.100233" transform="rotate(-0 142.32 192.100233)">field yield</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="199.701534" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="202.740909" transform="rotate(-0 142.32 202.740909)">satellite reflectance</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="210.342211" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="213.381586" transform="rotate(-0 142.32 213.381586)">vegetation index</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="220.982887" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="224.022262" transform="rotate(-0 142.32 224.022262)">community satellite pair</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="231.623564" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="234.662939" transform="rotate(-0 142.32 234.662939)">annual vegetation change</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="242.264241" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="245.303616" transform="rotate(-0 142.32 245.303616)">disturbance climate context</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="252.904917" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="255.944292" transform="rotate(-0 142.32 255.944292)">cellular expression</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="263.545594" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="266.584969" transform="rotate(-0 142.32 266.584969)">organism behavior</text>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="274.18627" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="277.225645" transform="rotate(-0 142.32 277.225645)">habitat species occurrence</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#m9679641564" x="149.32" y="284.826947" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: end" x="142.32" y="287.866322" transform="rotate(-0 142.32 287.866322)">sampling design comparison</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_28">
+    <path d="M 149.32 302.277656 
+L 149.32 12 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 149.32 302.277656 
+L 556.08 302.277656 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p09da42de4d">
+   <rect x="149.32" y="12" width="406.76" height="290.277656"/>
+  </clipPath>
+ </defs>
+</svg>

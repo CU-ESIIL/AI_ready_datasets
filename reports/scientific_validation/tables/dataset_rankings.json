@@ -1,0 +1,1010 @@
+[
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "community_ecosystem",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "cross_scale",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 10
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 8
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 7
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 5
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 5
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 5
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "flagship_review_candidate",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "interaction",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "multimodal",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_native",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 1
+  },
+  {
+    "rubric": "ontology_ready",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "ameriflux",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 1,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "biotime",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 2,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "neon",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 3,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "sentinel2",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 4,
+    "rubric_value": 6
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "cartograplant",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 5,
+    "rubric_value": 5
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "obis",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 6,
+    "rubric_value": 5
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "gbif",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 7,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "landsat",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 8,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "miappe",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 9,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "try",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 10,
+    "rubric_value": 4
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "biosample",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 11,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "forestgeo",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 12,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "globi",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 13,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "mgnify",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 14,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "ornl_daac",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 15,
+    "rubric_value": 3
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "lter",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 16,
+    "rubric_value": 2
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "climate",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 17,
+    "rubric_value": 0
+  },
+  {
+    "rubric": "semantic_stress_test",
+    "dataset_id": "ebird",
+    "kind": "review prioritization diagnostic; ties share scientific standing; not dataset quality",
+    "rank": 18,
+    "rubric_value": 0
+  }
+]

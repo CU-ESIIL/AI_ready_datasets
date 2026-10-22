@@ -67,3 +67,6 @@
 #semantic-filters :focus-visible, .md-typeset summary:focus-visible { outline: 3px solid #8a481d; outline-offset: 3px; }
 .md-typeset tr[hidden] { display: none; }
 @media (max-width: 760px) { #semantic-filters:not([hidden]) { grid-template-columns: 1fr; } }
+
+/* Measured validation charts can fit the viewport; conceptual diagrams keep local scrolling. */
+.md-typeset p > img.validation-figure[src$=".svg"] { min-width: 0; max-width: 100%; width: 100%; }

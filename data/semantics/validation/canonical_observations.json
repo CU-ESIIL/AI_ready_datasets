@@ -1,0 +1,1288 @@
+[
+  {
+    "observation_id": "site_air_temperature",
+    "domain": "environment",
+    "label": "site air temperature",
+    "requirements": [
+      {
+        "requirement_id": "site_air_temperature.environmental_context",
+        "dimension": "environmental_context",
+        "requirement": "Explicit representation of environmental context for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "site_air_temperature.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "site_air_temperature.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "site_air_temperature.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "site_air_temperature.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "site_air_temperature.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "site_air_temperature.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for site air temperature; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "individual_leaf_area",
+    "domain": "traits",
+    "label": "individual leaf area",
+    "requirements": [
+      {
+        "requirement_id": "individual_leaf_area.anatomical",
+        "dimension": "anatomical",
+        "requirement": "Explicit representation of anatomical for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "individual_leaf_area.organismal",
+        "dimension": "organismal",
+        "requirement": "Explicit representation of organismal for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "individual_leaf_area.trait",
+        "dimension": "trait",
+        "requirement": "Explicit representation of trait for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "individual_leaf_area.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "individual_leaf_area.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "individual_leaf_area.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "individual_leaf_area.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for individual leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "specific_leaf_area",
+    "domain": "traits",
+    "label": "specific leaf area",
+    "requirements": [
+      {
+        "requirement_id": "specific_leaf_area.anatomical",
+        "dimension": "anatomical",
+        "requirement": "Explicit representation of anatomical for specific leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "specific_leaf_area.organismal",
+        "dimension": "organismal",
+        "requirement": "Explicit representation of organismal for specific leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "specific_leaf_area.trait",
+        "dimension": "trait",
+        "requirement": "Explicit representation of trait for specific leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "specific_leaf_area.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for specific leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "specific_leaf_area.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for specific leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "specific_leaf_area.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for specific leaf area; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "species_trait_distribution",
+    "domain": "traits",
+    "label": "species trait distribution",
+    "requirements": [
+      {
+        "requirement_id": "species_trait_distribution.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for species trait distribution; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "species_trait_distribution.trait",
+        "dimension": "trait",
+        "requirement": "Explicit representation of trait for species trait distribution; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "species_trait_distribution.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for species trait distribution; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "species_trait_distribution.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for species trait distribution; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "species_trait_distribution.quantitative_value",
+        "dimension": "quantitative_value",
+        "requirement": "Explicit representation of quantitative value for species trait distribution; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "species_trait_distribution.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for species trait distribution; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "plot_species_abundance",
+    "domain": "ecology",
+    "label": "plot species abundance",
+    "requirements": [
+      {
+        "requirement_id": "plot_species_abundance.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for plot species abundance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "plot_species_abundance.community",
+        "dimension": "community",
+        "requirement": "Explicit representation of community for plot species abundance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "plot_species_abundance.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for plot species abundance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "plot_species_abundance.quantitative_value",
+        "dimension": "quantitative_value",
+        "requirement": "Explicit representation of quantitative value for plot species abundance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "plot_species_abundance.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for plot species abundance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "plot_species_abundance.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for plot species abundance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "community_weighted_trait_mean",
+    "domain": "ecology",
+    "label": "community weighted trait mean",
+    "requirements": [
+      {
+        "requirement_id": "community_weighted_trait_mean.community",
+        "dimension": "community",
+        "requirement": "Explicit representation of community for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_weighted_trait_mean.trait",
+        "dimension": "trait",
+        "requirement": "Explicit representation of trait for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_weighted_trait_mean.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_weighted_trait_mean.quantitative_value",
+        "dimension": "quantitative_value",
+        "requirement": "Explicit representation of quantitative value for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_weighted_trait_mean.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_weighted_trait_mean.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_weighted_trait_mean.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for community weighted trait mean; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "population_count",
+    "domain": "ecology",
+    "label": "population count",
+    "requirements": [
+      {
+        "requirement_id": "population_count.population",
+        "dimension": "population",
+        "requirement": "Explicit representation of population for population count; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "population_count.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for population count; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "population_count.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for population count; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "population_count.quantitative_value",
+        "dimension": "quantitative_value",
+        "requirement": "Explicit representation of quantitative value for population count; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "population_count.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for population count; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "population_count.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for population count; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "pollinator_interaction",
+    "domain": "interaction",
+    "label": "pollinator interaction",
+    "requirements": [
+      {
+        "requirement_id": "pollinator_interaction.organismal",
+        "dimension": "organismal",
+        "requirement": "Explicit representation of organismal for pollinator interaction; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "pollinator_interaction.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for pollinator interaction; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "pollinator_interaction.ecological_interaction",
+        "dimension": "ecological_interaction",
+        "requirement": "Explicit representation of ecological interaction for pollinator interaction; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "pollinator_interaction.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for pollinator interaction; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "pollinator_interaction.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for pollinator interaction; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "predator_prey_link",
+    "domain": "interaction",
+    "label": "predator prey link",
+    "requirements": [
+      {
+        "requirement_id": "predator_prey_link.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for predator prey link; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "predator_prey_link.trophic_relationship",
+        "dimension": "trophic_relationship",
+        "requirement": "Explicit representation of trophic relationship for predator prey link; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "predator_prey_link.ecological_interaction",
+        "dimension": "ecological_interaction",
+        "requirement": "Explicit representation of ecological interaction for predator prey link; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "predator_prey_link.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for predator prey link; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "predator_prey_link.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for predator prey link; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "eddy_covariance_flux",
+    "domain": "environment",
+    "label": "eddy covariance flux",
+    "requirements": [
+      {
+        "requirement_id": "eddy_covariance_flux.ecosystem",
+        "dimension": "ecosystem",
+        "requirement": "Explicit representation of ecosystem for eddy covariance flux; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "eddy_covariance_flux.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for eddy covariance flux; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "eddy_covariance_flux.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for eddy covariance flux; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "eddy_covariance_flux.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for eddy covariance flux; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "eddy_covariance_flux.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for eddy covariance flux; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "eddy_covariance_flux.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for eddy covariance flux; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "soil_carbon_sample",
+    "domain": "environment",
+    "label": "soil carbon sample",
+    "requirements": [
+      {
+        "requirement_id": "soil_carbon_sample.environmental_context",
+        "dimension": "environmental_context",
+        "requirement": "Explicit representation of environmental context for soil carbon sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "soil_carbon_sample.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for soil carbon sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "soil_carbon_sample.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for soil carbon sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "soil_carbon_sample.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for soil carbon sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "soil_carbon_sample.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for soil carbon sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "environmental_water_sample",
+    "domain": "environment",
+    "label": "environmental water sample",
+    "requirements": [
+      {
+        "requirement_id": "environmental_water_sample.environmental_context",
+        "dimension": "environmental_context",
+        "requirement": "Explicit representation of environmental context for environmental water sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "environmental_water_sample.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for environmental water sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "environmental_water_sample.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for environmental water sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "environmental_water_sample.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for environmental water sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "environmental_water_sample.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for environmental water sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "genomic_sample",
+    "domain": "genomics",
+    "label": "genomic sample",
+    "requirements": [
+      {
+        "requirement_id": "genomic_sample.genomic",
+        "dimension": "genomic",
+        "requirement": "Explicit representation of genomic for genomic sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "genomic_sample.molecular",
+        "dimension": "molecular",
+        "requirement": "Explicit representation of molecular for genomic sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "genomic_sample.organismal",
+        "dimension": "organismal",
+        "requirement": "Explicit representation of organismal for genomic sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "genomic_sample.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for genomic sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "genomic_sample.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for genomic sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "genomic_sample.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for genomic sample; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "microbiome_community",
+    "domain": "genomics",
+    "label": "microbiome community",
+    "requirements": [
+      {
+        "requirement_id": "microbiome_community.genomic",
+        "dimension": "genomic",
+        "requirement": "Explicit representation of genomic for microbiome community; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "microbiome_community.community",
+        "dimension": "community",
+        "requirement": "Explicit representation of community for microbiome community; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "microbiome_community.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for microbiome community; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "microbiome_community.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for microbiome community; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "microbiome_community.environmental_context",
+        "dimension": "environmental_context",
+        "requirement": "Explicit representation of environmental context for microbiome community; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "microbiome_community.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for microbiome community; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "crop_phenotype",
+    "domain": "agriculture",
+    "label": "crop phenotype",
+    "requirements": [
+      {
+        "requirement_id": "crop_phenotype.phenotype",
+        "dimension": "phenotype",
+        "requirement": "Explicit representation of phenotype for crop phenotype; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "crop_phenotype.trait",
+        "dimension": "trait",
+        "requirement": "Explicit representation of trait for crop phenotype; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "crop_phenotype.organismal",
+        "dimension": "organismal",
+        "requirement": "Explicit representation of organismal for crop phenotype; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "crop_phenotype.experimental_design",
+        "dimension": "experimental_design",
+        "requirement": "Explicit representation of experimental design for crop phenotype; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "crop_phenotype.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for crop phenotype; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "crop_phenotype.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for crop phenotype; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "field_yield",
+    "domain": "agriculture",
+    "label": "field yield",
+    "requirements": [
+      {
+        "requirement_id": "field_yield.trait",
+        "dimension": "trait",
+        "requirement": "Explicit representation of trait for field yield; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "field_yield.quantitative_value",
+        "dimension": "quantitative_value",
+        "requirement": "Explicit representation of quantitative value for field yield; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "field_yield.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for field yield; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "field_yield.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for field yield; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "field_yield.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for field yield; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "field_yield.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for field yield; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "satellite_reflectance",
+    "domain": "remote_sensing",
+    "label": "satellite reflectance",
+    "requirements": [
+      {
+        "requirement_id": "satellite_reflectance.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "satellite_reflectance.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "satellite_reflectance.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "satellite_reflectance.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "satellite_reflectance.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "satellite_reflectance.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "satellite_reflectance.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for satellite reflectance; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "vegetation_index",
+    "domain": "remote_sensing",
+    "label": "vegetation index",
+    "requirements": [
+      {
+        "requirement_id": "vegetation_index.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for vegetation index; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "vegetation_index.quantitative_value",
+        "dimension": "quantitative_value",
+        "requirement": "Explicit representation of quantitative value for vegetation index; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "vegetation_index.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for vegetation index; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "vegetation_index.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for vegetation index; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "vegetation_index.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for vegetation index; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "vegetation_index.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for vegetation index; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "community_satellite_pair",
+    "domain": "cross_source",
+    "label": "community satellite pair",
+    "requirements": [
+      {
+        "requirement_id": "community_satellite_pair.community",
+        "dimension": "community",
+        "requirement": "Explicit representation of community for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_satellite_pair.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_satellite_pair.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_satellite_pair.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_satellite_pair.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_satellite_pair.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "community_satellite_pair.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for community satellite pair; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "annual_vegetation_change",
+    "domain": "cross_source",
+    "label": "annual vegetation change",
+    "requirements": [
+      {
+        "requirement_id": "annual_vegetation_change.ecosystem",
+        "dimension": "ecosystem",
+        "requirement": "Explicit representation of ecosystem for annual vegetation change; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "annual_vegetation_change.environmental_context",
+        "dimension": "environmental_context",
+        "requirement": "Explicit representation of environmental context for annual vegetation change; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "annual_vegetation_change.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for annual vegetation change; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "annual_vegetation_change.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for annual vegetation change; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "annual_vegetation_change.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for annual vegetation change; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "annual_vegetation_change.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for annual vegetation change; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "disturbance_climate_context",
+    "domain": "cross_source",
+    "label": "disturbance climate context",
+    "requirements": [
+      {
+        "requirement_id": "disturbance_climate_context.environmental_context",
+        "dimension": "environmental_context",
+        "requirement": "Explicit representation of environmental context for disturbance climate context; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "disturbance_climate_context.ecosystem",
+        "dimension": "ecosystem",
+        "requirement": "Explicit representation of ecosystem for disturbance climate context; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "disturbance_climate_context.temporal_representation",
+        "dimension": "temporal_representation",
+        "requirement": "Explicit representation of temporal representation for disturbance climate context; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "disturbance_climate_context.spatial_representation",
+        "dimension": "spatial_representation",
+        "requirement": "Explicit representation of spatial representation for disturbance climate context; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "disturbance_climate_context.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for disturbance climate context; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "cellular_expression",
+    "domain": "genomics",
+    "label": "cellular expression",
+    "requirements": [
+      {
+        "requirement_id": "cellular_expression.cellular",
+        "dimension": "cellular",
+        "requirement": "Explicit representation of cellular for cellular expression; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "cellular_expression.genomic",
+        "dimension": "genomic",
+        "requirement": "Explicit representation of genomic for cellular expression; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "cellular_expression.molecular",
+        "dimension": "molecular",
+        "requirement": "Explicit representation of molecular for cellular expression; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "cellular_expression.measurement",
+        "dimension": "measurement",
+        "requirement": "Explicit representation of measurement for cellular expression; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "cellular_expression.units",
+        "dimension": "units",
+        "requirement": "Explicit representation of units for cellular expression; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "cellular_expression.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for cellular expression; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "organism_behavior",
+    "domain": "ecology",
+    "label": "organism behavior",
+    "requirements": [
+      {
+        "requirement_id": "organism_behavior.organismal",
+        "dimension": "organismal",
+        "requirement": "Explicit representation of organismal for organism behavior; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "organism_behavior.behavior",
+        "dimension": "behavior",
+        "requirement": "Explicit representation of behavior for organism behavior; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "organism_behavior.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for organism behavior; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "organism_behavior.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for organism behavior; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "organism_behavior.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for organism behavior; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "habitat_species_occurrence",
+    "domain": "ecology",
+    "label": "habitat species occurrence",
+    "requirements": [
+      {
+        "requirement_id": "habitat_species_occurrence.habitat",
+        "dimension": "habitat",
+        "requirement": "Explicit representation of habitat for habitat species occurrence; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "habitat_species_occurrence.taxonomic",
+        "dimension": "taxonomic",
+        "requirement": "Explicit representation of taxonomic for habitat species occurrence; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "habitat_species_occurrence.observation",
+        "dimension": "observation",
+        "requirement": "Explicit representation of observation for habitat species occurrence; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "habitat_species_occurrence.spatial_representation",
+        "dimension": "spatial_representation",
+        "requirement": "Explicit representation of spatial representation for habitat species occurrence; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "habitat_species_occurrence.temporal_representation",
+        "dimension": "temporal_representation",
+        "requirement": "Explicit representation of temporal representation for habitat species occurrence; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  },
+  {
+    "observation_id": "sampling_design_comparison",
+    "domain": "cross_source",
+    "label": "sampling design comparison",
+    "requirements": [
+      {
+        "requirement_id": "sampling_design_comparison.sampling",
+        "dimension": "sampling",
+        "requirement": "Explicit representation of sampling for sampling design comparison; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "sampling_design_comparison.experimental_design",
+        "dimension": "experimental_design",
+        "requirement": "Explicit representation of experimental design for sampling design comparison; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "sampling_design_comparison.method_protocol",
+        "dimension": "method_protocol",
+        "requirement": "Explicit representation of method protocol for sampling design comparison; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "sampling_design_comparison.spatial_support",
+        "dimension": "spatial_support",
+        "requirement": "Explicit representation of spatial support for sampling design comparison; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "sampling_design_comparison.temporal_support",
+        "dimension": "temporal_support",
+        "requirement": "Explicit representation of temporal support for sampling design comparison; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      },
+      {
+        "requirement_id": "sampling_design_comparison.provenance",
+        "dimension": "provenance",
+        "requirement": "Explicit representation of provenance for sampling design comparison; scientific interpretation and exact terms need expert review",
+        "minimum_assessed_score": 2,
+        "term_mapping": null
+      }
+    ],
+    "author_class": "PROJECT ASSESSMENT",
+    "expert_review_status": "pending",
+    "scientific_mapping_approved": false
+  }
+]

@@ -53,3 +53,13 @@ The [canonical benchmark observations](semantics/ontology-benchmarking.md#canoni
 move from a site temperature to multi-source annual change. They are proposed
 semantic stress tests, not completed synthesis results. [Candidate dataset pairs](semantics/dataset-benchmarking.md#pairs-reveal-what-individual-datasets-cannot)
 show where support, methods and taxonomic interpretation will need review.
+
+## Scientific validation update — 22 October 2026
+
+The [new scientific validation findings](validation/index.md) retain real graph
+measurements, canonical requirement diagnostics, scoped dataset/pair assessments
+and live model results. Earlier unmeasured/planned statements describe the prior
+architecture snapshot: depth is now measured for three local graphs, while exact
+scientific mappings, independent ecological validity and the weaker-model
+hypothesis remain unvalidated. The real Sentinel and NEON–Sentinel cases still
+require explicit expert decisions; no scientific execution is approved.

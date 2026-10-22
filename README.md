@@ -112,3 +112,16 @@ explains the scientific story with 34 reproducible figures.
 [Editable sources, evidence and rebuild instructions](reports/pipeline_state/README.md)
 preserve the distinction between historical real observations, generated execution
 and planned validation.
+
+## Scientific validation experiments — 22 October 2026
+
+The [validation findings](docs/validation/index.md) now separate measured graph
+structure and live model behavior from provisional semantic assessments and blocked
+scientific workflows. The pass includes 25 observation specifications, 18 scoped
+candidate records, 153 pairs, three real vocabulary graphs and 100 live inert Verde
+calls. No real scientific release or human approval is claimed.
+
+[Scientific validation PDF](output/pdf/AI_ready_scientific_validation_report.pdf) ·
+[Reproducible evidence and methods](reports/scientific_validation/README.md) ·
+[Sentinel expert package](docs/validation/sentinel-real-case.md) ·
+[NEON–Sentinel missing-data/method gates](docs/validation/neon-sentinel.md).

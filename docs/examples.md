@@ -77,3 +77,11 @@ generated alignment example uses two source identities and DataArray/Dataset inp
 it records nearest sampling and support changes, not scientific equivalence.
 No real raster or raw/harmonized dataset is downloaded or persisted.
 [Details and limitations](cubedynamics.md).
+
+## Scientific validation example
+
+See the [NIWO air-temperature and Sentinel context proposal](validation/neon-sentinel.md)
+for an evidence-backed but blocked cross-source case. Rebuild its diagnostics with
+`python reports/scientific_validation/analyze.py` using the documented retained
+inputs, then rebuild the separate report. This example does not acquire observations,
+create equivalence, implement a new operation or bypass review.

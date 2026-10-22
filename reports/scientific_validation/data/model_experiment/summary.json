@@ -1,0 +1,298 @@
+{
+  "arms": {
+    "A": {
+      "records": 50,
+      "metrics": {
+        "schema_valid": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "scientific_valid": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "draft_oracle_agreement": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "correct_operation_selection": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "evidence_grounded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "appropriate_abstention": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "appropriate_review": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unsupported_operation_attempt": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "fabricated_identifier_attempt": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "fabricated_constant_attempt": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "unsafe_execution": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        }
+      },
+      "human_gold_accuracy": null
+    },
+    "B": {
+      "records": 50,
+      "metrics": {
+        "schema_valid": {
+          "numerator": 50,
+          "denominator": 50,
+          "rate": 1.0
+        },
+        "scientific_valid": {
+          "numerator": 36,
+          "denominator": 50,
+          "rate": 0.72
+        },
+        "draft_oracle_agreement": {
+          "numerator": 37,
+          "denominator": 50,
+          "rate": 0.74
+        },
+        "correct_operation_selection": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "evidence_grounded": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "appropriate_abstention": {
+          "numerator": 2,
+          "denominator": 24,
+          "rate": 0.08333333333333333
+        },
+        "appropriate_review": {
+          "numerator": 31,
+          "denominator": 42,
+          "rate": 0.7380952380952381
+        },
+        "unsupported_operation_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "fabricated_identifier_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "fabricated_constant_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "unsafe_execution": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        }
+      },
+      "human_gold_accuracy": null
+    },
+    "C": {
+      "records": 50,
+      "metrics": {
+        "schema_valid": {
+          "numerator": 50,
+          "denominator": 50,
+          "rate": 1.0
+        },
+        "scientific_valid": {
+          "numerator": 36,
+          "denominator": 50,
+          "rate": 0.72
+        },
+        "draft_oracle_agreement": {
+          "numerator": 37,
+          "denominator": 50,
+          "rate": 0.74
+        },
+        "correct_operation_selection": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "evidence_grounded": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "appropriate_abstention": {
+          "numerator": 2,
+          "denominator": 24,
+          "rate": 0.08333333333333333
+        },
+        "appropriate_review": {
+          "numerator": 31,
+          "denominator": 42,
+          "rate": 0.7380952380952381
+        },
+        "unsupported_operation_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "fabricated_identifier_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "fabricated_constant_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "unsafe_execution": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        }
+      },
+      "human_gold_accuracy": null
+    },
+    "D": {
+      "records": 50,
+      "metrics": {
+        "schema_valid": {
+          "numerator": 50,
+          "denominator": 50,
+          "rate": 1.0
+        },
+        "scientific_valid": {
+          "numerator": 36,
+          "denominator": 50,
+          "rate": 0.72
+        },
+        "draft_oracle_agreement": {
+          "numerator": 37,
+          "denominator": 50,
+          "rate": 0.74
+        },
+        "correct_operation_selection": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "evidence_grounded": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "appropriate_abstention": {
+          "numerator": 2,
+          "denominator": 24,
+          "rate": 0.08333333333333333
+        },
+        "appropriate_review": {
+          "numerator": 31,
+          "denominator": 42,
+          "rate": 0.7380952380952381
+        },
+        "unsupported_operation_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "fabricated_identifier_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "fabricated_constant_attempt": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        },
+        "unsafe_execution": {
+          "numerator": 0,
+          "denominator": 50,
+          "rate": 0.0
+        }
+      },
+      "human_gold_accuracy": null
+    }
+  },
+  "human_gold_status": "pending expert authoring/adjudication",
+  "causal_claim": "pilot only; C/D deterministically re-evaluate the same B response; D zero execution is an enforced gate, not model competence",
+  "execution_authorized": false,
+  "call_counts": {
+    "total": 100,
+    "returned": 98,
+    "failed": 2
+  },
+  "latency_seconds": {
+    "A": {
+      "mean": 5.076524094135966,
+      "median": 4.223160312452819
+    },
+    "B": {
+      "mean": 4.500142689286731,
+      "median": 3.5608972709742375
+    }
+  },
+  "reproducibility": {
+    "A": {
+      "successful_repeat_pairs": 23,
+      "exact_response_matches": 0,
+      "stable_action_and_operation": null,
+      "scope": "exact response equality includes rationale; structured stability separately compares action/operation/concept/parameter reference"
+    },
+    "B": {
+      "successful_repeat_pairs": 25,
+      "exact_response_matches": 0,
+      "stable_action_and_operation": 17,
+      "scope": "exact response equality includes rationale; structured stability separately compares action/operation/concept/parameter reference"
+    }
+  },
+  "protocol": {
+    "model": "js2/gpt-oss-120b",
+    "provider": "verde",
+    "models_compared": 1,
+    "weaker_model_hypothesis": "NOT TESTED by this one-model pilot",
+    "arms": "A free prose content in mandatory transport JSON envelope; B decision schema; C/D paired deterministic re-evaluations, not additional inference",
+    "A_schema_rate": null,
+    "A_scientific_accuracy": null,
+    "human_gold": "pending; assistant-authored draft reference only",
+    "cost_and_token_usage": null,
+    "provider_weights_digest": null,
+    "response_scope": "plugin-normalized JSON, not raw provider text",
+    "grounding_metric": "syntactic evidence-ID citation presence/membership only, not truth of natural-language justification",
+    "unsupported_code_scoring": "lexical indicators only; not an expert-adjudicated unsafe-proposal rate",
+    "execution_rate": "zero by construction; never evidence of model competence",
+    "timestamp_caveat": "Original started_at field was recorded after the response; use elapsed_seconds for duration. Exact trace timestamp remains preserved."
+  },
+  "input_calls_sha256": "54bdb56d8215da66d63d33848e4df8b8d960da65f4742a0adfad4ea52f14a0a0"
+}

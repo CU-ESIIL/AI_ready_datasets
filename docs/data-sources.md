@@ -72,3 +72,13 @@ project mappings. Other candidates include permitted community inventories, trai
 databases, biodiversity occurrences and flux/satellite pairs. The
 [dataset benchmark framework](semantics/dataset-benchmarking.md) describes how these
 could be assessed; it has not selected a production source or flagship.
+
+## Scientific validation update — 22 October 2026
+
+The [new scientific validation findings](validation/neon-sentinel.md) retain real graph
+measurements, canonical requirement diagnostics, scoped dataset/pair assessments
+and live model results. Earlier unmeasured/planned statements describe the prior
+architecture snapshot: depth is now measured for three local graphs, while exact
+scientific mappings, independent ecological validity and the weaker-model
+hypothesis remain unvalidated. The real Sentinel and NEON–Sentinel cases still
+require explicit expert decisions; no scientific execution is approved.

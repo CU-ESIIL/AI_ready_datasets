@@ -323,3 +323,22 @@ the source of truth. Distinguish retained real source evidence from generated
 CubeDynamics/MOSAIKS diagnostics. Missing ontology depth, dataset potential/diversity,
 independent validity and throughput remain unmeasured. No new source acquisition,
 model inference, approval or website deployment is part of report generation.
+
+## 2026-10-22 — Validate science without widening model authority
+
+Add analysis-only modules and explicit evidence snapshots; leave the scientific
+operation registry and executor unchanged. Measure graph structure and live model
+behavior separately from inherited scope assessments. Exact combinations through
+size three optimize a declared dimension rubric; longer curves are greedy witnesses.
+Candidate dataset diversity/potential are scoped review diagnostics, not compatibility.
+
+Keep the historical Sentinel review immutable and prepare a new unapproved draft.
+The whole-raster hash objection is documented as unsupported by the bounded-stream
+contract, without removing its veto. NIWO metadata supports a candidate site/month
+but not a sensor location. A contextual interval-to-instant association needs a new
+scientifically defined deterministic method; existing exact joins do not substitute.
+
+The first Verde pilot uses one configured 120b model. Natural-language content is
+wrapped in the installed plugin's mandatory JSON envelope; C/D re-evaluate B rather
+than adding samples. Human gold and weaker-model competence are not established.
+Retain this protocol limitation, exact model responses and negative findings.

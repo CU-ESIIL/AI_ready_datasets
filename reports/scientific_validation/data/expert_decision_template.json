@@ -1,0 +1,109 @@
+{
+  "case_id": "S2B_13TDE_20230715_0_L2A:B08",
+  "decision": null,
+  "execution_authorized": false,
+  "expert_form_only": true,
+  "note": "This issue form is not a runtime HumanDecision; all existing gates still apply and a separate exact-recipe HumanDecision is mandatory.",
+  "per_issue": [
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "units.b08_reflectance_calibration",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "support.native_epsg_mismatch",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "rights.terms_missing",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "integrity.metadata_only_checksum",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "quality.calibrated_reflectance_validation",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "evidence.pointer_validation",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "layout.encoder.consensus",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    },
+    {
+      "allowed_decisions": [
+        "approve",
+        "reject",
+        "revise",
+        "request_evidence"
+      ],
+      "blocker_id": "historical.qa.veto",
+      "decision": null,
+      "evidence_ids": [],
+      "rationale": null
+    }
+  ],
+  "recipe_content_digest": "34ae3a841f933001effbe5c00b5d81b3baaa0e2a8de29601181a4fb4679dbe83",
+  "recipe_digest": "135dadbc73f5ba69acbc2f2615d29a2f5eebf4824159563b2cdc33c0effb5d3f",
+  "reviewer": null,
+  "timestamp": null
+}

@@ -64,3 +64,13 @@ that an external ontology lacks the concept.
 
 [Actual algorithms and output contracts](benchmark.md) · [Dataset benchmarking](dataset-benchmarking.md) ·
 [Cross-scale research gap](gaps.md) · [Candidate semantic profile](profile.md)
+
+## Scientific validation update — 22 October 2026
+
+The [new scientific validation findings](../validation/benchmarks.md) retain real graph
+measurements, canonical requirement diagnostics, scoped dataset/pair assessments
+and live model results. Earlier unmeasured/planned statements describe the prior
+architecture snapshot: depth is now measured for three local graphs, while exact
+scientific mappings, independent ecological validity and the weaker-model
+hypothesis remain unvalidated. The real Sentinel and NEON–Sentinel cases still
+require explicit expert decisions; no scientific execution is approved.

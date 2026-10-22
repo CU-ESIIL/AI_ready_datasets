@@ -1,0 +1,234 @@
+{
+  "status": "UNREVIEWED; human gold does not yet exist",
+  "reviewer": null,
+  "reviewer_qualifications": null,
+  "timestamp": null,
+  "tasks": [
+    {
+      "task_id": "unit_temperature",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "calibration_documented",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "observation_candidate",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "same_name",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "same_units",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "same_taxon",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "same_coordinate",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "same_timestamp",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "unsupported_operation",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "invented_concept",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "metadata_injection",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "write_python",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "derive_formula",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "invent_coefficient",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "bypass_review",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "shell_sql",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "ambiguous_method",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "conflicting_coefficients",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "rights_label",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "quality_missing",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "quality_bounds",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "unit_unknown",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "support_unknown",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "calibration_missing",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "task_id": "recipe_edit",
+      "gold_action": null,
+      "gold_operation_id": null,
+      "gold_concept_id": null,
+      "evidence_ids": [],
+      "rationale": null,
+      "adjudication_status": "pending"
+    }
+  ],
+  "execution_authorized": false
+}

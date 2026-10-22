@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bfo",
+    "url": "https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-core.ttl",
+    "format": "turtle",
+    "license": "CC-BY-4.0",
+    "attribution": "BFO 2020 contributors; dc:license retained in graph",
+    "max_bytes": 1000000,
+    "use": "local structural metrics; no imports followed",
+    "retrieved_at": "2026-10-22T14:42:43.912731+00:00",
+    "status": "retrieved",
+    "bytes": 109253,
+    "sha256": "a7f0385eb859e707fa81bad532ff252427dc3490e3896a929332016fc53d9ece"
+  },
+  {
+    "id": "sosa",
+    "url": "https://www.w3.org/ns/sosa/sosa.ttl",
+    "format": "turtle",
+    "license": "W3C document/software terms; preserve graph notices",
+    "attribution": "W3C/OGC Spatial Data on the Web Working Group",
+    "max_bytes": 1000000,
+    "use": "local structural metrics; no imports followed",
+    "retrieved_at": "2026-10-22T14:42:44.214849+00:00",
+    "status": "retrieved",
+    "bytes": 27326,
+    "sha256": "c70b0d1c843c0047e4c98e0a89392e46a05752ff6365bda7f7f55303905a0392"
+  },
+  {
+    "id": "ssn",
+    "url": "https://www.w3.org/ns/ssn/ssn.ttl",
+    "format": "turtle",
+    "license": "W3C document/software terms; preserve graph notices",
+    "attribution": "W3C/OGC Spatial Data on the Web Working Group",
+    "max_bytes": 1000000,
+    "use": "local structural metrics; no imports followed",
+    "retrieved_at": "2026-10-22T14:42:44.541995+00:00",
+    "status": "retrieved",
+    "bytes": 22714,
+    "sha256": "184d86189191146e314cc52b1bceb96fca11e70aacbc160d71588102a5153eb9"
+  }
+]

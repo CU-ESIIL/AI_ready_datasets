@@ -1,0 +1,934 @@
+[
+  {
+    "dataset_id": "neon",
+    "scope": "NEON DP1.00002.001 RELEASE-2025 single aspirated air temperature",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "Product documentation describes one- and thirty-minute averages from aspirated platinum-resistance thermometers at multiple heights.",
+        "evidence_source": [
+          "https://data.neonscience.org/data-products/DP1.00002.001/RELEASE-2025"
+        ],
+        "semantic_dimensions": [
+          "environment",
+          "observation",
+          "measurement",
+          "method",
+          "time",
+          "support"
+        ],
+        "explicit_fields": [
+          "variable_definition",
+          "methods",
+          "temporal_support"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://data.neonscience.org/data-products/DP1.00002.001/RELEASE-2025"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "qudt",
+        "evidence": [
+          "https://data.neonscience.org/data-products/DP1.00002.001/RELEASE-2025"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "prov",
+        "evidence": [
+          "https://data.neonscience.org/data-products/DP1.00002.001/RELEASE-2025"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "metadata retrieved; authenticated observations pending",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "lter",
+    "scope": "LTER network/EDI repository description; no individual data package selected",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "LTER identifies EDI as its primary data repository; this is network-level discovery evidence, not package-level semantics.",
+        "evidence_source": [
+          "https://lternet.edu/about/"
+        ],
+        "semantic_dimensions": [
+          "environment",
+          "observation"
+        ],
+        "explicit_fields": [
+          "catalog_access"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "eml",
+        "evidence": [
+          "https://lternet.edu/about/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "prov",
+        "evidence": [
+          "https://lternet.edu/about/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "ameriflux",
+    "scope": "AmeriFlux BADM standard and flux/met context",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "BADM standards define variable names, units and requirements; site ancillary metadata accompany flux/met data.",
+        "evidence_source": [
+          "https://ameriflux.lbl.gov/data/badm/badm-standards/",
+          "https://ameriflux.lbl.gov/data/badm/badm-standards/FLUX_MEASUREMENTS"
+        ],
+        "semantic_dimensions": [
+          "environment",
+          "ecosystem",
+          "measurement",
+          "method",
+          "units",
+          "time"
+        ],
+        "explicit_fields": [
+          "variable_definition",
+          "units",
+          "methods"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "qudt",
+        "evidence": [
+          "https://ameriflux.lbl.gov/data/badm/badm-standards/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://ameriflux.lbl.gov/data/badm/badm-standards/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "prov",
+        "evidence": [
+          "https://ameriflux.lbl.gov/data/badm/badm-standards/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "try",
+    "scope": "TRY version 7 website scope; individual export not inspected",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "TRY describes plant trait records and plant taxa; its current version description reports taxonomy harmonized with GBIF.",
+        "evidence_source": [
+          "https://www.try-db.org/TryWeb/Home.php"
+        ],
+        "semantic_dimensions": [
+          "trait",
+          "taxon",
+          "organism",
+          "environment"
+        ],
+        "explicit_fields": [
+          "taxonomic_identifiers",
+          "variable_definition"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "pato",
+        "evidence": [
+          "https://www.try-db.org/TryWeb/Home.php"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "to",
+        "evidence": [
+          "https://www.try-db.org/TryWeb/Home.php"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "ncbitaxon",
+        "evidence": [
+          "https://www.try-db.org/TryWeb/Home.php"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "ornl_daac",
+    "scope": "ORNL DAAC archive mission; product not selected",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "ORNL describes its DAAC focus on biogeochemical and ecological datasets generated by NASA Earth science missions.",
+        "evidence_source": [
+          "https://www.ornl.gov/section/earth-system-informatics-and-data-discovery"
+        ],
+        "semantic_dimensions": [
+          "environment",
+          "ecosystem",
+          "observation"
+        ],
+        "explicit_fields": [
+          "catalog_access"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "envo",
+        "evidence": [
+          "https://www.ornl.gov/section/earth-system-informatics-and-data-discovery"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "prov",
+        "evidence": [
+          "https://www.ornl.gov/section/earth-system-informatics-and-data-discovery"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; product-level assessment blocked",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "landsat",
+    "scope": "USGS Collection 2 Level-2 reflectance documentation",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "USGS documents Collection 2 Level-2 surface reflectance and product scaling; no scene observations were retrieved.",
+        "evidence_source": [
+          "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products"
+        ],
+        "semantic_dimensions": [
+          "observation",
+          "measurement",
+          "space",
+          "time"
+        ],
+        "explicit_fields": [
+          "variable_definition",
+          "calibration"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "stac",
+        "evidence": [
+          "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "qudt",
+        "evidence": [
+          "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "sentinel2",
+    "scope": "Retained Earth Search B08 STAC record, S2B_13TDE_20230715_0_L2A",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "Retained native STAC metadata supplies B08 asset coefficients, native CRS, pixel support, acquisition time and SCL reference; no new source raster read.",
+        "evidence_source": [
+          "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_13TDE_20230715_0_L2A"
+        ],
+        "semantic_dimensions": [
+          "observation",
+          "measurement",
+          "space",
+          "time",
+          "support",
+          "provenance"
+        ],
+        "explicit_fields": [
+          "variable_definition",
+          "calibration",
+          "spatial_support",
+          "temporal_support",
+          "quality",
+          "provenance",
+          "machine_access"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_13TDE_20230715_0_L2A"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "qudt",
+        "evidence": [
+          "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_13TDE_20230715_0_L2A"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "prov",
+        "evidence": [
+          "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_13TDE_20230715_0_L2A"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [
+      {
+        "resource_id": "stac",
+        "relation": "implements_standard",
+        "evidence": [
+          "run/sentinel-stream-plan.json native STAC Item"
+        ]
+      }
+    ],
+    "integration_status": "historical real retrieval; current scientific execution blocked",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "cartograplant",
+    "scope": "CartograPlant developer documentation introduction",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "Documentation describes integration of georeferenced plant, phenotype, genotype and environmental data; deployed data completeness is not established.",
+        "evidence_source": [
+          "https://cartograplant.readthedocs.io/en/latest/intro.html"
+        ],
+        "semantic_dimensions": [
+          "organism",
+          "trait",
+          "genomic",
+          "environment",
+          "space"
+        ],
+        "explicit_fields": [
+          "source_documentation"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "po",
+        "evidence": [
+          "https://cartograplant.readthedocs.io/en/latest/intro.html"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "pato",
+        "evidence": [
+          "https://cartograplant.readthedocs.io/en/latest/intro.html"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "envo",
+        "evidence": [
+          "https://cartograplant.readthedocs.io/en/latest/intro.html"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; deployment/access not verified",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "gbif",
+    "scope": "GBIF DNA-derived occurrence publication guidance; not all GBIF records",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "Guidance distinguishes DNA-derived occurrence categories and maps sample and observation metadata for biodiversity publication.",
+        "evidence_source": [
+          "https://docs.gbif.org/publishing-dna-derived-data/en/"
+        ],
+        "semantic_dimensions": [
+          "taxon",
+          "genomic",
+          "sampling",
+          "observation"
+        ],
+        "explicit_fields": [
+          "sampling_structure",
+          "methods",
+          "machine_readable_standard"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "dwc",
+        "evidence": [
+          "https://docs.gbif.org/publishing-dna-derived-data/en/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "envo",
+        "evidence": [
+          "https://docs.gbif.org/publishing-dna-derived-data/en/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "ncbitaxon",
+        "evidence": [
+          "https://docs.gbif.org/publishing-dna-derived-data/en/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [
+      {
+        "resource_id": "dwc",
+        "relation": "documented_standard_mapping",
+        "evidence": [
+          "https://docs.gbif.org/publishing-dna-derived-data/en/"
+        ]
+      }
+    ],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "obis",
+    "scope": "OBIS contribution manual",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "Manual documents occurrence/event tables, extended measurements, Darwin Core, EML and taxonomic name matching.",
+        "evidence_source": [
+          "https://manual.obis.org/"
+        ],
+        "semantic_dimensions": [
+          "taxon",
+          "observation",
+          "sampling",
+          "environment",
+          "measurement"
+        ],
+        "explicit_fields": [
+          "event_structure",
+          "sampling_structure",
+          "machine_readable_standard",
+          "taxonomic_identifiers",
+          "quality"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "envo",
+        "evidence": [
+          "https://manual.obis.org/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://manual.obis.org/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [
+      {
+        "resource_id": "dwc",
+        "relation": "implements_standard",
+        "evidence": [
+          "https://manual.obis.org/"
+        ]
+      },
+      {
+        "resource_id": "eml",
+        "relation": "documents_metadata_standard",
+        "evidence": [
+          "https://manual.obis.org/"
+        ]
+      }
+    ],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "biotime",
+    "scope": "BioTIME 2.0 publication and release description",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "The data model nests species abundance in sampling events, sites, time series and studies with defined sampling methods.",
+        "evidence_source": [
+          "https://doi.org/10.1111/geb.70003"
+        ],
+        "semantic_dimensions": [
+          "community",
+          "taxon",
+          "sampling",
+          "time",
+          "space",
+          "method"
+        ],
+        "explicit_fields": [
+          "event_structure",
+          "sampling_structure",
+          "methods",
+          "temporal_support",
+          "machine_access"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "dwc",
+        "evidence": [
+          "https://doi.org/10.1111/geb.70003"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://doi.org/10.1111/geb.70003"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "prov",
+        "evidence": [
+          "https://doi.org/10.1111/geb.70003"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "forestgeo",
+    "scope": "ForestGEO network access policy; no site dataset acquired",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "The portal supports requesting site data; data access is not established by the public description.",
+        "evidence_source": [
+          "https://forestgeo.si.edu/explore-data"
+        ],
+        "semantic_dimensions": [
+          "community",
+          "organism",
+          "space"
+        ],
+        "explicit_fields": [
+          "access_policy"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "dwc",
+        "evidence": [
+          "https://forestgeo.si.edu/explore-data"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "pato",
+        "evidence": [
+          "https://forestgeo.si.edu/explore-data"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; permission and site selection pending",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "ebird",
+    "scope": "eBird access investigation",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "Official page returned an access-denied challenge in this investigation; semantic fields remain unassessed.",
+        "evidence_source": [
+          "https://ebird.org/science/use-ebird-data"
+        ],
+        "semantic_dimensions": [],
+        "explicit_fields": [],
+        "confidence": null,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "dwc",
+        "evidence": [
+          "https://ebird.org/science/use-ebird-data"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "documentation access blocked",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "globi",
+    "scope": "Global Biotic Interactions public query interface",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "The interface queries trophic and pollination interactions with taxon names and source identifiers.",
+        "evidence_source": [
+          "https://www.globalbioticinteractions.org/"
+        ],
+        "semantic_dimensions": [
+          "interaction",
+          "taxon",
+          "provenance"
+        ],
+        "explicit_fields": [
+          "taxonomic_labels",
+          "provenance"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "ro",
+        "evidence": [
+          "https://www.globalbioticinteractions.org/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "ncbitaxon",
+        "evidence": [
+          "https://www.globalbioticinteractions.org/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "biosample",
+    "scope": "NCBI BioSample overview",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "BioSample describes biological source materials used in experimental assays.",
+        "evidence_source": [
+          "https://www.ncbi.nlm.nih.gov/biosample/"
+        ],
+        "semantic_dimensions": [
+          "sampling",
+          "organism",
+          "method"
+        ],
+        "explicit_fields": [
+          "sample_structure"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "obi",
+        "evidence": [
+          "https://www.ncbi.nlm.nih.gov/biosample/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "envo",
+        "evidence": [
+          "https://www.ncbi.nlm.nih.gov/biosample/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "ncbitaxon",
+        "evidence": [
+          "https://www.ncbi.nlm.nih.gov/biosample/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "inventoried; not integrated",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "mgnify",
+    "scope": "MGnify public JSON sample SRS2472156 and API examples",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "The inspected sample endpoint exposes an ENVO identifier; official examples describe JSON studies, samples, biomes and annotations.",
+        "evidence_source": [
+          "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2472156?format=api"
+        ],
+        "semantic_dimensions": [
+          "genomic",
+          "sampling",
+          "environment"
+        ],
+        "explicit_fields": [
+          "sample_structure",
+          "machine_access",
+          "ontology_identifiers"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "obi",
+        "evidence": [
+          "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2472156?format=api"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "sosa",
+        "evidence": [
+          "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2472156?format=api"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [
+      {
+        "resource_id": "envo",
+        "relation": "provides_identifiers_from",
+        "evidence": [
+          "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2472156?format=api"
+        ]
+      }
+    ],
+    "integration_status": "metadata-only candidate",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "miappe",
+    "scope": "MIAPPE metadata specification; a standard, not an observation collection",
+    "assertions": [
+      {
+        "claim_class": "SOURCE FACT",
+        "statement": "The specification provides plant phenotyping study documentation; included as an agricultural metadata stress case, not an integrated dataset.",
+        "evidence_source": [
+          "https://www.miappe.org/overview/"
+        ],
+        "semantic_dimensions": [
+          "trait",
+          "organism",
+          "method",
+          "sampling"
+        ],
+        "explicit_fields": [
+          "machine_readable_standard",
+          "methods",
+          "experimental_design"
+        ],
+        "confidence": 0.7,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [
+      {
+        "resource_id": "po",
+        "evidence": [
+          "https://www.miappe.org/overview/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "pato",
+        "evidence": [
+          "https://www.miappe.org/overview/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      },
+      {
+        "resource_id": "obi",
+        "evidence": [
+          "https://www.miappe.org/overview/"
+        ],
+        "rationale": "Potential project comparison; exact term mapping and utility unverified"
+      }
+    ],
+    "explicit_resource_links": [],
+    "integration_status": "standard comparator; not a dataset",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  },
+  {
+    "dataset_id": "climate",
+    "scope": "Climate counterpart investigation placeholder; no product selected",
+    "assertions": [
+      {
+        "claim_class": "PROJECT ASSESSMENT",
+        "statement": "A named climate product, version, variables, support, license and access evidence must be selected before assessing BioTIME + climate.",
+        "evidence_source": [
+          "data/semantics/validation/dataset_inventory.json#climate"
+        ],
+        "semantic_dimensions": [],
+        "explicit_fields": [],
+        "confidence": null,
+        "qualification": "Documentation-level presence only; missing fields unknown, not absent",
+        "dimension_coding_claim_class": "PROJECT ASSESSMENT",
+        "field_presence_coding_claim_class": "PROJECT ASSESSMENT of inspected documentation; not full source schema validation"
+      }
+    ],
+    "candidate_resources": [],
+    "explicit_resource_links": [],
+    "integration_status": "unselected; unassessed",
+    "rights": "Source/product-specific terms must be reviewed; inventory membership grants no access or redistribution permission",
+    "expert_reviewed": false
+  }
+]

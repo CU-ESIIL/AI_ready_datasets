@@ -1,0 +1,1858 @@
+[
+  {
+    "candidate_uri": null,
+    "dimension": "environmental_context",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.environmental_context",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "site_air_temperature",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "site_air_temperature.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "anatomical",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.anatomical",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "organismal",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.organismal",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trait",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.trait",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "individual_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "individual_leaf_area.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "anatomical",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "specific_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "specific_leaf_area.anatomical",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "organismal",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "specific_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "specific_leaf_area.organismal",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trait",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "specific_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "specific_leaf_area.trait",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "specific_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "specific_leaf_area.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "specific_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "specific_leaf_area.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "specific_leaf_area",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "specific_leaf_area.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "species_trait_distribution",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "species_trait_distribution.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trait",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "species_trait_distribution",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "species_trait_distribution.trait",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "species_trait_distribution",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "species_trait_distribution.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "species_trait_distribution",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "species_trait_distribution.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "dimension": "quantitative_value",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "has simple result"
+    ],
+    "observation_id": "species_trait_distribution",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "species_trait_distribution.quantitative_value",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "species_trait_distribution",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "species_trait_distribution.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "plot_species_abundance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "plot_species_abundance.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "community",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "plot_species_abundance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "plot_species_abundance.community",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "plot_species_abundance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "plot_species_abundance.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "dimension": "quantitative_value",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "has simple result"
+    ],
+    "observation_id": "plot_species_abundance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "plot_species_abundance.quantitative_value",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "plot_species_abundance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "plot_species_abundance.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "plot_species_abundance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "plot_species_abundance.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "community",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.community",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trait",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.trait",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "dimension": "quantitative_value",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "has simple result"
+    ],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.quantitative_value",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "community_weighted_trait_mean",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_weighted_trait_mean.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "population",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "population_count",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "population_count.population",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "population_count",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "population_count.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "population_count",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "population_count.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "dimension": "quantitative_value",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "has simple result"
+    ],
+    "observation_id": "population_count",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "population_count.quantitative_value",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "population_count",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "population_count.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "population_count",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "population_count.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "organismal",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "pollinator_interaction",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "pollinator_interaction.organismal",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "pollinator_interaction",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "pollinator_interaction.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "ecological_interaction",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "pollinator_interaction",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "pollinator_interaction.ecological_interaction",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "pollinator_interaction",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "pollinator_interaction.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "pollinator_interaction",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "pollinator_interaction.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "predator_prey_link",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "predator_prey_link.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trophic_relationship",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "predator_prey_link",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "predator_prey_link.trophic_relationship",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "ecological_interaction",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "predator_prey_link",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "predator_prey_link.ecological_interaction",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "predator_prey_link",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "predator_prey_link.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "predator_prey_link",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "predator_prey_link.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "ecosystem",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "eddy_covariance_flux",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "eddy_covariance_flux.ecosystem",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "eddy_covariance_flux",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "eddy_covariance_flux.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "eddy_covariance_flux",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "eddy_covariance_flux.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "eddy_covariance_flux",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "eddy_covariance_flux.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "eddy_covariance_flux",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "eddy_covariance_flux.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "eddy_covariance_flux",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "eddy_covariance_flux.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "environmental_context",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "soil_carbon_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "soil_carbon_sample.environmental_context",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "soil_carbon_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "soil_carbon_sample.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "soil_carbon_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "soil_carbon_sample.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "soil_carbon_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "soil_carbon_sample.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "soil_carbon_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "soil_carbon_sample.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "environmental_context",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "environmental_water_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "environmental_water_sample.environmental_context",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "environmental_water_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "environmental_water_sample.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "environmental_water_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "environmental_water_sample.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "environmental_water_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "environmental_water_sample.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "environmental_water_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "environmental_water_sample.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "genomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "genomic_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "genomic_sample.genomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "molecular",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "genomic_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "genomic_sample.molecular",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "organismal",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "genomic_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "genomic_sample.organismal",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "genomic_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "genomic_sample.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "genomic_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "genomic_sample.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "genomic_sample",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "genomic_sample.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "genomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "microbiome_community",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "microbiome_community.genomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "community",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "microbiome_community",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "microbiome_community.community",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "microbiome_community",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "microbiome_community.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "microbiome_community",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "microbiome_community.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "environmental_context",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "microbiome_community",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "microbiome_community.environmental_context",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "microbiome_community",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "microbiome_community.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "phenotype",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "crop_phenotype",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "crop_phenotype.phenotype",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trait",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "crop_phenotype",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "crop_phenotype.trait",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "organismal",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "crop_phenotype",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "crop_phenotype.organismal",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "experimental_design",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "crop_phenotype",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "crop_phenotype.experimental_design",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "crop_phenotype",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "crop_phenotype.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "crop_phenotype",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "crop_phenotype.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "trait",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "field_yield",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "field_yield.trait",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "dimension": "quantitative_value",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "has simple result"
+    ],
+    "observation_id": "field_yield",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "field_yield.quantitative_value",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "field_yield",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "field_yield.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "field_yield",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "field_yield.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "field_yield",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "field_yield.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "field_yield",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "field_yield.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "satellite_reflectance",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "satellite_reflectance.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "vegetation_index",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "vegetation_index.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "dimension": "quantitative_value",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "has simple result"
+    ],
+    "observation_id": "vegetation_index",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "vegetation_index.quantitative_value",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "vegetation_index",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "vegetation_index.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "vegetation_index",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "vegetation_index.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "vegetation_index",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "vegetation_index.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "vegetation_index",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "vegetation_index.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "community",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.community",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "community_satellite_pair",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "community_satellite_pair.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "ecosystem",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "annual_vegetation_change",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "annual_vegetation_change.ecosystem",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "environmental_context",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "annual_vegetation_change",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "annual_vegetation_change.environmental_context",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "annual_vegetation_change",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "annual_vegetation_change.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "annual_vegetation_change",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "annual_vegetation_change.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "annual_vegetation_change",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "annual_vegetation_change.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "annual_vegetation_change",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "annual_vegetation_change.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "environmental_context",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "disturbance_climate_context",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "disturbance_climate_context.environmental_context",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "ecosystem",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "disturbance_climate_context",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "disturbance_climate_context.ecosystem",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/phenomenonTime",
+    "dimension": "temporal_representation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "phenomenon time"
+    ],
+    "observation_id": "disturbance_climate_context",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "disturbance_climate_context.temporal_representation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_representation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "disturbance_climate_context",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "disturbance_climate_context.spatial_representation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "disturbance_climate_context",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "disturbance_climate_context.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "cellular",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "cellular_expression",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "cellular_expression.cellular",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "genomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "cellular_expression",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "cellular_expression.genomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "molecular",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "cellular_expression",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "cellular_expression.molecular",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "measurement",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "cellular_expression",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "cellular_expression.measurement",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "units",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "cellular_expression",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "cellular_expression.units",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "cellular_expression",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "cellular_expression.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "organismal",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "organism_behavior",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "organism_behavior.organismal",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "behavior",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "organism_behavior",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "organism_behavior.behavior",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "organism_behavior",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "organism_behavior.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "organism_behavior",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "organism_behavior.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "organism_behavior",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "organism_behavior.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "habitat",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "habitat_species_occurrence",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "habitat_species_occurrence.habitat",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "taxonomic",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "habitat_species_occurrence",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "habitat_species_occurrence.taxonomic",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Observation",
+    "dimension": "observation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Observation"
+    ],
+    "observation_id": "habitat_species_occurrence",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "habitat_species_occurrence.observation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_representation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "habitat_species_occurrence",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "habitat_species_occurrence.spatial_representation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/phenomenonTime",
+    "dimension": "temporal_representation",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "phenomenon time"
+    ],
+    "observation_id": "habitat_species_occurrence",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "habitat_species_occurrence.temporal_representation",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/Sampling",
+    "dimension": "sampling",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "Sampling"
+    ],
+    "observation_id": "sampling_design_comparison",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "sampling_design_comparison.sampling",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "experimental_design",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "sampling_design_comparison",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "sampling_design_comparison.experimental_design",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": "http://www.w3.org/ns/sosa/usedProcedure",
+    "dimension": "method_protocol",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": true,
+    "graph_labels": [
+      "used procedure"
+    ],
+    "observation_id": "sampling_design_comparison",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "sampling_design_comparison.method_protocol",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "spatial_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "sampling_design_comparison",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "sampling_design_comparison.spatial_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "temporal_support",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "sampling_design_comparison",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "sampling_design_comparison.temporal_support",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  },
+  {
+    "candidate_uri": null,
+    "dimension": "provenance",
+    "dimension_alignment_claim_class": "PROJECT ASSESSMENT",
+    "explicit_graph_term_present": null,
+    "graph_labels": [],
+    "observation_id": "sampling_design_comparison",
+    "presence_claim_class": "MEASURED PROJECT RESULT",
+    "requirement_id": "sampling_design_comparison.provenance",
+    "scientific_expressibility": null,
+    "scope": "Presence verifies an observation-model building block only, not exact quantity/support semantics or an approved mapping"
+  }
+]

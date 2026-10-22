@@ -1,0 +1,38 @@
+[
+  {
+    "claim_class": "MEASURED PROJECT RESULT",
+    "coverage": 0.3716216216216216,
+    "covered_requirement_instances": 55,
+    "denominator": 148,
+    "interpretation": "exact optimum under provisional dimension rubric; not term-level expressibility",
+    "resources": [
+      "eml"
+    ],
+    "size": 1
+  },
+  {
+    "claim_class": "MEASURED PROJECT RESULT",
+    "coverage": 0.527027027027027,
+    "covered_requirement_instances": 78,
+    "denominator": 148,
+    "interpretation": "exact optimum under provisional dimension rubric; not term-level expressibility",
+    "resources": [
+      "ebv",
+      "eml"
+    ],
+    "size": 2
+  },
+  {
+    "claim_class": "MEASURED PROJECT RESULT",
+    "coverage": 0.6216216216216216,
+    "covered_requirement_instances": 92,
+    "denominator": 148,
+    "interpretation": "exact optimum under provisional dimension rubric; not term-level expressibility",
+    "resources": [
+      "ebv",
+      "eml",
+      "foodon"
+    ],
+    "size": 3
+  }
+]
