@@ -74,3 +74,6 @@ __pycache__/
 /reports/scientific_validation/build/
 # Regenerated legacy comparison run (new validation evidence is retained separately)
 /outputs/semantic-benchmark-validation-refresh/
+
+# Data-management report render intermediates
+/reports/data_management/build/

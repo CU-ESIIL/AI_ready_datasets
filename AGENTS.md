@@ -2,6 +2,12 @@
 
 ## Operating contract
 
+- The local management workbench indexes scientific artifacts; registration and
+  feedback never grant scientific approval, execute jobs or clear existing vetoes.
+  Keep controlled exports/backups separate from the public catalog; resource plans
+  are not awards, local recovery is not a remote deposit, and metadata scale probes
+  are not global raster/encoder throughput. Preserve raw/harmonized streaming limits.
+
 - Treat this repository as the source of truth and the website as its rendered view.
 - Inspect existing structure before editing. Prefer small, additive, traceable changes;
   preserve useful infrastructure and history. Do not destructively rewrite without authorization.

@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evidence_uri": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Evidence Uri"
+    },
+    "limitation": {
+      "title": "Limitation",
+      "type": "string"
+    },
+    "period": {
+      "title": "Period",
+      "type": "string"
+    },
+    "provider": {
+      "title": "Provider",
+      "type": "string"
+    },
+    "requested": {
+      "exclusiveMinimum": 0,
+      "title": "Requested",
+      "type": "number"
+    },
+    "resource": {
+      "title": "Resource",
+      "type": "string"
+    },
+    "status": {
+      "default": "planning_estimate",
+      "enum": [
+        "planning_estimate",
+        "requested",
+        "awarded"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "unit": {
+      "enum": [
+        "GB",
+        "CPU_SU",
+        "GPU_hour"
+      ],
+      "title": "Unit",
+      "type": "string"
+    },
+    "verified_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Verified At"
+    }
+  },
+  "required": [
+    "provider",
+    "resource",
+    "unit",
+    "requested",
+    "period",
+    "limitation"
+  ],
+  "title": "AllocationPlan",
+  "type": "object"
+}

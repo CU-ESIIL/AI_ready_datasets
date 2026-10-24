@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "cohort": {
+      "enum": [
+        "governance",
+        "synthesis"
+      ],
+      "title": "Cohort",
+      "type": "string"
+    },
+    "dataset_ids": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Dataset Ids",
+      "type": "array"
+    },
+    "group_id": {
+      "pattern": "^(governance-[1-3]|synthesis-[1-6])$",
+      "title": "Group Id",
+      "type": "string"
+    },
+    "quota_bytes": {
+      "exclusiveMinimum": 0,
+      "title": "Quota Bytes",
+      "type": "integer"
+    },
+    "quota_status": {
+      "const": "planning_estimate",
+      "default": "planning_estimate",
+      "title": "Quota Status",
+      "type": "string"
+    },
+    "retention": {
+      "title": "Retention",
+      "type": "string"
+    },
+    "years": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ],
+      "title": "Years",
+      "type": "array"
+    }
+  },
+  "required": [
+    "group_id",
+    "cohort",
+    "years",
+    "quota_bytes",
+    "retention"
+  ],
+  "title": "WorkspaceDefinition",
+  "type": "object"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "data_class": "Original provider observations",
+    "location": "Provider-managed asset URLs; no project-wide source mirror",
+    "format": "Native COG/GeoTIFF and provider tabular formats",
+    "persistence": "External provider",
+    "management_requirement": "Referenced by source ID/version/URI; availability and full-byte immutability depend on provider",
+    "evidence": "stream_rasters.py; SourceResource"
+  },
+  {
+    "data_class": "Discovery/source metadata",
+    "location": "Caller-selected run directory; examples run/sentinel-stream-plan.json and historical run/real-sentinel/",
+    "format": "JSON: native STAC, normalized source, queries, rights evidence",
+    "persistence": "Local retained evidence; publication reviewed separately",
+    "management_requirement": "Keep asset/sensor/baseline/CRS/support/calibration/license evidence; metadata hash is not data hash",
+    "evidence": "stream_contracts.py; real_data.py"
+  },
+  {
+    "data_class": "Semantic inventories",
+    "location": "data/semantics/; rendered mirrors docs/semantics/",
+    "format": "CSV, JSON, JSONL; small attributed vocabulary snapshots under reports/scientific_validation/data/graphs/",
+    "persistence": "Repository-managed reference and assessment data",
+    "management_requirement": "Distinguish source facts, graph measurements and project assessments; retain licenses and provenance",
+    "evidence": "semantic_resources.py; reports/scientific_validation/"
+  },
+  {
+    "data_class": "Recipes and review decisions",
+    "location": "Caller-selected review/consensus output; e.g. run/scoped-sentinel-review-v4/; curated copies in outputs/scientific_validation/",
+    "format": "Recipe JSON, domain findings, QA, human-decision JSON and manifests",
+    "persistence": "Local run artifacts or deliberately retained repository copies",
+    "management_requirement": "Freeze scientific content; preserve vetoes; exact-recipe human authorization remains separate",
+    "evidence": "scoped_review.py; consensus.py; contracts.py"
+  },
+  {
+    "data_class": "Agent prompts and model outputs",
+    "location": "Run-specific trace files; retained experiment copy reports/scientific_validation/data/model_experiment/calls.jsonl",
+    "format": "JSON/JSONL with prompts, schemas, normalized responses, timestamps and identities",
+    "persistence": "Local evidence; selected copies already Git-tracked",
+    "management_requirement": "May contain source metadata and sensitive locations; sanitize and review before distribution",
+    "evidence": "model_agents.py; openclaw_backend.py"
+  },
+  {
+    "data_class": "Raw and harmonized stream windows",
+    "location": "Process RAM: bounded native reads, arrays, task graphs and calibration prefix",
+    "format": "In-memory numeric arrays / xarray / Dask / HarmonizedRasterPatch",
+    "persistence": "Transient scientific processing",
+    "management_requirement": "New stream path intentionally writes neither raw nor harmonized raster datasets; OS/swap handling not audited",
+    "evidence": "stream_rasters.py; harmonized_rasters.py; mosaiks_pipeline.py"
+  },
+  {
+    "data_class": "MOSAIKS feature products",
+    "location": "Caller-selected output directory; generated example run/cubedynamics-verified/",
+    "format": "float32 vectors-*.npy, records.jsonl, context JSON, manifest and dataset card",
+    "persistence": "Persistent derived dataset",
+    "management_requirement": "Vector row references connect to scientific lineage; source restrictions may apply to derivatives",
+    "evidence": "embedding_dataset.py"
+  },
+  {
+    "data_class": "Encoder/filter reference",
+    "location": "<dataset>/encoder/",
+    "format": "filters.npy, encoder.json, training_context.json",
+    "persistence": "Persistent derived model artifact",
+    "management_requirement": "Empirical filters are source-derived; preserve training observation IDs, canonical definitions and encoder identity",
+    "evidence": "mosaiks.py"
+  },
+  {
+    "data_class": "Verification targets and probes",
+    "location": "Within embedding bundle, stored separately from vector matrix",
+    "format": "verification_labels.jsonl, verification.json, verification_probe.npz",
+    "persistence": "Persistent evaluation artifacts",
+    "management_requirement": "Separate independent, proxy and derived targets; no implied anonymization or ecological validity",
+    "evidence": "embedding_dataset.py"
+  },
+  {
+    "data_class": "Legacy source/core cache",
+    "location": "Caller-selected cache; CLI default .cache/prototype/index/",
+    "format": "Content-addressed JSON entries",
+    "persistence": "Persistent legacy fixture/snapshot path",
+    "management_requirement": "Legacy cache may contain observation values; do not confuse with the new streaming implementation",
+    "evidence": "storage.py; orchestration.py"
+  },
+  {
+    "data_class": "Runtime secrets and service state",
+    "location": "Ignored run/openclaw/ and equivalent private runtime directories; tokens also in process environment",
+    "format": "runtime.env, gateway-token, configuration/history, state/ and workspace/",
+    "persistence": "Private runtime material; never a release artifact",
+    "management_requirement": "Local credential files use restrictive modes, not demonstrated encryption; ignore rules are not authorization controls",
+    "evidence": "openclaw_runtime.py; .gitignore"
+  },
+  {
+    "data_class": "Published-facing documentation and reports",
+    "location": "docs/; reports/; output/pdf/; generated Pages build dist/",
+    "format": "Markdown, JSON/CSV/Parquet diagnostics, SVG/PNG, PDF, HTML",
+    "persistence": "Selected repository material and rendered website",
+    "management_requirement": "GitHub Pages builds docs; unlinked Git-tracked files may still be accessible in the repository",
+    "evidence": "pages.yml; .gitignore"
+  }
+]

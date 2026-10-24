@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "boundary": {
+      "title": "Boundary",
+      "type": "string"
+    },
+    "capability": {
+      "enum": [
+        "WORKING",
+        "PROTOTYPE",
+        "MOCKED",
+        "PLANNED",
+        "UNDER ANALYSIS"
+      ],
+      "title": "Capability",
+      "type": "string"
+    },
+    "endpoint": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Endpoint"
+    },
+    "host": {
+      "title": "Host",
+      "type": "string"
+    },
+    "limitation": {
+      "title": "Limitation",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "boundary",
+    "capability",
+    "host",
+    "limitation"
+  ],
+  "title": "ServiceDefinition",
+  "type": "object"
+}

@@ -4,6 +4,11 @@ from html import escape
 from textwrap import wrap
 
 FIGURES = {
+ 'management': ('Local operations around the scientific pipeline', 'Executable local prototype. Planned partner services are boundaries; registration never grants scientific approval.',
+ [('Source + semantic evidence',0,0),('Reviewed recipe + gates',1,0),('Harmonized stream → MOSAIKS',2,0),
+ ('SQLite artifact / lineage index',1,1),('Content-addressed feature files',2,1),('Operator UI + metadata API',0,2),
+ ('Groups + issue-only feedback',1,2),('Resource plans / measured usage',2,2),('Local snapshot + restore',1,3),
+ ('OSN / NDP / TACC: planned',1,4)],[(0,1),(1,2),(0,3),(1,3),(2,4),(4,3),(3,5),(3,6),(3,7),(3,8),(8,9)]),
  'system': ('From question to scientific use', 'Three independently callable stages; review gates precede source streaming.',
  [('Question',0,0),('Data + semantic discovery',1,0),('Harmonization & review',1,1),('Representation',1,2),('Downstream science',2,2),('Source metadata',0,1),('Human decision',2,1)], [(0,1),(1,2),(5,2),(2,6),(6,3),(3,4)]),
  'discovery': ('Discovery includes semantic evidence', 'Module 1 retrieves sources and preserves semantic evidence. Module 2 alone proposes scientific mappings.',

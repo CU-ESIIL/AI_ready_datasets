@@ -51,6 +51,7 @@ nav:
           - Reference encoders: representations.md
           - MOSAIKS embeddings: mosaiks-embeddings.md
       - Build and operate:
+          - Data management workbench: management-workbench.md
           - Offline example: examples.md
           - Streaming: streaming-harmonization.md
           - OpenClaw and Verde: openclaw-verde.md

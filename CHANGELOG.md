@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-23 — Local management workbench
+
+- Added typed operational records, SQLite lineage/CAS storage, bounded existing
+  MOSAIKS bundle re-verification, portable registries and actual snapshot/restore.
+- Added a generated end-to-end demo, metadata scale probes, workspace/resource
+  plans, measured usage, version-bound feedback and a loopback operator UI/API.
+- Added bounded generated-window/feature controls for actual local pipeline
+  regression experiments, separate from metadata-index probes. Snapshots retain
+  a consistent read view even while another connection records new artifacts.
+- Preserved scientific gates, streaming policy and explicit planned integration
+  states. Added offline integrity/governance/API/recovery tests and documentation.
+
 ## 2026-10-21
 
 - Documented the representation-to-source provenance trace, optional track and
@@ -175,3 +187,11 @@
 - Added a separate 20-page scientific validation report with 18 reproducible figures,
   tests, manifests, verification and scientist-facing validation pages. No scientific
   operation was added, no prior veto lifted and no real-data execution approved.
+
+## 2026-10-23 — Data management design report
+
+- Added a source-audited PDF and editable inventory covering 12 data classes,
+  provider versus local storage, in-memory streams, encoder/feature bundles,
+  review/model records, legacy caches, secrets and proposed stewardship decisions.
+- Kept current capabilities distinct from unverified backup, retention, archive,
+  access and external-model processing commitments; no pipeline behavior changed.

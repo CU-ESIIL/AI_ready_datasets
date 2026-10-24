@@ -1,0 +1,137 @@
+{
+  "report_version": "1.0",
+  "audit_date": "2026-10-23",
+  "generated_at": "2026-10-23T14:53:41.359235+00:00",
+  "git_commit": "17b80c5308bdc53ff00e0ae67fc700c162280ff4",
+  "scope": "local design/storage audit; no source acquisition, inference or scientific execution",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "130f91e545f6a7c74b13c1b732507be30d25fd57905b94fbbc69aef8be8a933f"
+    },
+    {
+      "path": "src/dataset_prototype/contracts.py",
+      "sha256": "8e1c89a915c51d5788bd4e5ba567b34529bef995dcee10291ef87613c35d3b36"
+    },
+    {
+      "path": "src/dataset_prototype/cli.py",
+      "sha256": "42abacc25bfe15e55d570baad91cce302e5eadd91773379ff16ca414877cb59e"
+    },
+    {
+      "path": "src/dataset_prototype/semantic_discovery.py",
+      "sha256": "fc8f76d75866f0d0de08143dcd74a1d257a01cbefe3aa6c190d0d9b1b55e1c40"
+    },
+    {
+      "path": "src/dataset_prototype/semantic_resources.py",
+      "sha256": "a55165f2b5afa17409df57d8dc6f916a882d748d22b14ce1bc75b19547c3b7c5"
+    },
+    {
+      "path": "src/dataset_prototype/stream_contracts.py",
+      "sha256": "8af705c1d8359acf27067d3b071f6521a38e99e259d5e399e1b5eba6260e4fa7"
+    },
+    {
+      "path": "src/dataset_prototype/stream_rasters.py",
+      "sha256": "b9dbe0e4d6f176593be477768d5d14fab62237a93aea65bf2c71d3f3e6da3f6d"
+    },
+    {
+      "path": "src/dataset_prototype/harmonized_rasters.py",
+      "sha256": "d863809d81a83f222088f6801713993b6ee0afb5eafc0b34198aba97f5b2b4c8"
+    },
+    {
+      "path": "src/dataset_prototype/cubedynamics_backend.py",
+      "sha256": "8c6fdc27f73c984d96d8fb29e4180a8024e1263740538392684a65b803f5cbe6"
+    },
+    {
+      "path": "src/dataset_prototype/embedding_dataset.py",
+      "sha256": "d0384b7834dfbd96e8bac46c796114cdcda60fedce62128e147c572a7e01a720"
+    },
+    {
+      "path": "src/dataset_prototype/mosaiks.py",
+      "sha256": "68c6e6e1c99fa66da6295dbb43270fefe5f16652a812867e976c655931fc0044"
+    },
+    {
+      "path": "src/dataset_prototype/mosaiks_pipeline.py",
+      "sha256": "ebbbfb4d5737d309793ba78fbcfcc6aa0034e6628b2a9b830d2bb7fd01d7670e"
+    },
+    {
+      "path": "src/dataset_prototype/storage.py",
+      "sha256": "eb3a2b4f8e8c4378cd9c07cdd715184221608295acfd0d908c78278d47fb8eec"
+    },
+    {
+      "path": "src/dataset_prototype/orchestration.py",
+      "sha256": "b5ab5d9bd29b0985f20463105d2954bbee88e0a7d2ec06fa30635129d25c6fec"
+    },
+    {
+      "path": "src/dataset_prototype/provenance.py",
+      "sha256": "33740612df858248b7c99cf9ad51af1c68160de0aaa6b01f3e74b452fca6df0a"
+    },
+    {
+      "path": "src/dataset_prototype/real_data.py",
+      "sha256": "7796cba3b620e88af23fe7e7704b0e3783a494b3cdb657cd72b8f7efca660890"
+    },
+    {
+      "path": "src/dataset_prototype/neon.py",
+      "sha256": "96394906eaf4bfca161fc302283860cb9b53b8bf5f6d22d67cfb43f70012823d"
+    },
+    {
+      "path": "src/dataset_prototype/scoped_review.py",
+      "sha256": "b7939d9d52acf8fc12d057e8ebf5ae4e206ae02514174ba77930a1b7088eb935"
+    },
+    {
+      "path": "src/dataset_prototype/consensus.py",
+      "sha256": "3eccbd3c095bb880697bbf3bd0e6e216eda6a6d6fd09b96f4547253ff8012212"
+    },
+    {
+      "path": "src/dataset_prototype/model_agents.py",
+      "sha256": "04fcebe206cd8a72dd7520258786625abbe428a498c41b1a7103ef9ae7793724"
+    },
+    {
+      "path": "src/dataset_prototype/openclaw_backend.py",
+      "sha256": "a5b8a411afea4d5117521b8a1a7859bf304385e87d907d26d75428798d88d633"
+    },
+    {
+      "path": "src/dataset_prototype/openclaw_runtime.py",
+      "sha256": "a08f675d40023098213049cc77d24d195432b45abca4c41dd1976f2b70de66db"
+    },
+    {
+      "path": "src/dataset_prototype/adapters.py",
+      "sha256": "fe37736677a1eb91e7e175a83687811fe6d04ede0c70d95db077f3c5d27d616d"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "bb1eca072a339d16b325d2b879c6ba4477f33920a1c4d0449a330192a0bb04d1"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "747c964da701010dd07b6c3e5e089ed33d33b0f9e6ae242ab88f7702fe565cb8"
+    },
+    {
+      "path": "docs/PROTOTYPE_STATUS.md",
+      "sha256": "11cd4b22531f4d126d011e04398afdfc88204a03fa4adc77ae4f9d5cd4642db9"
+    },
+    {
+      "path": "docs/development/integrations.md",
+      "sha256": "a9439caf0f1b1d7a5d079fde2830abfc6e2d658dfa5e4bea08799fa031370986"
+    }
+  ],
+  "pdf": {
+    "path": "output/pdf/AI_ready_data_management_report.pdf",
+    "pages": 12,
+    "sha256": "2e320f27c567e25d1d302740731f5512dead5ebd24e9d042ad719395ca7a594b"
+  },
+  "inventory_records": 12,
+  "capacity_formula": "N * feature_dimensions * 4 bytes for float32 numeric payload only",
+  "unverified": [
+    "institutional storage/backup/encryption",
+    "source preservation guarantees",
+    "model processor retention/residency terms",
+    "retention periods and preservation destination",
+    "assigned institutional stewards"
+  ],
+  "authoring_sources": {
+    "reports/data_management/build_report.py": "b18c5edf5d16998a38b14561f06e5aa84c305f8913dbf775ba0a111ebbf12aa8",
+    "reports/data_management/report.json": "6f1fafb8365f7c6b3d5b96b4bc0dba982504b770d6aa1af21ead2b5ae1109396",
+    "reports/data_management/data_inventory.json": "18ac2bfdfce2413cebfc41649c87e0b3d6ffef208803676daab09b1440ba4a41",
+    "reports/data_management/data_inventory.csv": "2257812a40188cd94822cea2013b94bf9b415344ae9c75a8c9999c66dec6c1c8"
+  }
+}

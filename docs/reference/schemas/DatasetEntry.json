@@ -1,0 +1,54 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "context_digest": {
+      "title": "Context Digest",
+      "type": "string"
+    },
+    "dimensions": {
+      "minimum": 1,
+      "title": "Dimensions",
+      "type": "integer"
+    },
+    "dtype": {
+      "const": "float32",
+      "default": "float32",
+      "title": "Dtype",
+      "type": "string"
+    },
+    "encoder_identity": {
+      "title": "Encoder Identity",
+      "type": "string"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "boolean"
+    },
+    "manifest": {
+      "additionalProperties": true,
+      "title": "Manifest",
+      "type": "object"
+    },
+    "records": {
+      "minimum": 1,
+      "title": "Records",
+      "type": "integer"
+    },
+    "scientific_validation": {
+      "const": "not_established",
+      "default": "not_established",
+      "title": "Scientific Validation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "records",
+    "dimensions",
+    "encoder_identity",
+    "context_digest",
+    "fixture",
+    "manifest"
+  ],
+  "title": "DatasetEntry",
+  "type": "object"
+}

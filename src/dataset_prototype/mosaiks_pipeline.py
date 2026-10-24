@@ -59,8 +59,10 @@ def run(patches,context,spec,output):
         if hasattr(iterator,'close'):iterator.close()
 
 
-def demo(output):
+def demo(output, *, records=32, features=128):
     """Generated diagnostics through the real harmonizer and MOSAIKS algorithm."""
+    if not 32 <= records <= 1024 or records % 4:
+        raise ValueError('generated demo requires 32..1024 windows in multiples of four')
     from datetime import datetime,timezone
     import numpy as np
     from .contracts import SourceResource,Variable,Support,Metadata,Rights,SemanticMapping,HarmonizationRecipe,Operation,Proposal,digest
@@ -72,19 +74,20 @@ def demo(output):
     source=SourceResource(source_id='synthetic-diagnostic',dataset='generated MOSAIKS verification only',asset_id='generated-raster',version='1',uri='generator://mosaiks-demo-v1',modality='satellite',variables=(variable,),
         support=Support(bbox=(-106,39,-104,41),start=when,end=when,spatial='synthetic regular grid',temporal='instantaneous'),
         metadata=Metadata(fixture=True,description='No real scientific observations or provider data',original_identifier='generated-raster'),
-        rights=Rights(license='CC0-1.0',attribution='Project-authored generated diagnostics',derivative_use=True,redistribution=True),checksum=digest({'generator':'mosaiks-demo-v1'}),checksum_scope='metadata',retrieved_at=when,provenance=('generated-diagnostic-v1',))
+        rights=Rights(license='CC0-1.0',attribution='Project-authored generated diagnostics',derivative_use=True,redistribution=True),checksum=digest({'generator':'mosaiks-demo-v1','records':records}),checksum_scope='metadata',retrieved_at=when,provenance=('generated-diagnostic-v1',))
     mapping=SemanticMapping(source_asset=source.asset_id,source_variable=variable.name,target=variable,relationship='equivalent_to',evidence=('Generated identity diagnostic',),confidence=1,review_status='approved')
     recipe=HarmonizationRecipe(recipe_id='generated-diagnostic-identity',version='1',scope='core',status='approved',author='deterministic-diagnostic',mappings=(mapping,),
         operations=(Operation(operation='map_variable',source_variable=variable.name,target_variable=variable.name),),proposals=(Proposal(role='harmonization',rationale='Identity only on generated data',evidence=('diagnostic',)),))
     plan=StreamPlan(question='Diagnostic pipeline, no scientific validation',reader='test-generator',bindings=(StreamBinding(binding_id='synthetic',source=source,source_variable=variable.name,target=variable,longitude=-105,latitude=40),))
     context=RasterContext(plan=plan,recipe=recipe)
-    spec=MOSAIKSSpec(channels=(variable.name,),units=('1',),features=128,calibration_tiles=8,input_scale=32)
+    spec=MOSAIKSSpec(channels=(variable.name,),units=('1',),features=features,calibration_tiles=8,input_scale=32)
     def outputs():
         rng=np.random.default_rng(91)
-        for i in range(32):
-            split='train' if i<16 else 'validation' if i<24 else 'test'
+        step=min(.001,.9/records)
+        for i in range(records):
+            split='train' if i<records//2 else 'validation' if i<3*records//4 else 'test'
             value=rng.uniform(.05,.6)+rng.normal(0,rng.uniform(.01,.08),(16,16))
-            lineage={'bbox':[-105+i*.001,40,-105+(i+1)*.001,40.0005],'native_crs':'synthetic-grid',
+            lineage={'bbox':[-105+i*step,40,-105+(i+1)*step,40.0005],'native_crs':'synthetic-grid',
                 'native_window':[0,i*16,16,16],'source_assets':[source.asset_id],
                 'datetime_start':when.isoformat(),'datetime_end':when.isoformat(),'quality_policy':'generated finite diagnostics; no satellite mask'}
             yield harmonize_window({(source.asset_id,variable.name):value},context=context,patch_id=f'generated-{i}',lineage=lineage,split=split,spatial_group=f'generated-block-{i}')

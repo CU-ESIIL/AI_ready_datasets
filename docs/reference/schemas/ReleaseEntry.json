@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dataset_id": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "limitation": {
+      "title": "Limitation",
+      "type": "string"
+    },
+    "persistent_identifier": {
+      "default": null,
+      "title": "Persistent Identifier",
+      "type": "null"
+    },
+    "scientific_approval": {
+      "const": false,
+      "default": false,
+      "title": "Scientific Approval",
+      "type": "boolean"
+    },
+    "state": {
+      "enum": [
+        "diagnostic",
+        "needs_scientific_release_review"
+      ],
+      "title": "State",
+      "type": "string"
+    },
+    "verification_id": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Verification Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "dataset_id",
+    "verification_id",
+    "state",
+    "limitation"
+  ],
+  "title": "ReleaseEntry",
+  "type": "object"
+}

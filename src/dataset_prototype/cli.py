@@ -10,6 +10,46 @@ from .orchestration import load_track, run, write
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="prototype")
     sub = parser.add_subparsers(dest="command", required=True)
+    management = sub.add_parser('management-demo', help='Generated scientific pipeline plus local management workbench artifacts')
+    management.add_argument('--output', type=Path, required=True)
+    management.add_argument('--inventory', type=Path, default=Path('data/semantics/semantic_resources.csv'))
+    management.add_argument('--assessments', type=Path, default=Path('data/semantics/assessments.jsonl'))
+    management.add_argument('--metadata-records', type=int, default=0)
+    management.add_argument('--windows', type=int, default=32)
+    management.add_argument('--features', type=int, default=128)
+    seed = sub.add_parser('management-seed', help='Index existing semantic metadata and planned management components')
+    seed.add_argument('--registry', type=Path, required=True)
+    seed.add_argument('--inventory', type=Path, default=Path('data/semantics/semantic_resources.csv'))
+    seed.add_argument('--assessments', type=Path, default=Path('data/semantics/assessments.jsonl'))
+    ingest = sub.add_parser('management-import', help='Reverify and register a bounded existing MOSAIKS dataset')
+    ingest.add_argument('dataset', type=Path)
+    ingest.add_argument('--registry', type=Path, required=True)
+    ingest.add_argument('--track', choices=['forest_bioresources', 'cropland_food', 'watershed_water'])
+    check = sub.add_parser('management-check', help='Check registered metadata, lineage and file fixity')
+    check.add_argument('--registry', type=Path, required=True)
+    register = sub.add_parser('management-register', help='Register existing typed metadata; no scientific authority granted')
+    register.add_argument('kind', choices=['source', 'mapping', 'recipe', 'review', 'human_decision', 'semantic_resource',
+                                         'semantic_assessment', 'semantic_profile', 'workspace', 'service', 'allocation', 'usage'])
+    register.add_argument('document', type=Path)
+    register.add_argument('--title', required=True)
+    register.add_argument('--parent', action='append', default=[])
+    register.add_argument('--fixture', action='store_true')
+    register.add_argument('--registry', type=Path, required=True)
+    export = sub.add_parser('management-export', help='Controlled portable JSONL registry and schema export')
+    export.add_argument('--registry', type=Path, required=True)
+    export.add_argument('--output', type=Path, required=True)
+    scale = sub.add_parser('management-scale', help='Generated metadata index experiment, not global raster throughput')
+    scale.add_argument('--registry', type=Path, required=True)
+    scale.add_argument('--records', type=int, default=10000)
+    snapshot = sub.add_parser('management-snapshot', help='Controlled local snapshot; no remote archival deposit')
+    snapshot.add_argument('--registry', type=Path, required=True)
+    snapshot.add_argument('--output', type=Path, required=True)
+    restore = sub.add_parser('management-restore', help='Verify and restore a local snapshot to a new registry')
+    restore.add_argument('snapshot', type=Path)
+    restore.add_argument('--output', type=Path, required=True)
+    workbench = sub.add_parser('workbench', help='Loopback-only operator UI; no scientific approval or execution')
+    workbench.add_argument('--registry', type=Path, required=True)
+    workbench.add_argument('--port', type=int, default=8787)
     benchmark = sub.add_parser("semantic-benchmark")
     benchmark.add_argument("--inventory", type=Path, default=Path("data/semantics/semantic_resources.csv"))
     benchmark.add_argument("--sources", type=Path, action="append")
@@ -132,7 +172,44 @@ def main(argv=None):
     ir.add_argument("--output",type=Path,required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "cubedynamics-demo":
+        if args.command == 'management-demo':
+            from .management import demo as management_demo
+            print(json.dumps(management_demo(args.output, inventory=args.inventory, assessments=args.assessments,
+                                              metadata_records=args.metadata_records, windows=args.windows,
+                                              features=args.features), indent=2))
+        elif args.command == 'workbench':
+            from .workbench import serve
+            if not (args.registry / 'registry.sqlite3').is_file():
+                raise ValueError('create a registry with management-demo or management-seed first')
+            serve(args.registry, port=args.port)
+        elif args.command == 'management-restore':
+            from .asset_registry import restore_snapshot
+            print(json.dumps(restore_snapshot(args.snapshot, args.output), indent=2))
+        elif args.command.startswith('management-'):
+            from .asset_registry import AssetRegistry
+            from .management import seed_management, import_dataset, prepare_release, scale_probe, export_metadata
+            with AssetRegistry(args.registry) as registry:
+                if args.command == 'management-seed':
+                    result = seed_management(registry, inventory=args.inventory, assessments=args.assessments)
+                elif args.command == 'management-import':
+                    data, verification, run_record = import_dataset(registry, args.dataset, track=args.track)
+                    release = prepare_release(registry, data.artifact_id, verification.artifact_id)
+                    result = {'dataset_id': data.artifact_id, 'release_id': release.artifact_id, 'state': release.payload['state']}
+                elif args.command == 'management-check':
+                    result = registry.check()
+                elif args.command == 'management-scale':
+                    result = scale_probe(registry, args.records).payload
+                elif args.command == 'management-register':
+                    if args.document.stat().st_size > 512 * 1024:
+                        raise ValueError('metadata exceeds byte budget')
+                    result = registry.put(args.kind, args.title, json.loads(args.document.read_text()),
+                                          parents=tuple(args.parent), fixture=args.fixture).model_dump(mode='json')
+                elif args.command == 'management-export':
+                    result = export_metadata(registry, args.output)
+                else:
+                    result = registry.snapshot(args.output)
+                print(json.dumps(result, indent=2))
+        elif args.command == "cubedynamics-demo":
             from .cube_demo import run as cube_demo
             result,report=cube_demo(args.output)
             print(f"{result['records']} generated windows; real CubeDynamics → MOSAIKS; see verification.json")

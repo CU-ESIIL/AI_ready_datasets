@@ -1,0 +1,39 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bytes": {
+      "minimum": 0,
+      "title": "Bytes",
+      "type": "integer"
+    },
+    "media_type": {
+      "enum": [
+        "application/json",
+        "application/x-ndjson",
+        "application/x-npy",
+        "application/x-npz",
+        "text/markdown"
+      ],
+      "title": "Media Type",
+      "type": "string"
+    },
+    "name": {
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,99}$",
+      "title": "Name",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Sha256",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sha256",
+    "bytes",
+    "name",
+    "media_type"
+  ],
+  "title": "BlobReference",
+  "type": "object"
+}

@@ -31,8 +31,10 @@ python -m pip install -e '.[dev,embeddings]'
 prototype run --all-tracks --output run/offline
 prototype mosaiks-demo --output run/mosaiks-example
 prototype operation-demo --output run/operation-trust-example
+prototype management-demo --output run/amber-workbench --metadata-records 10000
 pytest -q
 mkdocs build --strict
+prototype workbench --registry run/amber-workbench/registry --port 8787
 ```
 
 Fixtures and MOSAIKS demonstration inputs are explicitly generated. No source data
@@ -42,6 +44,13 @@ shards, compact lineage, separate labels and held-out diagnostics with baselines
 Derived texture diagnostics do not establish ecological validity or native LLM understanding.
 
 ## Work with the modules
+
+The [local data management workbench](docs/management-workbench.md) connects
+existing MOSAIKS outputs to an immutable SQLite artifact/lineage index,
+content-addressed files, portable JSONL registries, cohort feedback, resource
+plans and actual snapshot/restore tests. Open `http://127.0.0.1:8787/` to inspect
+the demo. Scale probes measure generated metadata indexing, not global raster
+throughput. Three scientific products and remote partner services remain planned.
 
 Package code lives in `src/dataset_prototype/`; offline tests in `tests/`;
 small synthetic fixtures in `data/fixtures/`; scientific track configuration in
@@ -125,3 +134,10 @@ calls. No real scientific release or human approval is claimed.
 [Reproducible evidence and methods](reports/scientific_validation/README.md) ·
 [Sentinel expert package](docs/validation/sentinel-real-case.md) ·
 [NEON–Sentinel missing-data/method gates](docs/validation/neon-sentinel.md).
+
+## Data management design
+
+The [data-location and management report](output/pdf/AI_ready_data_management_report.pdf)
+maps provider storage, bounded in-memory processing, local artifacts, model records
+and release bundles. [Editable sources and the data inventory](reports/data_management/README.md)
+separate current implementation from proposed backup, retention and preservation commitments.

@@ -7,6 +7,18 @@ website sources as package files.
 
 ## Module boundaries
 
+The [local management workbench](management-workbench.md) composes existing
+scientific contracts and datasets with operational metadata, without moving the
+scientific stages into a registry. `management_contracts.py` defines interfaces;
+`asset_registry.py` supplies SQLite/CAS; `management.py` handles bounded imports,
+resource plans, exports and recovery; `workbench.py` supplies the local UI/API.
+Only version-bound feedback mutates through HTTP. No scientific approval or job
+execution endpoint exists; remote partner integrations remain planned.
+
+![Local management around the scientific stages.](assets/figures/management.svg)
+
+*Project-authored diagram; [maintained source](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/scripts/generate_figures.py).*
+
 | Module | Inputs | Outputs | Exclusions |
 | --- | --- | --- | --- |
 | Discovery and Access | `ScientificRequest`, access client | `DiscoveryResult` with `SourceResource` candidates | No encoders or scientific equivalence decisions |

@@ -1,0 +1,274 @@
+[
+  {
+    "title": "Where the data live",
+    "deck": "Data management evidence report | ESIIL AI-ready environmental data pipeline | 23 October 2026",
+    "sections": [
+      [
+        "The design in one sentence",
+        "Keep original observations with their providers, stream approved bounded windows through scientific harmonization into MOSAIKS, and retain the metadata, decisions, encoder and compact lineage needed to understand the resulting vectors."
+      ],
+      [
+        "What is implemented",
+        "The prototype uses local filesystem artifacts, version-controlled reference material and provider asset URLs. It has a working generated-data demonstration and retained historical real Sentinel evidence. A scientifically approved real Sentinel/NEON embedding release is not established."
+      ],
+      [
+        "What is not yet an institutional data service",
+        "The inspected code does not establish a managed project object store, production database, operational MESA storage service, backup/restore service, archive deposit, DOI assignment or fixed retention schedule."
+      ],
+      [
+        "How to use this report",
+        "CURRENT IMPLEMENTATION describes observed code/files. DESIGN REQUIREMENT describes scientific governance. PROPOSED DMP COMMITMENT describes an action the project must assign and implement. The latter is not evidence that a control is operating."
+      ]
+    ],
+    "evidence": "Audit baseline 17b80c5308bdc53ff00e0ae67fc700c162280ff4; AGENTS.md; stream_contracts.py; embedding_dataset.py; adapters.py"
+  },
+  {
+    "title": "A directory is not a repository service",
+    "deck": "Current locations are logical roles implemented primarily as files; most output paths are selected by the caller.",
+    "sections": [
+      [
+        "Provider-managed source layer",
+        "Sentinel assets remain at their native remote URLs. NEON product/site metadata and the authenticated access boundary are separate from scientifically normalized observation streams. Keep source identifiers, versions, acquisition time and terms rather than claiming a complete project source mirror."
+      ],
+      [
+        "Repository-managed material",
+        "Code is in src/; offline synthetic examples in data/fixtures/; shared semantic references and assessments in data/semantics/; science configuration in tracks/; rendered documentation sources in docs/. Reports and intentionally retained analysis evidence live under reports/, outputs/scientific_validation/ and output/pdf/."
+      ],
+      [
+        "Local operational material",
+        "run/ holds local experiments, review packages, generated embedding examples and private OpenClaw runtime material. It is Git-ignored. .cache/ is also ignored. These directories are local persistence, not automatically backed up, shared or access-controlled research storage."
+      ],
+      [
+        "Physical workspace qualification",
+        "The inspected checkout is under a OneDrive-UCB-O365 path on the local workstation. The path alone does not verify synchronization, institutional backup, encryption, geographic residency, retention or recovery. Git tracking is verified for selected experiment traces; it is not a statement that this report has been pushed or published."
+      ]
+    ],
+    "evidence": ".gitignore; orchestration.py; CLI output/cache options; repository tracked-file inspection"
+  },
+  {
+    "title": "Discovery and semantic reference data",
+    "deck": "Metadata are retained even when the much larger observations are streamed.",
+    "sections": [
+      [
+        "Source record contents",
+        "SourceResource preserves asset ID, version, URI, native metadata, variable definitions, methods, units, spatial/temporal support, rights, attribution, checksum and checksum scope. Sentinel planning retains STAC Items, native CRS, processing baseline, quality references and calibration coefficients."
+      ],
+      [
+        "Semantic evidence and assessments",
+        "data/semantics/ contains canonical CSV/JSON/JSONL references and auditable assessments. Native annotations and project interpretations remain different evidence classes. Small public vocabulary graph snapshots, their notices and acquisition hashes were retained for the scientific-validation report; these are not a mirror of all source ontologies."
+      ],
+      [
+        "Where to find them",
+        "Examples include run/sentinel-stream-plan.json, run/real-sentinel/snapshot.json (historical), data/semantics/semantic_resources.csv, docs/semantics/ mirrors and reports/scientific_validation/data/. The data inventory accompanying this PDF maps each class to its code evidence."
+      ],
+      [
+        "DMP implications",
+        "Metadata can reveal precise locations, species, sample identity, ownership or access restrictions even without raw observations. Rights review and sensitivity screening must apply to metadata exports and prompt payloads. A source URL or license label alone does not establish redistribution permission."
+      ]
+    ],
+    "evidence": "contracts.py; semantic_discovery.py; semantic_resources.py; real_data.py; reports/scientific_validation/"
+  },
+  {
+    "title": "Harmonization is stored as an audit trail",
+    "deck": "Recipes and decisions are retained scientific data products, not disposable application logs.",
+    "sections": [
+      [
+        "Frozen control records",
+        "Stream plans, canonical target definitions, versioned recipes, CubeDynamics configuration and encoder/layout specifications describe what may be computed. Source, scientific recipe and execution identities bind the plan to the reviewed context."
+      ],
+      [
+        "Review records",
+        "Consensus outputs retain specialist discussions and votes on the same frozen recipe. Six-domain reviews retain evidence, findings and QA synthesis. A separate exact-recipe HumanDecision is required when applicable. Prior vetoes and rejected outputs remain evidence; issue-adjudication forms do not authorize execution."
+      ],
+      [
+        "Locations and formats",
+        "Caller-selected consensus/review directories hold JSON/JSONL, summaries and manifests. Examples are run/sentinel-stream-consensus-bounded/, run/scoped-sentinel-review-v4/ and outputs/scientific_validation/. Stream publication can copy matching consensus, human decision and evidence-review JSON into its output."
+      ],
+      [
+        "DMP implications",
+        "Retain prompt/schema versions, source evidence, recipe/implementation digests, decisions, reviewer identity/date and failure status together. A scientific edit requires a new review identity; it must not overwrite the historical explanation. The prototype does not implement an institutional audit-log retention service or general write-once storage."
+      ]
+    ],
+    "evidence": "consensus.py; scoped_review.py; streaming.py; contracts.py; sentinel_review_gap_analysis.json"
+  },
+  {
+    "title": "What exists only during a stream",
+    "deck": "The new real-data path forbids intentional raw/harmonized dataset persistence, including test downloads.",
+    "sections": [
+      [
+        "Transient data sequence",
+        "Approved native COG windows and covering quality-mask cells enter bounded memory, are quality checked and scientifically calibrated upstream, pass through approved CubeDynamics stages, and become HarmonizedRasterPatch inputs to MOSAIKS. Data layout is channel by height by width with explicit units and observation lineage."
+      ],
+      [
+        "Bounded buffering is still necessary",
+        "Raster/GDAL memory caches, xarray/Dask graphs, encoder filter fitting and vector batching temporarily hold values. MOSAIKS filter fitting consumes a bounded training-only reference; the pipeline buffers a bounded prefix before producing vectors. Streaming does not mean zero RAM or zero network caching."
+      ],
+      [
+        "What remains after a window",
+        "The output retains the vector, native support/indices, recipe/source/review references and per-window evidence hashes. It does not serialize raw or harmonized raster arrays in the new stream. StreamPlan declares persist_raw_data=False and persist_harmonized_data=False."
+      ],
+      [
+        "Scope and exceptions",
+        "Historical snapshot/fixture workflows do store observation values, including snapshot JSON, harmonized.json and legacy caches. They are explicit separate paths. No assertion is made here about encrypted RAM, swap, crash dumps, secure erasure, provider caches or uninspected operating-system temporary storage."
+      ]
+    ],
+    "evidence": "stream_contracts.py; stream_rasters.py; harmonized_rasters.py; mosaiks_pipeline.py; cubedynamics_backend.py"
+  },
+  {
+    "title": "The durable MOSAIKS dataset bundle",
+    "deck": "A vector matrix alone is insufficient for scientific reuse.",
+    "sections": [
+      [
+        "Bundle inventory",
+        "The table lists persistent feature, encoder, lineage and verification artifacts. Output directories are caller-selected; run/cubedynamics-verified/ is an explicitly generated example, not an approved real-data release."
+      ],
+      [
+        "Why encoder artifacts must be retained",
+        "Filters are empirical samples transformed from the training stream, with normalization/whitening and a fixed specification. Keep filter weights, training observation identities, canonical variable definitions and training context. Re-fitting against changed sources may produce a different encoder."
+      ],
+      [
+        "Rights and sensitivity travel with derivatives",
+        "Filters, vectors, labels and fitted verification probes are source-derived products. They are not proven anonymous, irreversible or exempt from source restrictions. Source-specific derivative permissions and any location/biological sensitivity require review before distribution."
+      ]
+    ],
+    "evidence": "embedding_dataset.py; mosaiks.py; generated manifest run/cubedynamics-verified/manifest.json"
+  },
+  {
+    "title": "Model traffic, transcripts and credentials",
+    "deck": "A tool-free model still receives the evidence included in its request.",
+    "sections": [
+      [
+        "External model boundary",
+        "The OpenClaw adapter sends bounded prompts, scientific evidence and output schemas to the configured Verde provider; returned provider/model must match. This is external disclosure of the supplied metadata, even though models cannot open files, execute tools or access source rasters themselves."
+      ],
+      [
+        "What is retained",
+        "AgentTrace records exact input/output JSON, prompt/response digests, timestamps, role, provider/model, runtime policy digest and errors. OpenClaw returns plugin-normalized JSON; raw provider text, token counts, costs and weight hashes are not necessarily exposed. Local Ollama is a distinct configured path, not an automatic substitute."
+      ],
+      [
+        "Private runtime material",
+        "Ignored runtime directories can contain plaintext credential files such as runtime.env and gateway-token, configuration history, container state and workspace files. The adapter uses restrictive filesystem modes for credential material. Neither .gitignore nor file mode is encryption or a substitute for storage permissions and managed secrets."
+      ],
+      [
+        "Outstanding policy decisions",
+        "Before sensitive-source use, identify approved model processing terms, request retention/training policy, region, subprocessors, permissible metadata and transcript access. These terms were not verified by this storage audit. Do not put credentials, restricted locations, personal information or controlled source text into a public trace bundle."
+      ]
+    ],
+    "evidence": "model_agents.py; openclaw_backend.py; openclaw_runtime.py; reports/scientific_validation/data/model_experiment/calls.jsonl"
+  },
+  {
+    "title": "Integrity and reproducibility have different scopes",
+    "deck": "A checksum proves the identity of what was hashed, not the identity of an unarchived remote object.",
+    "sections": [
+      [
+        "Three separate integrity objects",
+        "A metadata digest identifies a metadata record. An extracted-window evidence hash identifies a bounded read or evidence object. Vector/filter/label file hashes identify retained products. Neither of the first two establishes a whole-raster checksum or guarantees that a provider will preserve identical bytes indefinitely."
+      ],
+      [
+        "Publication and failure handling",
+        "The feature writer creates a new output directory, writes .partial records/shards, renames completed outputs and records manifest status. Verification requires complete status and matching identities/hashes. Failed/incomplete runs must not be promoted to releases. These mechanisms are not a demonstrated disaster-recovery service."
+      ],
+      [
+        "Legacy cache and provenance",
+        "storage.cached uses an identity-derived key, content checks and exclusive atomic publication of JSON entries. It does not provide a shared database, access-control layer or lifecycle policy. Provenance export is PROV-inspired JSON-LD, not a deployed graph service. Track-specific products retain track interpretation without changing shared sources."
+      ],
+      [
+        "Reproducibility limitation",
+        "Preserving vectors, filters, recipes, software identities and evidence supports artifact-level reproducibility. Exact re-acquisition of original pixels also depends on stable provider versions or separately authorized preservation. The current streaming constraint deliberately does not create a complete source archive."
+      ]
+    ],
+    "evidence": "storage.py; embedding_dataset.py; provenance.py; operations.py; AGENTS.md"
+  },
+  {
+    "title": "Access, sharing and release boundaries",
+    "deck": "Sharing must be a deliberate product decision, not the consequence of a file being Git-tracked.",
+    "sections": [
+      [
+        "Current exposure boundary",
+        "Git-ignored run/ and .cache/ are excluded from ordinary Git add operations, but ignore rules do not encrypt or protect access and do not remove previously tracked files. Selected scientific-validation model calls and metadata snapshots are already tracked in reports/. Website builds publish docs/ as HTML through GitHub Pages; other repository files may be separately accessible even if not linked from the website."
+      ],
+      [
+        "Proposed release review",
+        "Before release, review source rights/attribution, location and biological sensitivity, privacy, Indigenous data governance, model prompts and reviewer identifiers. Include source/version evidence, exact approved recipe/reviews, encoder bundle, feature shards, row lineage, target provenance, verification summary, manifest and data dictionary. Keep credentials and unapproved restricted material out."
+      ],
+      [
+        "Public versus controlled products",
+        "Open code, generated fixtures and cleared documentation can have a different sharing policy from source-derived features and traces. A vector license cannot silently replace source terms. Where full evidence cannot be shared, publish an approved description of the restriction and access process without disclosing protected content."
+      ],
+      [
+        "Not yet implemented",
+        "No unified role-based access control, signed release service, assigned repository deposit, general DOI workflow, embargo manager or per-file public/private classifier is demonstrated in the inspected code. MESA/CyVerse/iRODS integration is a planned boundary, not the current storage location."
+      ]
+    ],
+    "evidence": ".gitignore; pages.yml; adapters.py; docs/development/integrations.md; AGENTS.md"
+  },
+  {
+    "title": "Retention, backup and preservation decisions",
+    "deck": "The code preserves local files; a funded project still needs an explicit stewardship policy.",
+    "sections": [
+      [
+        "Current state",
+        "No automatic backup, scheduled fixity audit, restore test, approved retention duration, records-disposal workflow or funded long-term archive commitment is established by this inspection. Git history and a cloud-synced-looking workspace path do not demonstrate recovery of ignored runs or private runtime state."
+      ],
+      [
+        "Proposed DMP commitments - assign before submission",
+        "Name the PI as accountable owner, a designated data steward for inventories/rights/release review, technical maintainers for storage/integrity/recovery, and scientific reviewers for recipe/target acceptance. These are proposed roles, not confirmed assignments or institutional undertakings."
+      ],
+      [
+        "Retention categories",
+        "Define separate schedules for approved feature/encoder/evidence bundles; scientific negative results and vetoes; working runs/temporary partial outputs; legacy cached observations; model transcripts; and credentials. Durations must follow the applicable funder, institution, agreements and source restrictions; this report does not invent a number of years."
+      ],
+      [
+        "Operational controls to fund",
+        "Select institution-approved working storage, separate managed backup and a rights-compatible preservation destination. Define access lists, encryption/key management, backup scope for ignored files, restoration tests, integrity checks and owner handover. Retire failed partial products and credentials under an approved process while retaining permitted scientific audit evidence; account for backup and provider-retention copies."
+      ]
+    ],
+    "evidence": "Inspection of storage/runtime/publication code; no backup or retention service verified; PROPOSED DMP COMMITMENTS"
+  },
+  {
+    "title": "Storage planning: vectors are only one part",
+    "deck": "Capacity figures below are explicit planning calculations, not measured production throughput.",
+    "sections": [
+      [
+        "Numeric vector payload",
+        "For float32 vectors, payload bytes = number of patches x feature dimensions x 4. An illustrative one million patches with 512 features needs 2,048,000,000 bytes (about 2.05 decimal GB) for the vector matrix alone. This does not include file headers, row lineage, source metadata, filters, labels, prompts, reports, replication or backups."
+      ],
+      [
+        "Observed generated example",
+        "The retained generated example has 32 patches and 32 features in two 16-row shards: 4,096 numeric payload bytes before .npy headers. It has no raw/harmonized raster datasets in the bundle. Its metadata, encoder and verification files add overhead. This is a small generated diagnostic, not a scale estimate for real environmental data."
+      ],
+      [
+        "Budget by product class",
+        "Plan separate capacity for feature shards; encoder/filter versions; per-window JSONL lineage; review/prompt traces; semantic reference snapshots; independent targets/probes; reports; authorized legacy evidence; and operational backups. Estimate counts and serialization overhead using a representative approved pilot before committing storage or throughput figures."
+      ],
+      [
+        "Source traffic and recovery",
+        "Network bytes and provider read amplification are not measured by vector size. Re-runs may require source access again; outage, credentials, rate limits and source revisions can prevent recovery. Budget for controlled re-computation and required metadata preservation rather than promising source-free reprocessing."
+      ]
+    ],
+    "evidence": "mosaiks.MOSAIKSSpec; embedding_dataset.py; generated 32 x 32 manifest; formula stated explicitly"
+  },
+  {
+    "title": "A usable starting point for the grant",
+    "deck": "Draft design description followed by decisions the proposal must make explicitly.",
+    "sections": [
+      [
+        "Draft method wording",
+        "The project will preserve source identifiers, scientific metadata, rights evidence and versioned review decisions while processing approved environmental observations in bounded memory streams. Harmonized raster windows will pass directly to MOSAIKS without routine persistence of raw or harmonized raster datasets. Persistent products will include feature matrices, empirical encoder/filter artifacts, per-window lineage, verification targets and manifests sufficient to interpret the scientific and computational provenance of each representation."
+      ],
+      [
+        "Draft stewardship wording - commitments to finalize",
+        "A designated project data steward will maintain a data inventory and review access, source restrictions, sensitive metadata and release bundles. The project will select institution-approved working and backup storage, document access/encryption controls, test restoration and define retention and preservation schedules before operational deployment. Public releases will be limited to material cleared for sharing and will include required attribution, data dictionaries, methods and explicit limitations."
+      ],
+      [
+        "Decisions still needed",
+        "Specify funder/institutional requirements; named responsible people; approved storage and backup systems; model-processing terms and region; transcript/sensitive-location policy; archive/deposit destination; persistent identifiers; retention periods; costs and handover. Also decide whether any legally permitted source-version preservation is needed to meet exact reproducibility expectations under the streaming design."
+      ],
+      [
+        "Evidence and scope",
+        "This report documents the repository design and observed paths at the audit commit; it is not a security audit, institutional commitment or funder-specific compliance determination. Editable report source, inventory CSV/JSON, input hashes and verification instructions accompany the PDF. No source acquisition, model call, scientific approval or production-storage change was performed for this report."
+      ]
+    ],
+    "evidence": "reports/data_management/build_report.py; data_inventory.csv/json; run_manifest.json; source files listed in the manifest"
+  }
+]

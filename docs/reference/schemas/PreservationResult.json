@@ -1,0 +1,50 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "blobs": {
+      "minimum": 0,
+      "title": "Blobs",
+      "type": "integer"
+    },
+    "bytes": {
+      "minimum": 0,
+      "title": "Bytes",
+      "type": "integer"
+    },
+    "records": {
+      "minimum": 1,
+      "title": "Records",
+      "type": "integer"
+    },
+    "remote_deposit": {
+      "const": false,
+      "default": false,
+      "title": "Remote Deposit",
+      "type": "boolean"
+    },
+    "retention_agreement": {
+      "default": null,
+      "title": "Retention Agreement",
+      "type": "null"
+    },
+    "snapshot_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Snapshot Digest",
+      "type": "string"
+    },
+    "verification": {
+      "const": "fixity_checked",
+      "default": "fixity_checked",
+      "title": "Verification",
+      "type": "string"
+    }
+  },
+  "required": [
+    "snapshot_digest",
+    "records",
+    "blobs",
+    "bytes"
+  ],
+  "title": "PreservationResult",
+  "type": "object"
+}

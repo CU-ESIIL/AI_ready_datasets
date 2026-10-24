@@ -4,6 +4,11 @@ hide:
 ---
 # Observations retain their identity
 
+The [local management workbench](management-workbench.md) makes source/semantic
+metadata, recipes, dataset artifacts, resource plans and recovery inspectable
+together. It indexes generated MOSAIKS outputs without persisting raw/harmonized
+windows. Planned products and quotas remain distinct from diagnostic artifacts.
+
 Environmental research connects observations collected with different instruments,
 methods and purposes. We preserve those differences through discovery, harmonization
 and representation. Modality describes how an observation was made; scale describes
@@ -40,3 +45,12 @@ Indigenous data sovereignty and access restrictions remain source-specific quest
 A catalog’s license label cannot substitute for the authoritative terms.
 
 [Rights and provenance](provenance.md) · [Streaming implementation](streaming-harmonization.md)
+
+## Data management planning
+
+The [data-location report](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/output/pdf/AI_ready_data_management_report.pdf)
+and [editable inventory](https://github.com/CU-ESIIL/AI_ready_datasets/tree/main/reports/data_management)
+map retained artifacts and transient processing separately. The report identifies
+backup, retention, archive, access and model-processing decisions that the project
+still needs to assign. It does not establish new storage infrastructure. Repository
+links become available when the local report changes are published.

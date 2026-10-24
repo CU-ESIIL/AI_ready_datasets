@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "database_bytes": {
+      "minimum": 0,
+      "title": "Database Bytes",
+      "type": "integer"
+    },
+    "generated_records": {
+      "maximum": 100000,
+      "minimum": 1,
+      "title": "Generated Records",
+      "type": "integer"
+    },
+    "limitation": {
+      "default": "Local index probe; not global raster throughput, scientific validity or an ACCESS allocation benchmark.",
+      "title": "Limitation",
+      "type": "string"
+    },
+    "page_query_seconds": {
+      "minimum": 0,
+      "title": "Page Query Seconds",
+      "type": "number"
+    },
+    "scope": {
+      "const": "generated_metadata_index_only",
+      "default": "generated_metadata_index_only",
+      "title": "Scope",
+      "type": "string"
+    },
+    "write_seconds": {
+      "minimum": 0,
+      "title": "Write Seconds",
+      "type": "number"
+    }
+  },
+  "required": [
+    "generated_records",
+    "write_seconds",
+    "page_query_seconds",
+    "database_bytes"
+  ],
+  "title": "ScaleProbe",
+  "type": "object"
+}

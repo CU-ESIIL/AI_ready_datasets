@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "activity": {
+      "title": "Activity",
+      "type": "string"
+    },
+    "evidence_kind": {
+      "const": "DERIVED_DETERMINISTICALLY",
+      "default": "DERIVED_DETERMINISTICALLY",
+      "title": "Evidence Kind",
+      "type": "string"
+    },
+    "metric": {
+      "enum": [
+        "wall_seconds",
+        "process_cpu_seconds",
+        "bytes_read",
+        "bytes_written",
+        "records"
+      ],
+      "title": "Metric",
+      "type": "string"
+    },
+    "provider_billing": {
+      "const": false,
+      "default": false,
+      "title": "Provider Billing",
+      "type": "boolean"
+    },
+    "scope": {
+      "title": "Scope",
+      "type": "string"
+    },
+    "value": {
+      "minimum": 0,
+      "title": "Value",
+      "type": "number"
+    }
+  },
+  "required": [
+    "activity",
+    "metric",
+    "value",
+    "scope"
+  ],
+  "title": "UsageMeasurement",
+  "type": "object"
+}

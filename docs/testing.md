@@ -1,5 +1,10 @@
 # Testing
 
+The [management workbench](management-workbench.md) adds offline registry,
+governance, bundle-integrity, export and recovery tests in `tests/test_management.py`.
+HTTP handlers are tested in memory without socket connections. Browser checks
+exercise a separate loopback server. Metadata probes do not claim global throughput.
+
 Run `python -m pytest -q` from the checkout. Tests use project-authored synthetic
 fixtures; no internet, MESA credentials, OpenClaw, or commercial LLM access is
 required. Tests block socket connections to enforce this boundary. CI installs

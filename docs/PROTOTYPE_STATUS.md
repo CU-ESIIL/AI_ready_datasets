@@ -1,5 +1,17 @@
 # Current implementation status
 
+## Local operational prototype — 23 October 2026
+
+The [data management workbench](management-workbench.md) connects generated
+harmonization/MOSAIKS output to immutable typed records, SQLite lineage lookup,
+deduplicated files, portable JSONL/schema exports, nine workspace plans, three
+planned products, resource plans, measured usage, feedback and actual local
+snapshot/restore. The loopback UI supports filtering, pagination, evidence
+traversal and checked range downloads. No scientific approval or arbitrary
+execution API exists. Scale probes measure metadata indexing only. Remote
+MESA/iRODS/OSN/NDP/TACC services, awards and global scientific products are not
+claimed. The undefined third executable track is unchanged.
+
 The [documentation synchronization audit](development/documentation-sync-audit.md)
 separates implemented metadata diagnostics from planned ontology depth, composition,
 accumulation, dataset potential/diversity and flagship analysis. See the
@@ -35,7 +47,7 @@ gate for real Sentinel streams, checked before source access. The legacy
 [Sentinel comparison](development/sentinel-review-refactor.md).
 
 The website now separates narrative research pages from technical documentation,
-with generated contract reference and eighteen source-maintained architecture and conceptual figures.
+with generated contract reference and source-maintained architecture and conceptual figures.
 The existing Material/Pages configuration remains the deployment mechanism.
 
 ## Metadata consensus and streaming

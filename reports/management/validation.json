@@ -1,0 +1,96 @@
+{
+  "reviewed_at": "2026-10-23",
+  "scope": "Local generated pipeline and management prototype; no cloud service, source download or scientific approval",
+  "tests": {
+    "passed": 238,
+    "skipped": 1,
+    "skip_reason": "Optional external CubeDynamics dependency not installed in this test environment"
+  },
+  "documentation": {
+    "strict_mkdocs": "passed",
+    "checked_html_pages": 64,
+    "local_links_fragments_media_alt": "passed"
+  },
+  "browser_acceptance": {
+    "desktop": true,
+    "mobile_width_390_no_horizontal_overflow": true,
+    "console_errors": 0,
+    "feedback_persisted": true,
+    "native_vector_row_preview": true,
+    "range_download_status": 206
+  },
+  "registry_summary": {
+    "counts": {
+      "allocation": 3,
+      "benchmark": 1,
+      "context": 2,
+      "dataset": 2,
+      "encoder": 2,
+      "feedback": 2,
+      "mapping": 2,
+      "operation_registry": 1,
+      "preservation": 1,
+      "product": 3,
+      "recipe": 2,
+      "release": 2,
+      "review": 1,
+      "run": 10002,
+      "semantic_assessment": 86,
+      "semantic_profile": 2,
+      "semantic_resource": 86,
+      "service": 6,
+      "source": 2,
+      "usage": 3,
+      "verification": 2,
+      "workspace": 9
+    },
+    "artifacts": 10222,
+    "registered_blob_bytes": 1144513,
+    "referenced_blob_bytes": 1154209,
+    "cas_occupied_bytes": 1144513,
+    "unreferenced_blob_bytes": 0,
+    "database_bytes": 8962048,
+    "scope": "local occupied bytes; not provisioned capacity or physical replication",
+    "remote_services": "not connected; no cloud allocation or retention agreement implied"
+  },
+  "registry_fixity": {
+    "records_checked": 10222,
+    "status": "fixity_checked",
+    "scientific_validation": "not_established"
+  },
+  "metadata_probe": {
+    "generated_records": 10000,
+    "scope": "generated_metadata_index_only",
+    "write_seconds": 0.2394515420000971,
+    "page_query_seconds": 0.000779333000537008,
+    "database_bytes": 8880128,
+    "limitation": "Local index probe; not global raster throughput, scientific validity or an ACCESS allocation benchmark."
+  },
+  "generated_pipeline": {
+    "windows": 256,
+    "features": 512,
+    "scope": "Actual local harmonization/MOSAIKS computation on generated windows",
+    "recovery": {
+      "records_checked": 209,
+      "status": "fixity_checked",
+      "scientific_validation": "not_established"
+    }
+  },
+  "outputs": {
+    "workbench": "http://127.0.0.1:8787/",
+    "registries": "run/amber-workbench/registries-current",
+    "larger_run": "run/management-256"
+  },
+  "source_sha256": {
+    "asset_registry.py": "b6c8bcc236b93cc5d20da6c514c8d3782e2f7e43bb646edcf419f7ccba38bf3b",
+    "management.py": "f5ce10c6e1e89ea3d1f6f787fc0a9287044b9d45c01dc8b515bf485990edef6c",
+    "management_contracts.py": "d953484f29b7a0621ab3bffdd8dbfa3b274729f78495c82e94d698ce5ad7ef02",
+    "workbench.py": "cfb1694dbdd9e13d924edf07e7b96e402da4b090949bd5173ddbe876c2804478",
+    "mosaiks_pipeline.py": "dab82880497bcc7393a72dabd53b67b3c1adfb6300921aee39bcde8dfd5e8403",
+    "cli.py": "08f286c634c6fc5e9430336baf757e1629975384f99c7bdaf5bf38cddde766b1"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  }
+}

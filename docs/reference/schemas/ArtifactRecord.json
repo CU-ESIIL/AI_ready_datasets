@@ -1,0 +1,158 @@
+{
+  "$defs": {
+    "BlobReference": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {
+          "minimum": 0,
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "media_type": {
+          "enum": [
+            "application/json",
+            "application/x-ndjson",
+            "application/x-npy",
+            "application/x-npz",
+            "text/markdown"
+          ],
+          "title": "Media Type",
+          "type": "string"
+        },
+        "name": {
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,99}$",
+          "title": "Name",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sha256",
+        "bytes",
+        "name",
+        "media_type"
+      ],
+      "title": "BlobReference",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Artifact Id",
+      "type": "string"
+    },
+    "blobs": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/BlobReference"
+      },
+      "title": "Blobs",
+      "type": "array"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "boolean"
+    },
+    "kind": {
+      "enum": [
+        "source",
+        "semantic_resource",
+        "semantic_assessment",
+        "semantic_profile",
+        "mapping",
+        "recipe",
+        "review",
+        "human_decision",
+        "context",
+        "operation_registry",
+        "run",
+        "encoder",
+        "verification",
+        "dataset",
+        "release",
+        "workspace",
+        "service",
+        "allocation",
+        "usage",
+        "feedback",
+        "preservation",
+        "benchmark",
+        "product"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "parents": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 128,
+      "title": "Parents",
+      "type": "array"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 240,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "track": {
+      "anyOf": [
+        {
+          "enum": [
+            "forest_bioresources",
+            "cropland_food",
+            "watershed_water"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Track"
+    },
+    "visibility": {
+      "default": "controlled",
+      "enum": [
+        "public",
+        "controlled"
+      ],
+      "title": "Visibility",
+      "type": "string"
+    }
+  },
+  "required": [
+    "artifact_id",
+    "kind",
+    "title",
+    "fixture",
+    "payload"
+  ],
+  "title": "ArtifactRecord",
+  "type": "object"
+}

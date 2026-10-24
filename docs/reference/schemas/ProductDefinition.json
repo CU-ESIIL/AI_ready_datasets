@@ -1,0 +1,48 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "observation_unit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Observation Unit"
+    },
+    "scientific_scope_status": {
+      "const": "requires_scientific_definition",
+      "default": "requires_scientific_definition",
+      "title": "Scientific Scope Status",
+      "type": "string"
+    },
+    "state": {
+      "const": "planned",
+      "default": "planned",
+      "title": "State",
+      "type": "string"
+    },
+    "track": {
+      "enum": [
+        "forest_bioresources",
+        "cropland_food",
+        "watershed_water"
+      ],
+      "title": "Track",
+      "type": "string"
+    }
+  },
+  "required": [
+    "track",
+    "name"
+  ],
+  "title": "ProductDefinition",
+  "type": "object"
+}

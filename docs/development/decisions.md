@@ -1,5 +1,18 @@
 # Architectural decisions and repository audit
 
+## 2026-10-23 — Local management composition
+
+Use standard-library SQLite and content-addressed output files around the existing
+independent scientific modules. This is not a replacement for MESA, OSN, a graph
+database or authenticated governance. Imports recheck existing gates and bounded
+MOSAIKS verification without changing input bundles. Controlled exports/backups
+preserve metadata, blobs and dependency identities; recovery is actually tested.
+The loopback UI creates only version-bound issues: no approval, execution or
+publication authority. Planned products and unawarded requests stay explicit;
+metadata index timing is not global encoder throughput. No scientific-track
+configuration or raw/harmonized persistence changes are introduced.
+See [workbench contracts and limits](../management-workbench.md).
+
 ## 2026-10-21 — V0 foundation
 
 The initial checkout had README/AGENTS, MkDocs Material configuration and assets,
@@ -342,3 +355,12 @@ The first Verde pilot uses one configured 120b model. Natural-language content i
 wrapped in the installed plugin's mandatory JSON envelope; C/D re-evaluate B rather
 than adding samples. Human gold and weaker-model competence are not established.
 Retain this protocol limitation, exact model responses and negative findings.
+
+## 2026-10-23 — Describe the data lifecycle before making storage commitments
+
+Document source/provider ownership, transient raw/harmonized windows and retained
+feature/encoder/decision evidence separately. Treat ignored local paths, a
+OneDrive-located checkout and Git history as insufficient evidence of managed backup
+or access controls. Keep retention, preservation destination and model-processing
+terms as explicit decisions for the data management plan; do not imply MESA or an
+institutional storage service is already deployed. The report adds no execution path.
