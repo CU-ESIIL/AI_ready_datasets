@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-26 — Grant resource and versioned backup plan
+
+- Front-loaded VERDE inference to 9,000/6,000/3,000 reference hours and commercial API caps to $30k/$20k/$10k; three-year resource and cash totals unchanged.
+
+- Added opening/new/retired/closing storage ledgers and CSV with year-to-year carry-forward checks; retained earlier releases explicitly and documented delayed-closeout capacity sensitivity.
+
+- Audited CSV/Markdown arithmetic and corrected Year 3 cross-cohort backup retention: 290 TB peak and $120,160 cash planning total. Added a repeatable checker with invalid-input checks.
+
+- Added year/type capacity, direct-expense and compute tables with CSV rows.
+- Defined proposed version retention, churn sizing, recovery targets and all-TACC persistent storage boundary; preserved historical resource records.
+- Distinguished verified rates from unquoted backup/hosting allowances and unbenchmarked production. No runtime scientific or deployment behavior changed.
+
 ## 2026-10-23 — Local management workbench
 
 - Added typed operational records, SQLite lineage/CAS storage, bounded existing

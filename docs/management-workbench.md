@@ -1,5 +1,7 @@
 # Data management workbench
 
+The [current resource budget](resource-budget.md) supersedes earlier deployment plans with all-TACC persistent storage and a proposed versioned backup policy. Seeded resource records below remain historical, unawarded plans.
+
 **PROTOTYPE — executable local operations, generated scientific diagnostics.**
 The workbench connects existing discovery metadata, scientific contracts and
 MOSAIKS outputs to an immutable artifact index, portable registries, local file

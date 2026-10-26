@@ -1,5 +1,9 @@
 # Current implementation status
 
+## Resource planning — 26 October 2026
+
+The [grant-period budget](resource-budget.md) targets all-TACC persistent storage and versioned backup, with VERDE/Jetstream2 compute. Its retention ledger explicitly carries earlier releases forward and separates capacity growth, authorized closeout assumptions and backup history. Rates, churn and scientific production remain conditional; no remote backup is implemented. Historical OSN plans remain explicit older prototype records.
+
 ## Local operational prototype — 23 October 2026
 
 The [data management workbench](management-workbench.md) connects generated

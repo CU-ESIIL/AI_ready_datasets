@@ -137,6 +137,8 @@ calls. No real scientific release or human approval is claimed.
 
 ## Data management design
 
+The [year-by-year infrastructure budget](docs/resource-budget.md) separates TACC primary storage, versioned backups, inference allowances and unawarded compute requests.
+
 The [data-location and management report](output/pdf/AI_ready_data_management_report.pdf)
 maps provider storage, bounded in-memory processing, local artifacts, model records
 and release bundles. [Editable sources and the data inventory](reports/data_management/README.md)

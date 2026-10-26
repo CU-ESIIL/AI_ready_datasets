@@ -1,5 +1,15 @@
 # Architectural decisions and repository audit
 
+## 2026-10-26 — All-TACC storage and versioned backup planning
+
+At user direction, inference spending and open-model runtime are front-loaded toward ontology/recipe development: 50%/one-third/one-sixth across Years 1/2/3. This changes annual demand allowances, not aggregate totals or scientific execution gates.
+
+Storage tables report total retained capacity, not new annual ingest. The retention ledger carries earlier product releases forward without product deletion, distinguishes workspace closeout from protected backup history, and records the peak-capacity consequence of delayed closeout. Gross writes and real snapshot expiration remain unmeasured.
+
+The backup audit uses current/prior-year mutable high-water capacity for ordinary version history, plus a full 6 TB governance closeout reserve in Year 3. This avoids shrinking backup capacity solely because active cohort workspaces close. It remains an unmeasured churn scenario, not a provider guarantee.
+
+Target TACC for all persistent storage/distribution and additional recoverable backups; retain Jetstream2/ACCESS for inference and compute. This supersedes earlier OSN deployment planning without rewriting historical run records. Proposed 14 daily/12 weekly/12 monthly retention is sized by an explicit mutable-content churn model; neither scheduled backup nor provider service is implemented. No raw/harmonized persistence is added. See [budget and evidence](../resource-budget.md).
+
 ## 2026-10-23 — Local management composition
 
 Use standard-library SQLite and content-addressed output files around the existing
