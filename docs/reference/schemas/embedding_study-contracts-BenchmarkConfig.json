@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "components": {
+      "maximum": 10,
+      "minimum": 1,
+      "title": "Components",
+      "type": "integer"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "string"
+    },
+    "metadata": {
+      "title": "Metadata",
+      "type": "string"
+    },
+    "order_seed": {
+      "minimum": 0,
+      "title": "Order Seed",
+      "type": "integer"
+    },
+    "query_cache_modes": {
+      "items": {
+        "enum": [
+          "cold",
+          "warm"
+        ],
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 1,
+      "title": "Query Cache Modes",
+      "type": "array"
+    },
+    "repeats": {
+      "maximum": 10,
+      "minimum": 1,
+      "title": "Repeats",
+      "type": "integer"
+    },
+    "synthetic_only": {
+      "const": true,
+      "title": "Synthetic Only",
+      "type": "boolean"
+    },
+    "tasks": {
+      "title": "Tasks",
+      "type": "string"
+    },
+    "version": {
+      "const": "fire-vase-benchmark-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "fixture",
+    "tasks",
+    "metadata",
+    "components",
+    "repeats",
+    "order_seed",
+    "query_cache_modes",
+    "synthetic_only"
+  ],
+  "title": "BenchmarkConfig",
+  "type": "object"
+}

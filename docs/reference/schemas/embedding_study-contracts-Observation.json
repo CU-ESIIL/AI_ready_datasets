@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "available": {
+      "title": "Available",
+      "type": "boolean"
+    },
+    "available_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Available At"
+    },
+    "cumulative_area": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Cumulative Area"
+    },
+    "daily_growth": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Daily Growth"
+    },
+    "date": {
+      "format": "date",
+      "title": "Date",
+      "type": "string"
+    },
+    "days_since_previous": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Days Since Previous"
+    },
+    "observation_id": {
+      "minLength": 1,
+      "title": "Observation Id",
+      "type": "string"
+    },
+    "quality_flags": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    }
+  },
+  "required": [
+    "observation_id",
+    "date",
+    "available_at",
+    "available",
+    "cumulative_area",
+    "daily_growth",
+    "days_since_previous"
+  ],
+  "title": "Observation",
+  "type": "object"
+}

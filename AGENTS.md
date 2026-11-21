@@ -277,3 +277,26 @@
 - Public site coordinates do not identify actual sensor support. Do not promote an
   exact-support join or grid alignment into a tower-to-pixel scientific association.
   A genuinely new association method needs expert definition before implementation.
+
+## Fire VASE representation-utility benchmark
+
+- Keep the deterministic benchmark explicitly synthetic until real source rights,
+  cumulative/ring semantics, support and availability are reviewed. Reuse the pinned,
+  hash-verified external operation file through the isolated closed worker; never
+  vendor it or expose arbitrary scientific code execution.
+- Evaluate the complete supplied interface, including retained provenance metadata.
+  A normalized payload can lose size/date information while its source-ID sidecar
+  still supports a validated consecutive-sequence count. Keep answerability,
+  correctness, geometric fidelity, scientific relevance and cost distinct.
+- M0/M1/M2 may change evidence, never data, executable capabilities or budgets.
+  Deterministic metadata invariance is an isolation test, not metadata efficacy.
+
+- Controlled Fire VASE agent actions are inert JSON proposals. Only the synthetic
+  deterministic controller may invoke the registered fixture operations. Keep
+  task IDs, references, answerability and grading metadata out of model prompts;
+  use condition-invariant sanitized feedback and evidence-referenced numerical
+  answers. Preserve malformed proposals and recovery attempts without repairs.
+- Mock/rule-provider results establish protocol behavior, never LLM capability or
+  metadata efficacy. Real calls need verified runtime identity, access and cost
+  bounds; unavailable usage stays unknown. Do not relabel public development cases
+  as genuinely held out or overwrite historical benchmark/audit outputs.

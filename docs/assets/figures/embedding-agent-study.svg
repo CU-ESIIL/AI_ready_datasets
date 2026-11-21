@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1118" role="img" aria-labelledby="title desc">
+<title id="title">Controlled Fire VASE agent experiment</title><desc id="desc">WORKING mock protocol; real-model evidence pending. Scientific values come only from validated deterministic operations. Metadata never changes executable permissions.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
+<rect width="960" height="1118" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Controlled Fire VASE agent experiment</text>
+<path d="M480 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L480 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L170 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 399 L790 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 524 L480 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 524 L480 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 649 L480 710" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 774 L170 835" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M310 867 L650 867" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 899 L480 960" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Fixed synthetic question set</tspan></text>
+<rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="248" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Public aliases + approved data</tspan></text>
+<rect x="340" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">M0 / M1 / M2 evidence renderer</tspan></text>
+<rect x="30" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Fixed R0 / R1 / R2</tspan></text>
+<rect x="650" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Adaptive R0 + R1 + R2</tspan></text>
+<rect x="340" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">JSON-only action provider</tspan></text>
+<rect x="340" y="710" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="748" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Budget / authorization checks</tspan></text>
+<rect x="30" y="835" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="863" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Pinned deterministic</tspan><tspan x="170" dy="20">dispatcher</tspan></text>
+<rect x="650" y="835" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="873" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Private independent evaluator</tspan></text>
+<rect x="340" y="960" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="988" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Traces / costs / paired</tspan><tspan x="480" dy="20">reports</tspan></text>
+</svg>

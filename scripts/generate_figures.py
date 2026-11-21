@@ -73,6 +73,24 @@ FIGURES['harmonization'] = ('Harmonization, review and registered execution',
 _title,_description,_nodes,_edges=FIGURES['model-trust']
 FIGURES['model-trust']=(_title,_description,[*_nodes,('CubeDynamics adapter',2,5)],[*_edges,(9,13),(13,10)])
 
+FIGURES['embedding-study'] = ('Fire VASE representation utility benchmark',
+ 'WORKING synthetic deterministic benchmark. No agent or real fire-data execution; upstream code stays external and pinned. Metadata changes evidence, never executable permissions.',
+ [('Versioned synthetic histories',1,0),('Dates / units / gap validation',1,1),
+ ('Pinned isolated Fire VASE worker',1,2),('R0: direct observations',0,3),
+ ('R1: normalized profiles + traits',1,3),('R2: train-only PCA coordinates',2,3),
+ ('M0 / M1 / M2: evidence only',0,4),('Measured query + cache runner',1,4),
+ ('Independent rational / SVD keys',2,4),('Correctness / sufficiency / costs',1,5)],
+ [(0,1),(1,2),(1,3),(2,4),(2,5),(3,7),(4,7),(5,7),(6,7),(7,9),(8,9)])
+
+FIGURES['embedding-agent-study'] = ('Controlled Fire VASE agent experiment',
+ 'WORKING mock protocol; real-model evidence pending. Scientific values come only from validated deterministic operations. Metadata never changes executable permissions.',
+ [('Fixed synthetic question set',1,0),('Public aliases + approved data',1,1),
+ ('M0 / M1 / M2 evidence renderer',1,2),('Fixed R0 / R1 / R2',0,3),('Adaptive R0 + R1 + R2',2,3),
+ ('JSON-only action provider',1,4),('Budget / authorization checks',1,5),
+ ('Pinned deterministic dispatcher',0,6),('Private independent evaluator',2,6),
+ ('Traces / costs / paired reports',1,7)],
+ [(0,1),(1,2),(2,3),(2,4),(3,5),(4,5),(5,6),(6,7),(7,8),(8,9)])
+
 def quadrant():
     return '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
 <title id="title">Dataset selection — conceptual framework</title><desc id="desc">Ontology potential vertically, semantic diversity horizontally. No dataset positions or scores have been measured here.</desc>

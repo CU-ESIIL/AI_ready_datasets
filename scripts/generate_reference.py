@@ -7,6 +7,8 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 CONTRACTS={
+ 'embedding_study.agent_contracts': ['QueryArguments','ScientificQuery','AgentAction','Usage','AgentConfig'],
+ 'embedding_study.contracts': ['Source','Observation','FireHistory','Dataset','Task','TaskSet','BenchmarkConfig','PCAArtifact','DevelopmentalFeatures','CoordinateArtifact'],
  'contracts': ['ScientificRequest','SourceResource','DiscoveryResult','SemanticMapping',
   'HarmonizationRecipe','HarmonizedObservation','Representation','ProvenanceRecord','HumanDecision','SemanticEvidence','ConceptCandidate','SourceSemantics','BackendOperation'],
  'cube_contracts': ['ResourceGuards','CubeInput','CubeConfiguration','TransformationChanges','TransformationResult','CubeCapabilitySpace'],
@@ -33,10 +35,13 @@ def main():
         loaded=importlib.import_module('dataset_prototype.'+module)
         for name in names:
             cls=getattr(loaded,name)
-            (schemas/f'{name}.json').write_text(json.dumps(cls.model_json_schema(),indent=2,sort_keys=True)+'\n')
+            schema_name=(module.replace('.', '-')+'-'+name) if '.' in module else name
+            source_module=module.replace('.', '/')
+            (schemas/f'{schema_name}.json').write_text(json.dumps(cls.model_json_schema(),indent=2,sort_keys=True)+'\n')
             fields=', '.join('`'+f+'`' for f in cls.model_fields)
             line=inspect.getsourcelines(cls)[1]
-            lines.append(f'| `{name}` | {fields} | [{module}.py](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/src/dataset_prototype/{module}.py#L{line}) | [schema](schemas/{name}.json) |')
+            display_name=module+'.'+name if '.' in module else name
+            lines.append(f'| `{display_name}` | {fields} | [{module}.py](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/src/dataset_prototype/{source_module}.py#L{line}) | [schema](schemas/{schema_name}.json) |')
     lines+=['','`ReviewReport` eligibility is separate from `HumanDecision`. `RunManifest` is an',
       'available stage contract; existing historical runs keep their original artifact formats.',
       'The new scoped-review runner writes a `RunManifest` plus exact role outputs and traces.',
@@ -46,11 +51,13 @@ def main():
     lines=['# Implementation module map','','Generated from module docstrings and public definitions. '
       'The three scientific stages remain independently callable; CLI/orchestration only compose them.','',
       '| Module | Responsibility | Public functions and classes |','| --- | --- | --- |']
-    for path in sorted((ROOT/'src/dataset_prototype').glob('*.py')):
+    for path in sorted((ROOT/'src/dataset_prototype').rglob('*.py')):
         if path.name.startswith('_'):continue
+        relative=path.relative_to(ROOT/'src/dataset_prototype')
+        module_name=str(relative.with_suffix('')).replace('/', '.')
         tree=ast.parse(path.read_text());doc=(ast.get_docstring(tree) or 'Package module.').split('\n')[0]
         names=', '.join('`'+n.name+'`' for n in tree.body if isinstance(n,(ast.FunctionDef,ast.ClassDef)) and not n.name.startswith('_'))
-        lines.append(f'| [{path.stem}](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/src/dataset_prototype/{path.name}) | {doc} | {names} |')
+        lines.append(f'| [{module_name}](https://github.com/CU-ESIIL/AI_ready_datasets/blob/main/src/dataset_prototype/{relative}) | {doc} | {names} |')
     lines+=['','Start with the [architecture](../architecture.md) and [audit](../architecture/current-state.md)',
       'for stage boundaries, live versus mocked status and concrete debt.','']
     (target/'modules.md').write_text('\n'.join(lines))

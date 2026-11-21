@@ -1,0 +1,31 @@
+{
+  "M0": {
+    "evidence": {
+      "format": "Versioned JSON histories. Locate rows by fire_id and ISO observation date.",
+      "parse": "available=false means no observation; null is never numeric zero. Units and callable signatures are in the shared schema."
+    },
+    "version": "metadata-view-v1"
+  },
+  "M1": {
+    "evidence": {
+      "format": "Versioned JSON histories indexed by stable fire_id and ISO observation date.",
+      "organization": "Original dated cumulative observations, normalized developmental features, and training-only PCA coordinates are separate views. Shape is retrospective allocation, not fire size.",
+      "temporal": "days_since_previous measures calendar days since the previous available observation or explicitly evidenced baseline. Missing observations are distinct from observed zero increments.",
+      "variables": "cumulative_area is observed cumulative burned area in km2; daily_growth is a derived evidenced one-day increment in km2/day."
+    },
+    "version": "metadata-view-v1"
+  },
+  "M2": {
+    "evidence": {
+      "artifacts": "PCA scaling and loadings are fitted once to declared training fires and frozen. No per-query or evaluation-data fitting.",
+      "completeness": "The primary profile requires at least three complete consecutive evidenced daily increments and positive reconstructed total. A multi-day difference is interval growth, not a daily rate.",
+      "limitations": "Truncated standardized PCA is a statistical representation, not a neural embedding or exact inverse. PCA neighbors are geometry diagnostics, not independently validated scientific analogs.",
+      "normalization": "Upstream normalized allocation is integrated by mass-conserving rebinning into 20 bins. Absolute size, native dates and sequence length are intentionally absent from the materialized shape view. Validated primary-profile provenance retains source-ID counts, so consecutive sequence length can be obtained from that metadata rather than inverted from normalized values.",
+      "operations": "All callable IDs/signatures are identical across metadata views. Rich metadata explains preconditions; it does not enable more powerful execution. Use cumulative/interval/daily operations only on evidenced values; return abstention for unavailable observations, undefined normalization or insufficient representations. Independent analog labels remain unavailable.",
+      "provenance": "Source/version/rights and source-observation IDs survive in opaque lineage. Source checksum scope is explicit. Synthetic fixtures have no real-world measurement validity.",
+      "quality": "Missing, gap, observed_zero_growth and availability_time_unknown flags remain explicit. Unknown data-availability times do not support operational forecasting.",
+      "variables": "Area remains km2 and daily increment km2/day. No inferred baseline, imputation, unit conversion or future information."
+    },
+    "version": "metadata-view-v1"
+  }
+}

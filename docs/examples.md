@@ -85,3 +85,15 @@ for an evidence-backed but blocked cross-source case. Rebuild its diagnostics wi
 `python reports/scientific_validation/analyze.py` using the documented retained
 inputs, then rebuild the separate report. This example does not acquire observations,
 create equivalence, implement a new operation or bypass review.
+
+## Fire VASE representation utility
+
+The separate [synthetic benchmark example](analysis/fire-vase-benchmark.md) compares
+R0/R1/R2 against independent answers and measures preparation/query/cache costs.
+It uses an explicitly pinned external operation file in an isolated worker. No real
+fire archive, runtime model calls or production execution permissions are involved.
+
+The [controlled-agent mock example](analysis/fire-vase-agents.md) executes the full
+348-cell experiment without credentials. Use its frozen config and a fresh run
+directory; real-provider selection requires separately verified access and cost
+permission and never falls back silently to a mock.

@@ -1,0 +1,186 @@
+{
+  "$defs": {
+    "QueryArguments": {
+      "additionalProperties": false,
+      "properties": {
+        "approximation_allowed": {
+          "default": false,
+          "title": "Approximation Allowed",
+          "type": "boolean"
+        },
+        "candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Candidates",
+          "type": "array"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date"
+        },
+        "fire_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 2,
+          "minItems": 1,
+          "title": "Fire Ids",
+          "type": "array"
+        },
+        "start_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start Date"
+        }
+      },
+      "required": [
+        "fire_ids"
+      ],
+      "title": "QueryArguments",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "select",
+        "inspect",
+        "call",
+        "answer",
+        "abstain"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "arguments": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/QueryArguments"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "evidence_ids": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 64,
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "interpretation": {
+      "default": "unknown",
+      "enum": [
+        "exact",
+        "approximate",
+        "insufficient",
+        "unknown"
+      ],
+      "title": "Interpretation",
+      "type": "string"
+    },
+    "operation": {
+      "anyOf": [
+        {
+          "enum": [
+            "cumulative",
+            "interval_growth",
+            "daily_growth",
+            "maximum_daily_growth",
+            "peak_date",
+            "sequence_days",
+            "pulses",
+            "profile",
+            "front_fraction",
+            "profile_distance",
+            "pca_distance",
+            "nearest_profile",
+            "scientific_analog"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Operation"
+    },
+    "reason": {
+      "default": "",
+      "maxLength": 1200,
+      "title": "Reason",
+      "type": "string"
+    },
+    "representation": {
+      "anyOf": [
+        {
+          "enum": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Representation"
+    },
+    "result_id": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Result Id"
+    },
+    "value": {
+      "default": null,
+      "title": "Value"
+    },
+    "version": {
+      "const": "fire-agent-action-v1",
+      "default": "fire-agent-action-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "action"
+  ],
+  "title": "AgentAction",
+  "type": "object"
+}

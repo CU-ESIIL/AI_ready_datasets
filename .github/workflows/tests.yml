@@ -31,3 +31,23 @@ jobs:
         env:
           MPLCONFIGDIR: /tmp/ai-ready-mpl
       - run: mkdocs build --strict
+
+  fire-vase-benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: CU-ESIIL/fire_vase
+          ref: 2e20e15a42610f77cdd0583bb5a43fcc6f6c8959
+          path: external/fire_vase
+          # Fetch the trusted operation file, not the observational data lake.
+          sparse-checkout: src/cubedynamics/analysis_v2.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e '.[dev,fire-vase-benchmark]' -r reports/embedding_utility/fire_vase/config/requirements-worker.txt
+      - run: FIRE_VASE_PYTHON="$(command -v python)" python -m pytest tests/test_fire_vase_benchmark.py tests/test_fire_vase_agents.py -q
+        env:
+          FIRE_VASE_ROOT: external/fire_vase

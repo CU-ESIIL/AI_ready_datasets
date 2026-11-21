@@ -1,0 +1,83 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "attribution": {
+      "minLength": 1,
+      "title": "Attribution",
+      "type": "string"
+    },
+    "checksum": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Checksum",
+      "type": "string"
+    },
+    "checksum_scope": {
+      "enum": [
+        "metadata",
+        "observations"
+      ],
+      "title": "Checksum Scope",
+      "type": "string"
+    },
+    "license": {
+      "minLength": 1,
+      "title": "License",
+      "type": "string"
+    },
+    "method": {
+      "minLength": 1,
+      "title": "Method",
+      "type": "string"
+    },
+    "source_id": {
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "spatial_support": {
+      "minLength": 1,
+      "title": "Spatial Support",
+      "type": "string"
+    },
+    "synthetic": {
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "temporal_support": {
+      "minLength": 1,
+      "title": "Temporal Support",
+      "type": "string"
+    },
+    "uncertainty": {
+      "minLength": 1,
+      "title": "Uncertainty",
+      "type": "string"
+    },
+    "uri": {
+      "minLength": 1,
+      "title": "Uri",
+      "type": "string"
+    },
+    "version": {
+      "minLength": 1,
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "version",
+    "uri",
+    "license",
+    "attribution",
+    "method",
+    "checksum",
+    "checksum_scope",
+    "synthetic",
+    "temporal_support",
+    "spatial_support",
+    "uncertainty"
+  ],
+  "title": "Source",
+  "type": "object"
+}

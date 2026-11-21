@@ -1,0 +1,455 @@
+{
+  "metadata_invariance": true,
+  "representations": {
+    "R0": {
+      "answerable_attempts": 414,
+      "answerable_correct": 414,
+      "cold_query_median_ns": 37500,
+      "statuses": {
+        "correct": 414,
+        "correct_abstention": 108
+      },
+      "warm_query_median_ns": 16041
+    },
+    "R1": {
+      "answerable_attempts": 198,
+      "answerable_correct": 198,
+      "cold_query_median_ns": 66000,
+      "statuses": {
+        "correct": 198,
+        "correct_abstention": 324
+      },
+      "warm_query_median_ns": 16000
+    },
+    "R2": {
+      "answerable_attempts": 54,
+      "answerable_correct": 36,
+      "cold_query_median_ns": 32750,
+      "statuses": {
+        "correct": 36,
+        "correct_abstention": 468,
+        "incorrect": 18
+      },
+      "warm_query_median_ns": 15958
+    }
+  },
+  "status_counts": {
+    "correct": 648,
+    "correct_abstention": 900,
+    "incorrect": 18
+  },
+  "task_costs": {
+    "area-back": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 30167,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16792,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "area-constant": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 30209,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15959,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "area-front": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 29625,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16167,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "area-scaled": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 31000,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16000,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "area-zeros": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 30292,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15917,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "back-fraction": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 356083,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15542,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 66500,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 15084,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "daily-after-gap": {},
+    "daily-missing": {},
+    "daily-unknown-baseline": {},
+    "daily-zero": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 31625,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16500,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "distance-order": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 771292,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16833,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 121709,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 16583,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "distance-scaled": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 744292,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 122250,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 15792,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "duration": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 39875,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 79875,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 15125,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R2_cold": {
+        "attempts": 9,
+        "median_ns": 37666,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R2_warm": {
+        "attempts": 9,
+        "median_ns": 15000,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "front-fraction": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 351916,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15542,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 67542,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 16541,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "interval-gap": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 31916,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 17375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "interval-known": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 31708,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16833,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "max-front": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 35708,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 14916,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "max-zero": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 35875,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15125,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "neighbor-fidelity": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 1778750,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 19000,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 292375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 17375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "pca-geometry": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 760333,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 134875,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 16292,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R2_cold": {
+        "attempts": 9,
+        "median_ns": 51291,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R2_warm": {
+        "attempts": 9,
+        "median_ns": 16083,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "peak-back": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 38833,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15584,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "profile-back": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 384625,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15667,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 64458,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 15583,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "profile-constant": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 359625,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15625,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 65875,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 15000,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "profile-front": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 370417,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 63667,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 14917,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "profile-gap": {},
+    "profile-zero": {},
+    "profile-zeros": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 396417,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 16084,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_cold": {
+        "attempts": 9,
+        "median_ns": 62458,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R1_warm": {
+        "attempts": 9,
+        "median_ns": 15375,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "pulses": {
+      "R0_cold": {
+        "attempts": 9,
+        "median_ns": 142459,
+        "scope": "correct answerable queries only; local instrumentation included"
+      },
+      "R0_warm": {
+        "attempts": 9,
+        "median_ns": 15708,
+        "scope": "correct answerable queries only; local instrumentation included"
+      }
+    },
+    "scientific-analogs": {}
+  }
+}

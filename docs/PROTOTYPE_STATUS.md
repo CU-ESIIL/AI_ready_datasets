@@ -1,5 +1,18 @@
 # Current implementation status
 
+## Embedding utility study — 20 November 2026
+
+[Separate analysis planning](analysis/embedding-utility.md) is **UNDER ANALYSIS**.
+The scaffold centers the same agent using direct source tools, embedding consumers
+or both, with verified task outcomes and full lifecycle costs. Raster prediction
+is a supporting study; agent competence remains a hypothesis. No runner or new results exist.
+The [Fire VASE deterministic benchmark](analysis/fire-vase-benchmark.md) is **WORKING**
+with 29 synthetic questions, strict R0/R1/R2 views, three evidence-only metadata
+conditions, independent keys and cost-aware replay. Real-data integration, expert
+similarity and agent/model experiments remain planned; no ecological findings are claimed.
+Pipeline contracts, source access, tracks and historical vetoes are unchanged.
+
+
 ## Resource planning — 26 October 2026
 
 The [grant-period budget](resource-budget.md) targets all-TACC persistent storage and versioned backup, with VERDE/Jetstream2 compute. Its retention ledger explicitly carries earlier releases forward and separates capacity growth, authorized closeout assumptions and backup history. Rates, churn and scientific production remain conditional; no remote backup is implemented. Historical OSN plans remain explicit older prototype records.
@@ -240,3 +253,13 @@ architecture snapshot: depth is now measured for three local graphs, while exact
 scientific mappings, independent ecological validity and the weaker-model
 hypothesis remain unvalidated. The real Sentinel and NEON–Sentinel cases still
 require explicit expert decisions; no scientific execution is approved.
+
+## Controlled Fire VASE agent milestone — 20 November 2026
+
+The [agent benchmark](analysis/fire-vase-agents.md) is **WORKING** with a complete
+**MOCKED** provider matrix: 348 fixed/adaptive cells, three repetitions and a
+separate deterministic contract-routing baseline. Typed proposals, authorization,
+uniform metadata/error boundaries, independent grading and usage availability are
+tested. The saved runtime policy is valid, but reachable authorized real inference
+was not established. Real-model smoke, genuinely held-out inputs and H1–H4 model
+evidence remain **PLANNED**. No real wildfire data or native model execution tools.

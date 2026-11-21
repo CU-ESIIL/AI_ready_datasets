@@ -1,0 +1,14 @@
+{
+  "version":"fire-agent-development-log-v2",
+  "date":"2026-11-20",
+  "development_runs":[
+    {"path":"run/embedding_utility/fire_vase/m2-development-01","classification":"integration debugging, excluded from frozen results","note":"Initial config phase field said frozen_pilot before implementation validation. A missing derived unit property caused AttributeError. Exact failed traces remain preserved; no real model was invoked."},
+    {"path":"run/embedding_utility/fire_vase/m2-development-02","classification":"integration debugging, excluded from frozen results","note":"Completed mock wiring after the unit-property correction. Initial phase field still said frozen_pilot. This is explicitly reclassified as development without altering its original manifest or responses."}
+  ],
+  "frozen_protocol":"agent-protocol-v2.md",
+  "prompt_revision":"fire-agent-prompt-v2",
+  "changes_before_freeze":["complete typed scientific query unit contract","uniform sanitized error boundary","anonymized public scientific data projection","finite result-claim validation","recorded scientific preconditions for deterministic routing","constant representation-format parsing information","independent selection and answerability metrics"],
+  "reference_answers_changed":false,
+  "milestone_1_outputs_changed":false,
+  "real_model_calls":0
+}

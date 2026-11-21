@@ -1,0 +1,213 @@
+{
+  "$defs": {
+    "Task": {
+      "additionalProperties": false,
+      "properties": {
+        "answer_type": {
+          "enum": [
+            "number",
+            "date",
+            "profile",
+            "ids",
+            "pulses"
+          ],
+          "title": "Answer Type",
+          "type": "string"
+        },
+        "answerable": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "propertyNames": {
+            "enum": [
+              "R0",
+              "R1",
+              "R2"
+            ]
+          },
+          "title": "Answerable",
+          "type": "object"
+        },
+        "approximation_allowed": {
+          "default": false,
+          "title": "Approximation Allowed",
+          "type": "boolean"
+        },
+        "candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidates",
+          "type": "array"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date"
+        },
+        "evidence_kind": {
+          "enum": [
+            "exact",
+            "geometry_diagnostic",
+            "pending_external_validation"
+          ],
+          "title": "Evidence Kind",
+          "type": "string"
+        },
+        "expected_provenance": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Expected Provenance",
+          "type": "array"
+        },
+        "family": {
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ],
+          "title": "Family",
+          "type": "string"
+        },
+        "fire_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Fire Ids",
+          "type": "array"
+        },
+        "ground_truth_method": {
+          "minLength": 1,
+          "title": "Ground Truth Method",
+          "type": "string"
+        },
+        "operation": {
+          "title": "Operation",
+          "type": "string"
+        },
+        "permitted_representations": {
+          "items": {
+            "enum": [
+              "R0",
+              "R1",
+              "R2"
+            ],
+            "type": "string"
+          },
+          "title": "Permitted Representations",
+          "type": "array"
+        },
+        "question": {
+          "minLength": 1,
+          "title": "Question",
+          "type": "string"
+        },
+        "required_observation_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Required Observation Ids",
+          "type": "array"
+        },
+        "required_operations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Operations",
+          "type": "array"
+        },
+        "start_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start Date"
+        },
+        "task_id": {
+          "minLength": 1,
+          "title": "Task Id",
+          "type": "string"
+        },
+        "tolerance": {
+          "minimum": 0,
+          "title": "Tolerance",
+          "type": "number"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "validity_constraints": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Validity Constraints",
+          "type": "array"
+        }
+      },
+      "required": [
+        "task_id",
+        "family",
+        "question",
+        "fire_ids",
+        "operation",
+        "required_operations",
+        "required_observation_ids",
+        "answer_type",
+        "unit",
+        "tolerance",
+        "permitted_representations",
+        "answerable",
+        "ground_truth_method",
+        "validity_constraints",
+        "expected_provenance",
+        "evidence_kind"
+      ],
+      "title": "Task",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "tasks": {
+      "items": {
+        "$ref": "#/$defs/Task"
+      },
+      "maxItems": 128,
+      "minItems": 1,
+      "title": "Tasks",
+      "type": "array"
+    },
+    "version": {
+      "const": "fire-vase-tasks-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "tasks"
+  ],
+  "title": "TaskSet",
+  "type": "object"
+}

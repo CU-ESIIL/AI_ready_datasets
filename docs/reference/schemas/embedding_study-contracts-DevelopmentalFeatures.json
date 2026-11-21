@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "history_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "History Digest",
+      "type": "string"
+    },
+    "profile": {
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 20,
+      "minItems": 20,
+      "title": "Profile",
+      "type": "array"
+    },
+    "source_commit": {
+      "const": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+      "default": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+      "title": "Source Commit",
+      "type": "string"
+    },
+    "traits": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Traits",
+      "type": "object"
+    },
+    "version": {
+      "const": "fire-vase-features-v1",
+      "default": "fire-vase-features-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "history_digest",
+    "profile",
+    "traits"
+  ],
+  "title": "DevelopmentalFeatures",
+  "type": "object"
+}

@@ -1,0 +1,74 @@
+{
+  "format": "embedding-utility-fire-vase-planning-v1",
+  "status": "UNDER ANALYSIS",
+  "executable": false,
+  "scientific_approval": false,
+  "upstream_commit": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+  "purpose": "inert planning inventory; identifiers below are proposed study labels, not runtime operation IDs",
+  "primary_question": "Does rich scientific metadata and capable direct-data access reduce incremental utility of materialized embeddings?",
+  "interfaces": [
+    "direct_with_registered_on_demand_operations",
+    "interpretable_profiles_traits",
+    "training_only_pca",
+    "adaptive_eligible_interfaces"
+  ],
+  "metadata_views": [
+    "M0_minimum_safe",
+    "M1_semantic_provenance",
+    "M2_reviewed_operation_evidence"
+  ],
+  "agent_pilot": {
+    "model": null,
+    "task_instances": 12,
+    "repeats": 2,
+    "scheduled_calls": 288,
+    "power_calculation": false,
+    "run_authorized": false
+  },
+  "task_families": [
+    {
+      "id": "exact_history_queries",
+      "status": "PLANNED",
+      "upstream_candidates": [
+        "growth_summary",
+        "exact_transitions"
+      ],
+      "answer_source": "reviewed deterministic operation plus independent synthetic oracle"
+    },
+    {
+      "id": "completed_profile_construction",
+      "status": "PLANNED",
+      "upstream_candidates": [
+        "allocation_profile",
+        "shape_traits"
+      ],
+      "answer_source": "reviewed upstream identity and mass-conserving profile tests"
+    },
+    {
+      "id": "rule_defined_similarity",
+      "status": "PLANNED",
+      "upstream_candidates": [
+        "fit_pca"
+      ],
+      "answer_source": "declared metric reference; expert scientific relevance remains separate"
+    }
+  ],
+  "deferred": [
+    "runtime_model_authored_scientific_code_prohibited",
+    "forecast_prefix_recipe_and_availability_evidence",
+    "neural_sequence_encoder",
+    "spatial_geometry_and_environment_expansion",
+    "independent_expert_relevance_labels",
+    "second_environmental_case"
+  ],
+  "unresolved_before_real_run": [
+    "selected_data_version_and_checksums",
+    "FIRED_gridMET_and_derived_product_rights",
+    "observation_uncertainty_and_support",
+    "exact_agent_runtime_model_and_prompts",
+    "isolated_adapter_contract_tests",
+    "case_selection_and_group_splits",
+    "primary_metrics_thresholds_and_precision",
+    "scientific_review_and_required_human_decisions"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "fire-agent-experiment-v1",
+  "prompt_version": "fire-agent-prompt-v2",
+  "phase": "frozen_pilot",
+  "fixture": "data/fixtures/embedding_utility/histories.json",
+  "tasks": "data/fixtures/embedding_utility/tasks.json",
+  "snapshot": "reports/embedding_utility/fire_vase/results/milestone-1-v1",
+  "metadata": "reports/embedding_utility/fire_vase/config/agent-metadata-v1.json",
+  "provider": "mock",
+  "model": "deterministic-contract-mock-v1",
+  "repetitions": 3,
+  "metadata_conditions": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "fixed_representations": [
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "adaptive": true,
+  "cache_policy": "cold_application_per_episode",
+  "max_steps": 6,
+  "max_tool_calls": 4,
+  "max_episode_seconds": 120,
+  "max_provider_calls": 10000,
+  "max_episode_tokens": 12000,
+  "max_prompt_bytes": 48000,
+  "temperature": 0,
+  "seed": 20261120,
+  "max_real_calls": 0,
+  "approved_external_cost_cap": null,
+  "max_output_tokens": 2048,
+  "provider_timeout_seconds": 60,
+  "live_access_authorized": false,
+  "smoke_task_indexes": [],
+  "live_cost_basis": "unverified"
+}

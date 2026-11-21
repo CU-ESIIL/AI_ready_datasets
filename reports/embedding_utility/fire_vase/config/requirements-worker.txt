@@ -1,0 +1,5 @@
+# Minimal isolated worker dependencies, versions measured in the initial replay.
+# Upstream scientific source is pinned separately by Git commit and file SHA-256.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.17.1

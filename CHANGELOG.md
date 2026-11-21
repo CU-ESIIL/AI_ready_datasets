@@ -1,5 +1,55 @@
 # Changelog
 
+## 2026-11-20 — Fire VASE controlled-agent milestone
+
+- Added fixed/adaptive typed proposal loops, anonymized metadata views, uniform
+  error boundaries, source authorization, budgets and evidence-backed final answers.
+- Added explicit mock, rule-router and optional verified OpenClaw provider interfaces;
+  no native model execution tools, real-data ingestion or neural learning.
+- Executed a frozen 348-cell × 3 mock matrix and 348 deterministic baseline episodes;
+  retained exact traces, usage availability, paired reports and source/artifact hashes.
+- Recorded failed development integration traces separately and left real smoke and
+  genuinely held-out inputs pending. No real-model requests or external model costs.
+- Added 28 agent tests, documentation, schemas, architecture diagram and CI replay coverage.
+
+
+## 2026-11-20 — Fire VASE deterministic benchmark milestone
+
+- Implemented scientific input/task/PCA contracts, 34 synthetic histories, strict
+  R0/R1/R2 interfaces and M0/M1/M2 evidence isolation in an analysis-only package.
+- Reused pinned external Fire VASE operations through a hash-verified isolated
+  worker; no vendored implementation, new production operation or real-data read.
+- Added independent rational/SVD references, explicit abstention/failure scoring,
+  cache/one-time preparation accounting, artifact integrity and paired replay tests.
+- Retained the full 1,566-attempt synthetic matrix, artifact/trace identities and
+  scoped report; documented the next controlled agent milestone without model calls.
+- Added a sparse-source pinned CI replay job, generated contracts/module reference
+  and a benchmark architecture diagram. Real fire data, forecast recipes, expert
+  similarity, neural representations and agent experiments remain pending.
+
+## 2026-11-20 — Separate embedding utility analysis
+
+- Added a pinned read-only Fire VASE code/evidence audit, preserved user proposal,
+  primary-reference assessment, implementation phases and inert pilot design.
+- Distinguished profile construction from embedding compression; specified fixed-data
+  metadata controls, forecast leakage exclusions and deferred code-writing agents.
+- No Fire VASE observations ingested, upstream edits, training or live calls.
+
+- Refocused the primary question on added value over agents using source tools;
+  added direct/embedding/hybrid arms, deterministic references, workload break-even
+  and capability-boundary controls. Raster prediction remains a supporting study.
+
+- Added draft protocol, unapproved case template and empty results area, with
+  synchronized README, website and status links.
+- Proposed matched-input baselines, independent-label/transfer tests and costs;
+  distinguished benefit, disadvantage, equivalence and inconclusive findings.
+- Reframed the primary question as agent direct-data versus embedding/hybrid access.
+- Ran generated MOSAIKS/summary/pixel diagnostics with learning and size curves;
+  retained scores, timings, manifests and clearly separate assumed-cost scenarios.
+- Added tested offline analysis helpers and graph/mathematics guide. No agents,
+  acquisitions, scientific approvals or production execution changes.
+
+
 ## 2026-10-26 — Grant resource and versioned backup plan
 
 - Front-loaded VERDE inference to 9,000/6,000/3,000 reference hours and commercial API caps to $30k/$20k/$10k; three-year resource and cash totals unchanged.

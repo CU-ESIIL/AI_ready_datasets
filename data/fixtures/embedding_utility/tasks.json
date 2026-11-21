@@ -1,0 +1,1529 @@
+{
+  "version": "fire-vase-tasks-v1",
+  "tasks": [
+    {
+      "task_id": "area-constant",
+      "family": "A",
+      "question": "Observed cumulative area on 2020-01-06?",
+      "fire_ids": [
+        "eval-constant"
+      ],
+      "operation": "cumulative",
+      "required_operations": [
+        "cumulative"
+      ],
+      "required_observation_ids": [
+        "eval-constant:observation-00",
+        "eval-constant:observation-01",
+        "eval-constant:observation-02",
+        "eval-constant:observation-03",
+        "eval-constant:observation-04",
+        "eval-constant:observation-05"
+      ],
+      "date": "2020-01-06",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "area-scaled",
+      "family": "A",
+      "question": "Observed cumulative area on 2020-01-06?",
+      "fire_ids": [
+        "eval-scaled"
+      ],
+      "operation": "cumulative",
+      "required_operations": [
+        "cumulative"
+      ],
+      "required_observation_ids": [
+        "eval-scaled:observation-00",
+        "eval-scaled:observation-01",
+        "eval-scaled:observation-02",
+        "eval-scaled:observation-03",
+        "eval-scaled:observation-04",
+        "eval-scaled:observation-05"
+      ],
+      "date": "2020-01-06",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "area-front",
+      "family": "A",
+      "question": "Observed cumulative area on 2020-01-06?",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "cumulative",
+      "required_operations": [
+        "cumulative"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05"
+      ],
+      "date": "2020-01-06",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "area-back",
+      "family": "A",
+      "question": "Observed cumulative area on 2020-01-06?",
+      "fire_ids": [
+        "eval-back"
+      ],
+      "operation": "cumulative",
+      "required_operations": [
+        "cumulative"
+      ],
+      "required_observation_ids": [
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05"
+      ],
+      "date": "2020-01-06",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "area-zeros",
+      "family": "A",
+      "question": "Observed cumulative area on 2020-01-06?",
+      "fire_ids": [
+        "eval-zeros"
+      ],
+      "operation": "cumulative",
+      "required_operations": [
+        "cumulative"
+      ],
+      "required_observation_ids": [
+        "eval-zeros:observation-00",
+        "eval-zeros:observation-01",
+        "eval-zeros:observation-02",
+        "eval-zeros:observation-03",
+        "eval-zeros:observation-04",
+        "eval-zeros:observation-05"
+      ],
+      "date": "2020-01-06",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "daily-zero",
+      "family": "A",
+      "question": "Evidenced daily growth on observed zero-growth day?",
+      "fire_ids": [
+        "eval-zeros"
+      ],
+      "operation": "daily_growth",
+      "required_operations": [
+        "daily_growth"
+      ],
+      "required_observation_ids": [
+        "eval-zeros:observation-00",
+        "eval-zeros:observation-01",
+        "eval-zeros:observation-02",
+        "eval-zeros:observation-03",
+        "eval-zeros:observation-04",
+        "eval-zeros:observation-05"
+      ],
+      "date": "2020-01-03",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2/day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "daily-missing",
+      "family": "A",
+      "question": "Daily growth on missing observation date?",
+      "fire_ids": [
+        "eval-missing"
+      ],
+      "operation": "daily_growth",
+      "required_operations": [
+        "daily_growth"
+      ],
+      "required_observation_ids": [
+        "eval-missing:observation-00",
+        "eval-missing:observation-01",
+        "eval-missing:observation-02",
+        "eval-missing:observation-03",
+        "eval-missing:observation-04",
+        "eval-missing:observation-05"
+      ],
+      "date": "2020-01-03",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2/day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": false,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "daily-after-gap",
+      "family": "A",
+      "question": "Daily growth on first observation after a two-day interval?",
+      "fire_ids": [
+        "eval-missing"
+      ],
+      "operation": "daily_growth",
+      "required_operations": [
+        "daily_growth"
+      ],
+      "required_observation_ids": [
+        "eval-missing:observation-00",
+        "eval-missing:observation-01",
+        "eval-missing:observation-02",
+        "eval-missing:observation-03",
+        "eval-missing:observation-04",
+        "eval-missing:observation-05"
+      ],
+      "date": "2020-01-04",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2/day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": false,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "daily-unknown-baseline",
+      "family": "A",
+      "question": "Daily growth without a prior evidenced baseline?",
+      "fire_ids": [
+        "eval-unknown-baseline"
+      ],
+      "operation": "daily_growth",
+      "required_operations": [
+        "daily_growth"
+      ],
+      "required_observation_ids": [
+        "eval-unknown-baseline:observation-00",
+        "eval-unknown-baseline:observation-01",
+        "eval-unknown-baseline:observation-02",
+        "eval-unknown-baseline:observation-03",
+        "eval-unknown-baseline:observation-04",
+        "eval-unknown-baseline:observation-05"
+      ],
+      "date": "2020-01-01",
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2/day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": false,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "interval-known",
+      "family": "A",
+      "question": "Observed growth from January 2 to January 3?",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "interval_growth",
+      "required_operations": [
+        "interval_growth"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05"
+      ],
+      "date": "2020-01-03",
+      "start_date": "2020-01-02",
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "interval-gap",
+      "family": "A",
+      "question": "Total interval growth January 2 to January 4 (not daily rate)?",
+      "fire_ids": [
+        "eval-missing"
+      ],
+      "operation": "interval_growth",
+      "required_operations": [
+        "interval_growth"
+      ],
+      "required_observation_ids": [
+        "eval-missing:observation-00",
+        "eval-missing:observation-01",
+        "eval-missing:observation-02",
+        "eval-missing:observation-03",
+        "eval-missing:observation-04",
+        "eval-missing:observation-05"
+      ],
+      "date": "2020-01-04",
+      "start_date": "2020-01-02",
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "max-front",
+      "family": "A",
+      "question": "Largest observed daily increment in complete sequence?",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "maximum_daily_growth",
+      "required_operations": [
+        "maximum_daily_growth"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2/day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "max-zero",
+      "family": "A",
+      "question": "Largest daily increment when all observations show zero growth?",
+      "fire_ids": [
+        "eval-all-zero"
+      ],
+      "operation": "maximum_daily_growth",
+      "required_operations": [
+        "maximum_daily_growth"
+      ],
+      "required_observation_ids": [
+        "eval-all-zero:observation-00",
+        "eval-all-zero:observation-01",
+        "eval-all-zero:observation-02",
+        "eval-all-zero:observation-03",
+        "eval-all-zero:observation-04",
+        "eval-all-zero:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "km2/day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "peak-back",
+      "family": "A",
+      "question": "Date of first maximum observed daily growth?",
+      "fire_ids": [
+        "eval-back"
+      ],
+      "operation": "peak_date",
+      "required_operations": [
+        "peak_date"
+      ],
+      "required_observation_ids": [
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "date",
+      "unit": "ISO_date",
+      "tolerance": 0.0,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "duration",
+      "family": "A",
+      "question": "Number of evidenced consecutive one-day growth intervals from baseline (source-ID sidecar available)?",
+      "fire_ids": [
+        "eval-constant"
+      ],
+      "operation": "sequence_days",
+      "required_operations": [
+        "sequence_days"
+      ],
+      "required_observation_ids": [
+        "eval-constant:observation-00",
+        "eval-constant:observation-01",
+        "eval-constant:observation-02",
+        "eval-constant:observation-03",
+        "eval-constant:observation-04",
+        "eval-constant:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "day",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": true
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "pulses",
+      "family": "A",
+      "question": "Observed pulse count and dates under upstream 20%-prominence rule?",
+      "fire_ids": [
+        "eval-pulses"
+      ],
+      "operation": "pulses",
+      "required_operations": [
+        "pulses"
+      ],
+      "required_observation_ids": [
+        "eval-pulses:observation-00",
+        "eval-pulses:observation-01",
+        "eval-pulses:observation-02",
+        "eval-pulses:observation-03",
+        "eval-pulses:observation-04",
+        "eval-pulses:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "pulses",
+      "unit": "count_and_dates",
+      "tolerance": 0.0,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "profile-constant",
+      "family": "B",
+      "question": "Construct the 20-bin mass-conserving allocation profile.",
+      "fire_ids": [
+        "eval-constant"
+      ],
+      "operation": "profile",
+      "required_operations": [
+        "profile"
+      ],
+      "required_observation_ids": [
+        "eval-constant:observation-00",
+        "eval-constant:observation-01",
+        "eval-constant:observation-02",
+        "eval-constant:observation-03",
+        "eval-constant:observation-04",
+        "eval-constant:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "profile",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "profile-front",
+      "family": "B",
+      "question": "Construct the 20-bin mass-conserving allocation profile.",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "profile",
+      "required_operations": [
+        "profile"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "profile",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "profile-back",
+      "family": "B",
+      "question": "Construct the 20-bin mass-conserving allocation profile.",
+      "fire_ids": [
+        "eval-back"
+      ],
+      "operation": "profile",
+      "required_operations": [
+        "profile"
+      ],
+      "required_observation_ids": [
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "profile",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "profile-zeros",
+      "family": "B",
+      "question": "Construct the 20-bin mass-conserving allocation profile.",
+      "fire_ids": [
+        "eval-zeros"
+      ],
+      "operation": "profile",
+      "required_operations": [
+        "profile"
+      ],
+      "required_observation_ids": [
+        "eval-zeros:observation-00",
+        "eval-zeros:observation-01",
+        "eval-zeros:observation-02",
+        "eval-zeros:observation-03",
+        "eval-zeros:observation-04",
+        "eval-zeros:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "profile",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "front-fraction",
+      "family": "B",
+      "question": "Fraction of observed allocation in first half of development?",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "front_fraction",
+      "required_operations": [
+        "front_fraction"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "back-fraction",
+      "family": "B",
+      "question": "Fraction of observed allocation in first half of development?",
+      "fire_ids": [
+        "eval-back"
+      ],
+      "operation": "front_fraction",
+      "required_operations": [
+        "front_fraction"
+      ],
+      "required_observation_ids": [
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "profile-gap",
+      "family": "B",
+      "question": "Construct primary calendar-time developmental profile despite missing data?",
+      "fire_ids": [
+        "eval-missing"
+      ],
+      "operation": "profile",
+      "required_operations": [
+        "profile"
+      ],
+      "required_observation_ids": [
+        "eval-missing:observation-00",
+        "eval-missing:observation-01",
+        "eval-missing:observation-02",
+        "eval-missing:observation-03",
+        "eval-missing:observation-04",
+        "eval-missing:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "profile",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": false,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "profile-zero",
+      "family": "B",
+      "question": "Normalize a zero-total history?",
+      "fire_ids": [
+        "eval-all-zero"
+      ],
+      "operation": "profile",
+      "required_operations": [
+        "profile"
+      ],
+      "required_observation_ids": [
+        "eval-all-zero:observation-00",
+        "eval-all-zero:observation-01",
+        "eval-all-zero:observation-02",
+        "eval-all-zero:observation-03",
+        "eval-all-zero:observation-04",
+        "eval-all-zero:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "profile",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": false,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "distance-scaled",
+      "family": "B",
+      "question": "Euclidean distance of normalized profiles (absolute sizes differ)?",
+      "fire_ids": [
+        "eval-constant",
+        "eval-scaled"
+      ],
+      "operation": "profile_distance",
+      "required_operations": [
+        "profile_distance"
+      ],
+      "required_observation_ids": [
+        "eval-constant:observation-00",
+        "eval-constant:observation-01",
+        "eval-constant:observation-02",
+        "eval-constant:observation-03",
+        "eval-constant:observation-04",
+        "eval-constant:observation-05",
+        "eval-scaled:observation-00",
+        "eval-scaled:observation-01",
+        "eval-scaled:observation-02",
+        "eval-scaled:observation-03",
+        "eval-scaled:observation-04",
+        "eval-scaled:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "exact"
+    },
+    {
+      "task_id": "distance-order",
+      "family": "C",
+      "question": "Exact unscaled 20-bin Euclidean developmental distance?",
+      "fire_ids": [
+        "eval-front",
+        "eval-back"
+      ],
+      "operation": "profile_distance",
+      "required_operations": [
+        "profile_distance"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05",
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "1",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "geometry_diagnostic"
+    },
+    {
+      "task_id": "pca-geometry",
+      "family": "C",
+      "question": "Distance in declared frozen three-component standardized PCA geometry?",
+      "fire_ids": [
+        "eval-front",
+        "eval-back"
+      ],
+      "operation": "pca_distance",
+      "required_operations": [
+        "pca_distance"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05",
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "number",
+      "unit": "standardized_PC_distance",
+      "tolerance": 1e-8,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": true
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "geometry_diagnostic"
+    },
+    {
+      "task_id": "neighbor-fidelity",
+      "family": "C",
+      "question": "Retrieve two neighbors by full-profile Euclidean distance; PCA uses backprojected approximations in original profile units.",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "nearest_profile",
+      "required_operations": [
+        "nearest_profile"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05",
+        "eval-back:observation-00",
+        "eval-back:observation-01",
+        "eval-back:observation-02",
+        "eval-back:observation-03",
+        "eval-back:observation-04",
+        "eval-back:observation-05",
+        "eval-constant:observation-00",
+        "eval-constant:observation-01",
+        "eval-constant:observation-02",
+        "eval-constant:observation-03",
+        "eval-constant:observation-04",
+        "eval-constant:observation-05",
+        "eval-pulses:observation-00",
+        "eval-pulses:observation-01",
+        "eval-pulses:observation-02",
+        "eval-pulses:observation-03",
+        "eval-pulses:observation-04",
+        "eval-pulses:observation-05",
+        "eval-zeros:observation-00",
+        "eval-zeros:observation-01",
+        "eval-zeros:observation-02",
+        "eval-zeros:observation-03",
+        "eval-zeros:observation-04",
+        "eval-zeros:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "eval-back",
+        "eval-constant",
+        "eval-pulses",
+        "eval-zeros"
+      ],
+      "answer_type": "ids",
+      "unit": "fire_ids",
+      "tolerance": 0.0,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": true,
+        "R1": true,
+        "R2": true
+      },
+      "approximation_allowed": true,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast",
+        ">=3 consecutive evidenced daily increments and positive total",
+        "training-only frozen PCA if used"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "geometry_diagnostic"
+    },
+    {
+      "task_id": "scientific-analogs",
+      "family": "C",
+      "question": "Which fires are independently validated scientific analogs?",
+      "fire_ids": [
+        "eval-front"
+      ],
+      "operation": "scientific_analog",
+      "required_operations": [
+        "scientific_analog"
+      ],
+      "required_observation_ids": [
+        "eval-front:observation-00",
+        "eval-front:observation-01",
+        "eval-front:observation-02",
+        "eval-front:observation-03",
+        "eval-front:observation-04",
+        "eval-front:observation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "answer_type": "ids",
+      "unit": "fire_ids",
+      "tolerance": 0.0,
+      "permitted_representations": [
+        "R0",
+        "R1",
+        "R2"
+      ],
+      "answerable": {
+        "R0": false,
+        "R1": false,
+        "R2": false
+      },
+      "approximation_allowed": false,
+      "ground_truth_method": "Independent Fraction interval integration; analytic generated observations; SVD PCA geometry where requested",
+      "validity_constraints": [
+        "source units unchanged",
+        "no raw fallback from R1/R2",
+        "synthetic retrospective task, not forecast"
+      ],
+      "expected_provenance": [
+        "source",
+        "history_digest",
+        "observation_ids",
+        "upstream_commit"
+      ],
+      "evidence_kind": "pending_external_validation"
+    }
+  ]
+}

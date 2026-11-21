@@ -1,0 +1,103 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "artifact_digest": {
+      "title": "Artifact Digest",
+      "type": "string"
+    },
+    "backend_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Backend Versions",
+      "type": "object"
+    },
+    "components": {
+      "items": {
+        "items": {
+          "type": "number"
+        },
+        "type": "array"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "explained_variance": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Explained Variance",
+      "type": "array"
+    },
+    "feature_order": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Feature Order",
+      "type": "array"
+    },
+    "mean": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Mean",
+      "type": "array"
+    },
+    "scale": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Scale",
+      "type": "array"
+    },
+    "source_commit": {
+      "const": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+      "title": "Source Commit",
+      "type": "string"
+    },
+    "training_feature_digest": {
+      "title": "Training Feature Digest",
+      "type": "string"
+    },
+    "training_history_digests": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Training History Digests",
+      "type": "array"
+    },
+    "training_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Training Ids",
+      "type": "array"
+    },
+    "upstream_sha256": {
+      "title": "Upstream Sha256",
+      "type": "string"
+    },
+    "version": {
+      "const": "fire-vase-pca-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "source_commit",
+    "upstream_sha256",
+    "backend_versions",
+    "feature_order",
+    "training_ids",
+    "training_history_digests",
+    "training_feature_digest",
+    "mean",
+    "scale",
+    "components",
+    "explained_variance",
+    "artifact_digest"
+  ],
+  "title": "PCAArtifact",
+  "type": "object"
+}

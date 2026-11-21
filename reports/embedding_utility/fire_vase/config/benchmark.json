@@ -1,0 +1,11 @@
+{
+  "version":"fire-vase-benchmark-v1",
+  "fixture":"data/fixtures/embedding_utility/histories.json",
+  "tasks":"data/fixtures/embedding_utility/tasks.json",
+  "metadata":"reports/embedding_utility/fire_vase/config/metadata.json",
+  "components":3,
+  "repeats":3,
+  "order_seed":20261120,
+  "query_cache_modes":["cold","warm"],
+  "synthetic_only":true
+}

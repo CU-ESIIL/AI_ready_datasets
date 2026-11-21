@@ -22,6 +22,12 @@ run with the model off. [Model trust boundary](docs/architecture/model-trust.md)
 [Documentation](docs/documentation/index.md) · [Current status](docs/PROTOTYPE_STATUS.md) ·
 [Architecture audit](docs/architecture/current-state.md)
 
+## Embedding utility analysis
+
+A separate [analysis subproject](reports/embedding_utility/README.md) is **UNDER ANALYSIS**:
+compare embeddings with strong baselines, measure transfer and cost, and retain
+negative/inconclusive findings. No new experiments have run.
+
 ## Run offline
 
 ```sh
@@ -143,3 +149,8 @@ The [data-location and management report](output/pdf/AI_ready_data_management_re
 maps provider storage, bounded in-memory processing, local artifacts, model records
 and release bundles. [Editable sources and the data inventory](reports/data_management/README.md)
 separate current implementation from proposed backup, retention and preservation commitments.
+
+The [Fire VASE controlled-agent extension](docs/analysis/fire-vase-agents.md) provides
+fixed/adaptive representation regimes, isolated metadata views, typed proposals,
+evidence-backed deterministic execution and a complete explicit mock matrix.
+Mock results are protocol checks; real-model evidence remains pending.

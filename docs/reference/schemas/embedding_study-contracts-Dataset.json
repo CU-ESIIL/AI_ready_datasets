@@ -1,0 +1,295 @@
+{
+  "$defs": {
+    "FireHistory": {
+      "additionalProperties": false,
+      "properties": {
+        "area_unit": {
+          "const": "km2",
+          "title": "Area Unit",
+          "type": "string"
+        },
+        "baseline_area": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Baseline Area"
+        },
+        "baseline_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Baseline Date"
+        },
+        "baseline_evidence": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Baseline Evidence"
+        },
+        "fire_id": {
+          "minLength": 1,
+          "title": "Fire Id",
+          "type": "string"
+        },
+        "growth_unit": {
+          "const": "km2/day",
+          "title": "Growth Unit",
+          "type": "string"
+        },
+        "observations": {
+          "items": {
+            "$ref": "#/$defs/Observation"
+          },
+          "maxItems": 512,
+          "minItems": 1,
+          "title": "Observations",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": "fire-history-v1",
+          "default": "fire-history-v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "split": {
+          "enum": [
+            "train",
+            "evaluation"
+          ],
+          "title": "Split",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fire_id",
+        "split",
+        "area_unit",
+        "growth_unit",
+        "source",
+        "baseline_date",
+        "baseline_area",
+        "baseline_evidence",
+        "observations"
+      ],
+      "title": "FireHistory",
+      "type": "object"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "properties": {
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "available_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Available At"
+        },
+        "cumulative_area": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Cumulative Area"
+        },
+        "daily_growth": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Daily Growth"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "days_since_previous": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Days Since Previous"
+        },
+        "observation_id": {
+          "minLength": 1,
+          "title": "Observation Id",
+          "type": "string"
+        },
+        "quality_flags": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        }
+      },
+      "required": [
+        "observation_id",
+        "date",
+        "available_at",
+        "available",
+        "cumulative_area",
+        "daily_growth",
+        "days_since_previous"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "attribution": {
+          "minLength": 1,
+          "title": "Attribution",
+          "type": "string"
+        },
+        "checksum": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Checksum",
+          "type": "string"
+        },
+        "checksum_scope": {
+          "enum": [
+            "metadata",
+            "observations"
+          ],
+          "title": "Checksum Scope",
+          "type": "string"
+        },
+        "license": {
+          "minLength": 1,
+          "title": "License",
+          "type": "string"
+        },
+        "method": {
+          "minLength": 1,
+          "title": "Method",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "spatial_support": {
+          "minLength": 1,
+          "title": "Spatial Support",
+          "type": "string"
+        },
+        "synthetic": {
+          "title": "Synthetic",
+          "type": "boolean"
+        },
+        "temporal_support": {
+          "minLength": 1,
+          "title": "Temporal Support",
+          "type": "string"
+        },
+        "uncertainty": {
+          "minLength": 1,
+          "title": "Uncertainty",
+          "type": "string"
+        },
+        "uri": {
+          "minLength": 1,
+          "title": "Uri",
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "version",
+        "uri",
+        "license",
+        "attribution",
+        "method",
+        "checksum",
+        "checksum_scope",
+        "synthetic",
+        "temporal_support",
+        "spatial_support",
+        "uncertainty"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "histories": {
+      "items": {
+        "$ref": "#/$defs/FireHistory"
+      },
+      "maxItems": 64,
+      "minItems": 3,
+      "title": "Histories",
+      "type": "array"
+    },
+    "source_note": {
+      "title": "Source Note",
+      "type": "string"
+    },
+    "version": {
+      "const": "synthetic-fire-vase-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "source_note",
+    "histories"
+  ],
+  "title": "Dataset",
+  "type": "object"
+}

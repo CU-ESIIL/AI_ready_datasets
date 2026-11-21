@@ -374,3 +374,118 @@ OneDrive-located checkout and Git history as insufficient evidence of managed ba
 or access controls. Keep retention, preservation destination and model-processing
 terms as explicit decisions for the data management plan; do not imply MESA or an
 institutional storage service is already deployed. The report adds no execution path.
+
+## 2026-11-20 — Separate embedding utility analysis from pipeline design
+
+Keep study planning under `reports/embedding_utility/` in protocol/cases/results
+subfolders, with a website overview. Future code/tests/fixtures retain their normal
+repository locations. This is analysis, not a new track or runtime interface.
+Start with existing MOSAIKS and matched-input alternatives; other representation
+families need separate protocols. Preserve independent-label, leakage, practical-effect
+and cost questions. No universal utility claim, execution permission or cleared
+veto follows. Architecture and generated contracts are unchanged.
+
+## 2026-11-20 — Test embeddings against agents using source tools
+
+The primary intervention is a materialized embedding interface, not replacing an
+agent with a vector. Compare the same agent with direct, embedding and hybrid
+interfaces; retain deterministic references and account for caching, tool quality,
+external training exposure and lifecycle costs. Raster prediction is subordinate
+to this broader question. “Raw” does not bypass scientific preprocessing. Preserve
+registered-operation execution; conclusions apply to that agent capability boundary.
+The premise that agents already work well with these data remains unmeasured.
+
+## 2026-11-20 — Measure representation diagnostics before agent claims
+
+Use existing MOSAIKS on generated identity-harmonized windows, compare summary and
+pixel ridge consumers with identical splits and validation-only tuning, and retain
+all seeds/settings as exploratory evidence. Summary targets intentionally expose
+easy exact operations; they are not independent prediction labels. Keep arithmetic
+cost scenarios separate from measured local encoding time. Reusable helpers live
+in src with offline tests; report generation stays in the analysis workspace.
+No new operation registry, scientific contract or architecture boundary is introduced.
+Do not translate these curves into agent competence, ecological validity or a
+production throughput claim. Snapshot source/output hashes and retain negative
+findings. New real cases still need existing scientific gates.
+
+## 2026-11-20 — Use Fire VASE as a proposed scientific utility case
+
+Pin upstream inspection to 2e20e15a42610f77cdd0583bb5a43fcc6f6c8959 and retain
+read-only code/schema/summary hashes. Keep the original proposal and literature
+scope assessment in the analysis workspace. Separate source histories, scientific
+profiles, statistical embeddings and agent routing; use fixed-data metadata views
+to avoid retrieval-corpus confounding. Forecasting must not reuse completed-fire
+normalization, and globally fitted manuscript PCA is not a clean holdout artifact.
+Upstream currently shares the cubedynamics namespace; plan isolation rather than
+vendoring or modifying either implementation. No runtime interface is added yet.
+Code-constructing agents remain deferred under existing model-execution policy.
+No fire-data integration, source access, training, agent run or scientific approval
+is implied by the inert pilot inventory. Real inputs need reviewed rights/support.
+
+## 2026-11-20 — Implement synthetic Fire VASE utility without widening authority
+
+The analysis-only embedding_study package owns explicit history/task/artifact
+contracts, strict representation payloads, metadata views, independent answer keys
+and measured execution. Keep source-native observations separate from shape-only
+features and coordinates. Evidence-backed one-day increments, missing versus zero,
+interval growth and unknown baseline are distinct. Real ring/cumulative equivalence
+is unresolved and must not be inferred from column names.
+
+Reuse the external Fire VASE operation file at the audited commit and SHA in an
+isolated worker; permit only fixed features/pulses/PCA dispatch. Do not import its
+transitional cubedynamics namespace into the core environment or copy upstream
+code. Fits use declared synthetic training IDs only; all queries reuse the artifact.
+PCA neighbor fidelity compares backprojections in original profile units, with
+approximation explicit; it does not equate metric changes with compression.
+
+Reference integration uses rational interval arithmetic and independent SVD, not
+backend answers. The deterministic matrix tests metadata isolation, not metadata
+benefit or agent competence. Score justified insufficiency separately from errors
+and penalize unsupported numeric answers. Preserve costs for both direct caches
+and materialized views, including warm prefill and preparation. Cold application
+caches do not imply cold OS caches, and parent traced allocation is not worker RSS.
+
+Retain compact generated evidence and source/output hashes. Document actual local
+replay and configured (not yet executed remotely) CI separately. Production tracks,
+streaming gates, human decisions, original proposal/audit and historical vetoes are
+unchanged. No real-data integration, code-writing agent, forecast recipe or neural
+training is part of this milestone.
+
+Count source-ID provenance as available information: a validated primary consecutive
+profile retains one ID per evidenced day. R1/R2 may answer the declared sequence
+length from that metadata; do not overstate what normalization removed from the
+complete interface. Exact absolute-size/date queries still demonstrate information
+loss without source fallback.
+
+## 2026-11-20 — Control the agent information boundary before model inference
+
+Use explicit public projections rather than serializing the milestone-1 Task. Alias
+native fire/observation IDs and keep expected operations, answerability, references,
+tolerance and family labels private. General scientific contracts are legitimate
+metadata; their item-specific application belongs to the agent/evaluator separately.
+Keep operation implementations, data, payloads and budgets fixed across metadata.
+Sanitize tool failures uniformly so M0 cannot receive M2 through errors. Preserve
+exact rejected proposals and new recovery attempts without repairs.
+
+Models return inert JSON. A deterministic synthetic controller checks authorization,
+registered operation/argument contracts, budgets and source receipts. Numerical
+final answers resolve existing validated values; a coincidentally right unsupported
+number is not scientific success. Distinguish forced insufficiency, avoidable adaptive
+selection, wrong operations/arguments, approximate geometry and provenance. Record
+first and final selections and evaluate behavioral criteria independently of prose.
+
+Use the complete 348-cell synthetic matrix and explicit non-LLM baselines; do not
+manufacture a metadata effect with a simulator. Collapse repeats within task, and
+withhold population intervals for the selected overlapping synthetic cases. Reuse
+frozen PCA/source artifacts with their original preparation costs; query caches
+reset per episode. Unknown provider usage/pricing/snapshots remain null. A manual
+contract router has unmeasured construction/maintenance costs, not zero costs.
+
+The live OpenClaw adapter keeps verified 2026.5.18 schemas/routes and no native tools
+or fallback. JSON-object transport allows invalid structured proposals to reach the
+strict deterministic validator and recovery boundary. Unique session keys isolate
+calls; normalized output is not raw provider text. No live call is made without
+verified access and cost bounds. This session could not establish reachable authorized
+inference, so only explicit mock evidence is retained. No runtime/channel/credential
+state or historical veto was changed. Early development runs with premature phase
+labels are audited separately, not silently relabeled as frozen scientific evidence.

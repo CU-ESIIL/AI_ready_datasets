@@ -1,0 +1,52 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "artifact_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Artifact Digest",
+      "type": "string"
+    },
+    "coordinates": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Coordinates",
+      "type": "object"
+    },
+    "dataset_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Dataset Digest",
+      "type": "string"
+    },
+    "dimensions": {
+      "maximum": 10,
+      "minimum": 1,
+      "title": "Dimensions",
+      "type": "integer"
+    },
+    "version": {
+      "const": "fire-vase-coordinates-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "artifact_digest",
+    "dataset_digest",
+    "dimensions",
+    "coordinates"
+  ],
+  "title": "CoordinateArtifact",
+  "type": "object"
+}

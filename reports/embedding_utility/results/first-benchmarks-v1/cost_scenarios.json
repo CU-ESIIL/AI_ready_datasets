@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "Savings possible",
+    "preparation": 120,
+    "direct_per_query": 3,
+    "embedding_per_query": 1,
+    "fixed_refresh_cost": 0,
+    "first_strictly_cheaper_query": 61
+  },
+  {
+    "scenario": "With fixed refresh cost",
+    "preparation": 120,
+    "direct_per_query": 3,
+    "embedding_per_query": 1,
+    "fixed_refresh_cost": 60,
+    "first_strictly_cheaper_query": 91
+  },
+  {
+    "scenario": "Direct already cheap",
+    "preparation": 120,
+    "direct_per_query": 0.5,
+    "embedding_per_query": 1,
+    "fixed_refresh_cost": 0,
+    "first_strictly_cheaper_query": null
+  }
+]

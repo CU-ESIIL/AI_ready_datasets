@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "approximation_allowed": {
+      "default": false,
+      "title": "Approximation Allowed",
+      "type": "boolean"
+    },
+    "candidates": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 64,
+      "title": "Candidates",
+      "type": "array"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date"
+    },
+    "fire_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 1,
+      "title": "Fire Ids",
+      "type": "array"
+    },
+    "operation": {
+      "enum": [
+        "cumulative",
+        "interval_growth",
+        "daily_growth",
+        "maximum_daily_growth",
+        "peak_date",
+        "sequence_days",
+        "pulses",
+        "profile",
+        "front_fraction",
+        "profile_distance",
+        "pca_distance",
+        "nearest_profile",
+        "scientific_analog"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "start_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Date"
+    }
+  },
+  "required": [
+    "fire_ids",
+    "operation"
+  ],
+  "title": "ScientificQuery",
+  "type": "object"
+}

@@ -1,0 +1,566 @@
+{
+  "M0": {
+    "condition": "M0",
+    "dataset_digest": "2e7fad4fb1ab2cee3707c5028cb19e38b68b781af5c682b9b0948078f6d7be29",
+    "evidence": {
+      "format": "Versioned JSON histories. Locate rows by fire_id and ISO observation date.",
+      "parse": "available=false means no observation; null is never numeric zero. Units and callable signatures are in the shared schema."
+    },
+    "observation_manifest_digest": "dcbeaaaffe1415697520404ace6e48b094fd526acc5d3aa5320127a8a824c860",
+    "operation_registry": {
+      "cumulative": {
+        "id": "cumulative",
+        "output_unit": "km2",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "daily_growth": {
+        "id": "daily_growth",
+        "output_unit": "km2/day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "front_fraction": {
+        "id": "front_fraction",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "interval_growth": {
+        "id": "interval_growth",
+        "output_unit": "km2",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "maximum_daily_growth": {
+        "id": "maximum_daily_growth",
+        "output_unit": "km2/day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "nearest_profile": {
+        "id": "nearest_profile",
+        "output_unit": "fire_ids",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "pca_distance": {
+        "id": "pca_distance",
+        "output_unit": "standardized_PC_distance",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "peak_date": {
+        "id": "peak_date",
+        "output_unit": "ISO_date",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "profile": {
+        "id": "profile",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "profile_distance": {
+        "id": "profile_distance",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "pulses": {
+        "id": "pulses",
+        "output_unit": "count_and_dates",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "scientific_analog": {
+        "id": "scientific_analog",
+        "output_unit": "fire_ids",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "sequence_days": {
+        "id": "sequence_days",
+        "output_unit": "day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      }
+    },
+    "resource_budget": {
+      "max_fires": 64,
+      "max_observations_per_fire": 512,
+      "model_code_execution": false,
+      "network": false,
+      "raw_fallback": false
+    },
+    "schema_version": "fire-history-v1",
+    "source_commit": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+    "unit_contract": {
+      "area": "km2",
+      "growth": "km2/day"
+    }
+  },
+  "M1": {
+    "condition": "M1",
+    "dataset_digest": "2e7fad4fb1ab2cee3707c5028cb19e38b68b781af5c682b9b0948078f6d7be29",
+    "evidence": {
+      "format": "Versioned JSON histories indexed by stable fire_id and ISO observation date.",
+      "organization": "Original dated cumulative observations, normalized developmental features, and training-only PCA coordinates are separate views. Shape is retrospective allocation, not fire size.",
+      "temporal": "days_since_previous measures calendar days since the previous available observation or explicitly evidenced baseline. Missing observations are distinct from observed zero increments.",
+      "variables": "cumulative_area is observed cumulative burned area in km2; daily_growth is a derived evidenced one-day increment in km2/day."
+    },
+    "observation_manifest_digest": "dcbeaaaffe1415697520404ace6e48b094fd526acc5d3aa5320127a8a824c860",
+    "operation_registry": {
+      "cumulative": {
+        "id": "cumulative",
+        "output_unit": "km2",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "daily_growth": {
+        "id": "daily_growth",
+        "output_unit": "km2/day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "front_fraction": {
+        "id": "front_fraction",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "interval_growth": {
+        "id": "interval_growth",
+        "output_unit": "km2",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "maximum_daily_growth": {
+        "id": "maximum_daily_growth",
+        "output_unit": "km2/day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "nearest_profile": {
+        "id": "nearest_profile",
+        "output_unit": "fire_ids",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "pca_distance": {
+        "id": "pca_distance",
+        "output_unit": "standardized_PC_distance",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "peak_date": {
+        "id": "peak_date",
+        "output_unit": "ISO_date",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "profile": {
+        "id": "profile",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "profile_distance": {
+        "id": "profile_distance",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "pulses": {
+        "id": "pulses",
+        "output_unit": "count_and_dates",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "scientific_analog": {
+        "id": "scientific_analog",
+        "output_unit": "fire_ids",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "sequence_days": {
+        "id": "sequence_days",
+        "output_unit": "day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      }
+    },
+    "resource_budget": {
+      "max_fires": 64,
+      "max_observations_per_fire": 512,
+      "model_code_execution": false,
+      "network": false,
+      "raw_fallback": false
+    },
+    "schema_version": "fire-history-v1",
+    "source_commit": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+    "unit_contract": {
+      "area": "km2",
+      "growth": "km2/day"
+    }
+  },
+  "M2": {
+    "condition": "M2",
+    "dataset_digest": "2e7fad4fb1ab2cee3707c5028cb19e38b68b781af5c682b9b0948078f6d7be29",
+    "evidence": {
+      "artifacts": "PCA scaling and loadings are fitted once to declared training fires and frozen. No per-query or evaluation-data fitting.",
+      "completeness": "The primary profile requires at least three complete consecutive evidenced daily increments and positive reconstructed total. A multi-day difference is interval growth, not a daily rate.",
+      "limitations": "Truncated standardized PCA is a statistical representation, not a neural embedding or exact inverse. PCA neighbors are geometry diagnostics, not independently validated scientific analogs.",
+      "normalization": "Upstream normalized allocation is integrated by mass-conserving rebinning into 20 bins. Absolute size, native dates and sequence length are intentionally absent from the materialized shape view. Validated primary-profile provenance retains source-ID counts, so consecutive sequence length can be obtained from that metadata rather than inverted from normalized values.",
+      "operations": "All callable IDs/signatures are identical across metadata views. Rich metadata explains preconditions; it does not enable more powerful execution. Use cumulative/interval/daily operations only on evidenced values; return abstention for unavailable observations, undefined normalization or insufficient representations. Independent analog labels remain unavailable.",
+      "provenance": "Source/version/rights and source-observation IDs survive in opaque lineage. Source checksum scope is explicit. Synthetic fixtures have no real-world measurement validity.",
+      "quality": "Missing, gap, observed_zero_growth and availability_time_unknown flags remain explicit. Unknown data-availability times do not support operational forecasting.",
+      "source_ledger": {
+        "5ec51df27a4a07cb8adb7486788720131e96e4ee17f2ba9206cd152994872148": {
+          "attribution": "Project-authored synthetic mechanics fixtures",
+          "checksum": "7b28ad8f75e287ff8103f0314d9ef2a44ee46677e71144b6b77033e9892573f3",
+          "checksum_scope": "metadata",
+          "license": "CC0-1.0",
+          "method": "Explicit generated cumulative observations; no wildfire observations",
+          "source_id": "generated-fire-histories",
+          "spatial_support": "None: abstract generated fire histories, not mapped fires",
+          "synthetic": true,
+          "temporal_support": "Evidenced synthetic one-calendar-day increments; missing days explicit",
+          "uncertainty": "Exact generator numbers; no real measurement-uncertainty claim",
+          "uri": "generator://fire-vase-utility-v1",
+          "version": "1"
+        }
+      },
+      "variables": "Area remains km2 and daily increment km2/day. No inferred baseline, imputation, unit conversion or future information."
+    },
+    "observation_manifest_digest": "dcbeaaaffe1415697520404ace6e48b094fd526acc5d3aa5320127a8a824c860",
+    "operation_registry": {
+      "cumulative": {
+        "id": "cumulative",
+        "output_unit": "km2",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "daily_growth": {
+        "id": "daily_growth",
+        "output_unit": "km2/day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "front_fraction": {
+        "id": "front_fraction",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "interval_growth": {
+        "id": "interval_growth",
+        "output_unit": "km2",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "maximum_daily_growth": {
+        "id": "maximum_daily_growth",
+        "output_unit": "km2/day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "nearest_profile": {
+        "id": "nearest_profile",
+        "output_unit": "fire_ids",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "pca_distance": {
+        "id": "pca_distance",
+        "output_unit": "standardized_PC_distance",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "peak_date": {
+        "id": "peak_date",
+        "output_unit": "ISO_date",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "profile": {
+        "id": "profile",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "profile_distance": {
+        "id": "profile_distance",
+        "output_unit": "1",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "pulses": {
+        "id": "pulses",
+        "output_unit": "count_and_dates",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "scientific_analog": {
+        "id": "scientific_analog",
+        "output_unit": "fire_ids",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      },
+      "sequence_days": {
+        "id": "sequence_days",
+        "output_unit": "day",
+        "parameters": [
+          "fire_ids",
+          "date",
+          "start_date",
+          "candidates",
+          "approximation_allowed"
+        ],
+        "version": "1"
+      }
+    },
+    "resource_budget": {
+      "max_fires": 64,
+      "max_observations_per_fire": 512,
+      "model_code_execution": false,
+      "network": false,
+      "raw_fallback": false
+    },
+    "schema_version": "fire-history-v1",
+    "source_commit": "2e20e15a42610f77cdd0583bb5a43fcc6f6c8959",
+    "unit_contract": {
+      "area": "km2",
+      "growth": "km2/day"
+    }
+  }
+}

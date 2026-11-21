@@ -1,0 +1,39 @@
+{
+  "adaptive": true,
+  "approved_external_cost_cap": null,
+  "cache_policy": "cold_application_per_episode",
+  "fixed_representations": [
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "fixture": "data/fixtures/embedding_utility/histories.json",
+  "live_access_authorized": false,
+  "live_cost_basis": "unverified",
+  "max_episode_seconds": 120.0,
+  "max_episode_tokens": 12000,
+  "max_output_tokens": 2048,
+  "max_prompt_bytes": 48000,
+  "max_provider_calls": 10000,
+  "max_real_calls": 0,
+  "max_steps": 6,
+  "max_tool_calls": 4,
+  "metadata": "reports/embedding_utility/fire_vase/config/agent-metadata-v1.json",
+  "metadata_conditions": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "model": "deterministic-contract-mock-v1",
+  "phase": "frozen_pilot",
+  "prompt_version": "fire-agent-prompt-v2",
+  "provider": "mock",
+  "provider_timeout_seconds": 60,
+  "repetitions": 3,
+  "seed": 20261120,
+  "smoke_task_indexes": [],
+  "snapshot": "reports/embedding_utility/fire_vase/results/milestone-1-v1",
+  "tasks": "data/fixtures/embedding_utility/tasks.json",
+  "temperature": 0.0,
+  "version": "fire-agent-experiment-v1"
+}

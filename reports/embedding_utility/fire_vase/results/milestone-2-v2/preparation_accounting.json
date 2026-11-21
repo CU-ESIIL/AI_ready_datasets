@@ -1,0 +1,3796 @@
+{
+  "inherited": [
+    {
+      "attribution": [
+        "R0",
+        "R1 preparation",
+        "R2 preparation"
+      ],
+      "file_read_bytes": 113767,
+      "phase": "load_observations",
+      "python_traced_peak_bytes": 465983,
+      "runtime_ns": 2143875,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "all conditions; evidence size varies"
+      ],
+      "file_read_bytes": 2973,
+      "phase": "metadata_views",
+      "python_traced_peak_bytes": 260384,
+      "runtime_ns": 8852333,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "evaluation only; excluded from system costs"
+      ],
+      "file_read_bytes": 0,
+      "phase": "independent_reference_preparation",
+      "python_traced_peak_bytes": 65718,
+      "runtime_ns": 29305792,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "all upstream operations; once per run"
+      ],
+      "file_read_bytes": null,
+      "phase": "worker_startup_and_import",
+      "python_traced_peak_bytes": null,
+      "runtime_ns": 1118452666
+    },
+    {
+      "attribution": [
+        "R1 preparation",
+        "R2 preparation; training and evaluation features, fit only training"
+      ],
+      "file_read_bytes": 0,
+      "phase": "compute_vase_features",
+      "python_traced_peak_bytes": 65763,
+      "runtime_ns": 11213125,
+      "worker_compute_ns": 4544667,
+      "worker_ipc_bytes": 29352
+    },
+    {
+      "attribution": [
+        "R2 preparation",
+        "R0/R1 only when requesting PCA geometry"
+      ],
+      "file_read_bytes": 0,
+      "phase": "fit_training_only_pca",
+      "python_traced_peak_bytes": 40549,
+      "runtime_ns": 4620833,
+      "worker_compute_ns": 256875,
+      "worker_ipc_bytes": 19317
+    },
+    {
+      "attribution": [
+        "PCA publication"
+      ],
+      "file_read_bytes": 0,
+      "phase": "write_pca_artifact",
+      "python_traced_peak_bytes": 18194,
+      "runtime_ns": 752334,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "PCA consumers"
+      ],
+      "file_read_bytes": 5966,
+      "phase": "load_pca_artifact",
+      "python_traced_peak_bytes": 24731,
+      "runtime_ns": 4410709,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "R2 preparation"
+      ],
+      "file_read_bytes": 0,
+      "phase": "compute_pca_coordinates",
+      "python_traced_peak_bytes": 3032,
+      "runtime_ns": 221250,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "R1/R2 artifact publication"
+      ],
+      "file_read_bytes": 0,
+      "phase": "publish_feature_artifact",
+      "python_traced_peak_bytes": 162389,
+      "runtime_ns": 2332875,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "R2 artifact publication"
+      ],
+      "file_read_bytes": 0,
+      "phase": "publish_coordinate_artifact",
+      "python_traced_peak_bytes": 18481,
+      "runtime_ns": 679875,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "R2 ready-artifact use; preceding preparation is not free"
+      ],
+      "file_read_bytes": 3478,
+      "phase": "load_existing_pca_coordinates",
+      "python_traced_peak_bytes": 265319,
+      "runtime_ns": 3179083,
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5745,
+      "representation": "R0",
+      "runtime_ns": 69709,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2875,
+      "representation": "R1",
+      "runtime_ns": 83833,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2819,
+      "representation": "R1",
+      "runtime_ns": 82542,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1629,
+      "representation": "R2",
+      "runtime_ns": 91875,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1849,
+      "representation": "R2",
+      "runtime_ns": 50958,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5309,
+      "representation": "R0",
+      "runtime_ns": 31459,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R1",
+      "runtime_ns": 30916,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 42209,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5349,
+      "representation": "R0",
+      "runtime_ns": 39334,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5309,
+      "representation": "R0",
+      "runtime_ns": 33750,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2149,
+      "representation": "R2",
+      "runtime_ns": 191875,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11111,
+      "representation": "R0",
+      "runtime_ns": 481500,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 205750,
+      "worker_ipc_bytes": 960
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R1",
+      "runtime_ns": 35208,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 35875,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1375,
+      "representation": "R2",
+      "runtime_ns": 30291,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11123,
+      "representation": "R0",
+      "runtime_ns": 392333,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 144958,
+      "worker_ipc_bytes": 985
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5635,
+      "representation": "R0",
+      "runtime_ns": 36333,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10556,
+      "representation": "R0",
+      "runtime_ns": 396958,
+      "task_id": "profile-front",
+      "worker_compute_ns": 159792,
+      "worker_ipc_bytes": 996
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 35000,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1375,
+      "representation": "R2",
+      "runtime_ns": 29125,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R1",
+      "runtime_ns": 18375,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 40250,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 33833,
+      "task_id": "profile-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1326,
+      "representation": "R2",
+      "runtime_ns": 17916,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 30250,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 78458,
+      "task_id": "profile-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1317,
+      "representation": "R1",
+      "runtime_ns": 37750,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 68708,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1849,
+      "representation": "R2",
+      "runtime_ns": 53125,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 32542,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1333,
+      "representation": "R2",
+      "runtime_ns": 26625,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 66459,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 32917,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 33292,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 68084,
+      "task_id": "profile-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1333,
+      "representation": "R1",
+      "runtime_ns": 32459,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 68542,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2819,
+      "representation": "R1",
+      "runtime_ns": 153375,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11061,
+      "representation": "R0",
+      "runtime_ns": 410500,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 148541,
+      "worker_ipc_bytes": 758
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R2",
+      "runtime_ns": 29000,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10875,
+      "representation": "R0",
+      "runtime_ns": 371416,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 133666,
+      "worker_ipc_bytes": 985
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2707,
+      "representation": "R1",
+      "runtime_ns": 74250,
+      "task_id": "pulses",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 9446,
+      "representation": "R0",
+      "runtime_ns": 153000,
+      "task_id": "pulses",
+      "worker_compute_ns": 49292,
+      "worker_ipc_bytes": 196
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 73375,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 42083,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11787,
+      "representation": "R0",
+      "runtime_ns": 788500,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 291834,
+      "worker_ipc_bytes": 1981
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 37875,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 34667,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 68708,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 31625,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 74292,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R2",
+      "runtime_ns": 28041,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R1",
+      "runtime_ns": 26625,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2707,
+      "representation": "R1",
+      "runtime_ns": 67542,
+      "task_id": "pulses",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 61792,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5369,
+      "representation": "R0",
+      "runtime_ns": 30458,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 12459,
+      "representation": "R0",
+      "runtime_ns": 719084,
+      "task_id": "distance-order",
+      "worker_compute_ns": 261292,
+      "worker_ipc_bytes": 1981
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 38542,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R1",
+      "runtime_ns": 30333,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2819,
+      "representation": "R1",
+      "runtime_ns": 74208,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5515,
+      "representation": "R0",
+      "runtime_ns": 32084,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 64583,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2751,
+      "representation": "R1",
+      "runtime_ns": 74500,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10853,
+      "representation": "R0",
+      "runtime_ns": 360166,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 130375,
+      "worker_ipc_bytes": 758
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 12341,
+      "representation": "R0",
+      "runtime_ns": 1940291,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 723542,
+      "worker_ipc_bytes": 4674
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1269,
+      "representation": "R1",
+      "runtime_ns": 34083,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 37209,
+      "task_id": "profile-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R2",
+      "runtime_ns": 28667,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 156666,
+      "task_id": "distance-order",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 34041,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 42833,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 77333,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1375,
+      "representation": "R1",
+      "runtime_ns": 28459,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5365,
+      "representation": "R0",
+      "runtime_ns": 33500,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 33792,
+      "task_id": "profile-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11452,
+      "representation": "R0",
+      "runtime_ns": 500666,
+      "task_id": "profile-front",
+      "worker_compute_ns": 207833,
+      "worker_ipc_bytes": 996
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 67166,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 71167,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 91209,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 70750,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1576,
+      "representation": "R2",
+      "runtime_ns": 32875,
+      "task_id": "pulses",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1849,
+      "representation": "R2",
+      "runtime_ns": 48166,
+      "task_id": "distance-order",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1326,
+      "representation": "R2",
+      "runtime_ns": 18250,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1573,
+      "representation": "R2",
+      "runtime_ns": 34292,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R1",
+      "runtime_ns": 17250,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2751,
+      "representation": "R1",
+      "runtime_ns": 68750,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 12003,
+      "representation": "R0",
+      "runtime_ns": 788084,
+      "task_id": "distance-order",
+      "worker_compute_ns": 287000,
+      "worker_ipc_bytes": 1981
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 34333,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 37000,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 53916,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 68667,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1849,
+      "representation": "R2",
+      "runtime_ns": 48334,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 62417,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2819,
+      "representation": "R1",
+      "runtime_ns": 68500,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5635,
+      "representation": "R0",
+      "runtime_ns": 36584,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R1",
+      "runtime_ns": 28541,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 70958,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 36959,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1317,
+      "representation": "R1",
+      "runtime_ns": 28208,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10515,
+      "representation": "R0",
+      "runtime_ns": 367917,
+      "task_id": "profile-back",
+      "worker_compute_ns": 131250,
+      "worker_ipc_bytes": 985
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 32125,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10092,
+      "representation": "R0",
+      "runtime_ns": 364708,
+      "task_id": "profile-front",
+      "worker_compute_ns": 138875,
+      "worker_ipc_bytes": 996
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 32167,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11972,
+      "representation": "R0",
+      "runtime_ns": 716708,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 263001,
+      "worker_ipc_bytes": 1927
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 121250,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R2",
+      "runtime_ns": 32209,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 38500,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 45667,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 35542,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 33375,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11804,
+      "representation": "R0",
+      "runtime_ns": 713875,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 263125,
+      "worker_ipc_bytes": 1927
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2133,
+      "representation": "R2",
+      "runtime_ns": 147667,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1570,
+      "representation": "R2",
+      "runtime_ns": 43500,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5635,
+      "representation": "R0",
+      "runtime_ns": 37667,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 306917,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5349,
+      "representation": "R0",
+      "runtime_ns": 35291,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 35375,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 69916,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R1",
+      "runtime_ns": 36708,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10220,
+      "representation": "R0",
+      "runtime_ns": 353000,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 131333,
+      "worker_ipc_bytes": 996
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R0",
+      "runtime_ns": 17750,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5635,
+      "representation": "R0",
+      "runtime_ns": 34667,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 38375,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5515,
+      "representation": "R0",
+      "runtime_ns": 31000,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 38417,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5369,
+      "representation": "R0",
+      "runtime_ns": 30334,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 40875,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 70208,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 33500,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1696,
+      "representation": "R2",
+      "runtime_ns": 34458,
+      "task_id": "pulses",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1570,
+      "representation": "R2",
+      "runtime_ns": 34875,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 36375,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R1",
+      "runtime_ns": 26750,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1269,
+      "representation": "R2",
+      "runtime_ns": 28208,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 36208,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1913,
+      "representation": "R2",
+      "runtime_ns": 52375,
+      "task_id": "distance-order",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1570,
+      "representation": "R2",
+      "runtime_ns": 36125,
+      "task_id": "profile-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1573,
+      "representation": "R2",
+      "runtime_ns": 35375,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 65375,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10069,
+      "representation": "R0",
+      "runtime_ns": 364250,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 129000,
+      "worker_ipc_bytes": 758
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10703,
+      "representation": "R0",
+      "runtime_ns": 371458,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 131375,
+      "worker_ipc_bytes": 960
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1269,
+      "representation": "R2",
+      "runtime_ns": 30417,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 85875,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11923,
+      "representation": "R0",
+      "runtime_ns": 773834,
+      "task_id": "distance-order",
+      "worker_compute_ns": 282459,
+      "worker_ipc_bytes": 1981
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 32833,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 30584,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11023,
+      "representation": "R0",
+      "runtime_ns": 366666,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 126458,
+      "worker_ipc_bytes": 960
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 45458,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5515,
+      "representation": "R0",
+      "runtime_ns": 29750,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 74208,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2751,
+      "representation": "R1",
+      "runtime_ns": 122292,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 9622,
+      "representation": "R0",
+      "runtime_ns": 153708,
+      "task_id": "pulses",
+      "worker_compute_ns": 50000,
+      "worker_ipc_bytes": 196
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 12885,
+      "representation": "R0",
+      "runtime_ns": 1788625,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 662085,
+      "worker_ipc_bytes": 4674
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10404,
+      "representation": "R0",
+      "runtime_ns": 353666,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 130416,
+      "worker_ipc_bytes": 996
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 280625,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 64416,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1385,
+      "representation": "R1",
+      "runtime_ns": 28917,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11004,
+      "representation": "R0",
+      "runtime_ns": 682208,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 255458,
+      "worker_ipc_bytes": 1927
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 65000,
+      "task_id": "profile-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 32916,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5349,
+      "representation": "R0",
+      "runtime_ns": 43458,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11019,
+      "representation": "R0",
+      "runtime_ns": 446125,
+      "task_id": "profile-back",
+      "worker_compute_ns": 168458,
+      "worker_ipc_bytes": 985
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 60209,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R2",
+      "runtime_ns": 20417,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5515,
+      "representation": "R0",
+      "runtime_ns": 37625,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 147125,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 32833,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1570,
+      "representation": "R2",
+      "runtime_ns": 32459,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5515,
+      "representation": "R0",
+      "runtime_ns": 30875,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 121459,
+      "task_id": "distance-order",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R2",
+      "runtime_ns": 27958,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 72500,
+      "task_id": "profile-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11364,
+      "representation": "R0",
+      "runtime_ns": 501459,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 196833,
+      "worker_ipc_bytes": 996
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1516,
+      "representation": "R2",
+      "runtime_ns": 34708,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R2",
+      "runtime_ns": 27833,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5515,
+      "representation": "R0",
+      "runtime_ns": 32458,
+      "task_id": "daily-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 41458,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 39708,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1269,
+      "representation": "R1",
+      "runtime_ns": 27833,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2707,
+      "representation": "R1",
+      "runtime_ns": 83584,
+      "task_id": "pulses",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R2",
+      "runtime_ns": 30292,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R2",
+      "runtime_ns": 30083,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1696,
+      "representation": "R2",
+      "runtime_ns": 32834,
+      "task_id": "pulses",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 67750,
+      "task_id": "profile-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R1",
+      "runtime_ns": 19708,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R0",
+      "runtime_ns": 17167,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11587,
+      "representation": "R0",
+      "runtime_ns": 723584,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 257958,
+      "worker_ipc_bytes": 1981
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 33084,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 44875,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5309,
+      "representation": "R0",
+      "runtime_ns": 42041,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 66500,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 121042,
+      "task_id": "distance-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 66541,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5369,
+      "representation": "R0",
+      "runtime_ns": 38750,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 9694,
+      "representation": "R0",
+      "runtime_ns": 149167,
+      "task_id": "pulses",
+      "worker_compute_ns": 49541,
+      "worker_ipc_bytes": 196
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 34625,
+      "task_id": "profile-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 64834,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 145333,
+      "task_id": "distance-order",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 32750,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 67792,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 31458,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1317,
+      "representation": "R2",
+      "runtime_ns": 29333,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 11331,
+      "representation": "R0",
+      "runtime_ns": 460375,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 189083,
+      "worker_ipc_bytes": 985
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 142583,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 36792,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5331,
+      "representation": "R0",
+      "runtime_ns": 33125,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 45084,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1385,
+      "representation": "R2",
+      "runtime_ns": 29333,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 67333,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5369,
+      "representation": "R0",
+      "runtime_ns": 38875,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5497,
+      "representation": "R0",
+      "runtime_ns": 37333,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5429,
+      "representation": "R0",
+      "runtime_ns": 30666,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5635,
+      "representation": "R0",
+      "runtime_ns": 37833,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R1",
+      "runtime_ns": 28334,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2425,
+      "representation": "R1",
+      "runtime_ns": 65542,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R1",
+      "runtime_ns": 28959,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 32500,
+      "task_id": "area-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 34583,
+      "task_id": "profile-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1381,
+      "representation": "R2",
+      "runtime_ns": 34042,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5365,
+      "representation": "R0",
+      "runtime_ns": 31459,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 12411,
+      "representation": "R0",
+      "runtime_ns": 940208,
+      "task_id": "pca-geometry",
+      "worker_compute_ns": 364041,
+      "worker_ipc_bytes": 1981
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 34417,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5369,
+      "representation": "R0",
+      "runtime_ns": 31416,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1375,
+      "representation": "R1",
+      "runtime_ns": 28917,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 10899,
+      "representation": "R0",
+      "runtime_ns": 435417,
+      "task_id": "profile-back",
+      "worker_compute_ns": 177625,
+      "worker_ipc_bytes": 985
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R2",
+      "runtime_ns": 27875,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1849,
+      "representation": "R2",
+      "runtime_ns": 48417,
+      "task_id": "distance-order",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5309,
+      "representation": "R0",
+      "runtime_ns": 40916,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2733,
+      "representation": "R1",
+      "runtime_ns": 93000,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 65416,
+      "task_id": "profile-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 36125,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 43708,
+      "task_id": "front-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 323333,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5369,
+      "representation": "R0",
+      "runtime_ns": 43041,
+      "task_id": "duration",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5699,
+      "representation": "R0",
+      "runtime_ns": 37208,
+      "task_id": "max-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R1",
+      "runtime_ns": 28875,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R2",
+      "runtime_ns": 27500,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1580,
+      "representation": "R2",
+      "runtime_ns": 34208,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2197,
+      "representation": "R2",
+      "runtime_ns": 169000,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 36917,
+      "task_id": "profile-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 70500,
+      "task_id": "area-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 12701,
+      "representation": "R0",
+      "runtime_ns": 2051667,
+      "task_id": "neighbor-fidelity",
+      "worker_compute_ns": 802332,
+      "worker_ipc_bytes": 4674
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1375,
+      "representation": "R1",
+      "runtime_ns": 36792,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2361,
+      "representation": "R1",
+      "runtime_ns": 66500,
+      "task_id": "profile-zeros",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1375,
+      "representation": "R2",
+      "runtime_ns": 30500,
+      "task_id": "interval-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1381,
+      "representation": "R2",
+      "runtime_ns": 35583,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1262,
+      "representation": "R0",
+      "runtime_ns": 20125,
+      "task_id": "scientific-analogs",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 85500,
+      "task_id": "max-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 73458,
+      "task_id": "profile-constant",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1506,
+      "representation": "R2",
+      "runtime_ns": 35209,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5309,
+      "representation": "R0",
+      "runtime_ns": 32334,
+      "task_id": "area-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2687,
+      "representation": "R1",
+      "runtime_ns": 69042,
+      "task_id": "area-scaled",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 69041,
+      "task_id": "area-front",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1381,
+      "representation": "R1",
+      "runtime_ns": 65791,
+      "task_id": "daily-unknown-baseline",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 2755,
+      "representation": "R1",
+      "runtime_ns": 69375,
+      "task_id": "interval-known",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5309,
+      "representation": "R0",
+      "runtime_ns": 56291,
+      "task_id": "peak-back",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 34375,
+      "task_id": "daily-missing",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M1",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 5433,
+      "representation": "R0",
+      "runtime_ns": 33667,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1321,
+      "representation": "R1",
+      "runtime_ns": 27833,
+      "task_id": "daily-after-gap",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M0",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1377,
+      "representation": "R2",
+      "runtime_ns": 28750,
+      "task_id": "profile-zero",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    },
+    {
+      "attribution": [
+        "warm cache preparation"
+      ],
+      "file_read_bytes": 0,
+      "metadata": "M2",
+      "phase": "warmup_query",
+      "python_traced_peak_bytes": 1509,
+      "representation": "R2",
+      "runtime_ns": 37916,
+      "task_id": "back-fraction",
+      "worker_compute_ns": 0,
+      "worker_ipc_bytes": 0
+    }
+  ],
+  "note": "historical preparation timings are retained context, not newly measured here; rule engineering effort unmeasured",
+  "router_construction_labor": null,
+  "router_maintenance_labor": null,
+  "this_run_preparation_ns": 1156519667
+}

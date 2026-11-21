@@ -135,3 +135,27 @@ materialization, complete-interval means, resolution/support separation, changed
 review/source identities, incompatible units/CRS, closed model choices, inference-free
 execution and the generated window-to-MOSAIKS bridge. No provider data is downloaded.
 [Capability audit](development/cubedynamics-audit.md).
+
+## Embedding utility analysis
+
+`tests/test_embedding_utility.py` checks strict cost break-even (including no-win
+and invalid-cost cases), an independent affine prediction oracle, shape/nonfinite
+rejection and generated-input determinism. Existing MOSAIKS tests cover trained
+filter identities, held-out exclusion and scientific input gates. The separate
+analysis runner is documented in the [study overview](analysis/embedding-utility.md);
+its generated statistics are not independent scientific validation or agent scores.
+
+The Fire VASE milestone adds `tests/test_fire_vase_benchmark.py`: scientific schema
+negatives, independent rational/SVD keys, normalization information loss, metadata
+isolation, artifact integrity and replay. Explicit `FIRE_VASE_ROOT` and
+`FIRE_VASE_PYTHON` enable tests against the real pinned operation implementation;
+absence skips those external-code tests with a reason, never substitutes a mock.
+The new sparse-checkout CI job supplies that code pin. See the
+[benchmark guide](analysis/fire-vase-benchmark.md) for full reproduction.
+
+`tests/test_fire_vase_agents.py` covers prompt/gold isolation, representation/source
+authorization, action/argument validation, provider abstraction, malformed-output
+recovery, step/tool/token/byte/global budgets, receipt validation, temporal and
+approximation diagnostics, full mock-matrix replay and report regeneration. The
+pinned-source CI job includes these tests; this is configured CI, not a claim of a
+new remote CI run. No real model calls occur in the offline suite.

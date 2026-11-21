@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "approximation_allowed": {
+      "default": false,
+      "title": "Approximation Allowed",
+      "type": "boolean"
+    },
+    "candidates": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 64,
+      "title": "Candidates",
+      "type": "array"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date"
+    },
+    "fire_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 1,
+      "title": "Fire Ids",
+      "type": "array"
+    },
+    "start_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Date"
+    }
+  },
+  "required": [
+    "fire_ids"
+  ],
+  "title": "QueryArguments",
+  "type": "object"
+}

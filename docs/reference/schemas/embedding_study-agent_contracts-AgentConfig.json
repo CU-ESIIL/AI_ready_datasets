@@ -1,0 +1,223 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "adaptive": {
+      "title": "Adaptive",
+      "type": "boolean"
+    },
+    "approved_external_cost_cap": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Approved External Cost Cap"
+    },
+    "cache_policy": {
+      "const": "cold_application_per_episode",
+      "title": "Cache Policy",
+      "type": "string"
+    },
+    "fixed_representations": {
+      "items": {
+        "enum": [
+          "R0",
+          "R1",
+          "R2"
+        ],
+        "type": "string"
+      },
+      "title": "Fixed Representations",
+      "type": "array"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "string"
+    },
+    "live_access_authorized": {
+      "default": false,
+      "title": "Live Access Authorized",
+      "type": "boolean"
+    },
+    "live_cost_basis": {
+      "default": "unverified",
+      "enum": [
+        "unverified",
+        "operator_confirmed_no_external_charge"
+      ],
+      "title": "Live Cost Basis",
+      "type": "string"
+    },
+    "max_episode_seconds": {
+      "exclusiveMinimum": 0,
+      "maximum": 900,
+      "title": "Max Episode Seconds",
+      "type": "number"
+    },
+    "max_episode_tokens": {
+      "maximum": 100000,
+      "minimum": 1,
+      "title": "Max Episode Tokens",
+      "type": "integer"
+    },
+    "max_output_tokens": {
+      "default": 2048,
+      "maximum": 4096,
+      "minimum": 128,
+      "title": "Max Output Tokens",
+      "type": "integer"
+    },
+    "max_prompt_bytes": {
+      "maximum": 48000,
+      "minimum": 1000,
+      "title": "Max Prompt Bytes",
+      "type": "integer"
+    },
+    "max_provider_calls": {
+      "maximum": 20000,
+      "minimum": 1,
+      "title": "Max Provider Calls",
+      "type": "integer"
+    },
+    "max_real_calls": {
+      "maximum": 6,
+      "minimum": 0,
+      "title": "Max Real Calls",
+      "type": "integer"
+    },
+    "max_steps": {
+      "maximum": 12,
+      "minimum": 2,
+      "title": "Max Steps",
+      "type": "integer"
+    },
+    "max_tool_calls": {
+      "maximum": 8,
+      "minimum": 1,
+      "title": "Max Tool Calls",
+      "type": "integer"
+    },
+    "metadata": {
+      "title": "Metadata",
+      "type": "string"
+    },
+    "metadata_conditions": {
+      "items": {
+        "enum": [
+          "M0",
+          "M1",
+          "M2"
+        ],
+        "type": "string"
+      },
+      "title": "Metadata Conditions",
+      "type": "array"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    },
+    "phase": {
+      "enum": [
+        "development",
+        "frozen_pilot",
+        "held_out_pending"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "prompt_version": {
+      "enum": [
+        "fire-agent-prompt-v1",
+        "fire-agent-prompt-v2"
+      ],
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "provider": {
+      "enum": [
+        "mock",
+        "openclaw"
+      ],
+      "title": "Provider",
+      "type": "string"
+    },
+    "provider_timeout_seconds": {
+      "default": 60,
+      "maximum": 120,
+      "minimum": 1,
+      "title": "Provider Timeout Seconds",
+      "type": "integer"
+    },
+    "repetitions": {
+      "maximum": 10,
+      "minimum": 1,
+      "title": "Repetitions",
+      "type": "integer"
+    },
+    "seed": {
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "smoke_task_indexes": {
+      "default": [],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Smoke Task Indexes",
+      "type": "array"
+    },
+    "snapshot": {
+      "title": "Snapshot",
+      "type": "string"
+    },
+    "tasks": {
+      "title": "Tasks",
+      "type": "string"
+    },
+    "temperature": {
+      "maximum": 2,
+      "minimum": 0,
+      "title": "Temperature",
+      "type": "number"
+    },
+    "version": {
+      "const": "fire-agent-experiment-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "prompt_version",
+    "phase",
+    "fixture",
+    "tasks",
+    "snapshot",
+    "metadata",
+    "provider",
+    "model",
+    "repetitions",
+    "metadata_conditions",
+    "fixed_representations",
+    "adaptive",
+    "cache_policy",
+    "max_steps",
+    "max_tool_calls",
+    "max_episode_seconds",
+    "max_provider_calls",
+    "max_episode_tokens",
+    "max_prompt_bytes",
+    "temperature",
+    "seed",
+    "max_real_calls",
+    "approved_external_cost_cap"
+  ],
+  "title": "AgentConfig",
+  "type": "object"
+}

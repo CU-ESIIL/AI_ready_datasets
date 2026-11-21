@@ -75,6 +75,9 @@ nav:
           - Decisions and history: development/decisions.md
   - Scientific validation:
       - Findings: validation/index.md
+      - Embedding utility study: analysis/embedding-utility.md
+      - Fire VASE deterministic benchmark: analysis/fire-vase-benchmark.md
+      - Fire VASE controlled agents: analysis/fire-vase-agents.md
       - Sentinel expert review: validation/sentinel-real-case.md
       - Semantic and dataset experiments: validation/benchmarks.md
       - NEON and Sentinel: validation/neon-sentinel.md
