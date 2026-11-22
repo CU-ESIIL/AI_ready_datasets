@@ -1,0 +1,912 @@
+{
+  "approved_scopes": [],
+  "findings": [
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "verify_container_bytes",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "profile_rows",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "harmonize",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "features",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "train_neural",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrospective_prediction",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "retrieval",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "spatial_environment",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "benchmark",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "semantic",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "units",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "support",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "rights",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "integrity",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "quality",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "availability",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "execution",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "evidence_ids": [
+        "M6:pending-review",
+        "M7:metadata-only-inventory"
+      ],
+      "jurisdiction": "publication",
+      "rationale": "Requires explicit source/science/rights/execution human review; inventory is not permission",
+      "scope": "publish_outputs",
+      "status": "NEEDS_EVIDENCE"
+    }
+  ],
+  "human_receipt_reference": null,
+  "origin": "DRAFT",
+  "plan_digest": "aedc7dad21bd4ddbe2824a324c671bd05e6b55edae9298a63f9844e21467b9fe",
+  "receipt_verified_by": null,
+  "reviewer": null,
+  "timestamp": null,
+  "version": "fire-full-lake-authorization-v1"
+}

@@ -1,0 +1,567 @@
+{
+  "status": "REAL_OBSERVED_PROPERTY_RETRIEVAL_BASELINE_VALIDATED",
+  "scientific_relevance": "nearest total of retained observed native increments in log1p source-reported km2; not ecological analogs or future outcomes",
+  "gallery_fires": 146412,
+  "query_fires": 32,
+  "k": 10,
+  "same_fire_exclusion": true,
+  "query_gallery_fire_disjoint": true,
+  "query_selection": "first16 per1/2-observation stratum by independent deterministic hash among candidate test folds; diagnostic sample not confirmatory generalization",
+  "source": "source-verified census observed_sum metadata, not a new raw-data copy",
+  "information": "optimized cached native aggregate and interpretable total provide the same scalar input; full lineage/source lookup remains available",
+  "independent_oracle_agreement_queries": 32,
+  "precision_scope": "exact declared-property retrieval implementation, not independent ecological or learned-model accuracy",
+  "distinct_gallery_scalar_values": 111,
+  "index_preparation_seconds_this_invocation": 0.3664662090013735,
+  "query_median_ns": 3261604.5,
+  "cost_limit": "warm in-memory queries and cached aggregates; original census/refresh/storage costs not included, no end-to-end cost frontier",
+  "learned_model_evaluation": false,
+  "normalized_payload_only_scale_query": "requires explicit source or cached-native aggregate access; not assigned invented ranking scores",
+  "query_receipts": [
+    {
+      "query_event": "343886",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "329698",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "9666",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "273954",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "187994",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "317347",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "392778",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "129260",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "358229",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "380406",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "173749",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "7572",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "199548",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "326239",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "367726",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "299257",
+      "observations": 1,
+      "matched_gallery_ids": [
+        "100",
+        "10000",
+        "100003",
+        "100009",
+        "10001",
+        "100011",
+        "100013",
+        "100014",
+        "100015",
+        "100020"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "84246",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "102775",
+        "126266",
+        "13823",
+        "221134",
+        "224844",
+        "32990",
+        "34025",
+        "380734",
+        "438764",
+        "125141"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "317564",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "181565",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "357404",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "18762",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "144713",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100969",
+        "10430",
+        "106161",
+        "108639",
+        "112312",
+        "112583",
+        "113468",
+        "114667",
+        "115370",
+        "116045"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "384821",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100007",
+        "100100",
+        "100146",
+        "100165",
+        "10019",
+        "100193",
+        "100325",
+        "100361",
+        "100555",
+        "100563"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "357295",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "159812",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "102239",
+        "103046",
+        "103122",
+        "103483",
+        "106445",
+        "108330",
+        "108524",
+        "111082",
+        "111677",
+        "1117"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "127379",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100059",
+        "100087",
+        "100156",
+        "10040",
+        "100460",
+        "10056",
+        "100651",
+        "100792",
+        "100851",
+        "101079"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "414642",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "72672",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100017",
+        "100027",
+        "100039",
+        "100063",
+        "100073",
+        "100076",
+        "100083",
+        "100091",
+        "100098",
+        "100113"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "56766",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100007",
+        "100100",
+        "100146",
+        "100165",
+        "10019",
+        "100193",
+        "100325",
+        "100361",
+        "100555",
+        "100563"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "405381",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100865",
+        "100911",
+        "100913",
+        "101175",
+        "101563",
+        "10169",
+        "101738",
+        "101794",
+        "101995",
+        "102"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "112027",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100007",
+        "100100",
+        "100146",
+        "100165",
+        "10019",
+        "100193",
+        "100325",
+        "100361",
+        "100555",
+        "100563"
+      ],
+      "oracle_agreement": true
+    },
+    {
+      "query_event": "442998",
+      "observations": 2,
+      "matched_gallery_ids": [
+        "100902",
+        "104407",
+        "104828",
+        "104847",
+        "105414",
+        "106170",
+        "106289",
+        "10670",
+        "108178",
+        "109610"
+      ],
+      "oracle_agreement": true
+    }
+  ],
+  "seconds": 0.8543299170014507
+}

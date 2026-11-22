@@ -1,0 +1,26 @@
+{
+  "version": "m4-extension-evidence-v1",
+  "source_run_manifest_sha256": "af447c84df247127541c516fb3b27d4a59c0b1313f2a6c2b8b84e090283cb74b",
+  "model_refit_after_retained_outcomes": false,
+  "predictive_results_changed": false,
+  "controls_scope": "same frozen control operators/checkpoint extended descriptively to all held-out prefixes; not new predictive evidence",
+  "model_calls": 0,
+  "evidence_sha256": {
+    "reports/embedding_utility/fire_vase/representation-utility-m4.md": "06c9cdb45ccf6962c296199accb9f8bf3b4b188c7fe87740331730b195277fcb",
+    "reports/embedding_utility/fire_vase/learned-protocol-m4-v1.md": "91d64ae9e335213873195408af0e62513fe9a3b73fe29d713b16a910e8a80995",
+    "reports/embedding_utility/fire_vase/track-a-m4.md": "4d1affd4bd4bfe60051aa0b90fdaf8f1c4514516b387d0ddc7e188ca2e81f0eb",
+    "reports/embedding_utility/fire_vase/track-b-data-audit-m4.md": "641478aaebdbc5eb70af0a18dcdea70b5036c1f85e64bd3d98fecff04387737a",
+    "reports/embedding_utility/fire_vase/track-b-data-m4.md": "a20a26701e32c11a0a288982aa388479b9b968ee178412b5ab14e7b233960c35",
+    "reports/embedding_utility/fire_vase/unsupported-claims-m4.md": "3ace6f770899c1638185045d5c64fdb8b00bbe893cb809185554a61c420a30da",
+    "reports/embedding_utility/fire_vase/evidence-table-m4.md": "a4e9d041c8e0361db256e7afeba1870dd32ca47efbab62c68a1e6b29134c07f5",
+    "reports/embedding_utility/fire_vase/adapter-preflight-m4-v1.json": "04f59617e13d0279d726c41f4dec0ddccce112c96cc88177b5ee002afd9104df",
+    "reports/embedding_utility/fire_vase/model-access-check-m4-v1.json": "64216951c1239bd49d755384aece19cbd57deca9ffc9f66bcd476643dbabbcaa",
+    "reports/embedding_utility/fire_vase/data-access-audit-m4-v1.json": "0f590fa8b4b4f380abb867fe42b884f12efd5493f8dc5a84394ae64156c341ac",
+    "reports/embedding_utility/fire_vase/representation-controls-m4-v1.json.gz": "f5e40090f99b1f082330c6e40caa8e8f67c89fbfa57e24f39d5c6cc3992a4b77",
+    "reports/embedding_utility/fire_vase/config/learned-synthetic-m4-v1.json": "586750f1678d78943d53aee1d077d592e3b84c7f42e2d49cf84184aef433e0c6",
+    "scripts/audit_fire_vase_learning_controls.py": "6f7adb6b0d6b353a82955b821c7e4dfcd0c5aef4f06d20766c08a7da91be74b3",
+    "scripts/generate_fire_vase_learning_figures.py": "0a809849358c69e0b26dd5da990bd25117313cf101b6fce2476beeb2992771cc",
+    "docs/assets/figures/fire-vase-learning-skill.png": "e7b53216bc4ea1754b711fac1147e1a6e2074ad29eb74891a2c895b1be28e69f",
+    "docs/assets/figures/fire-vase-learning-reuse.png": "d8b503db39742cc11f458875ecd2d1d02e3994b6389ad1d40e49606ae2de5638"
+  }
+}

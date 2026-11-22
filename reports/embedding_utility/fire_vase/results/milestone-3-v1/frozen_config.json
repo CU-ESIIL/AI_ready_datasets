@@ -1,0 +1,33 @@
+{
+  "inference_pending": "No real access/cost authorization assumed. Draft semantic rubrics need expert review before confirmatory scientific claims.",
+  "input_sha256": {
+    "data/fixtures/embedding_utility/milestone-3-v3/development_tasks.json": "3130de1daedfae6e5c813441861ebfb6715ff3b469ee5b0d2b0d97f9c3fe82b0",
+    "data/fixtures/embedding_utility/milestone-3-v3/evaluation_tasks.json": "11e83673245616b4b1029ec484fa8a4e287aea1d2e3f5ed8e84ab30005fca091",
+    "data/fixtures/embedding_utility/milestone-3-v3/generation.json": "eae2c4e92d36f767b9ddef9a6c8b7b3861e9f4ed18042df7f0e167e93083a126",
+    "data/fixtures/embedding_utility/milestone-3-v3/histories.json": "c0d4caf1a95500e4a90ecb9dc967db2fc694d110fcf7a5a1ddfdf22645c3d385"
+  },
+  "live_authorized": false,
+  "max_prompt_bytes": 48000,
+  "max_provider_calls": 17280,
+  "max_steps": 6,
+  "max_tool_calls": 4,
+  "metadata_conditions": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "metadata_interpretation": "Mock ignores metadata; invariance only. Public timing table never includes success, sufficiency, result or ideal view.",
+  "provider": "v3-first-view-mock",
+  "real_model_calls": 0,
+  "regimes": [
+    "R0",
+    "R1",
+    "R2",
+    "adaptive"
+  ],
+  "repetitions": 2,
+  "seed": 814399,
+  "simulated": true,
+  "split": "evaluation",
+  "version": "fire-pilot-experiment-v3"
+}

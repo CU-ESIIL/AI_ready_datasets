@@ -1,0 +1,13 @@
+{
+  "fire_calls": 41991,
+  "operation": "native fid indexed reads followed by observed-state-v1 deterministic operations",
+  "native_records_decoded": 94493,
+  "returned_native_response_bytes": 3888100,
+  "filesystem_physical_bytes_read": null,
+  "all_recovered_to_reference_tolerance": true,
+  "seconds_including_validation": 1.8441832909993536,
+  "median_call_ns": 31583.0,
+  "total_call_ns": 1734158763,
+  "source_values_persisted": false,
+  "policy": "always use native for uncertified approximate property answers; no test-error oracle used to decide fallback"
+}

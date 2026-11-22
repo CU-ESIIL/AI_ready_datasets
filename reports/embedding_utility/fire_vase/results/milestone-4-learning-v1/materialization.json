@@ -1,0 +1,76 @@
+{
+  "cached_complete_prediction": {
+    "median_ns": 83,
+    "min_ns": 42,
+    "repeats": 31
+  },
+  "cached_direct_feature_prediction": {
+    "median_ns": 83,
+    "min_ns": 42,
+    "repeats": 31
+  },
+  "construction_total_ns": 18410000,
+  "coordinate_numeric_bytes": 8192,
+  "direct_interpretable_features_plus_probe": {
+    "median_ns": 13125,
+    "min_ns": 12833,
+    "repeats": 31
+  },
+  "embedding_dimension": 4,
+  "json_read_ns": 2980333,
+  "json_write_ns": 2586209,
+  "measured_prediction_equal": true,
+  "on_demand_encoder_plus_probe": {
+    "median_ns": 37500,
+    "min_ns": 36042,
+    "repeats": 31
+  },
+  "per_prefix_break_even_queries_formula": 3.0,
+  "prefix_count": 256,
+  "query_identity_construction_ns": 21750,
+  "raw_features_plus_probe": {
+    "median_ns": 10458,
+    "min_ns": 10209,
+    "repeats": 31
+  },
+  "refresh": "Changed source/prefix, preprocessing, checkpoint or probe invalidates relevant caches; all affected embeddings must be regenerated after retraining.",
+  "reuse_scenarios": [
+    {
+      "cached_prediction_ns": 37500,
+      "materialized_ns": 96783.3671875,
+      "on_demand_ns": 37500,
+      "queries_per_prefix": 1
+    },
+    {
+      "cached_prediction_ns": 38247,
+      "materialized_ns": 124908.3671875,
+      "on_demand_ns": 375000,
+      "queries_per_prefix": 10
+    },
+    {
+      "cached_prediction_ns": 45717,
+      "materialized_ns": 406158.3671875,
+      "on_demand_ns": 3750000,
+      "queries_per_prefix": 100
+    },
+    {
+      "cached_prediction_ns": 120417,
+      "materialized_ns": 3218658.3671875,
+      "on_demand_ns": 37500000,
+      "queries_per_prefix": 1000
+    },
+    {
+      "cached_prediction_ns": 867417,
+      "materialized_ns": 31343658.3671875,
+      "on_demand_ns": 375000000,
+      "queries_per_prefix": 10000
+    }
+  ],
+  "scope": "Warm local scalar queries on validated immutable prefixes. Cache identity construction recorded separately, precomputed keys used for cached results. Preprocessing/lookup key scopes explicit. No remote storage/maintenance labor/refresh rate measured; training costs recorded separately; identical trained encoder/probe in both modes.",
+  "stored_bytes": 155425,
+  "stored_embedding_plus_same_probe": {
+    "median_ns": 3125,
+    "min_ns": 2791,
+    "repeats": 31
+  }
+}

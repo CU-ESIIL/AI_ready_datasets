@@ -1,0 +1,16 @@
+{
+  "peak_rss_bytes_macos": 1002078208,
+  "source_raw_area_numeric_bytes_float64": 5016264,
+  "source_dates_provenance_storage": "shared and retained for every representation, not included in numeric-vector bytes",
+  "prepared_scientific_state_seconds": 7.601291666000179,
+  "native_direct_fallback_cost": "actual whole-test-fires measurement in access-independent-validation.json; not substituted with encoding latency",
+  "unknown_components": [
+    "filesystem physical read bytes",
+    "production concurrency",
+    "true source updates",
+    "end-to-end remote network serving",
+    "index/recipe rights or independent ecological validity"
+  ],
+  "fitted_model_costs": "observed actual fitting and probe stages; probe-fit-and-predict timing includes full-population inference, so not pure training CPU",
+  "retrieval_index_costs": "separately measured in retrieval-runtime.json; not silently charged to property-query workload"
+}

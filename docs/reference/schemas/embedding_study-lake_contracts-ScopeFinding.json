@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "type": "string"
+    },
+    "rationale": {
+      "minLength": 1,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "scope": {
+      "title": "Scope",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NEEDS_EVIDENCE",
+        "NOT_APPLICABLE"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "scope",
+    "jurisdiction",
+    "status",
+    "evidence_ids",
+    "rationale"
+  ],
+  "title": "ScopeFinding",
+  "type": "object"
+}

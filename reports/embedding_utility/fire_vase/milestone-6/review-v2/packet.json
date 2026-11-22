@@ -1,0 +1,349 @@
+{
+  "exclusions": [
+    "gridMET/climate covariates",
+    "completed morphospace/features",
+    "final normalized VASE width",
+    "source peak-as-total/duration legacy metric",
+    "source downloads or copies",
+    "model training and public release"
+  ],
+  "proposed_claim": "retrospective_reconstructed",
+  "purpose": "Review a bounded native-value/source-cache alignment audit before any real observation read, adapter or training",
+  "recipes": [
+    {
+      "implementation_evidence": [
+        "scripts/fire_vase_build_climate_tables.py:normalize_daily",
+        "scripts/fire_vase_v2_inputs.py:audit_inputs"
+      ],
+      "intended_meaning": "Preserve original native daily-bin area and compare copied cached values by exact source ID/date; no cumulative differencing or unit inference from label alone",
+      "operation": "native_increment_identity",
+      "preconditions": [
+        "human semantic/units/support review",
+        "exact source/version identity",
+        "one-to-one source/cache ID-date match",
+        "no negative/nonfinite/missing area imputation"
+      ],
+      "preserved_evidence": [
+        "native source field/value/unit",
+        "source ID/date and row identity",
+        "native support/quality",
+        "recipe and source digest"
+      ],
+      "source_fields": [
+        "dy_ar_km2",
+        "ring_area_km2"
+      ],
+      "status": "PROPOSED_FOR_REVIEW",
+      "version": "m6-review-v1"
+    },
+    {
+      "implementation_evidence": [
+        "src/cubedynamics/analysis_v2.py:exact_transitions"
+      ],
+      "intended_meaning": "Validate exact one-calendar-day support and event separation; reject duplicate/ambiguous/missing windows",
+      "operation": "calendar_support_validation",
+      "preconditions": [
+        "calendar and time-zone semantics reviewed",
+        "no sorting/merging that hides source duplicates",
+        "gap is not observed zero"
+      ],
+      "preserved_evidence": [
+        "original dates/order",
+        "gap/missing/zero categories",
+        "event grouping"
+      ],
+      "source_fields": [
+        "id",
+        "fire_id",
+        "date",
+        "timestamp",
+        "event_day"
+      ],
+      "status": "PROPOSED_FOR_REVIEW",
+      "version": "m6-review-v1"
+    },
+    {
+      "implementation_evidence": [
+        "embedding_study.learned_contracts:PrefixInput requires known availability; no synthetic timestamps for real data"
+      ],
+      "intended_meaning": "Build only observed prefix inputs after approval; observed-window sum is not automatically catalog final area or complete-fire cumulative area",
+      "operation": "observed_prefix_only",
+      "preconditions": [
+        "origin/support defined",
+        "prospective availability evidenced or explicit retrospective-only study decision",
+        "no completed-fire endpoints or future climate"
+      ],
+      "preserved_evidence": [
+        "cutoff and unknown availability",
+        "original units",
+        "uncertainty and quality",
+        "source lineage"
+      ],
+      "source_fields": [
+        "dy_ar_km2",
+        "date",
+        "availability"
+      ],
+      "status": "PROPOSED_FOR_REVIEW",
+      "version": "m6-review-v1"
+    },
+    {
+      "implementation_evidence": [
+        "embedding_study.transfer_targets:future_targets; currently synthetic-only"
+      ],
+      "intended_meaning": "A next day, B next-three total, C relative future/past mean, D next-three population SD and E future-pattern relevance only with full independent future support",
+      "operation": "independent_future_targets",
+      "preconditions": [
+        "reviewed exact-day area semantics",
+        "future observations excluded from inputs",
+        "no manufactured future rows"
+      ],
+      "preserved_evidence": [
+        "target observation identities/dates",
+        "missing future exclusion",
+        "target recipe"
+      ],
+      "source_fields": [
+        "native_daily_increment",
+        "native_date"
+      ],
+      "status": "PROPOSED_FOR_REVIEW",
+      "version": "m6-review-v1"
+    },
+    {
+      "implementation_evidence": [
+        "M5 grouped split protocol; real fold identities pending approval"
+      ],
+      "intended_meaning": "Freeze whole-fire temporal/geographic folds and calibration cohorts without fitting on held-out data",
+      "operation": "fire_grouped_holdouts",
+      "preconditions": [
+        "reviewed region definitions and event boundaries",
+        "train-only preprocessing",
+        "selection thresholds fixed without test performance",
+        "post-outcome size/stage descriptors evaluation-only"
+      ],
+      "preserved_evidence": [
+        "fire/fold membership",
+        "region/year support",
+        "cohort exclusions/denominators"
+      ],
+      "source_fields": [
+        "native_event_id",
+        "year",
+        "region",
+        "observation_support"
+      ],
+      "status": "PROPOSED_FOR_REVIEW",
+      "version": "m6-review-v1"
+    }
+  ],
+  "sample": {
+    "batch_rows": 128,
+    "full_source_scan": false,
+    "max_fires": 16,
+    "max_total_decoded_rows": 512,
+    "persist_raw_or_harmonized": false,
+    "purpose": "native_schema_value_alignment_audit",
+    "read_geometries": false,
+    "redistribute_observations": false,
+    "train_models": false
+  },
+  "scientific_requirements": [
+    "No source rows until independent human review and actual data identity evidence are complete",
+    "No new geometry/calibration/resampling",
+    "Prospective cohort requires actual availability; cannot use real data in synthetic-only runners",
+    "No public observations/embeddings/checkpoints before derivative-rights review"
+  ],
+  "sources": [
+    {
+      "checksum_evidence": "data_lake/fire-vase-data-lake-v0.1/file_manifest.csv; historical full-container SHA, not current content verification",
+      "checksum_scope": "historical_full_container_not_reverified",
+      "expected_size_bytes": 575012864,
+      "file_format": "gpkg",
+      "local_path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "measurement_semantics": "Native FIRED dated area field dy_ar_km2; scientific one-day support pending review",
+      "native_fields": [
+        "fid",
+        "geom",
+        "did",
+        "id",
+        "date",
+        "ig_date",
+        "ig_day",
+        "ig_month",
+        "ig_year",
+        "last_date",
+        "event_day",
+        "event_dur",
+        "pixels",
+        "tot_pix",
+        "dy_ar_km2",
+        "tot_ar_km2",
+        "fsr_px_dy",
+        "fsr_km2_dy",
+        "mx_grw_px",
+        "mn_grw_px",
+        "mu_grw_px",
+        "mx_grw_km2",
+        "mn_grw_km2",
+        "mu_grw_km2",
+        "mx_grw_dte",
+        "lc_code",
+        "lc_mode",
+        "lc_name",
+        "lc_desc",
+        "lc_type",
+        "eco_mode",
+        "eco_type",
+        "eco_name",
+        "ig_utm_x",
+        "ig_utm_y"
+      ],
+      "package_relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "package_release": "fire-vase-data-lake-v0.1",
+      "reported_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+      "rights_evidence": [
+        "package README retains upstream FIRED/gridMET terms; dataset-specific permission evidence pending"
+      ],
+      "rights_status": "NEEDS_EVIDENCE",
+      "source_id": "fired_daily"
+    },
+    {
+      "checksum_evidence": "data_lake/fire-vase-data-lake-v0.1/file_manifest.csv; historical full-container SHA, not current content verification",
+      "checksum_scope": "historical_full_container_not_reverified",
+      "expected_size_bytes": 256565248,
+      "file_format": "gpkg",
+      "local_path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "measurement_semantics": "Catalog event boundaries and total area; not a daily increment",
+      "native_fields": [
+        "fid",
+        "geom",
+        "id",
+        "ig_date",
+        "ig_day",
+        "ig_month",
+        "ig_year",
+        "last_date",
+        "event_dur",
+        "tot_pix",
+        "tot_ar_km2",
+        "fsr_px_dy",
+        "fsr_km2_dy",
+        "mx_grw_px",
+        "mn_grw_px",
+        "mu_grw_px",
+        "mx_grw_km2",
+        "mn_grw_km2",
+        "mu_grw_km2",
+        "mx_grw_dte",
+        "lc_code",
+        "lc_mode",
+        "lc_name",
+        "lc_desc",
+        "lc_type",
+        "eco_mode",
+        "eco_type",
+        "eco_name",
+        "ig_utm_x",
+        "ig_utm_y",
+        "tot_perim"
+      ],
+      "package_relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "package_release": "fire-vase-data-lake-v0.1",
+      "reported_sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+      "rights_evidence": [
+        "package README retains upstream FIRED/gridMET terms; dataset-specific permission evidence pending"
+      ],
+      "rights_status": "NEEDS_EVIDENCE",
+      "source_id": "fired_events"
+    },
+    {
+      "checksum_evidence": "data_lake/fire-vase-data-lake-v0.1/file_manifest.csv; historical full-container SHA, not current content verification",
+      "checksum_scope": "historical_full_container_not_reverified",
+      "expected_size_bytes": 38403514,
+      "file_format": "parquet",
+      "local_path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+      "measurement_semantics": "Upstream copy ring_area_km2=dy_ar_km2; reconstructed cumulative sum distinct from catalog total",
+      "native_fields": [
+        "fire_id",
+        "slice_index",
+        "timestamp",
+        "year",
+        "vase_version",
+        "vase_cache_key",
+        "geometry_cache_key",
+        "climate_cache_key",
+        "climate_source",
+        "climate_temporal_resolution",
+        "climate_extraction_method",
+        "ring_area_km2",
+        "cumulative_area_km2",
+        "normalized_vase_width",
+        "maximum_temperature_c",
+        "minimum_temperature_c",
+        "vpd_kpa",
+        "wind_speed_m_s",
+        "precipitation_mm",
+        "maximum_relative_humidity_pct",
+        "minimum_relative_humidity_pct",
+        "specific_humidity_kg_kg",
+        "fuel_moisture_100hr_pct",
+        "fuel_moisture_1000hr_pct",
+        "energy_release_component",
+        "burning_index",
+        "reference_evapotranspiration_mm",
+        "potential_evapotranspiration_mm",
+        "solar_radiation_w_m2",
+        "wind_present",
+        "climate_available",
+        "climate_failure_reason"
+      ],
+      "package_relative_path": "files/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+      "package_release": "fire-vase-data-lake-v0.1",
+      "reported_sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+      "rights_evidence": [
+        "package README retains upstream FIRED/gridMET terms; dataset-specific permission evidence pending"
+      ],
+      "rights_status": "NEEDS_EVIDENCE",
+      "source_id": "cached_slices"
+    },
+    {
+      "checksum_evidence": "data_lake/fire-vase-data-lake-v0.1/file_manifest.csv; historical full-container SHA, not current content verification",
+      "checksum_scope": "historical_full_container_not_reverified",
+      "expected_size_bytes": 23582087,
+      "file_format": "parquet",
+      "local_path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+      "measurement_semantics": "Event attributes for source reconciliation and evaluation-only strata; not predictors",
+      "native_fields": [
+        "fire_id",
+        "trait_version",
+        "processing_version",
+        "year",
+        "region",
+        "total_area_km2",
+        "duration_hours",
+        "peak_growth_km2_per_hour",
+        "geometry_cache_key",
+        "climate_cache_key",
+        "event_cache_key"
+      ],
+      "package_relative_path": "files/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+      "package_release": "fire-vase-data-lake-v0.1",
+      "reported_sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+      "rights_evidence": [
+        "package README retains upstream FIRED/gridMET terms; dataset-specific permission evidence pending"
+      ],
+      "rights_status": "NEEDS_EVIDENCE",
+      "source_id": "cached_traits"
+    }
+  ],
+  "unresolved": [
+    "dataset-specific rights/attribution and derivative/publication conditions",
+    "original daily-bin/time-zone/unit definitions",
+    "native QA/uncertainty evidence",
+    "source/cache equivalence for these exact bytes",
+    "operational availability and event-prefix origin",
+    "current full-container byte verification before any decoding"
+  ],
+  "version": "fire-real-review-packet-v1"
+}

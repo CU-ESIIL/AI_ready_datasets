@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/lake_experiment.py", line 75, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/lake_experiment.py", line 71, in main
+    require_scope(plan,auth,'profile_rows') # fail before loading source/binding/verification or creating outputs
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/lake_authorization.py", line 31, in require_scope
+    if reasons:raise PermissionError('Full-lake '+scope+' blocked: '+','.join(reasons))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: Full-lake profile_rows blocked: external_human_review_missing,attributed_timestamped_review_missing,verified_external_human_receipt_missing,scope_not_approved,semantic:NEEDS_EVIDENCE,units:NEEDS_EVIDENCE,support:NEEDS_EVIDENCE,rights:NEEDS_EVIDENCE,integrity:NEEDS_EVIDENCE,quality:NEEDS_EVIDENCE,availability:NEEDS_EVIDENCE,execution:NEEDS_EVIDENCE,publication:NEEDS_EVIDENCE

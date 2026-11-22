@@ -1,0 +1,500 @@
+[
+  {
+    "architecture": {
+      "activation": "tanh",
+      "hidden_channels": 8,
+      "input_channels": 4,
+      "kernel": 3,
+      "kind": "tcn",
+      "objective": "MSE of training-standardized log1p next-day growth",
+      "optimizer": "Adam beta=(0.9,0.999), global norm clip 5, weight L2 1e-4",
+      "window": 12
+    },
+    "checkpoint": "tcn-seed-271.npz",
+    "checkpoint_sha256": "4d1d6d666574712ac2c183f191dcc02ba4ab33e56ef96aed8238654f7d4c32bf",
+    "cpu_training_ns": 329811000,
+    "embedding_dimension": 4,
+    "kind": "tcn",
+    "loss_curve": [
+      {
+        "epoch": 1,
+        "training_loss": 0.5930072977304663
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.2375855459873798
+      },
+      {
+        "epoch": 21,
+        "training_loss": 0.21570271785239575
+      },
+      {
+        "epoch": 31,
+        "training_loss": 0.21028519284851288
+      },
+      {
+        "epoch": 41,
+        "training_loss": 0.19729168612587122
+      },
+      {
+        "epoch": 51,
+        "training_loss": 0.20819073989249345
+      },
+      {
+        "epoch": 61,
+        "training_loss": 0.1994907619547924
+      },
+      {
+        "epoch": 71,
+        "training_loss": 0.18967049997348165
+      },
+      {
+        "epoch": 81,
+        "training_loss": 0.1924866714191119
+      },
+      {
+        "epoch": 91,
+        "training_loss": 0.18809580137861232
+      },
+      {
+        "epoch": 101,
+        "training_loss": 0.1916637290092204
+      },
+      {
+        "epoch": 111,
+        "training_loss": 0.18652404225205882
+      },
+      {
+        "epoch": 120,
+        "training_loss": 0.1923085523179161
+      }
+    ],
+    "parameter_digest": "657cfc6b0b34aec5bcc9c15ada41d370c69b1cb11075188a465b7202c0614a79",
+    "parameters": 177,
+    "seed": 271,
+    "test_metrics_descriptive_only": {
+      "coverage_90": 0.9140625,
+      "mae_km2_day": 1.4012671030570931,
+      "mean_interval_width_km2_day": 5.98472159128792,
+      "mse_log1p": 0.06811829097910142,
+      "n": 256
+    },
+    "validation_mse_log1p": 0.0640765797261384,
+    "wall_training_ns": 330326500
+  },
+  {
+    "architecture": {
+      "activation": "tanh",
+      "hidden_channels": 8,
+      "input_channels": 4,
+      "kernel": 3,
+      "kind": "tcn",
+      "objective": "MSE of training-standardized log1p next-day growth",
+      "optimizer": "Adam beta=(0.9,0.999), global norm clip 5, weight L2 1e-4",
+      "window": 12
+    },
+    "checkpoint": "tcn-seed-811.npz",
+    "checkpoint_sha256": "ce8945663e87bf4b3502f7476180497c25dbcc24ae73b6abb01cc4fb46daf872",
+    "cpu_training_ns": 329755000,
+    "embedding_dimension": 4,
+    "kind": "tcn",
+    "loss_curve": [
+      {
+        "epoch": 1,
+        "training_loss": 0.6237336489919962
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.2305008377621228
+      },
+      {
+        "epoch": 21,
+        "training_loss": 0.22049824734191897
+      },
+      {
+        "epoch": 31,
+        "training_loss": 0.2262237249992508
+      },
+      {
+        "epoch": 41,
+        "training_loss": 0.2243344705745298
+      },
+      {
+        "epoch": 51,
+        "training_loss": 0.2065165793327271
+      },
+      {
+        "epoch": 61,
+        "training_loss": 0.20359144607294669
+      },
+      {
+        "epoch": 71,
+        "training_loss": 0.20130882871386863
+      },
+      {
+        "epoch": 81,
+        "training_loss": 0.2011808610536545
+      },
+      {
+        "epoch": 91,
+        "training_loss": 0.20061966878835333
+      },
+      {
+        "epoch": 101,
+        "training_loss": 0.19792294900605029
+      },
+      {
+        "epoch": 111,
+        "training_loss": 0.1857461174303009
+      },
+      {
+        "epoch": 120,
+        "training_loss": 0.1801138114032133
+      }
+    ],
+    "parameter_digest": "a32139b4337bf24167aa63898d18da63737165202133f62c84d979c07fb7cadb",
+    "parameters": 177,
+    "seed": 811,
+    "test_metrics_descriptive_only": {
+      "coverage_90": 0.92578125,
+      "mae_km2_day": 1.3177505933862992,
+      "mean_interval_width_km2_day": 5.665806557314601,
+      "mse_log1p": 0.060604473468838155,
+      "n": 256
+    },
+    "validation_mse_log1p": 0.057367129697104446,
+    "wall_training_ns": 329796417
+  },
+  {
+    "architecture": {
+      "activation": "tanh",
+      "hidden_channels": 8,
+      "input_channels": 4,
+      "kernel": 3,
+      "kind": "tcn",
+      "objective": "MSE of training-standardized log1p next-day growth",
+      "optimizer": "Adam beta=(0.9,0.999), global norm clip 5, weight L2 1e-4",
+      "window": 12
+    },
+    "checkpoint": "tcn-seed-1729.npz",
+    "checkpoint_sha256": "c243b222a95ba70678cf0012f542763fd947da33546609d456b00fae9ee74d23",
+    "cpu_training_ns": 328188000,
+    "embedding_dimension": 4,
+    "kind": "tcn",
+    "loss_curve": [
+      {
+        "epoch": 1,
+        "training_loss": 0.7987107560895079
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.2546048966582526
+      },
+      {
+        "epoch": 21,
+        "training_loss": 0.22897243435198214
+      },
+      {
+        "epoch": 31,
+        "training_loss": 0.21413197248297836
+      },
+      {
+        "epoch": 41,
+        "training_loss": 0.20584717064011393
+      },
+      {
+        "epoch": 51,
+        "training_loss": 0.20440173516530902
+      },
+      {
+        "epoch": 61,
+        "training_loss": 0.1992983624064312
+      },
+      {
+        "epoch": 71,
+        "training_loss": 0.2061102847890138
+      },
+      {
+        "epoch": 81,
+        "training_loss": 0.1983732572986321
+      },
+      {
+        "epoch": 91,
+        "training_loss": 0.194983275731562
+      },
+      {
+        "epoch": 101,
+        "training_loss": 0.18971684390887156
+      },
+      {
+        "epoch": 111,
+        "training_loss": 0.1901968885361759
+      },
+      {
+        "epoch": 120,
+        "training_loss": 0.19245473169598548
+      }
+    ],
+    "parameter_digest": "7afcb547d172d31fde7172f763cdc8ddb714ad5ff79fab39213bb832badbeaa5",
+    "parameters": 177,
+    "seed": 1729,
+    "test_metrics_descriptive_only": {
+      "coverage_90": 0.88671875,
+      "mae_km2_day": 1.3736256943913285,
+      "mean_interval_width_km2_day": 5.79061942727818,
+      "mse_log1p": 0.0670166078406495,
+      "n": 256
+    },
+    "validation_mse_log1p": 0.062478113010457165,
+    "wall_training_ns": 328203042
+  },
+  {
+    "architecture": {
+      "activation": "tanh",
+      "hidden_channels": 3,
+      "input_channels": 4,
+      "kernel": null,
+      "kind": "mlp",
+      "objective": "MSE of training-standardized log1p next-day growth",
+      "optimizer": "Adam beta=(0.9,0.999), global norm clip 5, weight L2 1e-4",
+      "window": 12
+    },
+    "checkpoint": "mlp-seed-271.npz",
+    "checkpoint_sha256": "b83825b62d20538adc5f868177de855bb0be5ce6dce23e520281307f419290f4",
+    "cpu_training_ns": 71090000,
+    "embedding_dimension": 4,
+    "kind": "mlp",
+    "loss_curve": [
+      {
+        "epoch": 1,
+        "training_loss": 0.6713337114676255
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.24583031522046608
+      },
+      {
+        "epoch": 21,
+        "training_loss": 0.21942156335285296
+      },
+      {
+        "epoch": 31,
+        "training_loss": 0.20583278326117127
+      },
+      {
+        "epoch": 41,
+        "training_loss": 0.19764982042759763
+      },
+      {
+        "epoch": 51,
+        "training_loss": 0.19731448842974883
+      },
+      {
+        "epoch": 61,
+        "training_loss": 0.19244165381085065
+      },
+      {
+        "epoch": 71,
+        "training_loss": 0.18291751922118352
+      },
+      {
+        "epoch": 81,
+        "training_loss": 0.1820487834760367
+      },
+      {
+        "epoch": 91,
+        "training_loss": 0.17929082755662984
+      },
+      {
+        "epoch": 101,
+        "training_loss": 0.18084409555069075
+      },
+      {
+        "epoch": 111,
+        "training_loss": 0.18306879942686705
+      },
+      {
+        "epoch": 120,
+        "training_loss": 0.17690256418185937
+      }
+    ],
+    "parameter_digest": "756d4608718ce2d0b1e180546cd6478bd82543e90e492c905251ff46148bb1db",
+    "parameters": 168,
+    "seed": 271,
+    "test_metrics_descriptive_only": {
+      "coverage_90": 0.94921875,
+      "mae_km2_day": 1.3773914129819695,
+      "mean_interval_width_km2_day": 5.988591881975431,
+      "mse_log1p": 0.06341257639960089,
+      "n": 256
+    },
+    "validation_mse_log1p": 0.0637012932732676,
+    "wall_training_ns": 71096333
+  },
+  {
+    "architecture": {
+      "activation": "tanh",
+      "hidden_channels": 3,
+      "input_channels": 4,
+      "kernel": null,
+      "kind": "mlp",
+      "objective": "MSE of training-standardized log1p next-day growth",
+      "optimizer": "Adam beta=(0.9,0.999), global norm clip 5, weight L2 1e-4",
+      "window": 12
+    },
+    "checkpoint": "mlp-seed-811.npz",
+    "checkpoint_sha256": "60ccd7f324c0ee3cfcd851c636ba0d1fd98cdb25d801f8036346301f696a2fed",
+    "cpu_training_ns": 70363000,
+    "embedding_dimension": 4,
+    "kind": "mlp",
+    "loss_curve": [
+      {
+        "epoch": 1,
+        "training_loss": 0.9275797032956979
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.2179185498364641
+      },
+      {
+        "epoch": 21,
+        "training_loss": 0.19653818489221903
+      },
+      {
+        "epoch": 31,
+        "training_loss": 0.1900803154689748
+      },
+      {
+        "epoch": 41,
+        "training_loss": 0.20182338394866856
+      },
+      {
+        "epoch": 51,
+        "training_loss": 0.17956446212517924
+      },
+      {
+        "epoch": 61,
+        "training_loss": 0.1791966089752389
+      },
+      {
+        "epoch": 71,
+        "training_loss": 0.17639920289473127
+      },
+      {
+        "epoch": 81,
+        "training_loss": 0.17494322315297936
+      },
+      {
+        "epoch": 91,
+        "training_loss": 0.18273744138807083
+      },
+      {
+        "epoch": 101,
+        "training_loss": 0.17366825093655386
+      },
+      {
+        "epoch": 111,
+        "training_loss": 0.17001569200339292
+      },
+      {
+        "epoch": 120,
+        "training_loss": 0.16951116233665225
+      }
+    ],
+    "parameter_digest": "0e83465422394bd912ec47d49b9a21e31c0ca7bf89e9c6b0e82e3fef025f4206",
+    "parameters": 168,
+    "seed": 811,
+    "test_metrics_descriptive_only": {
+      "coverage_90": 0.94140625,
+      "mae_km2_day": 1.3305420455520296,
+      "mean_interval_width_km2_day": 5.965048140657418,
+      "mse_log1p": 0.06052142351945634,
+      "n": 256
+    },
+    "validation_mse_log1p": 0.05679389012689845,
+    "wall_training_ns": 70361875
+  },
+  {
+    "architecture": {
+      "activation": "tanh",
+      "hidden_channels": 3,
+      "input_channels": 4,
+      "kernel": null,
+      "kind": "mlp",
+      "objective": "MSE of training-standardized log1p next-day growth",
+      "optimizer": "Adam beta=(0.9,0.999), global norm clip 5, weight L2 1e-4",
+      "window": 12
+    },
+    "checkpoint": "mlp-seed-1729.npz",
+    "checkpoint_sha256": "4e81c009556cb3bbd79073b250617b11fbabd1a1b8af393209f5e9ae886be143",
+    "cpu_training_ns": 70504000,
+    "embedding_dimension": 4,
+    "kind": "mlp",
+    "loss_curve": [
+      {
+        "epoch": 1,
+        "training_loss": 0.675997581442324
+      },
+      {
+        "epoch": 11,
+        "training_loss": 0.22383244583805417
+      },
+      {
+        "epoch": 21,
+        "training_loss": 0.18644737556527133
+      },
+      {
+        "epoch": 31,
+        "training_loss": 0.20836235477355153
+      },
+      {
+        "epoch": 41,
+        "training_loss": 0.18289321415291157
+      },
+      {
+        "epoch": 51,
+        "training_loss": 0.17876351852594372
+      },
+      {
+        "epoch": 61,
+        "training_loss": 0.18284138006063497
+      },
+      {
+        "epoch": 71,
+        "training_loss": 0.1809699708486523
+      },
+      {
+        "epoch": 81,
+        "training_loss": 0.1759581545784577
+      },
+      {
+        "epoch": 91,
+        "training_loss": 0.18286337091997393
+      },
+      {
+        "epoch": 101,
+        "training_loss": 0.17882042459669975
+      },
+      {
+        "epoch": 111,
+        "training_loss": 0.17823465739769395
+      },
+      {
+        "epoch": 120,
+        "training_loss": 0.17665371083290538
+      }
+    ],
+    "parameter_digest": "014629fe18b04fc3035322c2a37cfd9156979bea1866baa6c7e88f729c6b79a5",
+    "parameters": 168,
+    "seed": 1729,
+    "test_metrics_descriptive_only": {
+      "coverage_90": 0.953125,
+      "mae_km2_day": 1.2891818011825462,
+      "mean_interval_width_km2_day": 5.859535510450855,
+      "mse_log1p": 0.059697802271057664,
+      "n": 256
+    },
+    "validation_mse_log1p": 0.05703059521021791,
+    "wall_training_ns": 70510917
+  }
+]

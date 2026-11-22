@@ -1,0 +1,22 @@
+{
+  "version": "m6-public-source-check-v1",
+  "checked_at": "2026-11-21T18:07:27.498518+00:00",
+  "sources": [
+    {
+      "url": "https://scholar.colorado.edu/concern/datasets/d504rm74m",
+      "retrieval": "HTTP 403 from public web tool",
+      "dataset_license_verified": false,
+      "archive_downloaded": false
+    },
+    {
+      "url": "https://www.mdpi.com/2072-4292/12/21/3498",
+      "doi": "10.3390/rs12213498",
+      "retrieval": "publisher article read",
+      "claim": "Article is CC BY 4.0; not a license determination for inspected dataset release",
+      "dataset_license_verified": false
+    }
+  ],
+  "rights_status": "NEEDS_EVIDENCE",
+  "no_credential_bypass": true,
+  "source_observation_rows_read": 0
+}

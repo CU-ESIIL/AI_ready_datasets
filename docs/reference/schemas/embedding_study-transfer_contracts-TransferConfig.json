@@ -1,0 +1,80 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bootstrap_replicates": {
+      "default": 1000,
+      "maximum": 2000,
+      "minimum": 20,
+      "title": "Bootstrap Replicates",
+      "type": "integer"
+    },
+    "bootstrap_seed": {
+      "default": 880031,
+      "title": "Bootstrap Seed",
+      "type": "integer"
+    },
+    "epochs": {
+      "default": 120,
+      "maximum": 200,
+      "minimum": 1,
+      "title": "Epochs",
+      "type": "integer"
+    },
+    "horizon": {
+      "const": 3,
+      "default": 3,
+      "title": "Horizon",
+      "type": "integer"
+    },
+    "learning_rate": {
+      "default": 0.01,
+      "exclusiveMinimum": 0,
+      "maximum": 0.1,
+      "title": "Learning Rate",
+      "type": "number"
+    },
+    "retrieval_k": {
+      "const": 10,
+      "default": 10,
+      "title": "Retrieval K",
+      "type": "integer"
+    },
+    "ridge_alpha": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Ridge Alpha",
+      "type": "number"
+    },
+    "scope": {
+      "const": "synthetic_only",
+      "default": "synthetic_only",
+      "title": "Scope",
+      "type": "string"
+    },
+    "seeds": {
+      "default": [
+        271,
+        811,
+        1729
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Seeds",
+      "type": "array"
+    },
+    "source_snapshot": {
+      "default": "reports/embedding_utility/fire_vase/results/milestone-4-learning-v1",
+      "title": "Source Snapshot",
+      "type": "string"
+    },
+    "version": {
+      "const": "fire-transfer-v1",
+      "default": "fire-transfer-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "title": "TransferConfig",
+  "type": "object"
+}

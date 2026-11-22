@@ -1,0 +1,7 @@
+{"relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg", "sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62", "historical_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62", "historical_match": true, "bytes": 575012864, "mtime_ns": 1783387010000000000, "seconds": 0.25908670900025754}
+TABLES [('fired_conus-ak_daily_nov2001-march2021',)]
+Traceback (most recent call last):
+  File "/tmp/fire_native_verify.py", line 20, in <module>
+    assert t.replace('_','').isalnum()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

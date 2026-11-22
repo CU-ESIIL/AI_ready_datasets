@@ -1,0 +1,75 @@
+COMPLETED catalog
+native fires 50000
+native fires 100000
+native fires 150000
+native fires 200000
+native fires 250000
+COMPLETED native
+cache fires 50000
+cache fires 100000
+cache fires 150000
+cache fires 200000
+cache fires 250000
+COMPLETED cache
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/population_profile.py", line 231, in <module>
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/population_profile.py", line 230, in main
+    if __name__=='__main__':main()
+                                   
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/population_profile.py", line 217, in run
+    summary={'status':'COMPLETE_NATIVE_AND_CACHE_CENSUS','counts':counts,'catalog_fires':db.execute('SELECT count(*) FROM events').fetchone()[0],'catalog_issues':dict(db.execute('SELECT kind,n FROM catalog_issues')),'reconciliation':reconciliation,'scientific_claim':'retrospective native date-bin support; source quality/uncertainty and operational availability remain unknown','source_identity':identities}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/AI_ready_datasets/src/dataset_prototype/embedding_study/population_profile.py", line 108, in parquet_export
+    finally:
+            ^
+  File "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/spectralbridge/.venv/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 1214, in write_table
+    raise ValueError(msg)
+ValueError: Table schema does not match schema used to create file: 
+table:
+source: string
+id: string
+observations: int64
+valid_area_rows: int64
+valid_supported_rows: int64
+missing_area: int64
+invalid_area: int64
+missing_date: int64
+duplicate_rows: int64
+duplicate_extra: int64
+observed_zero: int64
+exact_day_intervals: int64
+gap_intervals: int64
+unobserved_days: int64
+max_run: int64
+strict: int64
+span: int64
+observed_sum: double
+run_count: int64
+climate_available: null
+cumulative_rows: null
+evidence_hash: string vs. 
+file:
+source: string
+id: string
+observations: int64
+valid_area_rows: int64
+valid_supported_rows: int64
+missing_area: int64
+invalid_area: int64
+missing_date: int64
+duplicate_rows: int64
+duplicate_extra: int64
+observed_zero: int64
+exact_day_intervals: int64
+gap_intervals: int64
+unobserved_days: int64
+max_run: int64
+strict: int64
+span: int64
+observed_sum: double
+run_count: int64
+climate_available: int64
+cumulative_rows: int64
+evidence_hash: string

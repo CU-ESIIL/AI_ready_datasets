@@ -1,0 +1,455 @@
+{
+  "scope": "HISTORICAL_AGGREGATE_REANALYSIS_NOT_FRESH_FULL_LAKE_PROFILING",
+  "source_observation_rows_read": 0,
+  "source_arrays_read": 0,
+  "aggregate_rows_read": 165,
+  "input_audit_historical": {
+    "rows": 626102,
+    "one_day_transitions": 196611,
+    "longer_gaps": 150922,
+    "missing_dates": 0,
+    "duplicate_date_rows": 0,
+    "terminal_rows": 278569,
+    "zero_day_transitions": 0,
+    "eligible_transitions": 196611,
+    "excluded_rows": 429491,
+    "raw_daily_rows": 627033,
+    "raw_events": 278569,
+    "cached_events": 278569,
+    "source_rows_absent_from_cache": 931,
+    "daily_increment_max_abs_error": 0.0,
+    "source_missing_growth": 0,
+    "source_negative_growth": 0,
+    "mislabeled_peak_equals_catalog_mean": 278569,
+    "weather_extraction_methods": {
+      "event_centroid_nearest_grid_cell": 626102
+    }
+  },
+  "primary_fraction": 0.03678083347393285,
+  "one_observation_fraction": 0.5782158100865494,
+  "two_observation_fraction": 0.17212970574615266,
+  "consecutive_pair_fraction": 0.5657333260438577,
+  "temporal_depth": [
+    {
+      "depth": 3,
+      "all_histories_observation_count_at_least_depth": 69546,
+      "whole_history_consecutive_fires": 10246,
+      "whole_history_consecutive_windows": 24855,
+      "whole_history_consecutive_fraction_of_catalog": 0.03678083347393285,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 5,
+      "all_histories_observation_count_at_least_depth": 30538,
+      "whole_history_consecutive_fires": 2887,
+      "whole_history_consecutive_windows": 9486,
+      "whole_history_consecutive_fraction_of_catalog": 0.01036368009362133,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 7,
+      "all_histories_observation_count_at_least_depth": 15036,
+      "whole_history_consecutive_fires": 1171,
+      "whole_history_consecutive_windows": 4796,
+      "whole_history_consecutive_fraction_of_catalog": 0.004203626390589047,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 10,
+      "all_histories_observation_count_at_least_depth": 5956,
+      "whole_history_consecutive_fires": 438,
+      "whole_history_consecutive_windows": 2205,
+      "whole_history_consecutive_fraction_of_catalog": 0.0015723213997250233,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 14,
+      "all_histories_observation_count_at_least_depth": 2201,
+      "whole_history_consecutive_fires": 148,
+      "whole_history_consecutive_windows": 1015,
+      "whole_history_consecutive_fraction_of_catalog": 0.0005312866830121083,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 21,
+      "all_histories_observation_count_at_least_depth": 540,
+      "whole_history_consecutive_fires": 52,
+      "whole_history_consecutive_windows": 342,
+      "whole_history_consecutive_fraction_of_catalog": 0.0001866682940312813,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 30,
+      "all_histories_observation_count_at_least_depth": 143,
+      "whole_history_consecutive_fires": 10,
+      "whole_history_consecutive_windows": 110,
+      "whole_history_consecutive_fraction_of_catalog": 3.589774885216948e-05,
+      "local_runs_in_gappy_histories": null
+    }
+  ],
+  "prediction_windows_historical_subset": [
+    {
+      "depth": 3,
+      "horizon": 1,
+      "eligible_historical_whole_consecutive_fires": 5123,
+      "dependent_windows": 14609,
+      "supports_acceleration_and_variability": false,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 3,
+      "horizon": 3,
+      "eligible_historical_whole_consecutive_fires": 1803,
+      "dependent_windows": 6599,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 3,
+      "horizon": 7,
+      "eligible_historical_whole_consecutive_fires": 438,
+      "dependent_windows": 2205,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 7,
+      "horizon": 1,
+      "eligible_historical_whole_consecutive_fires": 830,
+      "dependent_windows": 3625,
+      "supports_acceleration_and_variability": false,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 7,
+      "horizon": 3,
+      "eligible_historical_whole_consecutive_fires": 438,
+      "dependent_windows": 2205,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 7,
+      "horizon": 7,
+      "eligible_historical_whole_consecutive_fires": 148,
+      "dependent_windows": 1015,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 14,
+      "horizon": 1,
+      "eligible_historical_whole_consecutive_fires": 121,
+      "dependent_windows": 867,
+      "supports_acceleration_and_variability": false,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 14,
+      "horizon": 3,
+      "eligible_historical_whole_consecutive_fires": 93,
+      "dependent_windows": 646,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 14,
+      "horizon": 7,
+      "eligible_historical_whole_consecutive_fires": 52,
+      "dependent_windows": 342,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 30,
+      "horizon": 1,
+      "eligible_historical_whole_consecutive_fires": 9,
+      "dependent_windows": 100,
+      "supports_acceleration_and_variability": false,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 30,
+      "horizon": 3,
+      "eligible_historical_whole_consecutive_fires": 8,
+      "dependent_windows": 83,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    },
+    {
+      "depth": 30,
+      "horizon": 7,
+      "eligible_historical_whole_consecutive_fires": 6,
+      "dependent_windows": 56,
+      "supports_acceleration_and_variability": true,
+      "scope": "historical whole-consecutive-history subset only; gappy-history local windows unknown"
+    }
+  ],
+  "region_selection": [
+    {
+      "stratum": "alaska",
+      "all_events": 41279,
+      "historical_primary": 1028,
+      "selection_fraction": 0.024903704062598415,
+      "all_event_share": 0.14818231748687039,
+      "primary_share": 0.10033183681436658,
+      "weather_complete": 0
+    },
+    {
+      "stratum": "central",
+      "all_events": 89584,
+      "historical_primary": 2339,
+      "selection_fraction": 0.02610957313806037,
+      "all_event_share": 0.32158639331727507,
+      "primary_share": 0.22828420847159867,
+      "weather_complete": 89584
+    },
+    {
+      "stratum": "east",
+      "all_events": 43972,
+      "historical_primary": 1418,
+      "selection_fraction": 0.03224779405075957,
+      "all_event_share": 0.15784958125275964,
+      "primary_share": 0.13839547140347452,
+      "weather_complete": 43972
+    },
+    {
+      "stratum": "hawaii",
+      "all_events": 55,
+      "historical_primary": 6,
+      "selection_fraction": 0.10909090909090909,
+      "all_event_share": 0.00019743761868693213,
+      "primary_share": 0.0005855943782939684,
+      "weather_complete": 0
+    },
+    {
+      "stratum": "intermountain",
+      "all_events": 58896,
+      "historical_primary": 3259,
+      "selection_fraction": 0.0553348274925292,
+      "all_event_share": 0.21142338163973737,
+      "primary_share": 0.31807534647667385,
+      "weather_complete": 58896
+    },
+    {
+      "stratum": "west",
+      "all_events": 44783,
+      "historical_primary": 2196,
+      "selection_fraction": 0.049036464729919835,
+      "all_event_share": 0.1607608886846706,
+      "primary_share": 0.21432754245559243,
+      "weather_complete": 44783
+    }
+  ],
+  "year_selection": [
+    {
+      "stratum": "2000",
+      "all_events": 629,
+      "historical_primary": 11,
+      "selection_fraction": 0.017488076311605722,
+      "all_event_share": 0.00225796840280146,
+      "primary_share": 0.001073589693538942,
+      "weather_complete": 629
+    },
+    {
+      "stratum": "2001",
+      "all_events": 5970,
+      "historical_primary": 186,
+      "selection_fraction": 0.031155778894472363,
+      "all_event_share": 0.02143095606474518,
+      "primary_share": 0.01815342572711302,
+      "weather_complete": 5845
+    },
+    {
+      "stratum": "2002",
+      "all_events": 9572,
+      "historical_primary": 301,
+      "selection_fraction": 0.03144588382783117,
+      "all_event_share": 0.03436132520129662,
+      "primary_share": 0.029377317977747414,
+      "weather_complete": 7437
+    },
+    {
+      "stratum": "2003",
+      "all_events": 14978,
+      "historical_primary": 562,
+      "selection_fraction": 0.03752169849112031,
+      "all_event_share": 0.053767648230779445,
+      "primary_share": 0.05485067343353504,
+      "weather_complete": 13571
+    },
+    {
+      "stratum": "2004",
+      "all_events": 19576,
+      "historical_primary": 630,
+      "selection_fraction": 0.032182263996730694,
+      "all_event_share": 0.07027343315300698,
+      "primary_share": 0.06148740972086668,
+      "weather_complete": 12044
+    },
+    {
+      "stratum": "2005",
+      "all_events": 17355,
+      "historical_primary": 617,
+      "selection_fraction": 0.035551714203399594,
+      "all_event_share": 0.06230054313294013,
+      "primary_share": 0.06021862190122975,
+      "weather_complete": 12327
+    },
+    {
+      "stratum": "2006",
+      "all_events": 12465,
+      "historical_primary": 574,
+      "selection_fraction": 0.04604893702366627,
+      "all_event_share": 0.04474654394422926,
+      "primary_share": 0.05602186219012297,
+      "weather_complete": 12057
+    },
+    {
+      "stratum": "2007",
+      "all_events": 14181,
+      "historical_primary": 522,
+      "selection_fraction": 0.03680981595092025,
+      "all_event_share": 0.05090659764726154,
+      "primary_share": 0.05094671091157525,
+      "weather_complete": 13223
+    },
+    {
+      "stratum": "2008",
+      "all_events": 13625,
+      "historical_primary": 509,
+      "selection_fraction": 0.037357798165137616,
+      "all_event_share": 0.048910682811080915,
+      "primary_share": 0.04967792309193832,
+      "weather_complete": 13324
+    },
+    {
+      "stratum": "2009",
+      "all_events": 13854,
+      "historical_primary": 481,
+      "selection_fraction": 0.03471921466724412,
+      "all_event_share": 0.0497327412597956,
+      "primary_share": 0.04694514932656647,
+      "weather_complete": 10583
+    },
+    {
+      "stratum": "2010",
+      "all_events": 15650,
+      "historical_primary": 598,
+      "selection_fraction": 0.03821086261980831,
+      "all_event_share": 0.05617997695364524,
+      "primary_share": 0.05836423970329885,
+      "weather_complete": 14246
+    },
+    {
+      "stratum": "2011",
+      "all_events": 13268,
+      "historical_primary": 660,
+      "selection_fraction": 0.04974374434730178,
+      "all_event_share": 0.04762913317705847,
+      "primary_share": 0.06441538161233652,
+      "weather_complete": 13053
+    },
+    {
+      "stratum": "2012",
+      "all_events": 10763,
+      "historical_primary": 470,
+      "selection_fraction": 0.043668122270742356,
+      "all_event_share": 0.038636747089590015,
+      "primary_share": 0.045871559633027525,
+      "weather_complete": 9866
+    },
+    {
+      "stratum": "2013",
+      "all_events": 12685,
+      "historical_primary": 392,
+      "selection_fraction": 0.030902640914465904,
+      "all_event_share": 0.04553629441897698,
+      "primary_share": 0.038258832715205936,
+      "weather_complete": 10660
+    },
+    {
+      "stratum": "2014",
+      "all_events": 10350,
+      "historical_primary": 362,
+      "selection_fraction": 0.034975845410628016,
+      "all_event_share": 0.03715417006199541,
+      "primary_share": 0.03533086082373609,
+      "weather_complete": 10055
+    },
+    {
+      "stratum": "2015",
+      "all_events": 22282,
+      "historical_primary": 613,
+      "selection_fraction": 0.027510995422313975,
+      "all_event_share": 0.07998736399240404,
+      "primary_share": 0.05982822564903377,
+      "weather_complete": 13214
+    },
+    {
+      "stratum": "2016",
+      "all_events": 13511,
+      "historical_primary": 566,
+      "selection_fraction": 0.04189179187328843,
+      "all_event_share": 0.04850144847416619,
+      "primary_share": 0.05524106968573102,
+      "weather_complete": 12609
+    },
+    {
+      "stratum": "2017",
+      "all_events": 12652,
+      "historical_primary": 508,
+      "selection_fraction": 0.04015175466329434,
+      "all_event_share": 0.04541783184776483,
+      "primary_share": 0.049580324028889323,
+      "weather_complete": 12049
+    },
+    {
+      "stratum": "2018",
+      "all_events": 11436,
+      "historical_primary": 488,
+      "selection_fraction": 0.04267226302903113,
+      "all_event_share": 0.04105266558734102,
+      "primary_share": 0.04762834276790943,
+      "weather_complete": 10808
+    },
+    {
+      "stratum": "2019",
+      "all_events": 15667,
+      "historical_primary": 469,
+      "selection_fraction": 0.029935533286525817,
+      "all_event_share": 0.056241003126693924,
+      "primary_share": 0.045773960569978525,
+      "weather_complete": 11638
+    },
+    {
+      "stratum": "2020",
+      "all_events": 13113,
+      "historical_primary": 532,
+      "selection_fraction": 0.04057042629451689,
+      "all_event_share": 0.04707271806984984,
+      "primary_share": 0.05192270154206519,
+      "weather_complete": 13010
+    },
+    {
+      "stratum": "2021",
+      "all_events": 4987,
+      "historical_primary": 195,
+      "selection_fraction": 0.03910166432725085,
+      "all_event_share": 0.01790220735257692,
+      "primary_share": 0.01903181729455397,
+      "weather_complete": 4987
+    }
+  ],
+  "exact_current_population_counts": null,
+  "source_specific_scientific_power": null,
+  "source_root": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase",
+  "source_hashes": {
+    "analysis/v2/input_audit.json": "a7dc9c1f4d00bf1a831886ed797d55e5130d29b7ae8c33efea33b2f76dad71f6",
+    "analysis/v2/semantic_summary.json": "132c703103ccafaffb3e18b905de3440d7a7795545067b0c87ecb05c70dbbedd",
+    "analysis/scientific_validation/observation_counts.csv": "4dd190a27dc4bc7bdbc5659fb6d1b2d4918e16461ef79e47c4378c8bd34bc3dc",
+    "analysis/scientific_validation/weather_selection_counts.csv": "c32181a24a039c6ef18ccb7c5d6ffc0a309ce512f6b6fdc1f8fa7a560d135fd8",
+    "analysis/scientific_validation/final_report.md": "09ca56abeffefed0367fdfd46518e77dc198e0715985db0bc3e7a9def3328b8e",
+    "scripts/fire_vase_v2.py": "38b29cb7775f172930b09337c57b1ba4b894bc5042d3270b182e6f4a56e26c9a"
+  }
+}

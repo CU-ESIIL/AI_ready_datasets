@@ -1,0 +1,38 @@
+{
+  "additionalProperties": false,
+  "description": "Private independent subsequent observation, never an encoder input.",
+  "properties": {
+    "available_at": {
+      "format": "date-time",
+      "title": "Available At",
+      "type": "string"
+    },
+    "date": {
+      "format": "date",
+      "title": "Date",
+      "type": "string"
+    },
+    "fire_id": {
+      "title": "Fire Id",
+      "type": "string"
+    },
+    "growth_km2_day": {
+      "minimum": 0,
+      "title": "Growth Km2 Day",
+      "type": "number"
+    },
+    "observation_id": {
+      "title": "Observation Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fire_id",
+    "date",
+    "observation_id",
+    "growth_km2_day",
+    "available_at"
+  ],
+  "title": "PrefixOutcome",
+  "type": "object"
+}

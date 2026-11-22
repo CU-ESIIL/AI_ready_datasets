@@ -1,0 +1,91 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "access_authorized": {
+      "default": false,
+      "title": "Access Authorized",
+      "type": "boolean"
+    },
+    "approved_external_cost_cap": {
+      "default": 0,
+      "maximum": 0,
+      "minimum": 0,
+      "title": "Approved External Cost Cap",
+      "type": "number"
+    },
+    "cost_basis": {
+      "default": "unverified",
+      "enum": [
+        "unverified",
+        "operator_confirmed_no_external_charge"
+      ],
+      "title": "Cost Basis",
+      "type": "string"
+    },
+    "fixture": {
+      "title": "Fixture",
+      "type": "string"
+    },
+    "input_sha256": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Sha256",
+      "type": "object"
+    },
+    "max_provider_calls": {
+      "default": 6,
+      "maximum": 20000,
+      "minimum": 1,
+      "title": "Max Provider Calls",
+      "type": "integer"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    },
+    "provider": {
+      "const": "openclaw",
+      "default": "openclaw",
+      "title": "Provider",
+      "type": "string"
+    },
+    "repetitions": {
+      "default": 2,
+      "maximum": 3,
+      "minimum": 1,
+      "title": "Repetitions",
+      "type": "integer"
+    },
+    "runtime": {
+      "default": "run/openclaw",
+      "title": "Runtime",
+      "type": "string"
+    },
+    "smoke_evidence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Smoke Evidence"
+    },
+    "version": {
+      "const": "fire-pilot-live-v3",
+      "default": "fire-pilot-live-v3",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fixture",
+    "input_sha256",
+    "model"
+  ],
+  "title": "PilotLiveConfig",
+  "type": "object"
+}

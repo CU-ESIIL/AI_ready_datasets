@@ -1,0 +1,24 @@
+RETRIEVAL cached_native
+RETRIEVAL interpretable_exact
+RETRIEVAL raw_state
+RETRIEVAL pca-request4
+RETRIEVAL supervised-4
+RETRIEVAL self_supervised-4
+RETRIEVAL multitask-4
+RETRIEVAL pca-request8
+RETRIEVAL supervised-8
+RETRIEVAL self_supervised-8
+RETRIEVAL multitask-8
+RETRIEVAL pca-request16
+RETRIEVAL supervised-16
+RETRIEVAL self_supervised-16
+RETRIEVAL multitask-16
+RETRIEVAL pca-request32
+RETRIEVAL supervised-32
+RETRIEVAL self_supervised-32
+RETRIEVAL multitask-32
+RETRIEVAL pca-request64
+RETRIEVAL supervised-64
+RETRIEVAL self_supervised-64
+RETRIEVAL multitask-64
+PRIMARY RETRIEVAL AND ACCESS COMPLETE

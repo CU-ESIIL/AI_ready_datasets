@@ -1,0 +1,30 @@
+{
+  "status": "ALL_FIRE_SIDECAR_AND_WHOLE_TEST_NATIVE_ACCESS_VERIFIED",
+  "sidecar_fire_ids": 278865,
+  "sidecar_fields_used": [
+    "original date ordinals",
+    "ragged record offsets"
+  ],
+  "scientific_area_values_in_sidecar": false,
+  "native_recovery_calls": 41991,
+  "seconds": 1.654960416000904,
+  "numerically_identical_fire_states": 41991,
+  "max_absolute_property_error": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "returned_native_response_bytes": 3888100,
+  "filesystem_physical_bytes_read": null,
+  "median_call_ns": 28458.0,
+  "total_call_ns": 1553651252,
+  "native_values_persisted": false,
+  "metadata_recovery_scope": "counts/elapsed spans verified from metadata fields; full date sequence stays in original sidecar; source identity and quality not inferred"
+}

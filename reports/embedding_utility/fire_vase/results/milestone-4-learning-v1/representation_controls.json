@@ -1,0 +1,54 @@
+{
+  "controls": [
+    {
+      "base_prefix_digest": "1cfe059525c516576cafe2a7664b15e48b0809e526360bf6c7b11373ef673b75",
+      "control": "temporal_order",
+      "derived_prefix_digest": "6f10e9676dddc9f459b49d98e1ea3efa2cd399fef062367e7c70b46480880ac1",
+      "embedding_l2_change": 0.07317714852370236,
+      "expected": "sensitivity diagnostic, not a required invariant for absolute next-day growth",
+      "observed_prefix_total_ratio": 1.0,
+      "recipe": "prefix-perturbation-v1"
+    },
+    {
+      "base_prefix_digest": "1cfe059525c516576cafe2a7664b15e48b0809e526360bf6c7b11373ef673b75",
+      "control": "same_shape_different_scale",
+      "derived_prefix_digest": "cf8ba71d113d43d9111cd61c3d0cd5684ea4d71ed0be3f5d2bf566ff2064ce3d",
+      "embedding_l2_change": 1.8779141519507605,
+      "expected": "sensitivity diagnostic, not a required invariant for absolute next-day growth",
+      "observed_prefix_total_ratio": 4.0,
+      "recipe": "prefix-perturbation-v1"
+    },
+    {
+      "base_prefix_digest": "1cfe059525c516576cafe2a7664b15e48b0809e526360bf6c7b11373ef673b75",
+      "control": "equal_total_reversed_development",
+      "derived_prefix_digest": "f12306cfc262ac9d0be2ace6069c3ce219993cba83a600e330d0930331df21cd",
+      "embedding_l2_change": 0.4521492241465711,
+      "expected": "sensitivity diagnostic, not a required invariant for absolute next-day growth",
+      "observed_prefix_total_ratio": 1.0,
+      "recipe": "prefix-perturbation-v1"
+    },
+    {
+      "control": "observation_removal",
+      "expected": "abstain; missing is not zero",
+      "outcome": "rejected_gap"
+    },
+    {
+      "control": "temporal_resolution",
+      "expected": "requires a new support recipe, not automatic invariance",
+      "outcome": "rejected_non_daily_support"
+    },
+    {
+      "control": "nominal_id_relabeling",
+      "embedding_l2_change": 0.0,
+      "expected": "exact invariance; identifiers are lineage, never model inputs"
+    },
+    {
+      "control": "spatial_geometry",
+      "expected": "no invented geometry or spatial robustness",
+      "outcome": "not_available"
+    }
+  ],
+  "raw_vs_embedding_top5_overlap_mean": 0.4625,
+  "reconstruction_error": "not_applicable; supervised future task, no reconstruction objective",
+  "scope": "Raw-input geometry fidelity diagnostic only; same-fire prefixes may neighbor; no ecological relevance labels"
+}

@@ -1,5 +1,94 @@
 # Changelog
 
+## 2026-11-21 — Recenter Fire VASE on short observed histories
+
+- Made all native IDs primary with1,2,3+ strata; prediction becomes a selected-cohort extension.
+- Audited every native short history for exact scientific-state/source-support preservation,
+  normalized-payload scale loss, full-interface bytes and explicit indexed-source fallback.
+- Added short-state validation and a primary task manifest; no model fitting or full
+  retrieval benchmark, and no physical lifetime inferred from observation count.
+- Preserved prior scientific outputs and source files.
+
+## 2026-11-21 — Real Fire VASE population census executed
+
+- Applied direct investigator authorization to internal native profiling without fictional receipts.
+- Freshly verified four relevant source containers, streamed all native/cache rows,
+  reconciled keys/values and counted maximal local runs and the full7×3 task matrix.
+- Produced measured internal selection figures, candidate whole-fire splits, resource
+  reports and provenance; independently replayed identical cohort artifacts.
+- Added independent profiler tests and fixed Arrow all-null batch schema handling.
+- Preserved frozen milestones/upstream; no raw daily dataset persistence, model training or publication.
+
+## 2026-11-21 — Fire VASE M7.2 historical population assessment
+
+- Recorded investigator intent without fabricating a verified review receipt.
+- Re-statted the lake and investigated sidecar/document stat discrepancies.
+- Analyzed existing aggregate reports into depth/window tables and geographic/year
+  selection figures, clearly labeled historical rather than fresh row profiling.
+- Corrected the interpretation of 3.68%: whole-history consecutiveness, not any local run.
+- Preserved the real-data gate and all frozen M1–7 artifacts; no source rows or training.
+
+## 2026-11-21 — Fire VASE full-lake preparation
+
+- Indexed 646 files with metadata-only readers and retained historical/current-stat distinctions.
+- Added unapproved full-lake amendment, bounded gated Parquet streams, native evidence,
+  task windows, dimension-grid supervised/SSL kernels and statistical/cost interfaces.
+- Added generated validation and scientific protocol; real-row populations, training,
+  reviewed labels, full evaluation orchestration and scientific results remain pending.
+- Preserved M1–6 and kept authorization, source rights and publication separate.
+
+## 2026-11-21 — Fire VASE real-source review boundary
+
+- Located the user's materialized local Fire VASE lake and inspected only manifests,
+  historical checksums, file stats, Parquet footers and GeoPackage schema/CRS metadata.
+- Added proposed native/support/prefix/target/fold recipes, an exact-source bounded
+  human-review packet, rights/attribution assessment and conditional real-study plan.
+- Added pure digest/review/identity/support/availability validators and 20 tests;
+  no observation rows, real adapter, model training or new synthetic benchmark.
+- Kept prospective availability, source uncertainty and dataset rights unresolved
+  rather than substituting software/article licenses or synthetic timestamps.
+- Preserved all historical frozen artifacts and upstream. Review is required before
+  the bounded audit and separately before cohort/training/publication.
+
+## 2026-11-21 — Fire VASE cross-task representation transfer
+
+- Added independently checked future totals, acceleration decisions, variability and
+  future-pattern retrieval on the existing frozen synthetic cohort.
+- Compared frozen A-only heads, joint AD/specific encoders, raw/summary/PCA rivals
+  and similar-capacity neural controls; retained negative and positive task results.
+- Added same-fire-excluded retrieval, linear/nonlinear property probes, all-prefix
+  task perturbations, fire-paired uncertainty and heterogeneous reuse accounting.
+- Preserved 33 new checkpoints, exact source/encoder lineage and historical M1–4;
+  a metadata-only release replay retained identical predictive results.
+- Added 13 tests (339 passed, two skipped), tables, figures, utility map and explicit
+  unsupported claims. No real-fire, ecological-analog or real-agent evidence.
+
+## 2026-11-21 — Fire VASE learned-prefix milestone
+
+- Added synthetic next-day prefix prediction with train-only preprocessing/PCA,
+  a 177-parameter causal encoder, similar-capacity MLP, raw/summary/probe baselines,
+  separate selection/calibration fires, checkpoints and held-out predictions.
+- Measured learned on-demand/stored/cached modes and direct computation, preserving
+  identical encoder/head predictions and source/preprocessing/model cache identities.
+- Audited physically present legacy source metadata without observation ingestion;
+  left real training pending rights/support/availability review and real agents
+  pending reachable authorized no-charge inference. Frozen M1–3 outputs unchanged.
+- Added 15 tests (326 passed, two skipped), synthetic diagnostics, evidence table,
+  provenance manifests, utility framework and explicit unsupported claims.
+
+## 2026-11-21 — Fire VASE expanded representation utility
+
+- Added a separate seeded cohort and 120 frozen model-unseen evaluation questions
+  across 24 templates; independent numeric oracles and explicit draft scientific rubrics.
+- Added targeted direct scalar operations, matched query caches, development-only
+  timing hints, cost-aware selection and private task-specific valid-cost frontiers.
+- Executed 2,880 mock episodes, 360 rule-router episodes and 2,520 direct cold/warm
+  measurement pairs. Retained traces, metadata contrasts and preparation/routing costs.
+- Added 21 tests (full suite 311 passed, two skipped), schemas, scientific cost figures,
+  architecture, interpretation limits and disabled hash-bound real-pilot configuration.
+- Read-only access remained unverified; zero real inference or model charges. Preserved
+  upstream, prior milestones and draft/integration history in the development ledger.
+
 ## 2026-11-20 — Fire VASE controlled-agent milestone
 
 - Added fixed/adaptive typed proposal loops, anonymized metadata views, uniform
@@ -257,3 +346,14 @@
   review/model records, legacy caches, secrets and proposed stewardship decisions.
 - Kept current capabilities distinct from unverified backup, retention, archive,
   access and external-model processing commitments; no pipeline behavior changed.
+
+## Fire VASE Milestone8 — full-population utility execution
+
+- Executed 75 primary neural fits across objectives/dimensions/training fractions,
+  with exact native, interpretable, PCA, supervised-head and direct neural controls.
+- Retained real population recovery/retrieval, blocked refits, A/B/C access,
+  lifecycle/update/refresh and six exact prefix-prediction cohort results.
+- Added independent raw-unit references, corrected masked ridge intercepts,
+  preserved invalid initial artifacts and reran affected evaluations.
+- Added thirteen measured figure families, methods/results/uncertainty/unsupported
+  claims, reproducibility and source/checkpoint-bound integrity manifests.

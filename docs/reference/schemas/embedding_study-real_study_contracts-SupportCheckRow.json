@@ -1,0 +1,52 @@
+{
+  "additionalProperties": false,
+  "description": "Generic generated validation input, not a real-source row adapter.",
+  "properties": {
+    "available": {
+      "title": "Available",
+      "type": "boolean"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "native_area_km2": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Native Area Km2"
+    },
+    "native_date": {
+      "format": "date",
+      "title": "Native Date",
+      "type": "string"
+    },
+    "quality_flags": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "source_observation_id": {
+      "title": "Source Observation Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_observation_id",
+    "event_id",
+    "native_date",
+    "available"
+  ],
+  "title": "SupportCheckRow",
+  "type": "object"
+}

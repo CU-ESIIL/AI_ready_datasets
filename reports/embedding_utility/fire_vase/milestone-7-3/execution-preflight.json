@@ -1,0 +1,79 @@
+{
+  "recorded_at": "2026-11-21T19:43:13.393808+00:00",
+  "status": "REQUIRED_REVIEW_RECORDS_NOT_VERIFIED",
+  "direct_investigator_approval_present": true,
+  "review_origin": "DRAFT",
+  "approved_scopes": [],
+  "plan_digest": "aedc7dad21bd4ddbe2824a324c671bd05e6b55edae9298a63f9844e21467b9fe",
+  "reviewed_binding_digests": [],
+  "gate_checks": {
+    "verify_container_bytes": {
+      "allowed": false,
+      "reasons": [
+        "external_human_review_missing",
+        "attributed_timestamped_review_missing",
+        "verified_external_human_receipt_missing",
+        "scope_not_approved",
+        "semantic:NEEDS_EVIDENCE",
+        "units:NEEDS_EVIDENCE",
+        "support:NEEDS_EVIDENCE",
+        "rights:NEEDS_EVIDENCE",
+        "quality:NEEDS_EVIDENCE",
+        "availability:NEEDS_EVIDENCE",
+        "execution:NEEDS_EVIDENCE",
+        "publication:NEEDS_EVIDENCE"
+      ],
+      "exception": "Full-lake verify_container_bytes blocked: external_human_review_missing,attributed_timestamped_review_missing,verified_external_human_receipt_missing,scope_not_approved,semantic:NEEDS_EVIDENCE,units:NEEDS_EVIDENCE,support:NEEDS_EVIDENCE,rights:NEEDS_EVIDENCE,quality:NEEDS_EVIDENCE,availability:NEEDS_EVIDENCE,execution:NEEDS_EVIDENCE,publication:NEEDS_EVIDENCE"
+    },
+    "profile_rows": {
+      "allowed": false,
+      "reasons": [
+        "external_human_review_missing",
+        "attributed_timestamped_review_missing",
+        "verified_external_human_receipt_missing",
+        "scope_not_approved",
+        "semantic:NEEDS_EVIDENCE",
+        "units:NEEDS_EVIDENCE",
+        "support:NEEDS_EVIDENCE",
+        "rights:NEEDS_EVIDENCE",
+        "integrity:NEEDS_EVIDENCE",
+        "quality:NEEDS_EVIDENCE",
+        "availability:NEEDS_EVIDENCE",
+        "execution:NEEDS_EVIDENCE",
+        "publication:NEEDS_EVIDENCE"
+      ],
+      "exception": "Full-lake profile_rows blocked: external_human_review_missing,attributed_timestamped_review_missing,verified_external_human_receipt_missing,scope_not_approved,semantic:NEEDS_EVIDENCE,units:NEEDS_EVIDENCE,support:NEEDS_EVIDENCE,rights:NEEDS_EVIDENCE,integrity:NEEDS_EVIDENCE,quality:NEEDS_EVIDENCE,availability:NEEDS_EVIDENCE,execution:NEEDS_EVIDENCE,publication:NEEDS_EVIDENCE"
+    },
+    "harmonize": {
+      "allowed": false,
+      "reasons": [
+        "external_human_review_missing",
+        "attributed_timestamped_review_missing",
+        "verified_external_human_receipt_missing",
+        "scope_not_approved",
+        "semantic:NEEDS_EVIDENCE",
+        "units:NEEDS_EVIDENCE",
+        "support:NEEDS_EVIDENCE",
+        "rights:NEEDS_EVIDENCE",
+        "integrity:NEEDS_EVIDENCE",
+        "quality:NEEDS_EVIDENCE",
+        "availability:NEEDS_EVIDENCE",
+        "execution:NEEDS_EVIDENCE",
+        "publication:NEEDS_EVIDENCE"
+      ],
+      "exception": "Full-lake harmonize blocked: external_human_review_missing,attributed_timestamped_review_missing,verified_external_human_receipt_missing,scope_not_approved,semantic:NEEDS_EVIDENCE,units:NEEDS_EVIDENCE,support:NEEDS_EVIDENCE,rights:NEEDS_EVIDENCE,integrity:NEEDS_EVIDENCE,quality:NEEDS_EVIDENCE,availability:NEEDS_EVIDENCE,execution:NEEDS_EVIDENCE,publication:NEEDS_EVIDENCE"
+    }
+  },
+  "new_observation_rows_read": 0,
+  "new_array_values_read": 0,
+  "new_source_hashes_computed": 0,
+  "models_trained": 0,
+  "source_modifications": 0,
+  "code_changes": 0,
+  "independent_work": "Existing M7.2 historical-aggregate analysis and metadata verification retained; no redundant rehashing or synthetic substitution.",
+  "input_sha256": {
+    "reports/embedding_utility/fire_vase/milestone-7/metadata-v1/amendment.json": "306d7543a5cbe8796ba5c5b52725c98477458ca17c87977b9e727d3df5b0b4c1",
+    "reports/embedding_utility/fire_vase/milestone-7/metadata-v1/authorization-template.json": "28507cbd4c0005617fdca1186fc62e8d18a5a888632dbeb021ce2faf8d3563f4",
+    "reports/embedding_utility/fire_vase/milestone-7-2/investigator-authorization-direct.json": "842f2f0314715111b1a174f43d95bbf2817ce6dca0e74cef4e33f753da754dce"
+  }
+}

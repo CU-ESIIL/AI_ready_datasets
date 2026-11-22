@@ -1,0 +1,7 @@
+{
+  "gallery_fires": 194980,
+  "query_fires": 48,
+  "independent_oracle_agreement_queries": 48,
+  "query_median_ns": 6121562.5,
+  "seconds": 1.557688541999596
+}

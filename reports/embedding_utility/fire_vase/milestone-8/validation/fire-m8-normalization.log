@@ -1,0 +1,18 @@
+[
+  {
+    "observations": 1,
+    "fire_ids": 161200,
+    "distinct_float64_allocation_payloads": 1,
+    "payload_groups_with_different_absolute_totals": 1,
+    "fires_in_those_groups": 161200,
+    "interpretation": "actual payload collisions; retained source IDs can still enable an explicitly charged lookup"
+  },
+  {
+    "observations": 2,
+    "fire_ids": 47992,
+    "distinct_float64_allocation_payloads": 414,
+    "payload_groups_with_different_absolute_totals": 67,
+    "fires_in_those_groups": 45963,
+    "interpretation": "actual payload collisions; retained source IDs can still enable an explicitly charged lookup"
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "method": "pca-request4",
+    "all_fire_encoding_seconds": 0.005520165999769233,
+    "materialization_write_seconds": 0.06835533299818053,
+    "on_disk_bytes": 2532891,
+    "numeric_bytes": 8923680,
+    "effective_rank": 4
+  },
+  {
+    "method": "pca-request8",
+    "all_fire_encoding_seconds": 0.0037874170011491515,
+    "materialization_write_seconds": 0.12644495800122968,
+    "on_disk_bytes": 5225774,
+    "numeric_bytes": 17847360,
+    "effective_rank": 8
+  },
+  {
+    "method": "pca-request16",
+    "all_fire_encoding_seconds": 0.004367666999314679,
+    "materialization_write_seconds": 0.21992033400238142,
+    "on_disk_bytes": 8835144,
+    "numeric_bytes": 29001960,
+    "effective_rank": 13
+  },
+  {
+    "method": "pca-request32",
+    "all_fire_encoding_seconds": 0.005895041998883244,
+    "materialization_write_seconds": 0.21930445800171583,
+    "on_disk_bytes": 8835144,
+    "numeric_bytes": 29001960,
+    "effective_rank": 13
+  },
+  {
+    "method": "pca-request64",
+    "all_fire_encoding_seconds": 0.004413083999679657,
+    "materialization_write_seconds": 0.22438858299938147,
+    "on_disk_bytes": 8835144,
+    "numeric_bytes": 29001960,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-4",
+    "materialization_write_seconds": 0.05265724999844679,
+    "on_disk_bytes": 1242648,
+    "numeric_bytes": 4461840
+  },
+  {
+    "method": "supervised-8",
+    "materialization_write_seconds": 0.07705100000021048,
+    "on_disk_bytes": 2422951,
+    "numeric_bytes": 8923680
+  },
+  {
+    "method": "supervised-16",
+    "materialization_write_seconds": 0.1464489579993824,
+    "on_disk_bytes": 4925383,
+    "numeric_bytes": 17847360
+  },
+  {
+    "method": "supervised-16",
+    "all_fire_reencoding_seconds": 0.030832958000246435,
+    "numeric_bytes": 35694720,
+    "scope": "unchanged-source encoder refresh only; source updates require re-verification"
+  },
+  {
+    "method": "supervised-32",
+    "materialization_write_seconds": 0.29927512500216835,
+    "on_disk_bytes": 10677318,
+    "numeric_bytes": 35694720
+  },
+  {
+    "method": "supervised-64",
+    "materialization_write_seconds": 0.6412297910028428,
+    "on_disk_bytes": 23108462,
+    "numeric_bytes": 71389440
+  },
+  {
+    "method": "self_supervised-4",
+    "materialization_write_seconds": 0.05597854200095753,
+    "on_disk_bytes": 1257886,
+    "numeric_bytes": 4461840
+  },
+  {
+    "method": "self_supervised-8",
+    "materialization_write_seconds": 0.08067604100142489,
+    "on_disk_bytes": 2450881,
+    "numeric_bytes": 8923680
+  },
+  {
+    "method": "self_supervised-16",
+    "materialization_write_seconds": 0.15693212500264053,
+    "on_disk_bytes": 5025237,
+    "numeric_bytes": 17847360
+  },
+  {
+    "method": "self_supervised-16",
+    "all_fire_reencoding_seconds": 0.02769179199822247,
+    "numeric_bytes": 35694720,
+    "scope": "unchanged-source encoder refresh only; source updates require re-verification"
+  },
+  {
+    "method": "self_supervised-32",
+    "materialization_write_seconds": 0.31016408399955253,
+    "on_disk_bytes": 10684277,
+    "numeric_bytes": 35694720
+  },
+  {
+    "method": "self_supervised-64",
+    "materialization_write_seconds": 0.6770761660009157,
+    "on_disk_bytes": 23047945,
+    "numeric_bytes": 71389440
+  },
+  {
+    "method": "multitask-4",
+    "materialization_write_seconds": 0.05079916600152501,
+    "on_disk_bytes": 1266892,
+    "numeric_bytes": 4461840
+  },
+  {
+    "method": "multitask-8",
+    "materialization_write_seconds": 0.08044541699928232,
+    "on_disk_bytes": 2424545,
+    "numeric_bytes": 8923680
+  },
+  {
+    "method": "multitask-16",
+    "materialization_write_seconds": 0.16232337499968708,
+    "on_disk_bytes": 4919072,
+    "numeric_bytes": 17847360
+  },
+  {
+    "method": "multitask-16",
+    "all_fire_reencoding_seconds": 0.027808541999547742,
+    "numeric_bytes": 35694720,
+    "scope": "unchanged-source encoder refresh only; source updates require re-verification"
+  },
+  {
+    "method": "multitask-32",
+    "materialization_write_seconds": 0.31510770800014143,
+    "on_disk_bytes": 10677754,
+    "numeric_bytes": 35694720
+  },
+  {
+    "method": "multitask-64",
+    "materialization_write_seconds": 0.7071202500010259,
+    "on_disk_bytes": 22876707,
+    "numeric_bytes": 71389440
+  }
+]

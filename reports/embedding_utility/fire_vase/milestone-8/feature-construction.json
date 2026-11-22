@@ -1,0 +1,25 @@
+{
+  "seconds": 7.601291666000179,
+  "native_rows_decoded": 627033,
+  "native_fire_ids": 278865,
+  "property_names": [
+    "log_observed_total",
+    "log_observation_count",
+    "log_first_increment",
+    "log_last_increment",
+    "log_observed_std",
+    "first_allocation",
+    "asinh_mean_consecutive_change",
+    "strict_interior_peak_count",
+    "first_half_allocation",
+    "log_observed_span"
+  ],
+  "source_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+  "source_bytes_scope": "verified source container, not filesystem I/O",
+  "source_changed": false,
+  "storage": "derived R1 scientific state and lineage only; original daily-value arrays not persisted",
+  "native_quality": "unknown",
+  "physical_duration": "unknown",
+  "recipe_function_sha256": "9b3723a447d56d8a677b3bb2c78d3831d0a298935362ff7808ec7d295f5a226e",
+  "recipe_binding_scope": "Identity attached at final validation; calculate implementation unchanged since first real extraction, independently checked against original-unit references."
+}

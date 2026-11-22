@@ -1,0 +1,377 @@
+{
+  "m3-e-00-0": null,
+  "m3-e-00-1": 427.0,
+  "m3-e-00-2": 354.0,
+  "m3-e-00-3": 215.0,
+  "m3-e-00-4": 0.0,
+  "m3-e-01-0": null,
+  "m3-e-01-1": null,
+  "m3-e-01-2": null,
+  "m3-e-01-3": 0.0,
+  "m3-e-01-4": 0.0,
+  "m3-e-02-0": 136.0,
+  "m3-e-02-1": 393.0,
+  "m3-e-02-2": 256.0,
+  "m3-e-02-3": 109.0,
+  "m3-e-02-4": 0.0,
+  "m3-e-03-0": 55.0,
+  "m3-e-03-1": -203.0,
+  "m3-e-03-2": -180.0,
+  "m3-e-03-3": -162.0,
+  "m3-e-03-4": -19.0,
+  "m3-e-04-0": null,
+  "m3-e-04-1": 0.5103550295857988,
+  "m3-e-04-2": 0.43462980318650424,
+  "m3-e-04-3": 0.4330019880715706,
+  "m3-e-04-4": 0.49369830641985035,
+  "m3-e-05-0": null,
+  "m3-e-05-1": 0.209348641049672,
+  "m3-e-05-2": 0.20758738277919864,
+  "m3-e-05-3": 0.31212653778558874,
+  "m3-e-05-4": 0.3001569858712716,
+  "m3-e-06-0": [
+    0.004462242562929062,
+    0.4143020594965675,
+    0.05,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.004462242562929062,
+    0.05,
+    0.4143020594965675,
+    0.004462242562929062
+  ],
+  "m3-e-06-1": [
+    0.0022337455125648184,
+    0.012485041882728361,
+    0.03296769046669326,
+    0.026266453928998804,
+    0.05787794176306342,
+    0.06561627443159154,
+    0.047187873952931794,
+    0.066094934184284,
+    0.049202233745512566,
+    0.11194654966094934,
+    0.09172317510969286,
+    0.1155364978061428,
+    0.07024331870761867,
+    0.03211009174311927,
+    0.024750698045472676,
+    0.007638611886717192,
+    0.005504587155963303,
+    0.04730753889110491,
+    0.0645392899880335,
+    0.06876745113681691
+  ],
+  "m3-e-06-2": [
+    0.037454412837345005,
+    0.03322392414296134,
+    0.040134938001458786,
+    0.040827862873814735,
+    0.06389496717724288,
+    0.07534646243617797,
+    0.033807439824945294,
+    0.06050328227571116,
+    0.11077680525164114,
+    0.06657549234135668,
+    0.0024070021881838076,
+    0.013894967177242888,
+    0.03836615609044493,
+    0.038074398249452954,
+    0.0400072939460248,
+    0.04540481400437637,
+    0.05714806710430343,
+    0.03643326039387308,
+    0.07917578409919766,
+    0.08654266958424507
+  ],
+  "m3-e-06-3": [
+    0.03670150987224158,
+    0.01788617886178862,
+    0.030429732868757258,
+    0.05267131242740999,
+    0.055981416957026714,
+    0.033275261324041815,
+    0.06328397212543554,
+    0.09072299651567944,
+    0.08893728222996515,
+    0.04404761904761905,
+    0.011672473867595819,
+    0.013066202090592335,
+    0.022415795586527294,
+    0.08368176538908247,
+    0.07938443670150987,
+    0.029616724738675958,
+    0.044991289198606274,
+    0.05727351916376307,
+    0.09329268292682927,
+    0.0506678281068525
+  ],
+  "m3-e-06-4": null,
+  "m3-e-07-0": 0.0927039386006848,
+  "m3-e-07-1": 0.0,
+  "m3-e-07-2": 0.11045687600134887,
+  "m3-e-07-3": null,
+  "m3-e-07-4": 0.3220567801491975,
+  "m3-e-08-0": 2,
+  "m3-e-08-1": 1,
+  "m3-e-08-2": null,
+  "m3-e-08-3": 8,
+  "m3-e-08-4": 6,
+  "m3-e-09-0": 1.1934909765180226,
+  "m3-e-09-1": 2.7707589023588803,
+  "m3-e-09-2": null,
+  "m3-e-09-3": 2.6453287568441097,
+  "m3-e-09-4": 2.212276253343486,
+  "m3-e-10-0": 0.028981882366472138,
+  "m3-e-10-1": null,
+  "m3-e-10-2": 0.4370145590170111,
+  "m3-e-10-3": 0.051214127256576696,
+  "m3-e-10-4": 0.03038185145096966,
+  "m3-e-11-0": null,
+  "m3-e-11-1": 0.17341810333468075,
+  "m3-e-11-2": 0.08682503111196399,
+  "m3-e-11-3": 0.07479103247661657,
+  "m3-e-11-4": 0.12286947528012798,
+  "m3-e-12-0": {
+    "full_neighbor": "m3-evaluation-06",
+    "projected_neighbor": "m3-evaluation-07",
+    "stable": false
+  },
+  "m3-e-12-1": {
+    "full_neighbor": "m3-evaluation-01",
+    "projected_neighbor": "m3-evaluation-02",
+    "stable": false
+  },
+  "m3-e-12-2": {
+    "full_neighbor": "m3-evaluation-07",
+    "projected_neighbor": "m3-evaluation-06",
+    "stable": false
+  },
+  "m3-e-12-3": {
+    "full_neighbor": "m3-evaluation-10",
+    "projected_neighbor": "m3-evaluation-10",
+    "stable": true
+  },
+  "m3-e-12-4": null,
+  "m3-e-13-0": {
+    "scope": "normalization_discards_absolute_scale",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-13-1": {
+    "scope": "normalization_discards_absolute_scale",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-13-2": {
+    "scope": "normalization_discards_absolute_scale",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-13-3": {
+    "scope": "normalization_discards_absolute_scale",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-13-4": {
+    "scope": "normalization_discards_absolute_scale",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-14-0": {
+    "scope": "truncation_loses_residual",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-14-1": {
+    "scope": "truncation_loses_residual",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-14-2": {
+    "scope": "truncation_loses_residual",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-14-3": {
+    "scope": "truncation_loses_residual",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-14-4": {
+    "scope": "truncation_loses_residual",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-15-0": {
+    "scope": "no_independent_relevance_labels",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-15-1": {
+    "scope": "no_independent_relevance_labels",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-15-2": {
+    "scope": "no_independent_relevance_labels",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-15-3": {
+    "scope": "no_independent_relevance_labels",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-15-4": {
+    "scope": "no_independent_relevance_labels",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-16-0": {
+    "scope": "no_real_measurement_model",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-16-1": {
+    "scope": "no_real_measurement_model",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-16-2": {
+    "scope": "no_real_measurement_model",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-16-3": {
+    "scope": "no_real_measurement_model",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-16-4": {
+    "scope": "no_real_measurement_model",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-17-0": {
+    "scope": "availability_times_unknown",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-17-1": {
+    "scope": "availability_times_unknown",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-17-2": {
+    "scope": "availability_times_unknown",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-17-3": {
+    "scope": "availability_times_unknown",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-17-4": {
+    "scope": "availability_times_unknown",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-18-0": {
+    "scope": "insufficient_support",
+    "supported": false,
+    "value": null
+  },
+  "m3-e-18-1": {
+    "scope": "validated_consecutive_intervals",
+    "supported": true,
+    "value": 39
+  },
+  "m3-e-18-2": {
+    "scope": "validated_consecutive_intervals",
+    "supported": true,
+    "value": 23
+  },
+  "m3-e-18-3": {
+    "scope": "validated_consecutive_intervals",
+    "supported": true,
+    "value": 27
+  },
+  "m3-e-18-4": {
+    "scope": "validated_consecutive_intervals",
+    "supported": true,
+    "value": 31
+  },
+  "m3-e-19-0": {
+    "checksum_scope": "observations",
+    "license": "CC0-1.0",
+    "synthetic": true,
+    "temporal_support": "Calendar-day observations with explicit gaps and unknown availability times",
+    "uncertainty": "Exact synthetic generator numbers; no real measurement uncertainty model",
+    "version": "3"
+  },
+  "m3-e-19-1": {
+    "checksum_scope": "observations",
+    "license": "CC0-1.0",
+    "synthetic": true,
+    "temporal_support": "Calendar-day observations with explicit gaps and unknown availability times",
+    "uncertainty": "Exact synthetic generator numbers; no real measurement uncertainty model",
+    "version": "3"
+  },
+  "m3-e-19-2": {
+    "checksum_scope": "observations",
+    "license": "CC0-1.0",
+    "synthetic": true,
+    "temporal_support": "Calendar-day observations with explicit gaps and unknown availability times",
+    "uncertainty": "Exact synthetic generator numbers; no real measurement uncertainty model",
+    "version": "3"
+  },
+  "m3-e-19-3": {
+    "checksum_scope": "observations",
+    "license": "CC0-1.0",
+    "synthetic": true,
+    "temporal_support": "Calendar-day observations with explicit gaps and unknown availability times",
+    "uncertainty": "Exact synthetic generator numbers; no real measurement uncertainty model",
+    "version": "3"
+  },
+  "m3-e-19-4": {
+    "checksum_scope": "observations",
+    "license": "CC0-1.0",
+    "synthetic": true,
+    "temporal_support": "Calendar-day observations with explicit gaps and unknown availability times",
+    "uncertainty": "Exact synthetic generator numbers; no real measurement uncertainty model",
+    "version": "3"
+  },
+  "m3-e-20-0": 0.43462980318650424,
+  "m3-e-20-1": 0.4330019880715706,
+  "m3-e-20-2": 0.49369830641985035,
+  "m3-e-20-3": null,
+  "m3-e-20-4": 0.5103550295857988,
+  "m3-e-21-0": 2.212276253343486,
+  "m3-e-21-1": 1.1934909765180226,
+  "m3-e-21-2": 2.7707589023588803,
+  "m3-e-21-3": null,
+  "m3-e-21-4": 2.6453287568441097,
+  "m3-e-22-0": 0.09560406185750969,
+  "m3-e-22-1": 0.11623838959525212,
+  "m3-e-22-2": null,
+  "m3-e-22-3": 0.5468312151155659,
+  "m3-e-22-4": 0.10094846332983637,
+  "m3-e-23-0": 0.07730995461497742,
+  "m3-e-23-1": null,
+  "m3-e-23-2": 0.2720628346685101,
+  "m3-e-23-3": 0.0192540432887251,
+  "m3-e-23-4": 0.0796661706228435
+}

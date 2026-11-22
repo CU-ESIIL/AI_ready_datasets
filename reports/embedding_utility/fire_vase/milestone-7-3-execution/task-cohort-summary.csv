@@ -1,0 +1,6 @@
+task,depth,horizon,fires,dependent_windows,input_and_future_support,meaning,quality_limit,scientific_validity
+A,3,1,19004,61342,complete exact-calendar bins for every counted window,next supported day,native measurement QA and uncertainty unknown,"candidate mathematical support, not independent ecological validation"
+B,3,3,7117,28896,complete exact-calendar bins for every counted window,three consecutive future increments,native measurement QA and uncertainty unknown,"candidate mathematical support, not independent ecological validation"
+C,3,3,7117,28896,complete exact-calendar bins for every counted window,future/recent reference comparison; target interpretation remains explicit,native measurement QA and uncertainty unknown,"candidate mathematical support, not independent ecological validation"
+D,3,3,7117,28896,complete exact-calendar bins for every counted window,future population SD; no predictive performance measured,native measurement QA and uncertainty unknown,"candidate mathematical support, not independent ecological validation"
+E,3,7,1859,10570,complete exact-calendar bins for every counted window,future-pattern retrieval candidate only; same-fire exclusion required,native measurement QA and uncertainty unknown,"candidate mathematical support, not independent ecological validation"

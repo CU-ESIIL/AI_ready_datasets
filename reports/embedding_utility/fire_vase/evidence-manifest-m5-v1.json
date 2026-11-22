@@ -1,0 +1,34 @@
+{
+  "version": "transfer-evidence-v1",
+  "frozen_manifest_sha256": "dfecf6d6aea625e343b035e5361cd3b982f3b480f3a14b3859a158dc0de7c3cb",
+  "runtime": {
+    "python": "3.12.8",
+    "numpy": "2.5.2",
+    "executable": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/spectralbridge/.venv/bin/python",
+    "platform": "macOS-26.7.3-arm64-arm-64bit",
+    "retained_command_thread_settings": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "git_head": "69f1a63f7569b327c3d680c4adbaa09972dc8788",
+  "worktree_dirty": true,
+  "artifacts_sha256": {
+    "reports/embedding_utility/fire_vase/utility-map-m5.md": "f97d2e5305b6863ddfafd53927d897d78957af09cc9a519d4875fe7a3c472373",
+    "reports/embedding_utility/fire_vase/results-tables-m5.md": "960774f5195f24fc7679e58af7bbd3c1a1cf6afab2d14774fe08d09bff49ca74",
+    "reports/embedding_utility/fire_vase/transfer-audit-m5.md": "305224a9f3cc599be7dc46e786d626b7bbc9313c857d66ed063f71023e17b19b",
+    "reports/embedding_utility/fire_vase/unsupported-claims-m5.md": "0470f04fd0172fb52f772277001bbf8b11a440f6771af210e33197e35ab5c9ce",
+    "reports/embedding_utility/fire_vase/transfer-protocol-m5-v1.md": "27efb34795edd06cf4a4579f294dd6d23ae9540f0cb892c8ec22244c31371322",
+    "reports/embedding_utility/fire_vase/development-ledger-m5-v1.json": "3ff52e9f68d19a4c229be7d1e31a2798d2a08cde4a42319518400cfe48c6b412",
+    "reports/embedding_utility/fire_vase/information-probes-m5.csv": "443614e3ebcd827d1ffbd747cc1911a6bacb36802a36a11dbfaf9cc281cfafe3",
+    "reports/embedding_utility/fire_vase/config/transfer-m5-v1.json": "af7f50d7fe22513aac3f922ae68362def6e5b189557d62a10df676cfcf56f97e",
+    "scripts/report_fire_vase_transfer.py": "58db839cfdb4770b2656456fe76703262528ce2e9a36c84d4a6381c4b06a23c3",
+    "scripts/generate_fire_vase_transfer_figures.py": "0958e2a335111d51df14e25cf93b0b260cbf5fff193474f5b324907197c3250c",
+    "docs/assets/figures/fire-vase-transfer-tasks.png": "43e050edfc4786090e4f635b720daca734b1e4c3ce54fb87edebd9d857e3d2f6",
+    "docs/assets/figures/fire-vase-transfer-reuse.png": "4b0a124b131f216c2324da4285c06aa44e6f91ed63e44a5a77aeb14fc7f6a289"
+  },
+  "model_refit_after_retained_evaluation": false,
+  "real_model_calls": 0,
+  "real_source_rows_read": 0
+}

@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "description": "Input evidence contract only; never executes a source read or grants approval.",
+  "properties": {
+    "approved": {
+      "default": false,
+      "title": "Approved",
+      "type": "boolean"
+    },
+    "attribution": {
+      "title": "Attribution",
+      "type": "string"
+    },
+    "availability_evidence": {
+      "title": "Availability Evidence",
+      "type": "string"
+    },
+    "human_decision_reference": {
+      "title": "Human Decision Reference",
+      "type": "string"
+    },
+    "rights_evidence": {
+      "title": "Rights Evidence",
+      "type": "string"
+    },
+    "source_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Source Checksums",
+      "type": "object"
+    },
+    "source_version": {
+      "title": "Source Version",
+      "type": "string"
+    },
+    "support_recipe_digest": {
+      "title": "Support Recipe Digest",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_version",
+    "source_checksums",
+    "rights_evidence",
+    "attribution",
+    "support_recipe_digest",
+    "availability_evidence",
+    "human_decision_reference"
+  ],
+  "title": "RealPrefixApproval",
+  "type": "object"
+}

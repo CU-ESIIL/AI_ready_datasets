@@ -78,6 +78,14 @@ nav:
       - Embedding utility study: analysis/embedding-utility.md
       - Fire VASE deterministic benchmark: analysis/fire-vase-benchmark.md
       - Fire VASE controlled agents: analysis/fire-vase-agents.md
+      - Fire VASE expanded pilot: analysis/fire-vase-pilot.md
+      - Fire VASE learned representations: analysis/fire-vase-learning.md
+      - Fire VASE task transfer: analysis/fire-vase-transfer.md
+      - Fire VASE measured representation utility: analysis/fire-vase-utility.md
+      - Fire VASE full-population benchmark: analysis/fire-vase-full-population.md
+      - Fire VASE native population census: analysis/fire-vase-population.md
+      - Fire VASE full-lake study: analysis/fire-vase-full-lake.md
+      - Fire VASE real-source review: analysis/fire-vase-real-data.md
       - Sentinel expert review: validation/sentinel-real-case.md
       - Semantic and dataset experiments: validation/benchmarks.md
       - NEON and Sentinel: validation/neon-sentinel.md

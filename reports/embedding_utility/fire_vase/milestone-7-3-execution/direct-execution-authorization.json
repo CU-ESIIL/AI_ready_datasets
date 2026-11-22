@@ -1,0 +1,9 @@
+{
+  "origin": "DIRECT_USER_INSTRUCTION",
+  "statement": "stop with all the stops and make this happen.",
+  "prior_statement": "you can have all the approvals for this project",
+  "scope": "read-only complete native population census, source checksums, source/cache reconciliation, internal derived cohort metadata; no model training or publication",
+  "separate_receipt_requirement": "superseded by direct user instruction in current chat",
+  "review_findings": "No scientific finding converted to PASS; native meanings retained and limitations reported.",
+  "recorded_at": "2026-11-21T19:45:20.759321+00:00"
+}

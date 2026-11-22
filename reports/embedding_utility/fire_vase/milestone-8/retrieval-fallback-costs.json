@@ -1,0 +1,67 @@
+[
+  {
+    "property": "log_observed_total",
+    "query_fires": 4096,
+    "gallery_fires": 194980,
+    "native_operation": "cached-native-observed-property-index",
+    "native_gallery_and_query_value_bytes_copied": 1592608,
+    "query_scalar_value_bytes": 32768,
+    "filesystem_physical_bytes_read": null,
+    "payload_copy_seconds": 0.00044891599827678874,
+    "native_rank_query_seconds": 0.01431929200043669,
+    "exact_reference_recovered": true,
+    "scope": "conditionC shared index fallback after native preparation; not embedding-preserved scientific values"
+  },
+  {
+    "property": "log_observed_std",
+    "query_fires": 2731,
+    "gallery_fires": 82173,
+    "native_operation": "cached-native-observed-property-index",
+    "native_gallery_and_query_value_bytes_copied": 679232,
+    "query_scalar_value_bytes": 21848,
+    "filesystem_physical_bytes_read": null,
+    "payload_copy_seconds": 0.00036166700010653585,
+    "native_rank_query_seconds": 0.009950667001248803,
+    "exact_reference_recovered": true,
+    "scope": "conditionC shared index fallback after native preparation; not embedding-preserved scientific values"
+  },
+  {
+    "property": "first_allocation",
+    "query_fires": 2731,
+    "gallery_fires": 82173,
+    "native_operation": "cached-native-observed-property-index",
+    "native_gallery_and_query_value_bytes_copied": 679232,
+    "query_scalar_value_bytes": 21848,
+    "filesystem_physical_bytes_read": null,
+    "payload_copy_seconds": 0.0003372089995536953,
+    "native_rank_query_seconds": 0.009712584000226343,
+    "exact_reference_recovered": true,
+    "scope": "conditionC shared index fallback after native preparation; not embedding-preserved scientific values"
+  },
+  {
+    "property": "asinh_mean_consecutive_change",
+    "query_fires": 1659,
+    "gallery_fires": 53118,
+    "native_operation": "cached-native-observed-property-index",
+    "native_gallery_and_query_value_bytes_copied": 438216,
+    "query_scalar_value_bytes": 13272,
+    "filesystem_physical_bytes_read": null,
+    "payload_copy_seconds": 0.00035691599987330846,
+    "native_rank_query_seconds": 0.006021791999955894,
+    "exact_reference_recovered": true,
+    "scope": "conditionC shared index fallback after native preparation; not embedding-preserved scientific values"
+  },
+  {
+    "property": "log_observed_span",
+    "query_fires": 4096,
+    "gallery_fires": 194980,
+    "native_operation": "cached-native-observed-property-index",
+    "native_gallery_and_query_value_bytes_copied": 1592608,
+    "query_scalar_value_bytes": 32768,
+    "filesystem_physical_bytes_read": null,
+    "payload_copy_seconds": 0.00042670800030464306,
+    "native_rank_query_seconds": 0.013286249999509891,
+    "exact_reference_recovered": true,
+    "scope": "conditionC shared index fallback after native preparation; not embedding-preserved scientific values"
+  }
+]

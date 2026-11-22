@@ -1,0 +1,19 @@
+{
+  "version": "fire-pilot-live-v3",
+  "fixture": "data/fixtures/embedding_utility/milestone-3-v3",
+  "input_sha256": {
+    "data/fixtures/embedding_utility/milestone-3-v3/evaluation_tasks.json": "11e83673245616b4b1029ec484fa8a4e287aea1d2e3f5ed8e84ab30005fca091",
+    "data/fixtures/embedding_utility/milestone-3-v3/development_tasks.json": "3130de1daedfae6e5c813441861ebfb6715ff3b469ee5b0d2b0d97f9c3fe82b0",
+    "data/fixtures/embedding_utility/milestone-3-v3/generation.json": "eae2c4e92d36f767b9ddef9a6c8b7b3861e9f4ed18042df7f0e167e93083a126",
+    "data/fixtures/embedding_utility/milestone-3-v3/histories.json": "c0d4caf1a95500e4a90ecb9dc967db2fc694d110fcf7a5a1ddfdf22645c3d385"
+  },
+  "provider": "openclaw",
+  "model": "js2/gpt-oss-120b",
+  "runtime": "run/openclaw",
+  "access_authorized": false,
+  "cost_basis": "unverified",
+  "approved_external_cost_cap": 0.0,
+  "max_provider_calls": 17280,
+  "repetitions": 2,
+  "smoke_evidence": null
+}

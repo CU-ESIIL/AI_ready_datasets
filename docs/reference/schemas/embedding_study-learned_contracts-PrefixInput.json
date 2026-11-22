@@ -1,0 +1,72 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "available_at": {
+      "items": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "title": "Available At",
+      "type": "array"
+    },
+    "dates": {
+      "items": {
+        "format": "date",
+        "type": "string"
+      },
+      "maxItems": 12,
+      "minItems": 3,
+      "title": "Dates",
+      "type": "array"
+    },
+    "fire_id": {
+      "title": "Fire Id",
+      "type": "string"
+    },
+    "growth_km2_day": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Growth Km2 Day",
+      "type": "array"
+    },
+    "issued_at": {
+      "format": "date-time",
+      "title": "Issued At",
+      "type": "string"
+    },
+    "source_observation_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Observation Ids",
+      "type": "array"
+    },
+    "source_version": {
+      "title": "Source Version",
+      "type": "string"
+    },
+    "synthetic": {
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "version": {
+      "const": "fire-prefix-v1",
+      "default": "fire-prefix-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fire_id",
+    "source_version",
+    "synthetic",
+    "source_observation_ids",
+    "dates",
+    "available_at",
+    "issued_at",
+    "growth_km2_day"
+  ],
+  "title": "PrefixInput",
+  "type": "object"
+}

@@ -1,0 +1,4930 @@
+{
+  "00736a8eeedffdc0ac97d6fa768535016b78a18a28611bfe9901cf0e91241a20": {
+    "embedding": [
+      -0.4995212590807786,
+      -0.975008388744502,
+      0.2563432271665534,
+      -0.872805216321629
+    ],
+    "fire_id": "synthetic-test-0004",
+    "identity": "6dd746a31af4e7c23f46e9d198430d96d3b1179a7d27bdccd7983c030f7b481c",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0004:D0",
+      "synthetic-test-0004:D1",
+      "synthetic-test-0004:D2"
+    ]
+  },
+  "016e3ca1eaec7f0b8c0c94c8ad4695069f794176ea50ad3161615c6e9eabed68": {
+    "embedding": [
+      0.7980593209576201,
+      -0.5454178814586564,
+      0.1002336886000027,
+      0.6042880450966582
+    ],
+    "fire_id": "synthetic-test-0034",
+    "identity": "e0a6076f96ac5e5d16d69c2fbd13f00fa35ed7027144f0efb8771c6ea6e397a1",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0034:D0",
+      "synthetic-test-0034:D1",
+      "synthetic-test-0034:D2",
+      "synthetic-test-0034:D3",
+      "synthetic-test-0034:D4",
+      "synthetic-test-0034:D5",
+      "synthetic-test-0034:D6"
+    ]
+  },
+  "020c85c3315f5d42d1065d0dac264afb808cf274299b06576128be9b5c157234": {
+    "embedding": [
+      -0.21714231498127015,
+      -0.912545187483075,
+      0.6060742498905374,
+      -0.7428189349426316
+    ],
+    "fire_id": "synthetic-test-0053",
+    "identity": "5201006ac782e5706873bf9f7a9b9b682c84a655bc6821166fbb3756dba4586e",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0053:D0",
+      "synthetic-test-0053:D1",
+      "synthetic-test-0053:D2"
+    ]
+  },
+  "02d790ad5b22388f2d16433013de0d1211a00a39fb39da190dd958caac00bd5d": {
+    "embedding": [
+      0.16843221048460874,
+      0.6400979809789364,
+      0.9434344140948953,
+      0.8340993660634861
+    ],
+    "fire_id": "synthetic-test-0052",
+    "identity": "8cd6c007d9225d3ada24d6d42cfb8ff4992c9b433835ac274b0dad7e951162b7",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0052:D0",
+      "synthetic-test-0052:D1",
+      "synthetic-test-0052:D2"
+    ]
+  },
+  "0307709f4948249ff19b8cc685a37f28d093e6ef3949be4136ed8496ea0ff4a4": {
+    "embedding": [
+      0.778934084926858,
+      0.28858461362397375,
+      -0.07152384331462562,
+      0.9436999436623349
+    ],
+    "fire_id": "synthetic-test-0058",
+    "identity": "fe54ca9cf277d6e40cf423c549cbee8197b9f4e387051bbc85e81f0be74a22e5",
+    "issued_at": "2023-06-29T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0058:D0",
+      "synthetic-test-0058:D1",
+      "synthetic-test-0058:D2",
+      "synthetic-test-0058:D3",
+      "synthetic-test-0058:D4",
+      "synthetic-test-0058:D5",
+      "synthetic-test-0058:D6",
+      "synthetic-test-0058:D7",
+      "synthetic-test-0058:D8",
+      "synthetic-test-0058:D9"
+    ]
+  },
+  "030812a44c1b3d6db5d5118b88c601e3ed4add673ad0e679a688b522a19627b5": {
+    "embedding": [
+      0.42260267937615825,
+      -0.9493713766859444,
+      -0.009519307919561943,
+      0.10079344314621491
+    ],
+    "fire_id": "synthetic-test-0012",
+    "identity": "958fd3516384d544498b18e0b28e7f22ff30caabdec0de693c305d0df3e3a3ce",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0012:D0",
+      "synthetic-test-0012:D1",
+      "synthetic-test-0012:D2",
+      "synthetic-test-0012:D3",
+      "synthetic-test-0012:D4",
+      "synthetic-test-0012:D5",
+      "synthetic-test-0012:D6"
+    ]
+  },
+  "03240425e2bcf7c7553b33e676bdc8de7af71298f90836983c77ece10e943c37": {
+    "embedding": [
+      -0.5552298820397708,
+      -0.32118157922671065,
+      0.8213774935930187,
+      0.8646820808383046
+    ],
+    "fire_id": "synthetic-test-0052",
+    "identity": "013e31723bdaf8a107c564ee49c647761794afed7577004f3bfeef71e48fa1df",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0052:D0",
+      "synthetic-test-0052:D1",
+      "synthetic-test-0052:D2",
+      "synthetic-test-0052:D3",
+      "synthetic-test-0052:D4"
+    ]
+  },
+  "05459500b8abeacf179937f30cc9a062ef702124a03b089c783208200155f49e": {
+    "embedding": [
+      -0.06295083424249756,
+      -0.942924300521908,
+      -0.31716436594411,
+      0.5588012517898364
+    ],
+    "fire_id": "synthetic-test-0018",
+    "identity": "a75846e0334fd2368fffee6aba7710a09aa14ad7746ccf00fbd90c29a6d08673",
+    "issued_at": "2023-06-29T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0018:D0",
+      "synthetic-test-0018:D1",
+      "synthetic-test-0018:D2",
+      "synthetic-test-0018:D3",
+      "synthetic-test-0018:D4",
+      "synthetic-test-0018:D5",
+      "synthetic-test-0018:D6",
+      "synthetic-test-0018:D7",
+      "synthetic-test-0018:D8",
+      "synthetic-test-0018:D9"
+    ]
+  },
+  "057a102140b03c40f3e2fa34888141cb737a973992def3e8538fd7ac0ede14f9": {
+    "embedding": [
+      0.17831966046003386,
+      -0.9795545117016191,
+      -0.4414706670192411,
+      -0.40677385925548765
+    ],
+    "fire_id": "synthetic-test-0015",
+    "identity": "f0d6dbed3a75b614adb15c73be9cfb4a0b71391e88e68653664397ab56804b19",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0015:D0",
+      "synthetic-test-0015:D1",
+      "synthetic-test-0015:D2",
+      "synthetic-test-0015:D3",
+      "synthetic-test-0015:D4",
+      "synthetic-test-0015:D5",
+      "synthetic-test-0015:D6"
+    ]
+  },
+  "05b599ed989a0366377ec3a969f2c7b3e3b3e5a2fedd8a50a9b9d3007ef78549": {
+    "embedding": [
+      -0.20860122620211632,
+      -0.9255735061049035,
+      0.4270797814499968,
+      0.23777794892640586
+    ],
+    "fire_id": "synthetic-test-0024",
+    "identity": "9b11b6b3b464435ad7cec7a0a66fccf8f608c2b76fb8ae8c29ca713515baea0a",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0024:D0",
+      "synthetic-test-0024:D1",
+      "synthetic-test-0024:D2",
+      "synthetic-test-0024:D3",
+      "synthetic-test-0024:D4"
+    ]
+  },
+  "06e11a2c07a702816f40956eef3b9aae34e03997cb8a374a1d9f3b098f7d2596": {
+    "embedding": [
+      -0.40235835422588756,
+      -0.9305623344907141,
+      0.5190064314212771,
+      -0.6873949140093878
+    ],
+    "fire_id": "synthetic-test-0006",
+    "identity": "9f4edbd7bb57a09f766860d1f3c542b63efb6b35de2c3f7989a8565dbc54c190",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0006:D0",
+      "synthetic-test-0006:D1",
+      "synthetic-test-0006:D2"
+    ]
+  },
+  "085e1ed0d80fcdb1782abbaf709b7f1887cae64c7abed000703086875ec4152f": {
+    "embedding": [
+      0.11820485792078475,
+      -0.9730284711616368,
+      -0.21098950811753228,
+      0.12542216703890083
+    ],
+    "fire_id": "synthetic-test-0021",
+    "identity": "ad5346703f8bd9ab054762f344fd06fc3201b6d7112953247976f3edd03fb120",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0021:D0",
+      "synthetic-test-0021:D1",
+      "synthetic-test-0021:D2",
+      "synthetic-test-0021:D3",
+      "synthetic-test-0021:D4",
+      "synthetic-test-0021:D5",
+      "synthetic-test-0021:D6"
+    ]
+  },
+  "0930a6b261947100d822819a84e1e464e33eac920cad03ce65eb26e01fde5010": {
+    "embedding": [
+      0.5647464041045239,
+      -0.36725227230626595,
+      0.009896642497530868,
+      0.903145908281518
+    ],
+    "fire_id": "synthetic-test-0002",
+    "identity": "62121e67ae33103fe528fe831bd2a10c83622ac1aca6e905b6fa51299692cf91",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0002:D0",
+      "synthetic-test-0002:D1",
+      "synthetic-test-0002:D2",
+      "synthetic-test-0002:D3",
+      "synthetic-test-0002:D4",
+      "synthetic-test-0002:D5",
+      "synthetic-test-0002:D6",
+      "synthetic-test-0002:D7",
+      "synthetic-test-0002:D8",
+      "synthetic-test-0002:D9"
+    ]
+  },
+  "0946f800e13ed013ac1bea33d2e12ac0f6934747c2bc47ca01571a39e0273bf7": {
+    "embedding": [
+      -0.43979335022632504,
+      -0.9475376074778874,
+      0.3879332221618085,
+      0.0845812200304099
+    ],
+    "fire_id": "synthetic-test-0029",
+    "identity": "074335adc14a428950bd38c6bac37d69c7d195a9379cd14934d94f37d2db0659",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0029:D0",
+      "synthetic-test-0029:D1",
+      "synthetic-test-0029:D2",
+      "synthetic-test-0029:D3",
+      "synthetic-test-0029:D4"
+    ]
+  },
+  "09ed04efe27a023411b56c3f9822a121ea5ed7ac93ab26d7c346ad879cc5d3e5": {
+    "embedding": [
+      0.8197288954362532,
+      0.48003994532829486,
+      -0.02870135270321071,
+      0.9512063271718848
+    ],
+    "fire_id": "synthetic-test-0046",
+    "identity": "23a353d65b9ef7d804804d0724c41b4c7fc3b09b7737940f959dc791c3da3cd8",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0046:D0",
+      "synthetic-test-0046:D1",
+      "synthetic-test-0046:D2",
+      "synthetic-test-0046:D3",
+      "synthetic-test-0046:D4",
+      "synthetic-test-0046:D5",
+      "synthetic-test-0046:D6",
+      "synthetic-test-0046:D7",
+      "synthetic-test-0046:D8",
+      "synthetic-test-0046:D9"
+    ]
+  },
+  "0a0fbd0d55b6dc9e802b8a2ff6cc34502d17fcbb1deb77f19932aa9991ebff9d": {
+    "embedding": [
+      0.5583369327691322,
+      -0.8663213723610163,
+      -0.48826932667432693,
+      0.20979159504328213
+    ],
+    "fire_id": "synthetic-test-0009",
+    "identity": "d42033094cb9fdfd8926d87b6b28d17fc58c01c5182aa44bb1c17b44203d6af1",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0009:D0",
+      "synthetic-test-0009:D1",
+      "synthetic-test-0009:D2",
+      "synthetic-test-0009:D3",
+      "synthetic-test-0009:D4",
+      "synthetic-test-0009:D5",
+      "synthetic-test-0009:D6",
+      "synthetic-test-0009:D7",
+      "synthetic-test-0009:D8",
+      "synthetic-test-0009:D9"
+    ]
+  },
+  "0b44c8a9cc21a2f53b9b61bc1bee8b74e52217a0855d9c1800fde8fe9d7785f2": {
+    "embedding": [
+      0.5021375582404365,
+      -0.5042667736739859,
+      0.5168539489065828,
+      0.8916254483761434
+    ],
+    "fire_id": "synthetic-test-0059",
+    "identity": "bfa57cc93410e6b99deaa795b118661aa473aded65918233dac7797009a8d6ae",
+    "issued_at": "2023-06-27T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0059:D0",
+      "synthetic-test-0059:D1",
+      "synthetic-test-0059:D2",
+      "synthetic-test-0059:D3",
+      "synthetic-test-0059:D4",
+      "synthetic-test-0059:D5",
+      "synthetic-test-0059:D6"
+    ]
+  },
+  "0b4969f912e541cf6889e775230321262c8f0914996022af2cd64474d5997543": {
+    "embedding": [
+      0.20237895517826285,
+      -0.8933145202294921,
+      0.03588137441398554,
+      0.6745127772260586
+    ],
+    "fire_id": "synthetic-test-0024",
+    "identity": "bd1ae54bb627369752a9fdcaa980ab0009525c46ba77de73fbc517481eabdd86",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0024:D0",
+      "synthetic-test-0024:D1",
+      "synthetic-test-0024:D2",
+      "synthetic-test-0024:D3",
+      "synthetic-test-0024:D4",
+      "synthetic-test-0024:D5",
+      "synthetic-test-0024:D6"
+    ]
+  },
+  "0d2ab48012764778dee8e08db5c542cf880d497a6afa8a98ff6d06d2397815a8": {
+    "embedding": [
+      -0.388611275074653,
+      -0.9665103048701013,
+      0.2998844242152781,
+      -0.14298492047108288
+    ],
+    "fire_id": "synthetic-test-0041",
+    "identity": "01079a59d56fcf88ce4cd3d3e98f2e80c26edb569c8bc7e88fbe6a496fd1011a",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0041:D0",
+      "synthetic-test-0041:D1",
+      "synthetic-test-0041:D2",
+      "synthetic-test-0041:D3",
+      "synthetic-test-0041:D4"
+    ]
+  },
+  "0dc7ef1884c9741d4c93554d46dd5f9c61b4e920de2f57668dc840fb7d726bc2": {
+    "embedding": [
+      -0.07409013556421917,
+      -0.4316437689460668,
+      0.7071591099789778,
+      0.7622728960574038
+    ],
+    "fire_id": "synthetic-test-0010",
+    "identity": "f6a449f2402b0e6b382987bd5553577edd09e77595ec2b72107e48ff027ecb16",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0010:D0",
+      "synthetic-test-0010:D1",
+      "synthetic-test-0010:D2",
+      "synthetic-test-0010:D3",
+      "synthetic-test-0010:D4"
+    ]
+  },
+  "0dca833b7d1b8123cd686473f3528fe275df0b754c26e49bc0f9623935ba8f38": {
+    "embedding": [
+      -0.3626743418503993,
+      -0.4243894996334103,
+      0.7907536566739168,
+      0.40661552780490556
+    ],
+    "fire_id": "synthetic-test-0022",
+    "identity": "9671d03275b40cabc588a2c07114769071b1ae0e3ba0cdddd60c3472b5fcd88d",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0022:D0",
+      "synthetic-test-0022:D1",
+      "synthetic-test-0022:D2"
+    ]
+  },
+  "147d1302189c1e3988aa68499f9c35b5e494984f82bf0ff5dabd91e9df3965a1": {
+    "embedding": [
+      -0.1578113180363279,
+      -0.9637771953498252,
+      -0.12823421513470037,
+      0.33409855571410335
+    ],
+    "fire_id": "synthetic-test-0031",
+    "identity": "ee757134c4b8c3ee460b01c3c4c85ba127e6d4c2bf1af952626ae223ab0356a7",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0031:D0",
+      "synthetic-test-0031:D1",
+      "synthetic-test-0031:D2",
+      "synthetic-test-0031:D3",
+      "synthetic-test-0031:D4",
+      "synthetic-test-0031:D5",
+      "synthetic-test-0031:D6"
+    ]
+  },
+  "149f0a12b9de04acea815e5e059fd87f695a9e2b90f8457e9901caa063f1d356": {
+    "embedding": [
+      -0.6898937456094031,
+      -0.8271032671461329,
+      0.5735764453464098,
+      0.6675337439076338
+    ],
+    "fire_id": "synthetic-test-0008",
+    "identity": "271715db4694556c0f29f43eab9983071354f02316adc2dd64a6ac9712745a55",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0008:D0",
+      "synthetic-test-0008:D1",
+      "synthetic-test-0008:D2",
+      "synthetic-test-0008:D3",
+      "synthetic-test-0008:D4"
+    ]
+  },
+  "1544f812cf0ab5f5bafee64cee5c0f028ee6edd3a99775704d3016f9ebe8297b": {
+    "embedding": [
+      -0.2249245404859005,
+      -0.9186699586190401,
+      0.5075680267702586,
+      0.16149013808357457
+    ],
+    "fire_id": "synthetic-test-0053",
+    "identity": "11f51eb4f296791520bc61c1b23db3b630cd4068c093965dbb3a70f3b183975c",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0053:D0",
+      "synthetic-test-0053:D1",
+      "synthetic-test-0053:D2",
+      "synthetic-test-0053:D3",
+      "synthetic-test-0053:D4"
+    ]
+  },
+  "159ef53a9fc92acaf9b98e3eff1e75df07015c95662a0b9627541baedcae2c0b": {
+    "embedding": [
+      0.5127373444858023,
+      -0.6338685477860677,
+      0.23288796899662234,
+      0.8323292457391973
+    ],
+    "fire_id": "synthetic-test-0046",
+    "identity": "3005ebe87764fd4070f9eb4d04dfd77600f2b0ac47d882ddad8e9734ca9b4304",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0046:D0",
+      "synthetic-test-0046:D1",
+      "synthetic-test-0046:D2",
+      "synthetic-test-0046:D3",
+      "synthetic-test-0046:D4",
+      "synthetic-test-0046:D5",
+      "synthetic-test-0046:D6"
+    ]
+  },
+  "162493a371adcd10581ff3a1a2a5cc4814865979650218de0d6d4592d9b5c22e": {
+    "embedding": [
+      0.10528621607447691,
+      -0.6587681097877579,
+      0.5571469300157962,
+      0.46470327904644093
+    ],
+    "fire_id": "synthetic-test-0019",
+    "identity": "068d01780a15a769a34754ae996b1bd4141345c5e5789fc67fff1f96176bf050",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0019:D0",
+      "synthetic-test-0019:D1",
+      "synthetic-test-0019:D2",
+      "synthetic-test-0019:D3",
+      "synthetic-test-0019:D4"
+    ]
+  },
+  "162c9959c001608cdddd8cda5d21fdd098e8514dd1740e0fa885620aabd2c4a9": {
+    "embedding": [
+      0.44946219792727676,
+      -0.9243134180303335,
+      0.12976730753381086,
+      0.40637330504762553
+    ],
+    "fire_id": "synthetic-test-0005",
+    "identity": "cc19cbe6cb0e2bb44042f0e7e068167b4595e9dea3d0d7b4252e22eef1355002",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0005:D0",
+      "synthetic-test-0005:D1",
+      "synthetic-test-0005:D2",
+      "synthetic-test-0005:D3",
+      "synthetic-test-0005:D4",
+      "synthetic-test-0005:D5",
+      "synthetic-test-0005:D6"
+    ]
+  },
+  "16605af7a3457eb4c63210cd77b0e061b2934b3ec4da6b22deab90ad8964bc90": {
+    "embedding": [
+      0.5477663226541798,
+      -0.8459246040342708,
+      0.09059771610357376,
+      0.5773811504280459
+    ],
+    "fire_id": "synthetic-test-0041",
+    "identity": "eb2103265916a0714d04b006d6082a948778c9b63544d6d3846f4867b1bdb105",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0041:D0",
+      "synthetic-test-0041:D1",
+      "synthetic-test-0041:D2",
+      "synthetic-test-0041:D3",
+      "synthetic-test-0041:D4",
+      "synthetic-test-0041:D5",
+      "synthetic-test-0041:D6"
+    ]
+  },
+  "170c20e62e4848569597a0f0e660a7d91d827978534b0274fffe47a0e306d5cd": {
+    "embedding": [
+      -0.09305244552944102,
+      -0.994495558899015,
+      -0.7655259889180219,
+      -0.8948243032662975
+    ],
+    "fire_id": "synthetic-test-0027",
+    "identity": "1ab1b600b182363d2ca968895a3f4542f2f2c6478299f57196cf570866f56d23",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0027:D0",
+      "synthetic-test-0027:D1",
+      "synthetic-test-0027:D2",
+      "synthetic-test-0027:D3",
+      "synthetic-test-0027:D4",
+      "synthetic-test-0027:D5",
+      "synthetic-test-0027:D6"
+    ]
+  },
+  "17728e3aaf6416eb768e940be7d1d1811b43c6369f3f0a85395d4d3eedaf671b": {
+    "embedding": [
+      -0.737321440855278,
+      -0.9802458298703207,
+      0.14758964022103382,
+      -0.5767427041110514
+    ],
+    "fire_id": "synthetic-test-0028",
+    "identity": "22a2aaba299dc4b52e80613469611795d84549dd77f17022fd84043abebdcbf2",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0028:D0",
+      "synthetic-test-0028:D1",
+      "synthetic-test-0028:D2"
+    ]
+  },
+  "17e746b999fb68b312dc64ed6363409048bcc40b67bad59d05d5d352a7652141": {
+    "embedding": [
+      -0.6686465741149322,
+      -0.8936506022955806,
+      0.4399413913236424,
+      0.17578766681485986
+    ],
+    "fire_id": "synthetic-test-0014",
+    "identity": "dc48d4a7f30fd2495d741b9ed2cf997b4d952bfed0e5474dc9f3daf3fbc071ed",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0014:D0",
+      "synthetic-test-0014:D1",
+      "synthetic-test-0014:D2",
+      "synthetic-test-0014:D3",
+      "synthetic-test-0014:D4"
+    ]
+  },
+  "17f8b6ac35eb7b7d6df01956633d753bf766e340ebb3568ca115dce608f2a620": {
+    "embedding": [
+      -0.4344737393530786,
+      -0.9179700710370552,
+      0.5417748678312151,
+      -0.6464944862805407
+    ],
+    "fire_id": "synthetic-test-0048",
+    "identity": "894c99042e146183e2234f80e9967a5ddf154aaf3841324e6e22f551b08da7bb",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0048:D0",
+      "synthetic-test-0048:D1",
+      "synthetic-test-0048:D2"
+    ]
+  },
+  "1a4156cfc42a75f9ab8a3af3e26768300aeb795529eaed1540a750366ae52e3f": {
+    "embedding": [
+      0.6772245859546153,
+      -0.945465141747476,
+      -0.35884927383530013,
+      -0.6833363470932078
+    ],
+    "fire_id": "synthetic-test-0009",
+    "identity": "229994bde108bae3d23ad65fcf0799c0a9e7ae01c12f32c4fcf1bd63a90276c3",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0009:D0",
+      "synthetic-test-0009:D1",
+      "synthetic-test-0009:D2",
+      "synthetic-test-0009:D3",
+      "synthetic-test-0009:D4",
+      "synthetic-test-0009:D5",
+      "synthetic-test-0009:D6"
+    ]
+  },
+  "1a98d5139606bb060a1b3b2f176dd7b02ae9a214196c80fa09bd5a12ab288266": {
+    "embedding": [
+      -0.26690463321185626,
+      -0.28506354015609353,
+      0.8129271439224713,
+      0.25622091034289324
+    ],
+    "fire_id": "synthetic-test-0035",
+    "identity": "9279215e4188b39fadf23435e51c86439508dbe8ae744854a93cd7e5465b616d",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0035:D0",
+      "synthetic-test-0035:D1",
+      "synthetic-test-0035:D2"
+    ]
+  },
+  "1b3e16fd1835b527bb708ef6843f4b803a002d5472f41b1c376e34c224e947bd": {
+    "embedding": [
+      0.48924060680349907,
+      -0.6166855589768538,
+      0.3919544986374533,
+      0.8743973914504175
+    ],
+    "fire_id": "synthetic-test-0047",
+    "identity": "54b629f952642b9754a50303f6b0af1e0868d2fdc3abd33df713e0a34a245941",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0047:D0",
+      "synthetic-test-0047:D1",
+      "synthetic-test-0047:D2",
+      "synthetic-test-0047:D3",
+      "synthetic-test-0047:D4",
+      "synthetic-test-0047:D5",
+      "synthetic-test-0047:D6"
+    ]
+  },
+  "1c8a3e161eed4b8616dc60bd868d17d6af1c691aa09be7f50606e6db7882dc8c": {
+    "embedding": [
+      0.3432476579364113,
+      -0.979630252101077,
+      -0.47860847085968017,
+      -0.6299155034408738
+    ],
+    "fire_id": "synthetic-test-0036",
+    "identity": "094331b305fb990ca99dafbf266d3cc928d8dd6c7b605882fc8f0ab7ddfe7273",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0036:D0",
+      "synthetic-test-0036:D1",
+      "synthetic-test-0036:D2",
+      "synthetic-test-0036:D3",
+      "synthetic-test-0036:D4",
+      "synthetic-test-0036:D5",
+      "synthetic-test-0036:D6"
+    ]
+  },
+  "1cfe059525c516576cafe2a7664b15e48b0809e526360bf6c7b11373ef673b75": {
+    "embedding": [
+      -0.18387640937187832,
+      -0.659699898070365,
+      0.7290296462130913,
+      -0.1327854882389463
+    ],
+    "fire_id": "synthetic-test-0000",
+    "identity": "67bdda8b6bdaa90887ecce83944f8bc66337084464cbe88054a23ab636ac6da2",
+    "issued_at": "2023-06-04T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0000:D0",
+      "synthetic-test-0000:D1",
+      "synthetic-test-0000:D2"
+    ]
+  },
+  "1d1438cf9b098d473a9abf6f84bd2e7333c0e243991061d9fcf21a493c1d36cf": {
+    "embedding": [
+      0.011913769469313199,
+      -0.891347831290995,
+      0.11641220509349769,
+      0.5480262790034508
+    ],
+    "fire_id": "synthetic-test-0018",
+    "identity": "10f19dbd5cce4979ba4a4375954b077260b0a37bdd167015858aa9bce4071fbb",
+    "issued_at": "2023-06-26T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0018:D0",
+      "synthetic-test-0018:D1",
+      "synthetic-test-0018:D2",
+      "synthetic-test-0018:D3",
+      "synthetic-test-0018:D4",
+      "synthetic-test-0018:D5",
+      "synthetic-test-0018:D6"
+    ]
+  },
+  "1d1b96360fc819100b8e7e6dcc26f026910f8982439fb4b4c0fb8e2b4b5f52b7": {
+    "embedding": [
+      -0.17903293228851727,
+      -0.9692244571668573,
+      -0.5934107303468662,
+      -0.04576091829655776
+    ],
+    "fire_id": "synthetic-test-0050",
+    "identity": "939dfeac0e6503972c2de29b3b81d7ea4a4157643dc9aced54e0ca94476b96e0",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0050:D0",
+      "synthetic-test-0050:D1",
+      "synthetic-test-0050:D2",
+      "synthetic-test-0050:D3",
+      "synthetic-test-0050:D4",
+      "synthetic-test-0050:D5",
+      "synthetic-test-0050:D6",
+      "synthetic-test-0050:D7",
+      "synthetic-test-0050:D8",
+      "synthetic-test-0050:D9"
+    ]
+  },
+  "1e1739631c1df8b014c5bbbfa854d4ddafdfc29ffd097ca9605dad9f268aec6a": {
+    "embedding": [
+      -0.602247659273236,
+      -0.9449997206555437,
+      0.34719468339339304,
+      -0.02971153368886106
+    ],
+    "fire_id": "synthetic-test-0002",
+    "identity": "bd6fcb0376a9269f743fb4c6fb913741de308d20794f98d0fb6fc13b090d0c49",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0002:D0",
+      "synthetic-test-0002:D1",
+      "synthetic-test-0002:D2",
+      "synthetic-test-0002:D3",
+      "synthetic-test-0002:D4"
+    ]
+  },
+  "1e1fb642911a711d248e42a156253f09284b93514d830b51de06894a76d6a247": {
+    "embedding": [
+      -0.05455576763631502,
+      -0.1473063773931754,
+      0.7621183498483646,
+      0.7957915997342279
+    ],
+    "fire_id": "synthetic-test-0001",
+    "identity": "01c3b5bd3793eebfeb91276d5b2f78c9274a850b1ea11e2cde44ae81f2323bb5",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0001:D0",
+      "synthetic-test-0001:D1",
+      "synthetic-test-0001:D2",
+      "synthetic-test-0001:D3",
+      "synthetic-test-0001:D4"
+    ]
+  },
+  "1f06428f11f2469df5e9ce130e7661af6c334eb56d82824fd3f601c8e4e1d7a9": {
+    "embedding": [
+      -0.011505580431809239,
+      -0.8457828515768371,
+      0.47255879812487084,
+      0.8711958978465548
+    ],
+    "fire_id": "synthetic-test-0051",
+    "identity": "41e2e73447d4805c5cf574234fd701a1d2431c0163c9c4b126ad7ab5f8a07661",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0051:D0",
+      "synthetic-test-0051:D1",
+      "synthetic-test-0051:D2",
+      "synthetic-test-0051:D3",
+      "synthetic-test-0051:D4",
+      "synthetic-test-0051:D5",
+      "synthetic-test-0051:D6"
+    ]
+  },
+  "1f53fbacbd443588be1e034507aba13383d3c4a29c8f652d8b263c4778a1016f": {
+    "embedding": [
+      -0.35654146014505894,
+      -0.6118552109580522,
+      0.6850322982438763,
+      0.7142989870663157
+    ],
+    "fire_id": "synthetic-test-0007",
+    "identity": "fefa50fb865287d8b5d7c327d34a183418f0ad7b6edc232330f1d8a5f4446e7f",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0007:D0",
+      "synthetic-test-0007:D1",
+      "synthetic-test-0007:D2",
+      "synthetic-test-0007:D3",
+      "synthetic-test-0007:D4"
+    ]
+  },
+  "1f7613735cfb20150269051ff483cd4b87087c41fcc5a50862600d594e5356ea": {
+    "embedding": [
+      -0.08616511635148542,
+      -0.50977266103238,
+      0.7899644468193573,
+      -0.14043281487352852
+    ],
+    "fire_id": "synthetic-test-0011",
+    "identity": "3cc8f77c1f3e1856e65e89e243b47c4d1bf5df2fdc9b760c28496bdedca318bf",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0011:D0",
+      "synthetic-test-0011:D1",
+      "synthetic-test-0011:D2"
+    ]
+  },
+  "1fe875124ccaf099d8695d0dbc1bf768b659659eb347f3a40b37968c00b42030": {
+    "embedding": [
+      0.24241535916545096,
+      -0.5931567559362032,
+      -0.2847237340955283,
+      0.8978200938771196
+    ],
+    "fire_id": "synthetic-test-0020",
+    "identity": "dcc9e1a56fc5688bb19b6f8d064cfcff773f29c28bf7469a228f152637581a97",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0020:D0",
+      "synthetic-test-0020:D1",
+      "synthetic-test-0020:D2",
+      "synthetic-test-0020:D3",
+      "synthetic-test-0020:D4",
+      "synthetic-test-0020:D5",
+      "synthetic-test-0020:D6",
+      "synthetic-test-0020:D7",
+      "synthetic-test-0020:D8",
+      "synthetic-test-0020:D9"
+    ]
+  },
+  "2046a41447e6e20410d1779482250ec8985b0531abc47b097de8a74268a2a20f": {
+    "embedding": [
+      0.7904889286349923,
+      0.1349641853892343,
+      0.1306268134026967,
+      0.9349511269699825
+    ],
+    "fire_id": "synthetic-test-0014",
+    "identity": "1606d45e4048e2e6ab1498d7102b8fe7c941b2f9d3d5c4a19e8c631a381f7f08",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0014:D0",
+      "synthetic-test-0014:D1",
+      "synthetic-test-0014:D2",
+      "synthetic-test-0014:D3",
+      "synthetic-test-0014:D4",
+      "synthetic-test-0014:D5",
+      "synthetic-test-0014:D6",
+      "synthetic-test-0014:D7",
+      "synthetic-test-0014:D8",
+      "synthetic-test-0014:D9"
+    ]
+  },
+  "21608bf82465917646b843b1096ff2498aac2d2906d27cea3e48f2505d31a414": {
+    "embedding": [
+      -0.12109872510075093,
+      -0.9372884136903902,
+      0.4269495235830076,
+      -0.9152236712395254
+    ],
+    "fire_id": "synthetic-test-0030",
+    "identity": "9345f3c3f78f336e09656e6d046ef490b932439d9ea8930dbfc18a592aa4f634",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0030:D0",
+      "synthetic-test-0030:D1",
+      "synthetic-test-0030:D2"
+    ]
+  },
+  "21ef785aa262bdce01d2af54ac2b2d8a8e516a266238f8e5b518bc4861422ce2": {
+    "embedding": [
+      0.6885912317724399,
+      -0.8881301516538753,
+      -0.11537769888291174,
+      0.16782379202239464
+    ],
+    "fire_id": "synthetic-test-0004",
+    "identity": "9a0dce1bc41c92379c264d9b2eb3d318ad99164d362a43532d53d8eb70176cb0",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0004:D0",
+      "synthetic-test-0004:D1",
+      "synthetic-test-0004:D2",
+      "synthetic-test-0004:D3",
+      "synthetic-test-0004:D4",
+      "synthetic-test-0004:D5",
+      "synthetic-test-0004:D6"
+    ]
+  },
+  "224d64d185d934484f6f0e77b2eacc2b8ac1d9976fbb95e3617e2722fd3e6e65": {
+    "embedding": [
+      0.6828419232546864,
+      0.3084106275516166,
+      0.03866831957388261,
+      0.9591076147781896
+    ],
+    "fire_id": "synthetic-test-0008",
+    "identity": "5d61edffd8409493085ce90a9277b0376f3aaca7a964ec6bd52e217626f72606",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0008:D0",
+      "synthetic-test-0008:D1",
+      "synthetic-test-0008:D2",
+      "synthetic-test-0008:D3",
+      "synthetic-test-0008:D4",
+      "synthetic-test-0008:D5",
+      "synthetic-test-0008:D6",
+      "synthetic-test-0008:D7",
+      "synthetic-test-0008:D8",
+      "synthetic-test-0008:D9"
+    ]
+  },
+  "22f45a5b326d431964089521a992c50e6ec6a89ad49ba5f0b3822f7a8dbd18d4": {
+    "embedding": [
+      -0.046084157226139726,
+      -0.9252045206752841,
+      0.534859619652632,
+      -0.8977805975404902
+    ],
+    "fire_id": "synthetic-test-0005",
+    "identity": "397d044cadb0bcc03be88ba1ad91906e0e0e19f2c2b501b158f54d76082f6c6b",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0005:D0",
+      "synthetic-test-0005:D1",
+      "synthetic-test-0005:D2"
+    ]
+  },
+  "23ca971f599bec38bcbed26e8fe799f0155f4ae17cb57b8e0488aa070a047458": {
+    "embedding": [
+      -0.1836591290305086,
+      -0.9399285525906005,
+      0.3676548631341155,
+      0.04625108320233871
+    ],
+    "fire_id": "synthetic-test-0037",
+    "identity": "115c00a0c6fd065c4273d4c12a9cc5d36d515fdde762e2df3f7a896fd1c99049",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0037:D0",
+      "synthetic-test-0037:D1",
+      "synthetic-test-0037:D2",
+      "synthetic-test-0037:D3",
+      "synthetic-test-0037:D4"
+    ]
+  },
+  "245fec40c17575777d726652732f76fc65c262235e7179c350ed6ba5f63ce7d6": {
+    "embedding": [
+      -0.6703306654947477,
+      -0.9320129362865535,
+      0.3921226489053266,
+      0.3832256582230208
+    ],
+    "fire_id": "synthetic-test-0020",
+    "identity": "3f3dafd7c1591a72bdf320769bae2b0d18a853c9c32a05bc0eaf53ff9773e62c",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0020:D0",
+      "synthetic-test-0020:D1",
+      "synthetic-test-0020:D2",
+      "synthetic-test-0020:D3",
+      "synthetic-test-0020:D4"
+    ]
+  },
+  "26dbe583450c4fd765bf6972d2b60ecb162d51c51e5df9a71c114f971e000025": {
+    "embedding": [
+      0.19687526964319446,
+      -0.961614834312345,
+      -0.7947151518389812,
+      -0.634763174806688
+    ],
+    "fire_id": "synthetic-test-0063",
+    "identity": "4a36f8c5cb68ef8d42b7a2fac0e19bce67017f9ffc690402179646ea58f024cb",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0063:D0",
+      "synthetic-test-0063:D1",
+      "synthetic-test-0063:D2",
+      "synthetic-test-0063:D3",
+      "synthetic-test-0063:D4",
+      "synthetic-test-0063:D5",
+      "synthetic-test-0063:D6",
+      "synthetic-test-0063:D7",
+      "synthetic-test-0063:D8",
+      "synthetic-test-0063:D9"
+    ]
+  },
+  "2843736a1f4db8d51d7f50d493df1699f684042633f75c06436d62cd8ca698e8": {
+    "embedding": [
+      0.19340613537056262,
+      0.499544037999639,
+      0.9105683520825796,
+      0.5367189632529648
+    ],
+    "fire_id": "synthetic-test-0032",
+    "identity": "d6fe92765663174c4fc71a883ef7f15b49488ea8822db0bbc6be744b3a47d5eb",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0032:D0",
+      "synthetic-test-0032:D1",
+      "synthetic-test-0032:D2"
+    ]
+  },
+  "28baf590bfe6f18d204f62d0dbe7a9022d056e97aa2e9b33e6ad679f3c7d62c6": {
+    "embedding": [
+      0.29679807414115117,
+      -0.11618859542748634,
+      0.6579712695708966,
+      0.936152525828681
+    ],
+    "fire_id": "synthetic-test-0052",
+    "identity": "a8b15b712b553c47be7f6801b6411fb6dcd5d5ab2f725b3927752f1b21466675",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0052:D0",
+      "synthetic-test-0052:D1",
+      "synthetic-test-0052:D2",
+      "synthetic-test-0052:D3",
+      "synthetic-test-0052:D4",
+      "synthetic-test-0052:D5",
+      "synthetic-test-0052:D6"
+    ]
+  },
+  "2d603050d4aa007ac2810cb4ab11963bd2fa01cff0c324101b3faa89b55f322c": {
+    "embedding": [
+      0.6269442448285206,
+      -0.21379634717128332,
+      0.5493476240847227,
+      0.27793063003194296
+    ],
+    "fire_id": "synthetic-test-0030",
+    "identity": "71718bab4a3155860a3db1ccc3d59b64df844c3d0c9a0fc1ba56e61c1563a9c4",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0030:D0",
+      "synthetic-test-0030:D1",
+      "synthetic-test-0030:D2",
+      "synthetic-test-0030:D3",
+      "synthetic-test-0030:D4"
+    ]
+  },
+  "2dc254963f8bd97508a5bec11116edbd7ad6f7579059c195f940a444bf19c4e3": {
+    "embedding": [
+      -0.12383094176905536,
+      0.26840640118295506,
+      0.8640185976345123,
+      0.8584233170369465
+    ],
+    "fire_id": "synthetic-test-0032",
+    "identity": "efc07a48f5b11d461578e94d778358947ee84074e6a1887a06324e3e10a77d5f",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0032:D0",
+      "synthetic-test-0032:D1",
+      "synthetic-test-0032:D2",
+      "synthetic-test-0032:D3",
+      "synthetic-test-0032:D4"
+    ]
+  },
+  "2e126ceee7a4b33bc91d1c184cf5b0a4e5d84bf0368b4dccf67bba973dd7a9b7": {
+    "embedding": [
+      0.7675454562781191,
+      -0.3018546166518474,
+      0.23815483132209597,
+      0.6767742230176703
+    ],
+    "fire_id": "synthetic-test-0061",
+    "identity": "2d6f146c7f14efb533587c1b08cf051ef5d633606ec4f8d2be1968efac1710ff",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0061:D0",
+      "synthetic-test-0061:D1",
+      "synthetic-test-0061:D2",
+      "synthetic-test-0061:D3",
+      "synthetic-test-0061:D4",
+      "synthetic-test-0061:D5",
+      "synthetic-test-0061:D6"
+    ]
+  },
+  "2fdf437d839039b3427e17fd60cb9e505375cfe87e8ba3bfa60555bebe54aac9": {
+    "embedding": [
+      -0.01491662042568489,
+      -0.9561107660733911,
+      -0.40442874443830207,
+      0.3028685966358821
+    ],
+    "fire_id": "synthetic-test-0023",
+    "identity": "243809d8d41e864495e8238b7761036e5ce0274f3d0ede3cd98b8abe3d950a66",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0023:D0",
+      "synthetic-test-0023:D1",
+      "synthetic-test-0023:D2",
+      "synthetic-test-0023:D3",
+      "synthetic-test-0023:D4",
+      "synthetic-test-0023:D5",
+      "synthetic-test-0023:D6",
+      "synthetic-test-0023:D7",
+      "synthetic-test-0023:D8",
+      "synthetic-test-0023:D9"
+    ]
+  },
+  "30e6214c511e5647feda334cd4c272a3d6d63af79892e85dfef8b8455f795c5c": {
+    "embedding": [
+      0.11197490901624019,
+      -0.9430942441324555,
+      0.3159154364239463,
+      -0.5131615683995213
+    ],
+    "fire_id": "synthetic-test-0025",
+    "identity": "4c45b8aad2a98b7fae5501e59aaa915c5c361855929dfbed86b9eeceb6bc0e7c",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0025:D0",
+      "synthetic-test-0025:D1",
+      "synthetic-test-0025:D2",
+      "synthetic-test-0025:D3",
+      "synthetic-test-0025:D4"
+    ]
+  },
+  "3138471d747b01cb99c987ce7dec4b7c2f931eccc048617ec7487457acc9cc29": {
+    "embedding": [
+      -0.565288090358471,
+      -0.8873780358765992,
+      0.5073293881722395,
+      0.619344487418428
+    ],
+    "fire_id": "synthetic-test-0033",
+    "identity": "a0cd916f772758ec345b4f29897ab2e196ac04d2669a0b078b77e63cb0c0edd0",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0033:D0",
+      "synthetic-test-0033:D1",
+      "synthetic-test-0033:D2",
+      "synthetic-test-0033:D3",
+      "synthetic-test-0033:D4"
+    ]
+  },
+  "313e99577dec69c2b83d5ca73e8c11e6cad12facfa9a70950b6076271127c96d": {
+    "embedding": [
+      -0.7378065867832281,
+      -0.8957781548749844,
+      0.46611985530699923,
+      0.5453166040178268
+    ],
+    "fire_id": "synthetic-test-0047",
+    "identity": "96941dd0f444ee30d8492e4b791dacf7ccb192033d184e00bb08046e79a77204",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0047:D0",
+      "synthetic-test-0047:D1",
+      "synthetic-test-0047:D2",
+      "synthetic-test-0047:D3",
+      "synthetic-test-0047:D4"
+    ]
+  },
+  "3201229d56e41869808ee215931f8d373a653d3559028b92a0426cfff293108a": {
+    "embedding": [
+      -0.16333487578954356,
+      -0.9490703982564462,
+      0.36517631054499994,
+      -0.8993738594128545
+    ],
+    "fire_id": "synthetic-test-0031",
+    "identity": "8343ba5151e3ef3513e02f5b07166ccadeec59735dedcaa16541466815777eff",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0031:D0",
+      "synthetic-test-0031:D1",
+      "synthetic-test-0031:D2"
+    ]
+  },
+  "341c2b60f1ea77daaa031c16e0287014de2cc08ad755ba82267d61b2c7ae19db": {
+    "embedding": [
+      -0.019768133178979696,
+      -0.9198701648393143,
+      0.4974409467483103,
+      -0.9084151310739149
+    ],
+    "fire_id": "synthetic-test-0044",
+    "identity": "c8c6a190a818b66417a0a09934486a0347dcfbc24a87feecd424b530956f53b8",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0044:D0",
+      "synthetic-test-0044:D1",
+      "synthetic-test-0044:D2"
+    ]
+  },
+  "34be62f661ba05c1b67c691253c8afa87b3c545a6a0940125bcfcf26060d9dd5": {
+    "embedding": [
+      -0.0755583862302527,
+      -0.9831207804447121,
+      -0.2862615646530363,
+      -0.29505429976972236
+    ],
+    "fire_id": "synthetic-test-0050",
+    "identity": "7f1798e06b5fddbe114a26a655f52114b3407dd0dad111ba836d9f7816a402b3",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0050:D0",
+      "synthetic-test-0050:D1",
+      "synthetic-test-0050:D2",
+      "synthetic-test-0050:D3",
+      "synthetic-test-0050:D4",
+      "synthetic-test-0050:D5",
+      "synthetic-test-0050:D6"
+    ]
+  },
+  "36baf20f10f178835581678526cedc73c27eb4631630c9a0f46f3a2a4c7789c9": {
+    "embedding": [
+      0.7700899110058667,
+      0.019539770938245778,
+      -0.06262032783759933,
+      0.9188358114315983
+    ],
+    "fire_id": "synthetic-test-0019",
+    "identity": "98cd8485964cfd99876ef776809c99ea8bd5950e24caa8cbc6d049cc1a3a9a9d",
+    "issued_at": "2023-06-30T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0019:D0",
+      "synthetic-test-0019:D1",
+      "synthetic-test-0019:D2",
+      "synthetic-test-0019:D3",
+      "synthetic-test-0019:D4",
+      "synthetic-test-0019:D5",
+      "synthetic-test-0019:D6",
+      "synthetic-test-0019:D7",
+      "synthetic-test-0019:D8",
+      "synthetic-test-0019:D9"
+    ]
+  },
+  "370f7ec42665fdc4661088ca12c362222512dd27aca2a25432b7c1482bea51bf": {
+    "embedding": [
+      0.16821124080878602,
+      -0.318170424605835,
+      0.3618510299082614,
+      0.9557457841829609
+    ],
+    "fire_id": "synthetic-test-0032",
+    "identity": "827660f6b67ef53fbd49d8fdb1744147a17ebbadae2519c0607c56884d33b463",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0032:D0",
+      "synthetic-test-0032:D1",
+      "synthetic-test-0032:D2",
+      "synthetic-test-0032:D3",
+      "synthetic-test-0032:D4",
+      "synthetic-test-0032:D5",
+      "synthetic-test-0032:D6",
+      "synthetic-test-0032:D7",
+      "synthetic-test-0032:D8",
+      "synthetic-test-0032:D9"
+    ]
+  },
+  "380133e649a4e16caafa2c4fa629ae83ca5449ddafc358fe223fac37f531ed88": {
+    "embedding": [
+      0.8837755188735309,
+      0.9284916816327268,
+      0.40265937097213983,
+      0.9802278928187126
+    ],
+    "fire_id": "synthetic-test-0052",
+    "identity": "75a62bd60ea982105eaa63d48ace01a34723ba7e735259d5835bd5bef7b81a00",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0052:D0",
+      "synthetic-test-0052:D1",
+      "synthetic-test-0052:D2",
+      "synthetic-test-0052:D3",
+      "synthetic-test-0052:D4",
+      "synthetic-test-0052:D5",
+      "synthetic-test-0052:D6",
+      "synthetic-test-0052:D7",
+      "synthetic-test-0052:D8",
+      "synthetic-test-0052:D9"
+    ]
+  },
+  "3894487a56b5e4477187784fac3530391e66277ea5f4122b912d1b61dcd8d3f7": {
+    "embedding": [
+      -0.7492772810801894,
+      -0.9852723824771304,
+      0.04008261205716098,
+      -0.8334043188165249
+    ],
+    "fire_id": "synthetic-test-0016",
+    "identity": "45e8278fb8830aef38cb2f654f1d96930229b7ddd34efe8e05ebc77494379f8e",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0016:D0",
+      "synthetic-test-0016:D1",
+      "synthetic-test-0016:D2"
+    ]
+  },
+  "38a7fbd167451833020da96a23a6c2baf17589c19ff7c9834449f3dee56058ae": {
+    "embedding": [
+      -0.6344278037134261,
+      -0.9928535713083284,
+      -0.4643182427564564,
+      -0.6734795212450969
+    ],
+    "fire_id": "synthetic-test-0040",
+    "identity": "63f6bac8626ea14dd6031eba552a7ee591c857e324a92039216e7095662ce6ce",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0040:D0",
+      "synthetic-test-0040:D1",
+      "synthetic-test-0040:D2",
+      "synthetic-test-0040:D3",
+      "synthetic-test-0040:D4"
+    ]
+  },
+  "393f4334a3957287f23c8cbb7b3a5f4def070da67bfb9c255fc147f40e63d5ad": {
+    "embedding": [
+      -0.4373336534329315,
+      -0.8494973619819512,
+      0.5580095309937501,
+      0.5339605851638225
+    ],
+    "fire_id": "synthetic-test-0000",
+    "identity": "6c17599a3be4a610d8d5e3f236aff9a5e59a46bf7e6caabefca6c6843843b618",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0000:D0",
+      "synthetic-test-0000:D1",
+      "synthetic-test-0000:D2",
+      "synthetic-test-0000:D3",
+      "synthetic-test-0000:D4"
+    ]
+  },
+  "39e6d7e950bb6139e082e5375e705c926787216fba10698468316893dec1d488": {
+    "embedding": [
+      0.018136569663431877,
+      -0.9616957893887058,
+      0.2865173326367782,
+      -0.4075164869075463
+    ],
+    "fire_id": "synthetic-test-0012",
+    "identity": "5e1aef19e5cb6e4749e4a2dcbac47d7ca2829071fbb5700b2d137fb73079acc5",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0012:D0",
+      "synthetic-test-0012:D1",
+      "synthetic-test-0012:D2",
+      "synthetic-test-0012:D3",
+      "synthetic-test-0012:D4"
+    ]
+  },
+  "3a2a9ad382357271da1fee40241c53b2bee7bcf461431bd6cd2e8fc600a5f1aa": {
+    "embedding": [
+      0.07499724436219038,
+      -0.444826636703688,
+      0.13103624872983613,
+      0.9466800457106607
+    ],
+    "fire_id": "synthetic-test-0011",
+    "identity": "5b230190a501685808234788031852c9b331e2a5a014abcd662ac3035eee5866",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0011:D0",
+      "synthetic-test-0011:D1",
+      "synthetic-test-0011:D2",
+      "synthetic-test-0011:D3",
+      "synthetic-test-0011:D4",
+      "synthetic-test-0011:D5",
+      "synthetic-test-0011:D6",
+      "synthetic-test-0011:D7",
+      "synthetic-test-0011:D8",
+      "synthetic-test-0011:D9"
+    ]
+  },
+  "3acc2bac4e862a5d1c9e98e6e8ca3554b0245110d542605153d5efe44945bda9": {
+    "embedding": [
+      0.019534287701488864,
+      -0.8559763485649974,
+      0.23860786546773557,
+      0.7477154593680174
+    ],
+    "fire_id": "synthetic-test-0019",
+    "identity": "877a3504cb5a4c63463a7e7b18c0a2ec0b6d9aa76b9c2bf9330d8a09b64c24e5",
+    "issued_at": "2023-06-27T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0019:D0",
+      "synthetic-test-0019:D1",
+      "synthetic-test-0019:D2",
+      "synthetic-test-0019:D3",
+      "synthetic-test-0019:D4",
+      "synthetic-test-0019:D5",
+      "synthetic-test-0019:D6"
+    ]
+  },
+  "3cefcde6e015161d0b69e8e54a43a2fd584c1e02e91537184a029d262cb95737": {
+    "embedding": [
+      0.21085818388681213,
+      -0.0011012622999790364,
+      0.7836855811153067,
+      0.7982216388239126
+    ],
+    "fire_id": "synthetic-test-0011",
+    "identity": "14c564be630bd3f6ac1ddfdc6e0e94c762afbfdb5574de954a9cbee880d90a71",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0011:D0",
+      "synthetic-test-0011:D1",
+      "synthetic-test-0011:D2",
+      "synthetic-test-0011:D3",
+      "synthetic-test-0011:D4"
+    ]
+  },
+  "3daf6c12525aa1c2f69375886b65e71f9a7c9c0dea33dfb9efb1d9a1e084bdd7": {
+    "embedding": [
+      0.3613522519618011,
+      -0.6179762599270023,
+      -0.021196993882884922,
+      0.8776181993083516
+    ],
+    "fire_id": "synthetic-test-0029",
+    "identity": "2492893f10e3252a6e54b42b1c9dcf9e45a6ee85a9306a21513a3e9bcdcdc00a",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0029:D0",
+      "synthetic-test-0029:D1",
+      "synthetic-test-0029:D2",
+      "synthetic-test-0029:D3",
+      "synthetic-test-0029:D4",
+      "synthetic-test-0029:D5",
+      "synthetic-test-0029:D6",
+      "synthetic-test-0029:D7",
+      "synthetic-test-0029:D8",
+      "synthetic-test-0029:D9"
+    ]
+  },
+  "3df4ea3594d5afe9def35912a80eefff5cd0f11a3aa77996ef219f0321af07ce": {
+    "embedding": [
+      -0.5704246034788809,
+      -0.9849248853313672,
+      -0.336315348357345,
+      -0.9856910077964912
+    ],
+    "fire_id": "synthetic-test-0009",
+    "identity": "186ffba40d0c32b80b83cee6c66d836161fa6671c0d776caebc4e3d180e5fa00",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0009:D0",
+      "synthetic-test-0009:D1",
+      "synthetic-test-0009:D2"
+    ]
+  },
+  "3e18a5e6a2e33d9a56cbd44d9a7e0fcbe9b9b79c0302ede2f937aee3157edc7a": {
+    "embedding": [
+      0.36729493092546966,
+      -0.7755496523501606,
+      -0.4905778784007567,
+      0.7308079607026786
+    ],
+    "fire_id": "synthetic-test-0045",
+    "identity": "0bd737d9592d8690a100809a7c0a3f2e924e08114d9d8ba01ea70ed02f6a0fba",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0045:D0",
+      "synthetic-test-0045:D1",
+      "synthetic-test-0045:D2",
+      "synthetic-test-0045:D3",
+      "synthetic-test-0045:D4",
+      "synthetic-test-0045:D5",
+      "synthetic-test-0045:D6",
+      "synthetic-test-0045:D7",
+      "synthetic-test-0045:D8",
+      "synthetic-test-0045:D9"
+    ]
+  },
+  "3e4671fc00f6953e3c1ce2f0b66d0790920eeddea89571ffba27799c864b9cd4": {
+    "embedding": [
+      0.3651019217866983,
+      -0.9770696496362427,
+      -0.41797936990056495,
+      -0.5335650230629286
+    ],
+    "fire_id": "synthetic-test-0042",
+    "identity": "3d051d0350a10394c0e7c36f0f05717a4563cfd8587c35d068d1a4f98ec9f2b1",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0042:D0",
+      "synthetic-test-0042:D1",
+      "synthetic-test-0042:D2",
+      "synthetic-test-0042:D3",
+      "synthetic-test-0042:D4",
+      "synthetic-test-0042:D5",
+      "synthetic-test-0042:D6"
+    ]
+  },
+  "3f4f812e63ccdaa7020e88c607e2b52990db1078ae3f62ab2da0bb881d33fb64": {
+    "embedding": [
+      -0.09290889779984339,
+      -0.9873264917925961,
+      -0.34010310005942646,
+      -0.8877313707201424
+    ],
+    "fire_id": "synthetic-test-0009",
+    "identity": "0b509ae9374a220b8f38a1de5c82f80e4152d4ae1e081eee5838e44cd4997397",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0009:D0",
+      "synthetic-test-0009:D1",
+      "synthetic-test-0009:D2",
+      "synthetic-test-0009:D3",
+      "synthetic-test-0009:D4"
+    ]
+  },
+  "3f8578381c2bbbb976bebfc9cb70dad1880677c3b5e6a4acd13b7556d4004f17": {
+    "embedding": [
+      0.22022636339273216,
+      -0.9247944941406661,
+      0.3666784874289607,
+      0.03110667006723828
+    ],
+    "fire_id": "synthetic-test-0028",
+    "identity": "dfe6ba3d949fee82941a7f27c8358b4eb93f0ceb757f891073108abda85cd057",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0028:D0",
+      "synthetic-test-0028:D1",
+      "synthetic-test-0028:D2",
+      "synthetic-test-0028:D3",
+      "synthetic-test-0028:D4"
+    ]
+  },
+  "40fc0b5a9ebbff357ac71388670439ea0da09524aaa5c54b89f8a95f338d2b75": {
+    "embedding": [
+      -0.2647038741867907,
+      -0.8172326969858128,
+      0.5821233217090286,
+      0.3274792223412951
+    ],
+    "fire_id": "synthetic-test-0026",
+    "identity": "82d1ee366f30ac9aff0651bd8e3ba38504881f5dfa4ab9f267fb4e45a21c060e",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0026:D0",
+      "synthetic-test-0026:D1",
+      "synthetic-test-0026:D2",
+      "synthetic-test-0026:D3",
+      "synthetic-test-0026:D4"
+    ]
+  },
+  "411e556167a7eeff7ce27e205ac5db51472111ea1be69d28dd5e0591f907244d": {
+    "embedding": [
+      -0.13696183332569392,
+      -0.9426753525156263,
+      0.15994962770528273,
+      -0.9693551117229388
+    ],
+    "fire_id": "synthetic-test-0017",
+    "identity": "aa6fc90ca77b096ad97b1d5bf57f4c4735dafefd90ceddd44fa043d8e45b0d7d",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0017:D0",
+      "synthetic-test-0017:D1",
+      "synthetic-test-0017:D2"
+    ]
+  },
+  "415cd1f1033aa8c1ebae89d39111807920d53ceae5a6f6921fbfffcf1f9f0ead": {
+    "embedding": [
+      -0.39476216859680935,
+      -0.8617306021073566,
+      -0.07971618811432649,
+      0.8742421729623162
+    ],
+    "fire_id": "synthetic-test-0062",
+    "identity": "1b6f48fa982a3d9fb5722935acab5bee308a7ac00875f6f90054e46a89a0d03f",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0062:D0",
+      "synthetic-test-0062:D1",
+      "synthetic-test-0062:D2",
+      "synthetic-test-0062:D3",
+      "synthetic-test-0062:D4",
+      "synthetic-test-0062:D5",
+      "synthetic-test-0062:D6",
+      "synthetic-test-0062:D7",
+      "synthetic-test-0062:D8",
+      "synthetic-test-0062:D9"
+    ]
+  },
+  "441f999156800676df372e3f1d4fd0d967211d3c9b14d813c40413623b56ba56": {
+    "embedding": [
+      0.5564007281978706,
+      -0.5735063343800612,
+      -0.21582303689455373,
+      0.8621257167724875
+    ],
+    "fire_id": "synthetic-test-0038",
+    "identity": "66b2e829d386beb92668c03e0e7de8379da9806de06279476acefad2d4e03679",
+    "issued_at": "2023-06-29T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0038:D0",
+      "synthetic-test-0038:D1",
+      "synthetic-test-0038:D2",
+      "synthetic-test-0038:D3",
+      "synthetic-test-0038:D4",
+      "synthetic-test-0038:D5",
+      "synthetic-test-0038:D6",
+      "synthetic-test-0038:D7",
+      "synthetic-test-0038:D8",
+      "synthetic-test-0038:D9"
+    ]
+  },
+  "44859e5293184ca958872f1f042df62cbf0548430b6aab6810336864896cc6a4": {
+    "embedding": [
+      -0.4339723662061451,
+      -0.9680861986166571,
+      0.2940190451975093,
+      -0.2952621312525956
+    ],
+    "fire_id": "synthetic-test-0005",
+    "identity": "14359b0ee0d9aea01c1e5e9759e69a926df65f5716caf991909bdb570d97b974",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0005:D0",
+      "synthetic-test-0005:D1",
+      "synthetic-test-0005:D2",
+      "synthetic-test-0005:D3",
+      "synthetic-test-0005:D4"
+    ]
+  },
+  "45ac20e18ee4f2d611c3db8c39fa8cf9eea49f83ce99943ec5becea57f5fc733": {
+    "embedding": [
+      -0.4521747292498187,
+      -0.761000302799439,
+      0.6222674957227654,
+      0.6561264819930542
+    ],
+    "fire_id": "synthetic-test-0057",
+    "identity": "4d1faa20e4b1f0387787e45bc09a6b91a0610bca7ceefcf9e6474655fd519520",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0057:D0",
+      "synthetic-test-0057:D1",
+      "synthetic-test-0057:D2",
+      "synthetic-test-0057:D3",
+      "synthetic-test-0057:D4"
+    ]
+  },
+  "4a4d51a7d6e9342997910a7d2a34a5eaf614d9fc6245baa91c50e3294f985bec": {
+    "embedding": [
+      0.8317008032953269,
+      -0.8506506335934292,
+      -0.23605691057003045,
+      -0.33464402486208344
+    ],
+    "fire_id": "synthetic-test-0003",
+    "identity": "76014eaeed933d95a194e9c5493cbd3e0fd16e9ddaf39bec17f6fd1a62ae6fb8",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0003:D0",
+      "synthetic-test-0003:D1",
+      "synthetic-test-0003:D2",
+      "synthetic-test-0003:D3",
+      "synthetic-test-0003:D4",
+      "synthetic-test-0003:D5",
+      "synthetic-test-0003:D6"
+    ]
+  },
+  "4b9bdc25dd9c510880260b2237b456f73f99213941729eb56783fec4eb9c6a7d": {
+    "embedding": [
+      0.0637655277371166,
+      -0.9560420984535015,
+      -0.03265505711986524,
+      0.49346424143796525
+    ],
+    "fire_id": "synthetic-test-0006",
+    "identity": "695447b79c1893879f1245437540661bdd7b1545e26c9a3326331cc07e6b7ad9",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0006:D0",
+      "synthetic-test-0006:D1",
+      "synthetic-test-0006:D2",
+      "synthetic-test-0006:D3",
+      "synthetic-test-0006:D4",
+      "synthetic-test-0006:D5",
+      "synthetic-test-0006:D6"
+    ]
+  },
+  "4bf8d69901a77320b928d2284b391a6f8410aa83790b2d9b207a119c876579a8": {
+    "embedding": [
+      0.7980158843097754,
+      0.8385007275961844,
+      0.4763825825367722,
+      0.9564655982870364
+    ],
+    "fire_id": "synthetic-test-0010",
+    "identity": "77e6578d6254e2263211fde06c3670ea6989c51faf4f87b86f5175c1a9b4adb4",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0010:D0",
+      "synthetic-test-0010:D1",
+      "synthetic-test-0010:D2",
+      "synthetic-test-0010:D3",
+      "synthetic-test-0010:D4",
+      "synthetic-test-0010:D5",
+      "synthetic-test-0010:D6"
+    ]
+  },
+  "4c9ee204ede39d9a95931cf526ee2ae870a887e6a381693f09ff5975609be61d": {
+    "embedding": [
+      -0.08465269369536077,
+      -0.5359977656851515,
+      0.7730652530586416,
+      -0.15551173839875365
+    ],
+    "fire_id": "synthetic-test-0020",
+    "identity": "e5be1bb5f477aa650f5c6b16fd46e6d4fe35f16a430f7f06c6acfd2623d5159d",
+    "issued_at": "2023-06-04T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0020:D0",
+      "synthetic-test-0020:D1",
+      "synthetic-test-0020:D2"
+    ]
+  },
+  "4d6cf73709a9005f65b68cbe2623cbabe7266b96d42922e7193a1524490efedc": {
+    "embedding": [
+      -0.5953496988351777,
+      -0.9885251857752702,
+      -0.3818132702670754,
+      -0.9799892924765768
+    ],
+    "fire_id": "synthetic-test-0027",
+    "identity": "f142eeabae31ac4c4666543f2c5ae5b96f49e99f5c2f9cbc63fa1df9aa813c76",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0027:D0",
+      "synthetic-test-0027:D1",
+      "synthetic-test-0027:D2"
+    ]
+  },
+  "4de8796f2b1525845c1ae15387e781503b89458985fad9f516401b9d7a269f11": {
+    "embedding": [
+      0.23974771136985187,
+      0.11688422610132158,
+      0.8593026143997748,
+      0.19624234809956623
+    ],
+    "fire_id": "synthetic-test-0056",
+    "identity": "cb63b436f0179662b6bf4980cb43583552a16d8cc13fc0234152c00103d32ecc",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0056:D0",
+      "synthetic-test-0056:D1",
+      "synthetic-test-0056:D2"
+    ]
+  },
+  "4e14f5e4af712168fe95186b10fbe01091d18f8c2f56addcc2bda10114981a10": {
+    "embedding": [
+      -0.5514785334349532,
+      -0.7776694145267664,
+      0.6298333395833063,
+      0.6186109494317192
+    ],
+    "fire_id": "synthetic-test-0059",
+    "identity": "f1e40c2f83eccf46dc5a42c47550b30f2906ed9a6896d8b2b223ce2e01c8d5b1",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0059:D0",
+      "synthetic-test-0059:D1",
+      "synthetic-test-0059:D2",
+      "synthetic-test-0059:D3",
+      "synthetic-test-0059:D4"
+    ]
+  },
+  "4efde7b7dfa38cf97f3efa0964c4dd360f549c562a60123104a187d0ddccea10": {
+    "embedding": [
+      0.7298519899931494,
+      -0.05239148912152007,
+      -0.128972069899752,
+      0.9145931104211698
+    ],
+    "fire_id": "synthetic-test-0026",
+    "identity": "d5417cfa71961f21b846ec237b3486e6ae744c5941c170213baddedaa4d70ce4",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0026:D0",
+      "synthetic-test-0026:D1",
+      "synthetic-test-0026:D2",
+      "synthetic-test-0026:D3",
+      "synthetic-test-0026:D4",
+      "synthetic-test-0026:D5",
+      "synthetic-test-0026:D6",
+      "synthetic-test-0026:D7",
+      "synthetic-test-0026:D8",
+      "synthetic-test-0026:D9"
+    ]
+  },
+  "5040d11e0f17e72d2cc5746a24eb2d9594312529fa7b4fde062704d6d3e9dc6b": {
+    "embedding": [
+      0.6964841032333368,
+      -0.6197116852390112,
+      0.10070938152607653,
+      0.6710412845091581
+    ],
+    "fire_id": "synthetic-test-0028",
+    "identity": "fc0bdad9baaecff3f3debc0d6420cd938c6492bb9f22a5c355a816fa5bdd54d6",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0028:D0",
+      "synthetic-test-0028:D1",
+      "synthetic-test-0028:D2",
+      "synthetic-test-0028:D3",
+      "synthetic-test-0028:D4",
+      "synthetic-test-0028:D5",
+      "synthetic-test-0028:D6"
+    ]
+  },
+  "507c503ab1de79c5c2a30e1c4a24c8514ff455c1bd70b2ababfed0c961885f60": {
+    "embedding": [
+      0.0035613612952582322,
+      -0.4900220034493488,
+      0.5387774109176727,
+      0.898219459154417
+    ],
+    "fire_id": "synthetic-test-0011",
+    "identity": "bec01ed0c5c1d3a37979c06bcedbebe9ebcb5b14254c9ade04041d9d284c42b2",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0011:D0",
+      "synthetic-test-0011:D1",
+      "synthetic-test-0011:D2",
+      "synthetic-test-0011:D3",
+      "synthetic-test-0011:D4",
+      "synthetic-test-0011:D5",
+      "synthetic-test-0011:D6"
+    ]
+  },
+  "51096711e8e5b3d865002bcbec35cfdb2650c521b7836d3e096e96ae7fc565dd": {
+    "embedding": [
+      0.5764495793075016,
+      0.0061262770081084135,
+      0.7020665578657217,
+      0.9305131870162265
+    ],
+    "fire_id": "synthetic-test-0056",
+    "identity": "7b0dcd210657a2a3d2ae87371c8c92160bc2ce2e63d026b4f9be133bb9b79d7d",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0056:D0",
+      "synthetic-test-0056:D1",
+      "synthetic-test-0056:D2",
+      "synthetic-test-0056:D3",
+      "synthetic-test-0056:D4",
+      "synthetic-test-0056:D5",
+      "synthetic-test-0056:D6"
+    ]
+  },
+  "533e4813e42d1c73c1c2c8deb5ce4127d5e9c1d0e69e75b2fb1155aa7bb2066d": {
+    "embedding": [
+      0.5631313691491278,
+      -0.8663902639894392,
+      0.13687428443247662,
+      0.34369401094288776
+    ],
+    "fire_id": "synthetic-test-0049",
+    "identity": "3661ae8a6deaa2ea5a2077a2edb8b230172de93ce301a725f45b3a7766814ee3",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0049:D0",
+      "synthetic-test-0049:D1",
+      "synthetic-test-0049:D2",
+      "synthetic-test-0049:D3",
+      "synthetic-test-0049:D4",
+      "synthetic-test-0049:D5",
+      "synthetic-test-0049:D6"
+    ]
+  },
+  "56bae49b74ed1a239fc83f2cc0371d761a7a0e5fc4359b11ad07cd16fbb3c711": {
+    "embedding": [
+      -0.4036932128947575,
+      -0.9727509029873034,
+      0.03400817698688096,
+      -0.964944213642707
+    ],
+    "fire_id": "synthetic-test-0012",
+    "identity": "5706f7a0e98b997ea705695b609be74084a5911fbff46b30d3e530bb357cc997",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0012:D0",
+      "synthetic-test-0012:D1",
+      "synthetic-test-0012:D2"
+    ]
+  },
+  "56d300cf33efa2c794d725fd51576d35b68803cf06301051b5fc65fd3fe22a12": {
+    "embedding": [
+      0.15384147680946525,
+      -0.5572968881349113,
+      0.0006955339999387304,
+      0.9312271674868531
+    ],
+    "fire_id": "synthetic-test-0013",
+    "identity": "90e9ec4825fe115736109455ae79dce25bbd124e8922a4940ffc46f62fd5ce74",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0013:D0",
+      "synthetic-test-0013:D1",
+      "synthetic-test-0013:D2",
+      "synthetic-test-0013:D3",
+      "synthetic-test-0013:D4",
+      "synthetic-test-0013:D5",
+      "synthetic-test-0013:D6",
+      "synthetic-test-0013:D7",
+      "synthetic-test-0013:D8",
+      "synthetic-test-0013:D9"
+    ]
+  },
+  "58161aec2009b073a5a1965a024fb4c02b86fc0864f2b122789e10ab093c4209": {
+    "embedding": [
+      -0.12374496405436489,
+      -0.9896375807177964,
+      -0.5609729584850075,
+      -0.5591690264706153
+    ],
+    "fire_id": "synthetic-test-0063",
+    "identity": "e16d34236e7df4677b4d72845f2a20d4e0f39f718eefe76de79970f5e98b1d97",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0063:D0",
+      "synthetic-test-0063:D1",
+      "synthetic-test-0063:D2",
+      "synthetic-test-0063:D3",
+      "synthetic-test-0063:D4",
+      "synthetic-test-0063:D5",
+      "synthetic-test-0063:D6"
+    ]
+  },
+  "5964cf383c6d0a0be83c004d777655b0478d00dc07bf4f38c0f07a56514dcc8b": {
+    "embedding": [
+      -0.557115559452194,
+      -0.6863728438193266,
+      0.6833917634941191,
+      0.2811938196813968
+    ],
+    "fire_id": "synthetic-test-0010",
+    "identity": "a8268dd1b4f436ddf8d97b2aa1af8a67ea0a058fc166098b3b51ba5a9b4525db",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0010:D0",
+      "synthetic-test-0010:D1",
+      "synthetic-test-0010:D2"
+    ]
+  },
+  "5a07e67788b034cb4c0aedea82a26220e8d92d5a209a2b2f7d6bfac307915d45": {
+    "embedding": [
+      0.026211709996371804,
+      -0.495975893787574,
+      0.7768201791681195,
+      -0.03584073070141534
+    ],
+    "fire_id": "synthetic-test-0013",
+    "identity": "866ada3d3a5ed549fd27a34d73d953a10d8eb7cbb7225b1d619e979d2d6ae84f",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0013:D0",
+      "synthetic-test-0013:D1",
+      "synthetic-test-0013:D2"
+    ]
+  },
+  "5a626040bde9bd48664008f160b46190d59c8bab1a0440986aa6e59f6d5773d7": {
+    "embedding": [
+      -0.007797985784050476,
+      -0.08488384598841237,
+      0.7761326036525116,
+      0.8326111123374299
+    ],
+    "fire_id": "synthetic-test-0022",
+    "identity": "85658e180815bcb01ff389ea3b510ed7791beb6546cb45cb43581631b6cefef0",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0022:D0",
+      "synthetic-test-0022:D1",
+      "synthetic-test-0022:D2",
+      "synthetic-test-0022:D3",
+      "synthetic-test-0022:D4"
+    ]
+  },
+  "5b6ff619dc68e90e84cb7f490a654ba5ee0a665a5f76970ab06c44a67c52b741": {
+    "embedding": [
+      0.5472927173528511,
+      -0.8440886372489046,
+      -0.5579267853637174,
+      0.2669573948235703
+    ],
+    "fire_id": "synthetic-test-0015",
+    "identity": "2228c8fc2379bf15273a4c7dc2ccac744e5e3e0d6bdf7313dd55cc1ee7a85304",
+    "issued_at": "2023-06-26T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0015:D0",
+      "synthetic-test-0015:D1",
+      "synthetic-test-0015:D2",
+      "synthetic-test-0015:D3",
+      "synthetic-test-0015:D4",
+      "synthetic-test-0015:D5",
+      "synthetic-test-0015:D6",
+      "synthetic-test-0015:D7",
+      "synthetic-test-0015:D8",
+      "synthetic-test-0015:D9"
+    ]
+  },
+  "60143f5a4b24677ab6c1f795b2a1b2dc2e9596cf79354fb48516d80560abec15": {
+    "embedding": [
+      0.5188725121917174,
+      -0.9570911550750733,
+      -0.13537093439728173,
+      -0.12216747724628049
+    ],
+    "fire_id": "synthetic-test-0023",
+    "identity": "f2f84e97f8212e92ddf7836534cdcbf116152e9c64162bc97f4597953b743de7",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0023:D0",
+      "synthetic-test-0023:D1",
+      "synthetic-test-0023:D2",
+      "synthetic-test-0023:D3",
+      "synthetic-test-0023:D4",
+      "synthetic-test-0023:D5",
+      "synthetic-test-0023:D6"
+    ]
+  },
+  "60653c2d1ace4c816265125cabdb52965b1c68a5cf256c7bfd58484ed27c6aad": {
+    "embedding": [
+      -0.14095692827268347,
+      0.0329739064906615,
+      0.8604667860855131,
+      0.34254136501802723
+    ],
+    "fire_id": "synthetic-test-0008",
+    "identity": "06e746f789e071e740f9ea9dc591a069d7bb2e745c60d2ac721f471ff323abf3",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0008:D0",
+      "synthetic-test-0008:D1",
+      "synthetic-test-0008:D2"
+    ]
+  },
+  "60ff25c9a4d3225af830a5d071ec171a5cd53662c77094e2c96a2992e56b2879": {
+    "embedding": [
+      0.05795549540859485,
+      -0.7864019824703701,
+      0.348467651236617,
+      0.8541735559026686
+    ],
+    "fire_id": "synthetic-test-0057",
+    "identity": "74b2384832f1777d92f41251f84c6b8c7d7fc0455b5c3d38ea65a9b213385f24",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0057:D0",
+      "synthetic-test-0057:D1",
+      "synthetic-test-0057:D2",
+      "synthetic-test-0057:D3",
+      "synthetic-test-0057:D4",
+      "synthetic-test-0057:D5",
+      "synthetic-test-0057:D6"
+    ]
+  },
+  "615f69d8a389c9ea2f663cd15ea681893e27bc8efd71892729588cc217c306f9": {
+    "embedding": [
+      -0.093814099408711,
+      -0.39838905381710177,
+      0.7234415895554822,
+      0.7332544190894914
+    ],
+    "fire_id": "synthetic-test-0013",
+    "identity": "927d642fb157cf33f80b4ca6497e71ff20e191f804d8177cac89090533a7425a",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0013:D0",
+      "synthetic-test-0013:D1",
+      "synthetic-test-0013:D2",
+      "synthetic-test-0013:D3",
+      "synthetic-test-0013:D4"
+    ]
+  },
+  "62316c2696c9214684e8111450ecf310e1ba592607199474b3b4dfb93657e0ae": {
+    "embedding": [
+      -0.26573370964456206,
+      -0.9854608914506839,
+      -0.8409701259648287,
+      -0.7562976318445993
+    ],
+    "fire_id": "synthetic-test-0036",
+    "identity": "d7e5e5c019ed08e5ab1df3d1411a41de7965dd19cdd2ebc46d3e960c4e7669d7",
+    "issued_at": "2023-06-27T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0036:D0",
+      "synthetic-test-0036:D1",
+      "synthetic-test-0036:D2",
+      "synthetic-test-0036:D3",
+      "synthetic-test-0036:D4",
+      "synthetic-test-0036:D5",
+      "synthetic-test-0036:D6",
+      "synthetic-test-0036:D7",
+      "synthetic-test-0036:D8",
+      "synthetic-test-0036:D9"
+    ]
+  },
+  "62e91b6944aa96b3b5df8adc1cb9d47dfbddd34ffe6d677bb3532d540b8628d5": {
+    "embedding": [
+      0.4073571687196441,
+      -0.9068218208671567,
+      0.3218642670102213,
+      0.6155627774945877
+    ],
+    "fire_id": "synthetic-test-0002",
+    "identity": "28707ff738ec0a0a15780c074d3cf40304aa6c477dd84d520297631bb11e164c",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0002:D0",
+      "synthetic-test-0002:D1",
+      "synthetic-test-0002:D2",
+      "synthetic-test-0002:D3",
+      "synthetic-test-0002:D4",
+      "synthetic-test-0002:D5",
+      "synthetic-test-0002:D6"
+    ]
+  },
+  "64486a10ba4abcb4bd0ac23a551da96c927837b143b35de9a796d70b6f5b0dbf": {
+    "embedding": [
+      -0.5171063913654785,
+      -0.9162362355515448,
+      0.42328767938590556,
+      0.40647367275269264
+    ],
+    "fire_id": "synthetic-test-0046",
+    "identity": "a033d7b8c9987807b0e732ffc5bfe7f6a25bd4c2518af68cd5ca116b1a79df17",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0046:D0",
+      "synthetic-test-0046:D1",
+      "synthetic-test-0046:D2",
+      "synthetic-test-0046:D3",
+      "synthetic-test-0046:D4"
+    ]
+  },
+  "646dab303133d433a0f7e1d590eca34749b86bb51281fccab1e793e13b4585ef": {
+    "embedding": [
+      -0.567627051668077,
+      -0.9796303650907168,
+      0.10657154582565724,
+      -0.4621168352446408
+    ],
+    "fire_id": "synthetic-test-0044",
+    "identity": "3354bce5140e76e0454c677944e11f4af8560f1a7b9c8756130003701197b2d8",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0044:D0",
+      "synthetic-test-0044:D1",
+      "synthetic-test-0044:D2",
+      "synthetic-test-0044:D3",
+      "synthetic-test-0044:D4"
+    ]
+  },
+  "64e97e93a61a3777de18d152face5258e7e65bf9529e53cc4a8b3b9338cbec5b": {
+    "embedding": [
+      0.045919885650858534,
+      -0.9112786080428819,
+      0.25585440577330165,
+      0.7936854216530095
+    ],
+    "fire_id": "synthetic-test-0033",
+    "identity": "49b160025fa79a6e6aecc923e73dba2475fc18f9412573960629707a31af963e",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0033:D0",
+      "synthetic-test-0033:D1",
+      "synthetic-test-0033:D2",
+      "synthetic-test-0033:D3",
+      "synthetic-test-0033:D4",
+      "synthetic-test-0033:D5",
+      "synthetic-test-0033:D6"
+    ]
+  },
+  "65f9e02747e79988a029b02254b67d980c224dc4ee997aaa559b655836d68612": {
+    "embedding": [
+      -0.1464954700128835,
+      -0.8851875273593697,
+      0.637989364253235,
+      -0.676822673517435
+    ],
+    "fire_id": "synthetic-test-0029",
+    "identity": "803d10f41b3a5eda2809704b7c6db26535502c18ee258378e5ee82d64fd57336",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0029:D0",
+      "synthetic-test-0029:D1",
+      "synthetic-test-0029:D2"
+    ]
+  },
+  "66a25c07601549bc9e63a701122236b6727f9093099ce1203a4fa3cbcaf7ec4f": {
+    "embedding": [
+      -0.24809807087977293,
+      -0.9320449226375142,
+      0.5507133863799266,
+      -0.7825978723914309
+    ],
+    "fire_id": "synthetic-test-0041",
+    "identity": "cdfcd759962c595abdb0d84db5d5058447b22bb59b24afbdb9311624203d7c3a",
+    "issued_at": "2023-06-05T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0041:D0",
+      "synthetic-test-0041:D1",
+      "synthetic-test-0041:D2"
+    ]
+  },
+  "66b3cefc635ca44fed18dcfeb46e5c39808badf569aea572c506eb39eef1c7ee": {
+    "embedding": [
+      -0.7325573927972848,
+      -0.9729109578865688,
+      0.20606884383700305,
+      -0.7128325584083525
+    ],
+    "fire_id": "synthetic-test-0021",
+    "identity": "ad4d07298478f22d769f4ff9845c89d6cf5d671292fe7968a21362c06977f1b3",
+    "issued_at": "2023-06-05T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0021:D0",
+      "synthetic-test-0021:D1",
+      "synthetic-test-0021:D2"
+    ]
+  },
+  "66cf9f554cfa7f88820a1e98ca21d696330d8149a27ab0d76e37f496ba5cb27a": {
+    "embedding": [
+      -0.7337553842946312,
+      -0.9923861270713217,
+      -0.27836480064961294,
+      -0.9479208334238377
+    ],
+    "fire_id": "synthetic-test-0003",
+    "identity": "cc5b4ae86f3c8e0aa2d1895cd1bae79334a1ba5a179f80d7ef95ea39c678dc0b",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0003:D0",
+      "synthetic-test-0003:D1",
+      "synthetic-test-0003:D2"
+    ]
+  },
+  "66df846a27a425f731c101245c61bd6fae8c5ad731c4de8892996fe2971d4ff3": {
+    "embedding": [
+      -0.18085523087682512,
+      -0.2260667318204086,
+      0.8307400117445387,
+      0.1679514734153494
+    ],
+    "fire_id": "synthetic-test-0059",
+    "identity": "8e812503f448cde012229c32cca85da6a5086121cfd478c93e33992458825a00",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0059:D0",
+      "synthetic-test-0059:D1",
+      "synthetic-test-0059:D2"
+    ]
+  },
+  "69fe7cabd7666a7588d28b686e984957956d1a0a026f3aa7e641cc3f8f01e339": {
+    "embedding": [
+      -0.18109423198446697,
+      -0.9635209151092655,
+      0.2363836241862771,
+      -0.20549123116552706
+    ],
+    "fire_id": "synthetic-test-0034",
+    "identity": "471272bc8293806695b3083f094e6692ed0c3a33913e3f5ad498a093f30686a5",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0034:D0",
+      "synthetic-test-0034:D1",
+      "synthetic-test-0034:D2",
+      "synthetic-test-0034:D3",
+      "synthetic-test-0034:D4"
+    ]
+  },
+  "6cd9b3d7e8bfda86c9aa6a7d788534af8bc15012043b833e74e004a8ab805aee": {
+    "embedding": [
+      0.36900060633357656,
+      0.22591602065134958,
+      0.5777319408477639,
+      0.9042835162867155
+    ],
+    "fire_id": "synthetic-test-0043",
+    "identity": "85a5a8d44eabd383adc9a9475444c90e29ffedb10645b153742cf99715ec2ea7",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0043:D0",
+      "synthetic-test-0043:D1",
+      "synthetic-test-0043:D2",
+      "synthetic-test-0043:D3",
+      "synthetic-test-0043:D4",
+      "synthetic-test-0043:D5",
+      "synthetic-test-0043:D6"
+    ]
+  },
+  "6d2ee15710bdbf2ae123053d0fa5dc10685938bb4fd78196a74df7d3e70ebcad": {
+    "embedding": [
+      -0.22441245635652787,
+      -0.9517185167230937,
+      0.3743804034581645,
+      -0.9127900667152179
+    ],
+    "fire_id": "synthetic-test-0018",
+    "identity": "0f9167414614a1ea0079da4317de5eaaff96fd5e5e76257127fecdac3716948d",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0018:D0",
+      "synthetic-test-0018:D1",
+      "synthetic-test-0018:D2"
+    ]
+  },
+  "6f5575c7d7d94fcf7219d9e560197021e32158780bd42f1e3aac0e6898e20019": {
+    "embedding": [
+      0.6431779260127649,
+      -0.7717919873536306,
+      0.4527620400131987,
+      0.020261364598051747
+    ],
+    "fire_id": "synthetic-test-0061",
+    "identity": "2ce3e5c3a5f0ac0b08f622966ad62b0de8ca58bbe2c1310833867ad02807d5ad",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0061:D0",
+      "synthetic-test-0061:D1",
+      "synthetic-test-0061:D2",
+      "synthetic-test-0061:D3",
+      "synthetic-test-0061:D4"
+    ]
+  },
+  "72bec908c74051376c77a37c0f750819543f7fb3f728d6c004956d02c60472bf": {
+    "embedding": [
+      -0.18218898805661482,
+      -0.8983123383615794,
+      0.6093291243948092,
+      -0.45233842048192274
+    ],
+    "fire_id": "synthetic-test-0019",
+    "identity": "45678b11e23186d8649f4cee3ff037b31207b90fb2c31e94d7d2b78f64413f47",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0019:D0",
+      "synthetic-test-0019:D1",
+      "synthetic-test-0019:D2"
+    ]
+  },
+  "73577430a670580099b694f7835264379d1d5411264ecf0cafdc99cc919ddd15": {
+    "embedding": [
+      -0.48028473719388304,
+      -0.9360119427187548,
+      -0.537596598502527,
+      0.6832282272816064
+    ],
+    "fire_id": "synthetic-test-0054",
+    "identity": "2e5f14e0903e076c82bdbbedd43d83c8dd9f3a05e364dfd36fb88aaa77005f77",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0054:D0",
+      "synthetic-test-0054:D1",
+      "synthetic-test-0054:D2",
+      "synthetic-test-0054:D3",
+      "synthetic-test-0054:D4",
+      "synthetic-test-0054:D5",
+      "synthetic-test-0054:D6",
+      "synthetic-test-0054:D7",
+      "synthetic-test-0054:D8",
+      "synthetic-test-0054:D9"
+    ]
+  },
+  "73c728e4bf98a5ea07c9849d35b7c21272fd21e953a91660ee7b52efbb194224": {
+    "embedding": [
+      -0.8019204340143786,
+      -0.9869395727439846,
+      -0.01514379324727415,
+      -0.6561107222894612
+    ],
+    "fire_id": "synthetic-test-0015",
+    "identity": "473ab3ffabb68c9b706d3273ec785dd24bfc5ef66ae33aa8a8add7a2211bde7d",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0015:D0",
+      "synthetic-test-0015:D1",
+      "synthetic-test-0015:D2"
+    ]
+  },
+  "73df520b0706e604c3bf40e4eea5531a5585292ef8fc04f1562519acb95f665a": {
+    "embedding": [
+      0.08185322182831724,
+      -0.9206422750090872,
+      -0.3920759955418893,
+      0.5414071991000949
+    ],
+    "fire_id": "synthetic-test-0025",
+    "identity": "d36f65f9eb4dee714f5273570574630cef2367c2973d7ca3f55e3d72c13ef029",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0025:D0",
+      "synthetic-test-0025:D1",
+      "synthetic-test-0025:D2",
+      "synthetic-test-0025:D3",
+      "synthetic-test-0025:D4",
+      "synthetic-test-0025:D5",
+      "synthetic-test-0025:D6",
+      "synthetic-test-0025:D7",
+      "synthetic-test-0025:D8",
+      "synthetic-test-0025:D9"
+    ]
+  },
+  "745f69f136c24ad484f584bbc36d4773f8e1905bbc147c56c17e7b159157664a": {
+    "embedding": [
+      -0.5506403911898078,
+      -0.974010233638388,
+      0.28245069867657324,
+      -0.8281872944744073
+    ],
+    "fire_id": "synthetic-test-0063",
+    "identity": "6d8cb4cf3d6c0be91e7f68f38138564225be04eea3fc0b1174a7f296352f582c",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0063:D0",
+      "synthetic-test-0063:D1",
+      "synthetic-test-0063:D2"
+    ]
+  },
+  "7488aeb2e7f2fb4da39dc8db8ab8ba7db5ed767359549ef738e4ae827980b8ad": {
+    "embedding": [
+      -0.06362277101037664,
+      -0.9732839865940949,
+      -0.8063046345818397,
+      -0.5928803677613451
+    ],
+    "fire_id": "synthetic-test-0042",
+    "identity": "0465e0ca53774200f26d93f20153bf634e9e50a46163d8d3d5332123bd550e6f",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0042:D0",
+      "synthetic-test-0042:D1",
+      "synthetic-test-0042:D2",
+      "synthetic-test-0042:D3",
+      "synthetic-test-0042:D4",
+      "synthetic-test-0042:D5",
+      "synthetic-test-0042:D6",
+      "synthetic-test-0042:D7",
+      "synthetic-test-0042:D8",
+      "synthetic-test-0042:D9"
+    ]
+  },
+  "75809b1fba1cc606f951ccc937d34c598cae011f32fb6070d56549b9250dcc65": {
+    "embedding": [
+      0.06941422697813746,
+      -0.9159515616759569,
+      -0.425451618600327,
+      0.581940635084366
+    ],
+    "fire_id": "synthetic-test-0049",
+    "identity": "7e8758d1f23209daa15dcf5cf5cb6ec5867610532bfa3cd00adea38aff44ffb7",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0049:D0",
+      "synthetic-test-0049:D1",
+      "synthetic-test-0049:D2",
+      "synthetic-test-0049:D3",
+      "synthetic-test-0049:D4",
+      "synthetic-test-0049:D5",
+      "synthetic-test-0049:D6",
+      "synthetic-test-0049:D7",
+      "synthetic-test-0049:D8",
+      "synthetic-test-0049:D9"
+    ]
+  },
+  "767ede418b70d85bb65f96a3ce1d32fccd6bc05d2053c96e8ad9b150ecebb8ed": {
+    "embedding": [
+      0.45265876741515876,
+      -0.550262359578141,
+      -0.10155787008188973,
+      0.8709809331579232
+    ],
+    "fire_id": "synthetic-test-0061",
+    "identity": "e1a4be177b84dababd76b3207309f4171e8d1b423a8cca9ccb23b7fcff771fd4",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0061:D0",
+      "synthetic-test-0061:D1",
+      "synthetic-test-0061:D2",
+      "synthetic-test-0061:D3",
+      "synthetic-test-0061:D4",
+      "synthetic-test-0061:D5",
+      "synthetic-test-0061:D6",
+      "synthetic-test-0061:D7",
+      "synthetic-test-0061:D8",
+      "synthetic-test-0061:D9"
+    ]
+  },
+  "7a19c35319853634f4d9496d38df06cb9df105984f62487ee2fa9bd3cba4a224": {
+    "embedding": [
+      0.061615993735093744,
+      -0.425251484009086,
+      0.7500645818161352,
+      0.6646605944967875
+    ],
+    "fire_id": "synthetic-test-0062",
+    "identity": "e97bef9dded970accad7139948d751f30aea1d435e543cf9bbba8dfd9b0c4fe1",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0062:D0",
+      "synthetic-test-0062:D1",
+      "synthetic-test-0062:D2",
+      "synthetic-test-0062:D3",
+      "synthetic-test-0062:D4"
+    ]
+  },
+  "7a37e36f13694e3ccbbe6ccdf6af960490963fca153e23730c63a7af4ad4736e": {
+    "embedding": [
+      -0.223987055900399,
+      -0.8957448693001183,
+      0.6035956448326181,
+      -0.46650165782735487
+    ],
+    "fire_id": "synthetic-test-0045",
+    "identity": "8074a79059f924e3aaf05eac0c760b20f10b1c00c8117cb9ec9c8a2ee6327e99",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0045:D0",
+      "synthetic-test-0045:D1",
+      "synthetic-test-0045:D2"
+    ]
+  },
+  "7a624711cc33dc5ac638bff7e2bac5ca23c46dea1c35a9f515f72fcf7223e9ff": {
+    "embedding": [
+      -0.5502312740250945,
+      -0.8867821960633059,
+      0.4845158593464924,
+      0.518171615545575
+    ],
+    "fire_id": "synthetic-test-0058",
+    "identity": "a9f7d9fdbf7aedac5fa9fe4a788fa016db3303eb0c8ba0e4c20a22d9d98e05e8",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0058:D0",
+      "synthetic-test-0058:D1",
+      "synthetic-test-0058:D2",
+      "synthetic-test-0058:D3",
+      "synthetic-test-0058:D4"
+    ]
+  },
+  "7ae84a004cee610ba8bc4f60099db446a5396afb10957d6d3460d4ee69dd4b7c": {
+    "embedding": [
+      0.5231553316664855,
+      0.05312738427376579,
+      0.620747426572476,
+      0.9264834452039528
+    ],
+    "fire_id": "synthetic-test-0022",
+    "identity": "5ce0e1acc2096d62c24f0406e1cb7a029ba2f6ff34aa84d2e20f5bf580e00bab",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0022:D0",
+      "synthetic-test-0022:D1",
+      "synthetic-test-0022:D2",
+      "synthetic-test-0022:D3",
+      "synthetic-test-0022:D4",
+      "synthetic-test-0022:D5",
+      "synthetic-test-0022:D6"
+    ]
+  },
+  "7c5bdfffe7fc88eb50df6e0215c2f2555cb640618c75e9605cc54fbabaf52d9f": {
+    "embedding": [
+      0.38654014825382765,
+      -0.7394289014765625,
+      0.5160457042911354,
+      -0.00916881785767061
+    ],
+    "fire_id": "synthetic-test-0018",
+    "identity": "264069578042a2a9636d1fb3a36f5f26f5d2fbf9ee9d4522346d4e68bce92891",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0018:D0",
+      "synthetic-test-0018:D1",
+      "synthetic-test-0018:D2",
+      "synthetic-test-0018:D3",
+      "synthetic-test-0018:D4"
+    ]
+  },
+  "7de421976959656e1797a760650e93143e3d867b5f3a3efdd5466eb8973856cd": {
+    "embedding": [
+      -0.7429645157759065,
+      -0.9491579301744796,
+      0.2919065147467998,
+      0.15011706436956332
+    ],
+    "fire_id": "synthetic-test-0038",
+    "identity": "720b48212fce5012bbba56b5e51c45f05f18aee0524876395bbf7918f4d5c74a",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0038:D0",
+      "synthetic-test-0038:D1",
+      "synthetic-test-0038:D2",
+      "synthetic-test-0038:D3",
+      "synthetic-test-0038:D4"
+    ]
+  },
+  "8111d1f58f340f2ac4c1b91f9861d76ad6e14fd257919ffddb1932575b55a1da": {
+    "embedding": [
+      -0.2653681302703134,
+      -0.9594827853843546,
+      0.06973492425412402,
+      -0.971379081540533
+    ],
+    "fire_id": "synthetic-test-0025",
+    "identity": "f861686399201a15869183884ac56b3c5604da14a1f9fa379dac7c01c48a5ba7",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0025:D0",
+      "synthetic-test-0025:D1",
+      "synthetic-test-0025:D2"
+    ]
+  },
+  "81f3e36855d3ee594d239ce666e2820d453e276c24654332f531b0f1ca51a13f": {
+    "embedding": [
+      0.30222495216151585,
+      -0.47344952189326867,
+      0.7055846614581178,
+      -0.4173864437542392
+    ],
+    "fire_id": "synthetic-test-0014",
+    "identity": "6db015adf304c64e9587ef0c0431d9ab84302e59d6827369a28dcc4cb222f927",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0014:D0",
+      "synthetic-test-0014:D1",
+      "synthetic-test-0014:D2"
+    ]
+  },
+  "823f301fcb2efae5aeb8d74fb4888b05c0c69c31cc75a985c4d7ec12ba1f2835": {
+    "embedding": [
+      0.3659390177035613,
+      -0.9467642547610462,
+      -0.8729523169284773,
+      -0.7638109867361453
+    ],
+    "fire_id": "synthetic-test-0027",
+    "identity": "d84dcf3b2f20a03406f2d1e1a0f8c1a3a04accb4da45125cf385b8c11233e4b1",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0027:D0",
+      "synthetic-test-0027:D1",
+      "synthetic-test-0027:D2",
+      "synthetic-test-0027:D3",
+      "synthetic-test-0027:D4",
+      "synthetic-test-0027:D5",
+      "synthetic-test-0027:D6",
+      "synthetic-test-0027:D7",
+      "synthetic-test-0027:D8",
+      "synthetic-test-0027:D9"
+    ]
+  },
+  "827910ee66f18d692ffb3638318a8f4bb720c271347a0d28602fe532e7d687e6": {
+    "embedding": [
+      0.02929090868306581,
+      -0.9150155886526885,
+      0.3573487835452153,
+      -0.954710134032108
+    ],
+    "fire_id": "synthetic-test-0050",
+    "identity": "912aeead692f5d373e7c0d79febd72579aec384e04b8a1608ac7a50f81129941",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0050:D0",
+      "synthetic-test-0050:D1",
+      "synthetic-test-0050:D2"
+    ]
+  },
+  "8398c7e61a79cf738810f42470a27e9a0aed8d0301ef0b16ffeab0f738ecbe74": {
+    "embedding": [
+      0.17960336189811169,
+      -0.28786024879221134,
+      0.8035630397159668,
+      0.11195113755137692
+    ],
+    "fire_id": "synthetic-test-0001",
+    "identity": "42d678fe9a5a19b598fa057cf4e9ae14dc50256196a794f533abd1e86c96cff8",
+    "issued_at": "2023-06-05T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0001:D0",
+      "synthetic-test-0001:D1",
+      "synthetic-test-0001:D2"
+    ]
+  },
+  "83afb02014e4cf4f909f40eef2d0c6db48f269a97955236bc8fd74ed3d359af7": {
+    "embedding": [
+      -0.53758254096042,
+      -0.9314633422320511,
+      0.46611692972112734,
+      -0.5385263355920485
+    ],
+    "fire_id": "synthetic-test-0024",
+    "identity": "c19c87257e64e0dce97588562006ecea91c1cadf3c3fee9b6471aba7cb2ca960",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0024:D0",
+      "synthetic-test-0024:D1",
+      "synthetic-test-0024:D2"
+    ]
+  },
+  "84b25a5c54c987b7a0c74a9a92090db9af0da41840a19e733806e3b6e116ddfb": {
+    "embedding": [
+      0.19243541910619455,
+      -0.9195126341399265,
+      0.2635620290499355,
+      0.7426422201315058
+    ],
+    "fire_id": "synthetic-test-0020",
+    "identity": "0790e6aa52328147e342f5449bfdb053bd94ebc1c9e28f4746972983e3ada111",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0020:D0",
+      "synthetic-test-0020:D1",
+      "synthetic-test-0020:D2",
+      "synthetic-test-0020:D3",
+      "synthetic-test-0020:D4",
+      "synthetic-test-0020:D5",
+      "synthetic-test-0020:D6"
+    ]
+  },
+  "8545a662ff53632cb66b4cc4b6102b4ea1417fae5107d8deb53b7eead85d6ac1": {
+    "embedding": [
+      -0.6792701947867614,
+      -0.989068325896839,
+      -0.12170827531674781,
+      -0.9392937435459853
+    ],
+    "fire_id": "synthetic-test-0036",
+    "identity": "a01407f55c00c4055e36f237ea2d398eb36d8c72ac37eb0ee6daa66e557b09c9",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0036:D0",
+      "synthetic-test-0036:D1",
+      "synthetic-test-0036:D2"
+    ]
+  },
+  "88724779566aa70a572c3722d76ca289baa6c01f93052657da80862c508372be": {
+    "embedding": [
+      0.9168323015612272,
+      0.6133755759678754,
+      0.18599046142145423,
+      0.9265312618203596
+    ],
+    "fire_id": "synthetic-test-0034",
+    "identity": "9392615aa52f7543332da49ad4805c5c2f65c97e899c7963e9e17bb3d70e53f4",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0034:D0",
+      "synthetic-test-0034:D1",
+      "synthetic-test-0034:D2",
+      "synthetic-test-0034:D3",
+      "synthetic-test-0034:D4",
+      "synthetic-test-0034:D5",
+      "synthetic-test-0034:D6",
+      "synthetic-test-0034:D7",
+      "synthetic-test-0034:D8",
+      "synthetic-test-0034:D9"
+    ]
+  },
+  "88a49c4e2bba0eb4bad564a9785b56e3f8632ed12b30de0f99710ac52a850af3": {
+    "embedding": [
+      -0.08945487743825344,
+      -0.9897096413713731,
+      -0.2849273736427242,
+      -0.8425718137330165
+    ],
+    "fire_id": "synthetic-test-0036",
+    "identity": "bbfb0ac6ebc00f43c7e132ff0d4fb83e56a87b95ec43de23cba9c1b9718dbca7",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0036:D0",
+      "synthetic-test-0036:D1",
+      "synthetic-test-0036:D2",
+      "synthetic-test-0036:D3",
+      "synthetic-test-0036:D4"
+    ]
+  },
+  "8b3e65eac444de9cdb4b12f545e0461ed9babc55be9ea3548c65716b1d875f16": {
+    "embedding": [
+      -0.16329333662260673,
+      -0.9299609285380965,
+      0.1499119447009008,
+      0.754671197951396
+    ],
+    "fire_id": "synthetic-test-0000",
+    "identity": "b09b31ed5acef3e135ab09dd5465017514256f335c324352248ac56163114d0e",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0000:D0",
+      "synthetic-test-0000:D1",
+      "synthetic-test-0000:D2",
+      "synthetic-test-0000:D3",
+      "synthetic-test-0000:D4",
+      "synthetic-test-0000:D5",
+      "synthetic-test-0000:D6"
+    ]
+  },
+  "8bbc3915b4da915d2a4f90e76d0e723a5bf3ccd5b89e54bbb24a3b09951b2cfd": {
+    "embedding": [
+      0.022458258316932978,
+      0.05609595064923254,
+      0.8669305032516773,
+      0.34293155051769963
+    ],
+    "fire_id": "synthetic-test-0051",
+    "identity": "3c2c63e23b21ed5257e4bf75ba6aed1628690ca1c7dc421bbd0bf1648b3e1ba0",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0051:D0",
+      "synthetic-test-0051:D1",
+      "synthetic-test-0051:D2"
+    ]
+  },
+  "8c9c338a45ae6b42359aad62d480bdbb3942235be8cdb9d147b2ad981058a1a3": {
+    "embedding": [
+      0.8557430260278147,
+      0.7151622803367464,
+      0.1907079885727894,
+      0.9694767151031216
+    ],
+    "fire_id": "synthetic-test-0001",
+    "identity": "01aab6cdbcec99a67c44aaae6264c8a076e1c621cd5254be960581b238f81e50",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0001:D0",
+      "synthetic-test-0001:D1",
+      "synthetic-test-0001:D2",
+      "synthetic-test-0001:D3",
+      "synthetic-test-0001:D4",
+      "synthetic-test-0001:D5",
+      "synthetic-test-0001:D6",
+      "synthetic-test-0001:D7",
+      "synthetic-test-0001:D8",
+      "synthetic-test-0001:D9"
+    ]
+  },
+  "8ce5022b18aabfe5c7f77e2a8f2977cbbc77bf9e69eb3cc50b543695a97d1e59": {
+    "embedding": [
+      0.5902128998644505,
+      -0.39840933875511897,
+      -0.28814495087475195,
+      0.8885559017669267
+    ],
+    "fire_id": "synthetic-test-0000",
+    "identity": "1be24fe7e29d2203d965cd418e3e15766609a4a4ee0f25bba94fc4824307b16d",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0000:D0",
+      "synthetic-test-0000:D1",
+      "synthetic-test-0000:D2",
+      "synthetic-test-0000:D3",
+      "synthetic-test-0000:D4",
+      "synthetic-test-0000:D5",
+      "synthetic-test-0000:D6",
+      "synthetic-test-0000:D7",
+      "synthetic-test-0000:D8",
+      "synthetic-test-0000:D9"
+    ]
+  },
+  "8f36935349ef4f539b03fe08300d6ac70c8d047233073bd55c561a429b712352": {
+    "embedding": [
+      0.7448092636612382,
+      -0.6811391759287843,
+      -0.4417307950706542,
+      0.43904397839033066
+    ],
+    "fire_id": "synthetic-test-0040",
+    "identity": "7268d0aeb57de61234723690f1399696bbe897b434251170158559f4ce1daf54",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0040:D0",
+      "synthetic-test-0040:D1",
+      "synthetic-test-0040:D2",
+      "synthetic-test-0040:D3",
+      "synthetic-test-0040:D4",
+      "synthetic-test-0040:D5",
+      "synthetic-test-0040:D6",
+      "synthetic-test-0040:D7",
+      "synthetic-test-0040:D8",
+      "synthetic-test-0040:D9"
+    ]
+  },
+  "908ac0884809ea64c416b838028df094fcdf25bd9c862831a5a1dc1ee0376e2e": {
+    "embedding": [
+      -0.1352529709031837,
+      -0.9892607204014023,
+      -0.2095732122140955,
+      -0.8144848652079176
+    ],
+    "fire_id": "synthetic-test-0042",
+    "identity": "04d8c7bc2a892c84023264768c98f4ce7164f7ca1f1a189487d60967896caaae",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0042:D0",
+      "synthetic-test-0042:D1",
+      "synthetic-test-0042:D2",
+      "synthetic-test-0042:D3",
+      "synthetic-test-0042:D4"
+    ]
+  },
+  "91eb3e640de00d948405ca045dd7adc504b2cef39d6894b63b56a47715a0476f": {
+    "embedding": [
+      0.09105095782236274,
+      -0.9255771160780221,
+      0.36044232296598516,
+      0.7226735335339458
+    ],
+    "fire_id": "synthetic-test-0014",
+    "identity": "4012bf1b84815f36e53da8b8a06e0c0df27dec9dd2d10bc45a3d91df52b1d857",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0014:D0",
+      "synthetic-test-0014:D1",
+      "synthetic-test-0014:D2",
+      "synthetic-test-0014:D3",
+      "synthetic-test-0014:D4",
+      "synthetic-test-0014:D5",
+      "synthetic-test-0014:D6"
+    ]
+  },
+  "9201bdb37426451964978282fe677ae2cc54c5464f247006acda2ff14abb45ca": {
+    "embedding": [
+      0.5349474328493913,
+      -0.8965921629425809,
+      0.1087180962894737,
+      0.2651893021954374
+    ],
+    "fire_id": "synthetic-test-0025",
+    "identity": "d910fee3a779812d337d935316e2cc51062bb2776f402608c7015c555bbe40e5",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0025:D0",
+      "synthetic-test-0025:D1",
+      "synthetic-test-0025:D2",
+      "synthetic-test-0025:D3",
+      "synthetic-test-0025:D4",
+      "synthetic-test-0025:D5",
+      "synthetic-test-0025:D6"
+    ]
+  },
+  "922419e990c4276ae16f961d99b96ab81c3fc066a3f8b17975b6c66feff2ed5a": {
+    "embedding": [
+      0.08604133391939042,
+      -0.682739376192201,
+      0.5133857898792241,
+      0.8544287731492076
+    ],
+    "fire_id": "synthetic-test-0062",
+    "identity": "96c4bf62efa8036e42b34acf98944e6a9b3f43cc3d98b182ca314d6e7de3e9eb",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0062:D0",
+      "synthetic-test-0062:D1",
+      "synthetic-test-0062:D2",
+      "synthetic-test-0062:D3",
+      "synthetic-test-0062:D4",
+      "synthetic-test-0062:D5",
+      "synthetic-test-0062:D6"
+    ]
+  },
+  "94ace0a2a291be496c4f582d17ef86ca2046f75f6d392eb07e20d8ea571c4a23": {
+    "embedding": [
+      0.6989228064441518,
+      -0.5191037116251341,
+      0.039576407294037,
+      0.6718096562703151
+    ],
+    "fire_id": "synthetic-test-0054",
+    "identity": "f4e840ecbb0ac66542800863f5abae2d4d8f5c3ee1c6246d3fc8f9bc42e56467",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0054:D0",
+      "synthetic-test-0054:D1",
+      "synthetic-test-0054:D2",
+      "synthetic-test-0054:D3",
+      "synthetic-test-0054:D4",
+      "synthetic-test-0054:D5",
+      "synthetic-test-0054:D6"
+    ]
+  },
+  "94f8de165c6cf446fc5f15ad99b416e65cf78afad912e9e41a555625563270af": {
+    "embedding": [
+      -0.29051096467437654,
+      -0.9579424965072457,
+      -0.37161668456946056,
+      0.5237388761623747
+    ],
+    "fire_id": "synthetic-test-0005",
+    "identity": "76fc992d0d769ac06368e4f842cd0f71ebd507d1f566bbc538e5a8944b867f25",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0005:D0",
+      "synthetic-test-0005:D1",
+      "synthetic-test-0005:D2",
+      "synthetic-test-0005:D3",
+      "synthetic-test-0005:D4",
+      "synthetic-test-0005:D5",
+      "synthetic-test-0005:D6",
+      "synthetic-test-0005:D7",
+      "synthetic-test-0005:D8",
+      "synthetic-test-0005:D9"
+    ]
+  },
+  "958f814015201b9d771b4dd6ae2fa080f8326a3158dc6ae8dfb566cdb38d69ac": {
+    "embedding": [
+      -0.6115719358871418,
+      -0.709149976638519,
+      0.6807758553504962,
+      0.7519062713593924
+    ],
+    "fire_id": "synthetic-test-0051",
+    "identity": "866079b0b12d026ab160d97ecc5bf8114cab16774b0e7c4461e48b1deb9bda96",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0051:D0",
+      "synthetic-test-0051:D1",
+      "synthetic-test-0051:D2",
+      "synthetic-test-0051:D3",
+      "synthetic-test-0051:D4"
+    ]
+  },
+  "959cf364ea7c21e9e0930e935f2d8df037db17c62a73035e3bfd442193df434b": {
+    "embedding": [
+      0.7569056778053465,
+      -0.5214829215764405,
+      0.36334310246695595,
+      0.750286805515967
+    ],
+    "fire_id": "synthetic-test-0053",
+    "identity": "aaeb1f60de7b4deb06360a33f45176c821b93dbdf1c7d8014257e9fff2f9a4e4",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0053:D0",
+      "synthetic-test-0053:D1",
+      "synthetic-test-0053:D2",
+      "synthetic-test-0053:D3",
+      "synthetic-test-0053:D4",
+      "synthetic-test-0053:D5",
+      "synthetic-test-0053:D6"
+    ]
+  },
+  "96b7fccc2e55a58bc1442ffb257589a83eae95eb5430f9332883c37fe1aad7ba": {
+    "embedding": [
+      -0.32679479095164127,
+      -0.6651988940474688,
+      0.21372273919801235,
+      0.9359917292203007
+    ],
+    "fire_id": "synthetic-test-0056",
+    "identity": "a67d864d991f9122b490c868a0fa4898fe4fe60ab08c84a250dbfac2b1bd4259",
+    "issued_at": "2023-06-27T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0056:D0",
+      "synthetic-test-0056:D1",
+      "synthetic-test-0056:D2",
+      "synthetic-test-0056:D3",
+      "synthetic-test-0056:D4",
+      "synthetic-test-0056:D5",
+      "synthetic-test-0056:D6",
+      "synthetic-test-0056:D7",
+      "synthetic-test-0056:D8",
+      "synthetic-test-0056:D9"
+    ]
+  },
+  "96d76fd9b980512ecc3dfca296866bbe7c5a13473131292746ef74c659dab3fb": {
+    "embedding": [
+      0.031120826526829626,
+      -0.838534350335262,
+      0.31272427580418166,
+      0.8438775867045275
+    ],
+    "fire_id": "synthetic-test-0035",
+    "identity": "e73bb2953c0ace98fb8010006d81d47023a3b300679b064957e45beaca06baa1",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0035:D0",
+      "synthetic-test-0035:D1",
+      "synthetic-test-0035:D2",
+      "synthetic-test-0035:D3",
+      "synthetic-test-0035:D4",
+      "synthetic-test-0035:D5",
+      "synthetic-test-0035:D6"
+    ]
+  },
+  "96ef0ac07757e7b3ca5d3dae6afdb3a70bdd577c902a1028f8379c835795f685": {
+    "embedding": [
+      -0.5240228294298894,
+      -0.6055115342358043,
+      0.7288099175032187,
+      0.4144286103829647
+    ],
+    "fire_id": "synthetic-test-0033",
+    "identity": "d41ece3e2725040854ec199255d9f64bf84f4ac23fec17faa854be745e592ad1",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0033:D0",
+      "synthetic-test-0033:D1",
+      "synthetic-test-0033:D2"
+    ]
+  },
+  "9723d4dd0dad62146b1b9cb95904feae2f36ae8b0b313c65a3d49ab2f750cc90": {
+    "embedding": [
+      0.14578443793783982,
+      -0.8394769281167457,
+      0.6613425035485735,
+      -0.7567261498320529
+    ],
+    "fire_id": "synthetic-test-0002",
+    "identity": "521b1a136ea0432ffdb8bda8bd3f94fa5f8c51c70c7e0fa9a0f00bbd3efa87a6",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0002:D0",
+      "synthetic-test-0002:D1",
+      "synthetic-test-0002:D2"
+    ]
+  },
+  "97cfeeb4ef421f1feaa9cc02986b3faea4f7cfeaa02c1c43c950edfc48c2e116": {
+    "embedding": [
+      0.3181049444232601,
+      -0.9820480347188771,
+      -0.3952365084419197,
+      -0.9495421536566937
+    ],
+    "fire_id": "synthetic-test-0060",
+    "identity": "40357238d31469dccec79c68b0727206bcb4b697c4bbbed4aa5dac46394a8be1",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0060:D0",
+      "synthetic-test-0060:D1",
+      "synthetic-test-0060:D2",
+      "synthetic-test-0060:D3",
+      "synthetic-test-0060:D4"
+    ]
+  },
+  "98cb93d7b819de3467dafac5bb1c60ae92f0dd1ec6fa3e655962a9c890e44748": {
+    "embedding": [
+      -0.3935829057180559,
+      -0.4715758155148109,
+      0.7888571659741118,
+      0.7919188500927498
+    ],
+    "fire_id": "synthetic-test-0056",
+    "identity": "5097485c289a525ea3674f36da2504098f59446229cb5700b6c8c8089e57e32a",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0056:D0",
+      "synthetic-test-0056:D1",
+      "synthetic-test-0056:D2",
+      "synthetic-test-0056:D3",
+      "synthetic-test-0056:D4"
+    ]
+  },
+  "98fb1a7afb3ced225259bf68fc31148061f818378fcab078caaa2114a9fd3f52": {
+    "embedding": [
+      0.26363685439065054,
+      -0.9248591291812903,
+      0.3772356945188391,
+      -0.049717408207436906
+    ],
+    "fire_id": "synthetic-test-0054",
+    "identity": "18abfaa834e5295b7d2f054acb04ad8a9b350ab9c606ec7382c83ed27f05f97e",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0054:D0",
+      "synthetic-test-0054:D1",
+      "synthetic-test-0054:D2",
+      "synthetic-test-0054:D3",
+      "synthetic-test-0054:D4"
+    ]
+  },
+  "9cd9c4330c1869dbb6515dd1e6653606cd67466aaa6104e7e5cb4c2f9bcb4da3": {
+    "embedding": [
+      -0.6719246129837744,
+      -0.9891346724878279,
+      -0.03173063645468564,
+      -0.8815447649666559
+    ],
+    "fire_id": "synthetic-test-0061",
+    "identity": "4aa47cfa9e5019ba2798a5d746800216ec3ba51fd868c29f93d67d5520ff86db",
+    "issued_at": "2023-06-05T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0061:D0",
+      "synthetic-test-0061:D1",
+      "synthetic-test-0061:D2"
+    ]
+  },
+  "9d676d22cb4c92ac5200ff44173fc340f89f1a167fea520c9ae53df0856b1dce": {
+    "embedding": [
+      -0.6484328736886141,
+      -0.9856151500404128,
+      -0.04616301033133779,
+      -0.9471441191849197
+    ],
+    "fire_id": "synthetic-test-0042",
+    "identity": "d6d496d9ee52421f31827100a4e58205dbb681bd43a461d8c0d887a07f4955c1",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0042:D0",
+      "synthetic-test-0042:D1",
+      "synthetic-test-0042:D2"
+    ]
+  },
+  "9fd75ff327c55a42226ff388a873b8a9d479b0e65529d69c0b992b7cd26d44e5": {
+    "embedding": [
+      0.203941744387765,
+      -0.7229257744013384,
+      0.6247130805986937,
+      0.39787368797223965
+    ],
+    "fire_id": "synthetic-test-0048",
+    "identity": "1f55409b52160e9013181806924032a4d5f9d7cc195887d15db961c82c31c8b9",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0048:D0",
+      "synthetic-test-0048:D1",
+      "synthetic-test-0048:D2",
+      "synthetic-test-0048:D3",
+      "synthetic-test-0048:D4"
+    ]
+  },
+  "a1e9dc71aa807fe00a0f80e5ff800cb7de9ea841955de1454d310e400917a1b7": {
+    "embedding": [
+      -0.24615965137155071,
+      -0.9604550375887382,
+      -0.011515616955871583,
+      0.6788073751569761
+    ],
+    "fire_id": "synthetic-test-0039",
+    "identity": "86a0337e9530e012375a92d267a6df63da913d756fc84c95955ea5023b69f268",
+    "issued_at": "2023-06-27T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0039:D0",
+      "synthetic-test-0039:D1",
+      "synthetic-test-0039:D2",
+      "synthetic-test-0039:D3",
+      "synthetic-test-0039:D4",
+      "synthetic-test-0039:D5",
+      "synthetic-test-0039:D6"
+    ]
+  },
+  "a263aa8c9be41acf3e6615bd4eefd4f82a919ff8c0dc6eaca5f5210a33fce84f": {
+    "embedding": [
+      0.5257986099533688,
+      -0.016139569653776276,
+      0.2830862947490283,
+      0.9532576747639233
+    ],
+    "fire_id": "synthetic-test-0059",
+    "identity": "dd713c7981015432d9ba71bd40f9254cf4c4434c7001afb524c03c3a133cb1b1",
+    "issued_at": "2023-06-30T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0059:D0",
+      "synthetic-test-0059:D1",
+      "synthetic-test-0059:D2",
+      "synthetic-test-0059:D3",
+      "synthetic-test-0059:D4",
+      "synthetic-test-0059:D5",
+      "synthetic-test-0059:D6",
+      "synthetic-test-0059:D7",
+      "synthetic-test-0059:D8",
+      "synthetic-test-0059:D9"
+    ]
+  },
+  "a2a3850a82bf9a3c28391b23e1714f0a8274a0f38dc59737893e2719f0b4fe38": {
+    "embedding": [
+      0.14483507530969794,
+      -0.857831500032599,
+      0.2449965675147222,
+      0.8075323824234607
+    ],
+    "fire_id": "synthetic-test-0058",
+    "identity": "a9eb1d9ed9aa0dd36ce985bc4d56f3d3ea6265bad33fa367cf538bc1e0c20e9d",
+    "issued_at": "2023-06-26T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0058:D0",
+      "synthetic-test-0058:D1",
+      "synthetic-test-0058:D2",
+      "synthetic-test-0058:D3",
+      "synthetic-test-0058:D4",
+      "synthetic-test-0058:D5",
+      "synthetic-test-0058:D6"
+    ]
+  },
+  "a2d08a8c27405645674f05a56b5d4afe6b31d1e92478442ba4e6b68b8ff6d192": {
+    "embedding": [
+      -0.13564225529815674,
+      -0.6477475534132229,
+      0.7378021899393062,
+      0.052193241420135456
+    ],
+    "fire_id": "synthetic-test-0058",
+    "identity": "366c9d988e305d4da8cd0d0a48d1e38cc567632ed9e681e31d340bf1edf25131",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0058:D0",
+      "synthetic-test-0058:D1",
+      "synthetic-test-0058:D2"
+    ]
+  },
+  "a3f4744882bbda71a4181b4321876f3f323b2e0bbc95e88524985b656189532a": {
+    "embedding": [
+      0.21350307236339547,
+      -0.7548834300837879,
+      0.24183969533345875,
+      0.7644134130151627
+    ],
+    "fire_id": "synthetic-test-0048",
+    "identity": "d8bba70305a61c375d127871ac31c1ad50baea541ed2939d6fa37887634c4f13",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0048:D0",
+      "synthetic-test-0048:D1",
+      "synthetic-test-0048:D2",
+      "synthetic-test-0048:D3",
+      "synthetic-test-0048:D4",
+      "synthetic-test-0048:D5",
+      "synthetic-test-0048:D6"
+    ]
+  },
+  "a3fc01987df8aace2ab6c45038b81b227a195b164cdc9a07ae5f81cd1e29e893": {
+    "embedding": [
+      -0.4492792736722238,
+      -0.9721069168862938,
+      0.35499916046197433,
+      -0.677816770431631
+    ],
+    "fire_id": "synthetic-test-0040",
+    "identity": "4e049185bf3a1418232245b5d580a5007d140e0d4507837eb9c2513b8e00010f",
+    "issued_at": "2023-06-04T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0040:D0",
+      "synthetic-test-0040:D1",
+      "synthetic-test-0040:D2"
+    ]
+  },
+  "a4a097a8f21c07d0666bc06de565e8d1c19c49cc89a1390d674706dd481afbd1": {
+    "embedding": [
+      -0.3911398650204359,
+      -0.9524599121444944,
+      0.46488607535771515,
+      -0.7005241520337867
+    ],
+    "fire_id": "synthetic-test-0037",
+    "identity": "e90266ea597d2a0621987ae382d65758eaebb8377ec79135637d68a80c8622fd",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0037:D0",
+      "synthetic-test-0037:D1",
+      "synthetic-test-0037:D2"
+    ]
+  },
+  "a50d7395e47c8aaf34c002dfd56453f335ad6c8eff1ad98469ecdcfba30431f5": {
+    "embedding": [
+      0.318671513891606,
+      -0.28875863407260577,
+      0.018450982011085602,
+      0.9445582935630918
+    ],
+    "fire_id": "synthetic-test-0047",
+    "identity": "72148d92ee7a9c84d0f1b2901bf1ef98adef55c1214ebdd2f056482b29081850",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0047:D0",
+      "synthetic-test-0047:D1",
+      "synthetic-test-0047:D2",
+      "synthetic-test-0047:D3",
+      "synthetic-test-0047:D4",
+      "synthetic-test-0047:D5",
+      "synthetic-test-0047:D6",
+      "synthetic-test-0047:D7",
+      "synthetic-test-0047:D8",
+      "synthetic-test-0047:D9"
+    ]
+  },
+  "a69f34f9e1037dff072ee1fbacc2619f72747e4c8445dcb20ec4c6742a4e6e06": {
+    "embedding": [
+      0.08748098141301508,
+      -0.5254759020879364,
+      0.07498284908824918,
+      0.9351994777364766
+    ],
+    "fire_id": "synthetic-test-0035",
+    "identity": "3c663df9b619a203db81eab6020d7d1bb6ba1d9ac124d5f30643e9c9c3612ea7",
+    "issued_at": "2023-06-26T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0035:D0",
+      "synthetic-test-0035:D1",
+      "synthetic-test-0035:D2",
+      "synthetic-test-0035:D3",
+      "synthetic-test-0035:D4",
+      "synthetic-test-0035:D5",
+      "synthetic-test-0035:D6",
+      "synthetic-test-0035:D7",
+      "synthetic-test-0035:D8",
+      "synthetic-test-0035:D9"
+    ]
+  },
+  "a745c3344409c999b0c3fed6d168ce12e93439f51d8d2eb5dc75c80d8d17a7aa": {
+    "embedding": [
+      -0.5272458037512655,
+      -0.776629619748369,
+      0.6410639296326046,
+      0.18478052842289736
+    ],
+    "fire_id": "synthetic-test-0039",
+    "identity": "7fd2198e3886b2991f5ae92d0cbc5a5b363d061c35f6349fe7100b423759ed2e",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0039:D0",
+      "synthetic-test-0039:D1",
+      "synthetic-test-0039:D2"
+    ]
+  },
+  "a831fb4d577b0f0942900fb592c53edda645ad9fe02652eb4d3036ade7c60381": {
+    "embedding": [
+      0.7345726850502681,
+      0.36990320167620505,
+      0.2842423736838617,
+      0.9622088065667888
+    ],
+    "fire_id": "synthetic-test-0043",
+    "identity": "3adcca2248423e7c84a2e1a4777d494c46ddd7018fc340f56e53f235c736def2",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0043:D0",
+      "synthetic-test-0043:D1",
+      "synthetic-test-0043:D2",
+      "synthetic-test-0043:D3",
+      "synthetic-test-0043:D4",
+      "synthetic-test-0043:D5",
+      "synthetic-test-0043:D6",
+      "synthetic-test-0043:D7",
+      "synthetic-test-0043:D8",
+      "synthetic-test-0043:D9"
+    ]
+  },
+  "ab4b7fdf8c3faed04ee7949b7fa3a9f8176940d3887237c652a8af4244ed5591": {
+    "embedding": [
+      -0.39503346880871215,
+      -0.9682924874568327,
+      0.38566423356012414,
+      -0.7247082549095377
+    ],
+    "fire_id": "synthetic-test-0034",
+    "identity": "47a964878dca016d4f83fcc65313d34fc8cf15729e0c044a3719cb0f2a47328c",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0034:D0",
+      "synthetic-test-0034:D1",
+      "synthetic-test-0034:D2"
+    ]
+  },
+  "ad83122fec9bab4bb6cb59d736edf079250c63f3cfb99ef6b17918076ad7b94f": {
+    "embedding": [
+      -0.35571393996652767,
+      -0.9899964245124114,
+      -0.5899155677604038,
+      -0.5000364984949944
+    ],
+    "fire_id": "synthetic-test-0044",
+    "identity": "394bc2069196d5158088ff8aba96f2277342316efd78a8ce74a467435d9ecf30",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0044:D0",
+      "synthetic-test-0044:D1",
+      "synthetic-test-0044:D2",
+      "synthetic-test-0044:D3",
+      "synthetic-test-0044:D4",
+      "synthetic-test-0044:D5",
+      "synthetic-test-0044:D6"
+    ]
+  },
+  "adf09f44b0468706ddd15eefb31638dc725726f4ee56a0998448a584f3ac7f5b": {
+    "embedding": [
+      0.16066644885888437,
+      -0.9663752634313044,
+      0.2533376934327543,
+      -0.36075386763385453
+    ],
+    "fire_id": "synthetic-test-0016",
+    "identity": "7cd01b3a4f8a785e83fff30a5bd30ad0f5105f0a6af08bbfa732531705359208",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0016:D0",
+      "synthetic-test-0016:D1",
+      "synthetic-test-0016:D2",
+      "synthetic-test-0016:D3",
+      "synthetic-test-0016:D4"
+    ]
+  },
+  "af8495bcbed456498fedfd53a4a2525f8f75963e87068c293461b4f5ec9f02d2": {
+    "embedding": [
+      0.35451270080936054,
+      0.24430272852644067,
+      0.0818729609576828,
+      0.9696282198124259
+    ],
+    "fire_id": "synthetic-test-0022",
+    "identity": "3af7201400549561074667e0877972915466ff774dadab341e21e1a7b187c619",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0022:D0",
+      "synthetic-test-0022:D1",
+      "synthetic-test-0022:D2",
+      "synthetic-test-0022:D3",
+      "synthetic-test-0022:D4",
+      "synthetic-test-0022:D5",
+      "synthetic-test-0022:D6",
+      "synthetic-test-0022:D7",
+      "synthetic-test-0022:D8",
+      "synthetic-test-0022:D9"
+    ]
+  },
+  "af8f482e3f6fb3c6868f98ae203e90168a5eac4cd4311f45a5ef85ac901c6441": {
+    "embedding": [
+      0.052733085859591265,
+      -0.6499998391351551,
+      0.7658646034169405,
+      -0.3893445581166823
+    ],
+    "fire_id": "synthetic-test-0062",
+    "identity": "c97bcc66e44e1cd80af3c08bdef9dcdf399365c557da03b6ee60bc5a0c824479",
+    "issued_at": "2023-06-06T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0062:D0",
+      "synthetic-test-0062:D1",
+      "synthetic-test-0062:D2"
+    ]
+  },
+  "b1a34ae038055584c7eae3b6a6dc15792ace4e4783eeb4aa9833d2cc94675e19": {
+    "embedding": [
+      0.29556484206687034,
+      -0.33749628870572157,
+      0.665770475749812,
+      0.6608018180520696
+    ],
+    "fire_id": "synthetic-test-0055",
+    "identity": "8112d0149837a55cac57a0b21df75c392e3312b17a107a1d54075e2621e26412",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0055:D0",
+      "synthetic-test-0055:D1",
+      "synthetic-test-0055:D2",
+      "synthetic-test-0055:D3",
+      "synthetic-test-0055:D4"
+    ]
+  },
+  "b3ce1500870c2d86e3dd0f95304348d8cc51c1c423dccc988720c7f85d84e210": {
+    "embedding": [
+      0.360496262273251,
+      -0.7875325519755101,
+      -0.4297702124217152,
+      0.7335920016807154
+    ],
+    "fire_id": "synthetic-test-0037",
+    "identity": "5879dd5698a7f47e72f114fe70014fd8871cdc97b71d650f692bcc4be2d1b38f",
+    "issued_at": "2023-06-28T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0037:D0",
+      "synthetic-test-0037:D1",
+      "synthetic-test-0037:D2",
+      "synthetic-test-0037:D3",
+      "synthetic-test-0037:D4",
+      "synthetic-test-0037:D5",
+      "synthetic-test-0037:D6",
+      "synthetic-test-0037:D7",
+      "synthetic-test-0037:D8",
+      "synthetic-test-0037:D9"
+    ]
+  },
+  "b3df7da779e80c5e290b795bcea0a903ba712100070689cbf76be8f9c6bdda6b": {
+    "embedding": [
+      -0.2779870156103787,
+      -0.9559389134714469,
+      0.08508654495546114,
+      0.6321685234522247
+    ],
+    "fire_id": "synthetic-test-0026",
+    "identity": "f4937fec79681f8a015b04fda8087da47579dad00c847d83693a9c216e2ce4be",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0026:D0",
+      "synthetic-test-0026:D1",
+      "synthetic-test-0026:D2",
+      "synthetic-test-0026:D3",
+      "synthetic-test-0026:D4",
+      "synthetic-test-0026:D5",
+      "synthetic-test-0026:D6"
+    ]
+  },
+  "b43710530163c5264ab5e087d913655b9a09d7528799a9ebdc5522ef712d82ea": {
+    "embedding": [
+      0.7518222326818468,
+      0.245498715677428,
+      -0.08462120015113103,
+      0.9428183041104197
+    ],
+    "fire_id": "synthetic-test-0033",
+    "identity": "bb6eede7a8ebe0c161745eda067db4148153af6208fdbf0fb517b0f84c6b129e",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0033:D0",
+      "synthetic-test-0033:D1",
+      "synthetic-test-0033:D2",
+      "synthetic-test-0033:D3",
+      "synthetic-test-0033:D4",
+      "synthetic-test-0033:D5",
+      "synthetic-test-0033:D6",
+      "synthetic-test-0033:D7",
+      "synthetic-test-0033:D8",
+      "synthetic-test-0033:D9"
+    ]
+  },
+  "b4a8e8e9b4ac496493e5edda1ff6baa88d213a1be6daea8d75537c1f9af0c51a": {
+    "embedding": [
+      -0.43216816553699994,
+      -0.9653643310020603,
+      0.26925496156660816,
+      -0.32324241847457186
+    ],
+    "fire_id": "synthetic-test-0050",
+    "identity": "5ac69591d0ef43042ea924ed88544b81b288a7f903bf1f71b017b7347d217ffe",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0050:D0",
+      "synthetic-test-0050:D1",
+      "synthetic-test-0050:D2",
+      "synthetic-test-0050:D3",
+      "synthetic-test-0050:D4"
+    ]
+  },
+  "b4eb5a48c348e8725f4176925d0eccdaefce666661bec79d025aa36f6a05f036": {
+    "embedding": [
+      -0.22936300927651584,
+      -0.7694334000588995,
+      0.6817341567700044,
+      -0.16218451459268474
+    ],
+    "fire_id": "synthetic-test-0046",
+    "identity": "52151fc698eba2fa6befbd2f2977fe0a65ffb68644a1c9f4dd1c3f1b971436c0",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0046:D0",
+      "synthetic-test-0046:D1",
+      "synthetic-test-0046:D2"
+    ]
+  },
+  "b5f6a0f05c78f2972fefef7b643ab8990a1ee68e46ce4b49f7668d1806f2b340": {
+    "embedding": [
+      -0.05269617118117184,
+      -0.5030397486520544,
+      0.7777057175021692,
+      0.08615635559984969
+    ],
+    "fire_id": "synthetic-test-0057",
+    "identity": "6be307457da10f6390614080827287a8de74c8a929ef1d68cc5eb86228fea297",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0057:D0",
+      "synthetic-test-0057:D1",
+      "synthetic-test-0057:D2"
+    ]
+  },
+  "b70b495fa1be005cd9a011f8768a1d73c908a24460a9dab79f1fbe439df96e87": {
+    "embedding": [
+      -0.4980215155158893,
+      -0.9752519547529054,
+      -0.7423817515703304,
+      -0.12080816554712118
+    ],
+    "fire_id": "synthetic-test-0006",
+    "identity": "53f3a046910fa69596e4a32d2145846d105083dd3145df58e2025ece9018d076",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0006:D0",
+      "synthetic-test-0006:D1",
+      "synthetic-test-0006:D2",
+      "synthetic-test-0006:D3",
+      "synthetic-test-0006:D4",
+      "synthetic-test-0006:D5",
+      "synthetic-test-0006:D6",
+      "synthetic-test-0006:D7",
+      "synthetic-test-0006:D8",
+      "synthetic-test-0006:D9"
+    ]
+  },
+  "b9c7d7c14a385608ff2ad542baad13b2d8924b3775b2803818a784dd988cac05": {
+    "embedding": [
+      0.8021605486466663,
+      0.4480545641505726,
+      0.07539848681238775,
+      0.9573974261694438
+    ],
+    "fire_id": "synthetic-test-0007",
+    "identity": "a2c382d02d4235c6c248f6fcfc18391d26cea59456f3ab3ee02082a4dc08bd2b",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0007:D0",
+      "synthetic-test-0007:D1",
+      "synthetic-test-0007:D2",
+      "synthetic-test-0007:D3",
+      "synthetic-test-0007:D4",
+      "synthetic-test-0007:D5",
+      "synthetic-test-0007:D6",
+      "synthetic-test-0007:D7",
+      "synthetic-test-0007:D8",
+      "synthetic-test-0007:D9"
+    ]
+  },
+  "ba4fe1db28ed8f309c825a4f768d3bd5b199e6e95c2cee828003d638d148f160": {
+    "embedding": [
+      0.16993909511990168,
+      -0.6720364614806589,
+      0.03389565971287033,
+      0.8857807794310106
+    ],
+    "fire_id": "synthetic-test-0053",
+    "identity": "5dd2ae5d0460be380bfaad203e5ba75c30109bdac90bcd49cd5662b6359315f4",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0053:D0",
+      "synthetic-test-0053:D1",
+      "synthetic-test-0053:D2",
+      "synthetic-test-0053:D3",
+      "synthetic-test-0053:D4",
+      "synthetic-test-0053:D5",
+      "synthetic-test-0053:D6",
+      "synthetic-test-0053:D7",
+      "synthetic-test-0053:D8",
+      "synthetic-test-0053:D9"
+    ]
+  },
+  "bc67d2b328ee69db4c9f72efefc6906f7a657abf8c5211a71c2431ce0ddfcc0f": {
+    "embedding": [
+      0.13767765931833323,
+      -0.7690254269287037,
+      0.692716723930178,
+      -0.5055389463239717
+    ],
+    "fire_id": "synthetic-test-0043",
+    "identity": "d66ed7bf983f6e64170b90556b5b4516543f3daf1d79bd3479c87f0112e14dcd",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0043:D0",
+      "synthetic-test-0043:D1",
+      "synthetic-test-0043:D2"
+    ]
+  },
+  "bcf6ec113366d8e363534cb27d9032acc30be2a3b5245a23d6dbc656f4307b43": {
+    "embedding": [
+      -0.7091052416672173,
+      -0.9749087128754228,
+      0.07590533784877701,
+      0.07940630157307459
+    ],
+    "fire_id": "synthetic-test-0045",
+    "identity": "cd1349e7629608a9143b13962068c3f89bb1c4f2b8c52c0626a6a6519c2f3d15",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0045:D0",
+      "synthetic-test-0045:D1",
+      "synthetic-test-0045:D2",
+      "synthetic-test-0045:D3",
+      "synthetic-test-0045:D4"
+    ]
+  },
+  "bd75068fb4ec2c34b2468c3e92dbbfc47e4ddc3f048073c90eb6251958fe704c": {
+    "embedding": [
+      0.03553135174041127,
+      -0.7886435226475644,
+      0.7052665411561967,
+      -0.5735462552697409
+    ],
+    "fire_id": "synthetic-test-0026",
+    "identity": "a21bcbe7dd015d3f3c458d37ebb8001e640a06da91e84abb9f5f839deaaa3905",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0026:D0",
+      "synthetic-test-0026:D1",
+      "synthetic-test-0026:D2"
+    ]
+  },
+  "becb8e13e8c0b5f9e16b8500f07cec5f1de283005b0a721e345b96396c7f14b5": {
+    "embedding": [
+      0.8767818259305847,
+      0.5451069202481615,
+      0.12041314779806793,
+      0.9343525875836133
+    ],
+    "fire_id": "synthetic-test-0028",
+    "identity": "5ce4edc0af423aa032c8d5a7ac297fb23fd89299c3660819483e5cd9d0906da4",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0028:D0",
+      "synthetic-test-0028:D1",
+      "synthetic-test-0028:D2",
+      "synthetic-test-0028:D3",
+      "synthetic-test-0028:D4",
+      "synthetic-test-0028:D5",
+      "synthetic-test-0028:D6",
+      "synthetic-test-0028:D7",
+      "synthetic-test-0028:D8",
+      "synthetic-test-0028:D9"
+    ]
+  },
+  "c43112b652ba9d4d48dd8d910878a0c3ad45d7e7e670baab26a82a7722c9e59a": {
+    "embedding": [
+      -0.10220081307890788,
+      -0.8930874044442458,
+      -0.5297425535483362,
+      0.6861409538877615
+    ],
+    "fire_id": "synthetic-test-0039",
+    "identity": "ef018618b777c007b73f5fb192a5a678e7add2e31045001583601affce983136",
+    "issued_at": "2023-06-30T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0039:D0",
+      "synthetic-test-0039:D1",
+      "synthetic-test-0039:D2",
+      "synthetic-test-0039:D3",
+      "synthetic-test-0039:D4",
+      "synthetic-test-0039:D5",
+      "synthetic-test-0039:D6",
+      "synthetic-test-0039:D7",
+      "synthetic-test-0039:D8",
+      "synthetic-test-0039:D9"
+    ]
+  },
+  "c437122e613ab0d2509dd96466ae15e4e678c5a229d08b59b09ce836bc69bf13": {
+    "embedding": [
+      -0.16149990292356625,
+      -0.8070214259385641,
+      0.36252613457170646,
+      0.8539765056983087
+    ],
+    "fire_id": "synthetic-test-0007",
+    "identity": "783e1f43830c2fdf647d3f669e4c1badd6c1693525f5ea4ca715c225cdbb6d13",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0007:D0",
+      "synthetic-test-0007:D1",
+      "synthetic-test-0007:D2",
+      "synthetic-test-0007:D3",
+      "synthetic-test-0007:D4",
+      "synthetic-test-0007:D5",
+      "synthetic-test-0007:D6"
+    ]
+  },
+  "c669fde464e80db8d7d23cd6ca2d5582f3d379281498b2ea4ace7126f42ae5b6": {
+    "embedding": [
+      -0.31418201315353056,
+      -0.9873357462525301,
+      -0.14089372462092087,
+      -0.715943228439304
+    ],
+    "fire_id": "synthetic-test-0004",
+    "identity": "2c44e11021853572090dff1358d0caf8e312649aeffe9ba1f3000ac660914192",
+    "issued_at": "2023-06-10T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0004:D0",
+      "synthetic-test-0004:D1",
+      "synthetic-test-0004:D2",
+      "synthetic-test-0004:D3",
+      "synthetic-test-0004:D4"
+    ]
+  },
+  "c87b36f6de8f47ec6f5c9d0e267abf878e2f94b9f2462c24f85a710382f97cbd": {
+    "embedding": [
+      0.0045139462246174674,
+      -0.7908287092781892,
+      0.34019098168679895,
+      0.6786879064569602
+    ],
+    "fire_id": "synthetic-test-0030",
+    "identity": "8f39524b8b87c2bcd2dd212f2e410cc7a8c9c2c4e8a42880023b5b0e80184e08",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0030:D0",
+      "synthetic-test-0030:D1",
+      "synthetic-test-0030:D2",
+      "synthetic-test-0030:D3",
+      "synthetic-test-0030:D4",
+      "synthetic-test-0030:D5",
+      "synthetic-test-0030:D6"
+    ]
+  },
+  "ca2859bceef043ad749ea07977532c47e2aebbb80777b05288eed4e6ea670541": {
+    "embedding": [
+      0.7116017716601192,
+      0.23762020337099943,
+      -0.027844529541656334,
+      0.9518699741250213
+    ],
+    "fire_id": "synthetic-test-0051",
+    "identity": "a66999c0a2ac9d9d678965662e251fbe81a237f9ccf35eb5878a2dc3b9fa7704",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0051:D0",
+      "synthetic-test-0051:D1",
+      "synthetic-test-0051:D2",
+      "synthetic-test-0051:D3",
+      "synthetic-test-0051:D4",
+      "synthetic-test-0051:D5",
+      "synthetic-test-0051:D6",
+      "synthetic-test-0051:D7",
+      "synthetic-test-0051:D8",
+      "synthetic-test-0051:D9"
+    ]
+  },
+  "cd4125ac0f0fc1dc539911c351986cfbf5b3a30f03e19d2cb322ed9a9a3a280f": {
+    "embedding": [
+      0.5052708742338168,
+      -0.8515502830545464,
+      -0.500546864309658,
+      0.3885385920156704
+    ],
+    "fire_id": "synthetic-test-0003",
+    "identity": "1049d90b53dd6627036baa448012749b5fdb3add76a914d762858491f05e199b",
+    "issued_at": "2023-06-14T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0003:D0",
+      "synthetic-test-0003:D1",
+      "synthetic-test-0003:D2",
+      "synthetic-test-0003:D3",
+      "synthetic-test-0003:D4",
+      "synthetic-test-0003:D5",
+      "synthetic-test-0003:D6",
+      "synthetic-test-0003:D7",
+      "synthetic-test-0003:D8",
+      "synthetic-test-0003:D9"
+    ]
+  },
+  "cde76a0ede740b10c40be48de17aac6de8c865b935536c3e788e53b31ae4a12f": {
+    "embedding": [
+      0.07832093198490833,
+      -0.794789694667448,
+      -0.21952836952395313,
+      0.8491248865238357
+    ],
+    "fire_id": "synthetic-test-0048",
+    "identity": "adcc9499b737b1a7273acd0b75f67032bacda2c914cac102d610554128d61cc2",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0048:D0",
+      "synthetic-test-0048:D1",
+      "synthetic-test-0048:D2",
+      "synthetic-test-0048:D3",
+      "synthetic-test-0048:D4",
+      "synthetic-test-0048:D5",
+      "synthetic-test-0048:D6",
+      "synthetic-test-0048:D7",
+      "synthetic-test-0048:D8",
+      "synthetic-test-0048:D9"
+    ]
+  },
+  "d09db56ef7daa6b9a42acb0cd17da6cc054b90a38db4d732269e8341982323cd": {
+    "embedding": [
+      0.6119810513872485,
+      -0.8748582732765748,
+      0.035228942467693806,
+      0.2909767786567592
+    ],
+    "fire_id": "synthetic-test-0017",
+    "identity": "08efda76b585e853d911a502e17532559cddf5f458069ad394db26db7ad64c09",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0017:D0",
+      "synthetic-test-0017:D1",
+      "synthetic-test-0017:D2",
+      "synthetic-test-0017:D3",
+      "synthetic-test-0017:D4",
+      "synthetic-test-0017:D5",
+      "synthetic-test-0017:D6"
+    ]
+  },
+  "d51033caae70e943178279f078446b75f92f2262792644811c31bc1dad25ca8d": {
+    "embedding": [
+      -0.2858269548844477,
+      -0.9735141647995491,
+      0.2164389428864473,
+      -0.03915365600803253
+    ],
+    "fire_id": "synthetic-test-0021",
+    "identity": "e8f6f74ba01c2a4c58bc0f3bf9968ffac5b4f6be761be8fce15250f410f2214d",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0021:D0",
+      "synthetic-test-0021:D1",
+      "synthetic-test-0021:D2",
+      "synthetic-test-0021:D3",
+      "synthetic-test-0021:D4"
+    ]
+  },
+  "d6d90ba28d76be85770391d0f07bd484c781367ee439c7bbbd26f532c2344a41": {
+    "embedding": [
+      0.2407848291688168,
+      -0.942341138527232,
+      -0.02138759981466432,
+      0.5453674579196923
+    ],
+    "fire_id": "synthetic-test-0045",
+    "identity": "21464375ef1f8e136b74f2a70fc065e0ca6b7dba75125c7f1d975fc9566f2060",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0045:D0",
+      "synthetic-test-0045:D1",
+      "synthetic-test-0045:D2",
+      "synthetic-test-0045:D3",
+      "synthetic-test-0045:D4",
+      "synthetic-test-0045:D5",
+      "synthetic-test-0045:D6"
+    ]
+  },
+  "d7afabb23f325f50fb85500550e2690cb31710f10ebb6be476ba762f8d605361": {
+    "embedding": [
+      0.5559911222526153,
+      -0.96008694218482,
+      -0.4034882150561719,
+      -0.5395179646933651
+    ],
+    "fire_id": "synthetic-test-0040",
+    "identity": "50f79b375f4d994920d294c9e1921f846c72076530d26f890a774d1b3967a943",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0040:D0",
+      "synthetic-test-0040:D1",
+      "synthetic-test-0040:D2",
+      "synthetic-test-0040:D3",
+      "synthetic-test-0040:D4",
+      "synthetic-test-0040:D5",
+      "synthetic-test-0040:D6"
+    ]
+  },
+  "d86470d792e50d9f302ba000ab3fcceca4b0b09c42e92ab6f5ce419a7373fec1": {
+    "embedding": [
+      -0.12097418096286706,
+      -0.9846451541547506,
+      -0.10177507015388565,
+      -0.5087470126619961
+    ],
+    "fire_id": "synthetic-test-0015",
+    "identity": "aab29f5717c6bec92887d9d0bcf335f02b7c2d0ea9c2bd57caaa6bb3eae60f64",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0015:D0",
+      "synthetic-test-0015:D1",
+      "synthetic-test-0015:D2",
+      "synthetic-test-0015:D3",
+      "synthetic-test-0015:D4"
+    ]
+  },
+  "d94887d2f70566b97fbc5da5662737b6e0bf2e0c14a4b7a1042001f4f89d7fd2": {
+    "embedding": [
+      -0.5142723293834931,
+      -0.9799377072717462,
+      -0.04381060459391545,
+      -0.9681416934786797
+    ],
+    "fire_id": "synthetic-test-0049",
+    "identity": "e58449b38439c247b20b500923b2579d667d0c8e7e686219681c075bd742d47f",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0049:D0",
+      "synthetic-test-0049:D1",
+      "synthetic-test-0049:D2"
+    ]
+  },
+  "da479e672fb786d51aca967cc53d275457ab213ae6355fbe70d5b37ff864ea6b": {
+    "embedding": [
+      0.01623244916956943,
+      -0.9674751083112548,
+      -0.6418350538428765,
+      -0.28915962637473114
+    ],
+    "fire_id": "synthetic-test-0060",
+    "identity": "72e371e94c23759f0de783765e230be387b5252a7341f155134b54a9ca6da9a9",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0060:D0",
+      "synthetic-test-0060:D1",
+      "synthetic-test-0060:D2",
+      "synthetic-test-0060:D3",
+      "synthetic-test-0060:D4",
+      "synthetic-test-0060:D5",
+      "synthetic-test-0060:D6",
+      "synthetic-test-0060:D7",
+      "synthetic-test-0060:D8",
+      "synthetic-test-0060:D9"
+    ]
+  },
+  "da5e63d7d7c35d31ed5a889e4718f376cc6ef6203813c1fd7c8ac415653b2e4d": {
+    "embedding": [
+      0.08053970029786324,
+      -0.9487451785001966,
+      -0.5895094816110364,
+      0.09130221154894909
+    ],
+    "fire_id": "synthetic-test-0012",
+    "identity": "376255dec7c19449092cd985334b68502162e08f8774ae8f559f929febe6ead1",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0012:D0",
+      "synthetic-test-0012:D1",
+      "synthetic-test-0012:D2",
+      "synthetic-test-0012:D3",
+      "synthetic-test-0012:D4",
+      "synthetic-test-0012:D5",
+      "synthetic-test-0012:D6",
+      "synthetic-test-0012:D7",
+      "synthetic-test-0012:D8",
+      "synthetic-test-0012:D9"
+    ]
+  },
+  "db29b7014c3bb579b7f3464aedfeaf9bea1a7e8cafedb1f66b49bea5497afa75": {
+    "embedding": [
+      0.1810206053488872,
+      -0.9428182721597851,
+      0.02378616212276133,
+      0.49265917283680366
+    ],
+    "fire_id": "synthetic-test-0037",
+    "identity": "5839a0ff40adaf15bc0d3bd44479374d1ad7432f6842238ae6d366dcfa4d018d",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0037:D0",
+      "synthetic-test-0037:D1",
+      "synthetic-test-0037:D2",
+      "synthetic-test-0037:D3",
+      "synthetic-test-0037:D4",
+      "synthetic-test-0037:D5",
+      "synthetic-test-0037:D6"
+    ]
+  },
+  "dc2563dafbaa7c3996841fc501b90deb4c325ee4ecd1c42b2b1376936f1dbf5e": {
+    "embedding": [
+      0.8999391358074654,
+      -0.13837009860208493,
+      0.094878419693239,
+      0.6415996587755368
+    ],
+    "fire_id": "synthetic-test-0016",
+    "identity": "97d0ffd7981724617f794edbde752fe4314773c4e06184bf3209c12a67c3678b",
+    "issued_at": "2023-06-24T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0016:D0",
+      "synthetic-test-0016:D1",
+      "synthetic-test-0016:D2",
+      "synthetic-test-0016:D3",
+      "synthetic-test-0016:D4",
+      "synthetic-test-0016:D5",
+      "synthetic-test-0016:D6"
+    ]
+  },
+  "df0475d45333edb1b067661a835eab853d8e1dfb79330eec1a561f6a609ea3df": {
+    "embedding": [
+      -0.004516223990405069,
+      -0.9193785212758159,
+      0.3528327294113368,
+      -0.2796461683040788
+    ],
+    "fire_id": "synthetic-test-0031",
+    "identity": "5b1982112d6da5773faba0dead26b3d77ffc3587333fbc6ebb6c864ce4541d70",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0031:D0",
+      "synthetic-test-0031:D1",
+      "synthetic-test-0031:D2",
+      "synthetic-test-0031:D3",
+      "synthetic-test-0031:D4"
+    ]
+  },
+  "df175ae28202c889ab3776e96c17381b32f0e8a77060ee3bcdf5b4058854ea56": {
+    "embedding": [
+      0.07952596431325461,
+      -0.5074399456004614,
+      0.5889756691083095,
+      0.9016696426863124
+    ],
+    "fire_id": "synthetic-test-0001",
+    "identity": "d0cd82c20d32aeb49747a2aea3a2ba612e86bdcdebf3be4ddd27fbf6bb0741e3",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0001:D0",
+      "synthetic-test-0001:D1",
+      "synthetic-test-0001:D2",
+      "synthetic-test-0001:D3",
+      "synthetic-test-0001:D4",
+      "synthetic-test-0001:D5",
+      "synthetic-test-0001:D6"
+    ]
+  },
+  "e1d19885473553f6e01f3b19e773954fd6522897040410d32e20f01070c7370a": {
+    "embedding": [
+      -0.7620011885428356,
+      -0.9937425728743082,
+      -0.6075947042420979,
+      -0.9915614732377551
+    ],
+    "fire_id": "synthetic-test-0060",
+    "identity": "a4ebf2702389107ab2989ff056e5ec3d6e320dcb54b10206c33a332295ca9884",
+    "issued_at": "2023-06-04T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0060:D0",
+      "synthetic-test-0060:D1",
+      "synthetic-test-0060:D2"
+    ]
+  },
+  "e2d33ed6bf5c8e7ef71f05fc77e25a97d91161689aad74570f66700de1a42b02": {
+    "embedding": [
+      0.34001499247052486,
+      -0.22620008716842097,
+      0.062036178975772786,
+      0.9487906655475834
+    ],
+    "fire_id": "synthetic-test-0055",
+    "identity": "539e7991b7ccfbc0f0a512782e3932f9667d56ad6819934d627e4fe72e2337ad",
+    "issued_at": "2023-06-26T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0055:D0",
+      "synthetic-test-0055:D1",
+      "synthetic-test-0055:D2",
+      "synthetic-test-0055:D3",
+      "synthetic-test-0055:D4",
+      "synthetic-test-0055:D5",
+      "synthetic-test-0055:D6",
+      "synthetic-test-0055:D7",
+      "synthetic-test-0055:D8",
+      "synthetic-test-0055:D9"
+    ]
+  },
+  "e3ee81b51ec4ad13c472e0c991d9e9abe3f8f73421e65f5e5faf4979c28eda01": {
+    "embedding": [
+      -0.4374057928286008,
+      -0.9697033899952933,
+      0.2686250102980945,
+      -0.9159049514230612
+    ],
+    "fire_id": "synthetic-test-0023",
+    "identity": "0dd9883315844de966962e17549534e27103ca75fe77cb004c3822d6ff6ad1ee",
+    "issued_at": "2023-06-07T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0023:D0",
+      "synthetic-test-0023:D1",
+      "synthetic-test-0023:D2"
+    ]
+  },
+  "e6f66da382c52bfe594820a497ded7c92a5da62a31947b913a2e1072b809eb4d": {
+    "embedding": [
+      0.6638173081012245,
+      -0.6435706242260877,
+      -0.5336881287637529,
+      0.61363686268024
+    ],
+    "fire_id": "synthetic-test-0021",
+    "identity": "4df2c054ee708740380f2b15383418a1402d4be20a794cc52f2c4644ed9aabba",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0021:D0",
+      "synthetic-test-0021:D1",
+      "synthetic-test-0021:D2",
+      "synthetic-test-0021:D3",
+      "synthetic-test-0021:D4",
+      "synthetic-test-0021:D5",
+      "synthetic-test-0021:D6",
+      "synthetic-test-0021:D7",
+      "synthetic-test-0021:D8",
+      "synthetic-test-0021:D9"
+    ]
+  },
+  "e7b0c3bf98e615231fc73668030abefb57681f82baa6795e0c5956c66fcec66d": {
+    "embedding": [
+      -0.07854425629900129,
+      -0.6688249952864409,
+      0.4307259096241412,
+      0.875256496148457
+    ],
+    "fire_id": "synthetic-test-0013",
+    "identity": "0a750b0a4a3f43da6425bcd4d9df47597316afe2eacdaeface2dfa56859e0b44",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0013:D0",
+      "synthetic-test-0013:D1",
+      "synthetic-test-0013:D2",
+      "synthetic-test-0013:D3",
+      "synthetic-test-0013:D4",
+      "synthetic-test-0013:D5",
+      "synthetic-test-0013:D6"
+    ]
+  },
+  "e7f68f45fbd1826b4d3a683ab707b63f494f17d5a7288cdd99f97bf506943f86": {
+    "embedding": [
+      -0.4279881308375846,
+      -0.9529568091853533,
+      -0.6351577688801803,
+      0.5309904592795316
+    ],
+    "fire_id": "synthetic-test-0024",
+    "identity": "7ebdaad89ffff6c38e5ccd08d6ada2932411ff4d89308a9d9029e834cf35baee",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0024:D0",
+      "synthetic-test-0024:D1",
+      "synthetic-test-0024:D2",
+      "synthetic-test-0024:D3",
+      "synthetic-test-0024:D4",
+      "synthetic-test-0024:D5",
+      "synthetic-test-0024:D6",
+      "synthetic-test-0024:D7",
+      "synthetic-test-0024:D8",
+      "synthetic-test-0024:D9"
+    ]
+  },
+  "e8a4a9ed6ace088e00df64c7426fc10249d18b4c15201c654e8b9ba28ca367a6": {
+    "embedding": [
+      -0.5393981122147916,
+      -0.8043107622626668,
+      0.6012119409274755,
+      0.6068627523868367
+    ],
+    "fire_id": "synthetic-test-0035",
+    "identity": "a8dac340bfbc2cea1d22fbe5ee6a90dd11e26919217764058c89fadfaa950610",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0035:D0",
+      "synthetic-test-0035:D1",
+      "synthetic-test-0035:D2",
+      "synthetic-test-0035:D3",
+      "synthetic-test-0035:D4"
+    ]
+  },
+  "e99191d69052c97d543f69075ab2959cf721b38e9de4250818de79a05b30539e": {
+    "embedding": [
+      -0.4612223713705562,
+      -0.8526355321919067,
+      0.590628628745287,
+      -0.32380053734201925
+    ],
+    "fire_id": "synthetic-test-0055",
+    "identity": "da49fd263dc5df11fa803d3637737371a81c8c942512f1b9c34f20a482198885",
+    "issued_at": "2023-06-19T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0055:D0",
+      "synthetic-test-0055:D1",
+      "synthetic-test-0055:D2"
+    ]
+  },
+  "e99f1467752fa210a3ae5310af7225bf2a50489a3e3e7eab00a9b9f3b0380f56": {
+    "embedding": [
+      0.5056104937359956,
+      0.3071960998007986,
+      0.6639628396824517,
+      0.7287209226487664
+    ],
+    "fire_id": "synthetic-test-0043",
+    "identity": "a67622dd98d85182cb883e5b16c4f4bc377a02122d241a50f66691d5dffa130a",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0043:D0",
+      "synthetic-test-0043:D1",
+      "synthetic-test-0043:D2",
+      "synthetic-test-0043:D3",
+      "synthetic-test-0043:D4"
+    ]
+  },
+  "ea3af6cb14b283238ebed6478d7c668ddc498d346bffe4943b155d1f332b12d9": {
+    "embedding": [
+      -0.04934709915679317,
+      -0.9281915319197349,
+      -0.4835457411039328,
+      0.5631604957716847
+    ],
+    "fire_id": "synthetic-test-0031",
+    "identity": "d14238ccae07ce866f8f8f1c223f6d9618581598e1a2b091aa793d9ffff4b666",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0031:D0",
+      "synthetic-test-0031:D1",
+      "synthetic-test-0031:D2",
+      "synthetic-test-0031:D3",
+      "synthetic-test-0031:D4",
+      "synthetic-test-0031:D5",
+      "synthetic-test-0031:D6",
+      "synthetic-test-0031:D7",
+      "synthetic-test-0031:D8",
+      "synthetic-test-0031:D9"
+    ]
+  },
+  "eaf2bc50470683ad74ca8f9ffa166a6c2c2a3557720f50487e2cd0c7f2614a64": {
+    "embedding": [
+      0.5759058615658601,
+      0.013655634003808146,
+      0.4751759027396432,
+      0.9016004783506997
+    ],
+    "fire_id": "synthetic-test-0055",
+    "identity": "f80b91ce78307ea8cc466730a72dad051034451fadb0c0c2730444c853ce4533",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0055:D0",
+      "synthetic-test-0055:D1",
+      "synthetic-test-0055:D2",
+      "synthetic-test-0055:D3",
+      "synthetic-test-0055:D4",
+      "synthetic-test-0055:D5",
+      "synthetic-test-0055:D6"
+    ]
+  },
+  "ec5f22a37184b96aa877794929db1b23c587ed707953ecb6914263d57a90d0ec": {
+    "embedding": [
+      -0.03201111972054788,
+      -0.9635316294115672,
+      0.15401654142238191,
+      0.5976023204482995
+    ],
+    "fire_id": "synthetic-test-0038",
+    "identity": "7f8bd3b30e9b793c3ac49616e26ebe29ebbd2d77a3e083a44acdd9d8ed2459bc",
+    "issued_at": "2023-06-26T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0038:D0",
+      "synthetic-test-0038:D1",
+      "synthetic-test-0038:D2",
+      "synthetic-test-0038:D3",
+      "synthetic-test-0038:D4",
+      "synthetic-test-0038:D5",
+      "synthetic-test-0038:D6"
+    ]
+  },
+  "ed9ef70354958e0d988ab555de73132795945290149c519eb7de5f29c87e659c": {
+    "embedding": [
+      0.4035533325281265,
+      -0.8134192405284852,
+      0.1069208724865569,
+      0.699185936830833
+    ],
+    "fire_id": "synthetic-test-0029",
+    "identity": "297a08fdb62194f75793d06691643356c65fa843484671d06016bdb7a3d504ae",
+    "issued_at": "2023-06-17T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0029:D0",
+      "synthetic-test-0029:D1",
+      "synthetic-test-0029:D2",
+      "synthetic-test-0029:D3",
+      "synthetic-test-0029:D4",
+      "synthetic-test-0029:D5",
+      "synthetic-test-0029:D6"
+    ]
+  },
+  "edd2569181e5e7f698c3b5c35a52f0b4cea7af86642474dfac99ef20948c7d51": {
+    "embedding": [
+      -0.3563622791218151,
+      -0.9870441989624571,
+      -0.06512384520893565,
+      -0.5590270524810086
+    ],
+    "fire_id": "synthetic-test-0063",
+    "identity": "ab6f6b0457d660d90f28e0bd6bc40292da525ee911e242f6fcd6fa56e7788c94",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0063:D0",
+      "synthetic-test-0063:D1",
+      "synthetic-test-0063:D2",
+      "synthetic-test-0063:D3",
+      "synthetic-test-0063:D4"
+    ]
+  },
+  "edf960b235f94efb3af8ddf095fdde14d474daa31a60cc77cbb828db4ca02bc9": {
+    "embedding": [
+      -0.1278835194452709,
+      -0.8958827445931784,
+      0.2899068995728125,
+      0.8305674407246809
+    ],
+    "fire_id": "synthetic-test-0008",
+    "identity": "44707f17dccd40f006d6639dd1b469f7a2f427f5e126ac7f9adb0129d2c0b29e",
+    "issued_at": "2023-06-16T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0008:D0",
+      "synthetic-test-0008:D1",
+      "synthetic-test-0008:D2",
+      "synthetic-test-0008:D3",
+      "synthetic-test-0008:D4",
+      "synthetic-test-0008:D5",
+      "synthetic-test-0008:D6"
+    ]
+  },
+  "eebdfb0e38e2fcc8ce1afab7188f9c8574f949e1445cece6c1bf64eb1a37762f": {
+    "embedding": [
+      0.09473728805518386,
+      -0.21043935179191461,
+      0.8353527980049505,
+      0.026758379508365425
+    ],
+    "fire_id": "synthetic-test-0047",
+    "identity": "f975478fc11309cf46c13042ea82670ef8728235c006a552791e9025d7519a0c",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0047:D0",
+      "synthetic-test-0047:D1",
+      "synthetic-test-0047:D2"
+    ]
+  },
+  "efe11809e1682d8f5b3dd7f22778e2db29012ac5fd1035c7af85d1f606173fa1": {
+    "embedding": [
+      0.16761872939926573,
+      -0.7895442426693482,
+      -0.19309926990157916,
+      0.8028659605124469
+    ],
+    "fire_id": "synthetic-test-0041",
+    "identity": "de999efe2d4ad76cda76a39b13a751e5b96247f8d7370eb11ea1b705611464ed",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0041:D0",
+      "synthetic-test-0041:D1",
+      "synthetic-test-0041:D2",
+      "synthetic-test-0041:D3",
+      "synthetic-test-0041:D4",
+      "synthetic-test-0041:D5",
+      "synthetic-test-0041:D6",
+      "synthetic-test-0041:D7",
+      "synthetic-test-0041:D8",
+      "synthetic-test-0041:D9"
+    ]
+  },
+  "f2d100a5999b6576cf23d260b1e9d012a1d6737eb860e18c2c2352f177d053fc": {
+    "embedding": [
+      0.844491465590166,
+      -0.825774336065169,
+      -0.2788948304610955,
+      -0.5446118522906824
+    ],
+    "fire_id": "synthetic-test-0060",
+    "identity": "8ccc169755ed732ca4649c6974437b1667d63c28888004a34677b2ed70cb71e5",
+    "issued_at": "2023-06-08T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0060:D0",
+      "synthetic-test-0060:D1",
+      "synthetic-test-0060:D2",
+      "synthetic-test-0060:D3",
+      "synthetic-test-0060:D4",
+      "synthetic-test-0060:D5",
+      "synthetic-test-0060:D6"
+    ]
+  },
+  "f44ef236f2307482a9de4428f08264a82d9878a65c144f2a2a4664dd35701b9b": {
+    "embedding": [
+      -0.29705702541690054,
+      -0.9534713048685313,
+      0.37511278240411566,
+      0.02323841474356274
+    ],
+    "fire_id": "synthetic-test-0006",
+    "identity": "b66052a66133cc41e4779dfe598d2d29ba93090e99874b99acac2aca6f4797d8",
+    "issued_at": "2023-06-12T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0006:D0",
+      "synthetic-test-0006:D1",
+      "synthetic-test-0006:D2",
+      "synthetic-test-0006:D3",
+      "synthetic-test-0006:D4"
+    ]
+  },
+  "f4917e2e17ea3a5783d2e95628c9b85d047acdf01ec243aa1b0b342242659fb0": {
+    "embedding": [
+      0.15715611796175813,
+      -0.8159597266884437,
+      -0.06788292310039871,
+      0.8422172230114499
+    ],
+    "fire_id": "synthetic-test-0030",
+    "identity": "0b0e3137c7a270760016abfda59209de82c881de04ebc89600f2755c1a1cefd8",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0030:D0",
+      "synthetic-test-0030:D1",
+      "synthetic-test-0030:D2",
+      "synthetic-test-0030:D3",
+      "synthetic-test-0030:D4",
+      "synthetic-test-0030:D5",
+      "synthetic-test-0030:D6",
+      "synthetic-test-0030:D7",
+      "synthetic-test-0030:D8",
+      "synthetic-test-0030:D9"
+    ]
+  },
+  "f4c2266a6620c4ab5f0cd53b90fd072b810f7dce46c2c0fdb44a302c0490b2a6": {
+    "embedding": [
+      0.6606967104412922,
+      -0.19193746972383574,
+      0.10016326942852499,
+      0.9318850097631406
+    ],
+    "fire_id": "synthetic-test-0057",
+    "identity": "b6c5eea7245e42eb88298c5650ae5e8d42d2d02845af71e4c2a59bb8cbca10aa",
+    "issued_at": "2023-06-28T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0057:D0",
+      "synthetic-test-0057:D1",
+      "synthetic-test-0057:D2",
+      "synthetic-test-0057:D3",
+      "synthetic-test-0057:D4",
+      "synthetic-test-0057:D5",
+      "synthetic-test-0057:D6",
+      "synthetic-test-0057:D7",
+      "synthetic-test-0057:D8",
+      "synthetic-test-0057:D9"
+    ]
+  },
+  "f5f21671046e0535154241bc8d938ba8670c5f1ae8b6236e281b424da39422f2": {
+    "embedding": [
+      -0.1659031803439699,
+      -0.9735642532867175,
+      -0.6803053986785585,
+      -0.35960551358005216
+    ],
+    "fire_id": "synthetic-test-0044",
+    "identity": "cdace57679502e385a8a63ac02ed9c6557740dba85d0e49dbbeff960da8335c8",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0044:D0",
+      "synthetic-test-0044:D1",
+      "synthetic-test-0044:D2",
+      "synthetic-test-0044:D3",
+      "synthetic-test-0044:D4",
+      "synthetic-test-0044:D5",
+      "synthetic-test-0044:D6",
+      "synthetic-test-0044:D7",
+      "synthetic-test-0044:D8",
+      "synthetic-test-0044:D9"
+    ]
+  },
+  "f61ac5671a20572e1bd34cb0ed1ba3de5c5b11b811bd2b462d71f4f662bdb157": {
+    "embedding": [
+      -0.25185432227924964,
+      -0.9724444972908229,
+      0.09085070733622183,
+      -0.6774890403160063
+    ],
+    "fire_id": "synthetic-test-0017",
+    "identity": "5596258065b6228bfdf01cebb70e5d5ca0345817a85aaf255d043600dcbfdf4f",
+    "issued_at": "2023-06-23T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0017:D0",
+      "synthetic-test-0017:D1",
+      "synthetic-test-0017:D2",
+      "synthetic-test-0017:D3",
+      "synthetic-test-0017:D4"
+    ]
+  },
+  "f748b29ea6981bfdacbe8049e79e6c67cde7fba8504201071040bc52cd9cb3ac": {
+    "embedding": [
+      0.8194487158950617,
+      0.8365780218509562,
+      0.31302268490993573,
+      0.9801731117855055
+    ],
+    "fire_id": "synthetic-test-0010",
+    "identity": "017c40a70afe637eb9ce156c1193a5502a0550f6242e492cc7ddc7b6491b75d4",
+    "issued_at": "2023-06-21T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0010:D0",
+      "synthetic-test-0010:D1",
+      "synthetic-test-0010:D2",
+      "synthetic-test-0010:D3",
+      "synthetic-test-0010:D4",
+      "synthetic-test-0010:D5",
+      "synthetic-test-0010:D6",
+      "synthetic-test-0010:D7",
+      "synthetic-test-0010:D8",
+      "synthetic-test-0010:D9"
+    ]
+  },
+  "f76d58e87ae92b6f9ca0ccce38a762583e45483844a0852296cc76e2f3647ecb": {
+    "embedding": [
+      0.424536211981983,
+      -0.9168459487189103,
+      0.4078247429452904,
+      -0.44486226276245205
+    ],
+    "fire_id": "synthetic-test-0049",
+    "identity": "34a5fb2d7c224abc878b5728d314b99d35e5f86ac747bf3a2238392eb150083b",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0049:D0",
+      "synthetic-test-0049:D1",
+      "synthetic-test-0049:D2",
+      "synthetic-test-0049:D3",
+      "synthetic-test-0049:D4"
+    ]
+  },
+  "f90c268ac4ec23eba94be364cdb9bcc58636eee25a59c5a9c83ec95893ed9871": {
+    "embedding": [
+      0.10618377240275158,
+      -0.37782558165091074,
+      0.7993146864599344,
+      0.1457102625206083
+    ],
+    "fire_id": "synthetic-test-0007",
+    "identity": "a01928c3771b63b03ec01b328bd616b3b91da29041eda03dcfeea9b1ccb0209f",
+    "issued_at": "2023-06-11T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0007:D0",
+      "synthetic-test-0007:D1",
+      "synthetic-test-0007:D2"
+    ]
+  },
+  "f9d16d4ddbf326c7dce6a65a73b04cc23c7aa3b35bf75c1ababf08977620dd3a": {
+    "embedding": [
+      -0.005122399948740289,
+      -0.9403047923467347,
+      -0.29789786791139977,
+      0.4969189416467197
+    ],
+    "fire_id": "synthetic-test-0017",
+    "identity": "490ec69080c61f4c241d7d9ed765e1dd200884819774058ee4eb0067f11e67f9",
+    "issued_at": "2023-06-28T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0017:D0",
+      "synthetic-test-0017:D1",
+      "synthetic-test-0017:D2",
+      "synthetic-test-0017:D3",
+      "synthetic-test-0017:D4",
+      "synthetic-test-0017:D5",
+      "synthetic-test-0017:D6",
+      "synthetic-test-0017:D7",
+      "synthetic-test-0017:D8",
+      "synthetic-test-0017:D9"
+    ]
+  },
+  "f9d419cfad802acfdfe04042fde7594865b58919ae1c0ad7677c24886145850c": {
+    "embedding": [
+      0.29177707696729555,
+      -0.6498979691051803,
+      0.6805362859810147,
+      -0.6015810528875255
+    ],
+    "fire_id": "synthetic-test-0038",
+    "identity": "4af475a92ee7ac2df9ced891ead50c485dda7a72366b1417dc381e40242c70e1",
+    "issued_at": "2023-06-22T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0038:D0",
+      "synthetic-test-0038:D1",
+      "synthetic-test-0038:D2"
+    ]
+  },
+  "fa581f383d1eed9f1e4e1b4239453bd825e2e695ca3aee445133aaebcac4d06e": {
+    "embedding": [
+      -0.26174224876983243,
+      -0.6437211748974174,
+      0.6400995902155533,
+      0.910494479560839
+    ],
+    "fire_id": "synthetic-test-0032",
+    "identity": "7db4b9c94b581e9164e61124bcaa11b314f31c74f2655a3d747022646f01c74e",
+    "issued_at": "2023-06-20T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0032:D0",
+      "synthetic-test-0032:D1",
+      "synthetic-test-0032:D2",
+      "synthetic-test-0032:D3",
+      "synthetic-test-0032:D4",
+      "synthetic-test-0032:D5",
+      "synthetic-test-0032:D6"
+    ]
+  },
+  "fb395aff024ac1247f7c4215444b01c6ff8bc18ba6d6b4dcef619fe8fd0f6995": {
+    "embedding": [
+      0.7418978456628423,
+      -0.1840461878267023,
+      0.04486638944954703,
+      0.8788299618593438
+    ],
+    "fire_id": "synthetic-test-0016",
+    "identity": "b2a9c590d3ee5d4839795350fcb376462807e0ac115efe42f1bddd65c7c59932",
+    "issued_at": "2023-06-27T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0016:D0",
+      "synthetic-test-0016:D1",
+      "synthetic-test-0016:D2",
+      "synthetic-test-0016:D3",
+      "synthetic-test-0016:D4",
+      "synthetic-test-0016:D5",
+      "synthetic-test-0016:D6",
+      "synthetic-test-0016:D7",
+      "synthetic-test-0016:D8",
+      "synthetic-test-0016:D9"
+    ]
+  },
+  "fbd66246cc5b1d45f4dfa299039a6572c1b1b3d8a3e02dfacaa7e06fb6e74614": {
+    "embedding": [
+      -0.32081957686827406,
+      -0.9863899871648276,
+      -0.009731690391621955,
+      -0.6328498321044773
+    ],
+    "fire_id": "synthetic-test-0023",
+    "identity": "70d9efbd489f2aa3dc06a77a70c3f503cfbd43ba77d7442ee76eef256d565a1f",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0023:D0",
+      "synthetic-test-0023:D1",
+      "synthetic-test-0023:D2",
+      "synthetic-test-0023:D3",
+      "synthetic-test-0023:D4"
+    ]
+  },
+  "fd44d9546a72978bb55452531d346f2a915e838ab042f66baee73817c4f48770": {
+    "embedding": [
+      0.11587884007600185,
+      -0.9891635657206161,
+      -0.3736590090168081,
+      -0.9135556391019548
+    ],
+    "fire_id": "synthetic-test-0003",
+    "identity": "376ce6b7ad8e4fe13fcd51cb4b95ce49853cdafef28cd13b71af2fc42d380c47",
+    "issued_at": "2023-06-09T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0003:D0",
+      "synthetic-test-0003:D1",
+      "synthetic-test-0003:D2",
+      "synthetic-test-0003:D3",
+      "synthetic-test-0003:D4"
+    ]
+  },
+  "fd91ca34388da31eed1d2d445d611de83a447f4acafdff9d917bb10bb167c7c4": {
+    "embedding": [
+      -0.5979532948056555,
+      -0.917440610781728,
+      0.4216034417434208,
+      0.5174964896299644
+    ],
+    "fire_id": "synthetic-test-0039",
+    "identity": "a8dd9a96c85567c839992a2b3fa8e2a41b1396666160154ac8511d1056c499ad",
+    "issued_at": "2023-06-25T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0039:D0",
+      "synthetic-test-0039:D1",
+      "synthetic-test-0039:D2",
+      "synthetic-test-0039:D3",
+      "synthetic-test-0039:D4"
+    ]
+  },
+  "fdc7a147886a49f53edaebf61fa67a9b2a73fd10833575674cc677a2835023c2": {
+    "embedding": [
+      0.4998369888555617,
+      -0.7831596564682186,
+      -0.45443256070864047,
+      0.6070253586263935
+    ],
+    "fire_id": "synthetic-test-0004",
+    "identity": "43e3c4789ddfdc27d189b3693fc075be8e91e19474edb4543c7118dab97bb2ff",
+    "issued_at": "2023-06-15T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0004:D0",
+      "synthetic-test-0004:D1",
+      "synthetic-test-0004:D2",
+      "synthetic-test-0004:D3",
+      "synthetic-test-0004:D4",
+      "synthetic-test-0004:D5",
+      "synthetic-test-0004:D6",
+      "synthetic-test-0004:D7",
+      "synthetic-test-0004:D8",
+      "synthetic-test-0004:D9"
+    ]
+  },
+  "fe6390e25fb8af7f7dbb2f17bb06cdc97f158df3ad611ec7e2752cb1f24899c0": {
+    "embedding": [
+      -0.7319463687986225,
+      -0.9818966091400156,
+      0.1282385413922736,
+      -0.7121801397545903
+    ],
+    "fire_id": "synthetic-test-0054",
+    "identity": "0a8a81c9ee75c5b0e4de43574da911bd5e4a7c7061b832b5bbea898a8ff090b6",
+    "issued_at": "2023-06-18T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0054:D0",
+      "synthetic-test-0054:D1",
+      "synthetic-test-0054:D2"
+    ]
+  },
+  "feb38b615a3bc63b3fedd3bdb6134ccea5203f0aa5cc1ad75a3c15c116263593": {
+    "embedding": [
+      -0.33522277964305136,
+      -0.995062859695831,
+      -0.6661230165356019,
+      -0.9448933079663019
+    ],
+    "fire_id": "synthetic-test-0027",
+    "identity": "b5a97f892b07502310f2d2407dadfdbedd256b1af52a01fbec5ae230837e4164",
+    "issued_at": "2023-06-13T00:00:00+00:00",
+    "observation_ids": [
+      "synthetic-test-0027:D0",
+      "synthetic-test-0027:D1",
+      "synthetic-test-0027:D2",
+      "synthetic-test-0027:D3",
+      "synthetic-test-0027:D4"
+    ]
+  }
+}

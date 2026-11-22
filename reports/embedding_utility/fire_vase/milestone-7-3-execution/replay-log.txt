@@ -1,0 +1,49 @@
+COMPLETED catalog
+native fires 50000
+native fires 100000
+native fires 150000
+native fires 200000
+native fires 250000
+COMPLETED native
+cache fires 50000
+cache fires 100000
+cache fires 150000
+cache fires 200000
+cache fires 250000
+COMPLETED cache
+{
+  "native": {
+    "fires": 278865,
+    "rows": 627033,
+    "valid_area_rows": 627033,
+    "valid_supported_rows": 627033,
+    "missing_area": 0,
+    "invalid_area": 0,
+    "missing_date": 0,
+    "duplicate_rows": 0,
+    "duplicate_extra": 0,
+    "observed_zero": 0,
+    "exact_day_intervals": 196982,
+    "gap_intervals": 151186,
+    "unobserved_days": 263312,
+    "strict_whole_history_fires": 188723,
+    "cumulative_valid_rows": null
+  },
+  "cache": {
+    "fires": 278569,
+    "rows": 626102,
+    "valid_area_rows": 626102,
+    "valid_supported_rows": 626102,
+    "missing_area": 0,
+    "invalid_area": 0,
+    "missing_date": 0,
+    "duplicate_rows": 0,
+    "duplicate_extra": 0,
+    "observed_zero": 0,
+    "exact_day_intervals": 196611,
+    "gap_intervals": 150922,
+    "unobserved_days": 262683,
+    "strict_whole_history_fires": 188572,
+    "cumulative_valid_rows": 626102
+  }
+}

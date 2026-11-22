@@ -1,0 +1,2647 @@
+[
+  {
+    "method": "raw_state",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06210124999961408
+  },
+  {
+    "method": "raw_state",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1218362919989886
+  },
+  {
+    "method": "pca-request4",
+    "fraction": 0.01,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0004510830003709998,
+    "requested_dimension": 4,
+    "effective_rank": 4
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.006722666001223843,
+    "parameters": 409
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.023093499999959022
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.009256458000891143,
+    "parameters": 504
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02924008300033165
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.007981707998624188,
+    "parameters": 419
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.026025000001027365
+  },
+  {
+    "method": "pca-request4",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.011916082999960054
+  },
+  {
+    "method": "pca-request4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04342625000026601
+  },
+  {
+    "method": "supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.011353207999491133
+  },
+  {
+    "method": "supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.042893084000752424
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.011467624999568216
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.043105417000333546
+  },
+  {
+    "method": "multitask-4",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.011385290999896824
+  },
+  {
+    "method": "multitask-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.043052249999163905
+  },
+  {
+    "method": "pca-request8",
+    "fraction": 0.01,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0004510830003709998,
+    "requested_dimension": 8,
+    "effective_rank": 8
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.007021917001111433,
+    "parameters": 481
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.026455832999999984
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.009686416000477038,
+    "parameters": 652
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.028147790999355493
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.008391708000999643,
+    "parameters": 499
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.026699207999627106
+  },
+  {
+    "method": "pca-request8",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013184249999540043
+  },
+  {
+    "method": "pca-request8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04441279099955864
+  },
+  {
+    "method": "supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.011439874999268795
+  },
+  {
+    "method": "supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04534925000007206
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.011582917000851012
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04479745900061971
+  },
+  {
+    "method": "multitask-8",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.01149529100075597
+  },
+  {
+    "method": "multitask-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04457166700012749
+  },
+  {
+    "method": "pca-request16",
+    "fraction": 0.01,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0004510830003709998,
+    "requested_dimension": 16,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.007818125000994769,
+    "parameters": 625
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.034871457999543054
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.01079366699923412,
+    "parameters": 948
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.036677999998573796
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.009411249999175197,
+    "parameters": 659
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.0354080420001992
+  },
+  {
+    "method": "pca-request16",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0135669589999452
+  },
+  {
+    "method": "pca-request16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.049553417000424815
+  },
+  {
+    "method": "supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.014519500000460539
+  },
+  {
+    "method": "supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05298204199971224
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.014936667001165915
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04881329199997708
+  },
+  {
+    "method": "multitask-16",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013627834001454175
+  },
+  {
+    "method": "multitask-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.049672874998577754
+  },
+  {
+    "method": "pca-request32",
+    "fraction": 0.01,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0004510830003709998,
+    "requested_dimension": 32,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.010220084001048235,
+    "parameters": 913
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.043662874999427004
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.012520874999609077,
+    "parameters": 1540
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04705808399921807
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.011169334000442177,
+    "parameters": 979
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04812658299852046
+  },
+  {
+    "method": "pca-request32",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.012334125000052154
+  },
+  {
+    "method": "pca-request32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.050388708999889786
+  },
+  {
+    "method": "supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.017165166998893255
+  },
+  {
+    "method": "supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.056171666999944136
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.01772391600025003
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05170991699924343
+  },
+  {
+    "method": "multitask-32",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.017507541999293608
+  },
+  {
+    "method": "multitask-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05168054199930339
+  },
+  {
+    "method": "pca-request64",
+    "fraction": 0.01,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0004510830003709998,
+    "requested_dimension": 64,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.013387333001446677,
+    "parameters": 1489
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07698312500178872
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.01546629199947347,
+    "parameters": 2724
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.08179279199976008
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.01,
+    "stage": "training",
+    "seconds": 0.014591082999686478,
+    "parameters": 1619
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.01,
+    "stage": "encoding_all_fires",
+    "seconds": 0.08044583300033992
+  },
+  {
+    "method": "pca-request64",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013218207999670994
+  },
+  {
+    "method": "pca-request64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.046559000000343076
+  },
+  {
+    "method": "supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.032617249999020714
+  },
+  {
+    "method": "supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.07656212499932735
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.026529583999945316
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.07808808300069359
+  },
+  {
+    "method": "multitask-64",
+    "probe": "linear_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.02565662499910104
+  },
+  {
+    "method": "multitask-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.01,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.07593266699950618
+  },
+  {
+    "method": "raw_state",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06385545800003456
+  },
+  {
+    "method": "raw_state",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1041862919992127
+  },
+  {
+    "method": "pca-request4",
+    "fraction": 0.03,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0006830419988546055,
+    "requested_dimension": 4,
+    "effective_rank": 4
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.018038333000731654,
+    "parameters": 409
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02249791700160131
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.026429583000208368,
+    "parameters": 504
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.028098542001316673
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.021962458000416518,
+    "parameters": 419
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.025158207999993465
+  },
+  {
+    "method": "pca-request4",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.01308512499963399
+  },
+  {
+    "method": "pca-request4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.045462874999429914
+  },
+  {
+    "method": "supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.01343020900094416
+  },
+  {
+    "method": "supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04609100000016042
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013578583000708022
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04598462500143796
+  },
+  {
+    "method": "multitask-4",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013773915999991004
+  },
+  {
+    "method": "multitask-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.045371333999355556
+  },
+  {
+    "method": "pca-request8",
+    "fraction": 0.03,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0006830419988546055,
+    "requested_dimension": 8,
+    "effective_rank": 8
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.019368707999092294,
+    "parameters": 481
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.027260709000984207
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.027671625000948552,
+    "parameters": 652
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02878045900069992
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.022250541000175872,
+    "parameters": 499
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.027140000000144937
+  },
+  {
+    "method": "pca-request8",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013049625000348897
+  },
+  {
+    "method": "pca-request8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04772275000141235
+  },
+  {
+    "method": "supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.01297458400040341
+  },
+  {
+    "method": "supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05086829199899512
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0141755419990659
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05088683400026639
+  },
+  {
+    "method": "multitask-8",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.013336333000552258
+  },
+  {
+    "method": "multitask-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04824591699980374
+  },
+  {
+    "method": "pca-request16",
+    "fraction": 0.03,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0006830419988546055,
+    "requested_dimension": 16,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.02361370799917495,
+    "parameters": 625
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03343325000059849
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.0315620420005871,
+    "parameters": 948
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.035671957999511505
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.025209792000168818,
+    "parameters": 659
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.034012750000329106
+  },
+  {
+    "method": "pca-request16",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.015556917000139947
+  },
+  {
+    "method": "pca-request16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05277337499865098
+  },
+  {
+    "method": "supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.015798042000824353
+  },
+  {
+    "method": "supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05395166599919321
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.015699166999183944
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05388654200032761
+  },
+  {
+    "method": "multitask-16",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0162077090008097
+  },
+  {
+    "method": "multitask-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0544222919997992
+  },
+  {
+    "method": "pca-request32",
+    "fraction": 0.03,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0006830419988546055,
+    "requested_dimension": 32,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.02800408300026902,
+    "parameters": 913
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04531516700080829
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.03555716699884215,
+    "parameters": 1540
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04928487500001211
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.0308822910010349,
+    "parameters": 979
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04644270800054073
+  },
+  {
+    "method": "pca-request32",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.014793541999097215
+  },
+  {
+    "method": "pca-request32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04976520800119033
+  },
+  {
+    "method": "supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.022185375000844942
+  },
+  {
+    "method": "supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05652245899909758
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.020749750001414213
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05778933300098288
+  },
+  {
+    "method": "multitask-32",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.02250304199878883
+  },
+  {
+    "method": "multitask-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05628716699902725
+  },
+  {
+    "method": "pca-request64",
+    "fraction": 0.03,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0006830419988546055,
+    "requested_dimension": 64,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.03839112499917974,
+    "parameters": 1489
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07246879100057413
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.05049166699973284,
+    "parameters": 2724
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07730870799969125
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.03,
+    "stage": "training",
+    "seconds": 0.04204854199997499,
+    "parameters": 1619
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.03,
+    "stage": "encoding_all_fires",
+    "seconds": 0.074543167000229
+  },
+  {
+    "method": "pca-request64",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.014681541999379988
+  },
+  {
+    "method": "pca-request64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05174412499945902
+  },
+  {
+    "method": "supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.03201620900108537
+  },
+  {
+    "method": "supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08561520799958089
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.033276624999416526
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08435979199930443
+  },
+  {
+    "method": "multitask-64",
+    "probe": "linear_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.03465670900004625
+  },
+  {
+    "method": "multitask-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.03,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08569566699952702
+  },
+  {
+    "method": "raw_state",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.07690529199862794
+  },
+  {
+    "method": "raw_state",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.12013808400115522
+  },
+  {
+    "method": "pca-request4",
+    "fraction": 0.1,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0014838339993730187,
+    "requested_dimension": 4,
+    "effective_rank": 4
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.059060666999357636,
+    "parameters": 409
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.024165540999092627
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.08581637499992212,
+    "parameters": 504
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02849274999971385
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.0708355839997239,
+    "parameters": 419
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.025040167000042857
+  },
+  {
+    "method": "pca-request4",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.018141124999601743
+  },
+  {
+    "method": "pca-request4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05894395900031668
+  },
+  {
+    "method": "supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.018452000000252156
+  },
+  {
+    "method": "supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05700458299907041
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0181419590007863
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.058084458998564514
+  },
+  {
+    "method": "multitask-4",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.018860250000216183
+  },
+  {
+    "method": "multitask-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05983316699894203
+  },
+  {
+    "method": "pca-request8",
+    "fraction": 0.1,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0014838339993730187,
+    "requested_dimension": 8,
+    "effective_rank": 8
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.062476541999785695,
+    "parameters": 481
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02802995799902419
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.0910062500006461,
+    "parameters": 652
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.029131875000530272
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.07351441600076214,
+    "parameters": 499
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02758991600057925
+  },
+  {
+    "method": "pca-request8",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.018978166999659152
+  },
+  {
+    "method": "pca-request8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.061662624999371474
+  },
+  {
+    "method": "supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.019095375000688364
+  },
+  {
+    "method": "supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.059898290999626624
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.018778667001242866
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06239237499903538
+  },
+  {
+    "method": "multitask-8",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.019431708000411163
+  },
+  {
+    "method": "multitask-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06162962499911373
+  },
+  {
+    "method": "pca-request16",
+    "fraction": 0.1,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0014838339993730187,
+    "requested_dimension": 16,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.07363612500012096,
+    "parameters": 625
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03295908300060546
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.10511487499934447,
+    "parameters": 948
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03311487500104704
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.08462895900083822,
+    "parameters": 659
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03368816600050195
+  },
+  {
+    "method": "pca-request16",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.02449779199923796
+  },
+  {
+    "method": "pca-request16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06703637500140758
+  },
+  {
+    "method": "supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0224147909993917
+  },
+  {
+    "method": "supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0642860420011857
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.02111266700012493
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06260741699952632
+  },
+  {
+    "method": "multitask-16",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.021242957998765633
+  },
+  {
+    "method": "multitask-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06622299999980896
+  },
+  {
+    "method": "pca-request32",
+    "fraction": 0.1,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0014838339993730187,
+    "requested_dimension": 32,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.09295508300056099,
+    "parameters": 913
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04593449999993027
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.12163720799981093,
+    "parameters": 1540
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.050405375000991626
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.10274074999870209,
+    "parameters": 979
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04682166599923221
+  },
+  {
+    "method": "pca-request32",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.024642999998832238
+  },
+  {
+    "method": "pca-request32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06269558299936762
+  },
+  {
+    "method": "supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.030544792000000598
+  },
+  {
+    "method": "supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.07595983300052467
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.029376582999248058
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.07031154099968262
+  },
+  {
+    "method": "multitask-32",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.028183500000523054
+  },
+  {
+    "method": "multitask-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.069884667000224
+  },
+  {
+    "method": "pca-request64",
+    "fraction": 0.1,
+    "stage": "pca_fit_shared",
+    "seconds": 0.0014838339993730187,
+    "requested_dimension": 64,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.1286978750013077,
+    "parameters": 1489
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07256308399882982
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.1537536670002737,
+    "parameters": 2724
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07573379200039199
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.1,
+    "stage": "training",
+    "seconds": 0.1352105419991858,
+    "parameters": 1619
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.1,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07569812499968975
+  },
+  {
+    "method": "pca-request64",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.02312424999945506
+  },
+  {
+    "method": "pca-request64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06260195800132351
+  },
+  {
+    "method": "supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04663391699978092
+  },
+  {
+    "method": "supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10845079199862084
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04834987499998533
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.11263495900129783
+  },
+  {
+    "method": "multitask-64",
+    "probe": "linear_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.051063666000118246
+  },
+  {
+    "method": "multitask-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.1,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1167823750001844
+  },
+  {
+    "method": "raw_state",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08943879199978255
+  },
+  {
+    "method": "raw_state",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.15302258299925597
+  },
+  {
+    "method": "pca-request4",
+    "fraction": 0.3,
+    "stage": "pca_fit_shared",
+    "seconds": 0.003329290999317891,
+    "requested_dimension": 4,
+    "effective_rank": 4
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.184471417000168,
+    "parameters": 409
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.022167207998791127
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.2873585830002412,
+    "parameters": 504
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.027894415999980993
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.2290284579994477,
+    "parameters": 419
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02530300000034913
+  },
+  {
+    "method": "pca-request4",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.03053195800021058
+  },
+  {
+    "method": "pca-request4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08250304099965433
+  },
+  {
+    "method": "supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.03103887500037672
+  },
+  {
+    "method": "supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08085100000062084
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.032241291999525856
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08858591700118268
+  },
+  {
+    "method": "multitask-4",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.030815166999673238
+  },
+  {
+    "method": "multitask-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08659437499954947
+  },
+  {
+    "method": "pca-request8",
+    "fraction": 0.3,
+    "stage": "pca_fit_shared",
+    "seconds": 0.003329290999317891,
+    "requested_dimension": 8,
+    "effective_rank": 8
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.19094699999914155,
+    "parameters": 481
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02596970800004783
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.2905027920005523,
+    "parameters": 652
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02747258400086139
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.2201523339990672,
+    "parameters": 499
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.027219708001211984
+  },
+  {
+    "method": "pca-request8",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.028661416999966605
+  },
+  {
+    "method": "pca-request8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08915745800004515
+  },
+  {
+    "method": "supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.028453749999243882
+  },
+  {
+    "method": "supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08853266699952655
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.028537874999528867
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08833445900017978
+  },
+  {
+    "method": "multitask-8",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.028107709000323666
+  },
+  {
+    "method": "multitask-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.09009524999964924
+  },
+  {
+    "method": "pca-request16",
+    "fraction": 0.3,
+    "stage": "pca_fit_shared",
+    "seconds": 0.003329290999317891,
+    "requested_dimension": 16,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.22341345800123236,
+    "parameters": 625
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03269387500040466
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.3289785840006516,
+    "parameters": 948
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03313799999887124
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.2634025830011524,
+    "parameters": 659
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.0334502080004313
+  },
+  {
+    "method": "pca-request16",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.03954774999874644
+  },
+  {
+    "method": "pca-request16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10585374999936903
+  },
+  {
+    "method": "supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.047434374999284046
+  },
+  {
+    "method": "supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10800525000013295
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.04184799999893585
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10554154099918378
+  },
+  {
+    "method": "multitask-16",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.042898042000160785
+  },
+  {
+    "method": "multitask-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10165658400001121
+  },
+  {
+    "method": "pca-request32",
+    "fraction": 0.3,
+    "stage": "pca_fit_shared",
+    "seconds": 0.003329290999317891,
+    "requested_dimension": 32,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.28967454199846543,
+    "parameters": 913
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.045782999999573804
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.3801330420010345,
+    "parameters": 1540
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.051683667001270805
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.3144796659998974,
+    "parameters": 979
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04750958299882768
+  },
+  {
+    "method": "pca-request32",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0391449159997137
+  },
+  {
+    "method": "pca-request32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1056404159990052
+  },
+  {
+    "method": "supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06206712499988498
+  },
+  {
+    "method": "supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.12277016699954402
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.060381666999091976
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.12535170900082448
+  },
+  {
+    "method": "multitask-32",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06080029199983983
+  },
+  {
+    "method": "multitask-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.12694516699957603
+  },
+  {
+    "method": "pca-request64",
+    "fraction": 0.3,
+    "stage": "pca_fit_shared",
+    "seconds": 0.003329290999317891,
+    "requested_dimension": 64,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.3882189579999249,
+    "parameters": 1489
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07441537500017148
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.4881377080000675,
+    "parameters": 2724
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07734675000028801
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.3,
+    "stage": "training",
+    "seconds": 0.41482250000080967,
+    "parameters": 1619
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 0.3,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07511333399997966
+  },
+  {
+    "method": "pca-request64",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.038569708000068204
+  },
+  {
+    "method": "pca-request64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10184304199901817
+  },
+  {
+    "method": "supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10798091600008775
+  },
+  {
+    "method": "supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1844680829999561
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0980507080003008
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1760748329998023
+  },
+  {
+    "method": "multitask-64",
+    "probe": "linear_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.10274837499855494
+  },
+  {
+    "method": "multitask-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 0.3,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.18050775000119756
+  },
+  {
+    "method": "raw_state",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1499704589987232
+  },
+  {
+    "method": "raw_state",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.25730783399922075
+  },
+  {
+    "method": "pca-request4",
+    "fraction": 1.0,
+    "stage": "pca_fit_shared",
+    "seconds": 0.006854874998680316,
+    "requested_dimension": 4,
+    "effective_rank": 4
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.6390198329991108,
+    "parameters": 409
+  },
+  {
+    "method": "supervised-4",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02260545800163527
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.023923750000904,
+    "parameters": 504
+  },
+  {
+    "method": "self_supervised-4",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02793779100102256
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.8054861670007085,
+    "parameters": 419
+  },
+  {
+    "method": "multitask-4",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02583591599977808
+  },
+  {
+    "method": "pca-request4",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06662087500080816
+  },
+  {
+    "method": "pca-request4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.14944079099950613
+  },
+  {
+    "method": "supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06612733400106663
+  },
+  {
+    "method": "supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.14766400000007707
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06594170900098106
+  },
+  {
+    "method": "self_supervised-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1456175830007851
+  },
+  {
+    "method": "multitask-4",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06668870900102775
+  },
+  {
+    "method": "multitask-4",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1475834169996233
+  },
+  {
+    "method": "pca-request8",
+    "fraction": 1.0,
+    "stage": "pca_fit_shared",
+    "seconds": 0.006854874998680316,
+    "requested_dimension": 8,
+    "effective_rank": 8
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.655463040999166,
+    "parameters": 481
+  },
+  {
+    "method": "supervised-8",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.02637904199946206
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.0296049589996983,
+    "parameters": 652
+  },
+  {
+    "method": "self_supervised-8",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.027939125000557397
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.7890296669993404,
+    "parameters": 499
+  },
+  {
+    "method": "multitask-8",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.026894874999925378
+  },
+  {
+    "method": "pca-request8",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.057072624998909305
+  },
+  {
+    "method": "pca-request8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.16354279200095334
+  },
+  {
+    "method": "supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05398508300095273
+  },
+  {
+    "method": "supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1639204589992005
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.05557504100033839
+  },
+  {
+    "method": "self_supervised-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.15980812499947206
+  },
+  {
+    "method": "multitask-8",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.055649333000474144
+  },
+  {
+    "method": "multitask-8",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.16196754100019461
+  },
+  {
+    "method": "pca-request16",
+    "fraction": 1.0,
+    "stage": "pca_fit_shared",
+    "seconds": 0.006854874998680316,
+    "requested_dimension": 16,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.759257666000849,
+    "parameters": 625
+  },
+  {
+    "method": "supervised-16",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03185358399969118
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.1328803329997754,
+    "parameters": 948
+  },
+  {
+    "method": "self_supervised-16",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.03262879100111604
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.9121704589997535,
+    "parameters": 659
+  },
+  {
+    "method": "multitask-16",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.035134833999109105
+  },
+  {
+    "method": "pca-request16",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08413029200164601
+  },
+  {
+    "method": "pca-request16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.18054591699910816
+  },
+  {
+    "method": "supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06794612500016228
+  },
+  {
+    "method": "supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1665105419997417
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06776695799999288
+  },
+  {
+    "method": "self_supervised-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.16158262499993725
+  },
+  {
+    "method": "multitask-16",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.06912508300047193
+  },
+  {
+    "method": "multitask-16",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1633765829992626
+  },
+  {
+    "method": "pca-request32",
+    "fraction": 1.0,
+    "stage": "pca_fit_shared",
+    "seconds": 0.006854874998680316,
+    "requested_dimension": 32,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 0.9548084590005601,
+    "parameters": 913
+  },
+  {
+    "method": "supervised-32",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.04505320799944457
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.2689976250003383,
+    "parameters": 1540
+  },
+  {
+    "method": "self_supervised-32",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.05140404199846671
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.0550394159999996,
+    "parameters": 979
+  },
+  {
+    "method": "multitask-32",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.0498572080014128
+  },
+  {
+    "method": "pca-request32",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.08521133300018846
+  },
+  {
+    "method": "pca-request32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.184149583999897
+  },
+  {
+    "method": "supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.11628208300135157
+  },
+  {
+    "method": "supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.202596374998393
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.11089437500049826
+  },
+  {
+    "method": "self_supervised-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.20746170900019933
+  },
+  {
+    "method": "multitask-32",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.11343087499881221
+  },
+  {
+    "method": "multitask-32",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.21102841699939745
+  },
+  {
+    "method": "pca-request64",
+    "fraction": 1.0,
+    "stage": "pca_fit_shared",
+    "seconds": 0.006854874998680316,
+    "requested_dimension": 64,
+    "effective_rank": 13
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.2962964170001214,
+    "parameters": 1489
+  },
+  {
+    "method": "supervised-64",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.07670058300027449
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.6182486659999995,
+    "parameters": 2724
+  },
+  {
+    "method": "self_supervised-64",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.08030704200064065
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 1.0,
+    "stage": "training",
+    "seconds": 1.3854962500008696,
+    "parameters": 1619
+  },
+  {
+    "method": "multitask-64",
+    "fraction": 1.0,
+    "stage": "encoding_all_fires",
+    "seconds": 0.08283454200136475
+  },
+  {
+    "method": "pca-request64",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.0840570829986973
+  },
+  {
+    "method": "pca-request64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.18078679199970793
+  },
+  {
+    "method": "supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1964846659993782
+  },
+  {
+    "method": "supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.30459583299852966
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1899740410008235
+  },
+  {
+    "method": "self_supervised-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.28779387500071607
+  },
+  {
+    "method": "multitask-64",
+    "probe": "linear_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.1849253749987838
+  },
+  {
+    "method": "multitask-64",
+    "probe": "nonlinear_tanh32_ridge",
+    "fraction": 1.0,
+    "stage": "probe_fit_and_predict",
+    "seconds": 0.29732687499927124
+  }
+]

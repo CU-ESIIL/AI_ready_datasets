@@ -1,0 +1,4 @@
+REUSED verified identity files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg
+REUSED verified identity files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg
+REUSED verified identity files/scratch/fire_vase_run_full/tables/vase_slices.parquet
+REUSED verified identity files/scratch/fire_vase_run_full/tables/fire_traits.parquet

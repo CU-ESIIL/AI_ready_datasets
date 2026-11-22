@@ -1,0 +1,34 @@
+{
+  "execution_permission_granted": false,
+  "human_decision": "PENDING",
+  "meaning": "Evidence precondition check only. External human attribution must be verified; no source IO, runtime HumanDecision or execution authority is produced.",
+  "models_trained": 0,
+  "packet_digest": "8be26eec72f9fb711569994cbb5cb8e2c3339b5c156037e8779a597b0570135a",
+  "reasons": [
+    "no_external_human_review",
+    "bounded_audit_not_approved",
+    "semantic:NEEDS_EVIDENCE",
+    "units:NEEDS_EVIDENCE",
+    "support:NEEDS_EVIDENCE",
+    "rights:NEEDS_EVIDENCE",
+    "integrity:NEEDS_EVIDENCE",
+    "quality:NEEDS_EVIDENCE",
+    "availability:NEEDS_EVIDENCE",
+    "fired_daily:current_container_hash_missing",
+    "fired_events:current_container_hash_missing",
+    "cached_slices:current_container_hash_missing",
+    "cached_traits:current_container_hash_missing"
+  ],
+  "scientific_status": {
+    "availability": "NEEDS_EVIDENCE",
+    "integrity": "NEEDS_EVIDENCE",
+    "quality": "NEEDS_EVIDENCE",
+    "rights": "NEEDS_EVIDENCE",
+    "semantic": "NEEDS_EVIDENCE",
+    "support": "NEEDS_EVIDENCE",
+    "units": "NEEDS_EVIDENCE"
+  },
+  "source_reader_implemented": false,
+  "source_rows_read": 0,
+  "technical_evidence_complete": false
+}

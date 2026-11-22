@@ -1,0 +1,386 @@
+{
+  "version": "fire-m4-data-audit-v1",
+  "timestamp": "2026-11-21T15:28:05.490665+00:00",
+  "paths": [
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "exists": false,
+      "kind": "absent",
+      "bytes": null
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "exists": false,
+      "kind": "absent",
+      "bytes": null
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/scratch/fire_vase_run_full/tables",
+      "exists": false,
+      "kind": "absent",
+      "bytes": null
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/scratch/fire_vase_developmental_morphology",
+      "exists": false,
+      "kind": "absent",
+      "bytes": null
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "exists": true,
+      "kind": "file",
+      "bytes": 256565248
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "exists": true,
+      "kind": "file",
+      "bytes": 575012864
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_run_full/tables",
+      "exists": true,
+      "kind": "directory",
+      "bytes": null
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_developmental_morphology",
+      "exists": true,
+      "kind": "directory",
+      "bytes": null
+    }
+  ],
+  "evidence_sha256": {
+    "config/data_release.yml": "9c430010c59abb3b28ace046c3915190ad1c999d93b73698b53597ee7c0a9ab8",
+    "docs/datasets/fired.md": "6da3b8c53ae1323f5a82e282bdfe033cae5db5bdf7f361c54838b3bcc026e732",
+    "schemas/vase_slices.schema.json": "2f7c5d9faa6b82933e5a2649d9592dfd1bcc2178f111f7a6f6ae03c01d8eddb9",
+    "analysis/v2/input_audit.json": "a7dc9c1f4d00bf1a831886ed797d55e5130d29b7ae8c33efea33b2f76dad71f6",
+    "analysis/v2/run_manifest.json": "b17f1063566c4a544ce3ae8373243baa4616e84183d8ad83a40866b99c7e5eec",
+    "LICENSE": "a52755b727ab141e23c442d6e736bbddf2e6e81104eb3f1ecc0c5c1b13f01504"
+  },
+  "data_rows_read": 0,
+  "rights_review": "not_approved_for_this_experiment; code MIT does not relicense FIRED/gridMET",
+  "operational_availability": "unresolved; source-native timestamps are not availability evidence",
+  "real_training_authorized": false,
+  "metadata_inspection": [
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+      "bytes": 38403514,
+      "rows_from_footer": 626102,
+      "row_groups": 1,
+      "schema": "fire_id: string\nslice_index: int64\ntimestamp: string\nyear: int64\nvase_version: string\nvase_cache_key: string\ngeometry_cache_key: string\nclimate_cache_key: string\nclimate_source: string\nclimate_temporal_resolution: string\nclimate_extraction_method: string\nring_area_km2: double\ncumulative_area_km2: double\nnormalized_vase_width: double\nmaximum_temperature_c: double\nminimum_temperature_c: double\nvpd_kpa: double\nwind_speed_m_s: double\nprecipitation_mm: double\nmaximum_relative_humidity_pct: double\nminimum_relative_humidity_pct: double\nspecific_humidity_kg_kg: double\nfuel_moisture_100hr_pct: double\nfuel_moisture_1000hr_pct: double\nenergy_release_component: double\nburning_index: double\nreference_evapotranspiration_mm: double\npotential_evapotranspiration_mm: double\nsolar_radiation_w_m2: double\nwind_present: bool\nclimate_available: bool\nclimate_failure_reason: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 4471",
+      "scope": "footer metadata only; no feature rows read; full file checksum unverified"
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+      "bytes": 23582087,
+      "rows_from_footer": 278569,
+      "row_groups": 1,
+      "schema": "fire_id: string\ntrait_version: string\nprocessing_version: string\nyear: int64\nregion: string\ntotal_area_km2: double\nduration_hours: double\npeak_growth_km2_per_hour: double\ngeometry_cache_key: string\nclimate_cache_key: string\nevent_cache_key: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1493",
+      "scope": "footer metadata only; no feature rows read; full file checksum unverified"
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_developmental_morphology/developmental_morphospace_features.parquet",
+      "bytes": 21124451,
+      "rows_from_footer": 278569,
+      "row_groups": 1,
+      "schema": "fire_id: string\nyear: int64\nregion: string\nfinal_area_km2: double\nduration_days: double\npeak_growth_km2_per_day: double\nobservation_count: int64\npulse_count: int64\nreactivation_count: int64\npeak_timing: double\nfront_loaded_fraction: double\nlate_growth_fraction: double\nterminal_taper_fraction: double\ngrowth_entropy: double\ndevelopmental_velocity: double\ndevelopmental_acceleration: double\nwidth_at_quarter: double\nwidth_at_half: double\nwidth_at_three_quarter: double\nslenderness_days_per_width: double\nclimate_available: bool\nwidth_p00: double\nwidth_p01: double\nwidth_p02: double\nwidth_p03: double\nwidth_p04: double\nwidth_p05: double\nwidth_p06: double\nwidth_p07: double\nwidth_p08: double\nwidth_p09: double\nwidth_p10: double\ngrowth_p00: double\ngrowth_p01: double\ngrowth_p02: double\ngrowth_p03: double\ngrowth_p04: double\ngrowth_p05: double\ngrowth_p06: double\ngrowth_p07: double\ngrowth_p08: double\ngrowth_p09: double\ngrowth_p10: double\nmean_maximum_temperature_c: double\nmean_minimum_temperature_c: double\nmean_vpd_kpa: double\nmax_vpd_kpa: double\nmean_wind_speed_m_s: double\nwind_present_fraction: double\nshape_label: string\nmorph_pc1: double\nmorph_pc2: double\nmorph_pc3: double\nmorph_pc4: double\nmorph_pc5: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 7071",
+      "scope": "footer metadata only; no feature rows read; full file checksum unverified"
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "tables": [
+        {
+          "name": "fired_conus-ak_events_nov2001-march2021",
+          "srs_id": 100000,
+          "columns": [
+            [
+              "fid",
+              "INTEGER"
+            ],
+            [
+              "geom",
+              "MULTIPOLYGON"
+            ],
+            [
+              "id",
+              "INTEGER"
+            ],
+            [
+              "ig_date",
+              "TEXT"
+            ],
+            [
+              "ig_day",
+              "INTEGER"
+            ],
+            [
+              "ig_month",
+              "INTEGER"
+            ],
+            [
+              "ig_year",
+              "INTEGER"
+            ],
+            [
+              "last_date",
+              "TEXT"
+            ],
+            [
+              "event_dur",
+              "INTEGER"
+            ],
+            [
+              "tot_pix",
+              "INTEGER"
+            ],
+            [
+              "tot_ar_km2",
+              "REAL"
+            ],
+            [
+              "fsr_px_dy",
+              "REAL"
+            ],
+            [
+              "fsr_km2_dy",
+              "REAL"
+            ],
+            [
+              "mx_grw_px",
+              "INTEGER"
+            ],
+            [
+              "mn_grw_px",
+              "INTEGER"
+            ],
+            [
+              "mu_grw_px",
+              "REAL"
+            ],
+            [
+              "mx_grw_km2",
+              "REAL"
+            ],
+            [
+              "mn_grw_km2",
+              "REAL"
+            ],
+            [
+              "mu_grw_km2",
+              "REAL"
+            ],
+            [
+              "mx_grw_dte",
+              "TEXT"
+            ],
+            [
+              "lc_code",
+              "REAL"
+            ],
+            [
+              "lc_mode",
+              "REAL"
+            ],
+            [
+              "lc_name",
+              "TEXT"
+            ],
+            [
+              "lc_desc",
+              "TEXT"
+            ],
+            [
+              "lc_type",
+              "TEXT"
+            ],
+            [
+              "eco_mode",
+              "TEXT"
+            ],
+            [
+              "eco_type",
+              "TEXT"
+            ],
+            [
+              "eco_name",
+              "TEXT"
+            ],
+            [
+              "ig_utm_x",
+              "REAL"
+            ],
+            [
+              "ig_utm_y",
+              "REAL"
+            ],
+            [
+              "tot_perim",
+              "REAL"
+            ]
+          ]
+        }
+      ],
+      "scope": "GeoPackage schema/catalog only; no feature rows read"
+    },
+    {
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "tables": [
+        {
+          "name": "fired_conus-ak_daily_nov2001-march2021",
+          "srs_id": 100000,
+          "columns": [
+            [
+              "fid",
+              "INTEGER"
+            ],
+            [
+              "geom",
+              "MULTIPOLYGON"
+            ],
+            [
+              "did",
+              "TEXT"
+            ],
+            [
+              "id",
+              "INTEGER"
+            ],
+            [
+              "date",
+              "TEXT"
+            ],
+            [
+              "ig_date",
+              "TEXT"
+            ],
+            [
+              "ig_day",
+              "INTEGER"
+            ],
+            [
+              "ig_month",
+              "INTEGER"
+            ],
+            [
+              "ig_year",
+              "INTEGER"
+            ],
+            [
+              "last_date",
+              "TEXT"
+            ],
+            [
+              "event_day",
+              "INTEGER"
+            ],
+            [
+              "event_dur",
+              "INTEGER"
+            ],
+            [
+              "pixels",
+              "INTEGER"
+            ],
+            [
+              "tot_pix",
+              "INTEGER"
+            ],
+            [
+              "dy_ar_km2",
+              "REAL"
+            ],
+            [
+              "tot_ar_km2",
+              "REAL"
+            ],
+            [
+              "fsr_px_dy",
+              "REAL"
+            ],
+            [
+              "fsr_km2_dy",
+              "REAL"
+            ],
+            [
+              "mx_grw_px",
+              "INTEGER"
+            ],
+            [
+              "mn_grw_px",
+              "INTEGER"
+            ],
+            [
+              "mu_grw_px",
+              "REAL"
+            ],
+            [
+              "mx_grw_km2",
+              "REAL"
+            ],
+            [
+              "mn_grw_km2",
+              "REAL"
+            ],
+            [
+              "mu_grw_km2",
+              "REAL"
+            ],
+            [
+              "mx_grw_dte",
+              "TEXT"
+            ],
+            [
+              "lc_code",
+              "REAL"
+            ],
+            [
+              "lc_mode",
+              "REAL"
+            ],
+            [
+              "lc_name",
+              "TEXT"
+            ],
+            [
+              "lc_desc",
+              "TEXT"
+            ],
+            [
+              "lc_type",
+              "TEXT"
+            ],
+            [
+              "eco_mode",
+              "TEXT"
+            ],
+            [
+              "eco_type",
+              "TEXT"
+            ],
+            [
+              "eco_name",
+              "TEXT"
+            ],
+            [
+              "ig_utm_x",
+              "REAL"
+            ],
+            [
+              "ig_utm_y",
+              "REAL"
+            ]
+          ]
+        }
+      ],
+      "scope": "GeoPackage schema/catalog only; no feature rows read"
+    }
+  ],
+  "real_training_blockers": [
+    "Source data physically exist in documented legacy roots; no approved experiment-specific rights/attribution manifest",
+    "Native ring/cumulative semantics and observation support require reviewed mapping",
+    "Reconstructed observation dates do not establish operational availability",
+    "Existing published folds/models are not new experiment training/evaluation splits"
+  ]
+}

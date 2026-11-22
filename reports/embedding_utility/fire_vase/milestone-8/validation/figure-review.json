@@ -1,0 +1,20 @@
+{
+  "review": "visual inspection of all13 PDF-rendered measured/recipe-status figure families",
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "checked": [
+    "all labels and legends visible",
+    "no unsupported numeric substitutes",
+    "undefined one-point variability shown as absent, not zero",
+    "PCA effective rank and learned input scope explicit",
+    "serving kernels separate from full lifecycle component-sum scenarios"
+  ],
+  "corrections": [
+    "information-status long labels wrapped",
+    "native and learned cost annotations separated"
+  ],
+  "scope": "layout and consistency inspection, not independent scientific approval"
+}

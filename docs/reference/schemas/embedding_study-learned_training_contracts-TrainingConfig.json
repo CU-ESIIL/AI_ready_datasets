@@ -1,0 +1,91 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "depths": {
+      "default": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Depths",
+      "type": "array"
+    },
+    "epochs": {
+      "default": 120,
+      "maximum": 300,
+      "minimum": 1,
+      "title": "Epochs",
+      "type": "integer"
+    },
+    "generator_seed": {
+      "default": 20261121,
+      "minimum": 0,
+      "title": "Generator Seed",
+      "type": "integer"
+    },
+    "learning_rate": {
+      "default": 0.01,
+      "exclusiveMinimum": 0,
+      "maximum": 0.1,
+      "title": "Learning Rate",
+      "type": "number"
+    },
+    "mode": {
+      "const": "synthetic_control",
+      "default": "synthetic_control",
+      "title": "Mode",
+      "type": "string"
+    },
+    "ridge_alpha": {
+      "default": 1.0,
+      "exclusiveMinimum": 0,
+      "title": "Ridge Alpha",
+      "type": "number"
+    },
+    "test_fires": {
+      "default": 64,
+      "maximum": 128,
+      "minimum": 4,
+      "title": "Test Fires",
+      "type": "integer"
+    },
+    "train_fires": {
+      "default": 128,
+      "maximum": 256,
+      "minimum": 8,
+      "title": "Train Fires",
+      "type": "integer"
+    },
+    "training_seeds": {
+      "default": [
+        271,
+        811,
+        1729
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Training Seeds",
+      "type": "array"
+    },
+    "validation_fires": {
+      "default": 48,
+      "maximum": 128,
+      "minimum": 4,
+      "title": "Validation Fires",
+      "type": "integer"
+    },
+    "version": {
+      "const": "fire-prefix-training-v1",
+      "default": "fire-prefix-training-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "title": "TrainingConfig",
+  "type": "object"
+}

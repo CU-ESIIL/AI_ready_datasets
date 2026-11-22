@@ -1,0 +1,72 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "implementation_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Implementation Evidence",
+      "type": "array"
+    },
+    "intended_meaning": {
+      "title": "Intended Meaning",
+      "type": "string"
+    },
+    "operation": {
+      "enum": [
+        "native_increment_identity",
+        "calendar_support_validation",
+        "observed_prefix_only",
+        "independent_future_targets",
+        "fire_grouped_holdouts"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "preconditions": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Preconditions",
+      "type": "array"
+    },
+    "preserved_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Preserved Evidence",
+      "type": "array"
+    },
+    "source_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Fields",
+      "type": "array"
+    },
+    "status": {
+      "const": "PROPOSED_FOR_REVIEW",
+      "default": "PROPOSED_FOR_REVIEW",
+      "title": "Status",
+      "type": "string"
+    },
+    "version": {
+      "const": "m6-review-v1",
+      "default": "m6-review-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "operation",
+    "source_fields",
+    "intended_meaning",
+    "preconditions",
+    "preserved_evidence",
+    "implementation_evidence"
+  ],
+  "title": "RecipeProposal",
+  "type": "object"
+}

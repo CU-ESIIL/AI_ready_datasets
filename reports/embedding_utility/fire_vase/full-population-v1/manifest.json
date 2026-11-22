@@ -1,0 +1,52 @@
+{
+  "version": "full-observed-population-v1",
+  "recorded_at": "2026-11-21T20:21:49.085105+00:00",
+  "investigator_instruction": "The point here is that most fires are short. Followed by: do that.",
+  "primary_population": "all native fire IDs;1/2/3+ observations with separate results and coverage",
+  "scope": "internal real-source information/access diagnostics; no model fitting or external release",
+  "status": "PRIMARY_DESIGN_RECENTERED_REAL_DIAGNOSTICS_EXECUTED_LEARNED_COMPARISONS_PENDING",
+  "python": "3.12.8 (main, Jan 14 2025, 23:36:58) [Clang 19.1.6 ]",
+  "model_training": false,
+  "source_modifications": false,
+  "source_observation_values_persisted": false,
+  "tests": {
+    "passed": 397,
+    "skipped": 2,
+    "initial_failure": "existing pinned-worker startup timeout, unchanged isolated test and full rerun passed"
+  },
+  "mkdocs_strict": "passed",
+  "commands": [
+    "PYTHONPATH=src python scripts/audit_fire_vase_short_histories.py --census CENSUS_OUTPUT --lake CANONICAL_LAKE --output FRESH_PRIVATE_OUTPUT",
+    "PYTHONPATH=src python scripts/audit_fire_vase_property_retrieval.py --census CENSUS_OUTPUT --output PRIVATE_OUTPUT",
+    "PYTHONPATH=src python scripts/report_fire_vase_full_population.py --census CENSUS_OUTPUT --results PRIVATE_OUTPUT"
+  ],
+  "outputs_and_code_sha256": {
+    "docs/analysis/fire-vase-full-population.md": "3543f135eeafe9d92c613ad612c49e4a261e04bbf47f5543569bf8b0141a5307",
+    "reports/embedding_utility/fire_vase/full-population-v1/census-preservation.json": "1dc70c887cde61fb4fcec6ec6184c3892e990d84396008e888b575cb86296052",
+    "reports/embedding_utility/fire_vase/full-population-v1/mkdocs-strict.txt": "5f9672c2df62673b840516528d6c1eaf604f4b22d2c52933d0ebc04393515833",
+    "reports/embedding_utility/fire_vase/full-population-v1/native-audit-log.txt": "016bb9668668ac66060f90315e8d7099aae0b48fa30a570272cba137feb244a5",
+    "reports/embedding_utility/fire_vase/full-population-v1/numeric-payload-footprints.csv": "ea21963f4f520901edf90fb7d0349048113d4f6ebaad1e1e056aa62c1ff5b230",
+    "reports/embedding_utility/fire_vase/full-population-v1/primary-population.csv": "942d3af8d93c0da408e807e511e9bcd3d20c0afa186bcabee0fcb0b73538b0dd",
+    "reports/embedding_utility/fire_vase/full-population-v1/primary-population.pdf": "7fdeb42c6569d367c56b54829ded095a480aacdbaa0dae74f951c2e411f28d94",
+    "reports/embedding_utility/fire_vase/full-population-v1/primary-population.png": "1e0f37edce184ccc263c0fa8c5be1c0abb30d9c61cd7ecd153c72195f3d0549d",
+    "reports/embedding_utility/fire_vase/full-population-v1/primary-population.svg": "f181bb0765c45326a1f19cf7e3cf93ecb5b3d17790900adc829c59feb520b836",
+    "reports/embedding_utility/fire_vase/full-population-v1/primary-task-manifest.json": "d3454f339d46c474a8ba0551321e432e615765064e6fccab5db1ddcc648c4801",
+    "reports/embedding_utility/fire_vase/full-population-v1/property-retrieval-baseline.json": "10121a7ab6e4face107f0026f3e0d5bf2b88ee1a7c501ec093ed34865912ec33",
+    "reports/embedding_utility/fire_vase/full-population-v1/property-retrieval-short-only-development.json": "e92b72f879052419c6766e780c49fae2254687f770ddc50258f747cf235bdf66",
+    "reports/embedding_utility/fire_vase/full-population-v1/protocol.md": "852507bca9f039bb4802376ccb94d4f40d316727190bc887eafedcbd4ec941ca",
+    "reports/embedding_utility/fire_vase/full-population-v1/report-validation-log.txt": "ecd03e31477bfd47cdc89defe46d176ec74017c97b8c3e989cb995a077927822",
+    "reports/embedding_utility/fire_vase/full-population-v1/results.md": "88d5809d3c2706775d8ac7c5b4b59ae7efe126c10ddf8d2c353cfb5a9e750e4c",
+    "reports/embedding_utility/fire_vase/full-population-v1/retrieval-log.txt": "17376e79e2078079892edce4c4f545d96bf4427e445ed879115254366530b859",
+    "reports/embedding_utility/fire_vase/full-population-v1/short-history-audit.json": "9bec814584c16577807fad7fb0b6ccd629879f346c92c2f124e164b5c205912c",
+    "reports/embedding_utility/fire_vase/full-population-v1/short-prefix-eligibility.csv": "d507dbff1c6fdedfb37408b804e45f1c5aaca18e59dc2f85bc2d870fd3b6f183",
+    "reports/embedding_utility/fire_vase/full-population-v1/tests-final.txt": "8ad45b64f97746fde162592e2b6e3ebb1548d4b45fd8ddb5cebb163d16583044",
+    "reports/embedding_utility/fire_vase/full-population-v1/tests-initial.txt": "492bc69cae6fc030741c11f1ebb7a4812fd1329994fa9ed31cd5c22b7ad53aed",
+    "reports/embedding_utility/fire_vase/full-population-v1/worker-recheck.txt": "a7045e01e6d7d9e3c1f925aa2af90b2d5ae4090c448030c00a775cd170866afa",
+    "scripts/audit_fire_vase_property_retrieval.py": "67b8acdfbb8b11e893e16990e46efcc5d3a52bf36ecf6c3dbff85cb9316e9a1e",
+    "scripts/audit_fire_vase_short_histories.py": "af0b9c8d185fb22c1b09b4533b44b441831063f80bf6c0d3492bbcd03c9b4925",
+    "scripts/report_fire_vase_full_population.py": "73ecf6f33f37eecce8bbf16a59fc1b35d63834cf82c26c9da8b4be435802f44a",
+    "src/dataset_prototype/embedding_study/lake_methods.py": "7f81f96e5510f8432b402e326ab1766b39171cd0347ccb8b7be0adb151ed23bd",
+    "src/dataset_prototype/embedding_study/short_history.py": "139e477a871ce90e22371773029ddc05bed95b61a8c6fcf93499addb058ca003",
+    "tests/test_fire_vase_short_history.py": "63dea659c4d4546c5b6b4cfcb0c1d69a23e990a10a2e160ff311a9b819d28469"
+  }
+}

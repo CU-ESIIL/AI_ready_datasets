@@ -1,0 +1,69 @@
+{
+  "short_prefix_eligibility": [
+    {
+      "input_depth": 1,
+      "future_horizon": 1,
+      "eligible_fires": 75953,
+      "dependent_windows": 196982,
+      "local_runs": 95947,
+      "median_windows_per_fire": 2,
+      "max_windows_per_fire": 76,
+      "scope": "secondary short-prefix prediction eligibility; no outcomes/models evaluated"
+    },
+    {
+      "input_depth": 1,
+      "future_horizon": 3,
+      "eligible_fires": 19004,
+      "dependent_windows": 61342,
+      "local_runs": 20618,
+      "median_windows_per_fire": 2.0,
+      "max_windows_per_fire": 70,
+      "scope": "secondary short-prefix prediction eligibility; no outcomes/models evaluated"
+    },
+    {
+      "input_depth": 1,
+      "future_horizon": 7,
+      "eligible_fires": 3386,
+      "dependent_windows": 16547,
+      "local_runs": 3475,
+      "median_windows_per_fire": 3.0,
+      "max_windows_per_fire": 62,
+      "scope": "secondary short-prefix prediction eligibility; no outcomes/models evaluated"
+    },
+    {
+      "input_depth": 2,
+      "future_horizon": 1,
+      "eligible_fires": 34911,
+      "dependent_windows": 101035,
+      "local_runs": 39693,
+      "median_windows_per_fire": 2,
+      "max_windows_per_fire": 72,
+      "scope": "secondary short-prefix prediction eligibility; no outcomes/models evaluated"
+    },
+    {
+      "input_depth": 2,
+      "future_horizon": 3,
+      "eligible_fires": 11195,
+      "dependent_windows": 40724,
+      "local_runs": 11828,
+      "median_windows_per_fire": 2,
+      "max_windows_per_fire": 68,
+      "scope": "secondary short-prefix prediction eligibility; no outcomes/models evaluated"
+    },
+    {
+      "input_depth": 2,
+      "future_horizon": 7,
+      "eligible_fires": 2452,
+      "dependent_windows": 13072,
+      "local_runs": 2502,
+      "median_windows_per_fire": 3.0,
+      "max_windows_per_fire": 60,
+      "scope": "secondary short-prefix prediction eligibility; no outcomes/models evaluated"
+    }
+  ],
+  "primary_population": [
+    161200,
+    47992,
+    69673
+  ]
+}

@@ -1,0 +1,13 @@
+observations,representation,numeric_values,float64_payload_bytes_only,interpretation
+1,compact native,1,8,"dates, provenance, indexes and serving costs excluded from this numerical byte count"
+1,proposed learned vector dimension4,4,32,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+1,proposed learned vector dimension8,8,64,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+1,proposed learned vector dimension16,16,128,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+1,proposed learned vector dimension32,32,256,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+1,proposed learned vector dimension64,64,512,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+2,compact native,2,16,"dates, provenance, indexes and serving costs excluded from this numerical byte count"
+2,proposed learned vector dimension4,4,32,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+2,proposed learned vector dimension8,8,64,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+2,proposed learned vector dimension16,16,128,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+2,proposed learned vector dimension32,32,256,"analytical footprint only; no learned vector trained, no skill or total-storage claim"
+2,proposed learned vector dimension64,64,512,"analytical footprint only; no learned vector trained, no skill or total-storage claim"

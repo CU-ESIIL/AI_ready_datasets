@@ -1,0 +1,38 @@
+[
+  {
+    "relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+    "sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+    "historical_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+    "historical_match": true,
+    "bytes": 575012864,
+    "mtime_ns": 1783387010000000000,
+    "seconds": 0.22157175000029383
+  },
+  {
+    "relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+    "sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+    "historical_sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+    "historical_match": true,
+    "bytes": 256565248,
+    "mtime_ns": 1783387039000000000,
+    "seconds": 0.10988079100025061
+  },
+  {
+    "relative_path": "files/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+    "sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+    "historical_sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+    "historical_match": true,
+    "bytes": 23582087,
+    "mtime_ns": 1784689002023822044,
+    "seconds": 0.014752332999705686
+  },
+  {
+    "relative_path": "files/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+    "sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+    "historical_sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+    "historical_match": true,
+    "bytes": 38403514,
+    "mtime_ns": 1784761945489542811,
+    "seconds": 0.030070332999457605
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "design_sha256": "7e883fd183a4f16303a5d13e7d5a01e9cda79b895a85ef75ea614a6d166615c0",
+  "encoder_training_sha256": "5b317b53e03ded21648c4d5949ecc913a257d2f27df1cef38319b172b921938d",
+  "source_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+  "recipe_function_sha256": "9b3723a447d56d8a677b3bb2c78d3831d0a298935362ff7808ec7d295f5a226e",
+  "scope": "Final identity binding of executed immutable-data training recipe; probe revisions do not change encoder training functions.",
+  "state_sha256": "e929202a34fee6a20fd762cc6b525e9b53d6abb986a7095ceaf84e67c8bb1a67",
+  "census_manifest_sha256": "d68eb55e6a23caa36077c20a303655a3f308e5bf8e74eea070cfb34db6bca616",
+  "numpy_version": "2.5.2",
+  "python_version": "3.12.8 (main, Jan 14 2025, 23:36:58) [Clang 19.1.6 ]"
+}

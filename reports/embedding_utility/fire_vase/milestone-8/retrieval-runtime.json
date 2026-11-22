@@ -1,0 +1,947 @@
+[
+  {
+    "method": "raw_state",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.7956678749997081,
+    "index_build_seconds": 0.045551125000201864,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 32945240
+  },
+  {
+    "method": "raw_state",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.06026241600011417,
+    "index_build_seconds": 0.020920916000250145,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 13987040
+  },
+  {
+    "method": "raw_state",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.05997537499933969,
+    "index_build_seconds": 0.01872733399977733,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 13987040
+  },
+  {
+    "method": "raw_state",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.031786125000508036,
+    "index_build_seconds": 0.012424749998899642,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 9063320
+  },
+  {
+    "method": "raw_state",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.8335916670002916,
+    "index_build_seconds": 0.04567512500034354,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 32945240
+  },
+  {
+    "method": "pca-request4",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.23354966700026125,
+    "index_build_seconds": 0.019760165998377488,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7972712
+  },
+  {
+    "method": "pca-request4",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.009186625000438653,
+    "index_build_seconds": 0.012532167000244954,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3468064
+  },
+  {
+    "method": "pca-request4",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.009864957999525359,
+    "index_build_seconds": 0.010594250001304317,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3468064
+  },
+  {
+    "method": "pca-request4",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.005480791998706991,
+    "index_build_seconds": 0.008113875001072302,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 2244088
+  },
+  {
+    "method": "pca-request4",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.216085916999873,
+    "index_build_seconds": 0.017594957998881,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7972712
+  },
+  {
+    "method": "supervised-4",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.19361920799929067,
+    "index_build_seconds": 0.018425500000375905,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7984088
+  },
+  {
+    "method": "supervised-4",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.009188374999212101,
+    "index_build_seconds": 0.012611875001312,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3469792
+  },
+  {
+    "method": "supervised-4",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.008720249999896623,
+    "index_build_seconds": 0.011695082999722217,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3469792
+  },
+  {
+    "method": "supervised-4",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.005137207999723614,
+    "index_build_seconds": 0.008664416000101482,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 2246104
+  },
+  {
+    "method": "supervised-4",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.2066807079991122,
+    "index_build_seconds": 0.018948583001474617,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7984088
+  },
+  {
+    "method": "self_supervised-4",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.17820479199872352,
+    "index_build_seconds": 0.01985491600134992,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7971272
+  },
+  {
+    "method": "self_supervised-4",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.010745999999926426,
+    "index_build_seconds": 0.012657957999181235,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3468640
+  },
+  {
+    "method": "self_supervised-4",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.0106869999999617,
+    "index_build_seconds": 0.01235758299844747,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3468640
+  },
+  {
+    "method": "self_supervised-4",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.005732916999477311,
+    "index_build_seconds": 0.008598750000601285,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 2243224
+  },
+  {
+    "method": "self_supervised-4",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.17527100000006612,
+    "index_build_seconds": 0.01976295900021796,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7971272
+  },
+  {
+    "method": "multitask-4",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.1965788750003412,
+    "index_build_seconds": 0.017398124999090214,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7980920
+  },
+  {
+    "method": "multitask-4",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.009772291999979643,
+    "index_build_seconds": 0.012560499999381136,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3465472
+  },
+  {
+    "method": "multitask-4",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.009837540999797056,
+    "index_build_seconds": 0.01235274999999092,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 3465472
+  },
+  {
+    "method": "multitask-4",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.005004458000257728,
+    "index_build_seconds": 0.007923457998913364,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 2241064
+  },
+  {
+    "method": "multitask-4",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.20635466600106156,
+    "index_build_seconds": 0.019854250000207685,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 7980920
+  },
+  {
+    "method": "pca-request8",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.309365417000663,
+    "index_build_seconds": 0.0280458750003163,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14214296
+  },
+  {
+    "method": "pca-request8",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.02618970799994713,
+    "index_build_seconds": 0.01617904199883924,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6096944
+  },
+  {
+    "method": "pca-request8",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.02214675000141142,
+    "index_build_seconds": 0.0159016249999695,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6096944
+  },
+  {
+    "method": "pca-request8",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.012677791999522015,
+    "index_build_seconds": 0.010005542000726564,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 3952280
+  },
+  {
+    "method": "pca-request8",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.31754108399945835,
+    "index_build_seconds": 0.0284368339998764,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14214296
+  },
+  {
+    "method": "supervised-8",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.3036351669998112,
+    "index_build_seconds": 0.02523049999945215,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14213864
+  },
+  {
+    "method": "supervised-8",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.019417167000938207,
+    "index_build_seconds": 0.016725624998798594,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6098528
+  },
+  {
+    "method": "supervised-8",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.017723832999763545,
+    "index_build_seconds": 0.013269958000819315,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6098528
+  },
+  {
+    "method": "supervised-8",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.009664499999416876,
+    "index_build_seconds": 0.008514082999681705,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 3945656
+  },
+  {
+    "method": "supervised-8",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.2820248329990136,
+    "index_build_seconds": 0.025810916000409634,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14213864
+  },
+  {
+    "method": "self_supervised-8",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.29111954200016044,
+    "index_build_seconds": 0.026420000000143773,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14221928
+  },
+  {
+    "method": "self_supervised-8",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.020890666000923375,
+    "index_build_seconds": 0.01629045800109452,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6096080
+  },
+  {
+    "method": "self_supervised-8",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.01931933299965749,
+    "index_build_seconds": 0.015216499999951338,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6096080
+  },
+  {
+    "method": "self_supervised-8",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.011271583000052487,
+    "index_build_seconds": 0.008971584000391886,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 3943208
+  },
+  {
+    "method": "self_supervised-8",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.28378124999835563,
+    "index_build_seconds": 0.02707070799988287,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14221928
+  },
+  {
+    "method": "multitask-8",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.38984549999986484,
+    "index_build_seconds": 0.025137042001006193,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14212856
+  },
+  {
+    "method": "multitask-8",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.017682874999081832,
+    "index_build_seconds": 0.01454224999906728,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6089456
+  },
+  {
+    "method": "multitask-8",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.015892542000074172,
+    "index_build_seconds": 0.012671917000261601,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 6089456
+  },
+  {
+    "method": "multitask-8",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.00931562499863503,
+    "index_build_seconds": 0.008523167000021203,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 3940616
+  },
+  {
+    "method": "multitask-8",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.3752271670000482,
+    "index_build_seconds": 0.02387904100032756,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 14212856
+  },
+  {
+    "method": "pca-request16",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.4697379999997793,
+    "index_build_seconds": 0.031688084000052186,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 22013720
+  },
+  {
+    "method": "pca-request16",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.034423959001287585,
+    "index_build_seconds": 0.014319916001113597,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 9384952
+  },
+  {
+    "method": "pca-request16",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.03684629199960909,
+    "index_build_seconds": 0.015710584000771632,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 9384952
+  },
+  {
+    "method": "pca-request16",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.019502750001265667,
+    "index_build_seconds": 0.009537249999993946,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 6077080
+  },
+  {
+    "method": "pca-request16",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.4300471250007831,
+    "index_build_seconds": 0.028242958998816903,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 22013720
+  },
+  {
+    "method": "supervised-16",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.5573012080003537,
+    "index_build_seconds": 0.02459258300041256,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 26674424
+  },
+  {
+    "method": "supervised-16",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.027508749999469728,
+    "index_build_seconds": 0.014435874998525833,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 11357296
+  },
+  {
+    "method": "supervised-16",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.02795979200163856,
+    "index_build_seconds": 0.014213999998901272,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 11357296
+  },
+  {
+    "method": "supervised-16",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.01416429200071434,
+    "index_build_seconds": 0.00870066700008465,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 7344328
+  },
+  {
+    "method": "supervised-16",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.5597369169990998,
+    "index_build_seconds": 0.024818957999741542,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 26674424
+  },
+  {
+    "method": "self_supervised-16",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.5923939590011287,
+    "index_build_seconds": 0.029955083000459126,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 26686232
+  },
+  {
+    "method": "self_supervised-16",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.038037832999179955,
+    "index_build_seconds": 0.014228250000087428,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 11357008
+  },
+  {
+    "method": "self_supervised-16",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.040043957998932456,
+    "index_build_seconds": 0.014839542000117945,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 11357008
+  },
+  {
+    "method": "self_supervised-16",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.02851225000085833,
+    "index_build_seconds": 0.00971650000064983,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 7343320
+  },
+  {
+    "method": "self_supervised-16",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.5822561669992865,
+    "index_build_seconds": 0.02485800000067684,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 26686232
+  },
+  {
+    "method": "multitask-16",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.4763565830016887,
+    "index_build_seconds": 0.024690124999324325,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 26698616
+  },
+  {
+    "method": "multitask-16",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.029410749999442487,
+    "index_build_seconds": 0.013529458999983035,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 11354128
+  },
+  {
+    "method": "multitask-16",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.02924574999997276,
+    "index_build_seconds": 0.013739125000938657,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 11354128
+  },
+  {
+    "method": "multitask-16",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.014088584001001436,
+    "index_build_seconds": 0.00880433300153527,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 7341448
+  },
+  {
+    "method": "multitask-16",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.4731443750006292,
+    "index_build_seconds": 0.02327708399934636,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 26698616
+  },
+  {
+    "method": "pca-request32",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.41069108300143853,
+    "index_build_seconds": 0.02627287500035891,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 22013720
+  },
+  {
+    "method": "pca-request32",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.03044945799956622,
+    "index_build_seconds": 0.013694792000023881,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 9384952
+  },
+  {
+    "method": "pca-request32",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.03301041700069618,
+    "index_build_seconds": 0.014873166001052596,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 9384952
+  },
+  {
+    "method": "pca-request32",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.018300292000276386,
+    "index_build_seconds": 0.009311125000749598,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 6077080
+  },
+  {
+    "method": "pca-request32",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.3999094589999004,
+    "index_build_seconds": 0.026997375000064494,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 22013720
+  },
+  {
+    "method": "supervised-32",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 1.4963330419996055,
+    "index_build_seconds": 0.0420265830016433,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 51658328
+  },
+  {
+    "method": "supervised-32",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.08173608299875923,
+    "index_build_seconds": 0.021159834001082345,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 21875552
+  },
+  {
+    "method": "supervised-32",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.08504062499923748,
+    "index_build_seconds": 0.022654958000202896,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 21875552
+  },
+  {
+    "method": "supervised-32",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.05489383400163206,
+    "index_build_seconds": 0.01382641700001841,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 14145272
+  },
+  {
+    "method": "supervised-32",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 1.275685667000289,
+    "index_build_seconds": 0.044818250000389526,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 51658328
+  },
+  {
+    "method": "self_supervised-32",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 1.3287682499994844,
+    "index_build_seconds": 0.05391533300098672,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 51643640
+  },
+  {
+    "method": "self_supervised-32",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.1493134590000409,
+    "index_build_seconds": 0.02282999999988533,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 21873824
+  },
+  {
+    "method": "self_supervised-32",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.19621145899873227,
+    "index_build_seconds": 0.025785166000787285,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 21873824
+  },
+  {
+    "method": "self_supervised-32",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.08877845799906936,
+    "index_build_seconds": 0.0137386249989504,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 14150456
+  },
+  {
+    "method": "self_supervised-32",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 1.2422653330013418,
+    "index_build_seconds": 0.04570104099911987,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 51643640
+  },
+  {
+    "method": "multitask-32",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 1.2538737499999115,
+    "index_build_seconds": 0.043442374999358435,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 51633128
+  },
+  {
+    "method": "multitask-32",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.10082370800046192,
+    "index_build_seconds": 0.021311667000190937,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 21870080
+  },
+  {
+    "method": "multitask-32",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.10562079199917207,
+    "index_build_seconds": 0.02118220900047163,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 21870080
+  },
+  {
+    "method": "multitask-32",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.05793850000009115,
+    "index_build_seconds": 0.013031415999648743,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 14139944
+  },
+  {
+    "method": "multitask-32",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 1.2442661250006495,
+    "index_build_seconds": 0.04495399999905203,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 51633128
+  },
+  {
+    "method": "pca-request64",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 0.4027929169988056,
+    "index_build_seconds": 0.026047708000987768,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 22013720
+  },
+  {
+    "method": "pca-request64",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.029916291001427453,
+    "index_build_seconds": 0.01389358300002641,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 9384952
+  },
+  {
+    "method": "pca-request64",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.029179583998484304,
+    "index_build_seconds": 0.0132393330004561,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 9384952
+  },
+  {
+    "method": "pca-request64",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.0174917500007723,
+    "index_build_seconds": 0.009048874999280088,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 6077080
+  },
+  {
+    "method": "pca-request64",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 0.4005396249995101,
+    "index_build_seconds": 0.026349290999860386,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 22013720
+  },
+  {
+    "method": "supervised-64",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 5.2453773750003165,
+    "index_build_seconds": 0.08757841700025892,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 101552408
+  },
+  {
+    "method": "supervised-64",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.37603637499887554,
+    "index_build_seconds": 0.04260154199982935,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 42912064
+  },
+  {
+    "method": "supervised-64",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.33745175000149175,
+    "index_build_seconds": 0.040145041999494424,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 42912064
+  },
+  {
+    "method": "supervised-64",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.22448791600072582,
+    "index_build_seconds": 0.022441084000092815,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 27747592
+  },
+  {
+    "method": "supervised-64",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 5.319681666998804,
+    "index_build_seconds": 0.07879962500010151,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 101552408
+  },
+  {
+    "method": "self_supervised-64",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 5.401721666999947,
+    "index_build_seconds": 0.07670941600008518,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 101565944
+  },
+  {
+    "method": "self_supervised-64",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 1.0878357910005434,
+    "index_build_seconds": 0.043585166000411846,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 42913216
+  },
+  {
+    "method": "self_supervised-64",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 1.3578092499992636,
+    "index_build_seconds": 0.040912458000093466,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 42913216
+  },
+  {
+    "method": "self_supervised-64",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.7389405419999093,
+    "index_build_seconds": 0.024987291999423178,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 27741256
+  },
+  {
+    "method": "self_supervised-64",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 5.540257374999783,
+    "index_build_seconds": 0.0739274170009594,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 101565944
+  },
+  {
+    "method": "multitask-64",
+    "property": "log_observed_total",
+    "coordinates_query_seconds": 5.1433514159998595,
+    "index_build_seconds": 0.07070124999881955,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 101573000
+  },
+  {
+    "method": "multitask-64",
+    "property": "log_observed_std",
+    "coordinates_query_seconds": 0.2815241669995885,
+    "index_build_seconds": 0.043469499998536776,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 42910624
+  },
+  {
+    "method": "multitask-64",
+    "property": "first_allocation",
+    "coordinates_query_seconds": 0.2513106250007695,
+    "index_build_seconds": 0.04016658300133713,
+    "gallery": 82173,
+    "queries": 2731,
+    "index_numeric_buffers": 42910624
+  },
+  {
+    "method": "multitask-64",
+    "property": "asinh_mean_consecutive_change",
+    "coordinates_query_seconds": 0.17649808399983158,
+    "index_build_seconds": 0.025132167000265326,
+    "gallery": 53118,
+    "queries": 1659,
+    "index_numeric_buffers": 27738376
+  },
+  {
+    "method": "multitask-64",
+    "property": "log_observed_span",
+    "coordinates_query_seconds": 4.930652958999417,
+    "index_build_seconds": 0.07831412499945145,
+    "gallery": 194980,
+    "queries": 4096,
+    "index_numeric_buffers": 101573000
+  }
+]

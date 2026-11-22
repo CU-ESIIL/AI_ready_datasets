@@ -7,6 +7,12 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 CONTRACTS={
+ 'embedding_study.lake_contracts': ['LakePlan','ScopeFinding','LakeAuthorization','SourceBinding'],
+ 'embedding_study.real_study_contracts': ['RealSourceIdentity','RecipeProposal','BoundedReadProposal','RealStudyPacket','ScientificReviewItem','RealStudyReview','ContainerVerification','SupportCheckRow'],
+ 'embedding_study.transfer_contracts': ['TransferConfig'],
+ 'embedding_study.learned_contracts': ['PrefixInput','PrefixOutcome','RealPrefixApproval'],
+ 'embedding_study.learned_training_contracts': ['TrainingConfig'],
+ 'embedding_study.pilot_contracts': ['PilotArguments','PilotQuery','PilotAction','PilotTask','PilotLiveConfig'],
  'embedding_study.agent_contracts': ['QueryArguments','ScientificQuery','AgentAction','Usage','AgentConfig'],
  'embedding_study.contracts': ['Source','Observation','FireHistory','Dataset','Task','TaskSet','BenchmarkConfig','PCAArtifact','DevelopmentalFeatures','CoordinateArtifact'],
  'contracts': ['ScientificRequest','SourceResource','DiscoveryResult','SemanticMapping',

@@ -1,0 +1,544 @@
+{
+  "status": "REAL_NATIVE_SHORT_HISTORY_INFORMATION_AUDIT_COMPLETE",
+  "mode": "deterministic information/access diagnostics, not embedding or predictive performance",
+  "source_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+  "source_records_decoded": 627033,
+  "all_native_fire_ids": 278865,
+  "primary_populations": [
+    {
+      "stratum": "one_observation",
+      "fires": 161200,
+      "fraction_of_native_ids": 0.5780574830114931,
+      "primary_full_population": true
+    },
+    {
+      "stratum": "two_observations",
+      "fires": 47992,
+      "fraction_of_native_ids": 0.17209760995463755,
+      "primary_full_population": true
+    },
+    {
+      "stratum": "three_or_more",
+      "fires": 69673,
+      "fraction_of_native_ids": 0.24984490703386944,
+      "primary_full_population": true
+    }
+  ],
+  "short_history_share": 0.7501550929661306,
+  "stratum_diagnostics": {
+    "1": {
+      "native_values_exactly_preserved": 161200,
+      "dates_and_source_refs_retained": 161200,
+      "normalization_defined": 161200,
+      "normalized_payload_absolute_scale_unavailable_without_source_read": 161200,
+      "consecutive_pairs": 0,
+      "gappy_pairs": 0,
+      "one_value_allocation_is_constant": 161200,
+      "observed_total_min_source_units": 0.2146586732968637,
+      "observed_total_max_source_units": 37.77992650024802,
+      "mean_complete_native_json_bytes": 244.65466501240695,
+      "mean_complete_summary_json_bytes": 302.6487841191067,
+      "mean_complete_normalized_json_bytes": 229.6605459057072
+    },
+    "2": {
+      "native_values_exactly_preserved": 47992,
+      "dates_and_source_refs_retained": 47992,
+      "normalization_defined": 47992,
+      "normalized_payload_absolute_scale_unavailable_without_source_read": 47992,
+      "consecutive_pairs": 17263,
+      "gappy_pairs": 30729,
+      "observed_total_min_source_units": 0.4293173465937274,
+      "observed_total_max_source_units": 98.52833104326042,
+      "mean_complete_native_json_bytes": 282.5116477746291,
+      "mean_complete_summary_json_bytes": 335.461076846141,
+      "mean_complete_normalized_json_bytes": 266.0795965994332
+    }
+  },
+  "retained_interface": "all representations retain native IDs, original dates, source row refs and checksum; optional source fallback is explicit and paid",
+  "source_fallback": {
+    "checks": 128,
+    "all_exact": true,
+    "median_lookup_ns": 5521.0,
+    "sample": "first64 fires in each short-history stratum; diagnostic warm-source lookup, not representative latency benchmark",
+    "source_values_persisted": false
+  },
+  "cohort_strata": {
+    "one": {
+      "year": [
+        {
+          "stratum": "unknown",
+          "fires": 127
+        },
+        {
+          "stratum": 2000,
+          "fires": 377
+        },
+        {
+          "stratum": 2001,
+          "fires": 3500
+        },
+        {
+          "stratum": 2002,
+          "fires": 5642
+        },
+        {
+          "stratum": 2003,
+          "fires": 8455
+        },
+        {
+          "stratum": 2004,
+          "fires": 12107
+        },
+        {
+          "stratum": 2005,
+          "fires": 10255
+        },
+        {
+          "stratum": 2006,
+          "fires": 6776
+        },
+        {
+          "stratum": 2007,
+          "fires": 8026
+        },
+        {
+          "stratum": 2008,
+          "fires": 7555
+        },
+        {
+          "stratum": 2009,
+          "fires": 7933
+        },
+        {
+          "stratum": 2010,
+          "fires": 8884
+        },
+        {
+          "stratum": 2011,
+          "fires": 7156
+        },
+        {
+          "stratum": 2012,
+          "fires": 6043
+        },
+        {
+          "stratum": 2013,
+          "fires": 7621
+        },
+        {
+          "stratum": 2014,
+          "fires": 5696
+        },
+        {
+          "stratum": 2015,
+          "fires": 14463
+        },
+        {
+          "stratum": 2016,
+          "fires": 7426
+        },
+        {
+          "stratum": 2017,
+          "fires": 7143
+        },
+        {
+          "stratum": 2018,
+          "fires": 6350
+        },
+        {
+          "stratum": 2019,
+          "fires": 9430
+        },
+        {
+          "stratum": 2020,
+          "fires": 7413
+        },
+        {
+          "stratum": 2021,
+          "fires": 2822
+        }
+      ],
+      "region": [
+        {
+          "stratum": "unknown",
+          "fires": 127
+        },
+        {
+          "stratum": "alaska",
+          "fires": 29548
+        },
+        {
+          "stratum": "central",
+          "fires": 52011
+        },
+        {
+          "stratum": "east",
+          "fires": 22902
+        },
+        {
+          "stratum": "hawaii",
+          "fires": 25
+        },
+        {
+          "stratum": "intermountain",
+          "fires": 30840
+        },
+        {
+          "stratum": "west",
+          "fires": 25747
+        }
+      ],
+      "catalog_size": [
+        {
+          "stratum": "unknown",
+          "fires": 127
+        },
+        {
+          "stratum": "10\u2013<100",
+          "fires": 22
+        },
+        {
+          "stratum": "1\u2013<10",
+          "fires": 3462
+        },
+        {
+          "stratum": "<1",
+          "fires": 157589
+        }
+      ]
+    },
+    "two": {
+      "year": [
+        {
+          "stratum": "unknown",
+          "fires": 42
+        },
+        {
+          "stratum": 2000,
+          "fires": 95
+        },
+        {
+          "stratum": 2001,
+          "fires": 1025
+        },
+        {
+          "stratum": 2002,
+          "fires": 1659
+        },
+        {
+          "stratum": 2003,
+          "fires": 2679
+        },
+        {
+          "stratum": 2004,
+          "fires": 3207
+        },
+        {
+          "stratum": 2005,
+          "fires": 2938
+        },
+        {
+          "stratum": 2006,
+          "fires": 2245
+        },
+        {
+          "stratum": 2007,
+          "fires": 2488
+        },
+        {
+          "stratum": 2008,
+          "fires": 2401
+        },
+        {
+          "stratum": 2009,
+          "fires": 2387
+        },
+        {
+          "stratum": 2010,
+          "fires": 2814
+        },
+        {
+          "stratum": 2011,
+          "fires": 2379
+        },
+        {
+          "stratum": 2012,
+          "fires": 1939
+        },
+        {
+          "stratum": 2013,
+          "fires": 2089
+        },
+        {
+          "stratum": 2014,
+          "fires": 1861
+        },
+        {
+          "stratum": 2015,
+          "fires": 3564
+        },
+        {
+          "stratum": 2016,
+          "fires": 2377
+        },
+        {
+          "stratum": 2017,
+          "fires": 2114
+        },
+        {
+          "stratum": 2018,
+          "fires": 1999
+        },
+        {
+          "stratum": 2019,
+          "fires": 2583
+        },
+        {
+          "stratum": 2020,
+          "fires": 2217
+        },
+        {
+          "stratum": 2021,
+          "fires": 890
+        }
+      ],
+      "region": [
+        {
+          "stratum": "unknown",
+          "fires": 42
+        },
+        {
+          "stratum": "alaska",
+          "fires": 6049
+        },
+        {
+          "stratum": "central",
+          "fires": 15012
+        },
+        {
+          "stratum": "east",
+          "fires": 7425
+        },
+        {
+          "stratum": "hawaii",
+          "fires": 6
+        },
+        {
+          "stratum": "intermountain",
+          "fires": 11351
+        },
+        {
+          "stratum": "west",
+          "fires": 8107
+        }
+      ],
+      "catalog_size": [
+        {
+          "stratum": "unknown",
+          "fires": 42
+        },
+        {
+          "stratum": "10\u2013<100",
+          "fires": 87
+        },
+        {
+          "stratum": "1\u2013<10",
+          "fires": 10420
+        },
+        {
+          "stratum": "<1",
+          "fires": 37443
+        }
+      ]
+    },
+    "three_plus": {
+      "year": [
+        {
+          "stratum": "unknown",
+          "fires": 127
+        },
+        {
+          "stratum": 2000,
+          "fires": 157
+        },
+        {
+          "stratum": 2001,
+          "fires": 1445
+        },
+        {
+          "stratum": 2002,
+          "fires": 2271
+        },
+        {
+          "stratum": 2003,
+          "fires": 3844
+        },
+        {
+          "stratum": 2004,
+          "fires": 4262
+        },
+        {
+          "stratum": 2005,
+          "fires": 4162
+        },
+        {
+          "stratum": 2006,
+          "fires": 3444
+        },
+        {
+          "stratum": 2007,
+          "fires": 3667
+        },
+        {
+          "stratum": 2008,
+          "fires": 3669
+        },
+        {
+          "stratum": 2009,
+          "fires": 3534
+        },
+        {
+          "stratum": 2010,
+          "fires": 3952
+        },
+        {
+          "stratum": 2011,
+          "fires": 3733
+        },
+        {
+          "stratum": 2012,
+          "fires": 2781
+        },
+        {
+          "stratum": 2013,
+          "fires": 2975
+        },
+        {
+          "stratum": 2014,
+          "fires": 2793
+        },
+        {
+          "stratum": 2015,
+          "fires": 4255
+        },
+        {
+          "stratum": 2016,
+          "fires": 3708
+        },
+        {
+          "stratum": 2017,
+          "fires": 3395
+        },
+        {
+          "stratum": 2018,
+          "fires": 3087
+        },
+        {
+          "stratum": 2019,
+          "fires": 3654
+        },
+        {
+          "stratum": 2020,
+          "fires": 3483
+        },
+        {
+          "stratum": 2021,
+          "fires": 1275
+        }
+      ],
+      "region": [
+        {
+          "stratum": "unknown",
+          "fires": 127
+        },
+        {
+          "stratum": "alaska",
+          "fires": 5682
+        },
+        {
+          "stratum": "central",
+          "fires": 22561
+        },
+        {
+          "stratum": "east",
+          "fires": 13645
+        },
+        {
+          "stratum": "hawaii",
+          "fires": 24
+        },
+        {
+          "stratum": "intermountain",
+          "fires": 16705
+        },
+        {
+          "stratum": "west",
+          "fires": 10929
+        }
+      ],
+      "catalog_size": [
+        {
+          "stratum": "unknown",
+          "fires": 127
+        },
+        {
+          "stratum": "100\u2013<1000",
+          "fires": 735
+        },
+        {
+          "stratum": "10\u2013<100",
+          "fires": 7422
+        },
+        {
+          "stratum": "1\u2013<10",
+          "fires": 50415
+        },
+        {
+          "stratum": "<1",
+          "fires": 10938
+        },
+        {
+          "stratum": "\u22651000",
+          "fires": 36
+        }
+      ]
+    }
+  },
+  "physical_duration": "not measured by observation count",
+  "learned_models_trained": 0,
+  "pca_fitted": false,
+  "task_capabilities": {
+    "1": {
+      "observed_count": "SUPPORTED",
+      "observed_absolute_area": "SUPPORTED",
+      "observed_support": "SUPPORTED",
+      "between_observation_order": "NOT_APPLICABLE",
+      "observed_allocation_shape": "NOT_APPLICABLE",
+      "physical_lifetime": "UNKNOWN",
+      "physical_extinction": "UNKNOWN",
+      "future_growth_from_completed_record": "REQUIRES_SEPARATE_PAST_FUTURE_SUPPORT"
+    },
+    "2": {
+      "observed_count": "SUPPORTED",
+      "observed_absolute_area": "SUPPORTED",
+      "observed_support": "SUPPORTED",
+      "between_observation_order": "SUPPORTED_WHERE_DATES_UNAMBIGUOUS",
+      "observed_allocation_shape": "SUPPORTED_IF_POSITIVE_TOTAL",
+      "physical_lifetime": "UNKNOWN",
+      "physical_extinction": "UNKNOWN",
+      "future_growth_from_completed_record": "REQUIRES_SEPARATE_PAST_FUTURE_SUPPORT"
+    },
+    "3": {
+      "observed_count": "SUPPORTED",
+      "observed_absolute_area": "SUPPORTED",
+      "observed_support": "SUPPORTED",
+      "between_observation_order": "SUPPORTED_WHERE_DATES_UNAMBIGUOUS",
+      "observed_allocation_shape": "SUPPORTED_IF_POSITIVE_TOTAL",
+      "physical_lifetime": "UNKNOWN",
+      "physical_extinction": "UNKNOWN",
+      "future_growth_from_completed_record": "REQUIRES_SEPARATE_PAST_FUTURE_SUPPORT"
+    }
+  },
+  "seconds": 4.817600584001411,
+  "peak_rss_bytes_macos": 136069120
+}

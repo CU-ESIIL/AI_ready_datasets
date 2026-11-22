@@ -154,3 +154,53 @@ The [Fire VASE controlled-agent extension](docs/analysis/fire-vase-agents.md) pr
 fixed/adaptive representation regimes, isolated metadata views, typed proposals,
 evidence-backed deterministic execution and a complete explicit mock matrix.
 Mock results are protocol checks; real-model evidence remains pending.
+
+The [expanded Fire VASE pilot](docs/analysis/fire-vase-pilot.md) adds 120 frozen
+model-unseen synthetic questions, optimized/cached direct rivals and cost-aware
+selection diagnostics. Numerical operations are independently cross-checked; agent
+results remain MOCKED and real-model/metadata evidence is pending.
+
+The [learned-representation study](docs/analysis/fire-vase-learning.md) now runs a
+small prefix-only temporal predictor against raw, interpretable, PCA and capacity
+baselines, with independent held-out synthetic observations and stored/on-demand/cache
+accounting. Real-agent inference and real-fire scientific validity remain pending.
+
+The [cross-task transfer study](docs/analysis/fire-vase-transfer.md) freezes the
+original encoder and compares new task heads, joint and task-specific training,
+future-outcome retrieval, information probes and heterogeneous reuse. Results remain
+synthetic; raw-data alternatives stay strong and tradeoffs depend on the task.
+
+The [real-source review milestone](docs/analysis/fire-vase-real-data.md) identifies
+the packaged local Fire VASE data lake and prepares an exact-source, bounded audit
+packet with scientific/rights preconditions. No observation rows or real models are
+run before the required human review; no GitHub data upload is needed.
+
+### Full-lake representation study
+
+Milestone 7 provides metadata indexing, gated streaming and offline numerical kernels;
+real-fire training and utility results remain pending scientific/rights review and
+completion of the full evaluation runner. See [full-lake status](docs/analysis/fire-vase-full-lake.md).
+
+Milestone 7.2 records investigator intent and reanalyzes existing upstream aggregate
+reports. Fresh observation profiling remains gated; historical counts are explicitly
+separate from current-lake results. See the [partial assessment](reports/embedding_utility/fire_vase/milestone-7-2/report.md).
+
+### Real Fire VASE population census executed
+
+The native/cached population census now runs under direct investigator authorization.
+It produces measured local-run eligibility, native/cache reconciliation and internal
+selection/feasibility reports; no neural models were trained. See the
+[census implementation and scope](docs/analysis/fire-vase-population.md). Historical
+M7/M7.2 blocked statuses remain preserved as dated evidence, not current execution status.
+
+The Fire VASE benchmark now makes the **full observed population** primary,
+including one/two-observation fires; long-history prediction is a selected-cohort
+extension. See [the current scope](docs/analysis/fire-vase-full-population.md).
+
+### Executed Fire VASE utility experiment
+
+[Milestone8](docs/analysis/fire-vase-utility.md) evaluates all 278,865 native fires
+with 75 primary learned encoders. For declared scalar scientific-state queries,
+exact native caches beat learned approximation on measured cost and error. A small
+secondary prefix-prediction benefit remains task-specific. This is observed-state
+encoding, not a full raw-sequence or polygon encoder. [Evidence and reproduction](reports/embedding_utility/fire_vase/milestone-8/README.md).

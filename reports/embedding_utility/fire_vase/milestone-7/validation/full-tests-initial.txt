@@ -1,0 +1,44 @@
+..................................F..................................... [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 57%]
+........................................................................ [ 76%]
+....................................s................................... [ 95%]
+..................                                                       [100%]
+=================================== FAILURES ===================================
+_______________ test_full_mock_matrix_replay_and_report_rebuild ________________
+
+tmp_path = PosixPath('/private/var/folders/s8/lrymhy5j13d_8jkh4zv8gjm00000gr/T/pytest-of-tuff/pytest-20/test_full_mock_matrix_replay_a0')
+config = AgentConfig(version='fire-agent-experiment-v1', prompt_version='fire-agent-prompt-v1', phase='development', fixture='d...thorized=False, live_cost_basis='unverified', max_real_calls=0, approved_external_cost_cap=None, smoke_task_indexes=())
+
+    def test_full_mock_matrix_replay_and_report_rebuild(tmp_path,config):
+        upstream,python=os.getenv('FIRE_VASE_ROOT'),os.getenv('FIRE_VASE_PYTHON')
+        if not upstream or not python:pytest.skip('explicit pinned worker required for full agent matrix; no substitute operations')
+        changed=config.model_dump(mode='json');changed['repetitions']=1
+        cfg=tmp_path/'config.json';cfg.write_text(json.dumps(changed))
+        digests=[]
+        for n in ('first','second'):
+            directory=tmp_path/n
+>           manifest,_=run_experiment(cfg,directory,upstream=upstream,upstream_python=python,root=ROOT)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_fire_vase_agents.py:250: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/dataset_prototype/embedding_study/agent_runner.py:64: in run_experiment
+    with UpstreamBackend(upstream,upstream_python) as backend:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/dataset_prototype/embedding_study/backend.py:28: in __init__
+    hello = self._read()
+            ^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <dataset_prototype.embedding_study.backend.UpstreamBackend object at 0x10d456240>
+
+    def _read(self):
+        if not select.select([self.process.stdout], [], [], 30)[0]:
+>           raise TimeoutError('upstream worker timed out; no mock fallback')
+E           TimeoutError: upstream worker timed out; no mock fallback
+
+src/dataset_prototype/embedding_study/backend.py:39: TimeoutError
+=========================== short test summary info ============================
+FAILED tests/test_fire_vase_agents.py::test_full_mock_matrix_replay_and_report_rebuild
+1 failed, 376 passed, 2 skipped in 88.90s (0:01:28)

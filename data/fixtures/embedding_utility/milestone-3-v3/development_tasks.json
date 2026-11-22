@@ -1,0 +1,673 @@
+[
+  {
+    "task_id": "m3-d-00",
+    "split": "development",
+    "template_id": "development-specification-0",
+    "category": "observation",
+    "question": "Development specification: compute cumulative for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-00"
+      ],
+      "date": "2027-02-06",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-01",
+    "split": "development",
+    "template_id": "development-specification-1",
+    "category": "observation",
+    "question": "Development specification: compute daily_growth for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-01"
+      ],
+      "date": "2027-02-06",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-02",
+    "split": "development",
+    "template_id": "development-specification-2",
+    "category": "observation",
+    "question": "Development specification: compute interval_growth for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-02"
+      ],
+      "date": "2027-02-07",
+      "start_date": "2027-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-03",
+    "split": "development",
+    "template_id": "development-specification-3",
+    "category": "observation",
+    "question": "Development specification: compute growth_compare for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-03",
+        "m3-development-04"
+      ],
+      "date": "2027-02-06",
+      "start_date": "2027-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-04",
+    "split": "development",
+    "template_id": "development-specification-4",
+    "category": "morphology",
+    "question": "Development specification: compute front_fraction for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-05",
+    "split": "development",
+    "template_id": "development-specification-5",
+    "category": "morphology",
+    "question": "Development specification: compute late_fraction for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-06",
+    "split": "development",
+    "template_id": "development-specification-6",
+    "category": "morphology",
+    "question": "Development specification: compute profile for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-07",
+    "split": "development",
+    "template_id": "development-specification-7",
+    "category": "morphology",
+    "question": "Development specification: compute profile_distance for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-07",
+        "m3-development-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-08",
+    "split": "development",
+    "template_id": "development-specification-8",
+    "category": "morphology",
+    "question": "Development specification: compute pulse_count for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pulse_count"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-09",
+    "split": "development",
+    "template_id": "development-specification-9",
+    "category": "compression",
+    "question": "Development specification: compute pca_distance for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-01",
+        "m3-development-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-10",
+    "split": "development",
+    "template_id": "development-specification-10",
+    "category": "compression",
+    "question": "Development specification: compute projected_distance for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-02",
+        "m3-development-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-11",
+    "split": "development",
+    "template_id": "development-specification-11",
+    "category": "compression",
+    "question": "Development specification: compute reconstruction_error for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-12",
+    "split": "development",
+    "template_id": "development-specification-12",
+    "category": "compression",
+    "question": "Development specification: compute neighbor_stability for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "m3-development-05",
+        "m3-development-06",
+        "m3-development-07"
+      ],
+      "claim": null,
+      "operation": "neighbor_stability"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-13",
+    "split": "development",
+    "template_id": "development-specification-13",
+    "category": "cross_representation",
+    "question": "Development specification: compute assess_claim for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "exact_profile_from_pcs",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-14",
+    "split": "development",
+    "template_id": "development-specification-14",
+    "category": "cross_representation",
+    "question": "Development specification: compute assess_claim for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "ecological_analog",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-15",
+    "split": "development",
+    "template_id": "development-specification-15",
+    "category": "validity",
+    "question": "Development specification: compute assess_claim for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-07"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "measurement_uncertainty",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-16",
+    "split": "development",
+    "template_id": "development-specification-16",
+    "category": "validity",
+    "question": "Development specification: compute assess_claim for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "forecast_availability",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-17",
+    "split": "development",
+    "template_id": "development-specification-17",
+    "category": "validity",
+    "question": "Development specification: compute assess_claim for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-01"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "duration_from_sidecar",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-18",
+    "split": "development",
+    "template_id": "development-specification-18",
+    "category": "cross_representation",
+    "question": "Development specification: compute assess_claim for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "absolute_from_normalized",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-19",
+    "split": "development",
+    "template_id": "development-specification-19",
+    "category": "validity",
+    "question": "Development specification: compute source_evidence for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "source_evidence"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-20",
+    "split": "development",
+    "template_id": "development-specification-20",
+    "category": "efficiency",
+    "question": "Development specification: compute front_fraction for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-21",
+    "split": "development",
+    "template_id": "development-specification-21",
+    "category": "efficiency",
+    "question": "Development specification: compute pca_distance for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-05",
+        "m3-development-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-22",
+    "split": "development",
+    "template_id": "development-specification-22",
+    "category": "efficiency",
+    "question": "Development specification: compute reconstruction_error for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-23",
+    "split": "development",
+    "template_id": "development-specification-23",
+    "category": "efficiency",
+    "question": "Development specification: compute projected_distance for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-07",
+        "m3-development-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-24",
+    "split": "development",
+    "template_id": "development-specification-0",
+    "category": "observation",
+    "question": "Development specification: compute cumulative for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-00"
+      ],
+      "date": "2027-02-06",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-25",
+    "split": "development",
+    "template_id": "development-specification-1",
+    "category": "observation",
+    "question": "Development specification: compute daily_growth for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-01"
+      ],
+      "date": "2027-02-06",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-26",
+    "split": "development",
+    "template_id": "development-specification-2",
+    "category": "observation",
+    "question": "Development specification: compute interval_growth for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-02"
+      ],
+      "date": "2027-02-07",
+      "start_date": "2027-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-27",
+    "split": "development",
+    "template_id": "development-specification-3",
+    "category": "observation",
+    "question": "Development specification: compute growth_compare for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-03",
+        "m3-development-04"
+      ],
+      "date": "2027-02-06",
+      "start_date": "2027-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-28",
+    "split": "development",
+    "template_id": "development-specification-4",
+    "category": "morphology",
+    "question": "Development specification: compute front_fraction for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-d-29",
+    "split": "development",
+    "template_id": "development-specification-5",
+    "category": "morphology",
+    "question": "Development specification: compute late_fraction for the supplied context; preserve scientific support.",
+    "query": {
+      "fire_ids": [
+        "m3-development-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  }
+]

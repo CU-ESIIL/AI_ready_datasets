@@ -1,0 +1,764 @@
+{
+  "expected": "Scale A/B/D should respond if prefix and future are jointly scaled; C label is invariant under joint scaling. Permutation/reversal are sensitivity tests, not required invariance or ecological counterfactuals. No transformed future labels are used as observed ecological evidence.",
+  "missing_or_resolution_change": "all rejected; support abstention, not accuracy robustness",
+  "nominal_ID": "exactly invariant for all views/tasks/prefixes",
+  "retrieval": "Distances use the same perturbed representations; E future relevance itself is unchanged only for nominal IDs. No universal scale/order rank invariance is imposed.",
+  "rows": [
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.24863255076631885,
+      "n": 256,
+      "task": "A",
+      "view": "raw"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 1.1066891159078067,
+      "n": 256,
+      "task": "A",
+      "view": "raw"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.3846050429679899,
+      "n": 256,
+      "task": "A",
+      "view": "raw"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.22079487251273333,
+      "n": 256,
+      "task": "B",
+      "view": "raw"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 1.0855664088974872,
+      "n": 256,
+      "task": "B",
+      "view": "raw"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.3566189419581549,
+      "n": 256,
+      "task": "B",
+      "view": "raw"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.12495881523778068,
+      "n": 256,
+      "task": "C",
+      "view": "raw"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.2904292188265432,
+      "n": 256,
+      "task": "C",
+      "view": "raw"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.23903633605893743,
+      "n": 256,
+      "task": "C",
+      "view": "raw"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.1376082477661814,
+      "n": 256,
+      "task": "D",
+      "view": "raw"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.4712994462699697,
+      "n": 256,
+      "task": "D",
+      "view": "raw"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.14182386546724596,
+      "n": 256,
+      "task": "D",
+      "view": "raw"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.2000846109877653,
+      "n": 256,
+      "task": "A",
+      "view": "interpretable"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 1.0866441588518598,
+      "n": 256,
+      "task": "A",
+      "view": "interpretable"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.3113497827148559,
+      "n": 256,
+      "task": "A",
+      "view": "interpretable"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.1578195311810413,
+      "n": 256,
+      "task": "B",
+      "view": "interpretable"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 1.0641224990741833,
+      "n": 256,
+      "task": "B",
+      "view": "interpretable"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.2231785685213714,
+      "n": 256,
+      "task": "B",
+      "view": "interpretable"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.14855325802291958,
+      "n": 256,
+      "task": "C",
+      "view": "interpretable"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.262115686553586,
+      "n": 256,
+      "task": "C",
+      "view": "interpretable"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.18200141130849196,
+      "n": 256,
+      "task": "C",
+      "view": "interpretable"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.09331030965926845,
+      "n": 256,
+      "task": "D",
+      "view": "interpretable"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.48363925033444316,
+      "n": 256,
+      "task": "D",
+      "view": "interpretable"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.04101783066175474,
+      "n": 256,
+      "task": "D",
+      "view": "interpretable"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.013004233492831307,
+      "n": 256,
+      "task": "A",
+      "view": "PCA4"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.9897857503770837,
+      "n": 256,
+      "task": "A",
+      "view": "PCA4"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.040342861919409945,
+      "n": 256,
+      "task": "A",
+      "view": "PCA4"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.012705655642568425,
+      "n": 256,
+      "task": "B",
+      "view": "PCA4"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.9351888355270858,
+      "n": 256,
+      "task": "B",
+      "view": "PCA4"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.030239739860087766,
+      "n": 256,
+      "task": "B",
+      "view": "PCA4"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.006936667044967676,
+      "n": 256,
+      "task": "C",
+      "view": "PCA4"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.28182075944220053,
+      "n": 256,
+      "task": "C",
+      "view": "PCA4"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.03049275699975673,
+      "n": 256,
+      "task": "C",
+      "view": "PCA4"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.009165388654837847,
+      "n": 256,
+      "task": "D",
+      "view": "PCA4"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.3636364790891682,
+      "n": 256,
+      "task": "D",
+      "view": "PCA4"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.01320383613169096,
+      "n": 256,
+      "task": "D",
+      "view": "PCA4"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.2594340819340458,
+      "n": 256,
+      "task": "A",
+      "view": "frozen_A"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8376657628832398,
+      "n": 256,
+      "task": "A",
+      "view": "frozen_A"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.38952698335220565,
+      "n": 256,
+      "task": "A",
+      "view": "frozen_A"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.2291277704790774,
+      "n": 256,
+      "task": "B",
+      "view": "frozen_A"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8372308906914074,
+      "n": 256,
+      "task": "B",
+      "view": "frozen_A"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.33510620956162285,
+      "n": 256,
+      "task": "B",
+      "view": "frozen_A"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.12313551389039905,
+      "n": 256,
+      "task": "C",
+      "view": "frozen_A"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.2126210883571313,
+      "n": 256,
+      "task": "C",
+      "view": "frozen_A"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.18981858044549868,
+      "n": 256,
+      "task": "C",
+      "view": "frozen_A"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.0509625631885437,
+      "n": 256,
+      "task": "D",
+      "view": "frozen_A"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.42015514502655793,
+      "n": 256,
+      "task": "D",
+      "view": "frozen_A"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.07672668045682968,
+      "n": 256,
+      "task": "D",
+      "view": "frozen_A"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.26622934391331854,
+      "n": 256,
+      "task": "A",
+      "view": "shared_AD"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8519650346680677,
+      "n": 256,
+      "task": "A",
+      "view": "shared_AD"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.35923062484603896,
+      "n": 256,
+      "task": "A",
+      "view": "shared_AD"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.2597369094831017,
+      "n": 256,
+      "task": "B",
+      "view": "shared_AD"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8557327446948761,
+      "n": 256,
+      "task": "B",
+      "view": "shared_AD"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.2775986546575806,
+      "n": 256,
+      "task": "B",
+      "view": "shared_AD"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.19795531864769592,
+      "n": 256,
+      "task": "C",
+      "view": "shared_AD"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.17697287200925224,
+      "n": 256,
+      "task": "C",
+      "view": "shared_AD"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.28933715820760475,
+      "n": 256,
+      "task": "C",
+      "view": "shared_AD"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.12311167054661143,
+      "n": 256,
+      "task": "D",
+      "view": "shared_AD"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.4066206588019984,
+      "n": 256,
+      "task": "D",
+      "view": "shared_AD"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.11022369777231267,
+      "n": 256,
+      "task": "D",
+      "view": "shared_AD"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.2354822742245477,
+      "n": 256,
+      "task": "A",
+      "view": "specific_B"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8483569983299262,
+      "n": 256,
+      "task": "A",
+      "view": "specific_B"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.31499093810732715,
+      "n": 256,
+      "task": "A",
+      "view": "specific_B"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.2309839768494214,
+      "n": 256,
+      "task": "B",
+      "view": "specific_B"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8436112188599234,
+      "n": 256,
+      "task": "B",
+      "view": "specific_B"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.3058145327491988,
+      "n": 256,
+      "task": "B",
+      "view": "specific_B"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.18589638035675715,
+      "n": 256,
+      "task": "C",
+      "view": "specific_B"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.1225943543084929,
+      "n": 256,
+      "task": "C",
+      "view": "specific_B"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.18560041826420304,
+      "n": 256,
+      "task": "C",
+      "view": "specific_B"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.06571877149155309,
+      "n": 256,
+      "task": "D",
+      "view": "specific_B"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.39973535183422165,
+      "n": 256,
+      "task": "D",
+      "view": "specific_B"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.09173110125448675,
+      "n": 256,
+      "task": "D",
+      "view": "specific_B"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.11371882877599082,
+      "n": 256,
+      "task": "A",
+      "view": "specific_C"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.20482998409372255,
+      "n": 256,
+      "task": "A",
+      "view": "specific_C"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.10592661798018221,
+      "n": 256,
+      "task": "A",
+      "view": "specific_C"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.12944035816882216,
+      "n": 256,
+      "task": "B",
+      "view": "specific_C"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.2226260305774228,
+      "n": 256,
+      "task": "B",
+      "view": "specific_C"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.12501487635034936,
+      "n": 256,
+      "task": "B",
+      "view": "specific_C"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.1285965354486845,
+      "n": 256,
+      "task": "C",
+      "view": "specific_C"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.26998986840453687,
+      "n": 256,
+      "task": "C",
+      "view": "specific_C"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.24003819071189195,
+      "n": 256,
+      "task": "C",
+      "view": "specific_C"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.04835267560688755,
+      "n": 256,
+      "task": "D",
+      "view": "specific_C"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.09961548905953166,
+      "n": 256,
+      "task": "D",
+      "view": "specific_C"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.04928166480001073,
+      "n": 256,
+      "task": "D",
+      "view": "specific_C"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.08681192292012574,
+      "n": 256,
+      "task": "A",
+      "view": "specific_D"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.7191361167551664,
+      "n": 256,
+      "task": "A",
+      "view": "specific_D"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.09544185910860836,
+      "n": 256,
+      "task": "A",
+      "view": "specific_D"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.0930047594938972,
+      "n": 256,
+      "task": "B",
+      "view": "specific_D"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.7117438299040921,
+      "n": 256,
+      "task": "B",
+      "view": "specific_D"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.11445075360368073,
+      "n": 256,
+      "task": "B",
+      "view": "specific_D"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.010328011275235166,
+      "n": 256,
+      "task": "C",
+      "view": "specific_D"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.16493006957874934,
+      "n": 256,
+      "task": "C",
+      "view": "specific_D"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.02608228818493538,
+      "n": 256,
+      "task": "C",
+      "view": "specific_D"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.09829680164081558,
+      "n": 256,
+      "task": "D",
+      "view": "specific_D"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.4159365376079657,
+      "n": 256,
+      "task": "D",
+      "view": "specific_D"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.10842117890128089,
+      "n": 256,
+      "task": "D",
+      "view": "specific_D"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.26457870829113284,
+      "n": 256,
+      "task": "A",
+      "view": "specific_E"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.8927184259129544,
+      "n": 256,
+      "task": "A",
+      "view": "specific_E"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.3530898160219731,
+      "n": 256,
+      "task": "A",
+      "view": "specific_E"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.26019452547065125,
+      "n": 256,
+      "task": "B",
+      "view": "specific_E"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.9250212369379089,
+      "n": 256,
+      "task": "B",
+      "view": "specific_E"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.2852668291395959,
+      "n": 256,
+      "task": "B",
+      "view": "specific_E"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.16780662709262267,
+      "n": 256,
+      "task": "C",
+      "view": "specific_E"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.11954991059039723,
+      "n": 256,
+      "task": "C",
+      "view": "specific_E"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.2692794085144723,
+      "n": 256,
+      "task": "C",
+      "view": "specific_E"
+    },
+    {
+      "control": "temporal_permutation",
+      "median_absolute_prediction_change": 0.08334388283643746,
+      "n": 256,
+      "task": "D",
+      "view": "specific_E"
+    },
+    {
+      "control": "fourfold_scale",
+      "median_absolute_prediction_change": 0.44094948047232474,
+      "n": 256,
+      "task": "D",
+      "view": "specific_E"
+    },
+    {
+      "control": "equal_total_reversal",
+      "median_absolute_prediction_change": 0.04963536011322539,
+      "n": 256,
+      "task": "D",
+      "view": "specific_E"
+    }
+  ]
+}

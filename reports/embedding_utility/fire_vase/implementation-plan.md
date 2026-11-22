@@ -1,5 +1,16 @@
 # Implementing the Fire VASE study
 
+## Current primary design — full observed population
+
+The [full-population protocol](full-population-v1/protocol.md) supersedes the earlier
+emphasis on long consecutive histories. All native fire IDs are primary, stratified
+by1,2 and3+ observations; preservation, observable-property retrieval and optimized
+access/reuse are the primary tasks. Long-run prediction is a separately labeled
+selected-cohort extension. Earlier dated milestone plans below remain historical.
+Real short-history diagnostics are executed; learned/classical comparisons and
+full-gallery retrieval remain planned. Do not infer physical lifetime from record count.
+
+
 Status: **WORKING** deterministic synthetic milestone; broader study **UNDER ANALYSIS**.
 Plan v0.4, 20 November 2026. The user-authorized implementation adds no real-data
 or model execution permission. [Upstream audit](upstream-audit.md) records
@@ -272,3 +283,66 @@ H1–H4 stay hypotheses. Identical mock metadata outcomes are an isolation check
 mock ignores metadata. The mock adaptive policy matches fixed R0 and the explicit
 router in this controlled suite. These are not LLM comparisons or ecological results.
 The original code-writing, real-data, forecast and neural extensions remain deferred.
+
+## Milestone 3 — expanded synthetic utility, real inference pending
+
+The [M3 report](milestone-3-report.md) and [frozen protocol](agent-protocol-m3-v1.md)
+add 120 evaluation questions with separate training/development/evaluation histories,
+independent numeric references, targeted/cached R0 rivals, explicit projected versus
+full-profile queries and development-only public cost calibration. The full matrix
+contains 2,880 mock episodes plus 360 rule-router episodes. Task-specific sufficiency,
+correctness, selection, scientific cost and routing remain separate.
+
+The original R0-first equality is not evidence against representation efficiency;
+it follows from a simple mock and information dominance. Nor does a faster lookup
+prove lower total cost. Real metadata/agent effects remain unmeasured because this
+session has no verified reachable authorized inference. The disabled real pilot
+configuration binds new frozen inputs and requires smoke/access/no-charge checks.
+M1/M2 history and the original proposal/audits remain unchanged. Neural, real-source,
+forecast and expert analog extensions are still deferred.
+
+## Milestone 4 — explicit learning extension, real evidence still pending
+
+The user's new milestone authorizes a minimal neural experiment, superseding the
+previous deferred-neural scope for this isolated study only. The
+[M4 report](milestone-4-report.md) records completed prefix-only synthetic prediction,
+strong raw/PCA/summary/capacity baselines, held-out evaluation and materialization.
+Production MOSAIKS and scientific review gates are unchanged. Real source data exist
+in documented legacy paths but require experiment-specific rights/support/availability
+review; no source rows were ingested. Real agent smoke/pilot remain unexecuted under
+the unchanged frozen protocols. See the new evidence table and unsupported claims.
+
+## Milestone 5 — cross-task transfer and heterogeneous reuse
+
+The [M5 report](milestone-5-report.md) records frozen A-only transfer, new lightweight
+heads, joint AD and task-specific training, predictive-outcome retrieval, observed-
+property probes and multihead reuse. B/C/D/E targets are independently defined from
+future observations but correlated. Full task matrices and fire-paired summaries
+retain losing as well as winning comparisons. Same-fire retrieval is excluded.
+This is a new frozen task protocol on the existing synthetic M4 cohort, not a new
+blind cohort or ecological evidence. Original source, encoder and M1–4 artifacts
+remain immutable. Real-agent and real-source scientific evidence remain pending.
+
+## Milestone 6 — packaged real-source review, stop before rows
+
+The user identified the local Fire VASE lake; selected artifacts under its packaged
+`files/` root are present and need no upload/download. The [M6 report](milestone-6/report.md)
+records metadata-only source inspection, proposed native/support/prefix/target/fold
+recipes, rights/attribution assessment, review packet, pure validation and conditional
+cohort/model/cost design. No observation rows, adapter, real cohort or training ran.
+Actual source availability is no longer the claimed blocker; human meanings/rights,
+current identity and prospective availability remain explicit review requirements.
+The user requires stopping at that boundary. M1–5 remain immutable.
+
+## M7 full-lake extension
+
+Metadata inventory and offline streams/model/statistical kernels are implemented.
+All-row authorization supersedes the proposed 512-row cap only after external review.
+Real training orchestration, scientific classification/geometry/environment definitions
+and empirical evaluation remain pending. See [M7 report](milestone-7/report.md).
+
+## Milestone8 execution status
+
+**WORKING:** real full-population observed-scientific-state utility experiment
+completed. See [methods, measured findings and retained artifacts](milestone-8/README.md).
+This extension does not relabel earlier planned/raw-sequence work as executed.

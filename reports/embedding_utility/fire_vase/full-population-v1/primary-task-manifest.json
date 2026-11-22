@@ -1,0 +1,72 @@
+{
+  "version": "full-observed-population-design-v1",
+  "primary_population": "all278865 native source IDs; catalog-linked and296 unmatched IDs separately auditable",
+  "count_unit": "whole fire ID, not dependent window",
+  "primary_strata": [
+    {
+      "stratum": "one_observation",
+      "fires": 161200,
+      "fraction_of_native_ids": 0.5780574830114931,
+      "primary_full_population": true
+    },
+    {
+      "stratum": "two_observations",
+      "fires": 47992,
+      "fraction_of_native_ids": 0.17209760995463755,
+      "primary_full_population": true
+    },
+    {
+      "stratum": "three_or_more",
+      "fires": 69673,
+      "fraction_of_native_ids": 0.24984490703386944,
+      "primary_full_population": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "P1",
+      "task": "Observation count and provenance",
+      "eligible_native_fires": 278865,
+      "target": "native count, date/source support and field identity",
+      "status": "census checks available; no agent or learned-model evaluation"
+    },
+    {
+      "id": "P2",
+      "task": "Absolute observed area",
+      "eligible_native_fires": 278865,
+      "target": "sum of retained native increments; never presumed final realized area",
+      "status": "short-state exact value preservation executed on209192 short histories"
+    },
+    {
+      "id": "P3",
+      "task": "Observation support",
+      "eligible_native_fires": 278865,
+      "target": "original dates, adjacent gaps and observed zero versus absent day",
+      "status": "census and short-history sidecar checks executed"
+    },
+    {
+      "id": "P4",
+      "task": "Order and relative observed allocation",
+      "eligible_native_fires": 117665,
+      "target": "retained order/relative allocation for2+ observations, including gappy histories with their original support",
+      "status": "one-observation stratum NOT_APPLICABLE; no artificial zero/flat trajectory"
+    },
+    {
+      "id": "P5",
+      "task": "Observable-property retrieval",
+      "eligible_native_fires": 278865,
+      "target": "declared observed-property relevance; exclude same-fire candidates",
+      "status": "cached-native scalar-property search validated against194980 training-gallery fires for48 disjoint test queries across1/2/3+ strata; learned/semantic retrieval comparison not run"
+    },
+    {
+      "id": "P6",
+      "task": "Access and reuse economics",
+      "eligible_native_fires": 278865,
+      "target": "native indexed reads, cached answers/aggregates, summaries and representation routes on same query workload",
+      "status": "128 warm-source fallback checks executed; representative workload/index/refresh economics pending"
+    }
+  ],
+  "prediction": "secondary selected-cohort experiment using the preserved depth/horizon matrix",
+  "models_or_agents_executed": false,
+  "neural_training": false
+}

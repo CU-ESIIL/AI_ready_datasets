@@ -1,0 +1,1643 @@
+{
+  "prefix_construction_seconds": 10.71174770899961,
+  "methods": [
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "raw_state-linear",
+      "head_fit_and_predict_seconds": 0.03674354100076016
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "raw_state-nonlinear",
+      "head_fit_and_predict_seconds": 0.18745633300204645
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request4-linear",
+      "head_fit_and_predict_seconds": 0.032666790997609496
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request4-nonlinear",
+      "head_fit_and_predict_seconds": 0.05967962499926216
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.03201916699981666
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.058598667001206195
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.031226374998368556
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.060739458000171
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-4-linear",
+      "head_fit_and_predict_seconds": 0.03239729099732358
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.058716709001600975
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request8-linear",
+      "head_fit_and_predict_seconds": 0.029876666998461587
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request8-nonlinear",
+      "head_fit_and_predict_seconds": 0.05946987500283285
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.030225167000025976
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.06376108300173655
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.029681583000638057
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.06279191700014053
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-8-linear",
+      "head_fit_and_predict_seconds": 0.02786345799904666
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.061015374998532934
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request16-linear",
+      "head_fit_and_predict_seconds": 0.03629404200182762
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request16-nonlinear",
+      "head_fit_and_predict_seconds": 0.06686616700244485
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.035307916998135624
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.06555333299911581
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.03294208300212631
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.06510062500092317
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-16-linear",
+      "head_fit_and_predict_seconds": 0.033325458000035724
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.06820620899816277
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request32-linear",
+      "head_fit_and_predict_seconds": 0.03553625000131433
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request32-nonlinear",
+      "head_fit_and_predict_seconds": 0.06508474999645841
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.041393374998733634
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.07430062500134227
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.03903537500082166
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.07343937499899766
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-32-linear",
+      "head_fit_and_predict_seconds": 0.04322566599876154
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.07379312500052038
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request64-linear",
+      "head_fit_and_predict_seconds": 0.03704316699804622
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "pca-request64-nonlinear",
+      "head_fit_and_predict_seconds": 0.06693991700012702
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.06484241699945414
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.10840908300087904
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.06120820900105173
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "self_supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.10231616700184532
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-64-linear",
+      "head_fit_and_predict_seconds": 0.06088316699970164
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "multitask-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.10267324999949778
+    },
+    {
+      "depth": 1,
+      "horizon": 1,
+      "method": "direct_neural",
+      "fit_predict_seconds": 0.56957445900116,
+      "parameters": 625,
+      "loss_curve": [
+        0.6854710337957135,
+        0.59222880934297,
+        0.5835053559385235,
+        0.5821499922439324,
+        0.5835190773343029,
+        0.581913619847131,
+        0.5818403728622549,
+        0.5829925119888445,
+        0.582404039124987,
+        0.580557698920467,
+        0.5812489701367076,
+        0.5815144817226595
+      ]
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "raw_state-linear",
+      "head_fit_and_predict_seconds": 0.011721000002580695
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "raw_state-nonlinear",
+      "head_fit_and_predict_seconds": 0.02131891600220115
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request4-linear",
+      "head_fit_and_predict_seconds": 0.009919291998812696
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request4-nonlinear",
+      "head_fit_and_predict_seconds": 0.01929125000242493
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.010418416997708846
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.02096483400237048
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.010707583001931198
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.02100362500277697
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-4-linear",
+      "head_fit_and_predict_seconds": 0.01072800000110874
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.01891095800237963
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request8-linear",
+      "head_fit_and_predict_seconds": 0.008824374999676365
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request8-nonlinear",
+      "head_fit_and_predict_seconds": 0.020616166999388952
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.00999687500006985
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.01885637500163284
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.010837541998625966
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.019224209001549752
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-8-linear",
+      "head_fit_and_predict_seconds": 0.008867000000464031
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.017846040998847457
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request16-linear",
+      "head_fit_and_predict_seconds": 0.023473291999835055
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request16-nonlinear",
+      "head_fit_and_predict_seconds": 0.021479916998941917
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.01167649999842979
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.021536165997531498
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.01248591699913959
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.021865082999283914
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-16-linear",
+      "head_fit_and_predict_seconds": 0.011959749997913605
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.021804542000609217
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request32-linear",
+      "head_fit_and_predict_seconds": 0.012625082999875303
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request32-nonlinear",
+      "head_fit_and_predict_seconds": 0.021393999999418156
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.015226832998450845
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.02409333299874561
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.014321249997010455
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.024241499999334337
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-32-linear",
+      "head_fit_and_predict_seconds": 0.01425237500006915
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.024728667001909344
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request64-linear",
+      "head_fit_and_predict_seconds": 0.0120530409985804
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "pca-request64-nonlinear",
+      "head_fit_and_predict_seconds": 0.021913209002377698
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.019952999999077292
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.03212129200255731
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.02187387500089244
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "self_supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.041352500000357395
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-64-linear",
+      "head_fit_and_predict_seconds": 0.019889832998160273
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "multitask-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.032676291000825586
+    },
+    {
+      "depth": 1,
+      "horizon": 3,
+      "method": "direct_neural",
+      "fit_predict_seconds": 0.18097020899949712,
+      "parameters": 625,
+      "loss_curve": [
+        0.7782985587709439,
+        0.6206735337460106,
+        0.610070917182714,
+        0.604616749350054,
+        0.6018688216726611,
+        0.6009337943050188,
+        0.5991999646454351,
+        0.5985969616626112,
+        0.5983846938484236,
+        0.5976840670746396,
+        0.5977172813134454,
+        0.5979850359296937
+      ]
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "raw_state-linear",
+      "head_fit_and_predict_seconds": 0.005787916998087894
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "raw_state-nonlinear",
+      "head_fit_and_predict_seconds": 0.01089904099717387
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request4-linear",
+      "head_fit_and_predict_seconds": 0.005018249998101965
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request4-nonlinear",
+      "head_fit_and_predict_seconds": 0.012632833000679966
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.005031000000599306
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.006980250000196975
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.004377499997644918
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.00664087499899324
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-4-linear",
+      "head_fit_and_predict_seconds": 0.00977841699932469
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.007030291999399196
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request8-linear",
+      "head_fit_and_predict_seconds": 0.004197709000436589
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request8-nonlinear",
+      "head_fit_and_predict_seconds": 0.006695667001622496
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.003635916000348516
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.007860333000280662
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.005824249998113373
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.011400625000533182
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-8-linear",
+      "head_fit_and_predict_seconds": 0.003929875001631444
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.008258249999926193
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request16-linear",
+      "head_fit_and_predict_seconds": 0.006235041000763886
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request16-nonlinear",
+      "head_fit_and_predict_seconds": 0.009415208001883002
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.006278791999648092
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.011667916001897538
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.004703125003288733
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.009408125002664747
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-16-linear",
+      "head_fit_and_predict_seconds": 0.005341666997992434
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.01621266700021806
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request32-linear",
+      "head_fit_and_predict_seconds": 0.003969500001403503
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request32-nonlinear",
+      "head_fit_and_predict_seconds": 0.006806875000620494
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.0064147910015890375
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.008660292001877679
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.005101541999465553
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.009500125001068227
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-32-linear",
+      "head_fit_and_predict_seconds": 0.007193833000201266
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.009553957999742124
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request64-linear",
+      "head_fit_and_predict_seconds": 0.003914958000677871
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "pca-request64-nonlinear",
+      "head_fit_and_predict_seconds": 0.008459165997919627
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.008037875002628425
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.011910916000488214
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.00871904200175777
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "self_supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.011248874998273095
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-64-linear",
+      "head_fit_and_predict_seconds": 0.007591792000312125
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "multitask-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.011980958002823172
+    },
+    {
+      "depth": 1,
+      "horizon": 7,
+      "method": "direct_neural",
+      "fit_predict_seconds": 0.053123792000405956,
+      "parameters": 625,
+      "loss_curve": [
+        1.1063846802630686,
+        0.7000925481456886,
+        0.6960416779391205,
+        0.6755951142857968,
+        0.6714884460389466,
+        0.6736447995656837,
+        0.6704159001132338,
+        0.6727630920221909,
+        0.664448601138335,
+        0.6740613012175056,
+        0.6634883430444969,
+        0.6667668529831804
+      ]
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "raw_state-linear",
+      "head_fit_and_predict_seconds": 0.020444416997634107
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "raw_state-nonlinear",
+      "head_fit_and_predict_seconds": 0.03551312499985215
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request4-linear",
+      "head_fit_and_predict_seconds": 0.017445040997699834
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request4-nonlinear",
+      "head_fit_and_predict_seconds": 0.03185995799867669
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.018754666998574976
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.030671582997456426
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.01728029099831474
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.03173054199942271
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-4-linear",
+      "head_fit_and_predict_seconds": 0.01696549999905983
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.03084149999995134
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request8-linear",
+      "head_fit_and_predict_seconds": 0.024031832999753533
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request8-nonlinear",
+      "head_fit_and_predict_seconds": 0.03664862499863375
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.016536750001250766
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.03102608299741405
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.015105000002222368
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.03102716599823907
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-8-linear",
+      "head_fit_and_predict_seconds": 0.015840041000046767
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.0316812499986554
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request16-linear",
+      "head_fit_and_predict_seconds": 0.017875124998681713
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request16-nonlinear",
+      "head_fit_and_predict_seconds": 0.03209075000268058
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.01699979200202506
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.03353950000018813
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.018135750000510598
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.033235791997867636
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-16-linear",
+      "head_fit_and_predict_seconds": 0.017438625000067987
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.0344422919988574
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request32-linear",
+      "head_fit_and_predict_seconds": 0.017496959000709467
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request32-nonlinear",
+      "head_fit_and_predict_seconds": 0.03496012500181678
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.02223954199871514
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.056620583000039915
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.02805458299917518
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.04173870899830945
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-32-linear",
+      "head_fit_and_predict_seconds": 0.02155458400011412
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.03705774999980349
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request64-linear",
+      "head_fit_and_predict_seconds": 0.017098624997743173
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "pca-request64-nonlinear",
+      "head_fit_and_predict_seconds": 0.03419733299961081
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.02912391599966213
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.049543416000233265
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.029708292000577785
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "self_supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.04984929100100999
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-64-linear",
+      "head_fit_and_predict_seconds": 0.029021583999565337
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "multitask-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.05029866699987906
+    },
+    {
+      "depth": 2,
+      "horizon": 1,
+      "method": "direct_neural",
+      "fit_predict_seconds": 0.2974774590002198,
+      "parameters": 625,
+      "loss_curve": [
+        0.7008128845563169,
+        0.5457586379077881,
+        0.5284493141227589,
+        0.5229952364715917,
+        0.5203265751150168,
+        0.5187967429089573,
+        0.5181983726538525,
+        0.516385829991536,
+        0.5172015178137926,
+        0.5168314749545733,
+        0.5159634927027456,
+        0.5155291955290182
+      ]
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "raw_state-linear",
+      "head_fit_and_predict_seconds": 0.009176291998301167
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "raw_state-nonlinear",
+      "head_fit_and_predict_seconds": 0.015556209000351373
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request4-linear",
+      "head_fit_and_predict_seconds": 0.008629208998172544
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request4-nonlinear",
+      "head_fit_and_predict_seconds": 0.013773708000371698
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.009158832999673905
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.017910083999595372
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.009263749998353887
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.030954833997384412
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-4-linear",
+      "head_fit_and_predict_seconds": 0.008008916000108002
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.0153740830028255
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request8-linear",
+      "head_fit_and_predict_seconds": 0.009871792000922142
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request8-nonlinear",
+      "head_fit_and_predict_seconds": 0.015642833001038525
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.008962915999290999
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.0318102919991361
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.008890958997653797
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.019628624999313615
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-8-linear",
+      "head_fit_and_predict_seconds": 0.0072866660011641216
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.01577454200014472
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request16-linear",
+      "head_fit_and_predict_seconds": 0.009749167002155446
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request16-nonlinear",
+      "head_fit_and_predict_seconds": 0.01606862500193529
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.009111625000514323
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.017062708000594284
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.008781417000136571
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.015857250000408385
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-16-linear",
+      "head_fit_and_predict_seconds": 0.010705832999519771
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.01684483400094905
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request32-linear",
+      "head_fit_and_predict_seconds": 0.009276584001781885
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request32-nonlinear",
+      "head_fit_and_predict_seconds": 0.01610620899737114
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.010453833001520252
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.017719957999361213
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.013424290998955257
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.018233999999210937
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-32-linear",
+      "head_fit_and_predict_seconds": 0.011884291998285335
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.017456917001254624
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request64-linear",
+      "head_fit_and_predict_seconds": 0.009639667001465568
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "pca-request64-nonlinear",
+      "head_fit_and_predict_seconds": 0.01585358299780637
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.014751124999747844
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.03776850000213017
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.014080000000831205
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "self_supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.025893541998811997
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-64-linear",
+      "head_fit_and_predict_seconds": 0.015272958000423387
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "multitask-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.02411112499976298
+    },
+    {
+      "depth": 2,
+      "horizon": 3,
+      "method": "direct_neural",
+      "fit_predict_seconds": 0.13081541700012167,
+      "parameters": 625,
+      "loss_curve": [
+        0.8568819612761952,
+        0.579637705181953,
+        0.5581058717687449,
+        0.5501517641441617,
+        0.54622058134804,
+        0.5443345539609715,
+        0.5420933785440053,
+        0.5413387827730844,
+        0.5405497348928309,
+        0.5400113162750093,
+        0.5405229497227769,
+        0.5393951717433741
+      ]
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "raw_state-linear",
+      "head_fit_and_predict_seconds": 0.004114957999263424
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "raw_state-nonlinear",
+      "head_fit_and_predict_seconds": 0.006180416999995941
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request4-linear",
+      "head_fit_and_predict_seconds": 0.0032969579988275655
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request4-nonlinear",
+      "head_fit_and_predict_seconds": 0.006037915998604149
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.0032007500012696255
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.005255209001916228
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-4-linear",
+      "head_fit_and_predict_seconds": 0.0035947079995821696
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.005452457997307647
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-4-linear",
+      "head_fit_and_predict_seconds": 0.003402292000828311
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-4-nonlinear",
+      "head_fit_and_predict_seconds": 0.00503187499998603
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request8-linear",
+      "head_fit_and_predict_seconds": 0.0037919169990345836
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request8-nonlinear",
+      "head_fit_and_predict_seconds": 0.005318708997947397
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.003079209000134142
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.005083915999421151
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-8-linear",
+      "head_fit_and_predict_seconds": 0.0037205840017122682
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.005704874998627929
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-8-linear",
+      "head_fit_and_predict_seconds": 0.003320957999676466
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-8-nonlinear",
+      "head_fit_and_predict_seconds": 0.00536104200000409
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request16-linear",
+      "head_fit_and_predict_seconds": 0.003604415996960597
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request16-nonlinear",
+      "head_fit_and_predict_seconds": 0.0067845000012312084
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.003314166999189183
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.005814459000248462
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-16-linear",
+      "head_fit_and_predict_seconds": 0.003336708999995608
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.00583849999748054
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-16-linear",
+      "head_fit_and_predict_seconds": 0.003605249999964144
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-16-nonlinear",
+      "head_fit_and_predict_seconds": 0.0054620410010102205
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request32-linear",
+      "head_fit_and_predict_seconds": 0.0030553329997928813
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request32-nonlinear",
+      "head_fit_and_predict_seconds": 0.004748542000015732
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.004968666999047855
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.006239291000383673
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-32-linear",
+      "head_fit_and_predict_seconds": 0.004330542000388959
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.006960416998481378
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-32-linear",
+      "head_fit_and_predict_seconds": 0.004118417000427144
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-32-nonlinear",
+      "head_fit_and_predict_seconds": 0.006417166001483565
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request64-linear",
+      "head_fit_and_predict_seconds": 0.0025336670005344786
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "pca-request64-nonlinear",
+      "head_fit_and_predict_seconds": 0.004688624998379964
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.0058640839997678995
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.008871417001500959
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-64-linear",
+      "head_fit_and_predict_seconds": 0.006016125000314787
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "self_supervised-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.008660166997287888
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-64-linear",
+      "head_fit_and_predict_seconds": 0.005598957999609411
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "multitask-64-nonlinear",
+      "head_fit_and_predict_seconds": 0.008044375001190929
+    },
+    {
+      "depth": 2,
+      "horizon": 7,
+      "method": "direct_neural",
+      "fit_predict_seconds": 0.04077037499882863,
+      "parameters": 625,
+      "loss_curve": [
+        1.2348371009467611,
+        0.7603817566098623,
+        0.6542510820109819,
+        0.6528819872944187,
+        0.6326845244124378,
+        0.628407906478114,
+        0.626144927339452,
+        0.6229606563418186,
+        0.6212160026009292,
+        0.6197489032829289,
+        0.6186894969599461,
+        0.6184053194058106
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "area_field": {
+      "title": "Area Field",
+      "type": "string"
+    },
+    "availability_field": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Availability Field"
+    },
+    "cumulative_field": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cumulative Field"
+    },
+    "date_field": {
+      "title": "Date Field",
+      "type": "string"
+    },
+    "date_interpretation": {
+      "enum": [
+        "native_iso_date",
+        "reviewed_midnight_date_bin"
+      ],
+      "title": "Date Interpretation",
+      "type": "string"
+    },
+    "event_field": {
+      "title": "Event Field",
+      "type": "string"
+    },
+    "expected_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Expected Sha256",
+      "type": "string"
+    },
+    "meaning": {
+      "const": "reviewed_area_per_native_calendar_day_bin",
+      "default": "reviewed_area_per_native_calendar_day_bin",
+      "title": "Meaning",
+      "type": "string"
+    },
+    "native_area_unit": {
+      "const": "km2",
+      "default": "km2",
+      "title": "Native Area Unit",
+      "type": "string"
+    },
+    "quality_fields": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Quality Fields",
+      "type": "array"
+    },
+    "semantic_evidence": {
+      "minLength": 1,
+      "title": "Semantic Evidence",
+      "type": "string"
+    },
+    "sorted_by_event_and_date": {
+      "title": "Sorted By Event And Date",
+      "type": "boolean"
+    },
+    "source_relative_path": {
+      "title": "Source Relative Path",
+      "type": "string"
+    },
+    "uncertainty_evidence": {
+      "minLength": 1,
+      "title": "Uncertainty Evidence",
+      "type": "string"
+    },
+    "version": {
+      "const": "fire-source-binding-v1",
+      "default": "fire-source-binding-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_relative_path",
+    "expected_sha256",
+    "event_field",
+    "date_field",
+    "area_field",
+    "sorted_by_event_and_date",
+    "date_interpretation",
+    "semantic_evidence",
+    "uncertainty_evidence"
+  ],
+  "title": "SourceBinding",
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 880031,
+  "epochs": 120,
+  "horizon": 3,
+  "learning_rate": 0.01,
+  "retrieval_k": 10,
+  "ridge_alpha": 1.0,
+  "scope": "synthetic_only",
+  "seeds": [
+    271,
+    811,
+    1729
+  ],
+  "source_snapshot": "reports/embedding_utility/fire_vase/results/milestone-4-learning-v1",
+  "version": "fire-transfer-v1"
+}

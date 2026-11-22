@@ -1,0 +1,69 @@
+{
+  "authorization": {
+    "origin": "DIRECT_USER_INSTRUCTION",
+    "statement": "stop with all the stops and make this happen.",
+    "prior_statement": "you can have all the approvals for this project",
+    "scope": "read-only complete native population census, source checksums, source/cache reconciliation, internal derived cohort metadata; no model training or publication",
+    "separate_receipt_requirement": "superseded by direct user instruction in current chat",
+    "review_findings": "No scientific finding converted to PASS; native meanings retained and limitations reported.",
+    "recorded_at": "2026-11-21T19:45:20.759321+00:00"
+  },
+  "sources": {
+    "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg": {
+      "relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+      "historical_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+      "historical_match": true,
+      "bytes": 575012864,
+      "mtime_ns": 1783387010000000000,
+      "seconds": 0.22157175000029383
+    },
+    "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg": {
+      "relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+      "historical_sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+      "historical_match": true,
+      "bytes": 256565248,
+      "mtime_ns": 1783387039000000000,
+      "seconds": 0.10988079100025061
+    },
+    "files/scratch/fire_vase_run_full/tables/fire_traits.parquet": {
+      "relative_path": "files/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+      "sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+      "historical_sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+      "historical_match": true,
+      "bytes": 23582087,
+      "mtime_ns": 1784689002023822044,
+      "seconds": 0.014752332999705686
+    },
+    "files/scratch/fire_vase_run_full/tables/vase_slices.parquet": {
+      "relative_path": "files/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+      "sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+      "historical_sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+      "historical_match": true,
+      "bytes": 38403514,
+      "mtime_ns": 1784761945489542811,
+      "seconds": 0.030070332999457605
+    }
+  },
+  "binding_version": "native-profiling-v1",
+  "native_event_key": "integer id preserved; decimal-string crosswalk follows upstream documented builder",
+  "native_observation_date": "native date field retained; only exact calendar dates or midnight bins supported",
+  "native_daily_value": "dy_ar_km2 retained unchanged; no calibration or missing-value imputation",
+  "cache_fields": {
+    "fire_id": "documented decimal string of native id",
+    "timestamp": "native date comparison only, not operational availability",
+    "ring_area_km2": "exact numeric hashes match native daily field on every overlap",
+    "cumulative_area_km2": "finite/nonnegative count only; no scientific interchangeability with native catalog totals"
+  },
+  "native_order": "read-only SQLite ORDER BY id,date,fid, temp_store MEMORY with256MiB SQLite heap cap",
+  "cache_order": "streamed grouped fire IDs, within-fire date sort; reappearing IDs fail on unique fire metadata key",
+  "source_refs": "native fid or cache row offset; full-container checksum in census provenance; per-fire/run evidence hashes",
+  "duplicates": "all copies of duplicate native dates excluded from supported runs; duplicates remain counted",
+  "missingness": "no gap filling, interpolation or zero substitution",
+  "source_value_storage": "daily values only in bounded memory; derived persistent products contain cohort metadata, source references and hashes",
+  "quality": "unknown native measurement QA and uncertainty",
+  "availability": "unknown, retrospective claims only",
+  "external_publication": false,
+  "model_training": false
+}

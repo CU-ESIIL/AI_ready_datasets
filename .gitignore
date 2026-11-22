@@ -77,3 +77,10 @@ __pycache__/
 
 # Data-management report render intermediates
 /reports/data_management/build/
+
+# Internal Fire VASE population indexes: source-linked metadata, never public catalog
+/reports/embedding_utility/fire_vase/milestone-7-3-execution/*.sqlite
+/reports/embedding_utility/fire_vase/milestone-7-3-execution/*.parquet
+
+# Internal real learned representations and checkpoints, not a public deposit
+/reports/embedding_utility/fire_vase/milestone-8/private/

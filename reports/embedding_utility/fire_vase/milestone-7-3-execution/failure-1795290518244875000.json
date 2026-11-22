@@ -1,0 +1,10 @@
+{
+  "error": "ValueError",
+  "message": "Table schema does not match schema used to create file: \ntable:\nsource: string\nid: string\nobservations: int64\nvalid_area_rows: int64\nvalid_supported_rows: int64\nmissing_area: int64\ninvalid_area: int64\nmissing_date: int64\nduplicate_rows: int64\nduplicate_extra: int64\nobserved_zero: int64\nexact_day_intervals: int64\ngap_intervals: int64\nunobserved_days: int64\nmax_run: int64\nstrict: int64\nspan: int64\nobserved_sum: double\nrun_count: int64\nclimate_available: null\ncumulative_rows: null\nevidence_hash: string vs. \nfile:\nsource: string\nid: string\nobservations: int64\nvalid_area_rows: int64\nvalid_supported_rows: int64\nmissing_area: int64\ninvalid_area: int64\nmissing_date: int64\nduplicate_rows: int64\nduplicate_extra: int64\nobserved_zero: int64\nexact_day_intervals: int64\ngap_intervals: int64\nunobserved_days: int64\nmax_run: int64\nstrict: int64\nspan: int64\nobserved_sum: double\nrun_count: int64\nclimate_available: int64\ncumulative_rows: int64\nevidence_hash: string",
+  "completed_stages": [
+    "cache",
+    "catalog",
+    "native"
+  ],
+  "complete": false
+}

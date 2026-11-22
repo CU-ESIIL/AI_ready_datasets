@@ -1,0 +1,55 @@
+{"relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg", "sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62", "historical_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62", "historical_match": true, "bytes": 575012864, "mtime_ns": 1783387010000000000, "seconds": 0.22157175000029383}
+TABLES [('fired_conus-ak_daily_nov2001-march2021',)]
+SCHEMA fired_conus-ak_daily_nov2001-march2021 [(0, 'fid', 'INTEGER', 1, None, 1), (1, 'geom', 'MULTIPOLYGON', 0, None, 0), (2, 'did', 'TEXT', 0, None, 0), (3, 'id', 'INTEGER', 0, None, 0), (4, 'date', 'TEXT', 0, None, 0), (5, 'ig_date', 'TEXT', 0, None, 0), (6, 'ig_day', 'INTEGER', 0, None, 0), (7, 'ig_month', 'INTEGER', 0, None, 0), (8, 'ig_year', 'INTEGER', 0, None, 0), (9, 'last_date', 'TEXT', 0, None, 0), (10, 'event_day', 'INTEGER', 0, None, 0), (11, 'event_dur', 'INTEGER', 0, None, 0), (12, 'pixels', 'INTEGER', 0, None, 0), (13, 'tot_pix', 'INTEGER', 0, None, 0), (14, 'dy_ar_km2', 'REAL', 0, None, 0), (15, 'tot_ar_km2', 'REAL', 0, None, 0), (16, 'fsr_px_dy', 'REAL', 0, None, 0), (17, 'fsr_km2_dy', 'REAL', 0, None, 0), (18, 'mx_grw_px', 'INTEGER', 0, None, 0), (19, 'mn_grw_px', 'INTEGER', 0, None, 0), (20, 'mu_grw_px', 'REAL', 0, None, 0), (21, 'mx_grw_km2', 'REAL', 0, None, 0), (22, 'mn_grw_km2', 'REAL', 0, None, 0), (23, 'mu_grw_km2', 'REAL', 0, None, 0), (24, 'mx_grw_dte', 'TEXT', 0, None, 0), (25, 'lc_code', 'REAL', 0, None, 0), (26, 'lc_mode', 'REAL', 0, None, 0), (27, 'lc_name', 'TEXT', 0, None, 0), (28, 'lc_desc', 'TEXT', 0, None, 0), (29, 'lc_type', 'TEXT', 0, None, 0), (30, 'eco_mode', 'TEXT', 0, None, 0), (31, 'eco_type', 'TEXT', 0, None, 0), (32, 'eco_name', 'TEXT', 0, None, 0), (33, 'ig_utm_x', 'REAL', 0, None, 0), (34, 'ig_utm_y', 'REAL', 0, None, 0)]
+{"relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg", "sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d", "historical_sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d", "historical_match": true, "bytes": 256565248, "mtime_ns": 1783387039000000000, "seconds": 0.10988079100025061}
+TABLES [('fired_conus-ak_events_nov2001-march2021',)]
+SCHEMA fired_conus-ak_events_nov2001-march2021 [(0, 'fid', 'INTEGER', 1, None, 1), (1, 'geom', 'MULTIPOLYGON', 0, None, 0), (2, 'id', 'INTEGER', 0, None, 0), (3, 'ig_date', 'TEXT', 0, None, 0), (4, 'ig_day', 'INTEGER', 0, None, 0), (5, 'ig_month', 'INTEGER', 0, None, 0), (6, 'ig_year', 'INTEGER', 0, None, 0), (7, 'last_date', 'TEXT', 0, None, 0), (8, 'event_dur', 'INTEGER', 0, None, 0), (9, 'tot_pix', 'INTEGER', 0, None, 0), (10, 'tot_ar_km2', 'REAL', 0, None, 0), (11, 'fsr_px_dy', 'REAL', 0, None, 0), (12, 'fsr_km2_dy', 'REAL', 0, None, 0), (13, 'mx_grw_px', 'INTEGER', 0, None, 0), (14, 'mn_grw_px', 'INTEGER', 0, None, 0), (15, 'mu_grw_px', 'REAL', 0, None, 0), (16, 'mx_grw_km2', 'REAL', 0, None, 0), (17, 'mn_grw_km2', 'REAL', 0, None, 0), (18, 'mu_grw_km2', 'REAL', 0, None, 0), (19, 'mx_grw_dte', 'TEXT', 0, None, 0), (20, 'lc_code', 'REAL', 0, None, 0), (21, 'lc_mode', 'REAL', 0, None, 0), (22, 'lc_name', 'TEXT', 0, None, 0), (23, 'lc_desc', 'TEXT', 0, None, 0), (24, 'lc_type', 'TEXT', 0, None, 0), (25, 'eco_mode', 'TEXT', 0, None, 0), (26, 'eco_type', 'TEXT', 0, None, 0), (27, 'eco_name', 'TEXT', 0, None, 0), (28, 'ig_utm_x', 'REAL', 0, None, 0), (29, 'ig_utm_y', 'REAL', 0, None, 0), (30, 'tot_perim', 'REAL', 0, None, 0)]
+{"relative_path": "files/scratch/fire_vase_run_full/tables/fire_traits.parquet", "sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23", "historical_sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23", "historical_match": true, "bytes": 23582087, "mtime_ns": 1784689002023822044, "seconds": 0.014752332999705686}
+SCHEMA fire_traits.parquet fire_id: string
+trait_version: string
+processing_version: string
+year: int64
+region: string
+total_area_km2: double
+duration_hours: double
+peak_growth_km2_per_hour: double
+geometry_cache_key: string
+climate_cache_key: string
+event_cache_key: string
+-- schema metadata --
+pandas: '{"index_columns": [], "column_indexes": [], "columns": [{"name":' + 1493
+{"relative_path": "files/scratch/fire_vase_run_full/tables/vase_slices.parquet", "sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066", "historical_sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066", "historical_match": true, "bytes": 38403514, "mtime_ns": 1784761945489542811, "seconds": 0.030070332999457605}
+SCHEMA vase_slices.parquet fire_id: string
+slice_index: int64
+timestamp: string
+year: int64
+vase_version: string
+vase_cache_key: string
+geometry_cache_key: string
+climate_cache_key: string
+climate_source: string
+climate_temporal_resolution: string
+climate_extraction_method: string
+ring_area_km2: double
+cumulative_area_km2: double
+normalized_vase_width: double
+maximum_temperature_c: double
+minimum_temperature_c: double
+vpd_kpa: double
+wind_speed_m_s: double
+precipitation_mm: double
+maximum_relative_humidity_pct: double
+minimum_relative_humidity_pct: double
+specific_humidity_kg_kg: double
+fuel_moisture_100hr_pct: double
+fuel_moisture_1000hr_pct: double
+energy_release_component: double
+burning_index: double
+reference_evapotranspiration_mm: double
+potential_evapotranspiration_mm: double
+solar_radiation_w_m2: double
+wind_present: bool
+climate_available: bool
+climate_failure_reason: string
+-- schema metadata --
+pandas: '{"index_columns": [], "column_indexes": [], "columns": [{"name":' + 4471

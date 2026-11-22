@@ -263,3 +263,87 @@ uniform metadata/error boundaries, independent grading and usage availability ar
 tested. The saved runtime policy is valid, but reachable authorized real inference
 was not established. Real-model smoke, genuinely held-out inputs and H1–H4 model
 evidence remain **PLANNED**. No real wildfire data or native model execution tools.
+
+## Fire VASE expanded pilot — 21 November 2026
+
+**WORKING:** 120 evaluation questions / 24 templates on 20 new synthetic histories,
+30 development questions on eight separate histories, 32 training-only PCA histories,
+independent arithmetic/geometry references, optimized direct allocation and lookup,
+query caches, private evaluation-cost frontiers and public development calibration.
+**MOCKED:** fixed/adaptive M0/M1/M2 proposal experiments and explicit cost router.
+**PLANNED:** verified real-model pilot, metadata efficacy and expert adjudication of
+draft scientific evidence-claim rubrics. No real data, neural training or ecological
+analog gold. See the [expanded pilot](analysis/fire-vase-pilot.md).
+
+## Fire VASE learned representations — 21 November 2026
+
+**WORKING synthetic controls:** train-only prefix preprocessing/PCA, a 177-parameter
+causal temporal network, similar-size tabular MLP, linear probes, held-out next-day
+observations, calibration by separate fires, perturbation and materialization/cache
+comparisons. **PENDING:** actual real-agent smoke/pilot and approved real-fire learning.
+Real files physically exist in documented legacy roots, but only metadata was read;
+rights/support/availability review is incomplete. The learned probe does not beat
+raw-prefix ridge in the frozen synthetic run. See the
+[learning guide](analysis/fire-vase-learning.md) and its linked evidence table.
+
+## Fire VASE task transfer — 21 November 2026
+
+**WORKING synthetic only:** frozen A-only transfer to three new predictive tasks,
+joint A–D/task-specific encoders, strong conventional/capacity controls, future-pattern
+retrieval excluding same-fire candidates, linear/nonlinear input-property probes,
+paired fire summaries and heterogeneous task reuse. Frozen A loses to raw heads on
+B/C/D; joint training improves C but worsens A. Learned distances improve future
+retrieval over raw distances, while supervised raw retrieval heads remain stronger.
+No real-fire, ecological-analog, real-agent or full-lifecycle advantage claim. See
+[task transfer](analysis/fire-vase-transfer.md).
+
+## Fire VASE real-source contract — 21 November 2026
+
+**WORKING:** packaged local-lake metadata/schema/CRS inventory, digest-bound proposed
+recipes/review packet, and pure precondition/support/availability validators.
+**PENDING HUMAN REVIEW:** observation-row reads, validated real adapter, prospective
+cohort, real baselines/transfer/retrieval/costs. The source files physically exist
+inside Fire VASE; local possession does not approve meanings, rights or operational
+availability. No source rows read, copied or trained on. See
+[real-source review](analysis/fire-vase-real-data.md).
+
+## Fire VASE Milestone 7 — PROTOTYPE / UNDER ANALYSIS
+
+Full-lake metadata indexed: 646 files / 40,318,194,810 bytes. Real rows and model
+training: zero. Offline bounded streams, dimension-grid kernels and gates tested.
+The full scientific runner is incomplete; see [precise status](analysis/fire-vase-full-lake.md).
+
+### Milestone 7.2 — partial historical assessment
+
+Investigator intent is recorded. Existing aggregate reports have been reanalyzed
+with provenance and temporal/region selection figures; these are not freshly
+profiled observations. The real-profile preflight still rejects the unapproved
+review. No new source observations or model training; source/binding/receipt
+evidence remains unresolved. Internal figures have no publication clearance.
+
+## Fire VASE M7.3 execution — WORKING real census
+
+Direct investigator authorization superseded the separate-receipt requirement for
+read-only internal profiling. Relevant sources were freshly hash-verified, native and
+cached records fully streamed, and local-run eligibility/reconciliation measured.
+A full independent replay produced identical cohort artifacts. Model training and
+publication remain unperformed. Source-linked internal indexes are not public catalog
+entries. See [implementation and scope](analysis/fire-vase-population.md).
+
+## Full-population Fire VASE design — current emphasis
+
+Primary analysis includes1,2 and3+ observations; long supported-run prediction is
+secondary. Deterministic short-state preservation, normalized-payload loss, byte
+accounting and indexed fallback checks ran on real native values. No PCA/neural
+model or agent evaluation was performed. Full retrieval/workload and learned
+comparisons remain planned. See [full-population scope](analysis/fire-vase-full-population.md).
+
+## Milestone8 — executed scientific-state utility
+
+**WORKING:** all 278,865 fires; 75 primary neural fits plus 21 controls/updates;
+PCA, exact native and interpretable controls, A/B/C access, full-gallery retrieval,
+blocked refits, lifecycle measurement and six secondary prefix cohorts.
+Native scalar caches dominate the measured primary workload. Learned states are
+approximate; a modest secondary predictive gain is similar to a direct neural
+control. Scope: fixed observed-property state, not native sequence/geometry or
+operational forecasting. [Measured findings](analysis/fire-vase-utility.md).

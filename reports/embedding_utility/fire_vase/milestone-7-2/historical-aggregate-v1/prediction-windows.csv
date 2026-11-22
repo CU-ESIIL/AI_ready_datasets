@@ -1,0 +1,13 @@
+depth,horizon,eligible_historical_whole_consecutive_fires,dependent_windows,supports_acceleration_and_variability,scope
+3,1,5123,14609,False,historical whole-consecutive-history subset only; gappy-history local windows unknown
+3,3,1803,6599,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+3,7,438,2205,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+7,1,830,3625,False,historical whole-consecutive-history subset only; gappy-history local windows unknown
+7,3,438,2205,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+7,7,148,1015,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+14,1,121,867,False,historical whole-consecutive-history subset only; gappy-history local windows unknown
+14,3,93,646,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+14,7,52,342,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+30,1,9,100,False,historical whole-consecutive-history subset only; gappy-history local windows unknown
+30,3,8,83,True,historical whole-consecutive-history subset only; gappy-history local windows unknown
+30,7,6,56,True,historical whole-consecutive-history subset only; gappy-history local windows unknown

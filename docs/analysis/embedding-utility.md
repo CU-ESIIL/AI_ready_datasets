@@ -81,3 +81,13 @@ The [controlled Fire VASE agent harness](fire-vase-agents.md) now implements fix
 and adaptive access, M0/M1/M2 projections, budgeted proposals, evidence-backed
 answers and strong deterministic baselines. Complete mock runs validate the
 experimental wiring; no real LLM evidence for the utility hypotheses is claimed.
+
+The [Milestone 4 learning study](fire-vase-learning.md) now independently evaluates
+a minimal prefix-only temporal embedding on synthetic future observations and
+separates statistical learning from materialization/caching. Real-agent and real-fire
+claims remain pending; the frozen learned probe does not outperform raw-prefix ridge.
+
+The [cross-task transfer extension](fire-vase-transfer.md) tests whether a frozen
+next-day embedding transfers beyond its training objective, alongside joint/specific
+models, supervised retrieval controls and heterogeneous reuse costs. It reports
+negative transfer and strong raw-data alternatives without assuming an embedding win.

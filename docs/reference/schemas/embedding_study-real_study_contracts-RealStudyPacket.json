@@ -1,0 +1,311 @@
+{
+  "$defs": {
+    "BoundedReadProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "batch_rows": {
+          "default": 128,
+          "maximum": 128,
+          "minimum": 1,
+          "title": "Batch Rows",
+          "type": "integer"
+        },
+        "full_source_scan": {
+          "const": false,
+          "default": false,
+          "title": "Full Source Scan",
+          "type": "boolean"
+        },
+        "max_fires": {
+          "default": 16,
+          "maximum": 16,
+          "minimum": 1,
+          "title": "Max Fires",
+          "type": "integer"
+        },
+        "max_total_decoded_rows": {
+          "default": 512,
+          "maximum": 512,
+          "minimum": 1,
+          "title": "Max Total Decoded Rows",
+          "type": "integer"
+        },
+        "persist_raw_or_harmonized": {
+          "const": false,
+          "default": false,
+          "title": "Persist Raw Or Harmonized",
+          "type": "boolean"
+        },
+        "purpose": {
+          "const": "native_schema_value_alignment_audit",
+          "default": "native_schema_value_alignment_audit",
+          "title": "Purpose",
+          "type": "string"
+        },
+        "read_geometries": {
+          "const": false,
+          "default": false,
+          "title": "Read Geometries",
+          "type": "boolean"
+        },
+        "redistribute_observations": {
+          "const": false,
+          "default": false,
+          "title": "Redistribute Observations",
+          "type": "boolean"
+        },
+        "train_models": {
+          "const": false,
+          "default": false,
+          "title": "Train Models",
+          "type": "boolean"
+        }
+      },
+      "title": "BoundedReadProposal",
+      "type": "object"
+    },
+    "RealSourceIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "checksum_evidence": {
+          "title": "Checksum Evidence",
+          "type": "string"
+        },
+        "checksum_scope": {
+          "const": "historical_full_container_not_reverified",
+          "default": "historical_full_container_not_reverified",
+          "title": "Checksum Scope",
+          "type": "string"
+        },
+        "expected_size_bytes": {
+          "exclusiveMinimum": 0,
+          "title": "Expected Size Bytes",
+          "type": "integer"
+        },
+        "file_format": {
+          "enum": [
+            "gpkg",
+            "parquet"
+          ],
+          "title": "File Format",
+          "type": "string"
+        },
+        "local_path": {
+          "title": "Local Path",
+          "type": "string"
+        },
+        "measurement_semantics": {
+          "title": "Measurement Semantics",
+          "type": "string"
+        },
+        "native_fields": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Native Fields",
+          "type": "array"
+        },
+        "package_relative_path": {
+          "title": "Package Relative Path",
+          "type": "string"
+        },
+        "package_release": {
+          "minLength": 1,
+          "title": "Package Release",
+          "type": "string"
+        },
+        "reported_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Reported Sha256",
+          "type": "string"
+        },
+        "rights_evidence": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Rights Evidence",
+          "type": "array"
+        },
+        "rights_status": {
+          "default": "NEEDS_EVIDENCE",
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NEEDS_EVIDENCE",
+            "NOT_APPLICABLE"
+          ],
+          "title": "Rights Status",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "package_release",
+        "package_relative_path",
+        "local_path",
+        "file_format",
+        "expected_size_bytes",
+        "reported_sha256",
+        "checksum_evidence",
+        "measurement_semantics",
+        "native_fields"
+      ],
+      "title": "RealSourceIdentity",
+      "type": "object"
+    },
+    "RecipeProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "implementation_evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Implementation Evidence",
+          "type": "array"
+        },
+        "intended_meaning": {
+          "title": "Intended Meaning",
+          "type": "string"
+        },
+        "operation": {
+          "enum": [
+            "native_increment_identity",
+            "calendar_support_validation",
+            "observed_prefix_only",
+            "independent_future_targets",
+            "fire_grouped_holdouts"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "preconditions": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Preconditions",
+          "type": "array"
+        },
+        "preserved_evidence": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Preserved Evidence",
+          "type": "array"
+        },
+        "source_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Fields",
+          "type": "array"
+        },
+        "status": {
+          "const": "PROPOSED_FOR_REVIEW",
+          "default": "PROPOSED_FOR_REVIEW",
+          "title": "Status",
+          "type": "string"
+        },
+        "version": {
+          "const": "m6-review-v1",
+          "default": "m6-review-v1",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "operation",
+        "source_fields",
+        "intended_meaning",
+        "preconditions",
+        "preserved_evidence",
+        "implementation_evidence"
+      ],
+      "title": "RecipeProposal",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "exclusions": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Exclusions",
+      "type": "array"
+    },
+    "proposed_claim": {
+      "enum": [
+        "retrospective_reconstructed",
+        "prospective_available_at_issue"
+      ],
+      "title": "Proposed Claim",
+      "type": "string"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "type": "string"
+    },
+    "recipes": {
+      "items": {
+        "$ref": "#/$defs/RecipeProposal"
+      },
+      "minItems": 1,
+      "title": "Recipes",
+      "type": "array"
+    },
+    "sample": {
+      "$ref": "#/$defs/BoundedReadProposal"
+    },
+    "scientific_requirements": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Scientific Requirements",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/RealSourceIdentity"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved",
+      "type": "array"
+    },
+    "version": {
+      "const": "fire-real-review-packet-v1",
+      "default": "fire-real-review-packet-v1",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "purpose",
+    "proposed_claim",
+    "sources",
+    "recipes",
+    "sample",
+    "scientific_requirements",
+    "exclusions",
+    "unresolved"
+  ],
+  "title": "RealStudyPacket",
+  "type": "object"
+}

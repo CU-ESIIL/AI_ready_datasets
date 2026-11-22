@@ -1,0 +1,17 @@
+{
+  "assess_claim": "Evidence assessment for a supplied general scientific claim; unsupported claims remain unsupported, no ecological gold invented.",
+  "cumulative": "Available dated cumulative observation; absolute km2. No inferred missing values.",
+  "daily_growth": "One calendar-day evidenced difference; no result for unknown baseline or gap.",
+  "front_fraction": "Mass allocated to first half of completed development, exact normalized linear-time integration.",
+  "growth_compare": "First fire interval total minus second fire interval total, km2; both endpoints required.",
+  "interval_growth": "Difference of available dated cumulative endpoints, km2; not a daily rate.",
+  "late_fraction": "Mass allocated to last quarter of completed development, exact normalized integration.",
+  "neighbor_stability": "Compare top-one full-profile and backprojected-profile rankings on exactly three candidates; ties broken by offered ID. Needs both full and projected geometry.",
+  "pca_distance": "Exact Euclidean distance in frozen standardized three-PC coordinates; no ecological meaning asserted.",
+  "profile": "Exact mass-conserving 20-bin full profile, not a PCA reconstruction.",
+  "profile_distance": "Exact Euclidean distance in full 20-bin profile units.",
+  "projected_distance": "Euclidean distance between backprojected three-PC profiles in original profile units; exact for this projected target, approximate for full-profile geometry.",
+  "pulse_count": "Pinned padded 20%-prominence detector on original increments, count only; R1 retains this trait.",
+  "reconstruction_error": "L2 distance between original 20-bin profile and its three-PC backprojection. Coordinates alone lack discarded residual.",
+  "source_evidence": "Return retained source version, checksum scope, license, synthetic status and availability/uncertainty evidence. Provenance is not scientific approval."
+}

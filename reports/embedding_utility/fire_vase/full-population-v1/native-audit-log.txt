@@ -1,0 +1,33 @@
+{
+  "status": "REAL_NATIVE_SHORT_HISTORY_INFORMATION_AUDIT_COMPLETE",
+  "all_native_fire_ids": 278865,
+  "primary_populations": [
+    {
+      "stratum": "one_observation",
+      "fires": 161200,
+      "fraction_of_native_ids": 0.5780574830114931,
+      "primary_full_population": true
+    },
+    {
+      "stratum": "two_observations",
+      "fires": 47992,
+      "fraction_of_native_ids": 0.17209760995463755,
+      "primary_full_population": true
+    },
+    {
+      "stratum": "three_or_more",
+      "fires": 69673,
+      "fraction_of_native_ids": 0.24984490703386944,
+      "primary_full_population": true
+    }
+  ],
+  "short_history_share": 0.7501550929661306,
+  "source_fallback": {
+    "checks": 128,
+    "all_exact": true,
+    "median_lookup_ns": 5521.0,
+    "sample": "first64 fires in each short-history stratum; diagnostic warm-source lookup, not representative latency benchmark",
+    "source_values_persisted": false
+  },
+  "seconds": 4.817600584001411
+}

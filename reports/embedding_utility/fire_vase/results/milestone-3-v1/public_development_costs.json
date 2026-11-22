@@ -1,0 +1,257 @@
+{
+  "assess_claim": {
+    "R0": {
+      "cold_ns": 6854.0,
+      "preparation_ns": 0.0,
+      "warm_ns": 6083.5
+    },
+    "R1": {
+      "cold_ns": 6874.5,
+      "preparation_ns": 107812.0,
+      "warm_ns": 6104.0
+    },
+    "R2": {
+      "cold_ns": 6833.5,
+      "preparation_ns": 11166639.5,
+      "warm_ns": 6104.0
+    }
+  },
+  "cumulative": {
+    "R0": {
+      "cold_ns": 7229.0,
+      "preparation_ns": 0.0,
+      "warm_ns": 6583.5
+    },
+    "R1": {
+      "cold_ns": 7187.5,
+      "preparation_ns": 260500.0,
+      "warm_ns": 6500.5
+    },
+    "R2": {
+      "cold_ns": 7104.5,
+      "preparation_ns": 11321077.0,
+      "warm_ns": 6396.0
+    }
+  },
+  "daily_growth": {
+    "R0": {
+      "cold_ns": 7687.5,
+      "preparation_ns": 0.0,
+      "warm_ns": 6395.5
+    },
+    "R1": {
+      "cold_ns": 7104.5,
+      "preparation_ns": 223167.0,
+      "warm_ns": 6416.5
+    },
+    "R2": {
+      "cold_ns": 7062.5,
+      "preparation_ns": 11283994.0,
+      "warm_ns": 6396.0
+    }
+  },
+  "front_fraction": {
+    "R0": {
+      "cold_ns": 12792,
+      "preparation_ns": 0,
+      "warm_ns": 6458
+    },
+    "R1": {
+      "cold_ns": 6875,
+      "preparation_ns": 221084,
+      "warm_ns": 6167
+    },
+    "R2": {
+      "cold_ns": 7000,
+      "preparation_ns": 11281745,
+      "warm_ns": 6250
+    }
+  },
+  "growth_compare": {
+    "R0": {
+      "cold_ns": 8354.0,
+      "preparation_ns": 0.0,
+      "warm_ns": 7104.0
+    },
+    "R1": {
+      "cold_ns": 7875.0,
+      "preparation_ns": 221876.0,
+      "warm_ns": 6896.0
+    },
+    "R2": {
+      "cold_ns": 7708.0,
+      "preparation_ns": 11282745.0,
+      "warm_ns": 7020.5
+    }
+  },
+  "interval_growth": {
+    "R0": {
+      "cold_ns": 7583.5,
+      "preparation_ns": 0.0,
+      "warm_ns": 6562.5
+    },
+    "R1": {
+      "cold_ns": 7271.0,
+      "preparation_ns": 3833.0,
+      "warm_ns": 6583.5
+    },
+    "R2": {
+      "cold_ns": 7291.5,
+      "preparation_ns": 11060744.0,
+      "warm_ns": 6520.5
+    }
+  },
+  "late_fraction": {
+    "R0": {
+      "cold_ns": 13083.0,
+      "preparation_ns": 0.0,
+      "warm_ns": 6521.0
+    },
+    "R1": {
+      "cold_ns": 6875.0,
+      "preparation_ns": 211791.0,
+      "warm_ns": 6229.0
+    },
+    "R2": {
+      "cold_ns": 6979.5,
+      "preparation_ns": 11272535.0,
+      "warm_ns": 6271.0
+    }
+  },
+  "neighbor_stability": {
+    "R0": {
+      "cold_ns": 677125,
+      "preparation_ns": 0,
+      "warm_ns": 9625
+    },
+    "R1": {
+      "cold_ns": 13750,
+      "preparation_ns": 435459,
+      "warm_ns": 8708
+    },
+    "R2": {
+      "cold_ns": 8917,
+      "preparation_ns": 11500494,
+      "warm_ns": 7500
+    }
+  },
+  "pca_distance": {
+    "R0": {
+      "cold_ns": 227708.5,
+      "preparation_ns": 0.0,
+      "warm_ns": 8604.0
+    },
+    "R1": {
+      "cold_ns": 13854.5,
+      "preparation_ns": 220125.0,
+      "warm_ns": 7333.5
+    },
+    "R2": {
+      "cold_ns": 8250.0,
+      "preparation_ns": 11281118.5,
+      "warm_ns": 6792.0
+    }
+  },
+  "profile": {
+    "R0": {
+      "cold_ns": 8250,
+      "preparation_ns": 0,
+      "warm_ns": 6292
+    },
+    "R1": {
+      "cold_ns": 7375,
+      "preparation_ns": 1459,
+      "warm_ns": 6208
+    },
+    "R2": {
+      "cold_ns": 6959,
+      "preparation_ns": 11058286,
+      "warm_ns": 6083
+    }
+  },
+  "profile_distance": {
+    "R0": {
+      "cold_ns": 8167,
+      "preparation_ns": 0,
+      "warm_ns": 6709
+    },
+    "R1": {
+      "cold_ns": 7667,
+      "preparation_ns": 261625,
+      "warm_ns": 6583
+    },
+    "R2": {
+      "cold_ns": 7625,
+      "preparation_ns": 11322327,
+      "warm_ns": 6583
+    }
+  },
+  "projected_distance": {
+    "R0": {
+      "cold_ns": 8562.5,
+      "preparation_ns": 0.0,
+      "warm_ns": 6729.5
+    },
+    "R1": {
+      "cold_ns": 8145.5,
+      "preparation_ns": 133125.0,
+      "warm_ns": 6916.5
+    },
+    "R2": {
+      "cold_ns": 7771.0,
+      "preparation_ns": 11192035.5,
+      "warm_ns": 6646.0
+    }
+  },
+  "pulse_count": {
+    "R0": {
+      "cold_ns": 96125,
+      "preparation_ns": 0,
+      "warm_ns": 7625
+    },
+    "R1": {
+      "cold_ns": 7416,
+      "preparation_ns": 260500,
+      "warm_ns": 6542
+    },
+    "R2": {
+      "cold_ns": 7417,
+      "preparation_ns": 11321077,
+      "warm_ns": 6625
+    }
+  },
+  "reconstruction_error": {
+    "R0": {
+      "cold_ns": 8166.5,
+      "preparation_ns": 0.0,
+      "warm_ns": 6437.5
+    },
+    "R1": {
+      "cold_ns": 7291.5,
+      "preparation_ns": 1125.5,
+      "warm_ns": 6270.5
+    },
+    "R2": {
+      "cold_ns": 7417.0,
+      "preparation_ns": 11057973.5,
+      "warm_ns": 6291.5
+    }
+  },
+  "source_evidence": {
+    "R0": {
+      "cold_ns": 7709,
+      "preparation_ns": 0,
+      "warm_ns": 6375
+    },
+    "R1": {
+      "cold_ns": 7083,
+      "preparation_ns": 792,
+      "warm_ns": 6416
+    },
+    "R2": {
+      "cold_ns": 7042,
+      "preparation_ns": 11057661,
+      "warm_ns": 6333
+    }
+  }
+}

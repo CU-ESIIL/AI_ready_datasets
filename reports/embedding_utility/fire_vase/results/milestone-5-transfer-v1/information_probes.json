@@ -1,0 +1,619 @@
+{
+  "completeness": "constant true among validated consecutive prefixes; invalid schedules rejected by source contract, not claimed learned competence",
+  "exact_information": "Raw tensor is mathematically invertible for supplied growth/masks within floating precision. Summary/PCA/learned probes are not exact-invertibility proofs.",
+  "pulse_definition": "strict interior local maxima count; deliberately distinct from upstream padded 20%-prominence pulses",
+  "views": {
+    "PCA4": {
+      "linear": [
+        {
+          "mse": 0.014050232041528023,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9755627041098547
+        },
+        {
+          "mse": 0.006818016647312919,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.15307485417672817
+        },
+        {
+          "mse": 0.09841995137648882,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.6590529416201967
+        },
+        {
+          "mse": 1.1240443725020048,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.09767697027172284
+        },
+        {
+          "mse": 0.07908987475247468,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.5633298377128115
+        },
+        {
+          "mse": 0.0721050486380021,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.5750765455772959
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.010419948493223958,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9818767858255745
+        },
+        {
+          "mse": 0.002094083351748857,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.7398756940928031
+        },
+        {
+          "mse": 0.062280354545956686,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.7842479763471237
+        },
+        {
+          "mse": 1.0100549522225197,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.18918161330873196
+        },
+        {
+          "mse": 0.078796257363064,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.5649509548720633
+        },
+        {
+          "mse": 0.04763339062969592,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.7192908780375066
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "frozen_A": {
+      "linear": [
+        {
+          "mse": 0.046908848466971756,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.918412350310998
+        },
+        {
+          "mse": 0.0053854277553837225,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.3310291800407039
+        },
+        {
+          "mse": 0.028232440692805248,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9021969888171102
+        },
+        {
+          "mse": 0.5016119186174786,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.5973326345229045
+        },
+        {
+          "mse": 0.07469495026608089,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.587595047320486
+        },
+        {
+          "mse": 0.07676078130481553,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.5476397704135616
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.027127574700863365,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.952817535839435
+        },
+        {
+          "mse": 0.003961391361012171,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.5079211257997531
+        },
+        {
+          "mse": 0.02101935488515105,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9271846092494069
+        },
+        {
+          "mse": 0.38444420964052384,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.6913886386600706
+        },
+        {
+          "mse": 0.0666313301385135,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.632115819679111
+        },
+        {
+          "mse": 0.05262126500771981,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.6898967530633037
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "interpretable": {
+      "linear": [
+        {
+          "mse": 0.00023802302856328538,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9995860111661873
+        },
+        {
+          "mse": 0.00083638016994242,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.8961059448760148
+        },
+        {
+          "mse": 3.124611553048183e-05,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9998917569961485
+        },
+        {
+          "mse": 0.16673261220737548,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.8661559281093232
+        },
+        {
+          "mse": 0.06324173342229572,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.6508304244599541
+        },
+        {
+          "mse": 0.005909166044748511,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.9651765958705903
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.010020280126369206,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9825719212589178
+        },
+        {
+          "mse": 0.0006164119783169767,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.9234301070782709
+        },
+        {
+          "mse": 0.009063189069429052,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9686032393885129
+        },
+        {
+          "mse": 0.06072302821179517,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.9512547830577347
+        },
+        {
+          "mse": 0.061367027654951986,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.6611810296951849
+        },
+        {
+          "mse": 0.006114919936318361,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.9639640642099336
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "raw": {
+      "linear": [
+        {
+          "mse": 0.00017415590658151456,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.999697094011859
+        },
+        {
+          "mse": 0.00040998008269813344,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.9490728082248671
+        },
+        {
+          "mse": 7.240957895710009e-06,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9999749158248925
+        },
+        {
+          "mse": 0.15206521870432957,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.8779301313949339
+        },
+        {
+          "mse": 0.06302516927194432,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.6520261161079115
+        },
+        {
+          "mse": 0.04203435709198619,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.7522866351614853
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.009957378913752835,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9826813241171775
+        },
+        {
+          "mse": 0.0007443369012232375,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.9075394398078243
+        },
+        {
+          "mse": 0.015825622035492475,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9451767735650323
+        },
+        {
+          "mse": 0.3667611693402504,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.7055836427799116
+        },
+        {
+          "mse": 0.06320361222413005,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.6510408988075451
+        },
+        {
+          "mse": 0.037576476480921876,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.7785574451038989
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "shared_AD": {
+      "linear": [
+        {
+          "mse": 0.08536101608130237,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.8515332414940402
+        },
+        {
+          "mse": 0.0044065388167460265,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.4526254887600816
+        },
+        {
+          "mse": 0.011336531909103269,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9607279098132041
+        },
+        {
+          "mse": 0.4145838817940112,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.6671941131076524
+        },
+        {
+          "mse": 0.08604362395278348,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.5249368727308024
+        },
+        {
+          "mse": 0.059359898169221666,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.6501852025524892
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.05297592643596096,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9078599993549032
+        },
+        {
+          "mse": 0.0028403484389675554,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.647175617148197
+        },
+        {
+          "mse": 0.012831303316050102,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9555497126385354
+        },
+        {
+          "mse": 0.33470111337495345,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.7313197503033833
+        },
+        {
+          "mse": 0.07877182560576226,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.5650858472266067
+        },
+        {
+          "mse": 0.032383699435215074,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.809159085377195
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "specific_B": {
+      "linear": [
+        {
+          "mse": 0.043436330042401876,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9244520342090561
+        },
+        {
+          "mse": 0.007157077313724308,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.1109571799031438
+        },
+        {
+          "mse": 0.04579132434901246,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.8413693858027971
+        },
+        {
+          "mse": 0.424695998009383,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.6590766441147613
+        },
+        {
+          "mse": 0.07909147671981384,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.5633209929480403
+        },
+        {
+          "mse": 0.06998081803387124,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.5875948840757459
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.03100489195163828,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.9460737931996623
+        },
+        {
+          "mse": 0.00463690227347682,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.4240100402687711
+        },
+        {
+          "mse": 0.0287028267437716,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9005674742914793
+        },
+        {
+          "mse": 0.20114581777149013,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.8385308372615697
+        },
+        {
+          "mse": 0.06465387065318932,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.6430337476322822
+        },
+        {
+          "mse": 0.05560280123692607,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.672326212609732
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "specific_C": {
+      "linear": [
+        {
+          "mse": 0.18299150091939373,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.6817264341164078
+        },
+        {
+          "mse": 0.007298514460671618,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.09338804176523863
+        },
+        {
+          "mse": 0.20055216316904384,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.30524584570637847
+        },
+        {
+          "mse": 0.7405632371717616,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.40551522678521945
+        },
+        {
+          "mse": 0.0775010969042926,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.5721017808088809
+        },
+        {
+          "mse": 0.110281521132151,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.35009814425440366
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.09638761090199092,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.8323548991365992
+        },
+        {
+          "mse": 0.005449194176326324,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.3231081983023085
+        },
+        {
+          "mse": 0.14590030823308892,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.49457116963520975
+        },
+        {
+          "mse": 0.5562121956399158,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.5535024365412844
+        },
+        {
+          "mse": 0.06573353874863902,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.6370726958044493
+        },
+        {
+          "mse": 0.07549943026085756,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.555073059107799
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "specific_D": {
+      "linear": [
+        {
+          "mse": 0.18849487652359753,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.672154519742536
+        },
+        {
+          "mse": 0.004517522581409471,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.43883923009662584
+        },
+        {
+          "mse": 0.12075956309919439,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.5816639082415138
+        },
+        {
+          "mse": 1.0490117203331442,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.15790919213931065
+        },
+        {
+          "mse": 0.0943562405957658,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.4790413435005111
+        },
+        {
+          "mse": 0.08499792631676978,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.4990973149381813
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.10230678243359041,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.8220597989763537
+        },
+        {
+          "mse": 0.0038693860544965594,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.5193499051160899
+        },
+        {
+          "mse": 0.07289521503159165,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.7474759051656925
+        },
+        {
+          "mse": 0.9067012964980858,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.27214843032075187
+        },
+        {
+          "mse": 0.09009308707153359,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.502579020695068
+        },
+        {
+          "mse": 0.05650347093252499,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.667018461133561
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    },
+    "specific_E": {
+      "linear": [
+        {
+          "mse": 0.20959473248550436,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.6354559497931895
+        },
+        {
+          "mse": 0.00619171825584108,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.23087282446112423
+        },
+        {
+          "mse": 0.02891681714025826,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.8998261673188254
+        },
+        {
+          "mse": 0.6518396830755545,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.47673777644502613
+        },
+        {
+          "mse": 0.14527391453512434,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.19791523207383777
+        },
+        {
+          "mse": 0.0689787383100599,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.5935002566660426
+        }
+      ],
+      "nonlinear_rbf": [
+        {
+          "mse": 0.110528583761628,
+          "property": "absolute_scale_log_total",
+          "r2_descriptive": 0.8077597795026972
+        },
+        {
+          "mse": 0.005336628679983749,
+          "property": "order_mass_centroid",
+          "r2_descriptive": 0.33709093761436004
+        },
+        {
+          "mse": 0.02702523726467414,
+          "property": "recent_log_growth",
+          "r2_descriptive": 0.9063789910629032
+        },
+        {
+          "mse": 0.5604251485882998,
+          "property": "recent_acceleration_asinh",
+          "r2_descriptive": 0.5501205020185156
+        },
+        {
+          "mse": 0.09800859494101749,
+          "property": "strict_interior_local_maxima_log_count",
+          "r2_descriptive": 0.4588760041361133
+        },
+        {
+          "mse": 0.05726580013202336,
+          "property": "observed_variability_log_std",
+          "r2_descriptive": 0.6625259663224914
+        }
+      ],
+      "nonlinear_training_coefficients_per_property": 512,
+      "scope": "Past-input property recoverability only; larger nonlinear probe capacity; failed linear recovery is not proof of information absence; prediction is not exactness"
+    }
+  }
+}

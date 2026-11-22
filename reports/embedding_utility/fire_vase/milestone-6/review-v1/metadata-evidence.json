@@ -1,0 +1,514 @@
+{
+  "copies_or_downloads": 0,
+  "inspections": [
+    {
+      "current_full_content_checksum": "NOT_REVERIFIED",
+      "current_size_bytes": 575012864,
+      "inventory_size_bytes": 575012864,
+      "observation_rows_read": 0,
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "reported_sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+      "scope": "GeoPackage catalog/schema/CRS metadata only",
+      "size_matches_inventory": true,
+      "source_id": "fired_daily",
+      "spatial_reference_metadata": [
+        {
+          "definition": "undefined",
+          "native_code": -1,
+          "organization": "NONE",
+          "srs_id": -1
+        },
+        {
+          "definition": "undefined",
+          "native_code": 0,
+          "organization": "NONE",
+          "srs_id": 0
+        },
+        {
+          "definition": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+          "native_code": 4326,
+          "organization": "EPSG",
+          "srs_id": 4326
+        },
+        {
+          "definition": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+          "native_code": 100000,
+          "organization": "NONE",
+          "srs_id": 100000
+        }
+      ],
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "fid",
+              "type": "INTEGER"
+            },
+            {
+              "name": "geom",
+              "type": "MULTIPOLYGON"
+            },
+            {
+              "name": "did",
+              "type": "TEXT"
+            },
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "date",
+              "type": "TEXT"
+            },
+            {
+              "name": "ig_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "ig_day",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ig_month",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ig_year",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_day",
+              "type": "INTEGER"
+            },
+            {
+              "name": "event_dur",
+              "type": "INTEGER"
+            },
+            {
+              "name": "pixels",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tot_pix",
+              "type": "INTEGER"
+            },
+            {
+              "name": "dy_ar_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "tot_ar_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "fsr_px_dy",
+              "type": "REAL"
+            },
+            {
+              "name": "fsr_km2_dy",
+              "type": "REAL"
+            },
+            {
+              "name": "mx_grw_px",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mn_grw_px",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mu_grw_px",
+              "type": "REAL"
+            },
+            {
+              "name": "mx_grw_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "mn_grw_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "mu_grw_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "mx_grw_dte",
+              "type": "TEXT"
+            },
+            {
+              "name": "lc_code",
+              "type": "REAL"
+            },
+            {
+              "name": "lc_mode",
+              "type": "REAL"
+            },
+            {
+              "name": "lc_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "lc_desc",
+              "type": "TEXT"
+            },
+            {
+              "name": "lc_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "eco_mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "eco_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "eco_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "ig_utm_x",
+              "type": "REAL"
+            },
+            {
+              "name": "ig_utm_y",
+              "type": "REAL"
+            }
+          ],
+          "native_srs_id": 100000,
+          "table": "fired_conus-ak_daily_nov2001-march2021"
+        }
+      ]
+    },
+    {
+      "current_full_content_checksum": "NOT_REVERIFIED",
+      "current_size_bytes": 256565248,
+      "inventory_size_bytes": 256565248,
+      "observation_rows_read": 0,
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "reported_sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+      "scope": "GeoPackage catalog/schema/CRS metadata only",
+      "size_matches_inventory": true,
+      "source_id": "fired_events",
+      "spatial_reference_metadata": [
+        {
+          "definition": "undefined",
+          "native_code": -1,
+          "organization": "NONE",
+          "srs_id": -1
+        },
+        {
+          "definition": "undefined",
+          "native_code": 0,
+          "organization": "NONE",
+          "srs_id": 0
+        },
+        {
+          "definition": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+          "native_code": 4326,
+          "organization": "EPSG",
+          "srs_id": 4326
+        },
+        {
+          "definition": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+          "native_code": 100000,
+          "organization": "NONE",
+          "srs_id": 100000
+        }
+      ],
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "fid",
+              "type": "INTEGER"
+            },
+            {
+              "name": "geom",
+              "type": "MULTIPOLYGON"
+            },
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ig_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "ig_day",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ig_month",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ig_year",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_dur",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tot_pix",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tot_ar_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "fsr_px_dy",
+              "type": "REAL"
+            },
+            {
+              "name": "fsr_km2_dy",
+              "type": "REAL"
+            },
+            {
+              "name": "mx_grw_px",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mn_grw_px",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mu_grw_px",
+              "type": "REAL"
+            },
+            {
+              "name": "mx_grw_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "mn_grw_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "mu_grw_km2",
+              "type": "REAL"
+            },
+            {
+              "name": "mx_grw_dte",
+              "type": "TEXT"
+            },
+            {
+              "name": "lc_code",
+              "type": "REAL"
+            },
+            {
+              "name": "lc_mode",
+              "type": "REAL"
+            },
+            {
+              "name": "lc_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "lc_desc",
+              "type": "TEXT"
+            },
+            {
+              "name": "lc_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "eco_mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "eco_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "eco_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "ig_utm_x",
+              "type": "REAL"
+            },
+            {
+              "name": "ig_utm_y",
+              "type": "REAL"
+            },
+            {
+              "name": "tot_perim",
+              "type": "REAL"
+            }
+          ],
+          "native_srs_id": 100000,
+          "table": "fired_conus-ak_events_nov2001-march2021"
+        }
+      ]
+    },
+    {
+      "current_full_content_checksum": "NOT_REVERIFIED",
+      "current_size_bytes": 38403514,
+      "inventory_size_bytes": 38403514,
+      "observation_rows_read": 0,
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+      "quality_caveat": "Climate flags do not establish native burned-area QA or measurement uncertainty",
+      "reported_sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+      "row_groups": 1,
+      "rows_from_footer": 626102,
+      "schema": "fire_id: string\nslice_index: int64\ntimestamp: string\nyear: int64\nvase_version: string\nvase_cache_key: string\ngeometry_cache_key: string\nclimate_cache_key: string\nclimate_source: string\nclimate_temporal_resolution: string\nclimate_extraction_method: string\nring_area_km2: double\ncumulative_area_km2: double\nnormalized_vase_width: double\nmaximum_temperature_c: double\nminimum_temperature_c: double\nvpd_kpa: double\nwind_speed_m_s: double\nprecipitation_mm: double\nmaximum_relative_humidity_pct: double\nminimum_relative_humidity_pct: double\nspecific_humidity_kg_kg: double\nfuel_moisture_100hr_pct: double\nfuel_moisture_1000hr_pct: double\nenergy_release_component: double\nburning_index: double\nreference_evapotranspiration_mm: double\npotential_evapotranspiration_mm: double\nsolar_radiation_w_m2: double\nwind_present: bool\nclimate_available: bool\nclimate_failure_reason: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 4471",
+      "scope": "Parquet footer only",
+      "size_matches_inventory": true,
+      "source_id": "cached_slices"
+    },
+    {
+      "current_full_content_checksum": "NOT_REVERIFIED",
+      "current_size_bytes": 23582087,
+      "inventory_size_bytes": 23582087,
+      "observation_rows_read": 0,
+      "path": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1/files/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+      "quality_caveat": "Climate flags do not establish native burned-area QA or measurement uncertainty",
+      "reported_sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+      "row_groups": 1,
+      "rows_from_footer": 278569,
+      "schema": "fire_id: string\ntrait_version: string\nprocessing_version: string\nyear: int64\nregion: string\ntotal_area_km2: double\nduration_hours: double\npeak_growth_km2_per_hour: double\ngeometry_cache_key: string\nclimate_cache_key: string\nevent_cache_key: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1493",
+      "scope": "Parquet footer only",
+      "size_matches_inventory": true,
+      "source_id": "cached_traits"
+    }
+  ],
+  "lake_metadata_sha256": {
+    "README.md": "b2ab9148910508d7706d4dedece2fa981db6316ea7674b413513a99f4ff921bd",
+    "checksums.sha256": "054f4063cdca6f6772e08e302fbde2b4c9a1fade28fd1870e445fde55f6baa51",
+    "file_manifest.csv": "5cc46c150186748f2d7abce4235dfdd039735f47eaa8a852942edb7936d15fc8",
+    "manifest.json": "b02684aeb54d3e2fcaae03fa9eeed66114c73dcd6e86138ec7af2547d860953e"
+  },
+  "lake_root": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1",
+  "local_lake_discovery": "User clarified canonical packaged lake location; prior audits only established expected-root absence/legacy presence. Current packaged files verified present by stat, not full checksum.",
+  "new_cohort_counts": null,
+  "package_manifest": {
+    "checksum": true,
+    "created_utc": "2026-08-12T17:12:16.149922+00:00",
+    "external_inputs": [
+      {
+        "description": "FIRED CONUS+AK event polygons, November 2001 to March 2021.",
+        "expected_local_path": "artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+        "id": "fired_conus_ak_events",
+        "included": true,
+        "notes": "See docs/datasets/fired.md for citation and cache guidance."
+      },
+      {
+        "description": "FIRED CONUS+AK daily fire perimeter polygons, November 2001 to March 2021.",
+        "expected_local_path": "artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+        "id": "fired_conus_ak_daily",
+        "included": true,
+        "notes": "See docs/datasets/fired.md for citation and cache guidance."
+      },
+      {
+        "description": "Locally cached daily gridMET variables used for climate attribution.",
+        "expected_local_path": "artifacts/fire-vase-gridmet-real/gridmet-cache",
+        "id": "gridmet_daily_cache",
+        "included": true,
+        "notes": "Rebuild with scripts/cache_gridmet_years.py when needed."
+      },
+      {
+        "description": "Full Parquet lakehouse products used by manuscript-scale analyses.",
+        "expected_local_path": "scratch/fire_vase_run_full/tables",
+        "id": "full_fire_vase_lakehouse_tables",
+        "included": true,
+        "notes": "Rebuild with scripts/fire_vase_lakehouse_pilot.py and climate table builders."
+      }
+    ],
+    "file_count": 642,
+    "git_commit": "822adaed3160e8f33d3377936d6a615e7179aac3",
+    "git_dirty": true,
+    "missing_roots": [],
+    "mode": "manifest",
+    "release_id": "fire-vase-data-lake-v0.1",
+    "repository": "CU-ESIIL/fire_vase",
+    "reproduction": {
+      "checks": [
+        "pytest tests/test_fire_vase_lakehouse.py",
+        "mkdocs build --strict --clean"
+      ],
+      "main_workflow": [
+        "python scripts/cache_gridmet_years.py --preset comprehensive --keep-going",
+        "python scripts/fire_vase_lakehouse_pilot.py --config config/fire_vase_pipeline.yml --output-root scratch/fire_vase_run_full --full-population",
+        "python scripts/fire_vase_build_climate_tables.py --include-optional-variables --table-root scratch/fire_vase_run_full/tables",
+        "python scripts/fire_vase_build_perimeter_climate_tables.py --include-optional-variables",
+        "python scripts/fire_vase_developmental_morphology_analysis.py --table-root scratch/fire_vase_run_full/tables --data-output-dir scratch/fire_vase_developmental_morphology",
+        "python scripts/fire_vase_climate_revision.py"
+      ],
+      "setup": [
+        "python -m pip install -e \".[dev]\""
+      ]
+    },
+    "source_roots": [
+      {
+        "description": "FIRED GeoPackage cache, candidate event lists, and full gridMET NetCDF cache.",
+        "destination": "artifacts/fire-vase-gridmet-real",
+        "role": "source-and-climate-cache",
+        "source": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/artifacts/fire-vase-gridmet-real"
+      },
+      {
+        "description": "Full Fire VASE run reports and Parquet lakehouse tables.",
+        "destination": "scratch/fire_vase_run_full",
+        "role": "lakehouse",
+        "source": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_run_full"
+      },
+      {
+        "description": "Developmental morphospace and stage/coupling Parquet products.",
+        "destination": "scratch/fire_vase_developmental_morphology",
+        "role": "derived-lakehouse",
+        "source": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_developmental_morphology"
+      }
+    ],
+    "total_size_bytes": 40318128369,
+    "total_size_gb": 37.549
+  },
+  "population_scope": "Historical upstream aggregate, not this milestone real cohort or operational evidence",
+  "real_models_trained": 0,
+  "source_observation_rows_read": 0,
+  "timestamp": "2026-11-21T18:01:14.778388+00:00",
+  "upstream_document_sha256": {
+    "analysis/scientific_validation/final_report.md": "09ca56abeffefed0367fdfd46518e77dc198e0715985db0bc3e7a9def3328b8e",
+    "analysis/scientific_validation/population_audit.json": "0d7f9187c8a29cd8c5e5ee25f02cb076cb368d7b5d373cc7177c4cfb1434d40c",
+    "analysis/submission_freeze/release_readiness.md": "ab09fb4c9d6182761a53de4d2841c42400b7af47244a2c2e0996a32206af9c5f",
+    "analysis/v2/input_audit.json": "a7dc9c1f4d00bf1a831886ed797d55e5130d29b7ae8c33efea33b2f76dad71f6",
+    "analysis/v2/input_hashes.json": "b8e7a6c1723074bb3ffe5bd827953ddf813a794cad0b0702fedb8d5b9488c860",
+    "config/data_release.yml": "9c430010c59abb3b28ace046c3915190ad1c999d93b73698b53597ee7c0a9ab8",
+    "docs/datasets/fired.md": "6da3b8c53ae1323f5a82e282bdfe033cae5db5bdf7f361c54838b3bcc026e732",
+    "docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md": "50ee1e5d60e87ad325884006b822cfb6b9f234d221ea1b9b91404e9a0bb16ca5",
+    "docs/reanalysis-v2.md": "1c74255b356cbf29f556f7fdc4f26d0865219ec6f12b41796389fae09961ccb4",
+    "scripts/fire_vase_build_climate_tables.py": "d3fd853fe722595ab81d92fa3d09964d4044f7385f97fbff59fd31dfca950bcb",
+    "scripts/fire_vase_v2_inputs.py": "ce2d7b743796a4065c9981605e966821cb9c4bd0e79dfa47d4c3dc4ebeefa848",
+    "src/cubedynamics/analysis_v2.py": "5b8fddd59c552fea22dc9a68fff911674a5a61c41399455e9fba1a9902c4ae9a",
+    "src/cubedynamics/fire_time_hull.py": "3f659b904e8a05e1ebe2e047b6287f8e6ee49466c7bd3cb04c6604fb6eb010c5"
+  },
+  "upstream_reported_population": {
+    "adjacent_observed_pairs": 347533,
+    "date_max": "2021-05-01 00:00:00",
+    "date_min": "2000-11-02 00:00:00",
+    "duplicate_dates": 0,
+    "events": 278569,
+    "exactly_one_day": 196611,
+    "exactly_two_days": 81940,
+    "greater_than_two_days": 68982,
+    "missing_dates": 0,
+    "primary": 10246,
+    "primary_weather_complete": 9212,
+    "slices": 626102,
+    "weather_complete": 237235,
+    "zero_growth_observations": 0
+  },
+  "version": "fire-m6-metadata-v1"
+}

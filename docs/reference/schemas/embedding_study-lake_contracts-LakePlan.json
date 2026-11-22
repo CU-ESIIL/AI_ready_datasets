@@ -1,0 +1,198 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "agent_inference_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Agent Inference Authorized",
+      "type": "boolean"
+    },
+    "batch_rows": {
+      "default": 1024,
+      "maximum": 8192,
+      "minimum": 1,
+      "title": "Batch Rows",
+      "type": "integer"
+    },
+    "claim": {
+      "const": "retrospective_reconstructed",
+      "default": "retrospective_reconstructed",
+      "title": "Claim",
+      "type": "string"
+    },
+    "embedding_dimensions": {
+      "default": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Embedding Dimensions",
+      "type": "array"
+    },
+    "horizons": {
+      "default": [
+        1,
+        3,
+        7
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Horizons",
+      "type": "array"
+    },
+    "inventory_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Inventory Digest",
+      "type": "string"
+    },
+    "lengths": {
+      "default": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "title": "Lengths",
+      "type": "array"
+    },
+    "meaning_of_thresholds": {
+      "const": "SCIENTIST_REVIEW_REQUIRED",
+      "default": "SCIENTIST_REVIEW_REQUIRED",
+      "title": "Meaning Of Thresholds",
+      "type": "string"
+    },
+    "minimum_effect_sizes": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Minimum Effect Sizes",
+      "type": "object"
+    },
+    "persist_raw_or_harmonized": {
+      "const": false,
+      "default": false,
+      "title": "Persist Raw Or Harmonized",
+      "type": "boolean"
+    },
+    "population": {
+      "const": "all_task_eligible_fires",
+      "default": "all_task_eligible_fires",
+      "title": "Population",
+      "type": "string"
+    },
+    "primary_metrics": {
+      "default": [
+        "fire_mean_log_mse",
+        "fire_mean_brier",
+        "future_relevance_precision_at_10",
+        "scoped_total_cost"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "title": "Primary Metrics",
+      "type": "array"
+    },
+    "reviewed_environment_capabilities": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Reviewed Environment Capabilities",
+      "type": "array"
+    },
+    "reviewed_geometry_capabilities": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Reviewed Geometry Capabilities",
+      "type": "array"
+    },
+    "row_limit": {
+      "default": null,
+      "title": "Row Limit",
+      "type": "null"
+    },
+    "scientific_binding_digests": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Scientific Binding Digests",
+      "type": "array"
+    },
+    "scope": {
+      "default": [
+        "verify_container_bytes",
+        "profile_rows",
+        "harmonize",
+        "features",
+        "train_neural",
+        "retrospective_prediction",
+        "retrieval",
+        "spatial_environment",
+        "benchmark",
+        "publish_outputs"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "title": "Scope",
+      "type": "array"
+    },
+    "source_release": {
+      "title": "Source Release",
+      "type": "string"
+    },
+    "training_fractions": {
+      "default": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "items": {
+        "type": "number"
+      },
+      "title": "Training Fractions",
+      "type": "array"
+    },
+    "version": {
+      "const": "fire-full-lake-plan-v1",
+      "default": "fire-full-lake-plan-v1",
+      "title": "Version",
+      "type": "string"
+    },
+    "window_days": {
+      "default": 30,
+      "maximum": 30,
+      "minimum": 3,
+      "title": "Window Days",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "inventory_digest",
+    "source_release"
+  ],
+  "title": "LakePlan",
+  "type": "object"
+}

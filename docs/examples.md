@@ -97,3 +97,62 @@ The [controlled-agent mock example](analysis/fire-vase-agents.md) executes the f
 348-cell experiment without credentials. Use its frozen config and a fresh run
 directory; real-provider selection requires separately verified access and cost
 permission and never falls back silently to a mock.
+
+The [expanded Fire VASE pilot](analysis/fire-vase-pilot.md) documents the V3 synthetic
+command, frozen cases, optimized/cached rivals and disabled live branch. Use a new
+output directory; existing milestone results must not be overwritten.
+
+The [prefix learning example](analysis/fire-vase-learning.md#reproduce) runs the
+frozen synthetic future-observation objective without an LLM or real data. It saves
+checkpoints, held-out predictions and matched materialization/caching costs to a new
+output directory. Real-source approval and Track A inference remain separate.
+
+The [task-transfer example](analysis/fire-vase-transfer.md#reproduce) freezes the M4
+checkpoint and evaluates new scientific outcome heads, multitask/specific training,
+future-pattern retrieval and heterogeneous task reuse. Use a new output directory;
+training and table/figure regeneration are separate commands.
+
+The [real-source review guide](analysis/fire-vase-real-data.md) links the metadata-only
+inventory, proposed scientific contract and bounded human-review packet. It intentionally
+provides no observation-ingestion/model command before approval. Metadata regeneration
+uses `scripts/prepare_fire_vase_real_review.py` with a new output directory.
+
+## Explicit full-lake offline validation
+
+Install the `fire-vase-lake` extra for optional metadata/model dependencies. Use a
+fresh private output directory:
+
+```sh
+PYTHONPATH=src python -m dataset_prototype.embedding_study.lake_experiment --dry-validate --output /tmp/fire-lake-generated-check
+```
+
+This generates software fixtures only; it is never a fallback for failed real
+execution. The real CLI currently profiles approved streams, not a complete training
+study. See [full-lake protocol/status](analysis/fire-vase-full-lake.md).
+
+## Native census after direct investigator authorization
+
+The dedicated native profiling entrypoint is
+`python -m dataset_prototype.embedding_study.population_profile --lake CANONICAL_LAKE --output PRIVATE_OUTPUT`.
+It requires the real direct-instruction record and current source verification
+records in that output directory; tests cannot supply scientific/publication approval.
+Use `scripts/report_fire_vase_population.py --results PRIVATE_OUTPUT` to derive cohort
+matrices, candidate whole-fire splits and nine figure families from measured metadata.
+See [scope and provenance](analysis/fire-vase-population.md).
+
+## Full-population short-history audit
+
+Use a fresh internal output directory. With the existing native source verification
+and census, run `scripts/audit_fire_vase_short_histories.py --census CENSUS_OUTPUT
+--lake CANONICAL_LAKE --output FRESH_PRIVATE_OUTPUT` under `PYTHONPATH=src`.
+The script streams source values but persists aggregate diagnostics only. It fits
+no models. Its fixed first64-per-stratum access sample is not a latency survey.
+See [current benchmark scope](analysis/fire-vase-full-population.md).
+
+## Reproduce measured Fire VASE utility
+
+The executed command sequence is retained in
+`reports/embedding_utility/fire_vase/milestone-8/reproducibility.md`. It uses the
+existing local lake and frozen census, without downloading observations. Use a
+fresh versioned output after copying the design plans; preserve historical
+outputs. [Findings and limitations](analysis/fire-vase-utility.md).

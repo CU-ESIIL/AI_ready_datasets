@@ -1,0 +1,223 @@
+{
+  "allowed_metadata_fields": [
+    "original record count from offsets",
+    "first observation date ordinal",
+    "elapsed observed span",
+    "maximum original inter-record gap (undefined for1 observation)"
+  ],
+  "no_native_area_or_property_values_in_metadata": true,
+  "preprocessing": "training-only model imputation with support bits; no source gaps filled",
+  "model_scope": "additional declared-access consumer sensitivity, not semantic-prose metadata efficacy",
+  "fit_predict": [
+    {
+      "method": "raw_state",
+      "probe": "linear",
+      "fit_predict_seconds": 0.12751133400161052
+    },
+    {
+      "method": "raw_state",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.23680508400138933
+    },
+    {
+      "method": "pca-request4",
+      "probe": "linear",
+      "fit_predict_seconds": 0.07901179199689068
+    },
+    {
+      "method": "pca-request4",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.17085329199835542
+    },
+    {
+      "method": "supervised-4",
+      "probe": "linear",
+      "fit_predict_seconds": 0.07540750000043772
+    },
+    {
+      "method": "supervised-4",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.16898324999783654
+    },
+    {
+      "method": "self_supervised-4",
+      "probe": "linear",
+      "fit_predict_seconds": 0.07406158300000243
+    },
+    {
+      "method": "self_supervised-4",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.17063033299928065
+    },
+    {
+      "method": "multitask-4",
+      "probe": "linear",
+      "fit_predict_seconds": 0.07713254199916264
+    },
+    {
+      "method": "multitask-4",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.1735120419980376
+    },
+    {
+      "method": "pca-request8",
+      "probe": "linear",
+      "fit_predict_seconds": 0.06803349999972852
+    },
+    {
+      "method": "pca-request8",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.15690491600253154
+    },
+    {
+      "method": "supervised-8",
+      "probe": "linear",
+      "fit_predict_seconds": 0.06713241599936737
+    },
+    {
+      "method": "supervised-8",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.1562478329979058
+    },
+    {
+      "method": "self_supervised-8",
+      "probe": "linear",
+      "fit_predict_seconds": 0.06849304099887377
+    },
+    {
+      "method": "self_supervised-8",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.15738491599768167
+    },
+    {
+      "method": "multitask-8",
+      "probe": "linear",
+      "fit_predict_seconds": 0.06771562499852735
+    },
+    {
+      "method": "multitask-8",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.15517608300069696
+    },
+    {
+      "method": "pca-request16",
+      "probe": "linear",
+      "fit_predict_seconds": 0.09349254100015969
+    },
+    {
+      "method": "pca-request16",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.1905238340004871
+    },
+    {
+      "method": "supervised-16",
+      "probe": "linear",
+      "fit_predict_seconds": 0.09302537500116159
+    },
+    {
+      "method": "supervised-16",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.1956499999978405
+    },
+    {
+      "method": "self_supervised-16",
+      "probe": "linear",
+      "fit_predict_seconds": 0.0958390000014333
+    },
+    {
+      "method": "self_supervised-16",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.2013392090011621
+    },
+    {
+      "method": "multitask-16",
+      "probe": "linear",
+      "fit_predict_seconds": 0.09510295799918822
+    },
+    {
+      "method": "multitask-16",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.20095462500103167
+    },
+    {
+      "method": "pca-request32",
+      "probe": "linear",
+      "fit_predict_seconds": 0.09434958299971186
+    },
+    {
+      "method": "pca-request32",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.18927079099739785
+    },
+    {
+      "method": "supervised-32",
+      "probe": "linear",
+      "fit_predict_seconds": 0.15218308299881755
+    },
+    {
+      "method": "supervised-32",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.2594339589995798
+    },
+    {
+      "method": "self_supervised-32",
+      "probe": "linear",
+      "fit_predict_seconds": 0.14989679199788952
+    },
+    {
+      "method": "self_supervised-32",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.23880025000107707
+    },
+    {
+      "method": "multitask-32",
+      "probe": "linear",
+      "fit_predict_seconds": 0.14840679200278828
+    },
+    {
+      "method": "multitask-32",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.24417379099759273
+    },
+    {
+      "method": "pca-request64",
+      "probe": "linear",
+      "fit_predict_seconds": 0.09559033299956354
+    },
+    {
+      "method": "pca-request64",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.19272745800117264
+    },
+    {
+      "method": "supervised-64",
+      "probe": "linear",
+      "fit_predict_seconds": 0.22735350000220933
+    },
+    {
+      "method": "supervised-64",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.34865170899865916
+    },
+    {
+      "method": "self_supervised-64",
+      "probe": "linear",
+      "fit_predict_seconds": 0.21811041700129863
+    },
+    {
+      "method": "self_supervised-64",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.3318263340006524
+    },
+    {
+      "method": "multitask-64",
+      "probe": "linear",
+      "fit_predict_seconds": 0.216816166001081
+    },
+    {
+      "method": "multitask-64",
+      "probe": "nonlinear_tanh32",
+      "fit_predict_seconds": 0.3262616660031199
+    }
+  ]
+}

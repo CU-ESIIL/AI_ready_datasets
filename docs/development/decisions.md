@@ -489,3 +489,206 @@ verified access and cost bounds. This session could not establish reachable auth
 inference, so only explicit mock evidence is retained. No runtime/channel/credential
 state or historical veto was changed. Early development runs with premature phase
 labels are audited separately, not silently relabeled as frozen scientific evidence.
+
+## 2026-11-21 — Expanded representation utility, strong raw-data rivals
+
+Keep M1/M2 artifacts immutable and add separate V3 contracts/fixtures/runner. Share
+the existing proposal controller and source-authorization dispatcher through optional
+statically supplied contract/serialization hooks; defaults preserve M2 behavior.
+Runtime models cannot choose contracts or executable implementations. The external
+Fire VASE pin and worker remain unchanged.
+
+R0 informationally dominates its deterministic representations, so adaptive access
+cannot be assigned an accuracy advantage by construction. Measure legitimate reuse
+cost tradeoffs with targeted direct CDF integrals and indexed native lookup, matched
+query-result caches, preparation attribution and routing overhead. Distinguish the
+PC metric, backprojected-profile metric and full-profile metric. Coordinates alone
+cannot establish discarded residuals; mathematical neighbors are not ecological gold.
+
+Freeze 120 evaluation questions on 20 new histories and separate development/training
+cohorts. Evaluation narratives are visible to implementers and the hand-authored
+phrase baseline; label this model-unseen, not independently blinded. Numeric keys
+use independent rational/SVD/prominence oracles. General source-evidence claim rubrics
+remain assistant-authored drafts pending expert adjudication. They test operation
+selection/evidence use, not unobservable intrinsic scientific understanding.
+
+Expose only development-calibrated timings in every metadata arm, never per-evaluation
+task sufficiency/cost outcomes as routing hints. Private measured cost minimum is
+computed only among scientifically sufficient views at the declared target. Report
+counterfactual identical-query amortization separately from actual measurements;
+common resident process startup, physical source IO and heterogeneous-query
+intermediate memoization are outside that frontier. Unknown tokens/cost stay null.
+
+Saved runtime policy is valid, but the session cannot reach the gateway and access/
+cost authorization is unverified. No inference or service/credential change. Keep
+real configs disabled; require input hashes, checked frozen smoke evidence and
+explicit verified no-charge access before pilot invocation. Positive paid caps are
+unsupported when this transport supplies no usage/cost accounting. Preserve draft
+fixtures and failed integration runs in ignored outputs with an explicit ledger.
+
+## 2026-11-21 — Prefix learning and materialization are independent mechanisms
+
+Implement Track B independently of real-agent access. Select next-calendar-day
+observed growth from available prefixes because no approved analog relevance or
+new geometry objective exists. Do not use completed-history VASE normalization in
+prediction. Keep this new recipe synthetic-only; physically present legacy FIRED
+files do not establish rights, scientific support mapping or operational availability.
+Inspect footers/catalog schemas only; no real source rows or large archive ingestion.
+`RealPrefixApproval` records required evidence but does not approve or read a source.
+
+Use a static auditable NumPy causal convolution (177 parameters), dimension-matched
+PCA4 and learned4 probes, raw/explicit prefix ridge, persistence and a similar-size
+MLP (168 parameters). Model output never authors executable scientific code. Fit
+preprocessing/encoder/PCA/heads only on training fires; seed selection and calibration
+use separate validation fires. All prefixes of each fire remain together. Preserve
+all checkpoints and test outcomes; neither source/license ambiguity nor unavailable
+inference permits a silent mock substitute.
+
+The synthetic learned probe improves on tested PCA/summaries but not raw ridge;
+near-matched neural errors do not isolate a unique embedding mechanism. Treat
+statistical fitting, information preservation, computational reuse and agent selection
+separately. Precompute the identical trained encoder/head for a materialization test,
+then compare cached complete predictions as a stronger repeated-query rival. Include
+training/construct/read/write identities and costs; unknown lifecycle labor/refresh
+rates remain unmeasured. Nominal identifier invariance is required; scale/order
+sensitivity is not ecological validation. Changed temporal support must abstain.
+
+Real Track A remains pending under unchanged frozen protocols/configs. Read-only
+checks cannot reach the gateway from this session, and no verified no-charge access
+exists. Recorded transport payloads fit the adapter limit; live identity, parsing,
+usage and actual model behavior still need the authorized smoke. No infrastructure,
+credential, Docker or Slack state was changed.
+
+## 2026-11-21 — Freeze the representation, separate added supervision and reuse
+
+M5 reuses the exact M4 synthetic cohort, preprocessing/PCA and A-only encoder. Verify
+canonical histories, full prefix availability/support fingerprints and checkpoint
+identities; publish row-level source lineage. A test performance was previously
+observed, so label new B–E task evaluation on existing histories rather than a new
+independently hidden cohort. Separate validation selection/calibration by fire.
+
+Define B as next-three total, C as strict next-three versus last-three mean comparison,
+D as population SD of next-three increments and E as future-vector geometric relevance.
+Independently check target identities; disclose correlated outcomes. Freeze targets,
+metrics and all task comparisons before retained evaluation. New lightweight heads
+are supervised downstream transfer, not zero shot. Shared AD and specific encoders
+receive additional objectives; no A-only transfer credit for that supervision.
+
+Preserve M4 code/artifacts and implement statically registered multihead MSE/BCE
+training that reuses its encoder forward computation. Compare raw/summary/PCA,
+frozen/shared/specific views, direct matched-capacity MLP and shared-MLP controls.
+Linear and higher-capacity nonlinear source-property probes test approximate recovery,
+not exact absence or causal meaning. Invalid support is source rejection, not a model
+competence result. Retrieval excludes every same-fire prefix and uses future outcomes
+only in grader relevance or explicitly train-only E-supervised heads.
+
+Average paired prefix losses within fires, then use conditional descriptive empirical
+fire resampling; no wildfire population or multiplicity claim. Keep the full task
+matrix, including negative transfer. Shared encoding reduces separate-neural work
+but need not beat direct heads, stored vectors or whole-bundle caches. Record current
+and historical training, construction/storage/query identities and unknown refresh/
+maintenance costs separately. A metadata-only release hardening replay preserved the
+exact predictive evaluation digest; no scientific settings or outcomes were changed.
+
+## 2026-11-21 — Local lake discovery and explicit real-data approval boundary
+
+The user clarified that the lake lives inside Fire VASE. Inspect the actual packaged
+`data_lake/fire-vase-data-lake-v0.1/files/` tree, not only expected root cache paths or
+legacy CubeDynamics pointers. Selected native/derived files are physically present
+with inventory-matching sizes; no upload, download, restore or copy is needed. Keep
+historical full-container checksums separate from fresh metadata hashes and current
+unverified file identity. The package's historical manifest mode does not override
+current presence of materialized files.
+
+Complete all authorized M6 source-document, schema/CRS and review-material work while
+stopping before observation rows as the user explicitly required. Code documents a
+native daily-area copy and reconstructed cumulative sum, but another product uses a
+same-named field from catalog totals. No universal semantic equivalence follows.
+Native feature SRS is custom100000, not a coexisting4326 metadata entry. Climate flags
+are not source burn-date QA, and reconstructed dates are not availability evidence.
+Dataset-specific rights remain unresolved; paper/code licenses are not dataset licenses.
+
+Add digest-bound source/recipe/scope/review records and pure validators, not a source
+adapter or row reader before approval. Missing scientific evidence is NEEDS_EVIDENCE;
+a human decision and current container verification remain distinct from structural
+validity and confer no runtime permission in this checker. Scope the initial proposed
+audit to512 total logical decoded rows/16 fires/batch128, without geometry, full scan,
+training, raw/harmonized persistence or redistribution. Whole-table Parquet row groups
+are not a bounded sample. Physical page/I/O constraints require later adapter review.
+
+Prospective claims still require actual issue-time availability. Never assign real
+rows synthetic midnight availability or silently relabel retrospective reconstruction
+as operational forecasting. Propose only a retrospective native-value audit now;
+subsequent scientific cohort/training and public release are separate decisions.
+Keep historical aggregate selection findings distinct from new cohort measurements.
+No empirical real outcome, new synthetic benchmark or larger model was produced.
+
+## 2026-11-21 — Full-lake scope without implicit real-data permission
+
+M7 uses all task-eligible fires with bounded batches/windows rather than importing
+the M6 preliminary 512-row audit cap. Metadata inventory, scoped digest-bound review
+and generated numerical validation are separate artifacts. Native evidence survives
+projected streaming; missing labels use per-head support rather than global exclusion.
+Scientific effect sizes and binding/geometry/environment definitions remain external
+review inputs. The CLI profiles approved streams; offline kernels are not a claim of
+a finished full-lake training runner. Historical M1–6 evidence remains unchanged.
+
+## 2026-11-21 — M7.2 intent and historical population arithmetic
+
+Recorded the supplied investigator intent without fabricating an authenticated
+receipt or passing unresolved rights/binding reviews. Publication and model-training
+thresholds are not requirements for internal native profiling. The prescribed
+review mechanism remains unresolved. Completed independent stat/document checks
+and historical aggregate reanalysis. Historical 3.68% eligibility requires the
+entire retained history to be consecutive; it does not estimate occurrence of
+local runs in gappy histories. Existing aggregate histograms permit subset window
+arithmetic, explicitly separated from current-source profiling and independent
+fire counts. No upstream or frozen M1–7 artifact was modified.
+
+## 2026-11-21 — Execute native census using direct investigator authorization
+
+The user explicitly instructed execution after granting project approvals. This
+supersedes the separate external-receipt requirement for internal read-only native
+profiling; it does not fabricate domain PASS findings, source rights or external
+review identities. Existing M1–7 contracts/artifacts remain historical and unchanged.
+Added a separately named native census operation with fresh source verification,
+SQLite in-memory source sorting, bounded streams/per-fire buffers, compact metadata
+indexes, stage restart and independent replay. Source daily IDs outside the event
+catalog remain distinct with unknown strata. Local-run and strict-history populations
+are separate; overlapping windows are not independent fires. Candidate splits use
+a split-specific hash namespace separate from nested training-fraction hashes.
+Arrow schema survival across all-null batches has a regression check. Raw daily
+values/tensors are not persisted, internal source-linked indexes are ignored by Git,
+and no models or external release are part of this execution.
+
+## 2026-11-21 — Full observed population is the primary benchmark
+
+The investigator corrected the study emphasis: most fires have short observed
+histories. The benchmark now includes all native IDs in1,2,3+ strata, using
+observable-property preservation, retrieval and access/reuse as primary tasks.
+Long-run prediction remains a selected-cohort extension rather than the sampling
+gate. New short-state code preserves original values/dates/gaps without changing
+the historical TCN architecture or claiming learned-model results. One-point
+allocation shape is not applicable; normalized positive payloads are constant[1].
+Keep source-ID/date/checksum sidecars and explicit paid fallback when evaluating
+answerability. Equal-fire weighting and per-stratum coverage replace window-based
+population claims; query workload weights remain a separate empirical question.
+Frozen milestones/census and source files remain unchanged.
+
+Short-prefix depth1/2 eligibility is now counted independently from native runs;
+depth1/horizon1 windows match all native exact-day transitions. The earlier
+minimum-three TCN is an implementation restriction, not a scientific eligibility
+rule; no encoder was changed or trained.
+
+## 2026-11-21 — Execute full-population scientific-state utility
+
+Use all native IDs with task-specific support, and encode validated fixed
+observed-property state rather than silently presenting it as raw-sequence
+learning. Keep native exact operations as the primary reference. Separate
+coordinate geometry, trained-head recovery, common metadata and paid fallback.
+Retain scalar-target overlap as an explicit scope limitation; do not equate
+state autoencoding with scientific discovery. Report negative scalar-query
+economics and modest secondary prediction equally. Preserve corrected invalid
+probe outputs privately, refit all affected heads and retain unchanged encoder
+weights under verified identities. Scientific/source rights uncertainty remains
+separate from direct investigator authorization for internal execution.

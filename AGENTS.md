@@ -300,3 +300,72 @@
   metadata efficacy. Real calls need verified runtime identity, access and cost
   bounds; unavailable usage stays unknown. Do not relabel public development cases
   as genuinely held out or overwrite historical benchmark/audit outputs.
+
+- Expanded Fire VASE evaluation cases are frozen/model-unseen, not independently
+  blinded to implementers. Keep draft evidence-claim rubrics separate from expert
+  gold. Public timing hints use development cases only; evaluation sufficiency,
+  numerical references and measured Pareto minima remain private to grading.
+- Compare targeted and cached R0 against prepared R1/R2, charging preparation and
+  routing explicitly. Backprojected PC geometry is not full-profile equality;
+  coordinates alone cannot certify discarded residuals. Preserve historical runs.
+
+- Fire VASE learned-prefix experiments stay isolated from completed-history VASE
+  and production MOSAIKS. Fit preprocessing/encoders/PCA/heads on training fires
+  only; group all prefixes of a fire and separate model selection from calibration.
+  Future observations are outcomes, never encoder inputs. Synthetic predictive
+  controls do not establish real-fire science or operational availability.
+- Physical legacy data availability is separate from reviewed rights/support/access.
+  Materialization compares the identical trained model/head against on-demand and
+  cached complete/direct predictions, preserving source/preprocessing/checkpoint
+  identities and unmeasured lifecycle costs. No runtime agent may train or author code.
+
+- Fire VASE transfer studies must distinguish frozen A-only downstream heads from
+  additional multitask/task-specific supervision. Preserve source/checkpoint and
+  full prefix support/availability identities; all prefixes of a fire remain grouped.
+  Future-outcome retrieval relevance is not ecological relevance and must exclude
+  same-fire candidates. Failed linear probes do not prove information absence.
+- Report every predeclared task, paired fire summaries and current/historical training
+  separately. Heterogeneous head reuse is distinct from identical complete-bundle
+  caching; source/model/head changes invalidate affected products. No universal
+  scientific or lifecycle boundary from the synthetic convenience cohort.
+
+- M6 real-source work must use the identified packaged Fire VASE lake rather than
+  infer missing data from absent root cache paths. Metadata presence/sizes/reported
+  hashes are not fresh data-byte verification or permission. No observation rows
+  before required human review; paper/code licenses do not relicense datasets.
+- Real-study review packets bind source/recipe/claim/scope digests. Pure precondition
+  validation cannot authenticate human authorship, approve science or execute reads.
+  Keep retrospective reconstruction distinct from operationally available prefixes;
+  never fabricate real availability timestamps to satisfy synthetic contracts.
+
+- M7 full-lake scope does not grant access. Keep current hashes, exact reviewed
+  bindings and externally verified scope receipts separate; no real rows before
+  authorization. Full-lake population has no 512-row cap after broader approval.
+- Keep generated kernel checks separate from real sample sizes/results. Unknown
+  geometry/environment criteria, scientific thresholds and task labels remain
+  review inputs; callable kernels do not establish completed full-lake execution.
+
+- Later direct investigator instructions authorize internal read-only native Fire VASE
+  profiling without a separate external receipt. Preserve those exact instructions
+  and historical review records; never fabricate external verification or PASS findings.
+  Keep native support diagnostics separate from scientific equivalence, quality,
+  operational forecasting, model execution and external redistribution. Compact
+  source-linked census indexes remain internal and outside the public catalog.
+
+- Current Fire VASE utility benchmark treats all native fire IDs as primary, with
+  separate1,2 and3+ observation strata. Long-run prediction is a selected-cohort
+  extension. Never infer physical lifetime/extinction from observed record count,
+  turn one-observation shape into a flat history, or exclude gappy pairs from
+  otherwise supported observed-property tasks. Preserve complete interface lineage
+  and charge explicit source fallback; normalization loss is payload-specific.
+
+## Fire VASE Milestone8 interpretation
+
+- Milestone8 is an executed real observed-scientific-state experiment: ten scalar
+  properties plus mathematical support masks, not a native sequence/polygon encoder.
+- Preserve exact native/interpretable controls, numerical PCA inverse, approximate
+  learned recovery, common sidecar evidence and charged native fallback as distinct.
+- Do not mix archived invalid uncentered-probe outputs with corrected final tables.
+  Undefined scientific labels remain NA even when model input is median-filled.
+- Local warm-batch cost and conditional single-seed uncertainty do not establish
+  production economics, ecological analogy or universal embedding utility.

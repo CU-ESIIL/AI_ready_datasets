@@ -1,0 +1,450 @@
+{
+  "interpretable_ridge": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.984375,
+        "mae_km2_day": 1.1542192396410842,
+        "mean_interval_width_km2_day": 6.647643834782329,
+        "mse_log1p": 0.039114179886675496,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 1.3551247669254654,
+        "mean_interval_width_km2_day": 5.97600959588436,
+        "mse_log1p": 0.06657190433996711,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 1.0140416288151848,
+        "mean_interval_width_km2_day": 5.45498856936749,
+        "mse_log1p": 0.0529504839277021,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.8125,
+        "mae_km2_day": 2.306062152266712,
+        "mean_interval_width_km2_day": 5.796525258438081,
+        "mse_log1p": 0.14090447401629808,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.4657235510907889,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.9140625,
+        "mae_km2_day": 1.5746732315145715,
+        "mean_interval_width_km2_day": 6.241913403456351,
+        "mse_log1p": 0.07685531247325124,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.921875,
+        "mae_km2_day": 1.3400506623096513,
+        "mean_interval_width_km2_day": 5.695670225779777,
+        "mse_log1p": 0.07291520861207013,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.91796875,
+      "mae_km2_day": 1.4573619469121113,
+      "mean_interval_width_km2_day": 5.968791814618065,
+      "mse_log1p": 0.07488526054266069,
+      "n": 256
+    }
+  },
+  "learned4_ridge": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.96875,
+        "mae_km2_day": 1.2886316118520298,
+        "mean_interval_width_km2_day": 5.839309515986544,
+        "mse_log1p": 0.0444886808513545,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.953125,
+        "mae_km2_day": 1.2148507076462307,
+        "mean_interval_width_km2_day": 5.26244637093723,
+        "mse_log1p": 0.059143290846318655,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 0.9288738575621025,
+        "mean_interval_width_km2_day": 5.2919168258613265,
+        "mse_log1p": 0.047947343642599935,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.84375,
+        "mae_km2_day": 1.864019516211141,
+        "mean_interval_width_km2_day": 6.253185605309192,
+        "mse_log1p": 0.09160386505392468,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.43933461958427866,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.9140625,
+        "mae_km2_day": 1.4113199150908184,
+        "mean_interval_width_km2_day": 5.796218894547712,
+        "mse_log1p": 0.06048184868388311,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 1.2368679315449336,
+        "mean_interval_width_km2_day": 5.527210264499434,
+        "mse_log1p": 0.061109741513215764,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.92578125,
+      "mae_km2_day": 1.324093923317876,
+      "mean_interval_width_km2_day": 5.661714579523573,
+      "mse_log1p": 0.06079579509854944,
+      "n": 256
+    }
+  },
+  "mlp_end_to_end": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.984375,
+        "mae_km2_day": 1.3557300396928817,
+        "mean_interval_width_km2_day": 6.014088699128681,
+        "mse_log1p": 0.04594992333325911,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.953125,
+        "mae_km2_day": 1.202942911328345,
+        "mean_interval_width_km2_day": 5.464815572344092,
+        "mse_log1p": 0.058709436724859426,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.921875,
+        "mae_km2_day": 1.0373213604569,
+        "mean_interval_width_km2_day": 5.502478196821082,
+        "mse_log1p": 0.053212507493456226,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.90625,
+        "mae_km2_day": 1.7261738707299916,
+        "mean_interval_width_km2_day": 6.878810094335815,
+        "mse_log1p": 0.08421382652625056,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.4545844806056274,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.9296875,
+        "mae_km2_day": 1.513127173910171,
+        "mean_interval_width_km2_day": 6.17090905045043,
+        "mse_log1p": 0.0660403873014784,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.953125,
+        "mae_km2_day": 1.1479569171938881,
+        "mean_interval_width_km2_day": 5.759187230864406,
+        "mse_log1p": 0.05500245973743425,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.94140625,
+      "mae_km2_day": 1.3305420455520296,
+      "mean_interval_width_km2_day": 5.965048140657418,
+      "mse_log1p": 0.06052142351945634,
+      "n": 256
+    }
+  },
+  "pca4_ridge": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.921875,
+        "mae_km2_day": 2.299749691988526,
+        "mean_interval_width_km2_day": 8.31988824631215,
+        "mse_log1p": 0.14904597661931057,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.96875,
+        "mae_km2_day": 1.6219220019748013,
+        "mean_interval_width_km2_day": 7.54198491859689,
+        "mse_log1p": 0.12477978939348636,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.90625,
+        "mae_km2_day": 1.9846996889011184,
+        "mean_interval_width_km2_day": 8.511728565183011,
+        "mse_log1p": 0.1623896166920001,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.875,
+        "mae_km2_day": 2.731389017731208,
+        "mean_interval_width_km2_day": 9.194965179776485,
+        "mse_log1p": 0.186082248940519,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.6610520463913999,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.9296875,
+        "mae_km2_day": 2.2203505874053198,
+        "mean_interval_width_km2_day": 8.571818223915217,
+        "mse_log1p": 0.15247372180176333,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.90625,
+        "mae_km2_day": 2.0985296128925066,
+        "mean_interval_width_km2_day": 8.21246523101905,
+        "mse_log1p": 0.15867509402089464,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.91796875,
+      "mae_km2_day": 2.159440100148913,
+      "mean_interval_width_km2_day": 8.392141727467134,
+      "mse_log1p": 0.15557440791132898,
+      "n": 256
+    }
+  },
+  "persistence": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 1.32442738172081,
+        "mean_interval_width_km2_day": 6.494103101418136,
+        "mse_log1p": 0.05437180633178608,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.875,
+        "mae_km2_day": 1.4247383458166039,
+        "mean_interval_width_km2_day": 5.950610055698213,
+        "mse_log1p": 0.07189413968338167,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.90625,
+        "mae_km2_day": 1.2065607368685145,
+        "mean_interval_width_km2_day": 5.586962253668897,
+        "mse_log1p": 0.07004455935910668,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.703125,
+        "mae_km2_day": 2.4540756684843172,
+        "mean_interval_width_km2_day": 5.520003518357176,
+        "mse_log1p": 0.17864227288929346,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.4585804376942586,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.8359375,
+        "mae_km2_day": 1.7263014013920914,
+        "mean_interval_width_km2_day": 6.214853982507229,
+        "mse_log1p": 0.09906247315833816,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.875,
+        "mae_km2_day": 1.4785996650530313,
+        "mean_interval_width_km2_day": 5.560985482063982,
+        "mse_log1p": 0.08841391597344579,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.85546875,
+      "mae_km2_day": 1.6024505332225614,
+      "mean_interval_width_km2_day": 5.8879197322856065,
+      "mse_log1p": 0.09373819456589197,
+      "n": 256
+    }
+  },
+  "raw_ridge": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.96875,
+        "mae_km2_day": 1.0838516942045753,
+        "mean_interval_width_km2_day": 6.078467192077657,
+        "mse_log1p": 0.036968916355928666,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 1.2185698570807006,
+        "mean_interval_width_km2_day": 5.43665074319911,
+        "mse_log1p": 0.05984397535628133,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 0.9613474935753531,
+        "mean_interval_width_km2_day": 5.453660457494758,
+        "mse_log1p": 0.050206697911502375,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.859375,
+        "mae_km2_day": 1.8966087519663624,
+        "mean_interval_width_km2_day": 6.430033352085842,
+        "mse_log1p": 0.0959268397959662,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.4550005011216831,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.90625,
+        "mae_km2_day": 1.4049991734779432,
+        "mean_interval_width_km2_day": 6.09082915784858,
+        "mse_log1p": 0.06617850082983266,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.9453125,
+        "mae_km2_day": 1.1751897249355523,
+        "mean_interval_width_km2_day": 5.608576714580104,
+        "mse_log1p": 0.05529471388000661,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.92578125,
+      "mae_km2_day": 1.290094449206748,
+      "mean_interval_width_km2_day": 5.849702936214341,
+      "mse_log1p": 0.06073660735491965,
+      "n": 256
+    }
+  },
+  "tcn_end_to_end": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.984375,
+        "mae_km2_day": 1.2629205723135515,
+        "mean_interval_width_km2_day": 6.015403941102331,
+        "mse_log1p": 0.04317178022103952,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 1.2292811353594946,
+        "mean_interval_width_km2_day": 5.121479298269199,
+        "mse_log1p": 0.06138830332858972,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.9375,
+        "mae_km2_day": 0.9331416455769727,
+        "mean_interval_width_km2_day": 5.233071589645034,
+        "mse_log1p": 0.04786120211039281,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.84375,
+        "mae_km2_day": 1.845659020295178,
+        "mean_interval_width_km2_day": 6.293271400241839,
+        "mse_log1p": 0.08999660821533054,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 0.4361292060579318,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.921875,
+        "mae_km2_day": 1.3875535323130315,
+        "mean_interval_width_km2_day": 5.807067083986565,
+        "mse_log1p": 0.05897940355897034,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.9296875,
+        "mae_km2_day": 1.247947654459567,
+        "mean_interval_width_km2_day": 5.524546030642636,
+        "mse_log1p": 0.062229543378705954,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.92578125,
+      "mae_km2_day": 1.3177505933862992,
+      "mean_interval_width_km2_day": 5.665806557314601,
+      "mse_log1p": 0.060604473468838155,
+      "n": 256
+    }
+  },
+  "training_mean": {
+    "by_depth": {
+      "10": {
+        "coverage_90": 0.90625,
+        "mae_km2_day": 3.2416515416756515,
+        "mean_interval_width_km2_day": 13.129749193237176,
+        "mse_log1p": 0.3581906257294851,
+        "n": 64
+      },
+      "3": {
+        "coverage_90": 0.953125,
+        "mae_km2_day": 2.395926633125103,
+        "mean_interval_width_km2_day": 13.129749193237176,
+        "mse_log1p": 0.28108975706276423,
+        "n": 64
+      },
+      "5": {
+        "coverage_90": 0.96875,
+        "mae_km2_day": 2.1126801825307804,
+        "mean_interval_width_km2_day": 13.129749193237176,
+        "mse_log1p": 0.2349280463376648,
+        "n": 64
+      },
+      "7": {
+        "coverage_90": 0.875,
+        "mae_km2_day": 3.561547197446943,
+        "mean_interval_width_km2_day": 13.129749193237176,
+        "mse_log1p": 0.3698270570058062,
+        "n": 64
+      }
+    },
+    "calibration_log_radius": 1.021391306662287,
+    "synthetic_group_strata": {
+      "A": {
+        "coverage_90": 0.9296875,
+        "mae_km2_day": 3.1059858848348503,
+        "mean_interval_width_km2_day": 13.129749193237181,
+        "mse_log1p": 0.3392361603536632,
+        "n": 128
+      },
+      "B": {
+        "coverage_90": 0.921875,
+        "mae_km2_day": 2.549916892554389,
+        "mean_interval_width_km2_day": 13.129749193237181,
+        "mse_log1p": 0.282781582714197,
+        "n": 128
+      }
+    },
+    "test": {
+      "coverage_90": 0.92578125,
+      "mae_km2_day": 2.8279513886946193,
+      "mean_interval_width_km2_day": 13.129749193237181,
+      "mse_log1p": 0.3110088715339301,
+      "n": 256
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "batch_rows": {
+      "default": 128,
+      "maximum": 128,
+      "minimum": 1,
+      "title": "Batch Rows",
+      "type": "integer"
+    },
+    "full_source_scan": {
+      "const": false,
+      "default": false,
+      "title": "Full Source Scan",
+      "type": "boolean"
+    },
+    "max_fires": {
+      "default": 16,
+      "maximum": 16,
+      "minimum": 1,
+      "title": "Max Fires",
+      "type": "integer"
+    },
+    "max_total_decoded_rows": {
+      "default": 512,
+      "maximum": 512,
+      "minimum": 1,
+      "title": "Max Total Decoded Rows",
+      "type": "integer"
+    },
+    "persist_raw_or_harmonized": {
+      "const": false,
+      "default": false,
+      "title": "Persist Raw Or Harmonized",
+      "type": "boolean"
+    },
+    "purpose": {
+      "const": "native_schema_value_alignment_audit",
+      "default": "native_schema_value_alignment_audit",
+      "title": "Purpose",
+      "type": "string"
+    },
+    "read_geometries": {
+      "const": false,
+      "default": false,
+      "title": "Read Geometries",
+      "type": "boolean"
+    },
+    "redistribute_observations": {
+      "const": false,
+      "default": false,
+      "title": "Redistribute Observations",
+      "type": "boolean"
+    },
+    "train_models": {
+      "const": false,
+      "default": false,
+      "title": "Train Models",
+      "type": "boolean"
+    }
+  },
+  "title": "BoundedReadProposal",
+  "type": "object"
+}

@@ -1,0 +1,11 @@
+property,eligible_all_native_fires,undefined_all_native_fires,eligible_test_fires,native_quality
+log_observed_total,278865,0,41991,unknown
+log_observation_count,278865,0,41991,unknown
+log_first_increment,278865,0,41991,unknown
+log_last_increment,278865,0,41991,unknown
+log_observed_std,117665,161200,17816,unknown
+first_allocation,117665,161200,17816,unknown
+asinh_mean_consecutive_change,75953,202912,11539,unknown
+strict_interior_peak_count,34911,243954,5294,unknown
+first_half_allocation,117665,161200,17816,unknown
+log_observed_span,278865,0,41991,unknown

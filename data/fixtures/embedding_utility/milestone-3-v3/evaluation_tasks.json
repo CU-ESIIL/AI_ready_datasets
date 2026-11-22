@@ -1,0 +1,2692 @@
+[
+  {
+    "task_id": "m3-e-00-0",
+    "split": "evaluation",
+    "template_id": "eval-ledger",
+    "category": "observation",
+    "question": "The ledger closes on 2031-02-04. Report the recorded burned extent then, retaining its native unit.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": "2031-02-04",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-00-1",
+    "split": "evaluation",
+    "template_id": "eval-ledger",
+    "category": "observation",
+    "question": "The ledger closes on 2031-02-08. Report the recorded burned extent then, retaining its native unit.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13"
+      ],
+      "date": "2031-02-08",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-00-2",
+    "split": "evaluation",
+    "template_id": "eval-ledger",
+    "category": "observation",
+    "question": "The ledger closes on 2031-02-05. Report the recorded burned extent then, retaining its native unit.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": "2031-02-05",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-00-3",
+    "split": "evaluation",
+    "template_id": "eval-ledger",
+    "category": "observation",
+    "question": "The ledger closes on 2031-02-07. Report the recorded burned extent then, retaining its native unit.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": "2031-02-07",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-00-4",
+    "split": "evaluation",
+    "template_id": "eval-ledger",
+    "category": "observation",
+    "question": "The ledger closes on 2031-02-05. Report the recorded burned extent then, retaining its native unit.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15"
+      ],
+      "date": "2031-02-05",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "cumulative"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-01-0",
+    "split": "evaluation",
+    "template_id": "eval-one_day",
+    "category": "observation",
+    "question": "For the calendar day ending 2031-02-05, is a one-day increment evidenced? Return it only if the observations establish it.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": "2031-02-05",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-01-1",
+    "split": "evaluation",
+    "template_id": "eval-one_day",
+    "category": "observation",
+    "question": "For the calendar day ending 2031-02-07, is a one-day increment evidenced? Return it only if the observations establish it.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13"
+      ],
+      "date": "2031-02-07",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-01-2",
+    "split": "evaluation",
+    "template_id": "eval-one_day",
+    "category": "observation",
+    "question": "For the calendar day ending 2031-02-01, is a one-day increment evidenced? Return it only if the observations establish it.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": "2031-02-01",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-01-3",
+    "split": "evaluation",
+    "template_id": "eval-one_day",
+    "category": "observation",
+    "question": "For the calendar day ending 2031-02-07, is a one-day increment evidenced? Return it only if the observations establish it.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": "2031-02-07",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-01-4",
+    "split": "evaluation",
+    "template_id": "eval-one_day",
+    "category": "observation",
+    "question": "For the calendar day ending 2031-02-05, is a one-day increment evidenced? Return it only if the observations establish it.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15"
+      ],
+      "date": "2031-02-05",
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "daily_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-02-0",
+    "split": "evaluation",
+    "template_id": "eval-window",
+    "category": "observation",
+    "question": "How much area was added between the two recorded endpoints 2031-02-02 and 2031-02-05? The target is an interval total.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": "2031-02-05",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-02-1",
+    "split": "evaluation",
+    "template_id": "eval-window",
+    "category": "observation",
+    "question": "How much area was added between the two recorded endpoints 2031-02-02 and 2031-02-08? The target is an interval total.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13"
+      ],
+      "date": "2031-02-08",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-02-2",
+    "split": "evaluation",
+    "template_id": "eval-window",
+    "category": "observation",
+    "question": "How much area was added between the two recorded endpoints 2031-02-02 and 2031-02-05? The target is an interval total.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": "2031-02-05",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-02-3",
+    "split": "evaluation",
+    "template_id": "eval-window",
+    "category": "observation",
+    "question": "How much area was added between the two recorded endpoints 2031-02-02 and 2031-02-07? The target is an interval total.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": "2031-02-07",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-02-4",
+    "split": "evaluation",
+    "template_id": "eval-window",
+    "category": "observation",
+    "question": "How much area was added between the two recorded endpoints 2031-02-02 and 2031-02-05? The target is an interval total.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15"
+      ],
+      "date": "2031-02-05",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "interval_growth"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-03-0",
+    "split": "evaluation",
+    "template_id": "eval-contrast",
+    "category": "observation",
+    "question": "Over 2031-02-02 to 2031-02-05, subtract the second history\u2019s added area from the first history\u2019s. Compare absolute change, not shape.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-09",
+        "m3-evaluation-10"
+      ],
+      "date": "2031-02-05",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-03-1",
+    "split": "evaluation",
+    "template_id": "eval-contrast",
+    "category": "observation",
+    "question": "Over 2031-02-02 to 2031-02-08, subtract the second history\u2019s added area from the first history\u2019s. Compare absolute change, not shape.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13",
+        "m3-evaluation-02"
+      ],
+      "date": "2031-02-08",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-03-2",
+    "split": "evaluation",
+    "template_id": "eval-contrast",
+    "category": "observation",
+    "question": "Over 2031-02-02 to 2031-02-05, subtract the second history\u2019s added area from the first history\u2019s. Compare absolute change, not shape.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17",
+        "m3-evaluation-06"
+      ],
+      "date": "2031-02-05",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-03-3",
+    "split": "evaluation",
+    "template_id": "eval-contrast",
+    "category": "observation",
+    "question": "Over 2031-02-02 to 2031-02-07, subtract the second history\u2019s added area from the first history\u2019s. Compare absolute change, not shape.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-01",
+        "m3-evaluation-02"
+      ],
+      "date": "2031-02-07",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-03-4",
+    "split": "evaluation",
+    "template_id": "eval-contrast",
+    "category": "observation",
+    "question": "Over 2031-02-02 to 2031-02-05, subtract the second history\u2019s added area from the first history\u2019s. Compare absolute change, not shape.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-05",
+        "m3-evaluation-06"
+      ],
+      "date": "2031-02-05",
+      "start_date": "2031-02-02",
+      "candidates": [],
+      "claim": null,
+      "operation": "growth_compare"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-04-0",
+    "split": "evaluation",
+    "template_id": "eval-early_budget",
+    "category": "morphology",
+    "question": "Treat the completed development as a unit-length clock. What share of the burned-area addition falls before its midpoint?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-04-1",
+    "split": "evaluation",
+    "template_id": "eval-early_budget",
+    "category": "morphology",
+    "question": "Treat the completed development as a unit-length clock. What share of the burned-area addition falls before its midpoint?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-04-2",
+    "split": "evaluation",
+    "template_id": "eval-early_budget",
+    "category": "morphology",
+    "question": "Treat the completed development as a unit-length clock. What share of the burned-area addition falls before its midpoint?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-04-3",
+    "split": "evaluation",
+    "template_id": "eval-early_budget",
+    "category": "morphology",
+    "question": "Treat the completed development as a unit-length clock. What share of the burned-area addition falls before its midpoint?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-04-4",
+    "split": "evaluation",
+    "template_id": "eval-early_budget",
+    "category": "morphology",
+    "question": "Treat the completed development as a unit-length clock. What share of the burned-area addition falls before its midpoint?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-05-0",
+    "split": "evaluation",
+    "template_id": "eval-late_budget",
+    "category": "morphology",
+    "question": "How much of the unit total is assigned to the final quarter of completed development?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-05-1",
+    "split": "evaluation",
+    "template_id": "eval-late_budget",
+    "category": "morphology",
+    "question": "How much of the unit total is assigned to the final quarter of completed development?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-19"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-05-2",
+    "split": "evaluation",
+    "template_id": "eval-late_budget",
+    "category": "morphology",
+    "question": "How much of the unit total is assigned to the final quarter of completed development?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-05-3",
+    "split": "evaluation",
+    "template_id": "eval-late_budget",
+    "category": "morphology",
+    "question": "How much of the unit total is assigned to the final quarter of completed development?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-07"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-05-4",
+    "split": "evaluation",
+    "template_id": "eval-late_budget",
+    "category": "morphology",
+    "question": "How much of the unit total is assigned to the final quarter of completed development?",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-11"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "late_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-06-0",
+    "split": "evaluation",
+    "template_id": "eval-allocation",
+    "category": "morphology",
+    "question": "Provide the complete twenty-cell allocation of the history\u2019s unit mass over its completed development.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-18"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-06-1",
+    "split": "evaluation",
+    "template_id": "eval-allocation",
+    "category": "morphology",
+    "question": "Provide the complete twenty-cell allocation of the history\u2019s unit mass over its completed development.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-06-2",
+    "split": "evaluation",
+    "template_id": "eval-allocation",
+    "category": "morphology",
+    "question": "Provide the complete twenty-cell allocation of the history\u2019s unit mass over its completed development.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-06-3",
+    "split": "evaluation",
+    "template_id": "eval-allocation",
+    "category": "morphology",
+    "question": "Provide the complete twenty-cell allocation of the history\u2019s unit mass over its completed development.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-10"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-06-4",
+    "split": "evaluation",
+    "template_id": "eval-allocation",
+    "category": "morphology",
+    "question": "Provide the complete twenty-cell allocation of the history\u2019s unit mass over its completed development.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-07-0",
+    "split": "evaluation",
+    "template_id": "eval-pathways",
+    "category": "morphology",
+    "question": "Compare the two complete developmental pathways using Euclidean separation of their twenty allocation cells; require full-profile fidelity.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00",
+        "m3-evaluation-01"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-07-1",
+    "split": "evaluation",
+    "template_id": "eval-pathways",
+    "category": "morphology",
+    "question": "Compare the two complete developmental pathways using Euclidean separation of their twenty allocation cells; require full-profile fidelity.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00",
+        "m3-evaluation-19"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-07-2",
+    "split": "evaluation",
+    "template_id": "eval-pathways",
+    "category": "morphology",
+    "question": "Compare the two complete developmental pathways using Euclidean separation of their twenty allocation cells; require full-profile fidelity.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-09",
+        "m3-evaluation-10"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-07-3",
+    "split": "evaluation",
+    "template_id": "eval-pathways",
+    "category": "morphology",
+    "question": "Compare the two complete developmental pathways using Euclidean separation of their twenty allocation cells; require full-profile fidelity.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13",
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-07-4",
+    "split": "evaluation",
+    "template_id": "eval-pathways",
+    "category": "morphology",
+    "question": "Compare the two complete developmental pathways using Euclidean separation of their twenty allocation cells; require full-profile fidelity.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17",
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "profile_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-08-0",
+    "split": "evaluation",
+    "template_id": "eval-recurrence",
+    "category": "morphology",
+    "question": "Under the frozen padded twenty-percent prominence convention, how many recurrent growth peaks occur? Return only the count, not dates.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-18"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pulse_count"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-08-1",
+    "split": "evaluation",
+    "template_id": "eval-recurrence",
+    "category": "morphology",
+    "question": "Under the frozen padded twenty-percent prominence convention, how many recurrent growth peaks occur? Return only the count, not dates.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pulse_count"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-08-2",
+    "split": "evaluation",
+    "template_id": "eval-recurrence",
+    "category": "morphology",
+    "question": "Under the frozen padded twenty-percent prominence convention, how many recurrent growth peaks occur? Return only the count, not dates.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pulse_count"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-08-3",
+    "split": "evaluation",
+    "template_id": "eval-recurrence",
+    "category": "morphology",
+    "question": "Under the frozen padded twenty-percent prominence convention, how many recurrent growth peaks occur? Return only the count, not dates.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pulse_count"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-08-4",
+    "split": "evaluation",
+    "template_id": "eval-recurrence",
+    "category": "morphology",
+    "question": "Under the frozen padded twenty-percent prominence convention, how many recurrent growth peaks occur? Return only the count, not dates.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pulse_count"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-09-0",
+    "split": "evaluation",
+    "template_id": "eval-coordinates",
+    "category": "compression",
+    "question": "For the two histories, report Euclidean separation in the frozen standardized three-axis geometry. No full-profile claim is requested.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-07",
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-09-1",
+    "split": "evaluation",
+    "template_id": "eval-coordinates",
+    "category": "compression",
+    "question": "For the two histories, report Euclidean separation in the frozen standardized three-axis geometry. No full-profile claim is requested.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-11",
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-09-2",
+    "split": "evaluation",
+    "template_id": "eval-coordinates",
+    "category": "compression",
+    "question": "For the two histories, report Euclidean separation in the frozen standardized three-axis geometry. No full-profile claim is requested.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15",
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-09-3",
+    "split": "evaluation",
+    "template_id": "eval-coordinates",
+    "category": "compression",
+    "question": "For the two histories, report Euclidean separation in the frozen standardized three-axis geometry. No full-profile claim is requested.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-19",
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-09-4",
+    "split": "evaluation",
+    "template_id": "eval-coordinates",
+    "category": "compression",
+    "question": "For the two histories, report Euclidean separation in the frozen standardized three-axis geometry. No full-profile claim is requested.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-03",
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-10-0",
+    "split": "evaluation",
+    "template_id": "eval-projected",
+    "category": "compression",
+    "question": "Reconstruct the two three-axis projections into allocation units and report their Euclidean separation. This projected geometry, not the original profile, is the target.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-10",
+        "m3-evaluation-11"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-10-1",
+    "split": "evaluation",
+    "template_id": "eval-projected",
+    "category": "compression",
+    "question": "Reconstruct the two three-axis projections into allocation units and report their Euclidean separation. This projected geometry, not the original profile, is the target.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14",
+        "m3-evaluation-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-10-2",
+    "split": "evaluation",
+    "template_id": "eval-projected",
+    "category": "compression",
+    "question": "Reconstruct the two three-axis projections into allocation units and report their Euclidean separation. This projected geometry, not the original profile, is the target.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-18",
+        "m3-evaluation-07"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-10-3",
+    "split": "evaluation",
+    "template_id": "eval-projected",
+    "category": "compression",
+    "question": "Reconstruct the two three-axis projections into allocation units and report their Euclidean separation. This projected geometry, not the original profile, is the target.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-02",
+        "m3-evaluation-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-10-4",
+    "split": "evaluation",
+    "template_id": "eval-projected",
+    "category": "compression",
+    "question": "Reconstruct the two three-axis projections into allocation units and report their Euclidean separation. This projected geometry, not the original profile, is the target.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-06",
+        "m3-evaluation-07"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-11-0",
+    "split": "evaluation",
+    "template_id": "eval-discarded",
+    "category": "compression",
+    "question": "Quantify the L2 allocation mass discrepancy between the full history profile and its reconstruction from the three retained axes.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-11-1",
+    "split": "evaluation",
+    "template_id": "eval-discarded",
+    "category": "compression",
+    "question": "Quantify the L2 allocation mass discrepancy between the full history profile and its reconstruction from the three retained axes.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-11-2",
+    "split": "evaluation",
+    "template_id": "eval-discarded",
+    "category": "compression",
+    "question": "Quantify the L2 allocation mass discrepancy between the full history profile and its reconstruction from the three retained axes.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-01"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-11-3",
+    "split": "evaluation",
+    "template_id": "eval-discarded",
+    "category": "compression",
+    "question": "Quantify the L2 allocation mass discrepancy between the full history profile and its reconstruction from the three retained axes.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-11-4",
+    "split": "evaluation",
+    "template_id": "eval-discarded",
+    "category": "compression",
+    "question": "Quantify the L2 allocation mass discrepancy between the full history profile and its reconstruction from the three retained axes.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-09"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-12-0",
+    "split": "evaluation",
+    "template_id": "eval-ranking",
+    "category": "compression",
+    "question": "Among the three offered candidates, does the first-ranked neighbor remain the same after three-axis reconstruction? Report both identities and stability; use full-profile Euclidean distance as the comparator.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "m3-evaluation-05",
+        "m3-evaluation-06",
+        "m3-evaluation-07"
+      ],
+      "claim": null,
+      "operation": "neighbor_stability"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-12-1",
+    "split": "evaluation",
+    "template_id": "eval-ranking",
+    "category": "compression",
+    "question": "Among the three offered candidates, does the first-ranked neighbor remain the same after three-axis reconstruction? Report both identities and stability; use full-profile Euclidean distance as the comparator.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "m3-evaluation-01",
+        "m3-evaluation-02",
+        "m3-evaluation-03"
+      ],
+      "claim": null,
+      "operation": "neighbor_stability"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-12-2",
+    "split": "evaluation",
+    "template_id": "eval-ranking",
+    "category": "compression",
+    "question": "Among the three offered candidates, does the first-ranked neighbor remain the same after three-axis reconstruction? Report both identities and stability; use full-profile Euclidean distance as the comparator.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "m3-evaluation-05",
+        "m3-evaluation-06",
+        "m3-evaluation-07"
+      ],
+      "claim": null,
+      "operation": "neighbor_stability"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-12-3",
+    "split": "evaluation",
+    "template_id": "eval-ranking",
+    "category": "compression",
+    "question": "Among the three offered candidates, does the first-ranked neighbor remain the same after three-axis reconstruction? Report both identities and stability; use full-profile Euclidean distance as the comparator.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "m3-evaluation-09",
+        "m3-evaluation-10",
+        "m3-evaluation-11"
+      ],
+      "claim": null,
+      "operation": "neighbor_stability"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-12-4",
+    "split": "evaluation",
+    "template_id": "eval-ranking",
+    "category": "compression",
+    "question": "Among the three offered candidates, does the first-ranked neighbor remain the same after three-axis reconstruction? Report both identities and stability; use full-profile Euclidean distance as the comparator.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [
+        "m3-evaluation-01",
+        "m3-evaluation-02",
+        "m3-evaluation-03"
+      ],
+      "claim": null,
+      "operation": "neighbor_stability"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-13-0",
+    "split": "evaluation",
+    "template_id": "eval-scale",
+    "category": "cross_representation",
+    "question": "Assess the claim that a unit-total developmental allocation determines absolute burned area without any original area observations.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-19"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "absolute_from_normalized",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-13-1",
+    "split": "evaluation",
+    "template_id": "eval-scale",
+    "category": "cross_representation",
+    "question": "Assess the claim that a unit-total developmental allocation determines absolute burned area without any original area observations.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "absolute_from_normalized",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-13-2",
+    "split": "evaluation",
+    "template_id": "eval-scale",
+    "category": "cross_representation",
+    "question": "Assess the claim that a unit-total developmental allocation determines absolute burned area without any original area observations.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-07"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "absolute_from_normalized",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-13-3",
+    "split": "evaluation",
+    "template_id": "eval-scale",
+    "category": "cross_representation",
+    "question": "Assess the claim that a unit-total developmental allocation determines absolute burned area without any original area observations.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-11"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "absolute_from_normalized",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-13-4",
+    "split": "evaluation",
+    "template_id": "eval-scale",
+    "category": "cross_representation",
+    "question": "Assess the claim that a unit-total developmental allocation determines absolute burned area without any original area observations.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "absolute_from_normalized",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-14-0",
+    "split": "evaluation",
+    "template_id": "eval-inverse",
+    "category": "cross_representation",
+    "question": "Assess whether three retained coordinates alone establish the exact twenty allocation values of an unrestricted history.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "exact_profile_from_pcs",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-14-1",
+    "split": "evaluation",
+    "template_id": "eval-inverse",
+    "category": "cross_representation",
+    "question": "Assess whether three retained coordinates alone establish the exact twenty allocation values of an unrestricted history.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "exact_profile_from_pcs",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-14-2",
+    "split": "evaluation",
+    "template_id": "eval-inverse",
+    "category": "cross_representation",
+    "question": "Assess whether three retained coordinates alone establish the exact twenty allocation values of an unrestricted history.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-10"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "exact_profile_from_pcs",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-14-3",
+    "split": "evaluation",
+    "template_id": "eval-inverse",
+    "category": "cross_representation",
+    "question": "Assess whether three retained coordinates alone establish the exact twenty allocation values of an unrestricted history.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "exact_profile_from_pcs",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-14-4",
+    "split": "evaluation",
+    "template_id": "eval-inverse",
+    "category": "cross_representation",
+    "question": "Assess whether three retained coordinates alone establish the exact twenty allocation values of an unrestricted history.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-18"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "exact_profile_from_pcs",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-15-0",
+    "split": "evaluation",
+    "template_id": "eval-relevance",
+    "category": "validity",
+    "question": "Does closeness in the three-axis plot establish an independently validated ecological analog for this synthetic fire? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "ecological_analog",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-15-1",
+    "split": "evaluation",
+    "template_id": "eval-relevance",
+    "category": "validity",
+    "question": "Does closeness in the three-axis plot establish an independently validated ecological analog for this synthetic fire? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-09"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "ecological_analog",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-15-2",
+    "split": "evaluation",
+    "template_id": "eval-relevance",
+    "category": "validity",
+    "question": "Does closeness in the three-axis plot establish an independently validated ecological analog for this synthetic fire? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "ecological_analog",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-15-3",
+    "split": "evaluation",
+    "template_id": "eval-relevance",
+    "category": "validity",
+    "question": "Does closeness in the three-axis plot establish an independently validated ecological analog for this synthetic fire? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "ecological_analog",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-15-4",
+    "split": "evaluation",
+    "template_id": "eval-relevance",
+    "category": "validity",
+    "question": "Does closeness in the three-axis plot establish an independently validated ecological analog for this synthetic fire? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-01"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "ecological_analog",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-16-0",
+    "split": "evaluation",
+    "template_id": "eval-uncertainty",
+    "category": "validity",
+    "question": "Can this synthetic source establish a calibrated uncertainty distribution for real burned-area measurements? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "measurement_uncertainty",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-16-1",
+    "split": "evaluation",
+    "template_id": "eval-uncertainty",
+    "category": "validity",
+    "question": "Can this synthetic source establish a calibrated uncertainty distribution for real burned-area measurements? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "measurement_uncertainty",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-16-2",
+    "split": "evaluation",
+    "template_id": "eval-uncertainty",
+    "category": "validity",
+    "question": "Can this synthetic source establish a calibrated uncertainty distribution for real burned-area measurements? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "measurement_uncertainty",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-16-3",
+    "split": "evaluation",
+    "template_id": "eval-uncertainty",
+    "category": "validity",
+    "question": "Can this synthetic source establish a calibrated uncertainty distribution for real burned-area measurements? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "measurement_uncertainty",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-16-4",
+    "split": "evaluation",
+    "template_id": "eval-uncertainty",
+    "category": "validity",
+    "question": "Can this synthetic source establish a calibrated uncertainty distribution for real burned-area measurements? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "measurement_uncertainty",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-17-0",
+    "split": "evaluation",
+    "template_id": "eval-availability",
+    "category": "validity",
+    "question": "Do these records establish that their values were available to an operational forecaster at observation time? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-11"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "forecast_availability",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-17-1",
+    "split": "evaluation",
+    "template_id": "eval-availability",
+    "category": "validity",
+    "question": "Do these records establish that their values were available to an operational forecaster at observation time? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "forecast_availability",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-17-2",
+    "split": "evaluation",
+    "template_id": "eval-availability",
+    "category": "validity",
+    "question": "Do these records establish that their values were available to an operational forecaster at observation time? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-19"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "forecast_availability",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-17-3",
+    "split": "evaluation",
+    "template_id": "eval-availability",
+    "category": "validity",
+    "question": "Do these records establish that their values were available to an operational forecaster at observation time? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-03"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "forecast_availability",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-17-4",
+    "split": "evaluation",
+    "template_id": "eval-availability",
+    "category": "validity",
+    "question": "Do these records establish that their values were available to an operational forecaster at observation time? Assess the evidence claim.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-07"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "forecast_availability",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-18-0",
+    "split": "evaluation",
+    "template_id": "eval-support_count",
+    "category": "cross_representation",
+    "question": "Can retained source identifiers and validated consecutive-profile context establish the number of one-day intervals? Assess the claim and return the count only if supported.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "duration_from_sidecar",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-18-1",
+    "split": "evaluation",
+    "template_id": "eval-support_count",
+    "category": "cross_representation",
+    "question": "Can retained source identifiers and validated consecutive-profile context establish the number of one-day intervals? Assess the claim and return the count only if supported.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-18"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "duration_from_sidecar",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-18-2",
+    "split": "evaluation",
+    "template_id": "eval-support_count",
+    "category": "cross_representation",
+    "question": "Can retained source identifiers and validated consecutive-profile context establish the number of one-day intervals? Assess the claim and return the count only if supported.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "duration_from_sidecar",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-18-3",
+    "split": "evaluation",
+    "template_id": "eval-support_count",
+    "category": "cross_representation",
+    "question": "Can retained source identifiers and validated consecutive-profile context establish the number of one-day intervals? Assess the claim and return the count only if supported.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "duration_from_sidecar",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-18-4",
+    "split": "evaluation",
+    "template_id": "eval-support_count",
+    "category": "cross_representation",
+    "question": "Can retained source identifiers and validated consecutive-profile context establish the number of one-day intervals? Assess the claim and return the count only if supported.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-10"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": "duration_from_sidecar",
+      "operation": "assess_claim"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-19-0",
+    "split": "evaluation",
+    "template_id": "eval-lineage",
+    "category": "validity",
+    "question": "Report the retained source\u2019s version, license, checksum coverage, synthetic status, temporal support and uncertainty evidence.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "source_evidence"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-19-1",
+    "split": "evaluation",
+    "template_id": "eval-lineage",
+    "category": "validity",
+    "question": "Report the retained source\u2019s version, license, checksum coverage, synthetic status, temporal support and uncertainty evidence.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-01"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "source_evidence"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-19-2",
+    "split": "evaluation",
+    "template_id": "eval-lineage",
+    "category": "validity",
+    "question": "Report the retained source\u2019s version, license, checksum coverage, synthetic status, temporal support and uncertainty evidence.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-05"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "source_evidence"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-19-3",
+    "split": "evaluation",
+    "template_id": "eval-lineage",
+    "category": "validity",
+    "question": "Report the retained source\u2019s version, license, checksum coverage, synthetic status, temporal support and uncertainty evidence.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-09"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "source_evidence"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-19-4",
+    "split": "evaluation",
+    "template_id": "eval-lineage",
+    "category": "validity",
+    "question": "Report the retained source\u2019s version, license, checksum coverage, synthetic status, temporal support and uncertainty evidence.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "source_evidence"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "negative_control",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-20-0",
+    "split": "evaluation",
+    "template_id": "eval-scalar_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs the first-half mass allocation, exactly. Choose an allowed view considering the declared preparation and query-reuse context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-20-1",
+    "split": "evaluation",
+    "template_id": "eval-scalar_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs the first-half mass allocation, exactly. Choose an allowed view considering the declared preparation and query-reuse context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-20-2",
+    "split": "evaluation",
+    "template_id": "eval-scalar_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs the first-half mass allocation, exactly. Choose an allowed view considering the declared preparation and query-reuse context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-20-3",
+    "split": "evaluation",
+    "template_id": "eval-scalar_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs the first-half mass allocation, exactly. Choose an allowed view considering the declared preparation and query-reuse context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-12"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-20-4",
+    "split": "evaluation",
+    "template_id": "eval-scalar_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs the first-half mass allocation, exactly. Choose an allowed view considering the declared preparation and query-reuse context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-16"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "front_fraction"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-21-0",
+    "split": "evaluation",
+    "template_id": "eval-geometry_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs distance in the frozen standardized three-axis geometry. Choose a view considering preparation and repeated-query context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-03",
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-21-1",
+    "split": "evaluation",
+    "template_id": "eval-geometry_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs distance in the frozen standardized three-axis geometry. Choose a view considering preparation and repeated-query context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-07",
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-21-2",
+    "split": "evaluation",
+    "template_id": "eval-geometry_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs distance in the frozen standardized three-axis geometry. Choose a view considering preparation and repeated-query context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-11",
+        "m3-evaluation-00"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-21-3",
+    "split": "evaluation",
+    "template_id": "eval-geometry_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs distance in the frozen standardized three-axis geometry. Choose a view considering preparation and repeated-query context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-15",
+        "m3-evaluation-04"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-21-4",
+    "split": "evaluation",
+    "template_id": "eval-geometry_workload",
+    "category": "efficiency",
+    "question": "A repeated analysis needs distance in the frozen standardized three-axis geometry. Choose a view considering preparation and repeated-query context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-19",
+        "m3-evaluation-08"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "pca_distance"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-22-0",
+    "split": "evaluation",
+    "template_id": "eval-residual_workload",
+    "category": "efficiency",
+    "question": "The audit needs the full-profile versus three-axis reconstruction L2 residual, exactly. Choose a view under the declared amortization context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-22-1",
+    "split": "evaluation",
+    "template_id": "eval-residual_workload",
+    "category": "efficiency",
+    "question": "The audit needs the full-profile versus three-axis reconstruction L2 residual, exactly. Choose a view under the declared amortization context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-10"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-22-2",
+    "split": "evaluation",
+    "template_id": "eval-residual_workload",
+    "category": "efficiency",
+    "question": "The audit needs the full-profile versus three-axis reconstruction L2 residual, exactly. Choose a view under the declared amortization context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-14"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-22-3",
+    "split": "evaluation",
+    "template_id": "eval-residual_workload",
+    "category": "efficiency",
+    "question": "The audit needs the full-profile versus three-axis reconstruction L2 residual, exactly. Choose a view under the declared amortization context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-18"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-22-4",
+    "split": "evaluation",
+    "template_id": "eval-residual_workload",
+    "category": "efficiency",
+    "question": "The audit needs the full-profile versus three-axis reconstruction L2 residual, exactly. Choose a view under the declared amortization context.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "reconstruction_error"
+    },
+    "accuracy": "exact",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  },
+  {
+    "task_id": "m3-e-23-0",
+    "split": "evaluation",
+    "template_id": "eval-approx_workload",
+    "category": "efficiency",
+    "question": "The analysis accepts only the explicitly defined reconstructed three-axis geometry in allocation units. Choose a view for this repeated workload; do not claim full-profile equality.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-09",
+        "m3-evaluation-10"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 1
+  },
+  {
+    "task_id": "m3-e-23-1",
+    "split": "evaluation",
+    "template_id": "eval-approx_workload",
+    "category": "efficiency",
+    "question": "The analysis accepts only the explicitly defined reconstructed three-axis geometry in allocation units. Choose a view for this repeated workload; do not claim full-profile equality.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-13",
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 10
+  },
+  {
+    "task_id": "m3-e-23-2",
+    "split": "evaluation",
+    "template_id": "eval-approx_workload",
+    "category": "efficiency",
+    "question": "The analysis accepts only the explicitly defined reconstructed three-axis geometry in allocation units. Choose a view for this repeated workload; do not claim full-profile equality.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-17",
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 100
+  },
+  {
+    "task_id": "m3-e-23-3",
+    "split": "evaluation",
+    "template_id": "eval-approx_workload",
+    "category": "efficiency",
+    "question": "The analysis accepts only the explicitly defined reconstructed three-axis geometry in allocation units. Choose a view for this repeated workload; do not claim full-profile equality.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-01",
+        "m3-evaluation-02"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": false,
+    "workload_queries": 1000
+  },
+  {
+    "task_id": "m3-e-23-4",
+    "split": "evaluation",
+    "template_id": "eval-approx_workload",
+    "category": "efficiency",
+    "question": "The analysis accepts only the explicitly defined reconstructed three-axis geometry in allocation units. Choose a view for this repeated workload; do not claim full-profile equality.",
+    "query": {
+      "fire_ids": [
+        "m3-evaluation-05",
+        "m3-evaluation-06"
+      ],
+      "date": null,
+      "start_date": null,
+      "candidates": [],
+      "claim": null,
+      "operation": "projected_distance"
+    },
+    "accuracy": "projected_geometry",
+    "tolerance": 1e-08,
+    "metadata_sensitivity": "hypothesized",
+    "preparation_paid": true,
+    "workload_queries": 10000
+  }
+]

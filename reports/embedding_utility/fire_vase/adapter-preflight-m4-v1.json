@@ -1,0 +1,13 @@
+{
+  "version": "m4-adapter-preflight-v1",
+  "source": "milestone-3-v1 recorded mock/rule prompts; serialization only",
+  "requests_inspected": 6480,
+  "largest_actual_payload_bytes": 37810,
+  "payloads_over_verified_48000_byte_bound": 0,
+  "adapter_modification_required_for_recorded_prompts": false,
+  "real_inference_calls": 0,
+  "identity_verification": "pending endpoint access",
+  "usage": "installed plugin exposes normalized JSON and provider/model names; token/cost fields unavailable, must remain null",
+  "frozen_smoke_config_changed": false,
+  "frozen_pilot_config_changed": false
+}

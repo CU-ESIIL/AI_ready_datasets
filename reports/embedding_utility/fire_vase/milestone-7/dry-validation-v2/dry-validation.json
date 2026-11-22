@@ -1,0 +1,98 @@
+{
+  "capabilities": {
+    "compact_supervised_tcn": "WORKING_OFFLINE",
+    "developmental_stage_classes": "NEEDS_SCIENTIFIC_CRITERIA",
+    "environmental_alignment": "NEEDS_SCIENTIFIC_DEFINITION",
+    "full_lake_model_selection_and_publication": "PENDING_AUTHORIZATION_AND_REVIEWED_BINDINGS",
+    "incremental_pca": "WORKING_OFFLINE",
+    "incremental_svd": "WORKING_OFFLINE",
+    "masked_observation_tcn": "WORKING_OFFLINE",
+    "materialized_embedding_heads": "WORKING_OFFLINE_ARRAY_INTERFACE",
+    "multitask_tcn": "WORKING_OFFLINE",
+    "native_direct_query": "WORKING_OFFLINE_IN_MEMORY",
+    "pinned_vase_full_profiles": "EXISTING_BOUNDED_WORKER_ONLY_REVIEW_SCALING",
+    "raw_histogram_tree": "WORKING_OFFLINE_OPTIONAL_SKLEARN",
+    "raw_ridge_logistic": "WORKING_OFFLINE",
+    "spatial_fragmentation": "NEEDS_SCIENTIFIC_DEFINITION",
+    "specific_tcn": "WORKING_OFFLINE",
+    "whole_answer_cache": "WORKING_OFFLINE_IN_MEMORY"
+  },
+  "effect_sizes": null,
+  "generated_fires": 12,
+  "generated_observations": 540,
+  "generated_task_examples": 4152,
+  "mode": "EXPLICIT_GENERATED_WIRING_TEST",
+  "neural_kernel_checks": [
+    {
+      "dimension": 4,
+      "embedding_shape": [
+        24,
+        4
+      ],
+      "parameters": 177,
+      "ssl_batches": 1,
+      "supervised_batches": 1
+    },
+    {
+      "dimension": 8,
+      "embedding_shape": [
+        24,
+        8
+      ],
+      "parameters": 249,
+      "ssl_batches": 1,
+      "supervised_batches": 1
+    },
+    {
+      "dimension": 16,
+      "embedding_shape": [
+        24,
+        16
+      ],
+      "parameters": 393,
+      "ssl_batches": 1,
+      "supervised_batches": 1
+    },
+    {
+      "dimension": 32,
+      "embedding_shape": [
+        24,
+        32
+      ],
+      "parameters": 681,
+      "ssl_batches": 1,
+      "supervised_batches": 1
+    },
+    {
+      "dimension": 64,
+      "embedding_shape": [
+        24,
+        64
+      ],
+      "parameters": 1257,
+      "ssl_batches": 1,
+      "supervised_batches": 1
+    }
+  ],
+  "pca_components": [
+    4,
+    120
+  ],
+  "real_eligibility_counts": null,
+  "real_execution": "BLOCKED_PENDING_FULL_LAKE_REVIEW; no fallback from real execution to this fixture",
+  "real_models_trained": 0,
+  "ridge_predictions_finite": true,
+  "same_fire_excluded_neighbors": [
+    9,
+    18,
+    1
+  ],
+  "scientific_results": null,
+  "source_observation_rows_read": 0,
+  "stream_window_bound": 37,
+  "svd_components": [
+    4,
+    120
+  ],
+  "version": "fire-full-lake-offline-validation-v1"
+}

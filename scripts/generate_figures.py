@@ -82,6 +82,43 @@ FIGURES['embedding-study'] = ('Fire VASE representation utility benchmark',
  ('Independent rational / SVD keys',2,4),('Correctness / sufficiency / costs',1,5)],
  [(0,1),(1,2),(1,3),(2,4),(2,5),(3,7),(4,7),(5,7),(6,7),(7,9),(8,9)])
 
+FIGURES['embedding-full-lake'] = ('Full-lake representation utility: gated study',
+ 'Metadata inventory and generated method checks only. No real rows, training or scientific utility results. Full-lake execution and publication require external scope review.',
+ [('Complete lake metadata',0,0),('Draft scientific bindings',2,0),('Digest-bound external review',1,1),
+ ('Current full-byte verification',1,2),('Approved streaming profiles',1,3),('All task-eligible cohorts',1,4),
+ ('Raw / features / PCA / neural',1,5),('Held-out utility + total cost',1,6),('Separate publication review',1,7)],
+ [(0,2),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])
+
+FIGURES['embedding-real-review'] = ('Real-source review before observation access',
+ 'Packaged local data are present. Metadata inspection, scientific review, verified identity and execution eligibility remain distinct; no real row or model execution yet.',
+ [('Local packaged data lake',0,0),('Manifests / schema / CRS only',1,0),('Source rights + native meaning',2,0),
+ ('Digest-bound review packet',1,1),('External human decision',1,2),('Current container verification',0,3),
+ ('Approved bounded row audit',1,4),('Real adapter + cohort review',1,5),('Training / publication: separate',2,5)],
+ [(0,1),(1,3),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8)])
+
+FIGURES['embedding-transfer-study'] = ('Synthetic task-dependent representation transfer',
+ 'Original A-only encoder frozen; new lightweight heads, multitask and specific training are separate supervision strategies. No real-fire or real-agent evidence.',
+ [('Frozen M4 cohort + identity',1,0),('Train / select / calibrate / test',1,1),('Frozen A-only encoder',0,2),('Joint AD / specific encoders',2,2),
+ ('Raw / summaries / PCA4 rivals',1,3),('Independent A-D heads',0,4),('Future-outcome retrieval E',2,4),('Input-property probes',0,5),
+ ('Training / heterogeneous reuse',2,5),('Paired fire-level utility map',1,6)],
+ [(0,1),(1,2),(1,3),(1,4),(2,5),(3,5),(4,5),(2,6),(3,6),(4,6),(5,7),(5,8),(6,9),(7,9),(8,9)])
+
+FIGURES['embedding-learning-study'] = ('Independent agent and learned-representation tracks',
+ 'Track A real inference pending. Track B runs synthetic prefix prediction only; physical source availability is distinct from reviewed scientific access.',
+ [('Saved runtime + frozen agents',0,0),('Data rights / support audit',2,0),('Track A: no authorized inference',0,1),
+ ('Track B: synthetic observations',2,1),('Training-only prefix preprocessing',1,2),('Raw / summaries / PCA4',0,3),
+ ('TCN4 / matched tabular MLP',2,3),('Held-out next-day observations',1,4),('Skill / calibration / fidelity',0,5),
+ ('Stored vs on-demand vs cache',2,5),('Scoped utility; no real-fire claim',1,6)],
+ [(0,2),(1,3),(3,4),(4,5),(4,6),(5,7),(6,7),(7,8),(6,9),(8,10),(9,10)])
+
+FIGURES['embedding-pilot-study'] = ('Expanded Fire VASE representation utility',
+ 'Synthetic mechanics only. Frozen model-unseen evaluation is visible to implementers; real inference and expert rubric adjudication remain pending.',
+ [('32 training histories',0,0),('8 development histories',1,0),('20 evaluation histories',2,0),
+ ('Frozen train-only PCA',0,1),('Public cost calibration',1,1),('120 questions / 24 templates',2,1),
+ ('M0 / M1 / M2 evidence',0,2),('JSON proposal controller',1,2),('Independent private references',2,2),
+ ('Optimized + cached R0 rivals',0,3),('R1 / R2 / adaptive',1,3),('Correctness / cost / sufficiency',2,3)],
+ [(0,3),(1,4),(2,5),(3,7),(4,7),(5,7),(6,7),(7,9),(7,10),(8,11),(9,11),(10,11)])
+
 FIGURES['embedding-agent-study'] = ('Controlled Fire VASE agent experiment',
  'WORKING mock protocol; real-model evidence pending. Scientific values come only from validated deterministic operations. Metadata never changes executable permissions.',
  [('Fixed synthetic question set',1,0),('Public aliases + approved data',1,1),

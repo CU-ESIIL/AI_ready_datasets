@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "domain": {
+      "enum": [
+        "semantic",
+        "units",
+        "support",
+        "rights",
+        "integrity",
+        "quality",
+        "availability"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "rationale": {
+      "minLength": 1,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NEEDS_EVIDENCE",
+        "NOT_APPLICABLE"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "domain",
+    "status",
+    "evidence_ids",
+    "rationale"
+  ],
+  "title": "ScientificReviewItem",
+  "type": "object"
+}

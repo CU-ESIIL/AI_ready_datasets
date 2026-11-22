@@ -1,0 +1,45 @@
+{
+  "scope": "frozen report outputs; new milestone documentation/configuration may evolve without rewriting old snapshots",
+  "checks": [
+    {
+      "manifest": "reports/embedding_utility/fire_vase/results/milestone-1-v1/manifest.json",
+      "frozen_report_outputs_checked": 8,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/results/milestone-2-v2/manifest.json",
+      "frozen_report_outputs_checked": 10,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/results/milestone-3-v1/manifest.json",
+      "frozen_report_outputs_checked": 18,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/results/milestone-4-learning-v1/manifest.json",
+      "frozen_report_outputs_checked": 17,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/results/milestone-5-transfer-v1/manifest.json",
+      "frozen_report_outputs_checked": 59,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/milestone-6/evidence-index.json",
+      "frozen_report_outputs_checked": 9,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/milestone-6/review-v2/manifest.json",
+      "frozen_report_outputs_checked": 4,
+      "mismatches": []
+    },
+    {
+      "manifest": "reports/embedding_utility/fire_vase/milestone-7/evidence-index.json",
+      "frozen_report_outputs_checked": 21,
+      "mismatches": []
+    }
+  ]
+}

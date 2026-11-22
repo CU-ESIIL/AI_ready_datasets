@@ -1,0 +1,63 @@
+{
+  "canonical_lake": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1",
+  "counts_scope": "Row-derived counts not measured before full-lake authorization. Footer counts are per-artifact metadata and must not be summed across overlapping products.",
+  "current_files_stat": 646,
+  "current_total_bytes_stat": 40318194810,
+  "data_array_values_read": 0,
+  "eligibility_counts": {
+    "complete_histories": null,
+    "consecutive_transitions": null,
+    "environmentally_supported_fires": null,
+    "event_histories": null,
+    "fire_days": null,
+    "fourteen_day_sequences": null,
+    "intervals": null,
+    "seven_day_sequences": null,
+    "spatially_supported_fires": null,
+    "thirty_day_sequences": null,
+    "three_day_sequences": null,
+    "unique_fires": null
+  },
+  "formats": {
+    "csv": 56,
+    "docx": 2,
+    "gpkg": 2,
+    "gpkg-shm": 2,
+    "gpkg-wal": 2,
+    "html": 4,
+    "json": 38,
+    "md": 43,
+    "nc": 330,
+    "parquet": 16,
+    "pdf": 35,
+    "png": 60,
+    "svg": 49,
+    "txt": 2,
+    "yml": 5
+  },
+  "historical_bytes": 40318128369,
+  "historical_files": 642,
+  "metadata_errors": [],
+  "missing_inventory_files": [],
+  "observation_rows_read": 0,
+  "schema_status": {
+    "METADATA_INSPECTED": 348,
+    "NOT_INSPECTED": 298
+  },
+  "size_mismatches": [
+    "files/repository/config/data_release.yml",
+    "files/repository/docs/datasets/fired.md",
+    "files/repository/docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md",
+    "files/repository/docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md",
+    "files/repository/docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md",
+    "files/repository/schemas/fire_traits.schema.json"
+  ],
+  "timestamp": "2026-11-21T18:25:45.774463+00:00",
+  "uninventoried_files": [
+    "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg-shm",
+    "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg-wal",
+    "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg-shm",
+    "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg-wal"
+  ],
+  "version": "fire-full-lake-inventory-v1"
+}

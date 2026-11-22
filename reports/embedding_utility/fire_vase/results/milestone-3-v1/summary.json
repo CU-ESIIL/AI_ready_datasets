@@ -1,0 +1,767 @@
+{
+  "category_counts": {
+    "compression": 20,
+    "cross_representation": 15,
+    "efficiency": 20,
+    "morphology": 25,
+    "observation": 20,
+    "validity": 20
+  },
+  "direct_comparisons": [
+    {
+      "R0": {
+        "answerable_task_count": 30,
+        "median_cold_ns": 7083.0,
+        "median_warm_ns": 6334.0
+      },
+      "R1": {
+        "answerable_task_count": 30,
+        "median_cold_ns": 7042.0,
+        "median_warm_ns": 6333.0
+      },
+      "R2": {
+        "answerable_task_count": 30,
+        "median_cold_ns": 7041.0,
+        "median_warm_ns": 6292.0
+      },
+      "operation": "assess_claim"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 7083.5,
+        "median_warm_ns": 6333.0
+      },
+      "R1": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "cumulative"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 2,
+        "median_cold_ns": 8146.0,
+        "median_warm_ns": 6459.0
+      },
+      "R1": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "daily_growth"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 18854.5,
+        "median_warm_ns": 6312.5
+      },
+      "R1": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 6687.5,
+        "median_warm_ns": 6125.0
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "front_fraction"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 5,
+        "median_cold_ns": 8083,
+        "median_warm_ns": 6834
+      },
+      "R1": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "growth_compare"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 5,
+        "median_cold_ns": 7375,
+        "median_warm_ns": 6500
+      },
+      "R1": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "interval_growth"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 18542.0,
+        "median_warm_ns": 6416.0
+      },
+      "R1": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 6750.0,
+        "median_warm_ns": 6125.0
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "late_fraction"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 2952146.0,
+        "median_warm_ns": 11625.0
+      },
+      "R1": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 66458.0,
+        "median_warm_ns": 8500.0
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "neighbor_stability"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 501500.0,
+        "median_warm_ns": 8812.5
+      },
+      "R1": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 18395.5,
+        "median_warm_ns": 7458.0
+      },
+      "R2": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 9375.0,
+        "median_warm_ns": 6979.5
+      },
+      "operation": "pca_distance"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 266187.5,
+        "median_warm_ns": 7770.5
+      },
+      "R1": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 8187.5,
+        "median_warm_ns": 6625.0
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "profile"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 496062.5,
+        "median_warm_ns": 8312.5
+      },
+      "R1": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 10208.5,
+        "median_warm_ns": 7062.5
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "profile_distance"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 512979.5,
+        "median_warm_ns": 8292.0
+      },
+      "R1": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 25062.0,
+        "median_warm_ns": 7354.5
+      },
+      "R2": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 16500.0,
+        "median_warm_ns": 7104.5
+      },
+      "operation": "projected_distance"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 71667.0,
+        "median_warm_ns": 7250.0
+      },
+      "R1": {
+        "answerable_task_count": 4,
+        "median_cold_ns": 6937.5,
+        "median_warm_ns": 6250.0
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "pulse_count"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 506104.0,
+        "median_warm_ns": 8229.5
+      },
+      "R1": {
+        "answerable_task_count": 8,
+        "median_cold_ns": 17562.5,
+        "median_warm_ns": 6917.0
+      },
+      "R2": {
+        "answerable_task_count": 0,
+        "median_cold_ns": null,
+        "median_warm_ns": null
+      },
+      "operation": "reconstruction_error"
+    },
+    {
+      "R0": {
+        "answerable_task_count": 5,
+        "median_cold_ns": 6959,
+        "median_warm_ns": 6250
+      },
+      "R1": {
+        "answerable_task_count": 5,
+        "median_cold_ns": 6959,
+        "median_warm_ns": 6209
+      },
+      "R2": {
+        "answerable_task_count": 5,
+        "median_cold_ns": 6958,
+        "median_warm_ns": 6208
+      },
+      "operation": "source_evidence"
+    }
+  ],
+  "fires": 20,
+  "groups": {
+    "mock/R0/M0": {
+      "median_routing_ns": 2902999.5,
+      "n": 240,
+      "selected_views": {
+        "R0": 240
+      },
+      "status": {
+        "appropriate_abstention": 34,
+        "correct": 206
+      },
+      "usage_known": 0
+    },
+    "mock/R0/M1": {
+      "median_routing_ns": 2912187.5,
+      "n": 240,
+      "selected_views": {
+        "R0": 240
+      },
+      "status": {
+        "appropriate_abstention": 34,
+        "correct": 206
+      },
+      "usage_known": 0
+    },
+    "mock/R0/M2": {
+      "median_routing_ns": 2933916.5,
+      "n": 240,
+      "selected_views": {
+        "R0": 240
+      },
+      "status": {
+        "appropriate_abstention": 34,
+        "correct": 206
+      },
+      "usage_known": 0
+    },
+    "mock/R1/M0": {
+      "median_routing_ns": 2803687.5,
+      "n": 240,
+      "selected_views": {
+        "R1": 240
+      },
+      "status": {
+        "appropriate_abstention": 66,
+        "correct": 174
+      },
+      "usage_known": 0
+    },
+    "mock/R1/M1": {
+      "median_routing_ns": 2804854.0,
+      "n": 240,
+      "selected_views": {
+        "R1": 240
+      },
+      "status": {
+        "appropriate_abstention": 66,
+        "correct": 174
+      },
+      "usage_known": 0
+    },
+    "mock/R1/M2": {
+      "median_routing_ns": 2842708.5,
+      "n": 240,
+      "selected_views": {
+        "R1": 240
+      },
+      "status": {
+        "appropriate_abstention": 66,
+        "correct": 174
+      },
+      "usage_known": 0
+    },
+    "mock/R2/M0": {
+      "median_routing_ns": 2776999.5,
+      "n": 240,
+      "selected_views": {
+        "R2": 240
+      },
+      "status": {
+        "appropriate_abstention": 138,
+        "correct": 102
+      },
+      "usage_known": 0
+    },
+    "mock/R2/M1": {
+      "median_routing_ns": 2772187.5,
+      "n": 240,
+      "selected_views": {
+        "R2": 240
+      },
+      "status": {
+        "appropriate_abstention": 138,
+        "correct": 102
+      },
+      "usage_known": 0
+    },
+    "mock/R2/M2": {
+      "median_routing_ns": 2805271.5,
+      "n": 240,
+      "selected_views": {
+        "R2": 240
+      },
+      "status": {
+        "appropriate_abstention": 138,
+        "correct": 102
+      },
+      "usage_known": 0
+    },
+    "mock/adaptive/M0": {
+      "median_routing_ns": 2970625.0,
+      "n": 240,
+      "selected_views": {
+        "R0": 240
+      },
+      "status": {
+        "appropriate_abstention": 34,
+        "correct": 206
+      },
+      "usage_known": 0
+    },
+    "mock/adaptive/M1": {
+      "median_routing_ns": 2989708.5,
+      "n": 240,
+      "selected_views": {
+        "R0": 240
+      },
+      "status": {
+        "appropriate_abstention": 34,
+        "correct": 206
+      },
+      "usage_known": 0
+    },
+    "mock/adaptive/M2": {
+      "median_routing_ns": 3010312.5,
+      "n": 240,
+      "selected_views": {
+        "R0": 240
+      },
+      "status": {
+        "appropriate_abstention": 34,
+        "correct": 206
+      },
+      "usage_known": 0
+    },
+    "rule/adaptive/M0": {
+      "median_routing_ns": 2908479.5,
+      "n": 120,
+      "selected_views": {
+        "R0": 56,
+        "R1": 43,
+        "R2": 21
+      },
+      "status": {
+        "appropriate_abstention": 17,
+        "correct": 103
+      },
+      "usage_known": 0
+    },
+    "rule/adaptive/M1": {
+      "median_routing_ns": 2947188.0,
+      "n": 120,
+      "selected_views": {
+        "R0": 56,
+        "R1": 43,
+        "R2": 21
+      },
+      "status": {
+        "appropriate_abstention": 17,
+        "correct": 103
+      },
+      "usage_known": 0
+    },
+    "rule/adaptive/M2": {
+      "median_routing_ns": 2943521.0,
+      "n": 120,
+      "selected_views": {
+        "R0": 56,
+        "R1": 43,
+        "R2": 21
+      },
+      "status": {
+        "appropriate_abstention": 17,
+        "correct": 103
+      },
+      "usage_known": 0
+    }
+  },
+  "metadata_contrasts": [
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "R0",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "R0",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "R0",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "R0",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "R0",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "R0",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "R1",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "R1",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "R1",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "R1",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "R1",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "R1",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "R2",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "R2",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "R2",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "R2",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "R2",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "R2",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "adaptive",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 120,
+      "regime": "adaptive",
+      "stratum": "all"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "adaptive",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 105,
+      "regime": "adaptive",
+      "stratum": "hypothesized"
+    },
+    {
+      "contrast": "M1-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "adaptive",
+      "stratum": "negative_control"
+    },
+    {
+      "contrast": "M2-M0",
+      "interpretation": "mock isolation only; repeats averaged within task; no population inference",
+      "mean_task_level_rate_difference": {
+        "appropriate_abstention": 0.0,
+        "correct_answer": 0.0,
+        "incorrect_abstention": 0.0
+      },
+      "paired_tasks": 15,
+      "regime": "adaptive",
+      "stratum": "negative_control"
+    }
+  ],
+  "metadata_paired_contrast": "All mock conditions must match task-level scientific outcomes; zero differences are an isolation result, not an efficacy estimate.",
+  "questions": 120,
+  "real_model_evidence": "pending",
+  "templates": 24,
+  "tokens_and_provider_cost": null,
+  "version": "fire-pilot-summary-v3"
+}

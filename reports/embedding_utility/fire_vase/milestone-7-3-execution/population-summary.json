@@ -1,0 +1,708 @@
+{
+  "populations": {
+    "A_catalog": 278569,
+    "B_valid_native": 278865,
+    "C_local3": 34911,
+    "D_depth3_h1": 19004,
+    "E_depth7_h3": 1859,
+    "F_depth14_h7": 224,
+    "G_strict": 188723
+  },
+  "native_only_by_year": [
+    {
+      "year": "2001",
+      "observations": 3,
+      "fires": 3
+    },
+    {
+      "year": "2002",
+      "observations": 14,
+      "fires": 7
+    },
+    {
+      "year": "2003",
+      "observations": 31,
+      "fires": 14
+    },
+    {
+      "year": "2004",
+      "observations": 51,
+      "fires": 18
+    },
+    {
+      "year": "2005",
+      "observations": 28,
+      "fires": 15
+    },
+    {
+      "year": "2006",
+      "observations": 46,
+      "fires": 12
+    },
+    {
+      "year": "2007",
+      "observations": 37,
+      "fires": 10
+    },
+    {
+      "year": "2008",
+      "observations": 101,
+      "fires": 24
+    },
+    {
+      "year": "2009",
+      "observations": 63,
+      "fires": 23
+    },
+    {
+      "year": "2010",
+      "observations": 27,
+      "fires": 10
+    },
+    {
+      "year": "2011",
+      "observations": 68,
+      "fires": 25
+    },
+    {
+      "year": "2012",
+      "observations": 35,
+      "fires": 13
+    },
+    {
+      "year": "2013",
+      "observations": 13,
+      "fires": 6
+    },
+    {
+      "year": "2014",
+      "observations": 20,
+      "fires": 8
+    },
+    {
+      "year": "2015",
+      "observations": 31,
+      "fires": 9
+    },
+    {
+      "year": "2016",
+      "observations": 89,
+      "fires": 15
+    },
+    {
+      "year": "2017",
+      "observations": 96,
+      "fires": 23
+    },
+    {
+      "year": "2018",
+      "observations": 36,
+      "fires": 17
+    },
+    {
+      "year": "2019",
+      "observations": 20,
+      "fires": 9
+    },
+    {
+      "year": "2020",
+      "observations": 93,
+      "fires": 25
+    },
+    {
+      "year": "2021",
+      "observations": 29,
+      "fires": 11
+    }
+  ],
+  "native_only_catalog_membership": [
+    {
+      "in_catalog": 0,
+      "rows": 931,
+      "fires": 296
+    }
+  ],
+  "cache_climate_flags": [
+    {
+      "rows": 626102,
+      "reported_climate_available_rows": 550961,
+      "all_rows_flagged_available_fires": 237235
+    }
+  ],
+  "gaps": [
+    {
+      "source": "cache",
+      "days": 1,
+      "n": 196611
+    },
+    {
+      "source": "cache",
+      "days": 2,
+      "n": 81940
+    },
+    {
+      "source": "cache",
+      "days": 3,
+      "n": 37539
+    },
+    {
+      "source": "cache",
+      "days": 4,
+      "n": 20107
+    },
+    {
+      "source": "cache",
+      "days": 5,
+      "n": 11336
+    },
+    {
+      "source": "native",
+      "days": 1,
+      "n": 196982
+    },
+    {
+      "source": "native",
+      "days": 2,
+      "n": 82069
+    },
+    {
+      "source": "native",
+      "days": 3,
+      "n": 37591
+    },
+    {
+      "source": "native",
+      "days": 4,
+      "n": 20137
+    },
+    {
+      "source": "native",
+      "days": 5,
+      "n": 11358
+    },
+    {
+      "source": "native",
+      "days": 6,
+      "n": 12
+    },
+    {
+      "source": "native",
+      "days": 7,
+      "n": 5
+    },
+    {
+      "source": "native",
+      "days": 8,
+      "n": 2
+    },
+    {
+      "source": "native",
+      "days": 9,
+      "n": 6
+    },
+    {
+      "source": "native",
+      "days": 10,
+      "n": 2
+    },
+    {
+      "source": "native",
+      "days": 12,
+      "n": 2
+    },
+    {
+      "source": "native",
+      "days": 14,
+      "n": 2
+    }
+  ],
+  "observation_distribution": [
+    {
+      "observations": 1,
+      "fires": 161200
+    },
+    {
+      "observations": 2,
+      "fires": 47992
+    },
+    {
+      "observations": 3,
+      "fires": 24391
+    },
+    {
+      "observations": 4,
+      "fires": 14695
+    },
+    {
+      "observations": 5,
+      "fires": 9357
+    },
+    {
+      "observations": 6,
+      "fires": 6169
+    },
+    {
+      "observations": 7,
+      "fires": 4226
+    },
+    {
+      "observations": 8,
+      "fires": 2860
+    },
+    {
+      "observations": 9,
+      "fires": 2014
+    },
+    {
+      "observations": 10,
+      "fires": 1396
+    },
+    {
+      "observations": 11,
+      "fires": 1044
+    },
+    {
+      "observations": 12,
+      "fires": 785
+    },
+    {
+      "observations": 13,
+      "fires": 531
+    },
+    {
+      "observations": 14,
+      "fires": 421
+    },
+    {
+      "observations": 15,
+      "fires": 347
+    },
+    {
+      "observations": 16,
+      "fires": 277
+    },
+    {
+      "observations": 17,
+      "fires": 196
+    },
+    {
+      "observations": 18,
+      "fires": 185
+    },
+    {
+      "observations": 19,
+      "fires": 126
+    },
+    {
+      "observations": 20,
+      "fires": 109
+    },
+    {
+      "observations": 21,
+      "fires": 93
+    },
+    {
+      "observations": 22,
+      "fires": 70
+    },
+    {
+      "observations": 23,
+      "fires": 59
+    },
+    {
+      "observations": 24,
+      "fires": 42
+    },
+    {
+      "observations": 25,
+      "fires": 39
+    },
+    {
+      "observations": 26,
+      "fires": 29
+    },
+    {
+      "observations": 27,
+      "fires": 25
+    },
+    {
+      "observations": 28,
+      "fires": 24
+    },
+    {
+      "observations": 29,
+      "fires": 16
+    },
+    {
+      "observations": 30,
+      "fires": 18
+    },
+    {
+      "observations": 31,
+      "fires": 12
+    },
+    {
+      "observations": 32,
+      "fires": 9
+    },
+    {
+      "observations": 33,
+      "fires": 17
+    },
+    {
+      "observations": 34,
+      "fires": 9
+    },
+    {
+      "observations": 35,
+      "fires": 9
+    },
+    {
+      "observations": 36,
+      "fires": 7
+    },
+    {
+      "observations": 37,
+      "fires": 7
+    },
+    {
+      "observations": 38,
+      "fires": 6
+    },
+    {
+      "observations": 39,
+      "fires": 8
+    },
+    {
+      "observations": 40,
+      "fires": 2
+    },
+    {
+      "observations": 41,
+      "fires": 2
+    },
+    {
+      "observations": 42,
+      "fires": 4
+    },
+    {
+      "observations": 43,
+      "fires": 5
+    },
+    {
+      "observations": 44,
+      "fires": 3
+    },
+    {
+      "observations": 45,
+      "fires": 4
+    },
+    {
+      "observations": 46,
+      "fires": 3
+    },
+    {
+      "observations": 47,
+      "fires": 4
+    },
+    {
+      "observations": 48,
+      "fires": 3
+    },
+    {
+      "observations": 49,
+      "fires": 1
+    },
+    {
+      "observations": 50,
+      "fires": 2
+    },
+    {
+      "observations": 51,
+      "fires": 4
+    },
+    {
+      "observations": 52,
+      "fires": 2
+    },
+    {
+      "observations": 53,
+      "fires": 1
+    },
+    {
+      "observations": 54,
+      "fires": 2
+    },
+    {
+      "observations": 57,
+      "fires": 1
+    },
+    {
+      "observations": 61,
+      "fires": 1
+    },
+    {
+      "observations": 81,
+      "fires": 1
+    }
+  ],
+  "run_distribution": [
+    {
+      "length": 1,
+      "runs": 334104,
+      "fires": 246481
+    },
+    {
+      "length": 2,
+      "runs": 56254,
+      "fires": 49514
+    },
+    {
+      "length": 3,
+      "runs": 19075,
+      "fires": 18017
+    },
+    {
+      "length": 4,
+      "runs": 8790,
+      "fires": 8519
+    },
+    {
+      "length": 5,
+      "runs": 4411,
+      "fires": 4338
+    },
+    {
+      "length": 6,
+      "runs": 2485,
+      "fires": 2464
+    },
+    {
+      "length": 7,
+      "runs": 1457,
+      "fires": 1447
+    },
+    {
+      "length": 8,
+      "runs": 973,
+      "fires": 964
+    },
+    {
+      "length": 9,
+      "runs": 606,
+      "fires": 605
+    },
+    {
+      "length": 10,
+      "runs": 442,
+      "fires": 442
+    },
+    {
+      "length": 11,
+      "runs": 303,
+      "fires": 303
+    },
+    {
+      "length": 12,
+      "runs": 213,
+      "fires": 213
+    },
+    {
+      "length": 13,
+      "runs": 189,
+      "fires": 189
+    },
+    {
+      "length": 14,
+      "runs": 134,
+      "fires": 134
+    },
+    {
+      "length": 15,
+      "runs": 107,
+      "fires": 107
+    },
+    {
+      "length": 16,
+      "runs": 76,
+      "fires": 76
+    },
+    {
+      "length": 17,
+      "runs": 69,
+      "fires": 69
+    },
+    {
+      "length": 18,
+      "runs": 53,
+      "fires": 53
+    },
+    {
+      "length": 19,
+      "runs": 39,
+      "fires": 39
+    },
+    {
+      "length": 20,
+      "runs": 46,
+      "fires": 46
+    },
+    {
+      "length": 21,
+      "runs": 30,
+      "fires": 30
+    },
+    {
+      "length": 22,
+      "runs": 27,
+      "fires": 26
+    },
+    {
+      "length": 23,
+      "runs": 15,
+      "fires": 15
+    },
+    {
+      "length": 24,
+      "runs": 19,
+      "fires": 19
+    },
+    {
+      "length": 25,
+      "runs": 13,
+      "fires": 13
+    },
+    {
+      "length": 26,
+      "runs": 10,
+      "fires": 10
+    },
+    {
+      "length": 27,
+      "runs": 12,
+      "fires": 12
+    },
+    {
+      "length": 28,
+      "runs": 15,
+      "fires": 15
+    },
+    {
+      "length": 29,
+      "runs": 11,
+      "fires": 11
+    },
+    {
+      "length": 30,
+      "runs": 7,
+      "fires": 7
+    },
+    {
+      "length": 31,
+      "runs": 12,
+      "fires": 12
+    },
+    {
+      "length": 32,
+      "runs": 6,
+      "fires": 6
+    },
+    {
+      "length": 33,
+      "runs": 5,
+      "fires": 5
+    },
+    {
+      "length": 34,
+      "runs": 8,
+      "fires": 8
+    },
+    {
+      "length": 35,
+      "runs": 7,
+      "fires": 7
+    },
+    {
+      "length": 36,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 38,
+      "runs": 2,
+      "fires": 2
+    },
+    {
+      "length": 39,
+      "runs": 3,
+      "fires": 3
+    },
+    {
+      "length": 40,
+      "runs": 3,
+      "fires": 3
+    },
+    {
+      "length": 41,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 43,
+      "runs": 3,
+      "fires": 3
+    },
+    {
+      "length": 44,
+      "runs": 2,
+      "fires": 2
+    },
+    {
+      "length": 45,
+      "runs": 3,
+      "fires": 3
+    },
+    {
+      "length": 46,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 48,
+      "runs": 3,
+      "fires": 3
+    },
+    {
+      "length": 49,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 50,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 52,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 53,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 55,
+      "runs": 1,
+      "fires": 1
+    },
+    {
+      "length": 63,
+      "runs": 1,
+      "fires": 1
+    }
+  ],
+  "quality": "Native measurement QA and uncertainty unprovided; source availability timestamps unprovided.",
+  "region": "Reported fire_traits.region joined only by documented native ID string; no newly calculated geometry/CRS association."
+}

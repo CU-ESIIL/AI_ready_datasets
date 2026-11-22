@@ -1,0 +1,92 @@
+[
+  {
+    "split": "random",
+    "method": "raw_linear",
+    "same_score": true
+  },
+  {
+    "split": "random",
+    "method": "raw_nonlinear",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "raw_linear",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "raw_nonlinear",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "supervised_linear_probe",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "supervised_nonlinear_probe",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "self_supervised_linear_probe",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "self_supervised_nonlinear_probe",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "multitask_linear_probe",
+    "same_score": true
+  },
+  {
+    "split": "temporal",
+    "method": "multitask_nonlinear_probe",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "raw_linear",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "raw_nonlinear",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "supervised_linear_probe",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "supervised_nonlinear_probe",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "self_supervised_linear_probe",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "self_supervised_nonlinear_probe",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "multitask_linear_probe",
+    "same_score": true
+  },
+  {
+    "split": "geographic_west",
+    "method": "multitask_nonlinear_probe",
+    "same_score": true
+  }
+]

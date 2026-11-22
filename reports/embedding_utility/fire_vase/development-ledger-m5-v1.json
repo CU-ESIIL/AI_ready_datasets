@@ -1,0 +1,25 @@
+{
+  "version": "transfer-development-ledger-v1",
+  "retained": "results/milestone-5-transfer-v1",
+  "protocol": "transfer-protocol-m5-v1.md",
+  "prior_task_A_test_exposure": true,
+  "real_source_rows_read": 0,
+  "real_model_calls": 0,
+  "entries": [
+    {
+      "path": "run/embedding_utility/fire_vase/m5-transfer-frozen-v1",
+      "classification": "complete first matrix, preserved",
+      "notes": "Initial full task evaluation before explicit per-prefix provenance fingerprint/lineage export hardening. Scientific settings fixed."
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m5-transfer-frozen-v2",
+      "classification": "retained release replay",
+      "notes": "Added exact prefix support/availability fingerprint check and compact row lineage only. No target, architecture, hyperparameter or predictive selection changes."
+    }
+  ],
+  "evaluation_digest_identical": true,
+  "evaluation_digest": "821cedcffddec930f03e4ca910a391025ed6a4299083a306443a1a55a9b546aa",
+  "independent_new_model_samples": false,
+  "task_deletions": [],
+  "posthoc_scientific_acceptance_threshold": null
+}

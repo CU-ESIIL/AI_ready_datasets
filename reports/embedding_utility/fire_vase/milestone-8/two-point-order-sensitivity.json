@@ -1,0 +1,8 @@
+{
+  "native_two_point_fires": 47992,
+  "unequal_increment_pairs": 23679,
+  "consecutive_pairs": 17263,
+  "invariant": "total/count/SD/span",
+  "order_sensitive": "first/last/first-share/first-half-share; consecutive change reverses sign where defined",
+  "scope": "controlled swap of native two-point values at fixed observed dates; recipe sensitivity, not a biological time reversal or encoder-equivariance claim"
+}

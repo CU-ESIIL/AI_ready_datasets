@@ -1,0 +1,27 @@
+{
+  "complete_census_json_equal": true,
+  "comparisons": {
+    "local-consecutive-runs.parquet": {
+      "primary": "3505e560ec6a120a16bcff4507e6a418eec629cefc3e67bc12ac259444f76b19",
+      "replay": "3505e560ec6a120a16bcff4507e6a418eec629cefc3e67bc12ac259444f76b19"
+    },
+    "per-fire-profile.parquet": {
+      "primary": "0dd57eb48709d0b6788956e58036fb6754dc14f7f69d38240cbb316ed705d073",
+      "replay": "0dd57eb48709d0b6788956e58036fb6754dc14f7f69d38240cbb316ed705d073"
+    },
+    "fire": {
+      "identical_rows": 557434
+    },
+    "runs": {
+      "identical_rows": 859542
+    },
+    "windows": {
+      "identical_rows": 100354
+    },
+    "gaps": {
+      "identical_rows": 17
+    }
+  },
+  "replay_location": "/tmp/fire-population-replay",
+  "replay_source_checksums_reused_only_after_stat_validation": true
+}

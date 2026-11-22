@@ -1,0 +1,20 @@
+{
+  "version": "direct-investigator-authorization-v1",
+  "recorded_at": "2026-11-21T19:40:21.955109+00:00",
+  "provenance": "Direct user message in the current Codex chat on 2026-11-21 America/Denver",
+  "exact_statement": "you can have all the approvals for this project",
+  "origin": "DIRECT_USER_INSTRUCTION",
+  "interpretation": "Investigator grants project approvals within their authority; do not request redundant confirmation of internal inspection, verification, profiling or analysis.",
+  "internal_project_work_authorized": true,
+  "supersedes_prior_assumption_that_investigator_intent_is_missing": true,
+  "external_receipt_authentication_claimed": false,
+  "source_specific_rights_independently_verified": false,
+  "scientific_equivalence_approved_by_this_record": false,
+  "constraints": [
+    "Preserve source observations and frozen evidence.",
+    "Do not fabricate third-party rights, authenticated external receipts or scientific findings.",
+    "Retain source-specific restrictions and unresolved scientific meaning.",
+    "No external publication or redistribution is performed by recording this authorization."
+  ],
+  "next_work": "Reconcile existing gate with this direct instruction without inventing domain PASS findings; execute source verification and native-value population profiling wherever applicable source-use and scientific requirements are established."
+}

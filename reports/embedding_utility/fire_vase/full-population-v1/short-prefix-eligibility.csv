@@ -1,0 +1,7 @@
+input_depth,future_horizon,eligible_fires,dependent_windows,local_runs,median_windows_per_fire,max_windows_per_fire,scope
+1,1,75953,196982,95947,2,76,secondary short-prefix prediction eligibility; no outcomes/models evaluated
+1,3,19004,61342,20618,2.0,70,secondary short-prefix prediction eligibility; no outcomes/models evaluated
+1,7,3386,16547,3475,3.0,62,secondary short-prefix prediction eligibility; no outcomes/models evaluated
+2,1,34911,101035,39693,2,72,secondary short-prefix prediction eligibility; no outcomes/models evaluated
+2,3,11195,40724,11828,2,68,secondary short-prefix prediction eligibility; no outcomes/models evaluated
+2,7,2452,13072,2502,3.0,60,secondary short-prefix prediction eligibility; no outcomes/models evaluated

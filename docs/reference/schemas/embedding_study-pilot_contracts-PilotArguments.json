@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "candidates": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 3,
+      "title": "Candidates",
+      "type": "array"
+    },
+    "claim": {
+      "anyOf": [
+        {
+          "enum": [
+            "absolute_from_normalized",
+            "exact_profile_from_pcs",
+            "ecological_analog",
+            "measurement_uncertainty",
+            "forecast_availability",
+            "duration_from_sidecar"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Claim"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date"
+    },
+    "fire_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 1,
+      "title": "Fire Ids",
+      "type": "array"
+    },
+    "start_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Date"
+    }
+  },
+  "required": [
+    "fire_ids"
+  ],
+  "title": "PilotArguments",
+  "type": "object"
+}

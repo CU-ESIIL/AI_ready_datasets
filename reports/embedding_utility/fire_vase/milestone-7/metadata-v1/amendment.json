@@ -1,0 +1,65 @@
+{
+  "agent_inference_authorized": false,
+  "batch_rows": 1024,
+  "claim": "retrospective_reconstructed",
+  "embedding_dimensions": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "horizons": [
+    1,
+    3,
+    7
+  ],
+  "inventory_digest": "982397cc79514d1d81866bf97875c0718945ab07ca1303f70cd0877f01c3a236",
+  "lengths": [
+    3,
+    7,
+    14,
+    30
+  ],
+  "meaning_of_thresholds": "SCIENTIST_REVIEW_REQUIRED",
+  "minimum_effect_sizes": {
+    "classification": null,
+    "cost": null,
+    "prediction": null,
+    "retrieval": null
+  },
+  "persist_raw_or_harmonized": false,
+  "population": "all_task_eligible_fires",
+  "primary_metrics": [
+    "fire_mean_log_mse",
+    "fire_mean_brier",
+    "future_relevance_precision_at_10",
+    "scoped_total_cost"
+  ],
+  "reviewed_environment_capabilities": [],
+  "reviewed_geometry_capabilities": [],
+  "row_limit": null,
+  "scientific_binding_digests": [],
+  "scope": [
+    "verify_container_bytes",
+    "profile_rows",
+    "harmonize",
+    "features",
+    "train_neural",
+    "retrospective_prediction",
+    "retrieval",
+    "spatial_environment",
+    "benchmark",
+    "publish_outputs"
+  ],
+  "source_release": "fire-vase-data-lake-v0.1",
+  "training_fractions": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "version": "fire-full-lake-plan-v1",
+  "window_days": 30
+}

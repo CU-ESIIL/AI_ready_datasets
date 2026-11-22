@@ -1,0 +1,14 @@
+{
+  "data_array_values_read": 0,
+  "observation_rows_read": 0,
+  "output_sha256": {
+    "amendment.json": "306d7543a5cbe8796ba5c5b52725c98477458ca17c87977b9e727d3df5b0b4c1",
+    "authorization-template.json": "28507cbd4c0005617fdca1186fc62e8d18a5a888632dbeb021ce2faf8d3563f4",
+    "catalog.json": "74a340f77ed4be1cb933996824eac7284ccc0050d5bfab72481ecff2ee9f9b5d",
+    "inventory-summary.json": "ac5b55f255411e75d669cb9128b8aa911df6c068e079c22d33eee93e1a275449",
+    "preconditions.json": "8cb738334c707a8051c356465d98e7040fba72d24d31c5fa219a861d569b22cf"
+  },
+  "plan_digest": "aedc7dad21bd4ddbe2824a324c671bd05e6b55edae9298a63f9844e21467b9fe",
+  "status": "PENDING_FULL_LAKE_HUMAN_REVIEW",
+  "version": "full-lake-preapproval-v1"
+}

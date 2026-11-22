@@ -1,0 +1,11 @@
+{
+  "R0": "native values/dates/source refs with independently checked operations",
+  "R1": "Original-unit scientific scalar state retained as a derived reference artifact; numerical log/asinh model input is a separate preprocessing view, not source-bit preservation.",
+  "PCA": "floating-point numerical reconstruction/probes, not exact source-bit preservation",
+  "learned": "model-dependent recovery only; successful probes do not establish exact sufficiency",
+  "A_date_sequence": "not present in selected scientific-state input; raw record retains it",
+  "B_date_sequence": "retained original dates support exact recovery from common metadata",
+  "C": "native fallback can recover; not embedding information preservation",
+  "full_cumulative_sequence": "R0 computes retained-observation cumulative sums. R1 raw first/last/total exactly suffices for1/2 observations; PCA numerical inverse and learned probes can approximate those short cumulative sequences. General longer-history reconstruction is not uniquely determined: algebraic six-point state collision is unit-tested. Neither missing days nor physical full-fire area is filled/inferred.",
+  "native_quality": "unknown; masks describe mathematical support, not sensor quality"
+}

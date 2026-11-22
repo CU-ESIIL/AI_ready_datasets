@@ -1,0 +1,64 @@
+{
+  "historical_fires": 278569,
+  "historical_cached_rows": 626102,
+  "primary_fraction": 0.03678083347393285,
+  "depths": [
+    {
+      "depth": 3,
+      "all_histories_observation_count_at_least_depth": 69546,
+      "whole_history_consecutive_fires": 10246,
+      "whole_history_consecutive_windows": 24855,
+      "whole_history_consecutive_fraction_of_catalog": 0.03678083347393285,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 5,
+      "all_histories_observation_count_at_least_depth": 30538,
+      "whole_history_consecutive_fires": 2887,
+      "whole_history_consecutive_windows": 9486,
+      "whole_history_consecutive_fraction_of_catalog": 0.01036368009362133,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 7,
+      "all_histories_observation_count_at_least_depth": 15036,
+      "whole_history_consecutive_fires": 1171,
+      "whole_history_consecutive_windows": 4796,
+      "whole_history_consecutive_fraction_of_catalog": 0.004203626390589047,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 10,
+      "all_histories_observation_count_at_least_depth": 5956,
+      "whole_history_consecutive_fires": 438,
+      "whole_history_consecutive_windows": 2205,
+      "whole_history_consecutive_fraction_of_catalog": 0.0015723213997250233,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 14,
+      "all_histories_observation_count_at_least_depth": 2201,
+      "whole_history_consecutive_fires": 148,
+      "whole_history_consecutive_windows": 1015,
+      "whole_history_consecutive_fraction_of_catalog": 0.0005312866830121083,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 21,
+      "all_histories_observation_count_at_least_depth": 540,
+      "whole_history_consecutive_fires": 52,
+      "whole_history_consecutive_windows": 342,
+      "whole_history_consecutive_fraction_of_catalog": 0.0001866682940312813,
+      "local_runs_in_gappy_histories": null
+    },
+    {
+      "depth": 30,
+      "all_histories_observation_count_at_least_depth": 143,
+      "whole_history_consecutive_fires": 10,
+      "whole_history_consecutive_windows": 110,
+      "whole_history_consecutive_fraction_of_catalog": 3.589774885216948e-05,
+      "local_runs_in_gappy_histories": null
+    }
+  ],
+  "output": "reports/embedding_utility/fire_vase/milestone-7-2/historical-aggregate-v2"
+}

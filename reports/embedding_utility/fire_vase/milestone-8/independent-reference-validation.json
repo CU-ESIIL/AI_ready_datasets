@@ -1,0 +1,20 @@
+{
+  "source_fire_ids": 278865,
+  "original_unit_reference_schema": [
+    "log_observed_total",
+    "log_observation_count",
+    "log_first_increment",
+    "log_last_increment",
+    "log_observed_std",
+    "first_allocation",
+    "asinh_mean_consecutive_change",
+    "strict_interior_peak_count",
+    "first_half_allocation",
+    "log_observed_span"
+  ],
+  "transformed_reference_matches_training_labels": true,
+  "tolerance": 1e-12,
+  "scope": "original raw-unit derived scientific properties; not a copied source daily-observation table",
+  "one_point_undefined_preserved": true,
+  "no_prediction_clipping": true
+}

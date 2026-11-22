@@ -1,0 +1,37 @@
+{
+  "status": "REAL_OBSERVED_STATE_TRAINING_AND_PROBES_COMPLETE",
+  "neural_checkpoints": 75,
+  "fire_ids": 278865,
+  "train_fires": 194980,
+  "test_fires": 41991,
+  "target_names": [
+    "log_observed_total",
+    "log_observation_count",
+    "log_first_increment",
+    "log_last_increment",
+    "log_observed_std",
+    "first_allocation",
+    "asinh_mean_consecutive_change",
+    "strict_interior_peak_count",
+    "first_half_allocation",
+    "log_observed_span"
+  ],
+  "undefined_counts": {
+    "log_observed_total": 0,
+    "log_observation_count": 0,
+    "log_first_increment": 0,
+    "log_last_increment": 0,
+    "log_observed_std": 161200,
+    "first_allocation": 161200,
+    "asinh_mean_consecutive_change": 202912,
+    "strict_interior_peak_count": 243954,
+    "first_half_allocation": 161200,
+    "log_observed_span": 0
+  },
+  "pca_rank": "requested dimensions capped to measured rank; see checkpoint records",
+  "population": "all fires; strata not excluded",
+  "scientific_scope": "observed-state feature encoders, not raw-sequence or physical-mechanism models",
+  "epoch_count": 12,
+  "single_seed": true,
+  "peak_rss_bytes_macos": 2580152320
+}

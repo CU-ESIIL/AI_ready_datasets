@@ -1,0 +1,18 @@
+{
+  "code_sha256": {
+    "scripts/prepare_fire_vase_real_review.py": "fcfe51fc56917a124a3940f51b4a99438e38d5894b86b8f06431c0d74ea835da",
+    "src/dataset_prototype/embedding_study/real_study_contracts.py": "4046f2e35597061a9ad0396fbb494f5eaa1d79ae2fc3f40efd00a41111d82870",
+    "src/dataset_prototype/embedding_study/real_study_validation.py": "b7bb78ea2e060de1b1f46e59aa20d6aa72ecf3cc8a1a9aec18148056133cd0ba"
+  },
+  "models_trained": 0,
+  "output_sha256": {
+    "metadata-evidence.json": "3d2ea5b31096fa13c07c8acc0e9c1beb817b7fe797fb9f1b698a35425b636b0e",
+    "packet.json": "1a25a0167e6a2fc8dd5be3649fe182ea46c889590e1810aa2690009fc9e9db4e",
+    "preconditions.json": "6f723b1f8da999f1ff8dc04912250b6443cbaaaec1f26b25230105235827799a",
+    "review-template.json": "a4a66525da445c40862aafb41bcea964eac5a86fb0c73ae9c88f93bd49dfa6a4"
+  },
+  "packet_digest": "8be26eec72f9fb711569994cbb5cb8e2c3339b5c156037e8779a597b0570135a",
+  "source_observation_rows_read": 0,
+  "status": "PENDING_HUMAN_REVIEW",
+  "version": "fire-m6-review-manifest-v1"
+}

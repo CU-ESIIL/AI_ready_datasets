@@ -1,0 +1,7 @@
+{
+  "A": "next calendar-day growth; regression log1p(km2/day)",
+  "B": "sum of next three daily increments; regression log1p(km2)",
+  "C": "mean of next three increments strictly exceeds mean of last three observed increments; binary; equality is false",
+  "D": "population standard deviation (ddof=0) of next three daily increments; regression log1p(km2/day)",
+  "E": "future next-three log1p-increment vector; top-10 outcome-distance relevance, not ecological analogs"
+}

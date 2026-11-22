@@ -1,0 +1,57 @@
+{
+  "native": {
+    "fires": 278865,
+    "seconds": 29.260404750000816
+  },
+  "cache": {
+    "fires": 278569,
+    "seconds": 28.433253666000383
+  },
+  "total_seconds": 73.55369174999942,
+  "peak_rss_bytes": 313917440,
+  "source_container_bytes": 893563713,
+  "source_byte_scope": "complete-container verification bytes, not measured filesystem physical I/O",
+  "dataset_daily_records_profiled": 1253135,
+  "decoded_daily_records_this_invocation": 1253135,
+  "decoded_records_by_source_this_invocation": {
+    "native": 627033,
+    "cache": 626102
+  },
+  "catalog_records_profiled": 278569,
+  "reused_completed_stages": [],
+  "checkpoint_restart": "stage-level; completed verified stages reused, interrupted stage deleted/replayed; no tensor materialization",
+  "source_sorts": "read-only SQLite temp_store MEMORY, hard heap256MiB",
+  "derived_metadata_bytes": 687399628,
+  "phase_times": {
+    "native": {
+      "fires": 278865,
+      "seconds": 29.260404750000816
+    },
+    "cache": {
+      "fires": 278569,
+      "seconds": 28.433253666000383
+    }
+  },
+  "measurement_scope": "complete successful independent replay; primary initial Arrow export failed and resumed from completed stages, retained separately",
+  "primary_initial_resume_resource": {
+    "total_seconds": 13.377816583999447,
+    "peak_rss_bytes": 178176000,
+    "source_container_bytes": 893563713,
+    "source_byte_scope": "complete-container verification bytes, not measured filesystem physical I/O",
+    "decoded_daily_records": 1253135,
+    "decoded_catalog_records": 278569,
+    "checkpoint_restart": "stage-level; completed verified stages reused, interrupted stage deleted/replayed; no tensor materialization",
+    "source_sorts": "read-only SQLite temp_store MEMORY, hard heap256MiB",
+    "derived_metadata_bytes": 710602598,
+    "phase_times": {},
+    "measurement_scope": "resume-only process; old decoded_daily_records field described dataset coverage, not newly decoded records"
+  },
+  "source_full_hash_bytes": 893563713,
+  "source_full_hash_seconds": 0.37627520699970773,
+  "filesystem_physical_bytes_read": null,
+  "decoded_catalog_and_trait_records_full_replay": 557138,
+  "derived_metadata_bytes_final_before_manifest": 728674079,
+  "report_generation_seconds_measured": 18.48,
+  "report_generation_peak_memory": null,
+  "report_resource_note": "macOS time -l reported wall time but further kernel statistics were unavailable; census peak memory is separately measured."
+}

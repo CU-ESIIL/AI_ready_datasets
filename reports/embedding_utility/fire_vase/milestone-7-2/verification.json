@@ -1,0 +1,136 @@
+{
+  "timestamp": "2026-11-21T19:33:22.556032+00:00",
+  "canonical_lake": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/data_lake/fire-vase-data-lake-v0.1",
+  "files_stat": 646,
+  "bytes_stat": 40318194810,
+  "prior_files_stat": 646,
+  "prior_bytes_stat": 40318194810,
+  "discrepancy_checks": [
+    {
+      "path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg-shm",
+      "exists": true,
+      "bytes": 32768,
+      "mtime_ns": 1787941282690956187,
+      "interpretation": "SQLite runtime sidecar filename; origin/content unverified"
+    },
+    {
+      "path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg-wal",
+      "exists": true,
+      "bytes": 0,
+      "mtime_ns": 1787941282690293812,
+      "interpretation": "SQLite runtime sidecar filename; origin/content unverified"
+    },
+    {
+      "path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg-shm",
+      "exists": true,
+      "bytes": 32768,
+      "mtime_ns": 1787941287888704093,
+      "interpretation": "SQLite runtime sidecar filename; origin/content unverified"
+    },
+    {
+      "path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg-wal",
+      "exists": true,
+      "bytes": 0,
+      "mtime_ns": 1787940507818600222,
+      "interpretation": "SQLite runtime sidecar filename; origin/content unverified"
+    },
+    {
+      "path": "files/repository/config/data_release.yml",
+      "exists": true,
+      "bytes": 6899,
+      "mtime_ns": 1786565340513697323,
+      "interpretation": "Documentation/configuration/schema stat difference, not observation-content evidence"
+    },
+    {
+      "path": "files/repository/docs/datasets/fired.md",
+      "exists": true,
+      "bytes": 2638,
+      "mtime_ns": 1788098880869287272,
+      "interpretation": "Documentation/configuration/schema stat difference, not observation-content evidence"
+    },
+    {
+      "path": "files/repository/docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md",
+      "exists": true,
+      "bytes": 4076,
+      "mtime_ns": 1786557346317860783,
+      "interpretation": "Documentation/configuration/schema stat difference, not observation-content evidence"
+    },
+    {
+      "path": "files/repository/docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md",
+      "exists": true,
+      "bytes": 12344,
+      "mtime_ns": 1787941514609313204,
+      "interpretation": "Documentation/configuration/schema stat difference, not observation-content evidence"
+    },
+    {
+      "path": "files/repository/docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md",
+      "exists": true,
+      "bytes": 30573,
+      "mtime_ns": 1787941514399165474,
+      "interpretation": "Documentation/configuration/schema stat difference, not observation-content evidence"
+    },
+    {
+      "path": "files/repository/schemas/fire_traits.schema.json",
+      "exists": true,
+      "bytes": 760,
+      "mtime_ns": 1787940685315309231,
+      "interpretation": "Documentation/configuration/schema stat difference, not observation-content evidence"
+    }
+  ],
+  "current_complete_checksums_computed": 0,
+  "observation_rows_read": 0,
+  "array_values_read": 0,
+  "source_modifications": 0,
+  "reviewed_binding_digests": [],
+  "actual_current_gate": {
+    "verify_container_bytes": [
+      "external_human_review_missing",
+      "attributed_timestamped_review_missing",
+      "verified_external_human_receipt_missing",
+      "scope_not_approved",
+      "semantic:NEEDS_EVIDENCE",
+      "units:NEEDS_EVIDENCE",
+      "support:NEEDS_EVIDENCE",
+      "rights:NEEDS_EVIDENCE",
+      "quality:NEEDS_EVIDENCE",
+      "availability:NEEDS_EVIDENCE",
+      "execution:NEEDS_EVIDENCE",
+      "publication:NEEDS_EVIDENCE"
+    ],
+    "profile_rows": [
+      "external_human_review_missing",
+      "attributed_timestamped_review_missing",
+      "verified_external_human_receipt_missing",
+      "scope_not_approved",
+      "semantic:NEEDS_EVIDENCE",
+      "units:NEEDS_EVIDENCE",
+      "support:NEEDS_EVIDENCE",
+      "rights:NEEDS_EVIDENCE",
+      "integrity:NEEDS_EVIDENCE",
+      "quality:NEEDS_EVIDENCE",
+      "availability:NEEDS_EVIDENCE",
+      "execution:NEEDS_EVIDENCE",
+      "publication:NEEDS_EVIDENCE"
+    ],
+    "harmonize": [
+      "external_human_review_missing",
+      "attributed_timestamped_review_missing",
+      "verified_external_human_receipt_missing",
+      "scope_not_approved",
+      "semantic:NEEDS_EVIDENCE",
+      "units:NEEDS_EVIDENCE",
+      "support:NEEDS_EVIDENCE",
+      "rights:NEEDS_EVIDENCE",
+      "integrity:NEEDS_EVIDENCE",
+      "quality:NEEDS_EVIDENCE",
+      "availability:NEEDS_EVIDENCE",
+      "execution:NEEDS_EVIDENCE",
+      "publication:NEEDS_EVIDENCE"
+    ]
+  },
+  "rights_web_check": {
+    "url": "https://scholar.colorado.edu/concern/datasets/d504rm74m",
+    "result": "403 Forbidden; no license evidence obtained"
+  },
+  "checksums": "Historical manifest hashes are not current verified hashes. No new full-file hashing before required review."
+}

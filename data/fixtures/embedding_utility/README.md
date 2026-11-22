@@ -15,3 +15,10 @@ metadata; per-history and fixture hashes provide separate canonical-content evid
 Exact/profile references are independently computed; analog relevance is unavailable.
 PCA artifacts are fitted during each run on training fires only and are never refit
 per question. See the website's Fire VASE benchmark documentation for boundaries.
+
+`milestone-3-v3/` is the separate expanded synthetic cohort: 32 training, eight
+development and 20 evaluation histories, 30 development and 120 evaluation questions.
+Seed/source/license and checksum scope are explicit. Model-unseen evaluation cases
+are visible to developers; general scientific claim rubrics remain drafts, not expert
+gold. M1 files above are unchanged. See the expanded pilot protocol in
+`reports/embedding_utility/fire_vase/agent-protocol-m3-v1.md`.

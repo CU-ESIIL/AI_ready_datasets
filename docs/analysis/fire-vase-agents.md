@@ -131,3 +131,8 @@ value. Local policy CPU time is not LLM latency or billed inference cost.
 The first live smoke and a genuinely held-out event/template configuration are
 explicitly disabled pending access, cost authorization and new independently
 reviewed inputs. The 29 public cases are not relabeled as unseen scientific data.
+
+The [expanded V3 pilot](fire-vase-pilot.md) adds separate synthetic cohorts, 120 frozen
+model-unseen evaluation questions, optimized/cached direct rivals and measured-cost
+selection diagnostics. Historical M2 results above remain unchanged. Real-model
+metadata evidence and expert adjudication remain pending.

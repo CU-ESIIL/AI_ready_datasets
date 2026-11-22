@@ -7,6 +7,7 @@ from time import perf_counter_ns
 from ..contracts import digest
 from .agent_contracts import AgentAction, QueryArguments, ScientificQuery
 from .agent_render import SYSTEM, serialize_prompt
+from .contracts import OPERATIONS
 
 
 def equivalent(a,b):
@@ -19,7 +20,10 @@ def equivalent(a,b):
     return type(a)==type(b) and a==b
 
 
-def run_episode(provider,initial,config,dispatcher,*,invoke=None):
+def run_episode(provider,initial,config,dispatcher,*,invoke=None,protocol=None):
+    # A versioned development-time contract, never supplied by runtime models.
+    Action, Arguments, Query, operation_ids, render = (protocol if protocol is not None else
+        (AgentAction, QueryArguments, ScientificQuery, OPERATIONS, serialize_prompt))
     start=perf_counter_ns();history=[];steps=[];final=None
     counts={'tool_calls':0,'invalid_tool_calls':0,'rejections':0,'recovery_attempts':0,
         'unsupported_answer_attempts':0,'model_calls':0,'inspect_calls':0,
@@ -33,11 +37,11 @@ def run_episode(provider,initial,config,dispatcher,*,invoke=None):
         known_tokens=sum((u['input_tokens'] or 0)+(u['output_tokens'] or 0) for u in usage)
         if known_tokens >= config.max_episode_tokens:
             termination='reported_token_limit';break
-        prompt=serialize_prompt(initial,history)
+        prompt=render(initial,history)
         if len(prompt.encode())>config.max_prompt_bytes:
             termination='prompt_byte_limit';break
         record={'step':step,'timestamp':datetime.now(timezone.utc).isoformat(),
-            'prompt':prompt,'prompt_hash':digest(prompt),'schema_hash':digest(AgentAction.model_json_schema()),
+            'prompt':prompt,'prompt_hash':digest(prompt),'schema_hash':digest(Action.model_json_schema()),
             'tool_descriptions_hash':digest(initial['operations']),'sampling_parameters':params}
         try:
             reply=(invoke or provider.invoke)(prompt,parameters=params)
@@ -60,7 +64,7 @@ def run_episode(provider,initial,config,dispatcher,*,invoke=None):
             if pending_rejection:
                 counts['recovery_attempts']+=1;pending_rejection=False
             parsed=json.loads(reply.content)
-            request=AgentAction.model_validate(parsed)
+            request=Action.model_validate(parsed)
             if request.action=='select':
                 dispatcher.authorize(request.representation);dispatcher.selected=request.representation
                 response={'status':'selected','representation':request.representation}
@@ -108,16 +112,15 @@ def run_episode(provider,initial,config,dispatcher,*,invoke=None):
                 counts['unsupported_answer_attempts']+=1
             category='invalid_action'
             if isinstance(parsed,dict) and parsed.get('action') in {'call','inspect','select'}:
-                from .contracts import OPERATIONS
-                if parsed.get('action')=='call' and parsed.get('operation') not in OPERATIONS:
+                if parsed.get('action')=='call' and parsed.get('operation') not in operation_ids:
                     category='unknown_operation_attempts'
                 elif parsed.get('representation') not in dispatcher.allowed:
                     category='unauthorized_representation_attempts'
                 elif isinstance(exc,PermissionError):category='unoffered_identifier_attempts'
                 elif parsed.get('action')=='call':
                     try:
-                        args=QueryArguments.model_validate(parsed.get('arguments'))
-                        ScientificQuery(operation=parsed['operation'],**args.model_dump())
+                        args=Arguments.model_validate(parsed.get('arguments'))
+                        Query(operation=parsed['operation'],**args.model_dump())
                     except ValueError:category='invalid_arguments'
             if category in counts:counts[category]+=1
             record['private_rejection_category']=category

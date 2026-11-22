@@ -1,0 +1,51 @@
+{
+  "version": "fire-pilot-development-ledger-v3",
+  "retained_run": "reports/embedding_utility/fire_vase/results/milestone-3-v1",
+  "real_model_calls": 0,
+  "history_preserved": true,
+  "entries": [
+    {
+      "path": "run/embedding_utility/fire_vase/m3-development-01",
+      "scope": "integration only",
+      "outcome": "constructor mismatch after artifact construction; preserved; no real inference"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-development-02",
+      "scope": "integration only",
+      "outcome": "matrix completed, manifest relative-path error; preserved; no real inference"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-development-03",
+      "scope": "development only",
+      "outcome": "development replay complete; public cost calibration boundary subsequently tightened"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-development-04",
+      "scope": "development only",
+      "outcome": "separate development cost calibration complete"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-draft-fixture-v1",
+      "scope": "draft fixture, excluded",
+      "outcome": "duplicate draft templates discovered by tests; retained as draft, never real evaluation"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-draft-fixture-v2",
+      "scope": "draft fixture, excluded",
+      "outcome": "added explicit equal-shape/scale and equal-total/reversed-order controls before final freeze"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-frozen-v1",
+      "scope": "complete integration run, excluded from retained cost report",
+      "outcome": "tests ran concurrently; timing contention and incomplete paired summaries. Original outputs preserved"
+    },
+    {
+      "path": "run/embedding_utility/fire_vase/m3-frozen-v2",
+      "scope": "retained frozen synthetic mock run",
+      "outcome": "executed after tests completed; copied to curated milestone-3-v1; no deliberate concurrent test load"
+    }
+  ],
+  "question_changes_after_real_inference": false,
+  "reference_changes_to_improve_model_performance": false,
+  "limitations": "No real model calls; no independently blinded developer holdout; scientific claim rubrics are drafts."
+}

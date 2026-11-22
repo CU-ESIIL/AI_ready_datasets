@@ -1,0 +1,22 @@
+{
+  "version": "fire-prefix-training-v1",
+  "mode": "synthetic_control",
+  "generator_seed": 20261121,
+  "train_fires": 128,
+  "validation_fires": 48,
+  "test_fires": 64,
+  "depths": [
+    3,
+    5,
+    7,
+    10
+  ],
+  "training_seeds": [
+    271,
+    811,
+    1729
+  ],
+  "epochs": 120,
+  "learning_rate": 0.01,
+  "ridge_alpha": 1.0
+}

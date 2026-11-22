@@ -1,0 +1,20 @@
+{
+  "version": "m6-development-ledger-v1",
+  "observation_rows_read": 0,
+  "real_models_trained": 0,
+  "entries": [
+    {
+      "path": "review-v1",
+      "classification": "incomplete metadata-only development artifact",
+      "note": "Source/schema evidence written; manifest creation failed on mixed absolute/relative code paths. No observation rows."
+    },
+    {
+      "path": "review-v2",
+      "classification": "retained metadata-only packet",
+      "note": "Corrected metadata manifest paths and package containment guard; original artifacts preserved. No observation rows."
+    }
+  ],
+  "user_correction": "Canonical data lake is inside Fire VASE. Selected packaged files confirmed present; previous expected-root/legacy-only audit did not establish packaged-lake absence.",
+  "human_review": "PENDING; no fabricated verdict or permission",
+  "packet_digest": "8be26eec72f9fb711569994cbb5cb8e2c3339b5c156037e8779a597b0570135a"
+}

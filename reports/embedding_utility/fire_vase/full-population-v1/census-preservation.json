@@ -1,0 +1,6 @@
+{
+  "census_manifest_sha256": "d68eb55e6a23caa36077c20a303655a3f308e5bf8e74eea070cfb34db6bca616",
+  "all_prior_census_artifact_hashes_match": true,
+  "checked": 70,
+  "upstream_clean": true
+}

@@ -1,0 +1,96 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "checksum_evidence": {
+      "title": "Checksum Evidence",
+      "type": "string"
+    },
+    "checksum_scope": {
+      "const": "historical_full_container_not_reverified",
+      "default": "historical_full_container_not_reverified",
+      "title": "Checksum Scope",
+      "type": "string"
+    },
+    "expected_size_bytes": {
+      "exclusiveMinimum": 0,
+      "title": "Expected Size Bytes",
+      "type": "integer"
+    },
+    "file_format": {
+      "enum": [
+        "gpkg",
+        "parquet"
+      ],
+      "title": "File Format",
+      "type": "string"
+    },
+    "local_path": {
+      "title": "Local Path",
+      "type": "string"
+    },
+    "measurement_semantics": {
+      "title": "Measurement Semantics",
+      "type": "string"
+    },
+    "native_fields": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Native Fields",
+      "type": "array"
+    },
+    "package_relative_path": {
+      "title": "Package Relative Path",
+      "type": "string"
+    },
+    "package_release": {
+      "minLength": 1,
+      "title": "Package Release",
+      "type": "string"
+    },
+    "reported_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Reported Sha256",
+      "type": "string"
+    },
+    "rights_evidence": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Rights Evidence",
+      "type": "array"
+    },
+    "rights_status": {
+      "default": "NEEDS_EVIDENCE",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NEEDS_EVIDENCE",
+        "NOT_APPLICABLE"
+      ],
+      "title": "Rights Status",
+      "type": "string"
+    },
+    "source_id": {
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "package_release",
+    "package_relative_path",
+    "local_path",
+    "file_format",
+    "expected_size_bytes",
+    "reported_sha256",
+    "checksum_evidence",
+    "measurement_semantics",
+    "native_fields"
+  ],
+  "title": "RealSourceIdentity",
+  "type": "object"
+}

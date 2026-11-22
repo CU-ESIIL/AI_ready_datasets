@@ -1,0 +1,65 @@
+{
+  "decision": "PENDING",
+  "findings": [
+    {
+      "domain": "semantic",
+      "evidence_ids": [
+        "metadata-evidence-v1:semantic"
+      ],
+      "rationale": "Copy operation is documented upstream; source measurement equivalence still requires expert review",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "domain": "units",
+      "evidence_ids": [
+        "metadata-evidence-v1:units"
+      ],
+      "rationale": "km2 labels/code present; daily area versus physical rate and date-bin meaning require source evidence",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "domain": "support",
+      "evidence_ids": [
+        "metadata-evidence-v1:support"
+      ],
+      "rationale": "Exact-day upstream checks known; actual interval/geometry/event boundary support not approved",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "domain": "rights",
+      "evidence_ids": [
+        "metadata-evidence-v1:rights"
+      ],
+      "rationale": "Source terms not established by code or article license; authoritative dataset page returned 403",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "domain": "integrity",
+      "evidence_ids": [
+        "metadata-evidence-v1:integrity"
+      ],
+      "rationale": "Historical package hashes and stat sizes recorded; current full-byte identity not verified",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "domain": "quality",
+      "evidence_ids": [
+        "metadata-evidence-v1:quality"
+      ],
+      "rationale": "Source uncertainty/QA survival unresolved; climate flags are not burn-area QA",
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "domain": "availability",
+      "evidence_ids": [
+        "metadata-evidence-v1:availability"
+      ],
+      "rationale": "Retrospective reconstruction documented; real availability not established; prospective claim remains unsupported",
+      "status": "NEEDS_EVIDENCE"
+    }
+  ],
+  "origin": "DRAFT_AGENT_PROPOSAL",
+  "packet_digest": "8be26eec72f9fb711569994cbb5cb8e2c3339b5c156037e8779a597b0570135a",
+  "reviewed_at": null,
+  "reviewer": null
+}

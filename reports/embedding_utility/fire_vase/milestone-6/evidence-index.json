@@ -1,0 +1,25 @@
+{
+  "version": "m6-evidence-index-v1",
+  "status": "PENDING_HUMAN_REVIEW",
+  "source_rows_read": 0,
+  "models_trained": 0,
+  "review_manifest_sha256": "123d904c6cad20615d9dfb870fae5225399bb913dae78034b11a13693fea5b92",
+  "artifacts_sha256": {
+    "reports/embedding_utility/fire_vase/milestone-6/scientific-contract.md": "61c6b41c0ae14f97d1d34e6518f1d11d29126195521daa5d2030148876b490fc",
+    "reports/embedding_utility/fire_vase/milestone-6/report.md": "d0f041bf080b2dd3b87b35da99220c099492d842c85d3dfc9d522cf7216a7e5e",
+    "reports/embedding_utility/fire_vase/milestone-6/cohort-and-evaluation-plan.md": "74b476c2426c34bd2bd46a44456b44c5a4ee82f5054f2cf936a50f67bf24008a",
+    "reports/embedding_utility/fire_vase/milestone-6/manuscript-evidence.md": "7bd50258217bb886a6180d489c9ea9feaaa6206e67c1a4e81836d083b5c0a427",
+    "reports/embedding_utility/fire_vase/milestone-6/source-use-assessment.md": "19a311ed9faa7b7bee8293fd61467f70139334e2c005294dde0e2f20ed4a806a",
+    "reports/embedding_utility/fire_vase/milestone-6/approval-packet.md": "c361e52cdc34d80fe6510401c03db12d0235ee5ea9c7cd127e88a6f5935b1845",
+    "reports/embedding_utility/fire_vase/milestone-6/unsupported-claims.md": "385520482eb6cb225137e471033544cf6ebee5262f3e9eb36fcd78b2f42c9899",
+    "reports/embedding_utility/fire_vase/milestone-6/public-source-evidence.json": "6f346d444357c33bca7a1b98b57ec6a182b071ee770ff1cefdc91ffb7abc6b6b",
+    "reports/embedding_utility/fire_vase/milestone-6/development-ledger.json": "2d0e56bf471f904b97fcdc4ffe666e2106ae6485fe472ccba7dd339b3dcdbb0f",
+    "docs/analysis/fire-vase-real-data.md": "5d239cf07a0349df49b14e398bebdba6addb4007301aeb2a0bdbb2357dbc9b2f",
+    "docs/assets/figures/embedding-real-review.svg": "cfd27393eea59b1054f749a3baaeb571f10b47570dc5d3deacfe3ae15fc887e2"
+  },
+  "tests": {
+    "passed": 359,
+    "skipped": 2
+  },
+  "mkdocs_strict": "passed"
+}

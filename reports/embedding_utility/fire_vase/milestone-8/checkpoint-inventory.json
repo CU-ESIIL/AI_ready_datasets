@@ -1,0 +1,674 @@
+[
+  {
+    "path": "private/direct-forecast-1-1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/direct-forecast-1-3.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/direct-forecast-1-7.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/direct-forecast-2-1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/direct-forecast-2-3.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/direct-forecast-2-7.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/direct-neural-geographic_west.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 170,
+    "total_parameters": 778
+  },
+  {
+    "path": "private/direct-neural-random.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 170,
+    "total_parameters": 778
+  },
+  {
+    "path": "private/direct-neural-temporal.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 170,
+    "total_parameters": 778
+  },
+  {
+    "path": "private/lifecycle-update-multitask-1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/lifecycle-update-multitask-2.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/lifecycle-update-self_supervised-1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/lifecycle-update-self_supervised-2.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/lifecycle-update-supervised-1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/lifecycle-update-supervised-2.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/multitask-16-0p01.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-16-0p03.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-16-0p1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-16-0p3.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-16-1p0.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-16-geographic_west.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-16-temporal.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 51,
+    "total_parameters": 659
+  },
+  {
+    "path": "private/multitask-32-0p01.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 99,
+    "total_parameters": 979
+  },
+  {
+    "path": "private/multitask-32-0p03.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 99,
+    "total_parameters": 979
+  },
+  {
+    "path": "private/multitask-32-0p1.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 99,
+    "total_parameters": 979
+  },
+  {
+    "path": "private/multitask-32-0p3.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 99,
+    "total_parameters": 979
+  },
+  {
+    "path": "private/multitask-32-1p0.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 99,
+    "total_parameters": 979
+  },
+  {
+    "path": "private/multitask-4-0p01.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 15,
+    "total_parameters": 419
+  },
+  {
+    "path": "private/multitask-4-0p03.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 15,
+    "total_parameters": 419
+  },
+  {
+    "path": "private/multitask-4-0p1.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 15,
+    "total_parameters": 419
+  },
+  {
+    "path": "private/multitask-4-0p3.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 15,
+    "total_parameters": 419
+  },
+  {
+    "path": "private/multitask-4-1p0.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 15,
+    "total_parameters": 419
+  },
+  {
+    "path": "private/multitask-64-0p01.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 195,
+    "total_parameters": 1619
+  },
+  {
+    "path": "private/multitask-64-0p03.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 195,
+    "total_parameters": 1619
+  },
+  {
+    "path": "private/multitask-64-0p1.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 195,
+    "total_parameters": 1619
+  },
+  {
+    "path": "private/multitask-64-0p3.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 195,
+    "total_parameters": 1619
+  },
+  {
+    "path": "private/multitask-64-1p0.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 195,
+    "total_parameters": 1619
+  },
+  {
+    "path": "private/multitask-8-0p01.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 27,
+    "total_parameters": 499
+  },
+  {
+    "path": "private/multitask-8-0p03.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 27,
+    "total_parameters": 499
+  },
+  {
+    "path": "private/multitask-8-0p1.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 27,
+    "total_parameters": 499
+  },
+  {
+    "path": "private/multitask-8-0p3.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 27,
+    "total_parameters": 499
+  },
+  {
+    "path": "private/multitask-8-1p0.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 27,
+    "total_parameters": 499
+  },
+  {
+    "path": "private/self_supervised-16-0p01.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-16-0p03.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-16-0p1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-16-0p3.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-16-1p0.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-16-geographic_west.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-16-temporal.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 340,
+    "total_parameters": 948
+  },
+  {
+    "path": "private/self_supervised-32-0p01.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 660,
+    "total_parameters": 1540
+  },
+  {
+    "path": "private/self_supervised-32-0p03.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 660,
+    "total_parameters": 1540
+  },
+  {
+    "path": "private/self_supervised-32-0p1.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 660,
+    "total_parameters": 1540
+  },
+  {
+    "path": "private/self_supervised-32-0p3.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 660,
+    "total_parameters": 1540
+  },
+  {
+    "path": "private/self_supervised-32-1p0.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 660,
+    "total_parameters": 1540
+  },
+  {
+    "path": "private/self_supervised-4-0p01.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 100,
+    "total_parameters": 504
+  },
+  {
+    "path": "private/self_supervised-4-0p03.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 100,
+    "total_parameters": 504
+  },
+  {
+    "path": "private/self_supervised-4-0p1.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 100,
+    "total_parameters": 504
+  },
+  {
+    "path": "private/self_supervised-4-0p3.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 100,
+    "total_parameters": 504
+  },
+  {
+    "path": "private/self_supervised-4-1p0.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 100,
+    "total_parameters": 504
+  },
+  {
+    "path": "private/self_supervised-64-0p01.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 1300,
+    "total_parameters": 2724
+  },
+  {
+    "path": "private/self_supervised-64-0p03.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 1300,
+    "total_parameters": 2724
+  },
+  {
+    "path": "private/self_supervised-64-0p1.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 1300,
+    "total_parameters": 2724
+  },
+  {
+    "path": "private/self_supervised-64-0p3.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 1300,
+    "total_parameters": 2724
+  },
+  {
+    "path": "private/self_supervised-64-1p0.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 1300,
+    "total_parameters": 2724
+  },
+  {
+    "path": "private/self_supervised-8-0p01.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 180,
+    "total_parameters": 652
+  },
+  {
+    "path": "private/self_supervised-8-0p03.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 180,
+    "total_parameters": 652
+  },
+  {
+    "path": "private/self_supervised-8-0p1.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 180,
+    "total_parameters": 652
+  },
+  {
+    "path": "private/self_supervised-8-0p3.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 180,
+    "total_parameters": 652
+  },
+  {
+    "path": "private/self_supervised-8-1p0.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 180,
+    "total_parameters": 652
+  },
+  {
+    "path": "private/supervised-16-0p01.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-16-0p03.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-16-0p1.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-16-0p3.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-16-1p0.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-16-geographic_west.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-16-temporal.npz",
+    "dimension": 16,
+    "encoder_parameters": 608,
+    "objective_head_parameters": 17,
+    "total_parameters": 625
+  },
+  {
+    "path": "private/supervised-32-0p01.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 33,
+    "total_parameters": 913
+  },
+  {
+    "path": "private/supervised-32-0p03.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 33,
+    "total_parameters": 913
+  },
+  {
+    "path": "private/supervised-32-0p1.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 33,
+    "total_parameters": 913
+  },
+  {
+    "path": "private/supervised-32-0p3.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 33,
+    "total_parameters": 913
+  },
+  {
+    "path": "private/supervised-32-1p0.npz",
+    "dimension": 32,
+    "encoder_parameters": 880,
+    "objective_head_parameters": 33,
+    "total_parameters": 913
+  },
+  {
+    "path": "private/supervised-4-0p01.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 5,
+    "total_parameters": 409
+  },
+  {
+    "path": "private/supervised-4-0p03.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 5,
+    "total_parameters": 409
+  },
+  {
+    "path": "private/supervised-4-0p1.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 5,
+    "total_parameters": 409
+  },
+  {
+    "path": "private/supervised-4-0p3.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 5,
+    "total_parameters": 409
+  },
+  {
+    "path": "private/supervised-4-1p0.npz",
+    "dimension": 4,
+    "encoder_parameters": 404,
+    "objective_head_parameters": 5,
+    "total_parameters": 409
+  },
+  {
+    "path": "private/supervised-64-0p01.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 65,
+    "total_parameters": 1489
+  },
+  {
+    "path": "private/supervised-64-0p03.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 65,
+    "total_parameters": 1489
+  },
+  {
+    "path": "private/supervised-64-0p1.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 65,
+    "total_parameters": 1489
+  },
+  {
+    "path": "private/supervised-64-0p3.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 65,
+    "total_parameters": 1489
+  },
+  {
+    "path": "private/supervised-64-1p0.npz",
+    "dimension": 64,
+    "encoder_parameters": 1424,
+    "objective_head_parameters": 65,
+    "total_parameters": 1489
+  },
+  {
+    "path": "private/supervised-8-0p01.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 9,
+    "total_parameters": 481
+  },
+  {
+    "path": "private/supervised-8-0p03.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 9,
+    "total_parameters": 481
+  },
+  {
+    "path": "private/supervised-8-0p1.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 9,
+    "total_parameters": 481
+  },
+  {
+    "path": "private/supervised-8-0p3.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 9,
+    "total_parameters": 481
+  },
+  {
+    "path": "private/supervised-8-1p0.npz",
+    "dimension": 8,
+    "encoder_parameters": 472,
+    "objective_head_parameters": 9,
+    "total_parameters": 481
+  }
+]

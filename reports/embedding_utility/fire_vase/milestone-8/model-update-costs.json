@@ -1,0 +1,56 @@
+[
+  {
+    "family": "supervised",
+    "cycle": 1,
+    "model_digest": "c45ecf8cb9946dd6a9f24e8cf7f99b07895c08f0f35e2b3fdd68924f65e09e25",
+    "training_seconds": 0.7546556660017814,
+    "all_fire_encoding_seconds": 0.030261874999268912,
+    "checkpoint_bytes": 6032,
+    "scope": "measured update cost only; no predictive evaluation, not independent primary seeds"
+  },
+  {
+    "family": "supervised",
+    "cycle": 2,
+    "model_digest": "4e6e217d6d74bc578d1a65f7604ccbae7f8eff1dc7ce7dc091ba84b28a6634c7",
+    "training_seconds": 0.756721749999997,
+    "all_fire_encoding_seconds": 0.02974516599715571,
+    "checkpoint_bytes": 6041,
+    "scope": "measured update cost only; no predictive evaluation, not independent primary seeds"
+  },
+  {
+    "family": "self_supervised",
+    "cycle": 1,
+    "model_digest": "0ef0a32ba4332c6a53ad7275caeaec1cc55d4b06cc10ee5f44b3a2a4b17ade8b",
+    "training_seconds": 1.1340035420034837,
+    "all_fire_encoding_seconds": 0.02990620800119359,
+    "checkpoint_bytes": 8572,
+    "scope": "measured update cost only; no predictive evaluation, not independent primary seeds"
+  },
+  {
+    "family": "self_supervised",
+    "cycle": 2,
+    "model_digest": "9801c479fcf63952a125e6a4715864bae788dd47850660a50214f8eaf6290876",
+    "training_seconds": 1.1228356250030629,
+    "all_fire_encoding_seconds": 0.030657250001240755,
+    "checkpoint_bytes": 8556,
+    "scope": "measured update cost only; no predictive evaluation, not independent primary seeds"
+  },
+  {
+    "family": "multitask",
+    "cycle": 1,
+    "model_digest": "dd06782d01329db662ef5d59b1441fdad9f354946da020f6ec6355869470c6f2",
+    "training_seconds": 0.9185341249976773,
+    "all_fire_encoding_seconds": 0.028068124996934785,
+    "checkpoint_bytes": 6333,
+    "scope": "measured update cost only; no predictive evaluation, not independent primary seeds"
+  },
+  {
+    "family": "multitask",
+    "cycle": 2,
+    "model_digest": "4e0fe470ad38f096bc83d3c7dd64e1572e26fd920834611269bab902e424bf27",
+    "training_seconds": 0.8936904999973194,
+    "all_fire_encoding_seconds": 0.028089499999623513,
+    "checkpoint_bytes": 6329,
+    "scope": "measured update cost only; no predictive evaluation, not independent primary seeds"
+  }
+]

@@ -41,10 +41,11 @@ def load_environment(root,snapshot,fixture,tasks,backend):
 
 
 class Dispatcher:
-    def __init__(self,task,allowed,stores,aliases,reverse):
+    def __init__(self,task,allowed,stores,aliases,reverse,*,query_contract=ScientificQuery):
         # Only this task's approved source set may be addressed, not the entire archive.
         self.task=task;self.allowed=tuple(allowed);self.stores=stores
         self.aliases=aliases;self.reverse=reverse
+        self.query_contract=query_contract
         self.offered=set((*task.fire_ids,*task.candidates))
         self.results={};self.calls=[];self.selected=allowed[0] if len(allowed)==1 else None
 
@@ -57,7 +58,7 @@ class Dispatcher:
 
     def call(self,representation,operation,arguments):
         self.authorize(representation)
-        q=ScientificQuery(operation=operation,**arguments.model_dump())
+        q=self.query_contract(operation=operation,**arguments.model_dump())
         public_ids=(*q.fire_ids,*q.candidates)
         if any(i not in self.reverse or self.reverse[i] not in self.offered for i in public_ids):
             raise PermissionError('unoffered_identifier')

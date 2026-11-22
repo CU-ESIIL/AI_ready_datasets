@@ -1,0 +1,119 @@
+{
+  "$defs": {
+    "ScientificReviewItem": {
+      "additionalProperties": false,
+      "properties": {
+        "domain": {
+          "enum": [
+            "semantic",
+            "units",
+            "support",
+            "rights",
+            "integrity",
+            "quality",
+            "availability"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NEEDS_EVIDENCE",
+            "NOT_APPLICABLE"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "domain",
+        "status",
+        "evidence_ids",
+        "rationale"
+      ],
+      "title": "ScientificReviewItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Externally supplied human review record; cannot authenticate its own authorship.",
+  "properties": {
+    "decision": {
+      "default": "PENDING",
+      "enum": [
+        "PENDING",
+        "APPROVE_BOUNDED_AUDIT",
+        "REJECT"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/ScientificReviewItem"
+      },
+      "title": "Findings",
+      "type": "array"
+    },
+    "origin": {
+      "default": "DRAFT_AGENT_PROPOSAL",
+      "enum": [
+        "DRAFT_AGENT_PROPOSAL",
+        "HUMAN_REVIEW"
+      ],
+      "title": "Origin",
+      "type": "string"
+    },
+    "packet_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Packet Digest",
+      "type": "string"
+    },
+    "reviewed_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewed At"
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewer"
+    }
+  },
+  "required": [
+    "packet_digest",
+    "findings"
+  ],
+  "title": "RealStudyReview",
+  "type": "object"
+}

@@ -48,6 +48,6 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install -e '.[dev,fire-vase-benchmark]' -r reports/embedding_utility/fire_vase/config/requirements-worker.txt
-      - run: FIRE_VASE_PYTHON="$(command -v python)" python -m pytest tests/test_fire_vase_benchmark.py tests/test_fire_vase_agents.py -q
+      - run: FIRE_VASE_PYTHON="$(command -v python)" python -m pytest tests/test_fire_vase_benchmark.py tests/test_fire_vase_agents.py tests/test_fire_vase_pilot.py -q
         env:
           FIRE_VASE_ROOT: external/fire_vase

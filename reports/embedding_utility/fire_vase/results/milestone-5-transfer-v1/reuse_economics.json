@@ -1,0 +1,1541 @@
+{
+  "cache_identity": {
+    "encoder_digests": {
+      "frozen_A": "a32139b4337bf24167aa63898d18da63737165202133f62c84d979c07fb7cadb",
+      "shared_AD": "8117d75409d732e2c7ed21fc5e93593fb828cba35037ba421a44fc8860a354b1",
+      "specific_B": "d83f0c9d14dcfb90997bf4b5d5f2803a36860a46cfdca5efcba1ad3f6e00904d",
+      "specific_C": "1f62aa9718050a7e4b10fa849aa7c47117ca52ff968394602854b68418b0aad0",
+      "specific_D": "374339ed75c8160b946159d9e1b35af43f91fbfa2f8ee9a83cc4876172e03e3a",
+      "specific_E": "b79127d19aafb715607c396d96c240c4f184448f68be3ac443eec24d45851385"
+    },
+    "head_digest": "8ad980617ead4008be4d2becbcef20db864549e6ce2ddead2a4feadd2e5f9891",
+    "prefix_digest": "1cfe059525c516576cafe2a7664b15e48b0809e526360bf6c7b11373ef673b75",
+    "preprocessing_digest": "808f898fda0e9fe00142111983b1604ea18e9460f47c75a311df51e873aea7f4"
+  },
+  "refresh": "Source/recipe/preprocessing/encoder changes invalidate affected vectors and predictions; head changes invalidate cached predictions. Counts/frequency/maintenance labor unmeasured.",
+  "scope": "Local warm scalar bundles with validated immutable query keys. Same heads in on-demand/materialized modes. Bundles reuse encoding across distinct A-D heads; identical-bundle caching is a different mechanism. File bytes exclude full source/rights lineage and are not full lifecycle storage.",
+  "task_specific_encoders": [
+    {
+      "separate_encoders_plus_heads_ns": 36875,
+      "tasks": [
+        "A"
+      ]
+    },
+    {
+      "separate_encoders_plus_heads_ns": 72834,
+      "tasks": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "separate_encoders_plus_heads_ns": 109875,
+      "tasks": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "separate_encoders_plus_heads_ns": 144708,
+      "tasks": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  ],
+  "training_costs": {
+    "direct_A": 225057333,
+    "direct_B": 225254999,
+    "direct_C": 243638499,
+    "direct_D": 222736334,
+    "direct_E": 228957833,
+    "shared_AD": 977859958,
+    "shared_mlp": 250070541,
+    "specific_B": 943309583,
+    "specific_C": 962586417,
+    "specific_D": 934730167,
+    "specific_E": 945043251
+  },
+  "training_semantics": "Current training and historical A-encoder acquisition separately recorded. Do not cancel training when comparing different representation strategies from scratch.",
+  "views": {
+    "PCA4": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 11375,
+              "materialized_ns": 24716.953125,
+              "on_demand_ns": 11375
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 12500,
+              "materialized_ns": 42338.953125,
+              "on_demand_ns": 113750
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 23750,
+              "materialized_ns": 218558.953125,
+              "on_demand_ns": 1137500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 136250,
+              "materialized_ns": 1980758.953125,
+              "on_demand_ns": 11375000
+            }
+          ],
+          "materialized_heads_ns": 1958,
+          "on_demand_shared_encoding_plus_heads_ns": 11375,
+          "per_prefix_preparation_ns": 22758.953125,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 13708,
+              "materialized_ns": 26383.953125,
+              "on_demand_ns": 13708
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 14833,
+              "materialized_ns": 59008.953125,
+              "on_demand_ns": 137080
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 26083,
+              "materialized_ns": 385258.953125,
+              "on_demand_ns": 1370800
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 138583,
+              "materialized_ns": 3647758.953125,
+              "on_demand_ns": 13708000
+            }
+          ],
+          "materialized_heads_ns": 3625,
+          "on_demand_shared_encoding_plus_heads_ns": 13708,
+          "per_prefix_preparation_ns": 22758.953125,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 17583,
+              "materialized_ns": 30716.953125,
+              "on_demand_ns": 17583
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 18708,
+              "materialized_ns": 102338.953125,
+              "on_demand_ns": 175830
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 29958,
+              "materialized_ns": 818558.953125,
+              "on_demand_ns": 1758300
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 142458,
+              "materialized_ns": 7980758.953125,
+              "on_demand_ns": 17583000
+            }
+          ],
+          "materialized_heads_ns": 7958,
+          "on_demand_shared_encoding_plus_heads_ns": 17583,
+          "per_prefix_preparation_ns": 22758.953125,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 19458,
+              "materialized_ns": 32466.953125,
+              "on_demand_ns": 19458
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 20961,
+              "materialized_ns": 119838.953125,
+              "on_demand_ns": 194580
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 35991,
+              "materialized_ns": 993558.953125,
+              "on_demand_ns": 1945800
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 186291,
+              "materialized_ns": 9730758.953125,
+              "on_demand_ns": 19458000
+            }
+          ],
+          "materialized_heads_ns": 9708,
+          "on_demand_shared_encoding_plus_heads_ns": 19458,
+          "per_prefix_preparation_ns": 22758.953125,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 737250,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 9292,
+        "min_ns": 9083,
+        "repeats": 31
+      },
+      "read_ns": 4565250,
+      "storage_bytes": 8460,
+      "write_ns": 523792
+    },
+    "frozen_A": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 36875,
+              "materialized_ns": 21296.203125,
+              "on_demand_ns": 36875
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 38000,
+              "materialized_ns": 38540.203125,
+              "on_demand_ns": 368750
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 49250,
+              "materialized_ns": 210980.203125,
+              "on_demand_ns": 3687500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 161750,
+              "materialized_ns": 1935380.203125,
+              "on_demand_ns": 36875000
+            }
+          ],
+          "materialized_heads_ns": 1916,
+          "on_demand_shared_encoding_plus_heads_ns": 36875,
+          "per_prefix_preparation_ns": 19380.203125,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 38625,
+              "materialized_ns": 23046.203125,
+              "on_demand_ns": 38625
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 39750,
+              "materialized_ns": 56040.203125,
+              "on_demand_ns": 386250
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 51000,
+              "materialized_ns": 385980.203125,
+              "on_demand_ns": 3862500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 163500,
+              "materialized_ns": 3685380.203125,
+              "on_demand_ns": 38625000
+            }
+          ],
+          "materialized_heads_ns": 3666,
+          "on_demand_shared_encoding_plus_heads_ns": 38625,
+          "per_prefix_preparation_ns": 19380.203125,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 43500,
+              "materialized_ns": 27422.203125,
+              "on_demand_ns": 43500
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 44625,
+              "materialized_ns": 99800.203125,
+              "on_demand_ns": 435000
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 55875,
+              "materialized_ns": 823580.203125,
+              "on_demand_ns": 4350000
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 168375,
+              "materialized_ns": 8061380.203125,
+              "on_demand_ns": 43500000
+            }
+          ],
+          "materialized_heads_ns": 8042,
+          "on_demand_shared_encoding_plus_heads_ns": 43500,
+          "per_prefix_preparation_ns": 19380.203125,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 45500,
+              "materialized_ns": 29921.203125,
+              "on_demand_ns": 45500
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 47003,
+              "materialized_ns": 124790.203125,
+              "on_demand_ns": 455000
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 62033,
+              "materialized_ns": 1073480.203125,
+              "on_demand_ns": 4550000
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 212333,
+              "materialized_ns": 10560380.203125,
+              "on_demand_ns": 45500000
+            }
+          ],
+          "materialized_heads_ns": 10541,
+          "on_demand_shared_encoding_plus_heads_ns": 45500,
+          "per_prefix_preparation_ns": 19380.203125,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 1238291,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 36125,
+        "min_ns": 34334,
+        "repeats": 31
+      },
+      "read_ns": 3253041,
+      "storage_bytes": 8460,
+      "write_ns": 470000
+    },
+    "interpretable": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 12417,
+              "materialized_ns": 32681.65625,
+              "on_demand_ns": 12417
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 13542,
+              "materialized_ns": 49187.65625,
+              "on_demand_ns": 124170
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 24792,
+              "materialized_ns": 214247.65625,
+              "on_demand_ns": 1241700
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 137292,
+              "materialized_ns": 1864847.65625,
+              "on_demand_ns": 12417000
+            }
+          ],
+          "materialized_heads_ns": 1834,
+          "on_demand_shared_encoding_plus_heads_ns": 12417,
+          "per_prefix_preparation_ns": 30847.65625,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 14167,
+              "materialized_ns": 34389.65625,
+              "on_demand_ns": 14167
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 15292,
+              "materialized_ns": 66267.65625,
+              "on_demand_ns": 141670
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 26542,
+              "materialized_ns": 385047.65625,
+              "on_demand_ns": 1416700
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 139042,
+              "materialized_ns": 3572847.65625,
+              "on_demand_ns": 14167000
+            }
+          ],
+          "materialized_heads_ns": 3542,
+          "on_demand_shared_encoding_plus_heads_ns": 14167,
+          "per_prefix_preparation_ns": 30847.65625,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 18792,
+              "materialized_ns": 38597.65625,
+              "on_demand_ns": 18792
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 19917,
+              "materialized_ns": 108347.65625,
+              "on_demand_ns": 187920
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 31167,
+              "materialized_ns": 805847.65625,
+              "on_demand_ns": 1879200
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 143667,
+              "materialized_ns": 7780847.65625,
+              "on_demand_ns": 18792000
+            }
+          ],
+          "materialized_heads_ns": 7750,
+          "on_demand_shared_encoding_plus_heads_ns": 18792,
+          "per_prefix_preparation_ns": 30847.65625,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 3.0,
+          "cached_prediction_bundle_ns": 166,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 20458,
+              "materialized_ns": 40388.65625,
+              "on_demand_ns": 20458
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 21952,
+              "materialized_ns": 126257.65625,
+              "on_demand_ns": 204580
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 36892,
+              "materialized_ns": 984947.65625,
+              "on_demand_ns": 2045800
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 186292,
+              "materialized_ns": 9571847.65625,
+              "on_demand_ns": 20458000
+            }
+          ],
+          "materialized_heads_ns": 9541,
+          "on_demand_shared_encoding_plus_heads_ns": 20458,
+          "per_prefix_preparation_ns": 30847.65625,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 2907500,
+      "coordinate_bytes": 18432,
+      "encoding_one_prefix": {
+        "median_ns": 11417,
+        "min_ns": 11208,
+        "repeats": 31
+      },
+      "read_ns": 4193958,
+      "storage_bytes": 18700,
+      "write_ns": 795542
+    },
+    "raw": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 5.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 10875,
+              "materialized_ns": 38095.38671875,
+              "on_demand_ns": 10875
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 12000,
+              "materialized_ns": 56473.38671875,
+              "on_demand_ns": 108750
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 23250,
+              "materialized_ns": 240253.38671875,
+              "on_demand_ns": 1087500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 135750,
+              "materialized_ns": 2078053.38671875,
+              "on_demand_ns": 10875000
+            }
+          ],
+          "materialized_heads_ns": 2042,
+          "on_demand_shared_encoding_plus_heads_ns": 10875,
+          "per_prefix_preparation_ns": 36053.38671875,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 5.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 12792,
+              "materialized_ns": 40053.38671875,
+              "on_demand_ns": 12792
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 13917,
+              "materialized_ns": 76053.38671875,
+              "on_demand_ns": 127920
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 25167,
+              "materialized_ns": 436053.38671875,
+              "on_demand_ns": 1279200
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 137667,
+              "materialized_ns": 4036053.38671875,
+              "on_demand_ns": 12792000
+            }
+          ],
+          "materialized_heads_ns": 4000,
+          "on_demand_shared_encoding_plus_heads_ns": 12792,
+          "per_prefix_preparation_ns": 36053.38671875,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 5.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 16250,
+              "materialized_ns": 44720.38671875,
+              "on_demand_ns": 16250
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 17753,
+              "materialized_ns": 122723.38671875,
+              "on_demand_ns": 162500
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 32783,
+              "materialized_ns": 902753.38671875,
+              "on_demand_ns": 1625000
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 183083,
+              "materialized_ns": 8703053.38671875,
+              "on_demand_ns": 16250000
+            }
+          ],
+          "materialized_heads_ns": 8667,
+          "on_demand_shared_encoding_plus_heads_ns": 16250,
+          "per_prefix_preparation_ns": 36053.38671875,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 5.0,
+          "cached_prediction_bundle_ns": 166,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 18125,
+              "materialized_ns": 45761.38671875,
+              "on_demand_ns": 18125
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 19619,
+              "materialized_ns": 133133.38671875,
+              "on_demand_ns": 181250
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 34559,
+              "materialized_ns": 1006853.38671875,
+              "on_demand_ns": 1812500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 183959,
+              "materialized_ns": 9744053.38671875,
+              "on_demand_ns": 18125000
+            }
+          ],
+          "materialized_heads_ns": 9708,
+          "on_demand_shared_encoding_plus_heads_ns": 18125,
+          "per_prefix_preparation_ns": 36053.38671875,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 726375,
+      "coordinate_bytes": 98304,
+      "encoding_one_prefix": {
+        "median_ns": 7959,
+        "min_ns": 7791,
+        "repeats": 31
+      },
+      "read_ns": 7843417,
+      "storage_bytes": 98572,
+      "write_ns": 659875
+    },
+    "shared_AD": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 37416,
+              "materialized_ns": 22302.91015625,
+              "on_demand_ns": 37416
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 38541,
+              "materialized_ns": 39555.91015625,
+              "on_demand_ns": 374160
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 49791,
+              "materialized_ns": 212085.91015625,
+              "on_demand_ns": 3741600
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 162291,
+              "materialized_ns": 1937385.91015625,
+              "on_demand_ns": 37416000
+            }
+          ],
+          "materialized_heads_ns": 1917,
+          "on_demand_shared_encoding_plus_heads_ns": 37416,
+          "per_prefix_preparation_ns": 20385.91015625,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 41333,
+              "materialized_ns": 24302.91015625,
+              "on_demand_ns": 41333
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 42458,
+              "materialized_ns": 59555.91015625,
+              "on_demand_ns": 413330
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 53708,
+              "materialized_ns": 412085.91015625,
+              "on_demand_ns": 4133300
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 166208,
+              "materialized_ns": 3937385.91015625,
+              "on_demand_ns": 41333000
+            }
+          ],
+          "materialized_heads_ns": 3917,
+          "on_demand_shared_encoding_plus_heads_ns": 41333,
+          "per_prefix_preparation_ns": 20385.91015625,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 166,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 45083,
+              "materialized_ns": 28801.91015625,
+              "on_demand_ns": 45083
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 46577,
+              "materialized_ns": 104545.91015625,
+              "on_demand_ns": 450830
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 61517,
+              "materialized_ns": 861985.91015625,
+              "on_demand_ns": 4508300
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 210917,
+              "materialized_ns": 8436385.91015625,
+              "on_demand_ns": 45083000
+            }
+          ],
+          "materialized_heads_ns": 8416,
+          "on_demand_shared_encoding_plus_heads_ns": 45083,
+          "per_prefix_preparation_ns": 20385.91015625,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 45875,
+              "materialized_ns": 30176.91015625,
+              "on_demand_ns": 45875
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 47378,
+              "materialized_ns": 118295.91015625,
+              "on_demand_ns": 458750
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 62408,
+              "materialized_ns": 999485.91015625,
+              "on_demand_ns": 4587500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 212708,
+              "materialized_ns": 9811385.91015625,
+              "on_demand_ns": 45875000
+            }
+          ],
+          "materialized_heads_ns": 9791,
+          "on_demand_shared_encoding_plus_heads_ns": 45875,
+          "per_prefix_preparation_ns": 20385.91015625,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 1214584,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 35334,
+        "min_ns": 34250,
+        "repeats": 31
+      },
+      "read_ns": 3467709,
+      "storage_bytes": 8460,
+      "write_ns": 536500
+    },
+    "specific_B": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 37459,
+              "materialized_ns": 22149.5703125,
+              "on_demand_ns": 37459
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 38584,
+              "materialized_ns": 39771.5703125,
+              "on_demand_ns": 374590
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 49834,
+              "materialized_ns": 215991.5703125,
+              "on_demand_ns": 3745900
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 162334,
+              "materialized_ns": 1978191.5703125,
+              "on_demand_ns": 37459000
+            }
+          ],
+          "materialized_heads_ns": 1958,
+          "on_demand_shared_encoding_plus_heads_ns": 37459,
+          "per_prefix_preparation_ns": 20191.5703125,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 39709,
+              "materialized_ns": 23899.5703125,
+              "on_demand_ns": 39709
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 40834,
+              "materialized_ns": 57271.5703125,
+              "on_demand_ns": 397090
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 52084,
+              "materialized_ns": 390991.5703125,
+              "on_demand_ns": 3970900
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 164584,
+              "materialized_ns": 3728191.5703125,
+              "on_demand_ns": 39709000
+            }
+          ],
+          "materialized_heads_ns": 3708,
+          "on_demand_shared_encoding_plus_heads_ns": 39709,
+          "per_prefix_preparation_ns": 20191.5703125,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 46417,
+              "materialized_ns": 28400.5703125,
+              "on_demand_ns": 46417
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 47542,
+              "materialized_ns": 102281.5703125,
+              "on_demand_ns": 464170
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 58792,
+              "materialized_ns": 841091.5703125,
+              "on_demand_ns": 4641700
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 171292,
+              "materialized_ns": 8229191.5703125,
+              "on_demand_ns": 46417000
+            }
+          ],
+          "materialized_heads_ns": 8209,
+          "on_demand_shared_encoding_plus_heads_ns": 46417,
+          "per_prefix_preparation_ns": 20191.5703125,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 45875,
+              "materialized_ns": 30400.5703125,
+              "on_demand_ns": 45875
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 47378,
+              "materialized_ns": 122281.5703125,
+              "on_demand_ns": 458750
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 62408,
+              "materialized_ns": 1041091.5703125,
+              "on_demand_ns": 4587500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 212708,
+              "materialized_ns": 10229191.5703125,
+              "on_demand_ns": 45875000
+            }
+          ],
+          "materialized_heads_ns": 10209,
+          "on_demand_shared_encoding_plus_heads_ns": 45875,
+          "per_prefix_preparation_ns": 20191.5703125,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 1199542,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 35667,
+        "min_ns": 34375,
+        "repeats": 31
+      },
+      "read_ns": 3501834,
+      "storage_bytes": 8460,
+      "write_ns": 467666
+    },
+    "specific_C": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 37250,
+              "materialized_ns": 18132.328125,
+              "on_demand_ns": 37250
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 38375,
+              "materialized_ns": 36132.328125,
+              "on_demand_ns": 372500
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 49625,
+              "materialized_ns": 216132.328125,
+              "on_demand_ns": 3725000
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 162125,
+              "materialized_ns": 2016132.328125,
+              "on_demand_ns": 37250000
+            }
+          ],
+          "materialized_heads_ns": 2000,
+          "on_demand_shared_encoding_plus_heads_ns": 37250,
+          "per_prefix_preparation_ns": 16132.328125,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 39709,
+              "materialized_ns": 19799.328125,
+              "on_demand_ns": 39709
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 40834,
+              "materialized_ns": 52802.328125,
+              "on_demand_ns": 397090
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 52084,
+              "materialized_ns": 382832.328125,
+              "on_demand_ns": 3970900
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 164584,
+              "materialized_ns": 3683132.328125,
+              "on_demand_ns": 39709000
+            }
+          ],
+          "materialized_heads_ns": 3667,
+          "on_demand_shared_encoding_plus_heads_ns": 39709,
+          "per_prefix_preparation_ns": 16132.328125,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 43458,
+              "materialized_ns": 24090.328125,
+              "on_demand_ns": 43458
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 44583,
+              "materialized_ns": 95712.328125,
+              "on_demand_ns": 434580
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 55833,
+              "materialized_ns": 811932.328125,
+              "on_demand_ns": 4345800
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 168333,
+              "materialized_ns": 7974132.328125,
+              "on_demand_ns": 43458000
+            }
+          ],
+          "materialized_heads_ns": 7958,
+          "on_demand_shared_encoding_plus_heads_ns": 43458,
+          "per_prefix_preparation_ns": 16132.328125,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 45292,
+              "materialized_ns": 25965.328125,
+              "on_demand_ns": 45292
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 46795,
+              "materialized_ns": 114462.328125,
+              "on_demand_ns": 452920
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 61825,
+              "materialized_ns": 999432.328125,
+              "on_demand_ns": 4529200
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 212125,
+              "materialized_ns": 9849132.328125,
+              "on_demand_ns": 45292000
+            }
+          ],
+          "materialized_heads_ns": 9833,
+          "on_demand_shared_encoding_plus_heads_ns": 45292,
+          "per_prefix_preparation_ns": 16132.328125,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 1256667,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 34792,
+        "min_ns": 34250,
+        "repeats": 31
+      },
+      "read_ns": 2438375,
+      "storage_bytes": 8460,
+      "write_ns": 434834
+    },
+    "specific_D": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 37417,
+              "materialized_ns": 18811.6953125,
+              "on_demand_ns": 37417
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 38542,
+              "materialized_ns": 36064.6953125,
+              "on_demand_ns": 374170
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 49792,
+              "materialized_ns": 208594.6953125,
+              "on_demand_ns": 3741700
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 162292,
+              "materialized_ns": 1933894.6953125,
+              "on_demand_ns": 37417000
+            }
+          ],
+          "materialized_heads_ns": 1917,
+          "on_demand_shared_encoding_plus_heads_ns": 37417,
+          "per_prefix_preparation_ns": 16894.6953125,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 38625,
+              "materialized_ns": 20561.6953125,
+              "on_demand_ns": 38625
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 39750,
+              "materialized_ns": 53564.6953125,
+              "on_demand_ns": 386250
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 51000,
+              "materialized_ns": 383594.6953125,
+              "on_demand_ns": 3862500
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 163500,
+              "materialized_ns": 3683894.6953125,
+              "on_demand_ns": 38625000
+            }
+          ],
+          "materialized_heads_ns": 3667,
+          "on_demand_shared_encoding_plus_heads_ns": 38625,
+          "per_prefix_preparation_ns": 16894.6953125,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 43292,
+              "materialized_ns": 24852.6953125,
+              "on_demand_ns": 43292
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 44417,
+              "materialized_ns": 96474.6953125,
+              "on_demand_ns": 432920
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 55667,
+              "materialized_ns": 812694.6953125,
+              "on_demand_ns": 4329200
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 168167,
+              "materialized_ns": 7974894.6953125,
+              "on_demand_ns": 43292000
+            }
+          ],
+          "materialized_heads_ns": 7958,
+          "on_demand_shared_encoding_plus_heads_ns": 43292,
+          "per_prefix_preparation_ns": 16894.6953125,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 45416,
+              "materialized_ns": 26644.6953125,
+              "on_demand_ns": 45416
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 46919,
+              "materialized_ns": 114394.6953125,
+              "on_demand_ns": 454160
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 61949,
+              "materialized_ns": 991894.6953125,
+              "on_demand_ns": 4541600
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 212249,
+              "materialized_ns": 9766894.6953125,
+              "on_demand_ns": 45416000
+            }
+          ],
+          "materialized_heads_ns": 9750,
+          "on_demand_shared_encoding_plus_heads_ns": 45416,
+          "per_prefix_preparation_ns": 16894.6953125,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 1203667,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 35416,
+        "min_ns": 34166,
+        "repeats": 31
+      },
+      "read_ns": 2728500,
+      "storage_bytes": 8460,
+      "write_ns": 392875
+    },
+    "specific_E": {
+      "bundles": [
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 36708,
+              "materialized_ns": 19881.34375,
+              "on_demand_ns": 36708
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 37833,
+              "materialized_ns": 36756.34375,
+              "on_demand_ns": 367080
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 49083,
+              "materialized_ns": 205506.34375,
+              "on_demand_ns": 3670800
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 161583,
+              "materialized_ns": 1893006.34375,
+              "on_demand_ns": 36708000
+            }
+          ],
+          "materialized_heads_ns": 1875,
+          "on_demand_shared_encoding_plus_heads_ns": 36708,
+          "per_prefix_preparation_ns": 18006.34375,
+          "tasks": [
+            "A"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 38541,
+              "materialized_ns": 21631.34375,
+              "on_demand_ns": 38541
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 39666,
+              "materialized_ns": 54256.34375,
+              "on_demand_ns": 385410
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 50916,
+              "materialized_ns": 380506.34375,
+              "on_demand_ns": 3854100
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 163416,
+              "materialized_ns": 3643006.34375,
+              "on_demand_ns": 38541000
+            }
+          ],
+          "materialized_heads_ns": 3625,
+          "on_demand_shared_encoding_plus_heads_ns": 38541,
+          "per_prefix_preparation_ns": 18006.34375,
+          "tasks": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 125,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 43542,
+              "materialized_ns": 26047.34375,
+              "on_demand_ns": 43542
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 44667,
+              "materialized_ns": 98416.34375,
+              "on_demand_ns": 435420
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 55917,
+              "materialized_ns": 822106.34375,
+              "on_demand_ns": 4354200
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 168417,
+              "materialized_ns": 8059006.34375,
+              "on_demand_ns": 43542000
+            }
+          ],
+          "materialized_heads_ns": 8041,
+          "on_demand_shared_encoding_plus_heads_ns": 43542,
+          "per_prefix_preparation_ns": 18006.34375,
+          "tasks": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "break_even_bundle_queries_excluding_shared_training": 1.0,
+          "cached_prediction_bundle_ns": 167,
+          "counterfactual_reuse": [
+            {
+              "bundles": 1,
+              "complete_prediction_cache_ns": 48292,
+              "materialized_ns": 27840.34375,
+              "on_demand_ns": 48292
+            },
+            {
+              "bundles": 10,
+              "complete_prediction_cache_ns": 49795,
+              "materialized_ns": 116346.34375,
+              "on_demand_ns": 482920
+            },
+            {
+              "bundles": 100,
+              "complete_prediction_cache_ns": 64825,
+              "materialized_ns": 1001406.34375,
+              "on_demand_ns": 4829200
+            },
+            {
+              "bundles": 1000,
+              "complete_prediction_cache_ns": 215125,
+              "materialized_ns": 9852006.34375,
+              "on_demand_ns": 48292000
+            }
+          ],
+          "materialized_heads_ns": 9834,
+          "on_demand_shared_encoding_plus_heads_ns": 48292,
+          "per_prefix_preparation_ns": 18006.34375,
+          "tasks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "construction_ns": 1217666,
+      "coordinate_bytes": 8192,
+      "encoding_one_prefix": {
+        "median_ns": 34500,
+        "min_ns": 34042,
+        "repeats": 31
+      },
+      "read_ns": 2919166,
+      "storage_bytes": 8460,
+      "write_ns": 472792
+    }
+  }
+}

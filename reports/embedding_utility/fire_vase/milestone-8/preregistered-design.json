@@ -1,0 +1,83 @@
+{
+  "version": "fire-vase-m8-observed-state-v1",
+  "authorization": "Direct investigator authorization and explicit Milestone8 instruction permit real internal representation fitting/evaluation; no external publication or agent inference",
+  "primary_population": "all278865 native fire IDs;1/2/3+ strata; task-specific undefined masks",
+  "representation_input": "Validated observed-property state from native increments and exact calendar support, including explicit undefined-feature masks; this is feature-state encoding, not a raw polygon or full-sequence neural experiment",
+  "properties": [
+    "log_observed_total",
+    "log_observation_count",
+    "log_first_increment",
+    "log_last_increment",
+    "log_observed_std",
+    "first_allocation",
+    "asinh_mean_consecutive_change",
+    "strict_interior_peak_count",
+    "first_half_allocation",
+    "log_observed_span"
+  ],
+  "primary_comparisons": [
+    "learned versus exact cached native",
+    "learned versus interpretable state",
+    "learned versus PCA",
+    "supervised versus self-supervised",
+    "multitask versus single objective",
+    "frozen downstream transfer versus same-label raw-state heads"
+  ],
+  "training_objectives": {
+    "supervised": [
+      "log_observation_count"
+    ],
+    "self_supervised": [
+      "reconstruct input state without future labels"
+    ],
+    "multitask": [
+      "log_observed_total",
+      "log_observation_count",
+      "log_observed_std"
+    ]
+  },
+  "hidden_width": 16,
+  "embedding_dimensions": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "training_fractions": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "epochs": 12,
+  "batch_fires": 1024,
+  "optimizer": "prewritten Adam, clipped gradients, learning_rate0.003",
+  "seed": 20260828,
+  "splits": "Reuse preserved proposed whole-fire70/15/15 hash split; report temporal/geographic strata separately; these are public development cases, not pristine unseen data",
+  "preprocessing": "Training-fire-only means/scales and median imputation of undefined MODEL INPUT features with explicit real support-mask channels. Labels retain undefined masks. No missing dates or source values imputed; no raw sequence padding.",
+  "pca": "Training-only observed-state PCA. Requested dimensions capped to actual numerical covariance rank. Report source degrees of freedom separately from nonlinear-feature covariance rank; no invented padded axes.",
+  "probes": [
+    "standardized ridge",
+    "fixed-seed tanh feature-map ridge,32 nonlinear features"
+  ],
+  "primary_metric": "Equal-fire standardized property MSE and per-stratum results; exact native operations independently evaluated; approximate recovery is not exact preservation",
+  "retrieval": "Independent property-ranked relevance, full training gallery,4096 deterministic stratified test queries, same-fire exclusion; per-stratum results and paired fire uncertainty. Full-ranking diagnostics may use a declared fixed smaller gallery, explicitly separate from full-gallery top10.",
+  "uncertainty": "Conditional whole-fire paired bootstrap,256 replicates; report clusters and no training-refit/population inference. No confirmatory significance without scientist-reviewed meaningful-effect thresholds; Holm only on a valid declared comparison family.",
+  "conditions": [
+    "A coordinates only, no source metadata",
+    "B same dates/source/support sidecar, no native scientific values",
+    "C explicit charged native fallback, not counted as embedding preservation"
+  ],
+  "cost": "Record fitting/materialization/index/query/fallback/cache/refresh costs and unknown physical I/O; comparable measured-workload Pareto frontiers only",
+  "scientific_limits": [
+    "Native units/support remain unaltered",
+    "One-point variability/allocation/peaks undefined",
+    "Cumulative observed area means sum of retained increments, not complete physical lifetime",
+    "No ecological analog, causality, operational forecast or universal latent-space claims",
+    "Model-family capacity and supervision differ and will be reported",
+    "Single seed is not model-training uncertainty",
+    "Secondary prediction remains separate"
+  ]
+}

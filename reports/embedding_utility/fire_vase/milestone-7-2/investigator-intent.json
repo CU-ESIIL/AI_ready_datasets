@@ -1,0 +1,20 @@
+{
+  "status": "INVESTIGATOR_INTENT_RECORDED_NOT_AUTHENTICATED_REVIEW",
+  "statement_reported_by_brief": "yes this is fine",
+  "direct_quote_context": "The supplied milestone brief reports an earlier investigator statement; no separate original receipt was supplied.",
+  "provenance": "/Users/tuff/.codex/attachments/7b565d74-e39f-462e-8753-d74e3e3cc51b/Pasted text.txt",
+  "attachment_sha256": "8498dc4224d393429e1ef5fb7ffb5434cb84806a71402d3864b2882b850b3f67",
+  "recorded_at": "2026-11-21T19:33:22.555421+00:00",
+  "permitted_intent": "internal scientific analysis within investigator authority",
+  "not_resolved": [
+    "source-specific internal-use rights",
+    "reviewed scientific binding",
+    "verified externally attributed review receipt",
+    "scope-specific execution gate"
+  ],
+  "publication_required_for_internal_profiling": false,
+  "model_training_requested": false,
+  "scientist_effect_sizes_required_for_profiling": false,
+  "subsequent_direct_instruction": "I just want you to do what you can. use the whole data lake and do a big analysis",
+  "subsequent_instruction_provenance": "Direct user reply to asynchronous clarification in this chat, 2026-11-21"
+}

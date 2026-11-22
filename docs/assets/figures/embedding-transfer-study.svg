@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 993" role="img" aria-labelledby="title desc">
+<title id="title">Synthetic task-dependent representation transfer</title><desc id="desc">Original A-only encoder frozen; new lightweight heads, multitask and specific training are separate supervision strategies. No real-fire or real-agent evidence.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547568"/></marker></defs>
+<rect width="960" height="993" fill="#f3f5ef" rx="8"/>
+<text x="28" y="38" fill="#173e35" font-family="sans-serif" font-size="23" font-weight="600">Synthetic task-dependent representation transfer</text>
+<path d="M480 149 L480 210" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L170 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L790 335" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 274 L480 460" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 399 L170 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 399 L170 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 524 L170 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 399 L790 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 399 L790 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M480 524 L790 585" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 649 L170 710" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 649 L790 710" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 649 L480 835" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M170 774 L480 835" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M790 774 L480 835" fill="none" stroke="#547568" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="340" y="85" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="123" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Frozen M4 cohort + identity</tspan></text>
+<rect x="340" y="210" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="238" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Train / select / calibrate /</tspan><tspan x="480" dy="20">test</tspan></text>
+<rect x="30" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Frozen A-only encoder</tspan></text>
+<rect x="650" y="335" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="373" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Joint AD / specific encoders</tspan></text>
+<rect x="340" y="460" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="498" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Raw / summaries / PCA4 rivals</tspan></text>
+<rect x="30" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Independent A-D heads</tspan></text>
+<rect x="650" y="585" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="623" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Future-outcome retrieval E</tspan></text>
+<rect x="30" y="710" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="170" y="748" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="170" dy="0">Input-property probes</tspan></text>
+<rect x="650" y="710" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="790" y="748" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="790" dy="0">Training / heterogeneous reuse</tspan></text>
+<rect x="340" y="835" width="280" height="64" rx="4" fill="white" stroke="#9fb4a5"/>
+<text x="480" y="873" text-anchor="middle" fill="#183d34" font-family="sans-serif" font-size="17"><tspan x="480" dy="0">Paired fire-level utility map</tspan></text>
+</svg>

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_DETERMINISTIC_IMPLEMENTATION_CHECKS",
+  "scientific_approval": false,
+  "native_ids": 278865,
+  "daily_rows": 627033,
+  "neural_parameter_checkpoints": 96,
+  "primary_fits": 75,
+  "masked_eligibility_rows_validated": 8400,
+  "source_postflight": [
+    {
+      "relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg",
+      "sha256": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+      "bytes": 575012864,
+      "unchanged": true
+    },
+    {
+      "relative_path": "files/artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg",
+      "sha256": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+      "bytes": 256565248,
+      "unchanged": true
+    },
+    {
+      "relative_path": "files/scratch/fire_vase_run_full/tables/fire_traits.parquet",
+      "sha256": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+      "bytes": 23582087,
+      "unchanged": true
+    },
+    {
+      "relative_path": "files/scratch/fire_vase_run_full/tables/vase_slices.parquet",
+      "sha256": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+      "bytes": 38403514,
+      "unchanged": true
+    }
+  ],
+  "prediction_count_reference": {
+    "1-1": [
+      75953,
+      196982
+    ],
+    "1-3": [
+      19004,
+      61342
+    ],
+    "1-7": [
+      3386,
+      16547
+    ],
+    "2-1": [
+      34911,
+      101035
+    ],
+    "2-3": [
+      11195,
+      40724
+    ],
+    "2-7": [
+      2452,
+      13072
+    ]
+  },
+  "scope": "implementation, artifact and source integrity; not measurement QA or independent ecological validity"
+}

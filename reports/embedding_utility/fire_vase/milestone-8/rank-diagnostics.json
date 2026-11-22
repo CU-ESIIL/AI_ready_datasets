@@ -1,0 +1,19 @@
+{
+  "model_input_columns": 20,
+  "training_covariance_ranks": {
+    "all": 13,
+    "one": 1,
+    "two": 8,
+    "three_plus": 12
+  },
+  "pca_effective_requested_dimensions": {
+    "4": 4,
+    "8": 8,
+    "16": 13,
+    "32": 13,
+    "64": 13
+  },
+  "interpretation": "real support-mask channels and nonlinear scientific features; covariance rank is not intrinsic native degrees of freedom. One-point numerical state has rank1; two-point state additionally includes observed gap and nonlinear feature functions, so rank8 is not8 independent native observations.",
+  "no_sequence_zero_padding": true,
+  "hidden_neural_width": 16
+}

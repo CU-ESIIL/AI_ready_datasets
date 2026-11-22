@@ -1,0 +1,42 @@
+[
+  {
+    "manifest": "reports/embedding_utility/fire_vase/results/milestone-1-v1/manifest.json",
+    "hashed_outputs_checked": 8,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/results/milestone-2-v2/manifest.json",
+    "hashed_outputs_checked": 10,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/results/milestone-3-v1/manifest.json",
+    "hashed_outputs_checked": 18,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/results/milestone-4-learning-v1/manifest.json",
+    "hashed_outputs_checked": 17,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/results/milestone-5-transfer-v1/manifest.json",
+    "hashed_outputs_checked": 59,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/milestone-6/evidence-index.json",
+    "hashed_outputs_checked": 11,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/milestone-6/review-v2/manifest.json",
+    "hashed_outputs_checked": 4,
+    "mismatches": []
+  },
+  {
+    "manifest": "reports/embedding_utility/fire_vase/milestone-7/metadata-v1/manifest.json",
+    "hashed_outputs_checked": 5,
+    "mismatches": []
+  }
+]

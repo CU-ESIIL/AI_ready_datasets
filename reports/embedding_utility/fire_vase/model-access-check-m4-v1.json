@@ -1,0 +1,18 @@
+{
+  "access_authorization_verified": false,
+  "checked_at": "2026-11-21T15:28:05.498480+00:00",
+  "cost_authorization_verified": false,
+  "credential_presence_only": {
+    "OPENAI_API_KEY": false,
+    "VERDE_LLM_API_KEY": false,
+    "VERDE_LLM_BASE_URL": false
+  },
+  "declared_model": "js2/gpt-oss-120b",
+  "declared_provider": "verde",
+  "declared_runtime_version": "2026.5.18",
+  "external_model_costs_incurred": false,
+  "gateway_tcp": "not reachable from session: PermissionError",
+  "real_model_calls": 0,
+  "saved_runtime_policy_valid": true,
+  "smoke_status": "pending"
+}

@@ -1,0 +1,13 @@
+{
+  "version": "m8-statistics-v1",
+  "timing": "Recorded before inspecting any numerical held-out score tables; training progress logs only were read",
+  "primary_probe": "linear ridge; nonlinear tanh32 probe is separate sensitivity, never chosen by test score",
+  "primary_family": "self_supervised versus supervised, fraction1, dimensions4/8/16/32/64, each of10 observed properties:50 prespecified exploratory comparisons",
+  "effect": "paired standardized squared error self_supervised minus supervised; negative favors self_supervised",
+  "intervals": "256 paired fire bootstrap replicates conditional on fitted models; region/year-region sensitivity where supported",
+  "p_values": "Two-sided paired group sign-flip on known source-reported region aggregates, exact enumeration where feasible; exclude unknown region only from this sensitivity, retain all fires in primary estimates. Coarse groups and source labels limit inferential meaning.",
+  "adjustment": "Holm across the50 prespecified property/dimension comparisons; exploratory model-comparison diagnostics only, no causal or global scientific superiority claim",
+  "training_randomness": "single seed, not estimated by test-fire bootstrap",
+  "meaningful_scientific_effect": null,
+  "generalization": "Per-year and reported-region results descriptive for the preserved random whole-fire split. True chronological/geographic retraining extensions must not be claimed from stratification alone."
+}
